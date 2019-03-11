@@ -1,0 +1,6788 @@
+[
+    {
+        "text": "How's the weather in Munchique National Natural Park",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 52,
+                "value": "Munchique National Natural Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for France",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 39,
+                "value": "France",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will there be wind in Hornitos DC?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 18,
+                "value": "wind",
+                "entity": "condition_description"
+            },
+            {
+                "start": 22,
+                "end": 30,
+                "value": "Hornitos",
+                "entity": "city"
+            },
+            {
+                "start": 31,
+                "end": 33,
+                "value": "DC",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Is it warm here now?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "warm",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 16,
+                "end": 19,
+                "value": "now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Roulo for foggy conditions on February the eighteenth, 2018",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 30,
+                "value": "Roulo",
+                "entity": "city"
+            },
+            {
+                "start": 35,
+                "end": 40,
+                "value": "foggy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 55,
+                "end": 84,
+                "value": "February the eighteenth, 2018",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "I want to eat in Wallis and Futuna and get a blizzard",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 17,
+                "end": 34,
+                "value": "Wallis and Futuna",
+                "entity": "country"
+            },
+            {
+                "start": 45,
+                "end": 53,
+                "value": "blizzard",
+                "entity": "condition_description"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast in 23 hours and seventeen seconds at this current spot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 54,
+                "value": "in 23 hours and seventeen seconds",
+                "entity": "timeRange"
+            },
+            {
+                "start": 63,
+                "end": 75,
+                "value": "current spot",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "I need a table at a restaurant in Montserrat",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 34,
+                "end": 44,
+                "value": "Montserrat",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for one am. in West Athens, Benin",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "one am.",
+                "entity": "timeRange"
+            },
+            {
+                "start": 44,
+                "end": 55,
+                "value": "West Athens",
+                "entity": "city"
+            },
+            {
+                "start": 57,
+                "end": 62,
+                "value": "Benin",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be this Afternoon in Brilliant MI?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 30,
+                "end": 39,
+                "value": "Afternoon",
+                "entity": "timeRange"
+            },
+            {
+                "start": 43,
+                "end": 52,
+                "value": "Brilliant",
+                "entity": "city"
+            },
+            {
+                "start": 53,
+                "end": 55,
+                "value": "MI",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather not far from Upper Klamath National Wildlife Refuge?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 27,
+                "value": "not far",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 33,
+                "end": 71,
+                "value": "Upper Klamath National Wildlife Refuge",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Weather in Parc national de Nech Sar",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 36,
+                "value": "Parc national de Nech Sar",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Battle Lake?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 39,
+                "value": "Battle Lake",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it be temperate in the current place?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 28,
+                "end": 41,
+                "value": "current place",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather for eight o'clock in Laos that is within walking distance",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 24,
+                "end": 37,
+                "value": "eight o'clock",
+                "entity": "timeRange"
+            },
+            {
+                "start": 41,
+                "end": 45,
+                "value": "Laos",
+                "entity": "country"
+            },
+            {
+                "start": 54,
+                "end": 77,
+                "value": "within walking distance",
+                "entity": "spatial_relation"
+            }
+        ]
+    },
+    {
+        "text": "Tell me if it will it be windy in Grizzled Squirrel Wildlife Sanctuary",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 30,
+                "value": "windy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 34,
+                "end": 70,
+                "value": "Grizzled Squirrel Wildlife Sanctuary",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be windy here on Dec. 16th?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "windy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 25,
+                "end": 34,
+                "value": "Dec. 16th",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Danvers",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "Danvers",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it be freezing on Jul. 7, 2038 in Vananda Alaska?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 23,
+                "end": 35,
+                "value": "Jul. 7, 2038",
+                "entity": "timeRange"
+            },
+            {
+                "start": 39,
+                "end": 46,
+                "value": "Vananda",
+                "entity": "city"
+            },
+            {
+                "start": 47,
+                "end": 53,
+                "value": "Alaska",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Sche-Phoksundo-Nationalpark on leif erikson day?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 55,
+                "value": "Sche-Phoksundo-Nationalpark",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 59,
+                "end": 75,
+                "value": "leif erikson day",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Is the weather chilly in Pintura",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 15,
+                "end": 21,
+                "value": "chilly",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 25,
+                "end": 32,
+                "value": "Pintura",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in Nigeria?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 29,
+                "value": "Nigeria",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What is the overcast forecast within the same area of Rio Grande Nature Center State Park for fifteen o'clock",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "overcast",
+                "entity": "condition_description"
+            },
+            {
+                "start": 30,
+                "end": 50,
+                "value": "within the same area",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 54,
+                "end": 89,
+                "value": "Rio Grande Nature Center State Park",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 94,
+                "end": 109,
+                "value": "fifteen o'clock",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Is it hot in the current location?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 17,
+                "end": 33,
+                "value": "current location",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather for Oct. the 26th in Rosewood Heights.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 24,
+                "end": 37,
+                "value": "Oct. the 26th",
+                "entity": "timeRange"
+            },
+            {
+                "start": 41,
+                "end": 57,
+                "value": "Rosewood Heights",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What is the SD forecast for oct. 6th, 2037 for hot weather at Belle Vernon",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 12,
+                "end": 14,
+                "value": "SD",
+                "entity": "state"
+            },
+            {
+                "start": 28,
+                "end": 42,
+                "value": "oct. 6th, 2037",
+                "entity": "timeRange"
+            },
+            {
+                "start": 47,
+                "end": 50,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 62,
+                "end": 74,
+                "value": "Belle Vernon",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Is it rainy in Greely Center?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 11,
+                "value": "rainy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 15,
+                "end": 28,
+                "value": "Greely Center",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "I need the weather in Hubbardston, will it be chillier?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 33,
+                "value": "Hubbardston",
+                "entity": "city"
+            },
+            {
+                "start": 46,
+                "end": 54,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "Will it be colder in Texas?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 26,
+                "value": "Texas",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for close by my current location",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 41,
+                "value": "close by",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 45,
+                "end": 61,
+                "value": "current location",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Uganda at Yom Ha'atzmaut for chilly weather close from ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 31,
+                "value": "Uganda",
+                "entity": "country"
+            },
+            {
+                "start": 35,
+                "end": 49,
+                "value": "Yom Ha'atzmaut",
+                "entity": "timeRange"
+            },
+            {
+                "start": 54,
+                "end": 60,
+                "value": "chilly",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 69,
+                "end": 79,
+                "value": "close from",
+                "entity": "spatial_relation"
+            }
+        ]
+    },
+    {
+        "text": "Will it be sunny on March 1, 2026 in Forty Fort?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "sunny",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 33,
+                "value": "March 1, 2026",
+                "entity": "timeRange"
+            },
+            {
+                "start": 37,
+                "end": 47,
+                "value": "Forty Fort",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "I want to book a restaurant in 40 weeks in Iowa.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 39,
+                "value": "in 40 weeks",
+                "entity": "timeRange"
+            },
+            {
+                "start": 43,
+                "end": 47,
+                "value": "Iowa",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for NV for First Day Of Sukkot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 27,
+                "value": "NV",
+                "entity": "state"
+            },
+            {
+                "start": 32,
+                "end": 51,
+                "value": "First Day Of Sukkot",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Agate Fossil Beds National Monument",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 68,
+                "value": "Agate Fossil Beds National Monument",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Tell me if it is cold in Federated States Of Micronesia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 25,
+                "end": 55,
+                "value": "Federated States Of Micronesia",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "I need the weather for 7/13/2036 in Gwynedd Valley",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 23,
+                "end": 32,
+                "value": "7/13/2036",
+                "entity": "timeRange"
+            },
+            {
+                "start": 36,
+                "end": 50,
+                "value": "Gwynedd Valley",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Is it cold here?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will there be rain next year in New Hampshire?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 18,
+                "value": "rain",
+                "entity": "condition_description"
+            },
+            {
+                "start": 19,
+                "end": 28,
+                "value": "next year",
+                "entity": "timeRange"
+            },
+            {
+                "start": 32,
+                "end": 45,
+                "value": "New Hampshire",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather at 5 am on the Farallon Islands?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "value": "5 am",
+                "entity": "timeRange"
+            },
+            {
+                "start": 35,
+                "end": 51,
+                "value": "Farallon Islands",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be windy at 4 Pm in NY?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "windy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 24,
+                "value": "4 Pm",
+                "entity": "timeRange"
+            },
+            {
+                "start": 28,
+                "end": 30,
+                "value": "NY",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for Roseburg, Iowa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 41,
+                "value": "Roseburg",
+                "entity": "city"
+            },
+            {
+                "start": 43,
+                "end": 47,
+                "value": "Iowa",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Weather in Malaysia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "Malaysia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Need weather for 1 pm in Russell Gardens or close-by",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "value": "1 pm",
+                "entity": "timeRange"
+            },
+            {
+                "start": 25,
+                "end": 40,
+                "value": "Russell Gardens",
+                "entity": "city"
+            },
+            {
+                "start": 44,
+                "end": 52,
+                "value": "close-by",
+                "entity": "spatial_relation"
+            }
+        ]
+    },
+    {
+        "text": "Will it be windy in John Day?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "windy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 28,
+                "value": "John Day",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather like at Nationaal park Bạch Mã",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 27,
+                "end": 52,
+                "value": "Nationaal park Bạch Mã",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hotter in Hungary on February the 16th?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 28,
+                "value": "Hungary",
+                "entity": "country"
+            },
+            {
+                "start": 32,
+                "end": 49,
+                "value": "February the 16th",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be at six o'clock in the Virgin Islands?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 39,
+                "value": "six o'clock",
+                "entity": "timeRange"
+            },
+            {
+                "start": 47,
+                "end": 61,
+                "value": "Virgin Islands",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "is the weather going to be hotter in RI in one year",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 27,
+                "end": 33,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 37,
+                "end": 39,
+                "value": "RI",
+                "entity": "state"
+            },
+            {
+                "start": 40,
+                "end": 51,
+                "value": "in one year",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather in Weidman will it be warm",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 23,
+                "end": 30,
+                "value": "Weidman",
+                "entity": "city"
+            },
+            {
+                "start": 42,
+                "end": 46,
+                "value": "warm",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "How cold will it get in Tajikistan around oct. eleventh?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 4,
+                "end": 8,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 24,
+                "end": 34,
+                "value": "Tajikistan",
+                "entity": "country"
+            },
+            {
+                "start": 42,
+                "end": 55,
+                "value": "oct. eleventh",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast here",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 29,
+                "end": 33,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will it be warmer near here on jan. the fifteenth?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 18,
+                "end": 22,
+                "value": "near",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 31,
+                "end": 49,
+                "value": "jan. the fifteenth",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for eight A.m. in Reminderville, FL",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 43,
+                "value": "eight A.m.",
+                "entity": "timeRange"
+            },
+            {
+                "start": 47,
+                "end": 60,
+                "value": "Reminderville",
+                "entity": "city"
+            },
+            {
+                "start": 62,
+                "end": 64,
+                "value": "FL",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "will it be chilly at 0 pm in Guam",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "chilly",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 25,
+                "value": "0 pm",
+                "entity": "timeRange"
+            },
+            {
+                "start": 29,
+                "end": 33,
+                "value": "Guam",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Is it chillier here",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 14,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 15,
+                "end": 19,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Is it hot in the current location?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 17,
+                "end": 33,
+                "value": "current location",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "is it cold in Vigus TN",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 14,
+                "end": 19,
+                "value": "Vigus",
+                "entity": "city"
+            },
+            {
+                "start": 20,
+                "end": 22,
+                "value": "TN",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "need a table now somewhere nearby Petit Manan National Wildlife Refuge",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 13,
+                "end": 16,
+                "value": "now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 27,
+                "end": 33,
+                "value": "nearby",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 34,
+                "end": 70,
+                "value": "Petit Manan National Wildlife Refuge",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in Ransom Canyon?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 35,
+                "value": "Ransom Canyon",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Orienta for hotter weather",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 32,
+                "value": "Orienta",
+                "entity": "city"
+            },
+            {
+                "start": 37,
+                "end": 43,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hotter neighboring ME on august eighteenth, 2025?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 18,
+                "end": 29,
+                "value": "neighboring",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 30,
+                "end": 32,
+                "value": "ME",
+                "entity": "state"
+            },
+            {
+                "start": 36,
+                "end": 59,
+                "value": "august eighteenth, 2025",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What's the forecast for Sweden at 9 a.m.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 24,
+                "end": 30,
+                "value": "Sweden",
+                "entity": "country"
+            },
+            {
+                "start": 34,
+                "end": 40,
+                "value": "9 a.m.",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will it be temperate in West Liberty MH?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 24,
+                "end": 36,
+                "value": "West Liberty",
+                "entity": "city"
+            },
+            {
+                "start": 37,
+                "end": 39,
+                "value": "MH",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be freezing 4 hours from now in Tonga",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 20,
+                "end": 36,
+                "value": "4 hours from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 40,
+                "end": 45,
+                "value": "Tonga",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be colder in Tallgrass Prairie National Preserve?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 56,
+                "value": "Tallgrass Prairie National Preserve",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be on the Keeling Islands on aug. third, 2037?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 32,
+                "end": 47,
+                "value": "Keeling Islands",
+                "entity": "country"
+            },
+            {
+                "start": 51,
+                "end": 67,
+                "value": "aug. third, 2037",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will there be a snowstorm on september the first in Bechtelsville Georgia?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 25,
+                "value": "snowstorm",
+                "entity": "condition_description"
+            },
+            {
+                "start": 29,
+                "end": 48,
+                "value": "september the first",
+                "entity": "timeRange"
+            },
+            {
+                "start": 52,
+                "end": 65,
+                "value": "Bechtelsville",
+                "entity": "city"
+            },
+            {
+                "start": 66,
+                "end": 73,
+                "value": "Georgia",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for Finland",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "Finland",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Give me the forecast for San Pedro River Preserve",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 49,
+                "value": "San Pedro River Preserve",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "is it humid in Humboldt Bay National Wildlife Refuge",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 11,
+                "value": "humid",
+                "entity": "condition_description"
+            },
+            {
+                "start": 15,
+                "end": 52,
+                "value": "Humboldt Bay National Wildlife Refuge",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Tell me if it will hail in Kyrgyzstan",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 19,
+                "end": 23,
+                "value": "hail",
+                "entity": "condition_description"
+            },
+            {
+                "start": 27,
+                "end": 37,
+                "value": "Kyrgyzstan",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be cold in Haiti?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 19,
+                "end": 24,
+                "value": "Haiti",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in Humarock?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 30,
+                "value": "Humarock",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for Fort Yargo State Park",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 54,
+                "value": "Fort Yargo State Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "I need the weather in ND in three hundred fifty one days ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 24,
+                "value": "ND",
+                "entity": "state"
+            },
+            {
+                "start": 25,
+                "end": 56,
+                "value": "in three hundred fifty one days",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast within the same area of Pocomoke River State Park",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 29,
+                "end": 49,
+                "value": "within the same area",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 53,
+                "end": 78,
+                "value": "Pocomoke River State Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "is it going to be windy on 8/8/2032 in North Charleston MT",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 18,
+                "end": 23,
+                "value": "windy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 27,
+                "end": 35,
+                "value": "8/8/2032",
+                "entity": "timeRange"
+            },
+            {
+                "start": 39,
+                "end": 55,
+                "value": "North Charleston",
+                "entity": "city"
+            },
+            {
+                "start": 56,
+                "end": 58,
+                "value": "MT",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather be freezing in Tennessee?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 28,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 32,
+                "end": 41,
+                "value": "Tennessee",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "humidity in Netawaka WI",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 0,
+                "end": 8,
+                "value": "humidity",
+                "entity": "condition_description"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "Netawaka",
+                "entity": "city"
+            },
+            {
+                "start": 21,
+                "end": 23,
+                "value": "WI",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather this week in distant Bartholomew's Cobble?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 19,
+                "end": 28,
+                "value": "this week",
+                "entity": "timeRange"
+            },
+            {
+                "start": 32,
+                "end": 39,
+                "value": "distant",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 40,
+                "end": 60,
+                "value": "Bartholomew's Cobble",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "what is the foreast for Spain at East Glacier Park at one pm",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 24,
+                "end": 29,
+                "value": "Spain",
+                "entity": "country"
+            },
+            {
+                "start": 33,
+                "end": 50,
+                "value": "East Glacier Park",
+                "entity": "city"
+            },
+            {
+                "start": 54,
+                "end": 60,
+                "value": "one pm",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "is it cloudy in Turkmenistan",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 12,
+                "value": "cloudy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 16,
+                "end": 28,
+                "value": "Turkmenistan",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for chillier conditions at Calipuy National Reservation",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 33,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 48,
+                "end": 76,
+                "value": "Calipuy National Reservation",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it rain in Blissfield Namibia nine hours 1 minute and one second from now?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 8,
+                "end": 12,
+                "value": "rain",
+                "entity": "condition_description"
+            },
+            {
+                "start": 16,
+                "end": 26,
+                "value": "Blissfield",
+                "entity": "city"
+            },
+            {
+                "start": 27,
+                "end": 34,
+                "value": "Namibia",
+                "entity": "country"
+            },
+            {
+                "start": 35,
+                "end": 78,
+                "value": "nine hours 1 minute and one second from now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Is it going to be colder in Bonnie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 18,
+                "end": 24,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 28,
+                "end": 34,
+                "value": "Bonnie",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Deaver, SC on May 10th",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 39,
+                "value": "Deaver",
+                "entity": "city"
+            },
+            {
+                "start": 41,
+                "end": 43,
+                "value": "SC",
+                "entity": "state"
+            },
+            {
+                "start": 47,
+                "end": 55,
+                "value": "May 10th",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Want to eat somewhere cold in the neighboring Antlers region on aug. 22",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 26,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 34,
+                "end": 45,
+                "value": "neighboring",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 46,
+                "end": 53,
+                "value": "Antlers",
+                "entity": "city"
+            },
+            {
+                "start": 64,
+                "end": 71,
+                "value": "aug. 22",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Is it colder in Istanbul, Turkey or Amarillo, Greece?\n",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 12,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 36,
+                "end": 44,
+                "value": "Amarillo",
+                "entity": "city"
+            },
+            {
+                "start": 46,
+                "end": 52,
+                "value": "Greece",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be warm on Pink Hill?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "warm",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 19,
+                "end": 28,
+                "value": "Pink Hill",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Winnabow",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 33,
+                "value": "Winnabow",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "When will there be wind this year in Racine",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 19,
+                "end": 23,
+                "value": "wind",
+                "entity": "condition_description"
+            },
+            {
+                "start": 24,
+                "end": 33,
+                "value": "this year",
+                "entity": "timeRange"
+            },
+            {
+                "start": 37,
+                "end": 43,
+                "value": "Racine",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it be humid in Weippe DC?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "humid",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 26,
+                "value": "Weippe",
+                "entity": "city"
+            },
+            {
+                "start": 27,
+                "end": 29,
+                "value": "DC",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "I need a table in Uruguay in 213 days when it's chillier",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 18,
+                "end": 25,
+                "value": "Uruguay",
+                "entity": "country"
+            },
+            {
+                "start": 26,
+                "end": 37,
+                "value": "in 213 days",
+                "entity": "timeRange"
+            },
+            {
+                "start": 48,
+                "end": 56,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for my current position",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 36,
+                "end": 52,
+                "value": "current position",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will there be cloud a year from now in MN?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 19,
+                "value": "cloud",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 35,
+                "value": "a year from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 39,
+                "end": 41,
+                "value": "MN",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will there be snowfall at the current location at 3 o'clock?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 22,
+                "value": "snowfall",
+                "entity": "condition_description"
+            },
+            {
+                "start": 30,
+                "end": 46,
+                "value": "current location",
+                "entity": "current_location"
+            },
+            {
+                "start": 50,
+                "end": 59,
+                "value": "3 o'clock",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "weather in Holly Recreation Area at eight P.m",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 32,
+                "value": "Holly Recreation Area",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 36,
+                "end": 45,
+                "value": "eight P.m",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be here at 10:19?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 29,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 33,
+                "end": 38,
+                "value": "10:19",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather now and here?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 23,
+                "value": "now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 28,
+                "end": 32,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather be hot in Netherlands Antilles?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 23,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 27,
+                "end": 47,
+                "value": "Netherlands Antilles",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "When will WI be temperate?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 10,
+                "end": 12,
+                "value": "WI",
+                "entity": "state"
+            },
+            {
+                "start": 16,
+                "end": 25,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be here?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 29,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "When will it be temperate in Lansford",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 25,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 29,
+                "end": 37,
+                "value": "Lansford",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in Macedonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 31,
+                "value": "Macedonia",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Weather in 3 minutes at Jean Lafitte National Historical Park and Preserve",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 8,
+                "end": 20,
+                "value": "in 3 minutes",
+                "entity": "timeRange"
+            },
+            {
+                "start": 24,
+                "end": 74,
+                "value": "Jean Lafitte National Historical Park and Preserve",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be cold in East McKeesport Norfolk Island on february the twenty-second, 2038?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 19,
+                "end": 34,
+                "value": "East McKeesport",
+                "entity": "city"
+            },
+            {
+                "start": 35,
+                "end": 49,
+                "value": "Norfolk Island",
+                "entity": "country"
+            },
+            {
+                "start": 53,
+                "end": 85,
+                "value": "february the twenty-second, 2038",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Weather in Gibraltar at meal time",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "value": "Gibraltar",
+                "entity": "country"
+            },
+            {
+                "start": 24,
+                "end": 28,
+                "value": "meal",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Tell me if it will be foggy in Maxwell",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 27,
+                "value": "foggy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 31,
+                "end": 38,
+                "value": "Maxwell",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What is the forecast for in one minute here",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 38,
+                "value": "in one minute",
+                "entity": "timeRange"
+            },
+            {
+                "start": 39,
+                "end": 43,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Weather conditions in East Pasadena",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 35,
+                "value": "East Pasadena",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather be colder on jul. 21st, 2020 in HI in Gost Creek",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 26,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 30,
+                "end": 45,
+                "value": "jul. 21st, 2020",
+                "entity": "timeRange"
+            },
+            {
+                "start": 49,
+                "end": 51,
+                "value": "HI",
+                "entity": "state"
+            },
+            {
+                "start": 55,
+                "end": 65,
+                "value": "Gost Creek",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Weather in Grey Eagle on Feb. fifteenth, 2034",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 21,
+                "value": "Grey Eagle",
+                "entity": "city"
+            },
+            {
+                "start": 25,
+                "end": 45,
+                "value": "Feb. fifteenth, 2034",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "what is the weather in Cotton Valley",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 23,
+                "end": 36,
+                "value": "Cotton Valley",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Cistern",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "Cistern",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "How's the weather in Nebraska",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 29,
+                "value": "Nebraska",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast in Mankins for seven p.m for snow in New Caledonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 24,
+                "end": 31,
+                "value": "Mankins",
+                "entity": "city"
+            },
+            {
+                "start": 36,
+                "end": 45,
+                "value": "seven p.m",
+                "entity": "timeRange"
+            },
+            {
+                "start": 50,
+                "end": 54,
+                "value": "snow",
+                "entity": "condition_description"
+            },
+            {
+                "start": 58,
+                "end": 71,
+                "value": "New Caledonia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be foggy in Dunedin ND?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "foggy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 27,
+                "value": "Dunedin",
+                "entity": "city"
+            },
+            {
+                "start": 28,
+                "end": 30,
+                "value": "ND",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Cistern",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "Cistern",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it be chillier in Elko WI at 07:51 p.m.?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "value": "Elko",
+                "entity": "city"
+            },
+            {
+                "start": 28,
+                "end": 30,
+                "value": "WI",
+                "entity": "state"
+            },
+            {
+                "start": 34,
+                "end": 44,
+                "value": "07:51 p.m.",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast starting at six pm at Janes Island State Park",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 39,
+                "value": "six pm",
+                "entity": "timeRange"
+            },
+            {
+                "start": 43,
+                "end": 66,
+                "value": "Janes Island State Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Tell me if it will be humid in West Lafayette, OK",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 27,
+                "value": "humid",
+                "entity": "condition_description"
+            },
+            {
+                "start": 31,
+                "end": 45,
+                "value": "West Lafayette",
+                "entity": "city"
+            },
+            {
+                "start": 47,
+                "end": 49,
+                "value": "OK",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in Poland?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "value": "Poland",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What is the humidity at my current position",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "humidity",
+                "entity": "condition_description"
+            },
+            {
+                "start": 27,
+                "end": 43,
+                "value": "current position",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will it be colder in the Apache-Sitgreaves National Forest at 6 Pm .",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 25,
+                "end": 58,
+                "value": "Apache-Sitgreaves National Forest",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 62,
+                "end": 66,
+                "value": "6 Pm",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What kind of weather will be in VA 12 years from now?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 32,
+                "end": 34,
+                "value": "VA",
+                "entity": "state"
+            },
+            {
+                "start": 35,
+                "end": 52,
+                "value": "12 years from now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Need weather close-by where I am in state of MS",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 13,
+                "end": 21,
+                "value": "close-by",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 45,
+                "end": 47,
+                "value": "MS",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in East Tawakoni on november twenty-fourth, 2031?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 41,
+                "value": "East Tawakoni",
+                "entity": "city"
+            },
+            {
+                "start": 45,
+                "end": 73,
+                "value": "november twenty-fourth, 2031",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hot at four in Louisiana?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 14,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 18,
+                "end": 22,
+                "value": "four",
+                "entity": "timeRange"
+            },
+            {
+                "start": 26,
+                "end": 35,
+                "value": "Louisiana",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hot in Lake Buena Vista Brunei?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 14,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 18,
+                "end": 34,
+                "value": "Lake Buena Vista",
+                "entity": "city"
+            },
+            {
+                "start": 35,
+                "end": 41,
+                "value": "Brunei",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be warmer in MT?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 23,
+                "value": "MT",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be cold in Maryland on april 21?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 19,
+                "end": 27,
+                "value": "Maryland",
+                "entity": "state"
+            },
+            {
+                "start": 31,
+                "end": 39,
+                "value": "april 21",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast near United Kingdom",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 29,
+                "end": 33,
+                "value": "near",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 34,
+                "end": 48,
+                "value": "United Kingdom",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Is it chilly in Haiti",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 12,
+                "value": "chilly",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 16,
+                "end": 21,
+                "value": "Haiti",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "give me the forecast for next Tues. for Ree Heights",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 35,
+                "value": "next Tues.",
+                "entity": "timeRange"
+            },
+            {
+                "start": 40,
+                "end": 51,
+                "value": "Ree Heights",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "weather on september 14 in Crofton Ukraine",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 23,
+                "value": "september 14",
+                "entity": "timeRange"
+            },
+            {
+                "start": 27,
+                "end": 34,
+                "value": "Crofton",
+                "entity": "city"
+            },
+            {
+                "start": 35,
+                "end": 42,
+                "value": "Ukraine",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather be foggy in ND when I go to Dunedin",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 25,
+                "value": "foggy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 29,
+                "end": 31,
+                "value": "ND",
+                "entity": "state"
+            },
+            {
+                "start": 45,
+                "end": 52,
+                "value": "Dunedin",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it be warmer at fourteen o'clock in Atlas Mongolia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 37,
+                "value": "fourteen o'clock",
+                "entity": "timeRange"
+            },
+            {
+                "start": 41,
+                "end": 46,
+                "value": "Atlas",
+                "entity": "city"
+            },
+            {
+                "start": 47,
+                "end": 55,
+                "value": "Mongolia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be on April 9, 2037 in New Brunswick Botanical Garden?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 41,
+                "value": "April 9, 2037",
+                "entity": "timeRange"
+            },
+            {
+                "start": 45,
+                "end": 75,
+                "value": "New Brunswick Botanical Garden",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather like in Peru in October",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 32,
+                "value": "Peru",
+                "entity": "country"
+            },
+            {
+                "start": 36,
+                "end": 43,
+                "value": "October",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather far away in Estonia?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 19,
+                "end": 22,
+                "value": "far",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 31,
+                "end": 38,
+                "value": "Estonia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in the current location on Feb. the twenty-eighth, 2026?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 32,
+                "end": 48,
+                "value": "current location",
+                "entity": "current_location"
+            },
+            {
+                "start": 52,
+                "end": 80,
+                "value": "Feb. the twenty-eighth, 2026",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather be good at breakfast in Bay Harbor Islands",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 37,
+                "value": "breakfast",
+                "entity": "timeRange"
+            },
+            {
+                "start": 41,
+                "end": 59,
+                "value": "Bay Harbor Islands",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What weather will HI have will there be hail twenty one minutes from now",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "value": "HI",
+                "entity": "state"
+            },
+            {
+                "start": 40,
+                "end": 44,
+                "value": "hail",
+                "entity": "condition_description"
+            },
+            {
+                "start": 45,
+                "end": 72,
+                "value": "twenty one minutes from now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be nearby in Delaware?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 31,
+                "value": "nearby",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 35,
+                "end": 43,
+                "value": "Delaware",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be here at twelve P.m.?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 29,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 33,
+                "end": 44,
+                "value": "twelve P.m.",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the forecast for Dec. 1st, 2036 in Keeneland",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 39,
+                "value": "Dec. 1st, 2036",
+                "entity": "timeRange"
+            },
+            {
+                "start": 43,
+                "end": 52,
+                "value": "Keeneland",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will there be a blizzard this month in Uganda",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 24,
+                "value": "blizzard",
+                "entity": "condition_description"
+            },
+            {
+                "start": 25,
+                "end": 35,
+                "value": "this month",
+                "entity": "timeRange"
+            },
+            {
+                "start": 39,
+                "end": 45,
+                "value": "Uganda",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hot in West Union, Malaysia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 14,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 18,
+                "end": 28,
+                "value": "West Union",
+                "entity": "city"
+            },
+            {
+                "start": 30,
+                "end": 38,
+                "value": "Malaysia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Sanborn",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "Sanborn",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What's the snowfall in Malawi?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "snowfall",
+                "entity": "condition_description"
+            },
+            {
+                "start": 23,
+                "end": 29,
+                "value": "Malawi",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Sweden in Westmoreland",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 31,
+                "value": "Sweden",
+                "entity": "country"
+            },
+            {
+                "start": 35,
+                "end": 47,
+                "value": "Westmoreland",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will there be a snowstorm in Pomona, New Mexico?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 25,
+                "value": "snowstorm",
+                "entity": "condition_description"
+            },
+            {
+                "start": 29,
+                "end": 35,
+                "value": "Pomona",
+                "entity": "city"
+            },
+            {
+                "start": 37,
+                "end": 47,
+                "value": "New Mexico",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast starting three weeks from now for Point Isabel",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 30,
+                "end": 50,
+                "value": "three weeks from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 55,
+                "end": 67,
+                "value": "Point Isabel",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "When will there be a cloud in Australia?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 26,
+                "value": "cloud",
+                "entity": "condition_description"
+            },
+            {
+                "start": 30,
+                "end": 39,
+                "value": "Australia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Was there rainfall last mar. in Greenbrier Egypt?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 10,
+                "end": 18,
+                "value": "rainfall",
+                "entity": "condition_description"
+            },
+            {
+                "start": 19,
+                "end": 28,
+                "value": "last mar.",
+                "entity": "timeRange"
+            },
+            {
+                "start": 32,
+                "end": 42,
+                "value": "Greenbrier",
+                "entity": "city"
+            },
+            {
+                "start": 43,
+                "end": 48,
+                "value": "Egypt",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast starting next week in Guam",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 30,
+                "end": 39,
+                "value": "next week",
+                "entity": "timeRange"
+            },
+            {
+                "start": 43,
+                "end": 47,
+                "value": "Guam",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it get chillier in Las Lomas, British Virgin Islands on Nov. the 21st?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 24,
+                "end": 33,
+                "value": "Las Lomas",
+                "entity": "city"
+            },
+            {
+                "start": 35,
+                "end": 57,
+                "value": "British Virgin Islands",
+                "entity": "country"
+            },
+            {
+                "start": 61,
+                "end": 74,
+                "value": "Nov. the 21st",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast in 1 hour for District Of Columbia in Kaysville",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 29,
+                "end": 38,
+                "value": "in 1 hour",
+                "entity": "timeRange"
+            },
+            {
+                "start": 43,
+                "end": 63,
+                "value": "District Of Columbia",
+                "entity": "state"
+            },
+            {
+                "start": 67,
+                "end": 76,
+                "value": "Kaysville",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for here in seven years ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 37,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 38,
+                "end": 53,
+                "value": "in seven years ",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "how's the weather in Northfield Center ME",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 38,
+                "value": "Northfield Center",
+                "entity": "city"
+            },
+            {
+                "start": 39,
+                "end": 41,
+                "value": "ME",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather this week be warmer in Crystal River?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 26,
+                "value": "week",
+                "entity": "timeRange"
+            },
+            {
+                "start": 30,
+                "end": 36,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 40,
+                "end": 53,
+                "value": "Crystal River",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Weather at Norfolk Island",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 25,
+                "value": "Norfolk Island",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be neighboring La Tigra National Park?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 36,
+                "value": "neighboring",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 37,
+                "end": 59,
+                "value": "La Tigra National Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for Ethridge, Maryland",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 41,
+                "value": "Ethridge",
+                "entity": "city"
+            },
+            {
+                "start": 43,
+                "end": 51,
+                "value": "Maryland",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast starting in a week and a half in Faroe Islands for cloud weather",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 30,
+                "end": 50,
+                "value": "in a week and a half",
+                "entity": "timeRange"
+            },
+            {
+                "start": 54,
+                "end": 67,
+                "value": "Faroe Islands",
+                "entity": "country"
+            },
+            {
+                "start": 72,
+                "end": 77,
+                "value": "cloud",
+                "entity": "condition_description"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Tennessee",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 34,
+                "value": "Tennessee",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be freezing in El Casco Czechia on Apr. fourteenth, 2033?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 23,
+                "end": 31,
+                "value": "El Casco",
+                "entity": "city"
+            },
+            {
+                "start": 32,
+                "end": 39,
+                "value": "Czechia",
+                "entity": "country"
+            },
+            {
+                "start": 43,
+                "end": 64,
+                "value": "Apr. fourteenth, 2033",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "want to eat somewhere windy in NM",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 27,
+                "value": "windy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 31,
+                "end": 33,
+                "value": "NM",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Weather in Witt october twenty-sixth",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "Witt",
+                "entity": "city"
+            },
+            {
+                "start": 16,
+                "end": 36,
+                "value": "october twenty-sixth",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will it be snowy on february the 14th, 2021 in Port Armstrong?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "snowy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 43,
+                "value": "february the 14th, 2021",
+                "entity": "timeRange"
+            },
+            {
+                "start": 47,
+                "end": 61,
+                "value": "Port Armstrong",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will there be rainfall in Ryland Heights New York?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 22,
+                "value": "rainfall",
+                "entity": "condition_description"
+            },
+            {
+                "start": 26,
+                "end": 40,
+                "value": "Ryland Heights",
+                "entity": "city"
+            },
+            {
+                "start": 41,
+                "end": 49,
+                "value": "New York",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Lesotho",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 32,
+                "value": "Lesotho",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Please check the weather forecast for Mauritania on August 14, 2040.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 38,
+                "end": 48,
+                "value": "Mauritania",
+                "entity": "country"
+            },
+            {
+                "start": 52,
+                "end": 67,
+                "value": "August 14, 2040",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Pipe Venezuela in 10 years ?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 32,
+                "value": "Pipe",
+                "entity": "city"
+            },
+            {
+                "start": 33,
+                "end": 42,
+                "value": "Venezuela",
+                "entity": "country"
+            },
+            {
+                "start": 43,
+                "end": 55,
+                "value": "in 10 years ",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "forecast for Guatemala",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 13,
+                "end": 22,
+                "value": "Guatemala",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be stormy in Old Fort Saint Lucia right now?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "stormy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 21,
+                "end": 29,
+                "value": "Old Fort",
+                "entity": "city"
+            },
+            {
+                "start": 30,
+                "end": 41,
+                "value": "Saint Lucia",
+                "entity": "country"
+            },
+            {
+                "start": 48,
+                "end": 51,
+                "value": "now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather be sunny in Lovettsville on may the twenty-fourth, 2020?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 25,
+                "value": "sunny",
+                "entity": "condition_description"
+            },
+            {
+                "start": 29,
+                "end": 41,
+                "value": "Lovettsville",
+                "entity": "city"
+            },
+            {
+                "start": 45,
+                "end": 72,
+                "value": "may the twenty-fourth, 2020",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in East Liberty MN?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 40,
+                "value": "East Liberty",
+                "entity": "city"
+            },
+            {
+                "start": 41,
+                "end": 43,
+                "value": "MN",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Cropsey for Aug. the 5th for warmer weather",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 32,
+                "value": "Cropsey",
+                "entity": "city"
+            },
+            {
+                "start": 37,
+                "end": 49,
+                "value": "Aug. the 5th",
+                "entity": "timeRange"
+            },
+            {
+                "start": 54,
+                "end": 60,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast within the same area of Zambia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 41,
+                "value": "within the same area",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 45,
+                "end": 51,
+                "value": "Zambia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in ID?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 30,
+                "value": "ID",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for freezing weather here",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 33,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 42,
+                "end": 46,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in FL?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 24,
+                "value": "FL",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Wyoming starting at 14",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 32,
+                "value": "Wyoming",
+                "entity": "state"
+            },
+            {
+                "start": 45,
+                "end": 47,
+                "value": "14",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather next september in the current location?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 19,
+                "end": 33,
+                "value": "next september",
+                "entity": "timeRange"
+            },
+            {
+                "start": 41,
+                "end": 57,
+                "value": "current location",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Show me whether Iceland will be colder than it was last april",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 23,
+                "value": "Iceland",
+                "entity": "country"
+            },
+            {
+                "start": 32,
+                "end": 38,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 51,
+                "end": 61,
+                "value": "last april",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Please check the weather forecast around 05:54 in Macedonia.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 41,
+                "end": 46,
+                "value": "05:54",
+                "entity": "timeRange"
+            },
+            {
+                "start": 50,
+                "end": 59,
+                "value": "Macedonia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "what's the weather going to be like in MI on august twenty-eighth, 2033",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 39,
+                "end": 41,
+                "value": "MI",
+                "entity": "state"
+            },
+            {
+                "start": 45,
+                "end": 71,
+                "value": "august twenty-eighth, 2033",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather now in Grand Detour, UT",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 23,
+                "value": "now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 27,
+                "end": 39,
+                "value": "Grand Detour",
+                "entity": "city"
+            },
+            {
+                "start": 41,
+                "end": 43,
+                "value": "UT",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What is the forecast in KY for temperate weather",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 24,
+                "end": 26,
+                "value": "KY",
+                "entity": "state"
+            },
+            {
+                "start": 31,
+                "end": 40,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "What was the weather last February in William A. Switzer Provincial Park?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 34,
+                "value": "last February",
+                "entity": "timeRange"
+            },
+            {
+                "start": 38,
+                "end": 72,
+                "value": "William A. Switzer Provincial Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Is it warm at the current location?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "warm",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 18,
+                "end": 34,
+                "value": "current location",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will there be snow in North Abington",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 18,
+                "value": "snow",
+                "entity": "condition_description"
+            },
+            {
+                "start": 22,
+                "end": 36,
+                "value": "North Abington",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for Conda, VT",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 38,
+                "value": "Conda",
+                "entity": "city"
+            },
+            {
+                "start": 40,
+                "end": 42,
+                "value": "VT",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it snow in Granbury?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 8,
+                "end": 12,
+                "value": "snow",
+                "entity": "condition_description"
+            },
+            {
+                "start": 16,
+                "end": 24,
+                "value": "Granbury",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Weather in twenty two seconds within walking distance of the city of Jackman will it be cold",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 8,
+                "end": 29,
+                "value": "in twenty two seconds",
+                "entity": "timeRange"
+            },
+            {
+                "start": 30,
+                "end": 53,
+                "value": "within walking distance",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 69,
+                "end": 76,
+                "value": "Jackman",
+                "entity": "city"
+            },
+            {
+                "start": 88,
+                "end": 92,
+                "value": "cold",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "When will it be warmer in Benin",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 22,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 26,
+                "end": 31,
+                "value": "Benin",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "forecast for Conrad",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 13,
+                "end": 19,
+                "value": "Conrad",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hotter in Cale?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 25,
+                "value": "Cale",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Weather in Park Layne",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 21,
+                "value": "Park Layne",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for California on august the 13th, 2019?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 43,
+                "value": "California",
+                "entity": "state"
+            },
+            {
+                "start": 47,
+                "end": 68,
+                "value": "august the 13th, 2019",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for temperate weather in 5 weeks at Daisy Lake Uplands Provincial Park",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 34,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 43,
+                "end": 53,
+                "value": "in 5 weeks",
+                "entity": "timeRange"
+            },
+            {
+                "start": 57,
+                "end": 91,
+                "value": "Daisy Lake Uplands Provincial Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hot in 1 minute in Massachusetts",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 14,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 15,
+                "end": 26,
+                "value": "in 1 minute",
+                "entity": "timeRange"
+            },
+            {
+                "start": 30,
+                "end": 43,
+                "value": "Massachusetts",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "I want to book a restaurant in Neshanic Station Nigeria for 06:18:13 pm",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 31,
+                "end": 47,
+                "value": "Neshanic Station",
+                "entity": "city"
+            },
+            {
+                "start": 48,
+                "end": 55,
+                "value": "Nigeria",
+                "entity": "country"
+            },
+            {
+                "start": 60,
+                "end": 71,
+                "value": "06:18:13 pm",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will it be windy in NM?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "windy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 22,
+                "value": "NM",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be colder in Gost Creek HI on jul. 21st, 2020",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 31,
+                "value": "Gost Creek",
+                "entity": "city"
+            },
+            {
+                "start": 32,
+                "end": 34,
+                "value": "HI",
+                "entity": "state"
+            },
+            {
+                "start": 38,
+                "end": 53,
+                "value": "jul. 21st, 2020",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is th weather going to be like mar. the twenty-third in the city of Value",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 36,
+                "end": 57,
+                "value": "mar. the twenty-third",
+                "entity": "timeRange"
+            },
+            {
+                "start": 73,
+                "end": 78,
+                "value": "Value",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Tell me when sunrise is in Tennessee",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 13,
+                "end": 20,
+                "value": "sunrise",
+                "entity": "timeRange"
+            },
+            {
+                "start": 27,
+                "end": 36,
+                "value": "Tennessee",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather like in Newton",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 34,
+                "value": "Newton",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "how's the weather in Baywood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 28,
+                "value": "Baywood",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Is it going to be overcast today in Guyana",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 18,
+                "end": 26,
+                "value": "overcast",
+                "entity": "condition_description"
+            },
+            {
+                "start": 36,
+                "end": 42,
+                "value": "Guyana",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be colder in Oaklawn Zambia?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 28,
+                "value": "Oaklawn",
+                "entity": "city"
+            },
+            {
+                "start": 29,
+                "end": 35,
+                "value": "Zambia",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What kind of weather will be in TN a week from now ?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 32,
+                "end": 34,
+                "value": "TN",
+                "entity": "state"
+            },
+            {
+                "start": 35,
+                "end": 50,
+                "value": "a week from now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Weather on Jul. 23 in Rhode Island",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 18,
+                "value": "Jul. 23",
+                "entity": "timeRange"
+            },
+            {
+                "start": 22,
+                "end": 34,
+                "value": "Rhode Island",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hotter at my current place at 02:22:32 pm",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 24,
+                "end": 37,
+                "value": "current place",
+                "entity": "current_location"
+            },
+            {
+                "start": 41,
+                "end": 52,
+                "value": "02:22:32 pm",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Is the weather chillier in Hubbardston",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 15,
+                "end": 23,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 27,
+                "end": 38,
+                "value": "Hubbardston",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it hail on July 20, 2027 in Ingalls, Malta",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 8,
+                "end": 12,
+                "value": "hail",
+                "entity": "condition_description"
+            },
+            {
+                "start": 16,
+                "end": 29,
+                "value": "July 20, 2027",
+                "entity": "timeRange"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "Ingalls",
+                "entity": "city"
+            },
+            {
+                "start": 42,
+                "end": 47,
+                "value": "Malta",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be warm in Jenners Kansas?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "warm",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 19,
+                "end": 26,
+                "value": "Jenners",
+                "entity": "city"
+            },
+            {
+                "start": 27,
+                "end": 33,
+                "value": "Kansas",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Rwanda?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 34,
+                "value": "Rwanda",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in the Black Bayou Lake National Wildlife Refuge?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 32,
+                "end": 73,
+                "value": "Black Bayou Lake National Wildlife Refuge",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "How will be the weather in U.S. Minor Outlying Islands on Jul. 17?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 27,
+                "end": 54,
+                "value": "U.S. Minor Outlying Islands",
+                "entity": "country"
+            },
+            {
+                "start": 58,
+                "end": 65,
+                "value": "Jul. 17",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hotter on the Isle of Man at lunch?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 25,
+                "end": 36,
+                "value": "Isle of Man",
+                "entity": "country"
+            },
+            {
+                "start": 40,
+                "end": 45,
+                "value": "lunch",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "how's the forecast for my current spot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 26,
+                "end": 38,
+                "value": "current spot",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will there be wind in Anguilla?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 18,
+                "value": "wind",
+                "entity": "condition_description"
+            },
+            {
+                "start": 22,
+                "end": 30,
+                "value": "Anguilla",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast starting on september 1, 2039 for chillier conditions in AK",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 50,
+                "value": "september 1, 2039",
+                "entity": "timeRange"
+            },
+            {
+                "start": 55,
+                "end": 63,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 78,
+                "end": 80,
+                "value": "AK",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in a week  near Unionville Center?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 35,
+                "value": "in a week ",
+                "entity": "timeRange"
+            },
+            {
+                "start": 36,
+                "end": 40,
+                "value": "near",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 41,
+                "end": 58,
+                "value": "Unionville Center",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Tell me when it will blizzard in Estes Park, Utah",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 21,
+                "end": 29,
+                "value": "blizzard",
+                "entity": "condition_description"
+            },
+            {
+                "start": 33,
+                "end": 43,
+                "value": "Estes Park",
+                "entity": "city"
+            },
+            {
+                "start": 45,
+                "end": 49,
+                "value": "Utah",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "how is the overcast condition to start in one minute in Lower Marlboro in Montserrat",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "overcast",
+                "entity": "condition_description"
+            },
+            {
+                "start": 39,
+                "end": 52,
+                "value": "in one minute",
+                "entity": "timeRange"
+            },
+            {
+                "start": 56,
+                "end": 70,
+                "value": "Lower Marlboro",
+                "entity": "city"
+            },
+            {
+                "start": 74,
+                "end": 84,
+                "value": "Montserrat",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Give me the weather forecast for Svalbard and Jan Mayen",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 55,
+                "value": "Svalbard and Jan Mayen",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for HI",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 35,
+                "value": "HI",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "is Saint Robert hotter than Turkmenistan",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 3,
+                "end": 15,
+                "value": "Saint Robert",
+                "entity": "city"
+            },
+            {
+                "start": 16,
+                "end": 22,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 28,
+                "end": 40,
+                "value": "Turkmenistan",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Midnight in DC?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 41,
+                "value": "Midnight",
+                "entity": "timeRange"
+            },
+            {
+                "start": 45,
+                "end": 47,
+                "value": "DC",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "weather close-by Lone Elk County Park at 4 am",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 8,
+                "end": 16,
+                "value": "close-by",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 17,
+                "end": 37,
+                "value": "Lone Elk County Park",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 41,
+                "end": 45,
+                "value": "4 am",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "what is the sunny condition outlook for Dundas Valley Conservation Area",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 12,
+                "end": 17,
+                "value": "sunny",
+                "entity": "condition_description"
+            },
+            {
+                "start": 40,
+                "end": 71,
+                "value": "Dundas Valley Conservation Area",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be freezing not far from the Currant Mountain Wilderness?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 20,
+                "end": 27,
+                "value": "not far",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 37,
+                "end": 64,
+                "value": "Currant Mountain Wilderness",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Manassa?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 40,
+                "value": "Manassa",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Douglas State Forest for snowy weather",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 45,
+                "value": "Douglas State Forest",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 50,
+                "end": 55,
+                "value": "snowy",
+                "entity": "condition_description"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Koszta",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 39,
+                "value": "Koszta",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather like in Wakarusa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 36,
+                "value": "Wakarusa",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "will it be cloudy 241 days from now in South Korea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "cloudy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 18,
+                "end": 35,
+                "value": "241 days from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 39,
+                "end": 50,
+                "value": "South Korea",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hot in the current place two hundred fourteen days from now?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 14,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 22,
+                "end": 35,
+                "value": "current place",
+                "entity": "current_location"
+            },
+            {
+                "start": 36,
+                "end": 70,
+                "value": "two hundred fourteen days from now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Starting in one minute, please give me a hourly update as to whether it is foggy in Hallsville, Wallis and Futuna",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 9,
+                "end": 22,
+                "value": "in one minute",
+                "entity": "timeRange"
+            },
+            {
+                "start": 75,
+                "end": 80,
+                "value": "foggy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 84,
+                "end": 94,
+                "value": "Hallsville",
+                "entity": "city"
+            },
+            {
+                "start": 96,
+                "end": 113,
+                "value": "Wallis and Futuna",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Tell me when Sunset is in New Jersey",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 13,
+                "end": 19,
+                "value": "Sunset",
+                "entity": "timeRange"
+            },
+            {
+                "start": 26,
+                "end": 36,
+                "value": "New Jersey",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast for Laos",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 37,
+                "value": "Laos",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in Almota?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "value": "Almota",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will there be wind in the District Of Columbia?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 18,
+                "value": "wind",
+                "entity": "condition_description"
+            },
+            {
+                "start": 26,
+                "end": 46,
+                "value": "District Of Columbia",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in the Iñao National Park and Integrated Management Natural Area?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 32,
+                "end": 90,
+                "value": "Iñao National Park and Integrated Management Natural Area",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in the current place?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 26,
+                "end": 39,
+                "value": "current place",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather forecast nearby here",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 29,
+                "end": 35,
+                "value": "nearby",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 36,
+                "end": 40,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "I need the weather for Laos",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "value": "Laos",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "Will it be warmer in Flag?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 25,
+                "value": "Flag",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "I need the weather close-by in MS",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 19,
+                "end": 27,
+                "value": "close-by",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 31,
+                "end": 33,
+                "value": "MS",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be hot in the current place?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 14,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 22,
+                "end": 35,
+                "value": "current place",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "I need the weather for 7/13/2036 in Gwynedd Valley",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 23,
+                "end": 32,
+                "value": "7/13/2036",
+                "entity": "timeRange"
+            },
+            {
+                "start": 36,
+                "end": 50,
+                "value": "Gwynedd Valley",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be a nine in Willow River State Park?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 27,
+                "end": 31,
+                "value": "nine",
+                "entity": "timeRange"
+            },
+            {
+                "start": 35,
+                "end": 58,
+                "value": "Willow River State Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be humid at the current location one minute from now?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "humid",
+                "entity": "condition_description"
+            },
+            {
+                "start": 24,
+                "end": 40,
+                "value": "current location",
+                "entity": "current_location"
+            },
+            {
+                "start": 41,
+                "end": 60,
+                "value": "one minute from now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Tell me if there will be sun in the afternoon in NH",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 28,
+                "value": "sun",
+                "entity": "condition_description"
+            },
+            {
+                "start": 36,
+                "end": 45,
+                "value": "afternoon",
+                "entity": "timeRange"
+            },
+            {
+                "start": 49,
+                "end": 51,
+                "value": "NH",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "When will it be hotter this year in Lake Linden, Arizona",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 22,
+                "value": "hotter",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 23,
+                "end": 32,
+                "value": "this year",
+                "entity": "timeRange"
+            },
+            {
+                "start": 36,
+                "end": 47,
+                "value": "Lake Linden",
+                "entity": "city"
+            },
+            {
+                "start": 49,
+                "end": 56,
+                "value": "Arizona",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for California for rain",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 35,
+                "value": "California",
+                "entity": "state"
+            },
+            {
+                "start": 40,
+                "end": 44,
+                "value": "rain",
+                "entity": "condition_description"
+            }
+        ]
+    },
+    {
+        "text": "Weather at Bystrzyca Valley Landscape Park",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 42,
+                "value": "Bystrzyca Valley Landscape Park",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "Will it be sunny at three pm in my current position",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "sunny",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 28,
+                "value": "three pm",
+                "entity": "timeRange"
+            },
+            {
+                "start": 35,
+                "end": 51,
+                "value": "current position",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Will it be cold here in one hour?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 16,
+                "end": 20,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 21,
+                "end": 32,
+                "value": "in one hour",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "How's the forecast for VI",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 23,
+                "end": 25,
+                "value": "VI",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for here and for nearby",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 29,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 38,
+                "end": 44,
+                "value": "nearby",
+                "entity": "spatial_relation"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Tontitown?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 37,
+                "value": "Tontitown",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather now nearby Petit Manan National Wildlife Refuge?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 23,
+                "value": "now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 24,
+                "end": 30,
+                "value": "nearby",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 31,
+                "end": 67,
+                "value": "Petit Manan National Wildlife Refuge",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Deer River?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 38,
+                "value": "Deer River",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Please check the weather forecast near supper time here.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 34,
+                "end": 38,
+                "value": "near",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 39,
+                "end": 45,
+                "value": "supper",
+                "entity": "timeRange"
+            },
+            {
+                "start": 51,
+                "end": 55,
+                "value": "here",
+                "entity": "current_location"
+            }
+        ]
+    },
+    {
+        "text": "Tell me when it will be temperate at Carl's Corner, in NV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 24,
+                "end": 33,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 37,
+                "end": 50,
+                "value": "Carl's Corner",
+                "entity": "city"
+            },
+            {
+                "start": 55,
+                "end": 57,
+                "value": "NV",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Carlock on nov. the 9th?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 35,
+                "value": "Carlock",
+                "entity": "city"
+            },
+            {
+                "start": 39,
+                "end": 51,
+                "value": "nov. the 9th",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for 1 month from now in Wilkesboro",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 49,
+                "value": "1 month from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 53,
+                "end": 63,
+                "value": "Wilkesboro",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "weather in Hillsview MA",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 20,
+                "value": "Hillsview",
+                "entity": "city"
+            },
+            {
+                "start": 21,
+                "end": 23,
+                "value": "MA",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be three hours from now within walking distance of Okanogan National Forest?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 45,
+                "value": "three hours from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 46,
+                "end": 69,
+                "value": "within walking distance",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 73,
+                "end": 97,
+                "value": "Okanogan National Forest",
+                "entity": "geographic_poi"
+            }
+        ]
+    },
+    {
+        "text": "What is the cloud condition here for June fifteenth, 2026",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 12,
+                "end": 17,
+                "value": "cloud",
+                "entity": "condition_description"
+            },
+            {
+                "start": 28,
+                "end": 32,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 37,
+                "end": 57,
+                "value": "June fifteenth, 2026",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Berville AK on Feb. 6, 2017?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 36,
+                "value": "Berville",
+                "entity": "city"
+            },
+            {
+                "start": 37,
+                "end": 39,
+                "value": "AK",
+                "entity": "state"
+            },
+            {
+                "start": 43,
+                "end": 55,
+                "value": "Feb. 6, 2017",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Weather in Cairngorms-Nationalpark close from freezing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 34,
+                "value": "Cairngorms-Nationalpark",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 35,
+                "end": 45,
+                "value": "close from",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 46,
+                "end": 54,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "Will it be colder in Postelle at 10:31 a.m.?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 17,
+                "value": "colder",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 21,
+                "end": 29,
+                "value": "Postelle",
+                "entity": "city"
+            },
+            {
+                "start": 33,
+                "end": 43,
+                "value": "10:31 a.m.",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "How hot is it in Hackamore",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 4,
+                "end": 7,
+                "value": "hot",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 17,
+                "end": 26,
+                "value": "Hackamore",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "is it freezing in Prompton",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 6,
+                "end": 14,
+                "value": "freezing",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 18,
+                "end": 26,
+                "value": "Prompton",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Weather at Navajo National Monument on fri.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 35,
+                "value": "Navajo National Monument",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 39,
+                "end": 43,
+                "value": "fri.",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will it be chillier in Uruguay in 213 days?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 19,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 23,
+                "end": 30,
+                "value": "Uruguay",
+                "entity": "country"
+            },
+            {
+                "start": 31,
+                "end": 42,
+                "value": "in 213 days",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will there be a blizzard in Guadeloupe?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 16,
+                "end": 24,
+                "value": "blizzard",
+                "entity": "condition_description"
+            },
+            {
+                "start": 28,
+                "end": 38,
+                "value": "Guadeloupe",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "is it going ot be chillier in Maumee",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 18,
+                "end": 26,
+                "value": "chillier",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 30,
+                "end": 36,
+                "value": "Maumee",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "I want to eat in Rowan Bay on a nice cloud less day",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 17,
+                "end": 26,
+                "value": "Rowan Bay",
+                "entity": "city"
+            },
+            {
+                "start": 37,
+                "end": 42,
+                "value": "cloud",
+                "entity": "condition_description"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be here on January twenty-first, 2029?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 29,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 33,
+                "end": 59,
+                "value": "January twenty-first, 2029",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What is the weather like in Wyatte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 34,
+                "value": "Wyatte",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What will the humidity be here this week?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 14,
+                "end": 22,
+                "value": "humidity",
+                "entity": "condition_description"
+            },
+            {
+                "start": 26,
+                "end": 30,
+                "value": "here",
+                "entity": "current_location"
+            },
+            {
+                "start": 31,
+                "end": 40,
+                "value": "this week",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will it still be warm nineteen hours from now in PA",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "value": "warm",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 22,
+                "end": 45,
+                "value": "nineteen hours from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 49,
+                "end": 51,
+                "value": "PA",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "is Morley Nelson Snake River Birds of Prey National Conservation Area going to be cold 1 second from now",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 3,
+                "end": 69,
+                "value": "Morley Nelson Snake River Birds of Prey National Conservation Area",
+                "entity": "geographic_poi"
+            },
+            {
+                "start": 82,
+                "end": 86,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 87,
+                "end": 104,
+                "value": "1 second from now",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in 3 years  in Eros NC?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 36,
+                "value": "in 3 years ",
+                "entity": "timeRange"
+            },
+            {
+                "start": 40,
+                "end": 44,
+                "value": "Eros",
+                "entity": "city"
+            },
+            {
+                "start": 45,
+                "end": 47,
+                "value": "NC",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "Will it be snowy at 04:43 a.m. in North Carolina",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 16,
+                "value": "snowy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 20,
+                "end": 30,
+                "value": "04:43 a.m.",
+                "entity": "timeRange"
+            },
+            {
+                "start": 34,
+                "end": 48,
+                "value": "North Carolina",
+                "entity": "state"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Gambier",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 32,
+                "value": "Gambier",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "What kind of temperate will be in Slade?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 13,
+                "end": 22,
+                "value": "temperate",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 34,
+                "end": 39,
+                "value": "Slade",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "what is the forecast for Sea Isle City in Louisiana for warmer weather",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 25,
+                "end": 38,
+                "value": "Sea Isle City",
+                "entity": "city"
+            },
+            {
+                "start": 42,
+                "end": 51,
+                "value": "Louisiana",
+                "entity": "state"
+            },
+            {
+                "start": 56,
+                "end": 62,
+                "value": "warmer",
+                "entity": "condition_temperature"
+            }
+        ]
+    },
+    {
+        "text": "Tell me the weather forecast for Island Mountain",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 33,
+                "end": 48,
+                "value": "Island Mountain",
+                "entity": "city"
+            }
+        ]
+    },
+    {
+        "text": "Will it be cold neighboring Antlers on aug. 22?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 11,
+                "end": 15,
+                "value": "cold",
+                "entity": "condition_temperature"
+            },
+            {
+                "start": 16,
+                "end": 27,
+                "value": "neighboring",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 28,
+                "end": 35,
+                "value": "Antlers",
+                "entity": "city"
+            },
+            {
+                "start": 39,
+                "end": 46,
+                "value": "aug. 22",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "Will the weather be foggy in Vatican West Carson in 1 hour and one minute?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 20,
+                "end": 25,
+                "value": "foggy",
+                "entity": "condition_description"
+            },
+            {
+                "start": 29,
+                "end": 36,
+                "value": "Vatican",
+                "entity": "country"
+            },
+            {
+                "start": 37,
+                "end": 48,
+                "value": "West Carson",
+                "entity": "city"
+            },
+            {
+                "start": 49,
+                "end": 73,
+                "value": "in 1 hour and one minute",
+                "entity": "timeRange"
+            }
+        ]
+    },
+    {
+        "text": "What's the weather in New Zealand?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 22,
+                "end": 33,
+                "value": "New Zealand",
+                "entity": "country"
+            }
+        ]
+    },
+    {
+        "text": "What will the weather be in Montserrat?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "GetWeather"
+            },
+            {
+                "start": 28,
+                "end": 38,
+                "value": "Montserrat",
+                "entity": "country"
+            }
+        ]
+    }
+]
