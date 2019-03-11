@@ -1,0 +1,2540 @@
+[
+    {
+        "text": "I'd like to have this track onto my Classical Relaxations playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 22,
+                "end": 27,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 33,
+                "end": 35,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 36,
+                "end": 57,
+                "value": "Classical Relaxations",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the album to my Flow Español playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 17,
+                "end": 19,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 20,
+                "end": 33,
+                "value": "Flow Español",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add digging now to my Young at Heart playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 15,
+                "value": "digging now",
+                "entity": "playlist"
+            },
+            {
+                "start": 19,
+                "end": 21,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 22,
+                "end": 36,
+                "value": "Young at Heart",
+                "entity": "entity_name"
+            }
+        ]
+    },
+    {
+        "text": "add this song by Too Poetic to my Piano Ballads playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 13,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 17,
+                "end": 27,
+                "value": "Too Poetic",
+                "entity": "artist"
+            },
+            {
+                "start": 31,
+                "end": 33,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 34,
+                "end": 47,
+                "value": "Piano Ballads",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add this album to Old School Death Metal",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 18,
+                "end": 40,
+                "value": "Old School Death Metal",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "I need to add baro ferret to the Urban Hits under my name",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 14,
+                "end": 25,
+                "value": "baro ferret",
+                "entity": "artist"
+            },
+            {
+                "start": 33,
+                "end": 43,
+                "value": "Urban Hits",
+                "entity": "playlist"
+            },
+            {
+                "start": 50,
+                "end": 52,
+                "value": "my",
+                "entity": "playlist_owner"
+            }
+        ]
+    },
+    {
+        "text": "Add the album to the Might and Myth Power Metal playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 21,
+                "end": 47,
+                "value": "Might and Myth Power Metal",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "To the travelling playlist, please add this David Gahan song.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 7,
+                "end": 17,
+                "value": "travelling",
+                "entity": "playlist"
+            },
+            {
+                "start": 44,
+                "end": 55,
+                "value": "David Gahan",
+                "entity": "artist"
+            },
+            {
+                "start": 56,
+                "end": 60,
+                "value": "song",
+                "entity": "music_item"
+            }
+        ]
+    },
+    {
+        "text": "Please add some Pete Townshend to my playlist Fiesta Hits con Lali",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 16,
+                "end": 30,
+                "value": "Pete Townshend",
+                "entity": "artist"
+            },
+            {
+                "start": 34,
+                "end": 36,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 46,
+                "end": 66,
+                "value": "Fiesta Hits con Lali",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "I'd like for Kasey Chambers's tune to be an addition to my Chips and Salsa playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 13,
+                "end": 27,
+                "value": "Kasey Chambers",
+                "entity": "artist"
+            },
+            {
+                "start": 30,
+                "end": 34,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 56,
+                "end": 58,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 59,
+                "end": 74,
+                "value": "Chips and Salsa",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Recalled to Life to This Is Alejandro Fernández",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 20,
+                "value": "Recalled to Life",
+                "entity": "entity_name"
+            },
+            {
+                "start": 24,
+                "end": 52,
+                "value": "This Is Alejandro Fernández",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add nuba to my Metal Party playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 8,
+                "value": "nuba",
+                "entity": "entity_name"
+            },
+            {
+                "start": 12,
+                "end": 14,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 15,
+                "end": 26,
+                "value": "Metal Party",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add jo stafford music to the workout twerkout playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 15,
+                "value": "jo stafford",
+                "entity": "artist"
+            },
+            {
+                "start": 29,
+                "end": 45,
+                "value": "workout twerkout",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Put Jean Philippe Goncalves onto my running to rock 170 to 190 bpm.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 27,
+                "value": "Jean Philippe Goncalves",
+                "entity": "artist"
+            },
+            {
+                "start": 33,
+                "end": 35,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 36,
+                "end": 66,
+                "value": "running to rock 170 to 190 bpm",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the song virales de siempre by the cary brothers to my gym playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 12,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 13,
+                "end": 31,
+                "value": "virales de siempre",
+                "entity": "playlist"
+            },
+            {
+                "start": 39,
+                "end": 52,
+                "value": "cary brothers",
+                "entity": "artist"
+            },
+            {
+                "start": 56,
+                "end": 58,
+                "value": "my",
+                "entity": "playlist_owner"
+            }
+        ]
+    },
+    {
+        "text": "Onto jerry's Classical Moments in Movies, please add the album.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 5,
+                "end": 12,
+                "value": "jerry's",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 13,
+                "end": 40,
+                "value": "Classical Moments in Movies",
+                "entity": "playlist"
+            },
+            {
+                "start": 57,
+                "end": 62,
+                "value": "album",
+                "entity": "music_item"
+            }
+        ]
+    },
+    {
+        "text": "add Beyond the Valley of 1984 in playlist Folk Music At The Gaslight Café",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 29,
+                "value": "Beyond the Valley of 1984",
+                "entity": "entity_name"
+            },
+            {
+                "start": 42,
+                "end": 74,
+                "value": "Folk Music At The Gaslight Café",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Jerry Calliste, Jr to my Te quiero playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 22,
+                "value": "Jerry Calliste, Jr",
+                "entity": "artist"
+            },
+            {
+                "start": 26,
+                "end": 28,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 29,
+                "end": 38,
+                "value": "Te quiero",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add porter wagoner to the The Sleep Machine Waterscapes playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 18,
+                "value": "porter wagoner",
+                "entity": "artist"
+            },
+            {
+                "start": 26,
+                "end": 55,
+                "value": "The Sleep Machine Waterscapes",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the artist mike to the Sexy as Folk playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 14,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 15,
+                "end": 19,
+                "value": "mike",
+                "entity": "artist"
+            },
+            {
+                "start": 27,
+                "end": 39,
+                "value": "Sexy as Folk",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Brazilian Flag Anthem to Top 100 Alternative Tracks on Spotify",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 25,
+                "value": "Brazilian Flag Anthem",
+                "entity": "entity_name"
+            },
+            {
+                "start": 29,
+                "end": 66,
+                "value": "Top 100 Alternative Tracks on Spotify",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Andy Hunter to my Evening Commute playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 15,
+                "value": "Andy Hunter",
+                "entity": "artist"
+            },
+            {
+                "start": 19,
+                "end": 21,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 22,
+                "end": 37,
+                "value": "Evening Commute",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Put petar georgiev kalica onto the Old School Hip Hop playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 25,
+                "value": "petar georgiev kalica",
+                "entity": "artist"
+            },
+            {
+                "start": 35,
+                "end": 53,
+                "value": "Old School Hip Hop",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Can you add Larry Heard to my laundry playlist?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 12,
+                "end": 23,
+                "value": "Larry Heard",
+                "entity": "artist"
+            },
+            {
+                "start": 27,
+                "end": 29,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 30,
+                "end": 37,
+                "value": "laundry",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Put Vandemataram Srinivas's track onto HipHop Hot 50.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 25,
+                "value": "Vandemataram Srinivas",
+                "entity": "artist"
+            },
+            {
+                "start": 28,
+                "end": 33,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 39,
+                "end": 52,
+                "value": "HipHop Hot 50",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add millie corretjer to the rhythm playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 20,
+                "value": "millie corretjer",
+                "entity": "artist"
+            },
+            {
+                "start": 24,
+                "end": 34,
+                "value": "the rhythm",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add give us rest to my 70s Smash Hits playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 16,
+                "value": "give us rest",
+                "entity": "entity_name"
+            },
+            {
+                "start": 20,
+                "end": 22,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 23,
+                "end": 37,
+                "value": "70s Smash Hits",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add this track to my Hands Up playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 21,
+                "end": 29,
+                "value": "Hands Up",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "I'd like for you to add bobby brown to my enamorándose playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 24,
+                "end": 35,
+                "value": "bobby brown",
+                "entity": "artist"
+            },
+            {
+                "start": 39,
+                "end": 41,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 42,
+                "end": 55,
+                "value": "enamorándose",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add Jonathan Sprout album to my this is miranda lambert playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 19,
+                "value": "Jonathan Sprout",
+                "entity": "artist"
+            },
+            {
+                "start": 20,
+                "end": 25,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 29,
+                "end": 31,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 32,
+                "end": 55,
+                "value": "this is miranda lambert",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add ireland in the junior eurovision song contest 2015 to my Jazzy Dinner playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 54,
+                "value": "ireland in the junior eurovision song contest 2015",
+                "entity": "entity_name"
+            },
+            {
+                "start": 58,
+                "end": 60,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 61,
+                "end": 73,
+                "value": "Jazzy Dinner",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the album to the The Sweet Suite playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 21,
+                "end": 36,
+                "value": "The Sweet Suite",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add sarah slean to my playlist Mellowed Out Gaming",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 15,
+                "value": "sarah slean",
+                "entity": "artist"
+            },
+            {
+                "start": 19,
+                "end": 21,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 31,
+                "end": 50,
+                "value": "Mellowed Out Gaming",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add this album to the Spanish Beat playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 22,
+                "end": 34,
+                "value": "Spanish Beat",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add lofty fake anagram to the la mejor música de bso playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 22,
+                "value": "lofty fake anagram",
+                "entity": "entity_name"
+            },
+            {
+                "start": 30,
+                "end": 53,
+                "value": "la mejor música de bso",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the track to the work playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 21,
+                "end": 25,
+                "value": "work",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add a song to this is racionais mc's",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 14,
+                "end": 36,
+                "value": "this is racionais mc's",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add track in my\n playlist called Hands Up",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 9,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 13,
+                "end": 15,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 33,
+                "end": 41,
+                "value": "Hands Up",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Can you put this song from Yutaka Ozaki onto my this is miles davis playlist?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 27,
+                "end": 39,
+                "value": "Yutaka Ozaki",
+                "entity": "artist"
+            },
+            {
+                "start": 45,
+                "end": 47,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 48,
+                "end": 67,
+                "value": "this is miles davis",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add a track to playlist Cena con Amigos",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 6,
+                "end": 11,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 24,
+                "end": 39,
+                "value": "Cena con Amigos",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add The Famous Flower of Serving-Men to my evening acoustic playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 36,
+                "value": "The Famous Flower of Serving-Men",
+                "entity": "entity_name"
+            },
+            {
+                "start": 40,
+                "end": 42,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 43,
+                "end": 59,
+                "value": "evening acoustic",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add a song to Indie Hipster",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 14,
+                "end": 27,
+                "value": "Indie Hipster",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the 40 cal tune to the laundry playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 14,
+                "value": "40 cal",
+                "entity": "artist"
+            },
+            {
+                "start": 15,
+                "end": 19,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 27,
+                "end": 34,
+                "value": "laundry",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the album to my Perfect Concentration playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 17,
+                "end": 19,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 20,
+                "end": 41,
+                "value": "Perfect Concentration",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the Matt Murphy tune to the Flow Español playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 19,
+                "value": "Matt Murphy",
+                "entity": "artist"
+            },
+            {
+                "start": 20,
+                "end": 24,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 32,
+                "end": 45,
+                "value": "Flow Español",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add A Very Cellular Song to masters of metal playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 24,
+                "value": "A Very Cellular Song",
+                "entity": "entity_name"
+            },
+            {
+                "start": 28,
+                "end": 44,
+                "value": "masters of metal",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Can I put this tune onto my sin estrés playlist?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 15,
+                "end": 19,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 25,
+                "end": 27,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 28,
+                "end": 39,
+                "value": "sin estrés",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "I'd like to add jordan rudess onto the Divertido para niños playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 16,
+                "end": 29,
+                "value": "jordan rudess",
+                "entity": "artist"
+            },
+            {
+                "start": 39,
+                "end": 60,
+                "value": "Divertido para niños",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add kent james to the disney soundtrack.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 14,
+                "value": "kent james",
+                "entity": "artist"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "value": "disney",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the artist Adam Deibert to my Perfect Concentration playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 14,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 15,
+                "end": 27,
+                "value": "Adam Deibert",
+                "entity": "artist"
+            },
+            {
+                "start": 31,
+                "end": 33,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 34,
+                "end": 55,
+                "value": "Perfect Concentration",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Can you put the artist Giovanni Giacomo Gastoldi onto the Chill Out Music playlist?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 16,
+                "end": 22,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 23,
+                "end": 48,
+                "value": "Giovanni Giacomo Gastoldi",
+                "entity": "artist"
+            },
+            {
+                "start": 58,
+                "end": 73,
+                "value": "Chill Out Music",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the album to the hot 50 playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 21,
+                "end": 27,
+                "value": "hot 50",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add the artist Pete Murray to my relaxing playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 14,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 15,
+                "end": 26,
+                "value": "Pete Murray",
+                "entity": "artist"
+            },
+            {
+                "start": 30,
+                "end": 32,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 33,
+                "end": 41,
+                "value": "relaxing",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the track to the drum & breaks playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 21,
+                "end": 34,
+                "value": "drum & breaks",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "For my fantastic workout can you add sara bareilles?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 6,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 7,
+                "end": 24,
+                "value": "fantastic workout",
+                "entity": "playlist"
+            },
+            {
+                "start": 37,
+                "end": 51,
+                "value": "sara bareilles",
+                "entity": "artist"
+            }
+        ]
+    },
+    {
+        "text": "Add the boy george track to the Emo Forever playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 18,
+                "value": "boy george",
+                "entity": "artist"
+            },
+            {
+                "start": 19,
+                "end": 24,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 32,
+                "end": 43,
+                "value": "Emo Forever",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Ted Heath to the road trip playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 13,
+                "value": "Ted Heath",
+                "entity": "artist"
+            },
+            {
+                "start": 21,
+                "end": 30,
+                "value": "road trip",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Can you add last of the ghetto astronauts to the playlist called black sabbath the dio years?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 12,
+                "end": 41,
+                "value": "last of the ghetto astronauts",
+                "entity": "entity_name"
+            },
+            {
+                "start": 65,
+                "end": 92,
+                "value": "black sabbath the dio years",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add this artist to Showstopper Being Mary Jane",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 15,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 19,
+                "end": 46,
+                "value": "Showstopper Being Mary Jane",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "put the artist onto Top Latin Alternative.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 14,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 20,
+                "end": 41,
+                "value": "Top Latin Alternative",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Michael Wittig music to Country Icon playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 18,
+                "value": "Michael Wittig",
+                "entity": "artist"
+            },
+            {
+                "start": 28,
+                "end": 40,
+                "value": "Country Icon",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add Highway Patrolman in my playlist this is al green",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 21,
+                "value": "Highway Patrolman",
+                "entity": "entity_name"
+            },
+            {
+                "start": 25,
+                "end": 27,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 37,
+                "end": 53,
+                "value": "this is al green",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Richard McNamara newest song to the Just Smile playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 20,
+                "value": "Richard McNamara",
+                "entity": "artist"
+            },
+            {
+                "start": 28,
+                "end": 32,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 40,
+                "end": 50,
+                "value": "Just Smile",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Annesley Malewana album to playlist indietronic",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 21,
+                "value": "Annesley Malewana",
+                "entity": "artist"
+            },
+            {
+                "start": 22,
+                "end": 27,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 40,
+                "end": 51,
+                "value": "indietronic",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the artist to my dishwashing playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 14,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 21,
+                "end": 32,
+                "value": "dishwashing",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add this artist to fairy tales playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 15,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 19,
+                "end": 30,
+                "value": "fairy tales",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add Muzika za decu to my Crash Course playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 18,
+                "value": "Muzika za decu",
+                "entity": "entity_name"
+            },
+            {
+                "start": 22,
+                "end": 24,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 25,
+                "end": 37,
+                "value": "Crash Course",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add a derek watkins tune to This Is Johnny Cash",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 6,
+                "end": 19,
+                "value": "derek watkins",
+                "entity": "artist"
+            },
+            {
+                "start": 20,
+                "end": 24,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 28,
+                "end": 47,
+                "value": "This Is Johnny Cash",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add our little corner of the world music from gilmore girls to my The Funny Thing About Football Is playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 59,
+                "value": "our little corner of the world music from gilmore girls",
+                "entity": "entity_name"
+            },
+            {
+                "start": 63,
+                "end": 65,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 66,
+                "end": 99,
+                "value": "The Funny Thing About Football Is",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add the current track to my This Is Tchaikovsky playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 16,
+                "end": 21,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 25,
+                "end": 27,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 28,
+                "end": 47,
+                "value": "This Is Tchaikovsky",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Put abe laboriel onto the Escapada playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 16,
+                "value": "abe laboriel",
+                "entity": "artist"
+            },
+            {
+                "start": 26,
+                "end": 34,
+                "value": "Escapada",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add abacab to beryl's party on fridays playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 10,
+                "value": "abacab",
+                "entity": "entity_name"
+            },
+            {
+                "start": 14,
+                "end": 21,
+                "value": "beryl's",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 22,
+                "end": 38,
+                "value": "party on fridays",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Please add this track by Paul McGuigan to the Deep House playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 16,
+                "end": 21,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 25,
+                "end": 38,
+                "value": "Paul McGuigan",
+                "entity": "artist"
+            },
+            {
+                "start": 46,
+                "end": 56,
+                "value": "Deep House",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "can you add the current tune to my Calm before the storm playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 24,
+                "end": 28,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 32,
+                "end": 34,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 35,
+                "end": 56,
+                "value": "Calm before the storm",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Please add The image of you to my playlist Crate Diggers Anonymous",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 11,
+                "end": 27,
+                "value": "The image of you",
+                "entity": "entity_name"
+            },
+            {
+                "start": 31,
+                "end": 33,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 43,
+                "end": 66,
+                "value": "Crate Diggers Anonymous",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add a track to Jazzy Dinner",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 6,
+                "end": 11,
+                "value": "track",
+                "entity": "music_item"
+            },
+            {
+                "start": 15,
+                "end": 27,
+                "value": "Jazzy Dinner",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the album to the Hipster Soul playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 21,
+                "end": 33,
+                "value": "Hipster Soul",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add this tune to my Sleepify playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 13,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 17,
+                "end": 19,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 20,
+                "end": 28,
+                "value": "Sleepify",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add jack white to my playlist This Is Shakira",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 14,
+                "value": "jack white",
+                "entity": "artist"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 30,
+                "end": 45,
+                "value": "This Is Shakira",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add tommy johnson to The MetalSucks Playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 17,
+                "value": "tommy johnson",
+                "entity": "artist"
+            },
+            {
+                "start": 21,
+                "end": 44,
+                "value": "The MetalSucks Playlist",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the chris clark tune to my women of the blues playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 19,
+                "value": "chris clark",
+                "entity": "artist"
+            },
+            {
+                "start": 20,
+                "end": 24,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 28,
+                "end": 30,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 31,
+                "end": 49,
+                "value": "women of the blues",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add an artist to Jukebox Boogie Rhythm & Blues",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 7,
+                "end": 13,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 17,
+                "end": 46,
+                "value": "Jukebox Boogie Rhythm & Blues",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add this artist to my Electronic Bliss playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 15,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 19,
+                "end": 21,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 22,
+                "end": 38,
+                "value": "Electronic Bliss",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "I need to add to my Infinite Indie Folk list the works of Rahim Shah",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 17,
+                "end": 19,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 20,
+                "end": 39,
+                "value": "Infinite Indie Folk",
+                "entity": "playlist"
+            },
+            {
+                "start": 58,
+                "end": 68,
+                "value": "Rahim Shah",
+                "entity": "artist"
+            }
+        ]
+    },
+    {
+        "text": "Add martin barre to my punk unplugged playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 16,
+                "value": "martin barre",
+                "entity": "artist"
+            },
+            {
+                "start": 20,
+                "end": 22,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 23,
+                "end": 37,
+                "value": "punk unplugged",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add tierney sutton to my Novedades Viernes Sudamérica playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 18,
+                "value": "tierney sutton",
+                "entity": "artist"
+            },
+            {
+                "start": 22,
+                "end": 24,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 25,
+                "end": 54,
+                "value": "Novedades Viernes Sudamérica",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add this tune to dorthy's 80's party playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 13,
+                "value": "tune",
+                "entity": "music_item"
+            },
+            {
+                "start": 17,
+                "end": 25,
+                "value": "dorthy's",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 26,
+                "end": 36,
+                "value": "80's party",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "A Very Cellular Song needs to be added to my masters of metal playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 0,
+                "end": 20,
+                "value": "A Very Cellular Song",
+                "entity": "entity_name"
+            },
+            {
+                "start": 42,
+                "end": 44,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 45,
+                "end": 61,
+                "value": "masters of metal",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Toyan to my Epic Gaming playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 9,
+                "value": "Toyan",
+                "entity": "artist"
+            },
+            {
+                "start": 13,
+                "end": 15,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 16,
+                "end": 27,
+                "value": "Epic Gaming",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the song to the Mac 'N Cheese playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 12,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 20,
+                "end": 33,
+                "value": "Mac 'N Cheese",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add this artist to my spotlight on country 2016 playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 9,
+                "end": 15,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 19,
+                "end": 21,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 22,
+                "end": 47,
+                "value": "spotlight on country 2016",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add a song to my playlist madden nfl 16",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 14,
+                "end": 16,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 26,
+                "end": 39,
+                "value": "madden nfl 16",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add emilie autumn to my Nação Reggae playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 17,
+                "value": "emilie autumn",
+                "entity": "artist"
+            },
+            {
+                "start": 21,
+                "end": 23,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 24,
+                "end": 38,
+                "value": "Nação Reggae",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add Farhad Darya songs in virales de siempre",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 16,
+                "value": "Farhad Darya",
+                "entity": "artist"
+            },
+            {
+                "start": 26,
+                "end": 44,
+                "value": "virales de siempre",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add a song in my All Out 60s",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 6,
+                "end": 10,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 14,
+                "end": 16,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 17,
+                "end": 28,
+                "value": "All Out 60s",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add we have a theme song to my House Afterwork playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 24,
+                "value": "we have a theme song",
+                "entity": "entity_name"
+            },
+            {
+                "start": 28,
+                "end": 30,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 31,
+                "end": 46,
+                "value": "House Afterwork",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "add the song to my We Everywhere playlist",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 12,
+                "value": "song",
+                "entity": "music_item"
+            },
+            {
+                "start": 16,
+                "end": 18,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 19,
+                "end": 32,
+                "value": "We Everywhere",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add Roel van Velzen to my party of the century playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 4,
+                "end": 19,
+                "value": "Roel van Velzen",
+                "entity": "artist"
+            },
+            {
+                "start": 23,
+                "end": 25,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 26,
+                "end": 46,
+                "value": "party of the century",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the artist to the political punks playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 14,
+                "value": "artist",
+                "entity": "music_item"
+            },
+            {
+                "start": 22,
+                "end": 37,
+                "value": "political punks",
+                "entity": "playlist"
+            }
+        ]
+    },
+    {
+        "text": "Add the album to my Club Hits playlist.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "AddToPlaylist"
+            },
+            {
+                "start": 8,
+                "end": 13,
+                "value": "album",
+                "entity": "music_item"
+            },
+            {
+                "start": 17,
+                "end": 19,
+                "value": "my",
+                "entity": "playlist_owner"
+            },
+            {
+                "start": 20,
+                "end": 29,
+                "value": "Club Hits",
+                "entity": "playlist"
+            }
+        ]
+    }
+]
