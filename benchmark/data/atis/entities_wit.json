@@ -1,81 +1,239 @@
 [
-  "flight_time",
-  "toloc.country_name",
-  "airline_code",
-  "round_trip",
-  "month_name",
-  "airport_code",
-  "depart_time.start_time",
-  "depart_date.date_relative",
-  "connect",
-  "airline_name",
-  "fare_amount",
-  "toloc.state_name",
-  "arrive_date.day_name",
-  "meal_code",
-  "arrive_time.period_mod",
-  "depart_date.year",
-  "state_code",
-  "arrive_time.start_time",
-  "arrive_date.today_relative",
-  "city_name",
-  "cost_relative",
-  "return_time.period_of_day",
-  "return_date.month_name",
-  "state_name",
-  "stoploc.airport_name",
-  "depart_date.day_name",
-  "toloc.airport_name",
-  "time",
-  "stoploc.city_name",
-  "fromloc.state_name",
-  "day_name",
-  "restriction_code",
-  "fromloc.city_name",
-  "depart_date.day_number",
-  "meal",
-  "return_date.day_name",
-  "depart_time.period_of_day",
-  "return_time.period_mod",
-  "flight_stop",
-  "fare_basis_code",
-  "arrive_date.month_name",
-  "arrive_date.day_number",
-  "return_date.date_relative",
-  "fromloc.state_code",
-  "depart_time.time_relative",
-  "meal_description",
-  "depart_date.today_relative",
-  "depart_time.time",
-  "class_type",
-  "fromloc.airport_code",
-  "time_relative",
-  "return_date.day_number",
-  "economy",
-  "toloc.state_code",
-  "aircraft_code",
-  "transport_type",
-  "flight_number",
-  "return_date.today_relative",
-  "depart_time.period_mod",
-  "arrive_time.period_of_day",
-  "fromloc.airport_name",
-  "depart_date.month_name",
-  "arrive_time.time",
-  "stoploc.state_code",
-  "arrive_time.time_relative",
-  "toloc.city_name",
-  "mod",
-  "flight_mod",
-  "arrive_date.date_relative",
-  "toloc.airport_code",
-  "depart_time.end_time",
-  "arrive_time.end_time",
-  "flight_days",
-  "airport_name",
-  "days_code",
-  "day_number",
-  "period_of_day",
-  "today_relative",
-  "or"
+    {
+        "entity": "fromloc.city_name"
+    },
+    {
+        "entity": "depart_time.time"
+    },
+    {
+        "entity": "toloc.city_name"
+    },
+    {
+        "entity": "arrive_time.time"
+    },
+    {
+        "entity": "arrive_time.period_of_day"
+    },
+    {
+        "entity": "depart_date.day_name"
+    },
+    {
+        "entity": "depart_time.period_of_day"
+    },
+    {
+        "entity": "flight_time"
+    },
+    {
+        "entity": "cost_relative"
+    },
+    {
+        "entity": "round_trip"
+    },
+    {
+        "entity": "fare_amount"
+    },
+    {
+        "entity": "depart_date.today_relative"
+    },
+    {
+        "entity": "city_name"
+    },
+    {
+        "entity": "stoploc.city_name"
+    },
+    {
+        "entity": "toloc.airport_code"
+    },
+    {
+        "entity": "depart_time.time_relative"
+    },
+    {
+        "entity": "class_type"
+    },
+    {
+        "entity": "depart_date.date_relative"
+    },
+    {
+        "entity": "airline_name"
+    },
+    {
+        "entity": "arrive_time.time_relative"
+    },
+    {
+        "entity": "depart_time.start_time"
+    },
+    {
+        "entity": "depart_time.end_time"
+    },
+    {
+        "entity": "fromloc.airport_name"
+    },
+    {
+        "entity": "toloc.state_name"
+    },
+    {
+        "entity": "depart_date.day_number"
+    },
+    {
+        "entity": "depart_date.month_name"
+    },
+    {
+        "entity": "mod"
+    },
+    {
+        "entity": "fare_basis_code"
+    },
+    {
+        "entity": "transport_type"
+    },
+    {
+        "entity": "flight_mod"
+    },
+    {
+        "entity": "arrive_date.month_name"
+    },
+    {
+        "entity": "arrive_date.day_number"
+    },
+    {
+        "entity": "meal"
+    },
+    {
+        "entity": "toloc.state_code"
+    },
+    {
+        "entity": "meal_description"
+    },
+    {
+        "entity": "return_date.month_name"
+    },
+    {
+        "entity": "return_date.day_number"
+    },
+    {
+        "entity": "airline_code"
+    },
+    {
+        "entity": "depart_time.period_mod"
+    },
+    {
+        "entity": "flight_stop"
+    },
+    {
+        "entity": "fromloc.airport_code"
+    },
+    {
+        "entity": "arrive_date.day_name"
+    },
+    {
+        "entity": "time"
+    },
+    {
+        "entity": "or"
+    },
+    {
+        "entity": "economy"
+    },
+    {
+        "entity": "flight_number"
+    },
+    {
+        "entity": "arrive_time.period_mod"
+    },
+    {
+        "entity": "flight_days"
+    },
+    {
+        "entity": "toloc.airport_name"
+    },
+    {
+        "entity": "state_code"
+    },
+    {
+        "entity": "arrive_time.start_time"
+    },
+    {
+        "entity": "arrive_time.end_time"
+    },
+    {
+        "entity": "fromloc.state_name"
+    },
+    {
+        "entity": "arrive_date.date_relative"
+    },
+    {
+        "entity": "depart_date.year"
+    },
+    {
+        "entity": "return_date.date_relative"
+    },
+    {
+        "entity": "airport_code"
+    },
+    {
+        "entity": "aircraft_code"
+    },
+    {
+        "entity": "fromloc.state_code"
+    },
+    {
+        "entity": "connect"
+    },
+    {
+        "entity": "restriction_code"
+    },
+    {
+        "entity": "airport_name"
+    },
+    {
+        "entity": "toloc.country_name"
+    },
+    {
+        "entity": "days_code"
+    },
+    {
+        "entity": "day_name"
+    },
+    {
+        "entity": "period_of_day"
+    },
+    {
+        "entity": "today_relative"
+    },
+    {
+        "entity": "stoploc.state_code"
+    },
+    {
+        "entity": "meal_code"
+    },
+    {
+        "entity": "state_name"
+    },
+    {
+        "entity": "stoploc.airport_name"
+    },
+    {
+        "entity": "arrive_date.today_relative"
+    },
+    {
+        "entity": "time_relative"
+    },
+    {
+        "entity": "return_time.period_of_day"
+    },
+    {
+        "entity": "return_time.period_mod"
+    },
+    {
+        "entity": "month_name"
+    },
+    {
+        "entity": "day_number"
+    },
+    {
+        "entity": "return_date.today_relative"
+    },
+    {
+        "entity": "return_date.day_name"
+    }
 ]
