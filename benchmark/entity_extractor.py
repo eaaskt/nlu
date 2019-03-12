@@ -6,20 +6,17 @@ def extract(input_file, output_file):
     with open(input_file, "r") as fp:
         data = json.load(fp)
 
+    entity_list = []
     entity_set = set()
     for sample in data:
         for i in range(1, len(sample.get("entities"))):
             entity_obj = sample.get("entities")[i]
-            entity_set.add(entity_obj.get("entity"))
-
-    entity_list = list(entity_set)
+            if not entity_set.__contains__(entity_obj.get("entity")):
+                entity_set.add(entity_obj.get("entity"))
+                entity_list.append({'entity': entity_obj.get("entity")})
 
     with open(output_file, "w") as rf:
-        rf.write("[\n")
-        for i in range(0, len(entity_list) - 1):
-            rf.write('  \"' + entity_list[i] + '\"' + ",\n")
-        rf.write('  \"' + entity_list[len(entity_list) - 1] + '\"\n')
-        rf.write("]")
+        json.dump(entity_list, rf, indent=4)
 
 
 if __name__ == '__main__':
