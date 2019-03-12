@@ -46,8 +46,8 @@ def post_entities(input_file):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-                description="Extract entities from sample Wit.ai format",
-                usage="entity_extractor.py <input_file> <output_file>")
+                description="Posts entities to Wit.ai",
+                usage="post_entities.py <config_file> <input_file> <app_name")
     parser.add_argument('config_file', help='Config file')
     parser.add_argument('input_file', help='Input file')
     parser.add_argument('app', help='App to post data to')
