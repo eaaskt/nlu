@@ -9,6 +9,7 @@ url = ''
 TOKEN = ''
 ACCEPTED_SAMPLES_NR = 200
 
+
 def read_config_file(config_file, app_name):
     global url
     global TOKEN
@@ -35,21 +36,22 @@ def post_samples(input_file, failed_file):
     with open(input_file) as inf:
         json_data = json.loads(inf.read())
 
-    samples_to_post = json_data[0:200]
+    samples_to_post = [json_data[0]]
     print(samples_to_post)
 
     failed_list = []
-    for i in range(0, len(json_data)):
+    for i in range(0, int(len(json_data) / 200) + 1):
         upper_limit = i + ACCEPTED_SAMPLES_NR
+        lower_limit = i * ACCEPTED_SAMPLES_NR
         if upper_limit > len(json_data):
             upper_limit = len(json_data) - 1
-        samples_to_post = json_data[i:upper_limit]
+        # samples_to_post = json_data[lower_limit:upper_limit]
 
         try:
             r = requests.post(url, data=json.dumps(samples_to_post), headers=headers)
             print(r.content)
             if r.status_code != 200:
-                failed_list.append(json_data[i:upper_limit])
+                failed_list.append(json_data[lower_limit:upper_limit])
             # wit ai imposes a limit of 200 samples per minute posted, hence the timeout
             time.sleep(60)
         except Exception as e:
