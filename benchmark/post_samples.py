@@ -18,8 +18,10 @@ def read_config_file(config_file, app_name):
     url = config['URL']['post_samples_url']
     if app_name == 'snips':
         TOKEN = config['TOKEN']['snips_token']
-    else:
+    elif app_name == 'atis':
         TOKEN = config['TOKEN']['atis_token']
+    else:
+        TOKEN = config['TOKEN']['test_token']
 
 
 def post_samples(input_file, failed_file):
@@ -39,13 +41,17 @@ def post_samples(input_file, failed_file):
     samples_to_post = [json_data[0]]
     print(samples_to_post)
 
+    for sample in json_data:
+        for entity in sample['entities']:
+            entity['entity'] = str(entity['entity']).replace('.', '_')
+
     failed_list = []
-    for i in range(0, int(len(json_data) / 200) + 1):
-        upper_limit = i + ACCEPTED_SAMPLES_NR
+    for i in range(0, int(len(json_data) / ACCEPTED_SAMPLES_NR) + 1):
         lower_limit = i * ACCEPTED_SAMPLES_NR
+        upper_limit = lower_limit + ACCEPTED_SAMPLES_NR
         if upper_limit > len(json_data):
-            upper_limit = len(json_data) - 1
-        # samples_to_post = json_data[lower_limit:upper_limit]
+            upper_limit = len(json_data)
+        samples_to_post = json_data[lower_limit:upper_limit]
 
         try:
             r = requests.post(url, data=json.dumps(samples_to_post), headers=headers)
