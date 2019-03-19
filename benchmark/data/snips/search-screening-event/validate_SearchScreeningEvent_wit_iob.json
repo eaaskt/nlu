@@ -1,0 +1,3316 @@
+[
+    {
+        "text": "Is Babar: King of the Elephants playing ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 31,
+                "value": "Babar: King of the Elephants",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 1,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Is The Ghost playing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 12,
+                "value": "The Ghost",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 2,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O"
+        ]
+    },
+    {
+        "text": "Is Bartok the Magnificent playing at seven AM?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 25,
+                "value": "Bartok the Magnificent",
+                "entity": "movie_name"
+            },
+            {
+                "start": 37,
+                "end": 45,
+                "value": "seven AM",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 3,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "text": "What's the movie schedule",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 11,
+                "end": 25,
+                "value": "movie schedule",
+                "entity": "object_type"
+            }
+        ],
+        "id": 4,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "i want to see JLA Adventures: Trapped In Time",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 45,
+                "value": "JLA Adventures: Trapped In Time",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 5,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "when is The Fox and the Child playing in this cinema",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 8,
+                "end": 29,
+                "value": "The Fox and the Child",
+                "entity": "movie_name"
+            },
+            {
+                "start": 46,
+                "end": 52,
+                "value": "cinema",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 6,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type"
+        ]
+    },
+    {
+        "text": "show me the schedule for Rat Rod Rockers!",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 40,
+                "value": "Rat Rod Rockers",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 7,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "Is Any Which Way You Can playing in 15 seconds",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 24,
+                "value": "Any Which Way You Can",
+                "entity": "movie_name"
+            },
+            {
+                "start": 33,
+                "end": 46,
+                "value": "in 15 seconds",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 8,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "text": "I want to see The Portrait of a Lady at the nearest cinema.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 36,
+                "value": "The Portrait of a Lady",
+                "entity": "movie_name"
+            },
+            {
+                "start": 44,
+                "end": 51,
+                "value": "nearest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 52,
+                "end": 58,
+                "value": "cinema",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 9,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ]
+    },
+    {
+        "text": "Where can I see The Prime Ministers: The Pioneers",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 16,
+                "end": 49,
+                "value": "The Prime Ministers: The Pioneers",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 10,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "I need to find the movie theatre showing The Crooked Web closest to me",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 19,
+                "end": 32,
+                "value": "movie theatre",
+                "entity": "object_location_type"
+            },
+            {
+                "start": 41,
+                "end": 56,
+                "value": "The Crooked Web",
+                "entity": "movie_name"
+            },
+            {
+                "start": 57,
+                "end": 64,
+                "value": "closest",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 11,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "B-spatial_relation",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "I want to see While the Sun Shines at the closest movie house.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 34,
+                "value": "While the Sun Shines",
+                "entity": "movie_name"
+            },
+            {
+                "start": 42,
+                "end": 49,
+                "value": "closest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 50,
+                "end": 61,
+                "value": "movie house",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 12,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type"
+        ]
+    },
+    {
+        "text": "I want to see Those Kids from Town, when will it be showing?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 34,
+                "value": "Those Kids from Town",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 13,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Find the schedule for The Comedian at Santikos Theatres.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 17,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 22,
+                "end": 34,
+                "value": "The Comedian",
+                "entity": "movie_name"
+            },
+            {
+                "start": 38,
+                "end": 55,
+                "value": "Santikos Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 14,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "What are the movie schedules for my favorite theaters ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 28,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 45,
+                "end": 53,
+                "value": "theaters",
+                "entity": "location_name"
+            }
+        ],
+        "id": 15,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "O",
+            "O",
+            "B-location_name",
+            "O"
+        ]
+    },
+    {
+        "text": "What are the movies showing in the neighbourhood ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 19,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 28,
+                "end": 48,
+                "value": "in the neighbourhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 16,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation",
+            "O"
+        ]
+    },
+    {
+        "text": "Is Without Witness playing twenty two hours from now",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 18,
+                "value": "Without Witness",
+                "entity": "movie_name"
+            },
+            {
+                "start": 27,
+                "end": 52,
+                "value": "twenty two hours from now",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 17,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "text": "I need animated movies in the area for dinner time",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 7,
+                "end": 22,
+                "value": "animated movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 23,
+                "end": 34,
+                "value": "in the area",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 39,
+                "end": 45,
+                "value": "dinner",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 18,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation",
+            "O",
+            "B-timeRange",
+            "O"
+        ]
+    },
+    {
+        "text": "i want to see I Dream of Jeanie in a movie theatre",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 31,
+                "value": "I Dream of Jeanie",
+                "entity": "movie_name"
+            },
+            {
+                "start": 37,
+                "end": 50,
+                "value": "movie theatre",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 19,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-object_location_type",
+            "I-object_location_type"
+        ]
+    },
+    {
+        "text": "Can I see Ellis Island Revisited in 1 minute",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 10,
+                "end": 32,
+                "value": "Ellis Island Revisited",
+                "entity": "movie_name"
+            },
+            {
+                "start": 33,
+                "end": 44,
+                "value": "in 1 minute",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 20,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "text": "I want animated movies at MJR Theatres",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 7,
+                "end": 22,
+                "value": "animated movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 26,
+                "end": 38,
+                "value": "MJR Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 21,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "show me the schedule for The Oblong Box",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 39,
+                "value": "The Oblong Box",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 22,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "I want to know if there are any movies playing in the area.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 32,
+                "end": 38,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 47,
+                "end": 58,
+                "value": "in the area",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 23,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Is What a Wonderful Place showing at Cinemark Theatres",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 25,
+                "value": "What a Wonderful Place",
+                "entity": "movie_name"
+            },
+            {
+                "start": 37,
+                "end": 54,
+                "value": "Cinemark Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 24,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "show the closest movie theatre that shows Boycott",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "closest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 17,
+                "end": 30,
+                "value": "movie theatre",
+                "entity": "object_location_type"
+            },
+            {
+                "start": 42,
+                "end": 49,
+                "value": "Boycott",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 25,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "O",
+            "B-movie_name"
+        ]
+    },
+    {
+        "text": "I want to see DOA: Dead or Alive at Loews Cineplex Entertainment.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 32,
+                "value": "DOA: Dead or Alive",
+                "entity": "movie_name"
+            },
+            {
+                "start": 36,
+                "end": 64,
+                "value": "Loews Cineplex Entertainment",
+                "entity": "location_name"
+            }
+        ],
+        "id": 26,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "is The Nightmare showing six hours from now at the nearest cinema.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 16,
+                "value": "The Nightmare",
+                "entity": "movie_name"
+            },
+            {
+                "start": 25,
+                "end": 43,
+                "value": "six hours from now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 51,
+                "end": 58,
+                "value": "nearest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 59,
+                "end": 65,
+                "value": "cinema",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 27,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ]
+    },
+    {
+        "text": "What is the nearest movie house with Window Connection playing at lunch",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 19,
+                "value": "nearest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 20,
+                "end": 31,
+                "value": "movie house",
+                "entity": "object_location_type"
+            },
+            {
+                "start": 37,
+                "end": 54,
+                "value": "Window Connection",
+                "entity": "movie_name"
+            },
+            {
+                "start": 66,
+                "end": 71,
+                "value": "lunch",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 28,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "text": "Is Patrick Still Lives showing at AMC Theaters",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 22,
+                "value": "Patrick Still Lives",
+                "entity": "movie_name"
+            },
+            {
+                "start": 34,
+                "end": 46,
+                "value": "AMC Theaters",
+                "entity": "location_name"
+            }
+        ],
+        "id": 29,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Fine the movie schedules for the Wanda Group.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 24,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 33,
+                "end": 44,
+                "value": "Wanda Group",
+                "entity": "location_name"
+            }
+        ],
+        "id": 30,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Give me the movie schedule nearby",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 26,
+                "value": "movie schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 27,
+                "end": 33,
+                "value": "nearby",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 31,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation"
+        ]
+    },
+    {
+        "text": "Find the schedule at the Douglas Theatre Company.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 17,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 48,
+                "value": "Douglas Theatre Company",
+                "entity": "location_name"
+            }
+        ],
+        "id": 32,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Show me the movies at Harkins Theatres.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 18,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 22,
+                "end": 38,
+                "value": "Harkins Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 33,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "what movies at Star Theatres.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 11,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 15,
+                "end": 28,
+                "value": "Star Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 34,
+        "seq_labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "I want a movie schedule.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 23,
+                "value": "movie schedule",
+                "entity": "object_type"
+            }
+        ],
+        "id": 35,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Can I get the movie times",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 25,
+                "value": "movie times",
+                "entity": "object_type"
+            }
+        ],
+        "id": 36,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "I want to see Medal for the General",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 35,
+                "value": "Medal for the General",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 37,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "Can I get the times for movies in the neighbourhood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 19,
+                "value": "times",
+                "entity": "object_type"
+            },
+            {
+                "start": 24,
+                "end": 30,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 31,
+                "end": 51,
+                "value": "in the neighbourhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 38,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "May I have the movie schedules for Speakeasy Theaters",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 15,
+                "end": 30,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 35,
+                "end": 53,
+                "value": "Speakeasy Theaters",
+                "entity": "location_name"
+            }
+        ],
+        "id": 39,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Find animated movies close by",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 20,
+                "value": "animated movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 21,
+                "end": 29,
+                "value": "close by",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 40,
+        "seq_labels": [
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Is American Primitive showing in Santikos Theatres",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 21,
+                "value": "American Primitive",
+                "entity": "movie_name"
+            },
+            {
+                "start": 33,
+                "end": 50,
+                "value": "Santikos Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 41,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "what are the movie schedules in the neighborhood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 28,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 29,
+                "end": 48,
+                "value": "in the neighborhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 42,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Check the schedule for Bow Tie Cinemas.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 10,
+                "end": 18,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 23,
+                "end": 38,
+                "value": "Bow Tie Cinemas",
+                "entity": "location_name"
+            }
+        ],
+        "id": 43,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Check the timings for Snowbound at the closest movie theatre.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 22,
+                "end": 31,
+                "value": "Snowbound",
+                "entity": "movie_name"
+            },
+            {
+                "start": 39,
+                "end": 46,
+                "value": "closest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 47,
+                "end": 60,
+                "value": "movie theatre",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 44,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type"
+        ]
+    },
+    {
+        "text": "What are the movie times at Caribbean Cinemas",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 24,
+                "value": "movie times",
+                "entity": "object_type"
+            },
+            {
+                "start": 28,
+                "end": 45,
+                "value": "Caribbean Cinemas",
+                "entity": "location_name"
+            }
+        ],
+        "id": 45,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "I need films in the neighborhood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 7,
+                "end": 12,
+                "value": "films",
+                "entity": "movie_type"
+            },
+            {
+                "start": 13,
+                "end": 32,
+                "value": "in the neighborhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 46,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Show the movie schedules in the neighborhood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 24,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 44,
+                "value": "in the neighborhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 47,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "where's the nearest movie house showing foreign films",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 19,
+                "value": "nearest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 20,
+                "end": 31,
+                "value": "movie house",
+                "entity": "object_location_type"
+            },
+            {
+                "start": 48,
+                "end": 53,
+                "value": "films",
+                "entity": "movie_type"
+            }
+        ],
+        "id": 48,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "O",
+            "B-movie_type"
+        ]
+    },
+    {
+        "text": "What movies are showing now at the closest cinema?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 11,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 24,
+                "end": 27,
+                "value": "now",
+                "entity": "timeRange"
+            },
+            {
+                "start": 35,
+                "end": 42,
+                "value": "closest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 43,
+                "end": 49,
+                "value": "cinema",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 49,
+        "seq_labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ]
+    },
+    {
+        "text": "Is Rumor Has It playing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 15,
+                "value": "Rumor Has It",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 50,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O"
+        ]
+    },
+    {
+        "text": "I need a list of Speakeasy Theaters movie times",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 17,
+                "end": 35,
+                "value": "Speakeasy Theaters",
+                "entity": "location_name"
+            },
+            {
+                "start": 36,
+                "end": 47,
+                "value": "movie times",
+                "entity": "object_type"
+            }
+        ],
+        "id": 51,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "When is The Outer Space Connection playing at the nearest cinema.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 8,
+                "end": 34,
+                "value": "The Outer Space Connection",
+                "entity": "movie_name"
+            },
+            {
+                "start": 50,
+                "end": 57,
+                "value": "nearest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 58,
+                "end": 64,
+                "value": "cinema",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 52,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ]
+    },
+    {
+        "text": "Find the movie times at Harkins Theatres.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 20,
+                "value": "movie times",
+                "entity": "object_type"
+            },
+            {
+                "start": 24,
+                "end": 40,
+                "value": "Harkins Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 53,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Find the films at Century Theatres.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "value": "films",
+                "entity": "movie_type"
+            },
+            {
+                "start": 18,
+                "end": 34,
+                "value": "Century Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 54,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "show the animated movies playing in the neighbourhood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 24,
+                "value": "animated movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 33,
+                "end": 53,
+                "value": "in the neighbourhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 55,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "I want to see Fear Chamber.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 26,
+                "value": "Fear Chamber",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 56,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "Show me Southern Theatres movie times",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 8,
+                "end": 25,
+                "value": "Southern Theatres",
+                "entity": "location_name"
+            },
+            {
+                "start": 26,
+                "end": 37,
+                "value": "movie times",
+                "entity": "object_type"
+            }
+        ],
+        "id": 57,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Is The Unnaturals showing at 13.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 17,
+                "value": "The Unnaturals",
+                "entity": "movie_name"
+            },
+            {
+                "start": 29,
+                "end": 31,
+                "value": "13",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 58,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "text": "Is No Time to Be Young showing at AMC Theaters",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 22,
+                "value": "No Time to Be Young",
+                "entity": "movie_name"
+            },
+            {
+                "start": 34,
+                "end": 46,
+                "value": "AMC Theaters",
+                "entity": "location_name"
+            }
+        ],
+        "id": 59,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Find the movie schedules for Regal Entertainment Group.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 24,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 29,
+                "end": 54,
+                "value": "Regal Entertainment Group",
+                "entity": "location_name"
+            }
+        ],
+        "id": 60,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "I want to see Shattered Image.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 29,
+                "value": "Shattered Image",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 61,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "Find the schedule at Star Theatres.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 17,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 21,
+                "end": 34,
+                "value": "Star Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 62,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Will I Think I Do be playing at 7 PM?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 17,
+                "value": "I Think I Do",
+                "entity": "movie_name"
+            },
+            {
+                "start": 32,
+                "end": 36,
+                "value": "7 PM",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 63,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "text": "Show me the schedule for ArcLight Hollywood for only animated movies",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 43,
+                "value": "ArcLight Hollywood",
+                "entity": "location_name"
+            },
+            {
+                "start": 53,
+                "end": 68,
+                "value": "animated movies",
+                "entity": "movie_type"
+            }
+        ],
+        "id": 64,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type"
+        ]
+    },
+    {
+        "text": "Find the schedule for Great Mail Robbery.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 17,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 22,
+                "end": 40,
+                "value": "Great Mail Robbery",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 65,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "Give me the movies in the neighborhood ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 18,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 19,
+                "end": 38,
+                "value": "in the neighborhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 66,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation",
+            "O"
+        ]
+    },
+    {
+        "text": "What movies are playing close by",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 11,
+                "value": "movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 24,
+                "end": 32,
+                "value": "close by",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 67,
+        "seq_labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Is The Two Gladiators playing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 21,
+                "value": "The Two Gladiators",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 68,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O"
+        ]
+    },
+    {
+        "text": "What's the movie schedule for Great Escape Theatres",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 11,
+                "end": 25,
+                "value": "movie schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 30,
+                "end": 51,
+                "value": "Great Escape Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 69,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Find the movie schedule close by",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 23,
+                "value": "movie schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 24,
+                "end": 32,
+                "value": "close by",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 70,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "I want to see Outcast.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 21,
+                "value": "Outcast",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 71,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name"
+        ]
+    },
+    {
+        "text": "show me the schedule of movie The Great Gildersleeve near movie house",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 20,
+                "value": "schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 30,
+                "end": 52,
+                "value": "The Great Gildersleeve",
+                "entity": "movie_name"
+            },
+            {
+                "start": 58,
+                "end": 69,
+                "value": "movie house",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 72,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-object_location_type",
+            "I-object_location_type"
+        ]
+    },
+    {
+        "text": "I need times for A Yiddish World Remembered at Dipson Theatres",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 7,
+                "end": 12,
+                "value": "times",
+                "entity": "object_type"
+            },
+            {
+                "start": 17,
+                "end": 43,
+                "value": "A Yiddish World Remembered",
+                "entity": "movie_name"
+            },
+            {
+                "start": 47,
+                "end": 62,
+                "value": "Dipson Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 73,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Find the movie schedules at Goodrich Quality Theaters.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 24,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 28,
+                "end": 53,
+                "value": "Goodrich Quality Theaters",
+                "entity": "location_name"
+            }
+        ],
+        "id": 74,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "show me the movie schedule in the neighbourhood ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 26,
+                "value": "movie schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 27,
+                "end": 47,
+                "value": "in the neighbourhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 75,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation",
+            "O"
+        ]
+    },
+    {
+        "text": "show me the movie times for films  nearby",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 12,
+                "end": 23,
+                "value": "movie times",
+                "entity": "object_type"
+            },
+            {
+                "start": 28,
+                "end": 33,
+                "value": "films",
+                "entity": "movie_type"
+            },
+            {
+                "start": 35,
+                "end": 41,
+                "value": "nearby",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 76,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-spatial_relation"
+        ]
+    },
+    {
+        "text": "show the movie times for animated movies in the neighbourhood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 20,
+                "value": "movie times",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 40,
+                "value": "animated movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 41,
+                "end": 61,
+                "value": "in the neighbourhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 77,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Is The Eye – Infinity playing at General Cinema Corporation",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 23,
+                "value": "The Eye – Infinity",
+                "entity": "movie_name"
+            },
+            {
+                "start": 35,
+                "end": 61,
+                "value": "General Cinema Corporation",
+                "entity": "location_name"
+            }
+        ],
+        "id": 78,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Can you check the timings for Super Sweet 16: The Movie?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 30,
+                "end": 55,
+                "value": "Super Sweet 16: The Movie",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 79,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "is We Are Northern Lights playing in any movie theatre",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 25,
+                "value": "We Are Northern Lights",
+                "entity": "movie_name"
+            },
+            {
+                "start": 41,
+                "end": 54,
+                "value": "movie theatre",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 80,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type",
+            "I-object_location_type"
+        ]
+    },
+    {
+        "text": "What times will The Young Swordsman be showing at my cinema?",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 10,
+                "value": "times",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 35,
+                "value": "The Young Swordsman",
+                "entity": "movie_name"
+            },
+            {
+                "start": 53,
+                "end": 59,
+                "value": "cinema",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 81,
+        "seq_labels": [
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type"
+        ]
+    },
+    {
+        "text": "Show the Sexy Dance 2times at the  closest movie house",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 21,
+                "value": "Sexy Dance 2",
+                "entity": "movie_name"
+            },
+            {
+                "start": 21,
+                "end": 26,
+                "value": "times",
+                "entity": "object_type"
+            },
+            {
+                "start": 35,
+                "end": 42,
+                "value": "closest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 43,
+                "end": 54,
+                "value": "movie house",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 82,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type"
+        ]
+    },
+    {
+        "text": "what are some close by animated movies showing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 22,
+                "value": "close by",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 23,
+                "end": 38,
+                "value": "animated movies",
+                "entity": "movie_type"
+            }
+        ],
+        "id": 83,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "B-movie_type",
+            "I-movie_type",
+            "O"
+        ]
+    },
+    {
+        "text": "movie schedules close by for animated movies",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 0,
+                "end": 15,
+                "value": "movie schedules",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 24,
+                "value": "close by",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 29,
+                "end": 44,
+                "value": "animated movies",
+                "entity": "movie_type"
+            }
+        ],
+        "id": 84,
+        "seq_labels": [
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "O",
+            "B-movie_type",
+            "I-movie_type"
+        ]
+    },
+    {
+        "text": "what films are playing close by",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 10,
+                "value": "films",
+                "entity": "movie_type"
+            },
+            {
+                "start": 23,
+                "end": 31,
+                "value": "close by",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 85,
+        "seq_labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Find the movie schedule in the area.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 23,
+                "value": "movie schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 24,
+                "end": 35,
+                "value": "in the area",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 86,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Is Cowboy Canteen playing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 17,
+                "value": "Cowboy Canteen",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 87,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O"
+        ]
+    },
+    {
+        "text": "Is Rare Birds showing at the nearest movie theatre at noon.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 3,
+                "end": 13,
+                "value": "Rare Birds",
+                "entity": "movie_name"
+            },
+            {
+                "start": 29,
+                "end": 36,
+                "value": "nearest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 37,
+                "end": 50,
+                "value": "movie theatre",
+                "entity": "object_location_type"
+            },
+            {
+                "start": 54,
+                "end": 58,
+                "value": "noon",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 88,
+        "seq_labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "text": "What are the movie times",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 24,
+                "value": "movie times",
+                "entity": "object_type"
+            }
+        ],
+        "id": 89,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Where can I find the movie schedules",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 21,
+                "end": 36,
+                "value": "movie schedules",
+                "entity": "object_type"
+            }
+        ],
+        "id": 90,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Find the movie schedule for North American Cinemas in eleven seconds.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 23,
+                "value": "movie schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 28,
+                "end": 50,
+                "value": "North American Cinemas",
+                "entity": "location_name"
+            },
+            {
+                "start": 51,
+                "end": 68,
+                "value": "in eleven seconds",
+                "entity": "timeRange"
+            }
+        ],
+        "id": 91,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "text": "Find the nearest cinema with movies playing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "nearest",
+                "entity": "spatial_relation"
+            },
+            {
+                "start": 17,
+                "end": 23,
+                "value": "cinema",
+                "entity": "object_location_type"
+            },
+            {
+                "start": 29,
+                "end": 35,
+                "value": "movies",
+                "entity": "movie_type"
+            }
+        ],
+        "id": 92,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "O",
+            "B-movie_type",
+            "O"
+        ]
+    },
+    {
+        "text": "what are the movie times",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 24,
+                "value": "movie times",
+                "entity": "object_type"
+            }
+        ],
+        "id": 93,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "what are the times for The Gingerbread Man",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 18,
+                "value": "times",
+                "entity": "object_type"
+            },
+            {
+                "start": 23,
+                "end": 42,
+                "value": "The Gingerbread Man",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 94,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "What films are playing close by",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 5,
+                "end": 10,
+                "value": "films",
+                "entity": "movie_type"
+            },
+            {
+                "start": 23,
+                "end": 31,
+                "value": "close by",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 95,
+        "seq_labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "Is any cinema playing The Spirit of Youth",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 7,
+                "end": 13,
+                "value": "cinema",
+                "entity": "object_location_type"
+            },
+            {
+                "start": 22,
+                "end": 41,
+                "value": "The Spirit of Youth",
+                "entity": "movie_name"
+            }
+        ],
+        "id": 96,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_location_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "What are the movie times for animated movies in the neighbourhood",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 13,
+                "end": 24,
+                "value": "movie times",
+                "entity": "object_type"
+            },
+            {
+                "start": 29,
+                "end": 44,
+                "value": "animated movies",
+                "entity": "movie_type"
+            },
+            {
+                "start": 45,
+                "end": 65,
+                "value": "in the neighbourhood",
+                "entity": "spatial_relation"
+            }
+        ],
+        "id": 97,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "text": "What's the movie schedule at Great Escape Theatres",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 11,
+                "end": 25,
+                "value": "movie schedule",
+                "entity": "object_type"
+            },
+            {
+                "start": 29,
+                "end": 50,
+                "value": "Great Escape Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 98,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "Show the times for Cheers for Miss Bishop at Dipson Theatres.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "value": "times",
+                "entity": "object_type"
+            },
+            {
+                "start": 19,
+                "end": 41,
+                "value": "Cheers for Miss Bishop",
+                "entity": "movie_name"
+            },
+            {
+                "start": 45,
+                "end": 60,
+                "value": "Dipson Theatres",
+                "entity": "location_name"
+            }
+        ],
+        "id": 99,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ]
+    },
+    {
+        "text": "I want to see Married to the Enemy 2 at a cinema.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "SearchScreeningEvent"
+            },
+            {
+                "start": 14,
+                "end": 36,
+                "value": "Married to the Enemy 2",
+                "entity": "movie_name"
+            },
+            {
+                "start": 42,
+                "end": 48,
+                "value": "cinema",
+                "entity": "object_location_type"
+            }
+        ],
+        "id": 100,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-object_location_type"
+        ]
+    }
+]
