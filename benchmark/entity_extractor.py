@@ -3,7 +3,7 @@ import argparse
 
 
 def extract(input_file, output_file):
-    with open(input_file, "r") as fp:
+    with open(input_file, "r",  encoding="latin-1") as fp:
         data = json.load(fp)
 
     entity_list = []
