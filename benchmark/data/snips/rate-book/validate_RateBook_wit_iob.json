@@ -1,0 +1,4210 @@
+[
+    {
+        "text": "rate this album four out of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "album",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 20,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 1,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give this textbook four stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 18,
+                "value": "textbook",
+                "entity": "object_type"
+            },
+            {
+                "start": 19,
+                "end": 23,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 24,
+                "end": 29,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 2,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate A Twist in the Tale zero out of 6 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 24,
+                "value": "A Twist in the Tale",
+                "entity": "object_name"
+            },
+            {
+                "start": 25,
+                "end": 29,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 37,
+                "end": 38,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 39,
+                "end": 45,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 3,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate The children of Niobe 1 out of 6 points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 26,
+                "value": "The children of Niobe",
+                "entity": "object_name"
+            },
+            {
+                "start": 27,
+                "end": 28,
+                "value": "1",
+                "entity": "rating_value"
+            },
+            {
+                "start": 36,
+                "end": 37,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 38,
+                "end": 44,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 4,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give zero stars to Halo: Ghosts of Onyx",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 19,
+                "end": 39,
+                "value": "Halo: Ghosts of Onyx",
+                "entity": "object_name"
+            }
+        ],
+        "id": 5,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "give this novel a score of 5",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 27,
+                "end": 28,
+                "value": "5",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 6,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give the current series four of 6 points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 23,
+                "value": "series",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 24,
+                "end": 28,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 32,
+                "end": 33,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 34,
+                "end": 40,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 7,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give 4 out of 6 points to The Spirit Ring chronicle",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 6,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 14,
+                "end": 15,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 16,
+                "end": 22,
+                "value": "points",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 26,
+                "end": 41,
+                "value": "The Spirit Ring",
+                "entity": "object_name"
+            },
+            {
+                "start": 42,
+                "end": 51,
+                "value": "chronicle",
+                "entity": "object_part_of_series_type"
+            }
+        ],
+        "id": 8,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_part_of_series_type"
+        ]
+    },
+    {
+        "text": "Give two stars out of 6 to 36 Children",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 8,
+                "value": "two",
+                "entity": "rating_value"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 22,
+                "end": 23,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 27,
+                "end": 38,
+                "value": "36 Children",
+                "entity": "object_name"
+            }
+        ],
+        "id": 9,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-best_rating",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Rate The Sneetches and Other Stories a three",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 36,
+                "value": "The Sneetches and Other Stories",
+                "entity": "object_name"
+            },
+            {
+                "start": 39,
+                "end": 44,
+                "value": "three",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 10,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Rate the current series four stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 23,
+                "value": "series",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 24,
+                "end": 28,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 29,
+                "end": 34,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 11,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate this book a 4 out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 14,
+                "value": "book",
+                "entity": "object_type"
+            },
+            {
+                "start": 17,
+                "end": 18,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 26,
+                "end": 27,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 12,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "rate the current novel 5 of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 23,
+                "end": 24,
+                "value": "5",
+                "entity": "rating_value"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 13,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate this book a 1 ",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 14,
+                "value": "book",
+                "entity": "object_type"
+            },
+            {
+                "start": 17,
+                "end": 18,
+                "value": "1",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 14,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value",
+            "O"
+        ]
+    },
+    {
+        "text": "Give zero out of 6 to the current album",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 17,
+                "end": 18,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 26,
+                "end": 33,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 34,
+                "end": 39,
+                "value": "album",
+                "entity": "object_type"
+            }
+        ],
+        "id": 15,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Give this album 5 points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "album",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 17,
+                "value": "5",
+                "entity": "rating_value"
+            },
+            {
+                "start": 18,
+                "end": 24,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 16,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate The Mystery of the Tolling Bell series 4 stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 36,
+                "value": "The Mystery of the Tolling Bell",
+                "entity": "object_name"
+            },
+            {
+                "start": 37,
+                "end": 43,
+                "value": "series",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 44,
+                "end": 45,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 46,
+                "end": 51,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 17,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give the current novel two stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 23,
+                "end": 26,
+                "value": "two",
+                "entity": "rating_value"
+            },
+            {
+                "start": 27,
+                "end": 32,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 18,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give the current book 4 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "value": "book",
+                "entity": "object_type"
+            },
+            {
+                "start": 22,
+                "end": 23,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 24,
+                "end": 29,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 19,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give Joe Magarac and His USA Citizen Papers 5 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 43,
+                "value": "Joe Magarac and His USA Citizen Papers",
+                "entity": "object_name"
+            },
+            {
+                "start": 44,
+                "end": 45,
+                "value": "5",
+                "entity": "rating_value"
+            },
+            {
+                "start": 46,
+                "end": 52,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 20,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate The Guilty 0 of 6 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 15,
+                "value": "The Guilty",
+                "entity": "object_name"
+            },
+            {
+                "start": 16,
+                "end": 17,
+                "value": "0",
+                "entity": "rating_value"
+            },
+            {
+                "start": 21,
+                "end": 22,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 23,
+                "end": 29,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 21,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate this textbook four out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 18,
+                "value": "textbook",
+                "entity": "object_type"
+            },
+            {
+                "start": 19,
+                "end": 23,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 31,
+                "end": 32,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 22,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Give the Catedral series four stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 17,
+                "value": "Catedral",
+                "entity": "object_name"
+            },
+            {
+                "start": 18,
+                "end": 24,
+                "value": "series",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 25,
+                "end": 29,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 23,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_name",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Reminiscences of the Anti-Japanese Guerillas chronicle deserves zero points out of 6 for a rating.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 0,
+                "end": 44,
+                "value": "Reminiscences of the Anti-Japanese Guerillas",
+                "entity": "object_name"
+            },
+            {
+                "start": 45,
+                "end": 54,
+                "value": "chronicle",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 64,
+                "end": 68,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 69,
+                "end": 75,
+                "value": "points",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 83,
+                "end": 84,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 24,
+        "seq_labels": [
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_part_of_series_type",
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-best_rating",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Give Small Screen, Big Picture a 0 out of 6 rating.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 30,
+                "value": "Small Screen, Big Picture",
+                "entity": "object_name"
+            },
+            {
+                "start": 33,
+                "end": 34,
+                "value": "0",
+                "entity": "rating_value"
+            },
+            {
+                "start": 42,
+                "end": 43,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 25,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "O"
+        ]
+    },
+    {
+        "text": "Gods and Pawns should get a three",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 0,
+                "end": 14,
+                "value": "Gods and Pawns",
+                "entity": "object_name"
+            },
+            {
+                "start": 28,
+                "end": 33,
+                "value": "three",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 26,
+        "seq_labels": [
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "O",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give zero stars to this textbook",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 19,
+                "end": 23,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 24,
+                "end": 32,
+                "value": "textbook",
+                "entity": "object_type"
+            }
+        ],
+        "id": 27,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Rate the current novel a 4 out of 6 stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 26,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 34,
+                "end": 35,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 36,
+                "end": 41,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 28,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate the book The Atmospheric Railway 5 out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 13,
+                "value": "book",
+                "entity": "object_type"
+            },
+            {
+                "start": 14,
+                "end": 37,
+                "value": "The Atmospheric Railway",
+                "entity": "object_name"
+            },
+            {
+                "start": 38,
+                "end": 39,
+                "value": "5",
+                "entity": "rating_value"
+            },
+            {
+                "start": 47,
+                "end": 48,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 29,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "rate Black Boy 4 out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 14,
+                "value": "Black Boy",
+                "entity": "object_name"
+            },
+            {
+                "start": 15,
+                "end": 16,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 24,
+                "end": 25,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 30,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Rate the chronicle current 1 star",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 18,
+                "value": "chronicle",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 19,
+                "end": 26,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 27,
+                "end": 28,
+                "value": "1",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 31,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_part_of_series_type",
+            "B-object_select",
+            "B-rating_value",
+            "O"
+        ]
+    },
+    {
+        "text": "mark this album a score of 5",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "album",
+                "entity": "object_type"
+            },
+            {
+                "start": 27,
+                "end": 28,
+                "value": "5",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 32,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "rate the current novel zero out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 35,
+                "end": 36,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 33,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "rate the current novel a 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 25,
+                "end": 26,
+                "value": "2",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 34,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give The Giant Devil Dingo 4 points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 26,
+                "value": "The Giant Devil Dingo",
+                "entity": "object_name"
+            },
+            {
+                "start": 27,
+                "end": 28,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 29,
+                "end": 35,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 35,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate this current novel two out of 6.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 17,
+                "value": "this current",
+                "entity": "object_select"
+            },
+            {
+                "start": 18,
+                "end": 23,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 24,
+                "end": 27,
+                "value": "two",
+                "entity": "rating_value"
+            },
+            {
+                "start": 35,
+                "end": 36,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 36,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "I-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Give Monthly Index of Medical Specialities a two out of 6 rating.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 42,
+                "value": "Monthly Index of Medical Specialities",
+                "entity": "object_name"
+            },
+            {
+                "start": 45,
+                "end": 48,
+                "value": "two",
+                "entity": "rating_value"
+            },
+            {
+                "start": 56,
+                "end": 57,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 37,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "O"
+        ]
+    },
+    {
+        "text": "rate this novel 2 out of 6 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 17,
+                "value": "2",
+                "entity": "rating_value"
+            },
+            {
+                "start": 25,
+                "end": 26,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 27,
+                "end": 33,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 38,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate the current novel 3 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 23,
+                "end": 24,
+                "value": "3",
+                "entity": "rating_value"
+            },
+            {
+                "start": 25,
+                "end": 30,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 39,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate the current essay zero out of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "essay",
+                "entity": "object_type"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 35,
+                "end": 36,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 37,
+                "end": 42,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 40,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate this current album 0 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 17,
+                "value": "this current",
+                "entity": "object_select"
+            },
+            {
+                "start": 18,
+                "end": 23,
+                "value": "album",
+                "entity": "object_type"
+            },
+            {
+                "start": 24,
+                "end": 25,
+                "value": "0",
+                "entity": "rating_value"
+            },
+            {
+                "start": 26,
+                "end": 31,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 41,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "I-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give A Brief Stop on the Road from Auschwitz 1 out of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 44,
+                "value": "A Brief Stop on the Road from Auschwitz",
+                "entity": "object_name"
+            },
+            {
+                "start": 45,
+                "end": 46,
+                "value": "1",
+                "entity": "rating_value"
+            },
+            {
+                "start": 54,
+                "end": 55,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 56,
+                "end": 61,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 42,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate this album 4 out of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "album",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 17,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 25,
+                "end": 26,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 27,
+                "end": 32,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 43,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate Hate That Cat 1 out of 6 stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 18,
+                "value": "Hate That Cat",
+                "entity": "object_name"
+            },
+            {
+                "start": 19,
+                "end": 20,
+                "value": "1",
+                "entity": "rating_value"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 44,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "give my current book one of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 8,
+                "end": 15,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 16,
+                "end": 20,
+                "value": "book",
+                "entity": "object_type"
+            },
+            {
+                "start": 21,
+                "end": 24,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 45,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate current novel one stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 12,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 13,
+                "end": 18,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 19,
+                "end": 22,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 23,
+                "end": 28,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 46,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give five out of 6 points to this album",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "five",
+                "entity": "rating_value"
+            },
+            {
+                "start": 17,
+                "end": 18,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 19,
+                "end": 25,
+                "value": "points",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 29,
+                "end": 33,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 34,
+                "end": 39,
+                "value": "album",
+                "entity": "object_type"
+            }
+        ],
+        "id": 47,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Give a rating of 2 to Juneteenth.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 17,
+                "end": 18,
+                "value": "2",
+                "entity": "rating_value"
+            },
+            {
+                "start": 22,
+                "end": 32,
+                "value": "Juneteenth",
+                "entity": "object_name"
+            }
+        ],
+        "id": 48,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-rating_value",
+            "O",
+            "B-object_name"
+        ]
+    },
+    {
+        "text": "Rate Ruth five out of 6 points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "Ruth",
+                "entity": "object_name"
+            },
+            {
+                "start": 10,
+                "end": 14,
+                "value": "five",
+                "entity": "rating_value"
+            },
+            {
+                "start": 22,
+                "end": 23,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 24,
+                "end": 30,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 49,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate The Sea of Trolls 1 stars out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 22,
+                "value": "The Sea of Trolls",
+                "entity": "object_name"
+            },
+            {
+                "start": 23,
+                "end": 24,
+                "value": "1",
+                "entity": "rating_value"
+            },
+            {
+                "start": 25,
+                "end": 30,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 38,
+                "end": 39,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 50,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "give The Zenith Angle one out of 6 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 21,
+                "value": "The Zenith Angle",
+                "entity": "object_name"
+            },
+            {
+                "start": 22,
+                "end": 25,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 33,
+                "end": 34,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 35,
+                "end": 41,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 51,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give zero stars to Rhialto the Marvellous",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 19,
+                "end": 41,
+                "value": "Rhialto the Marvellous",
+                "entity": "object_name"
+            }
+        ],
+        "id": 52,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "give the current book a zero of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "value": "book",
+                "entity": "object_type"
+            },
+            {
+                "start": 24,
+                "end": 28,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 32,
+                "end": 33,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 53,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "rate Personal Demons 0 out of 6 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 20,
+                "value": "Personal Demons",
+                "entity": "object_name"
+            },
+            {
+                "start": 21,
+                "end": 22,
+                "value": "0",
+                "entity": "rating_value"
+            },
+            {
+                "start": 30,
+                "end": 31,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 32,
+                "end": 38,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 54,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate the current series a 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 23,
+                "value": "series",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 26,
+                "end": 27,
+                "value": "4",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 55,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give one of 6 points to Who Will Cry When You Die",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 8,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 12,
+                "end": 13,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 14,
+                "end": 20,
+                "value": "points",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 24,
+                "end": 49,
+                "value": "Who Will Cry When You Die",
+                "entity": "object_name"
+            }
+        ],
+        "id": 56,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Give zero out of 6 stars to this album",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 17,
+                "end": 18,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 19,
+                "end": 24,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 28,
+                "end": 32,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 33,
+                "end": 38,
+                "value": "album",
+                "entity": "object_type"
+            }
+        ],
+        "id": 57,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Give this novel 2 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 17,
+                "value": "2",
+                "entity": "rating_value"
+            },
+            {
+                "start": 18,
+                "end": 23,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 58,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate The 8-Week Cholesterol Cure three out of 6.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 32,
+                "value": "The 8-Week Cholesterol Cure",
+                "entity": "object_name"
+            },
+            {
+                "start": 33,
+                "end": 38,
+                "value": "three",
+                "entity": "rating_value"
+            },
+            {
+                "start": 46,
+                "end": 47,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 59,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "rate this novel 3 out of 6 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 17,
+                "value": "3",
+                "entity": "rating_value"
+            },
+            {
+                "start": 25,
+                "end": 26,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 27,
+                "end": 33,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 60,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate The Lives of John Lennon five points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 29,
+                "value": "The Lives of John Lennon",
+                "entity": "object_name"
+            },
+            {
+                "start": 30,
+                "end": 34,
+                "value": "five",
+                "entity": "rating_value"
+            },
+            {
+                "start": 35,
+                "end": 41,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 61,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give The American Scene 2 of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 23,
+                "value": "The American Scene",
+                "entity": "object_name"
+            },
+            {
+                "start": 24,
+                "end": 25,
+                "value": "2",
+                "entity": "rating_value"
+            },
+            {
+                "start": 29,
+                "end": 30,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 31,
+                "end": 36,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 62,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate this textbook a one.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 18,
+                "value": "textbook",
+                "entity": "object_type"
+            },
+            {
+                "start": 21,
+                "end": 24,
+                "value": "one",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 63,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give Summer of the Swans 1 points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 24,
+                "value": "Summer of the Swans",
+                "entity": "object_name"
+            },
+            {
+                "start": 25,
+                "end": 26,
+                "value": "1",
+                "entity": "rating_value"
+            },
+            {
+                "start": 27,
+                "end": 33,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 64,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give the current textbook a rating of five.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 25,
+                "value": "textbook",
+                "entity": "object_type"
+            },
+            {
+                "start": 38,
+                "end": 42,
+                "value": "five",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 65,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give 4 points to The Person and the Common Good",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 6,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 7,
+                "end": 13,
+                "value": "points",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 17,
+                "end": 47,
+                "value": "The Person and the Common Good",
+                "entity": "object_name"
+            }
+        ],
+        "id": 66,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Give a four rating to A World Apart.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 7,
+                "end": 11,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 22,
+                "end": 35,
+                "value": "A World Apart",
+                "entity": "object_name"
+            }
+        ],
+        "id": 67,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "rate this chronicle 0 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 19,
+                "value": "chronicle",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 20,
+                "end": 21,
+                "value": "0",
+                "entity": "rating_value"
+            },
+            {
+                "start": 22,
+                "end": 28,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 68,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give Wilco: Learning How to Die a rating of four points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 31,
+                "value": "Wilco: Learning How to Die",
+                "entity": "object_name"
+            },
+            {
+                "start": 44,
+                "end": 48,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 49,
+                "end": 55,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 69,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "O",
+            "O",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate this saga two out of 6.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 14,
+                "value": "saga",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 15,
+                "end": 18,
+                "value": "two",
+                "entity": "rating_value"
+            },
+            {
+                "start": 26,
+                "end": 27,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 70,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "rate The Gift: Imagination and the Erotic Life of Property five stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 58,
+                "value": "The Gift: Imagination and the Erotic Life of Property",
+                "entity": "object_name"
+            },
+            {
+                "start": 59,
+                "end": 63,
+                "value": "five",
+                "entity": "rating_value"
+            },
+            {
+                "start": 64,
+                "end": 69,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 71,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate Neverwhere four out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 15,
+                "value": "Neverwhere",
+                "entity": "object_name"
+            },
+            {
+                "start": 16,
+                "end": 20,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 72,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Rate In the Company of Cheerful Ladies a zero out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 38,
+                "value": "In the Company of Cheerful Ladies",
+                "entity": "object_name"
+            },
+            {
+                "start": 41,
+                "end": 45,
+                "value": "zero",
+                "entity": "rating_value"
+            },
+            {
+                "start": 53,
+                "end": 54,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 73,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Give one start to the current book",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 8,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 22,
+                "end": 29,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 30,
+                "end": 34,
+                "value": "book",
+                "entity": "object_type"
+            }
+        ],
+        "id": 74,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Give this chronicle a 2 rating.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 19,
+                "value": "chronicle",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 22,
+                "end": 23,
+                "value": "2",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 75,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "O",
+            "B-rating_value",
+            "O"
+        ]
+    },
+    {
+        "text": "rate this essay a 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "essay",
+                "entity": "object_type"
+            },
+            {
+                "start": 18,
+                "end": 19,
+                "value": "1",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 76,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Out of 6, give Rivers of Babylon a 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 7,
+                "end": 8,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 15,
+                "end": 32,
+                "value": "Rivers of Babylon",
+                "entity": "object_name"
+            },
+            {
+                "start": 35,
+                "end": 36,
+                "value": "1",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 77,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-best_rating",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give 5 of 6 stars to Expressive Processing",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 6,
+                "value": "5",
+                "entity": "rating_value"
+            },
+            {
+                "start": 10,
+                "end": 11,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 12,
+                "end": 17,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 21,
+                "end": 42,
+                "value": "Expressive Processing",
+                "entity": "object_name"
+            }
+        ],
+        "id": 78,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "rate The Ghost House series a one",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 20,
+                "value": "The Ghost House",
+                "entity": "object_name"
+            },
+            {
+                "start": 21,
+                "end": 27,
+                "value": "series",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 30,
+                "end": 33,
+                "value": "one",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 79,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_part_of_series_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "rate Know Ye Not Agincourt? 2 out of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 26,
+                "value": "Know Ye Not Agincourt",
+                "entity": "object_name"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "value": "2",
+                "entity": "rating_value"
+            },
+            {
+                "start": 37,
+                "end": 38,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 39,
+                "end": 44,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 80,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "I would rate Theft: A Love Story four out of 6 stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 13,
+                "end": 32,
+                "value": "Theft: A Love Story",
+                "entity": "object_name"
+            },
+            {
+                "start": 33,
+                "end": 37,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 45,
+                "end": 46,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 47,
+                "end": 52,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 81,
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate The Further Adventures of The Joker four stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 40,
+                "value": "The Further Adventures of The Joker",
+                "entity": "object_name"
+            },
+            {
+                "start": 41,
+                "end": 45,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 46,
+                "end": 51,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 82,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give 0 rating to In the Heart of the Country",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 6,
+                "value": "0",
+                "entity": "rating_value"
+            },
+            {
+                "start": 17,
+                "end": 44,
+                "value": "In the Heart of the Country",
+                "entity": "object_name"
+            }
+        ],
+        "id": 83,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Give 1 out of 6 rating to the current textbook",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 6,
+                "value": "1",
+                "entity": "rating_value"
+            },
+            {
+                "start": 14,
+                "end": 15,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 30,
+                "end": 37,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 38,
+                "end": 46,
+                "value": "textbook",
+                "entity": "object_type"
+            }
+        ],
+        "id": 84,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "O",
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "give the current chronicle five of 6 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 26,
+                "value": "chronicle",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 27,
+                "end": 31,
+                "value": "five",
+                "entity": "rating_value"
+            },
+            {
+                "start": 35,
+                "end": 36,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 37,
+                "end": 43,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 85,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate Cotton Comes to Harlem a 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 27,
+                "value": "Cotton Comes to Harlem",
+                "entity": "object_name"
+            },
+            {
+                "start": 30,
+                "end": 31,
+                "value": "2",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 86,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give this album one stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "album",
+                "entity": "object_type"
+            },
+            {
+                "start": 16,
+                "end": 19,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 20,
+                "end": 25,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 87,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "rate The Adventures of Augie March one points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 34,
+                "value": "The Adventures of Augie March",
+                "entity": "object_name"
+            },
+            {
+                "start": 35,
+                "end": 38,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 39,
+                "end": 45,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 88,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate Soul Music a 0.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 15,
+                "value": "Soul Music",
+                "entity": "object_name"
+            },
+            {
+                "start": 18,
+                "end": 19,
+                "value": "0",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 89,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "Give Hindu Temples: What Happened to Them a 5 out of 6 stars.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 41,
+                "value": "Hindu Temples: What Happened to Them",
+                "entity": "object_name"
+            },
+            {
+                "start": 44,
+                "end": 45,
+                "value": "5",
+                "entity": "rating_value"
+            },
+            {
+                "start": 53,
+                "end": 54,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 55,
+                "end": 60,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 90,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give this novel a 1.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "novel",
+                "entity": "object_type"
+            },
+            {
+                "start": 18,
+                "end": 19,
+                "value": "1",
+                "entity": "rating_value"
+            }
+        ],
+        "id": 91,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "text": "rate the current textbook 1 out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 25,
+                "value": "textbook",
+                "entity": "object_type"
+            },
+            {
+                "start": 26,
+                "end": 27,
+                "value": "1",
+                "entity": "rating_value"
+            },
+            {
+                "start": 35,
+                "end": 36,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 92,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Give this textbook 0 out of 6 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 18,
+                "value": "textbook",
+                "entity": "object_type"
+            },
+            {
+                "start": 19,
+                "end": 20,
+                "value": "0",
+                "entity": "rating_value"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "value": "6",
+                "entity": "best_rating"
+            },
+            {
+                "start": 30,
+                "end": 35,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 93,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Give The Crystal Snare 5 stars",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 22,
+                "value": "The Crystal Snare",
+                "entity": "object_name"
+            },
+            {
+                "start": 23,
+                "end": 24,
+                "value": "5",
+                "entity": "rating_value"
+            },
+            {
+                "start": 25,
+                "end": 30,
+                "value": "stars",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 94,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate this saga two out of 6.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 14,
+                "value": "saga",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 15,
+                "end": 18,
+                "value": "two",
+                "entity": "rating_value"
+            },
+            {
+                "start": 26,
+                "end": 27,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 95,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Give Wilco: Learning How to Die a rating of four points.",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 31,
+                "value": "Wilco: Learning How to Die",
+                "entity": "object_name"
+            },
+            {
+                "start": 44,
+                "end": 48,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 49,
+                "end": 55,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 96,
+        "seq_labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "O",
+            "O",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "text": "Rate this book 3 stars out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "this",
+                "entity": "object_select"
+            },
+            {
+                "start": 10,
+                "end": 14,
+                "value": "book",
+                "entity": "object_type"
+            },
+            {
+                "start": 15,
+                "end": 16,
+                "value": "3",
+                "entity": "rating_value"
+            },
+            {
+                "start": 17,
+                "end": 22,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 30,
+                "end": 31,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 97,
+        "seq_labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "rate the Three Junes one out of 6",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 20,
+                "value": "Three Junes",
+                "entity": "object_name"
+            },
+            {
+                "start": 21,
+                "end": 24,
+                "value": "one",
+                "entity": "rating_value"
+            },
+            {
+                "start": 32,
+                "end": 33,
+                "value": "6",
+                "entity": "best_rating"
+            }
+        ],
+        "id": 98,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-best_rating"
+        ]
+    },
+    {
+        "text": "Give four stars to The Broken Window",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "value": "four",
+                "entity": "rating_value"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "value": "stars",
+                "entity": "rating_unit"
+            },
+            {
+                "start": 19,
+                "end": 36,
+                "value": "The Broken Window",
+                "entity": "object_name"
+            }
+        ],
+        "id": 99,
+        "seq_labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Rate the current series 4 points",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "RateBook"
+            },
+            {
+                "start": 9,
+                "end": 16,
+                "value": "current",
+                "entity": "object_select"
+            },
+            {
+                "start": 17,
+                "end": 23,
+                "value": "series",
+                "entity": "object_part_of_series_type"
+            },
+            {
+                "start": 24,
+                "end": 25,
+                "value": "4",
+                "entity": "rating_value"
+            },
+            {
+                "start": 26,
+                "end": 32,
+                "value": "points",
+                "entity": "rating_unit"
+            }
+        ],
+        "id": 100,
+        "seq_labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    }
+]
