@@ -3,6 +3,7 @@ import requests
 import argparse
 import configparser
 import datetime
+import eval_converter
 
 url = ''
 TOKEN = ''
@@ -46,7 +47,11 @@ def get_messages(input_file, output_file, failed_file):
             if r.status_code != 200:
                 failed_list.append(sample)
             else:
-                response.append(r.content)
+                # process response to save in file
+                resp = json.loads(r.content)
+                resp['id'] = sample['id']
+                resp['labels'] = eval_converter.convert_iob_prediction(resp)
+                response.append(resp)
 
         except Exception as e:
             print(e)
@@ -55,7 +60,7 @@ def get_messages(input_file, output_file, failed_file):
         json.dump(failed_list, ff)
 
     with open(output_file, "w") as of:
-        json.dump(response, of)
+        json.dump(response, of, indent=4)
 
 
 if __name__ == '__main__':

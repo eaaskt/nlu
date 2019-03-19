@@ -1,0 +1,6206 @@
+[
+    {
+        "_text": "What will the weather be faraway from here?",
+        "entities": {
+            "spatial_relation": [
+                {
+                    "confidence": 0.98756496301091,
+                    "value": "faraway",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "faraway",
+                    "_start": 25,
+                    "_end": 32
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.97523492216515,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 38,
+                    "_end": 42
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998682522,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1q7Ww6vkaqLU3l912",
+        "id": 1,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "O",
+            "B-current_location"
+        ]
+    },
+    {
+        "_text": "Will there be fog in Tahquamenon Falls State Park?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.9897425383202,
+                    "value": "fog",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "fog",
+                    "_start": 14,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.9908076900492,
+                    "value": "Tahquamenon Falls State Park",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Tahquamenon Falls State Park",
+                    "_start": 21,
+                    "_end": 49
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999241203161,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1flAW6Yc1hdhIdGrD",
+        "id": 2,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-state",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi"
+        ]
+    },
+    {
+        "_text": "Tell me the weather forecast for Gibsland",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "ME",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "me",
+                    "_start": 5,
+                    "_end": 7
+                }
+            ],
+            "country": [
+                {
+                    "suggested": true,
+                    "confidence": 0.50426634828142,
+                    "value": "Gibsland",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Gibsland",
+                    "_start": 33,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999611319,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1UwWZQHzKsww7bUDn",
+        "id": 3,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "Is there a storm now in NC?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.97670512502462,
+                    "value": "storm",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "storm",
+                    "_start": 11,
+                    "_end": 16
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99291496027508,
+                    "value": "now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "now",
+                    "_start": 17,
+                    "_end": 20
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 21,
+                    "_end": 23
+                },
+                {
+                    "confidence": 0.96727626309957,
+                    "value": "NC",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "NC",
+                    "_start": 24,
+                    "_end": 26
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99980796735919,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1Xe6cTaJIA7dseEcA",
+        "id": 4,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-timeRange",
+            "B-state",
+            "O"
+        ]
+    },
+    {
+        "_text": "What will the weather be in Monument of Lihula on december the 5th?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "confidence": 1,
+                    "value": "Monument of Lihula",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Monument of Lihula",
+                    "_start": 28,
+                    "_end": 46
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "december 4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "december ",
+                    "_start": 50,
+                    "_end": 59
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 63,
+                    "_end": 64
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998077999,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1mDeZF44z5cW6J5Ha",
+        "id": 5,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "B-rating_value"
+        ]
+    },
+    {
+        "_text": "Weather next year in Dominica",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 0.99660602415654,
+                    "value": "next year",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "next year",
+                    "_start": 8,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.92815448395391,
+                    "value": "Dominica",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Dominica",
+                    "_start": 21,
+                    "_end": 29
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99988557296501,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1x9tx1QUsBbPu67vp",
+        "id": 6,
+        "labels": [
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "When will it be hot here",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.98405439822642,
+                    "value": "hot",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "hot",
+                    "_start": 16,
+                    "_end": 19
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.96998822547653,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 20,
+                    "_end": 24
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999641362197,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "12bv39iCbxThf1l8B",
+        "id": 7,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-current_location"
+        ]
+    },
+    {
+        "_text": "What will the weather be in 1 day in Kuwait?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                },
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 34,
+                    "_end": 36
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 28,
+                    "_end": 29
+                },
+                {
+                    "confidence": 1,
+                    "value": "day",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "day",
+                    "_start": 30,
+                    "_end": 33
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.96869974281982,
+                    "value": "Kuwait",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Kuwait",
+                    "_start": 37,
+                    "_end": 43
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998159457,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "12EcyMofYzVAjLd9w",
+        "id": 8,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "What kind of weather will be in Ukraine one minute from now?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 29,
+                    "_end": 31
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.8773470279975,
+                    "value": "Ukraine",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Ukraine",
+                    "_start": 32,
+                    "_end": 39
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99453113442778,
+                    "value": "one minute from now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "one minute from now",
+                    "_start": 40,
+                    "_end": 59
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99997258521851,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "12oWhTwedG3XNWgES",
+        "id": 9,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-country",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "humidity in Olvey New Hampshire",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 1,
+                    "value": "humidity",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "humidity",
+                    "_start": 0,
+                    "_end": 8
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 9,
+                    "_end": 11
+                },
+                {
+                    "confidence": 0.75650442883325,
+                    "value": "New Hampshire",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "New Hampshire",
+                    "_start": 18,
+                    "_end": 31
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.5155667633517,
+                    "value": "Olvey",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Olvey",
+                    "_start": 12,
+                    "_end": 17
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.87116018055451,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1HNgb7oWPrwcQtuBq",
+        "id": 10,
+        "labels": [
+            "B-condition_description",
+            "B-state",
+            "B-city",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "What's the weather going to be in UT?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 31,
+                    "_end": 33
+                },
+                {
+                    "confidence": 0.92816490453719,
+                    "value": "UT",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "UT",
+                    "_start": 34,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999954674705,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1KcPiwPjIWQlO2R9A",
+        "id": 11,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O"
+        ]
+    },
+    {
+        "_text": "humidity not far from Colorado City on November the 7th, 2024",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 1,
+                    "value": "humidity",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "humidity",
+                    "_start": 0,
+                    "_end": 8
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.99564375373466,
+                    "value": "not far",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "not far",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "city": [
+                {
+                    "confidence": 0.83622484345576,
+                    "value": "Colorado City",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Colorado City",
+                    "_start": 22,
+                    "_end": 35
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "November 7th",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "November th",
+                    "_start": 39,
+                    "_end": 50
+                },
+                {
+                    "confidence": 1,
+                    "value": "7",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "7",
+                    "_start": 52,
+                    "_end": 53
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.97957360479277,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1McPiEFMJoXSw4EBs",
+        "id": 12,
+        "labels": [
+            "B-condition_description",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "O",
+            "B-city",
+            "I-city",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "What is the forecast for Wyoming at Stanardsville during the storm",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 0.77440635657364,
+                    "value": "Wyoming",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Wyoming",
+                    "_start": 25,
+                    "_end": 32
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.78378168156724,
+                    "value": "Stanardsville",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Stanardsville",
+                    "_start": 36,
+                    "_end": 49
+                }
+            ],
+            "condition_description": [
+                {
+                    "confidence": 0.62175922921977,
+                    "value": "storm",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "storm",
+                    "_start": 61,
+                    "_end": 66
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999711142802,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "15sD7GGb4WejRo4UJ",
+        "id": 13,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "B-city",
+            "O",
+            "O",
+            "B-condition_description"
+        ]
+    },
+    {
+        "_text": "What will the weather be in North Carolina?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                },
+                {
+                    "confidence": 0.98446206745174,
+                    "value": "North Carolina",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "North Carolina",
+                    "_start": 28,
+                    "_end": 42
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999993625349,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "14MdjwqpiE7KRDlnI",
+        "id": 14,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "what is the forecast starting 11 weeks from now nearby the state of Wisconsin",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "11",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "11",
+                    "_start": 30,
+                    "_end": 32
+                },
+                {
+                    "confidence": 0.99591388330639,
+                    "value": "5 weeks from now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": " weeks from now",
+                    "_start": 32,
+                    "_end": 47
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.99570051991561,
+                    "value": "nearby",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "nearby",
+                    "_start": 48,
+                    "_end": 54
+                }
+            ],
+            "movie_name": [
+                {
+                    "confidence": 1,
+                    "value": "The Statue",
+                    "type": "value",
+                    "_entity": "movie_name",
+                    "_body": "the state",
+                    "_start": 55,
+                    "_end": 64
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 0.96828020660768,
+                    "value": "Wisconsin",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Wisconsin",
+                    "_start": 68,
+                    "_end": 77
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99997524105668,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1BGPBuYZEx7pTtebj",
+        "id": 15,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "B-state"
+        ]
+    },
+    {
+        "_text": "Will it be rainy at Sunrise in Ramey Saudi Arabia?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.99742504137246,
+                    "value": "rainy",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "rainy",
+                    "_start": 11,
+                    "_end": 16
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.96342486345661,
+                    "value": "Sunrise",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "Sunrise",
+                    "_start": 20,
+                    "_end": 27
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 28,
+                    "_end": 30
+                }
+            ],
+            "country": [
+                {
+                    "suggested": true,
+                    "confidence": 0.81233389965439,
+                    "value": "Ramey Saudi Arabia",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Ramey Saudi Arabia",
+                    "_start": 31,
+                    "_end": 49
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99996202419726,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1VBcIMioN5kIzGjeO",
+        "id": 16,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "O",
+            "B-timeRange",
+            "B-state",
+            "B-country",
+            "I-country",
+            "I-country"
+        ]
+    },
+    {
+        "_text": "Check the forecast for Nebraska.",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 0.96415913699278,
+                    "value": "Nebraska",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Nebraska",
+                    "_start": 23,
+                    "_end": 31
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99990287111518,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1mEAsB0LnyacV7e5f",
+        "id": 17,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state"
+        ]
+    },
+    {
+        "_text": "Will it be warmer in North Korea at nineteen o'clock",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99778357055573,
+                    "value": "warmer",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "warmer",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.89706833955832,
+                    "value": "North Korea",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "North Korea",
+                    "_start": 21,
+                    "_end": 32
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99555613209007,
+                    "value": "nineteen o'clock",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "nineteen o'clock",
+                    "_start": 36,
+                    "_end": 52
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999274204344,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1qwVmOu4y5O35TROn",
+        "id": 18,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-state",
+            "B-country",
+            "I-country",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Let me know the weather forecast around ten Pm faraway from here in Park Narodowy Brimstone Hill Fortress.",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "ME",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "me",
+                    "_start": 4,
+                    "_end": 6
+                },
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 65,
+                    "_end": 67
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 1,
+                    "value": "around",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "around",
+                    "_start": 33,
+                    "_end": 39
+                },
+                {
+                    "confidence": 0.9290704720051,
+                    "value": "faraway",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "faraway",
+                    "_start": 47,
+                    "_end": 54
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99760943080555,
+                    "value": "ten PM",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "ten Pm",
+                    "_start": 40,
+                    "_end": 46
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.740716967448,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 60,
+                    "_end": 64
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.52997273205585,
+                    "value": "Park Narodowy Brimstone Hill Fortress",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Park Narodowy Brimstone Hill Fortress",
+                    "_start": 68,
+                    "_end": 105
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999989869,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1lhJ8RijAOmozMTHI",
+        "id": 19,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-timeRange",
+            "I-timeRange",
+            "O",
+            "O",
+            "B-current_location",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi"
+        ]
+    },
+    {
+        "_text": "Will it be stormy in the Ouachita National Forest?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.98815579979253,
+                    "value": "stormy",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "stormy",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99075665584282,
+                    "value": "Ouachita National Forest",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Ouachita National Forest",
+                    "_start": 25,
+                    "_end": 49
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999857914552,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1yK7AI81USynhPEXq",
+        "id": 20,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-state",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi"
+        ]
+    },
+    {
+        "_text": "Tell me if it will be snowy 8 hours from now in Mount Airy, VI",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "ME",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "me",
+                    "_start": 5,
+                    "_end": 7
+                },
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 45,
+                    "_end": 47
+                },
+                {
+                    "confidence": 0.9751307841971,
+                    "value": "VI",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "VI",
+                    "_start": 60,
+                    "_end": 62
+                }
+            ],
+            "condition_description": [
+                {
+                    "confidence": 0.97497097125448,
+                    "value": "snowy",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "snowy",
+                    "_start": 22,
+                    "_end": 27
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 1,
+                    "value": "8",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "8",
+                    "_start": 28,
+                    "_end": 29
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99798536062073,
+                    "value": "23 hours from now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": " hours from now",
+                    "_start": 29,
+                    "_end": 44
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99044226809638,
+                    "value": "Mount Airy",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Mount Airy",
+                    "_start": 48,
+                    "_end": 58
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999847317525,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1bFeqydR7Obr3xn3P",
+        "id": 21,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-party_size_number",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "B-city",
+            "I-city",
+            "O"
+        ]
+    },
+    {
+        "_text": "What will the weather be nineteen hours from now neighboring Saint Kitts and Nevis?",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 0.99699050504258,
+                    "value": "nineteen hours from now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "nineteen hours from now",
+                    "_start": 25,
+                    "_end": 48
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.99353951495438,
+                    "value": "neighboring",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "neighboring",
+                    "_start": 49,
+                    "_end": 60
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.97484795681528,
+                    "value": "Saint Kitts and Nevis",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Saint Kitts and Nevis",
+                    "_start": 61,
+                    "_end": 82
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998002975501,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1JO44JFeKopD6iTdD",
+        "id": 22,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "B-spatial_relation",
+            "B-country",
+            "I-country",
+            "I-country",
+            "I-country"
+        ]
+    },
+    {
+        "_text": "Will there be hail on 11/12/2036 in Singapore",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.9884937317016,
+                    "value": "hail",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "hail",
+                    "_start": 14,
+                    "_end": 18
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99921156430135,
+                    "value": "11/12/2036",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "11/12/2036",
+                    "_start": 22,
+                    "_end": 32
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 33,
+                    "_end": 35
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.95760998839904,
+                    "value": "Singapore",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Singapore",
+                    "_start": 36,
+                    "_end": 45
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99995287831022,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1HRGi3hX46i1avKWq",
+        "id": 23,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "O",
+            "B-timeRange",
+            "B-state",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "Will it be colder here in 48 and a half weeks",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99424091964447,
+                    "value": "colder",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "colder",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.91170364404762,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 18,
+                    "_end": 22
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.98414882283634,
+                    "value": "in 48 and a half weeks",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "in 48 and a half weeks",
+                    "_start": 23,
+                    "_end": 45
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999976956267,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1E2c6hDmKz7Ca3cL2",
+        "id": 24,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-current_location",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "What's the weather going to be in Knobel?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 31,
+                    "_end": 33
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.54758449461323,
+                    "value": "Knobel",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Knobel",
+                    "_start": 34,
+                    "_end": 40
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999974807013,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1631ULa7AoSldwAa6",
+        "id": 25,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "What will the weather be in Dane on sep. the fifth, 2030?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.87991703257914,
+                    "value": "Dane",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Dane",
+                    "_start": 28,
+                    "_end": 32
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99831279481351,
+                    "value": "sep. the fifth, 2030",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "sep. the fifth, 2030",
+                    "_start": 36,
+                    "_end": 56
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999995956448,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1vkAMdVI1Au2TJmyF",
+        "id": 26,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "What will the weather be in Ohio?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                },
+                {
+                    "confidence": 0.92646801297873,
+                    "value": "Ohio",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Ohio",
+                    "_start": 28,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999985422816,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1djQ8g5IlJ0lIAxMt",
+        "id": 27,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O"
+        ]
+    },
+    {
+        "_text": "I need to know the weather for Jan. the 3rd in Mexico when I go to Port Vue",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "jan.",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "Jan.",
+                    "_start": 31,
+                    "_end": 35
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "3",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "3",
+                    "_start": 40,
+                    "_end": 41
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 44,
+                    "_end": 46
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.85724067242724,
+                    "value": "Mexico",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Mexico",
+                    "_start": 47,
+                    "_end": 53
+                }
+            ],
+            "entity_name": [
+                {
+                    "confidence": 1,
+                    "value": "go",
+                    "type": "value",
+                    "_entity": "entity_name",
+                    "_body": "go",
+                    "_start": 61,
+                    "_end": 63
+                }
+            ],
+            "city": [
+                {
+                    "confidence": 1,
+                    "value": "Port Vue",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Port Vue",
+                    "_start": 67,
+                    "_end": 75
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99979892194611,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "11y3o4M3Px3vRMAnp",
+        "id": 28,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "B-rating_value",
+            "B-state",
+            "B-country",
+            "O",
+            "O",
+            "B-entity_name",
+            "O",
+            "B-city",
+            "I-city"
+        ]
+    },
+    {
+        "_text": "what is the forecast for \u00c5\u0152tone Prefectural Natural Park in 1 hour and within the same area",
+        "entities": {
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.95410195398427,
+                    "value": "\u00c5\u0152tone Prefectural Natural Park",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "\u00c5\u0152tone Prefectural Natural Park",
+                    "_start": 25,
+                    "_end": 56
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.98582212228018,
+                    "value": "in 1 hour",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "in 1 hour",
+                    "_start": 57,
+                    "_end": 66
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.99661226172544,
+                    "value": "within the same area",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "within the same area",
+                    "_start": 71,
+                    "_end": 91
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999879074481,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1q0ZQtG4P0NuEIwm2",
+        "id": 29,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ]
+    },
+    {
+        "_text": "What kind of weather is forecast around one pmnear Vatican?",
+        "entities": {
+            "spatial_relation": [
+                {
+                    "confidence": 1,
+                    "value": "around",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "around",
+                    "_start": 33,
+                    "_end": 39
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 40,
+                    "_end": 43
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 1,
+                    "value": "Vatican",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Vatican",
+                    "_start": 51,
+                    "_end": 58
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99991601638611,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1ZmvspWBHHlVGIN5N",
+        "id": 30,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-rating_value",
+            "O",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "Will it be chilly in Weldona?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99813490807244,
+                    "value": "chilly",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "chilly",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.85865456281427,
+                    "value": "Weldona",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Weldona",
+                    "_start": 21,
+                    "_end": 28
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999830561095,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1byCCK0wz9vLJi0IP",
+        "id": 31,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-state",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "Will it be colder in Virgin Islands National Park?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99763336500972,
+                    "value": "colder",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "colder",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.98004985694472,
+                    "value": "Virgin Islands National Park",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Virgin Islands National Park",
+                    "_start": 21,
+                    "_end": 49
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999980339745,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1T60SA1BOORFYBjyg",
+        "id": 32,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-state",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi"
+        ]
+    },
+    {
+        "_text": "Will it be hot at 13:19 in De Funiak Springs Serbia and Montenegro?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99490280008153,
+                    "value": "hot",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "hot",
+                    "_start": 11,
+                    "_end": 14
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "13",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "13",
+                    "_start": 18,
+                    "_end": 20
+                },
+                {
+                    "confidence": 1,
+                    "value": "19",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "19",
+                    "_start": 21,
+                    "_end": 23
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 24,
+                    "_end": 26
+                },
+                {
+                    "confidence": 1,
+                    "value": "DE",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "De",
+                    "_start": 27,
+                    "_end": 29
+                }
+            ],
+            "playlist": [
+                {
+                    "confidence": 1,
+                    "value": "spring",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Spring",
+                    "_start": 37,
+                    "_end": 43
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.99477020312535,
+                    "value": "Serbia and Montenegro",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Serbia and Montenegro",
+                    "_start": 45,
+                    "_end": 66
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99936331941286,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1vsMDSHRCtMz7iHtF",
+        "id": 33,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "O",
+            "B-timeRange",
+            "B-state",
+            "O",
+            "O",
+            "B-playlist",
+            "B-country",
+            "I-country",
+            "I-country"
+        ]
+    },
+    {
+        "_text": "What is the weather going to be like in Virginia on st. patrick's day?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 37,
+                    "_end": 39
+                },
+                {
+                    "confidence": 0.94327171731503,
+                    "value": "Virginia",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Virginia",
+                    "_start": 40,
+                    "_end": 48
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99853755124162,
+                    "value": "St. Patrick's Day",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "st. patrick's day",
+                    "_start": 52,
+                    "_end": 69
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999986657547,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1e5WAT5bcIy319rEV",
+        "id": 34,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Weather in Kaneville Maryland",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 8,
+                    "_end": 10
+                },
+                {
+                    "confidence": 0.91067641562689,
+                    "value": "Maryland",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Maryland",
+                    "_start": 21,
+                    "_end": 29
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99718016939975,
+                    "value": "Kaneville",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Kaneville",
+                    "_start": 11,
+                    "_end": 20
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99965026603129,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1DiJ5b9d7hIbYxQw8",
+        "id": 35,
+        "labels": [
+            "O",
+            "B-state",
+            "B-city",
+            "O"
+        ]
+    },
+    {
+        "_text": "When is sunrise for AR",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 0.60792944505378,
+                    "value": "Sunrise",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "sunrise",
+                    "_start": 8,
+                    "_end": 15
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 0.67280425011901,
+                    "value": "AR",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "AR",
+                    "_start": 20,
+                    "_end": 22
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.62415024680706,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1PmqCDUtoILB9zkkV",
+        "id": 36,
+        "labels": [
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "B-state"
+        ]
+    },
+    {
+        "_text": "What will the weather be not far from here on October the nineteenth, 2026?",
+        "entities": {
+            "spatial_relation": [
+                {
+                    "confidence": 0.99263003547542,
+                    "value": "not far",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "not far",
+                    "_start": 25,
+                    "_end": 32
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.95660494823609,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 38,
+                    "_end": 42
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99609869948274,
+                    "value": "October the nineteenth, 2026",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "October the nineteenth, 2026",
+                    "_start": 46,
+                    "_end": 74
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999836205,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1DCtAFmYDgB1B9kWK",
+        "id": 37,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "O",
+            "B-current_location",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for Waurika in Samoa",
+        "entities": {
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.32196957275456,
+                    "value": "Waurika",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Waurika",
+                    "_start": 25,
+                    "_end": 32
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 33,
+                    "_end": 35
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.8858962175096,
+                    "value": "Samoa",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Samoa",
+                    "_start": 36,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999986150685,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1XPUDbijGAz2hIej2",
+        "id": 38,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-city",
+            "B-state",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "Tell me the weather forecast here",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "ME",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "me",
+                    "_start": 5,
+                    "_end": 7
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.96835033663778,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 29,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999903248,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1lh0HUMViiQDfgstI",
+        "id": 39,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "B-current_location"
+        ]
+    },
+    {
+        "_text": "What is the weather forecast nearby Nicodemus",
+        "entities": {
+            "spatial_relation": [
+                {
+                    "confidence": 0.99337290571661,
+                    "value": "nearby",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "nearby",
+                    "_start": 29,
+                    "_end": 35
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.32816868512541,
+                    "value": "Nicodemus",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Nicodemus",
+                    "_start": 36,
+                    "_end": 45
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999567646,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1MpJHYsjXalSEertH",
+        "id": 40,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "What will the weather be in nov. in Brookneal?",
+        "entities": {
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.54426351356768,
+                    "value": "in nov.",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "in nov.",
+                    "_start": 25,
+                    "_end": 32
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 33,
+                    "_end": 35
+                }
+            ],
+            "city": [
+                {
+                    "confidence": 0.92706910170773,
+                    "value": "Brookneal",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Brookneal",
+                    "_start": 36,
+                    "_end": 45
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999969759216,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1y35hgbbc0z1UOF9U",
+        "id": 41,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "Will it be colder four months from now in Suwanee AK",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99201777972923,
+                    "value": "colder",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "colder",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 18,
+                    "_end": 22
+                },
+                {
+                    "confidence": 1,
+                    "value": "12 months from now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": " months from now",
+                    "_start": 22,
+                    "_end": 38
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 39,
+                    "_end": 41
+                },
+                {
+                    "confidence": 0.88826826923733,
+                    "value": "AK",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "AK",
+                    "_start": 50,
+                    "_end": 52
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.92024869491796,
+                    "value": "Suwanee",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Suwanee",
+                    "_start": 42,
+                    "_end": 49
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999981763876,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "17YTgWMxJTdg86VdC",
+        "id": 42,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "O"
+        ]
+    },
+    {
+        "_text": "What is the weather forecast for Burundi",
+        "entities": {
+            "country": [
+                {
+                    "confidence": 0.89286941585933,
+                    "value": "Burundi",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Burundi",
+                    "_start": 33,
+                    "_end": 40
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999826552,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1cWhSOerPtxOcyeZn",
+        "id": 43,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "What's the weather in Benton City?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 19,
+                    "_end": 21
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99657008069466,
+                    "value": "Benton City",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Benton City",
+                    "_start": 22,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999933795738,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1V89YiCqqA8xfLXcq",
+        "id": 44,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "I-city"
+        ]
+    },
+    {
+        "_text": "What will the weather be in KY on Oct. 16, 2036?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                },
+                {
+                    "confidence": 0.92965392549403,
+                    "value": "KY",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "KY",
+                    "_start": 28,
+                    "_end": 30
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.9989206491358,
+                    "value": "Oct. 16, 2036",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "Oct. 16, 2036",
+                    "_start": 34,
+                    "_end": 47
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999973501046,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1wa6aeG1ZtCvou26v",
+        "id": 45,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Will the sun be out in 1 minute in Searcy, Uganda",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.92729050538436,
+                    "value": "sun",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "sun",
+                    "_start": 9,
+                    "_end": 12
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99517133408216,
+                    "value": "in 1 minute",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "in 1 minute",
+                    "_start": 20,
+                    "_end": 31
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 32,
+                    "_end": 34
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.98687607838731,
+                    "value": "Searcy",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Searcy",
+                    "_start": 35,
+                    "_end": 41
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.95491771467894,
+                    "value": "Uganda",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Uganda",
+                    "_start": 43,
+                    "_end": 49
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99979733346293,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1ML7VnWuS7xSiJxj5",
+        "id": 46,
+        "labels": [
+            "O",
+            "O",
+            "B-condition_description",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-city",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "what is the weather here",
+        "entities": {
+            "current_location": [
+                {
+                    "confidence": 0.96555978263551,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 20,
+                    "_end": 24
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99997930305439,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1EKV8qr3rWxKDCyaT",
+        "id": 47,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-current_location"
+        ]
+    },
+    {
+        "_text": "What will the weather be one second from now in Chad?",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 0.99764112364684,
+                    "value": "one second from now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "one second from now",
+                    "_start": 25,
+                    "_end": 44
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 45,
+                    "_end": 47
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 1,
+                    "value": "Chad",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Chad",
+                    "_start": 48,
+                    "_end": 52
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999924107593,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1P7cTGmopya4VKeQH",
+        "id": 48,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "What kind of weather is forecast in MS now?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 33,
+                    "_end": 35
+                },
+                {
+                    "confidence": 0.8757307701847,
+                    "value": "MS",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "MS",
+                    "_start": 36,
+                    "_end": 38
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.98303062146207,
+                    "value": "now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "now",
+                    "_start": 39,
+                    "_end": 42
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999987725198,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1idAXmQ77ZGZBxXSl",
+        "id": 49,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for LA for freezing",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 0.80811537130719,
+                    "value": "LA",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "LA",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "condition_temperature": [
+                {
+                    "confidence": 0.68213400640341,
+                    "value": "freezing",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "freezing",
+                    "_start": 32,
+                    "_end": 40
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999822389625,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1toyysXeVG5fys1uy",
+        "id": 50,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "B-condition_temperature"
+        ]
+    },
+    {
+        "_text": "how cold will it be here in 1 second",
+        "entities": {
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "how",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "how",
+                    "_start": 0,
+                    "_end": 3
+                }
+            ],
+            "condition_temperature": [
+                {
+                    "confidence": 0.98251772607724,
+                    "value": "cold",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "cold",
+                    "_start": 4,
+                    "_end": 8
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.94237622460332,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 20,
+                    "_end": 24
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.98108756314547,
+                    "value": "in 1 second",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "in 1 second",
+                    "_start": 25,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999910752678,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1izGkIEUU6WamjBgv",
+        "id": 51,
+        "labels": [
+            "B-object_name",
+            "B-condition_temperature",
+            "O",
+            "O",
+            "O",
+            "B-current_location",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for hotter weather at Southford Falls State Park",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.94976017094838,
+                    "value": "hotter",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "hotter",
+                    "_start": 25,
+                    "_end": 31
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.94218219009457,
+                    "value": "Southford Falls State Park",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Southford Falls State Park",
+                    "_start": 43,
+                    "_end": 69
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999993927,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "154bOFbR5WE3rX6ck",
+        "id": 52,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "O",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi"
+        ]
+    },
+    {
+        "_text": "what is the overcast forecast for the current position starting on jul. 19, 2030",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.8917045631004,
+                    "value": "overcast",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "overcast",
+                    "_start": 12,
+                    "_end": 20
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.9963649489952,
+                    "value": "current position",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "current position",
+                    "_start": 38,
+                    "_end": 54
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "Jul.",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "jul.",
+                    "_start": 67,
+                    "_end": 71
+                },
+                {
+                    "confidence": 1,
+                    "value": "19",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "19",
+                    "_start": 72,
+                    "_end": 74
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999986717207,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "14juYoC7M7uZfkh8J",
+        "id": 53,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "O",
+            "O",
+            "O",
+            "B-current_location",
+            "I-current_location",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "what is the forecast for Morocco  at Lake Ozark on December seventeenth, 2022",
+        "entities": {
+            "country": [
+                {
+                    "confidence": 0.70621801420104,
+                    "value": "Morocco",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Morocco",
+                    "_start": 25,
+                    "_end": 32
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.71857918777753,
+                    "value": "Lake Ozark",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Lake Ozark",
+                    "_start": 37,
+                    "_end": 47
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99630157663648,
+                    "value": "December seventeenth, 2022",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "December seventeenth, 2022",
+                    "_start": 51,
+                    "_end": 77
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999866625582,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1yhoifZOIbBPkC21M",
+        "id": 54,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-country",
+            "O",
+            "O",
+            "B-city",
+            "I-city",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "What will the humidity be in the current spot at 15:19:29?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.8770684119367,
+                    "value": "humidity",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "humidity",
+                    "_start": 14,
+                    "_end": 22
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 26,
+                    "_end": 28
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.99569657428708,
+                    "value": "current spot",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "current spot",
+                    "_start": 33,
+                    "_end": 45
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.96564399777579,
+                    "value": "15:19:29",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "15:19:29",
+                    "_start": 49,
+                    "_end": 57
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999012943473,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1RjiDk8S1zAPG40SD",
+        "id": 55,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "O",
+            "B-state",
+            "O",
+            "B-current_location",
+            "I-current_location",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast in Nicodemus and nearby",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 21,
+                    "_end": 23
+                }
+            ],
+            "country": [
+                {
+                    "suggested": true,
+                    "confidence": 0.5855667540513,
+                    "value": "Nicodemus and",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Nicodemus and",
+                    "_start": 24,
+                    "_end": 37
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.93929906017693,
+                    "value": "nearby",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "nearby",
+                    "_start": 38,
+                    "_end": 44
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99987062797944,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1TJwHTgkhwYtwmwY3",
+        "id": 56,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-country",
+            "I-country",
+            "B-spatial_relation"
+        ]
+    },
+    {
+        "_text": "What is the weather going to be like in Benton Colorado in 2 and a half months",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 37,
+                    "_end": 39
+                },
+                {
+                    "confidence": 0.90182267430461,
+                    "value": "Colorado",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Colorado",
+                    "_start": 47,
+                    "_end": 55
+                },
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 56,
+                    "_end": 58
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99127228794396,
+                    "value": "Benton",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Benton",
+                    "_start": 40,
+                    "_end": 46
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 59,
+                    "_end": 60
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999786813647,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1Hz9qqGC9dZtCNGsC",
+        "id": 57,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "What's the weather forecast for Bothe-Napa Valley State Park close by february 20?",
+        "entities": {
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99298665719106,
+                    "value": "Bothe-Napa Valley State Park",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Bothe-Napa Valley State Park",
+                    "_start": 32,
+                    "_end": 60
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.87084533979627,
+                    "value": "close",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "close",
+                    "_start": 61,
+                    "_end": 66
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.80821246548345,
+                    "value": "february 20",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "february 20",
+                    "_start": 70,
+                    "_end": 81
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999941875,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "19W8aA9dKaXryP82u",
+        "id": 58,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "B-spatial_relation",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for beginning on nov. 17 for Franklinville",
+        "entities": {
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.4444616451486,
+                    "value": "beginning",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "beginning",
+                    "_start": 25,
+                    "_end": 34
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.71881412467107,
+                    "value": "Franklinville",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Franklinville",
+                    "_start": 50,
+                    "_end": 63
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99948513518111,
+                    "value": "Nov. 17",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "nov. 17",
+                    "_start": 38,
+                    "_end": 45
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999737315601,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1kojqiLuagRSMHVZJ",
+        "id": 59,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-city",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "what's the forecast for sep. 26 in Emerado Saint Pierre and Miquelon",
+        "entities": {
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.97082519050118,
+                    "value": "sep. 26",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "sep. 26",
+                    "_start": 24,
+                    "_end": 31
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 32,
+                    "_end": 34
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.64320551711666,
+                    "value": "Emerado",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Emerado",
+                    "_start": 35,
+                    "_end": 42
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.97965916385397,
+                    "value": "Saint Pierre and Miquelon",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Saint Pierre and Miquelon",
+                    "_start": 43,
+                    "_end": 68
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999864506566,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "10RRlKFwTXdyZsg6d",
+        "id": 60,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-city",
+            "B-country",
+            "I-country",
+            "I-country",
+            "I-country"
+        ]
+    },
+    {
+        "_text": "Will there be a blizzard next winter in Visalia, Idaho",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.98465770038975,
+                    "value": "blizzard",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "blizzard",
+                    "_start": 16,
+                    "_end": 24
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99751965222233,
+                    "value": "next winter",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "next winter",
+                    "_start": 25,
+                    "_end": 36
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 37,
+                    "_end": 39
+                },
+                {
+                    "confidence": 0.98655326702744,
+                    "value": "Idaho",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Idaho",
+                    "_start": 49,
+                    "_end": 54
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.82900041240463,
+                    "value": "Visalia",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Visalia",
+                    "_start": 40,
+                    "_end": 47
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999819624049,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1LUshwP1xoOU8rLg5",
+        "id": 61,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-city",
+            "O"
+        ]
+    },
+    {
+        "_text": "Will it be warmer in the District Of Columbia on may 25, 2033?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99795360532858,
+                    "value": "warmer",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "warmer",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                },
+                {
+                    "confidence": 0.99221707602268,
+                    "value": "District Of Columbia",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "District Of Columbia",
+                    "_start": 25,
+                    "_end": 45
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99826897517477,
+                    "value": "may 25, 2033",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "may 25, 2033",
+                    "_start": 49,
+                    "_end": 61
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999758748728,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1qRkMXkuMmMBijxL6",
+        "id": 62,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "What will the weather be here on dec. 7th?",
+        "entities": {
+            "current_location": [
+                {
+                    "confidence": 0.99583515617021,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 25,
+                    "_end": 29
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99769130325207,
+                    "value": "dec. 7th",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "dec. 7th",
+                    "_start": 33,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999994882625,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "17yeeDTcUCfgMmMhh",
+        "id": 63,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-current_location",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for colder temps beginning on Law Day here",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.92779131150939,
+                    "value": "colder",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "colder",
+                    "_start": 25,
+                    "_end": 31
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99766062268893,
+                    "value": "law day",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "Law Day",
+                    "_start": 51,
+                    "_end": 58
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.93031016232593,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 59,
+                    "_end": 63
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999997588414,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1eEeEvDGkMJu1FEsz",
+        "id": 64,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "B-current_location"
+        ]
+    },
+    {
+        "_text": "What's the weather like in Tyonek, New Jersey",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 24,
+                    "_end": 26
+                },
+                {
+                    "confidence": 0.99230881436427,
+                    "value": "New Jersey",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "New Jersey",
+                    "_start": 35,
+                    "_end": 45
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.98654334851123,
+                    "value": "Tyonek",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Tyonek",
+                    "_start": 27,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999863825851,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1ue6t3CXNsJi89qwY",
+        "id": 65,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "what is the forecast for here for blizzard conditions at five pm",
+        "entities": {
+            "current_location": [
+                {
+                    "confidence": 0.94843005909356,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 25,
+                    "_end": 29
+                }
+            ],
+            "condition_description": [
+                {
+                    "confidence": 0.96900183234189,
+                    "value": "blizzard",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "blizzard",
+                    "_start": 34,
+                    "_end": 42
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99823307035638,
+                    "value": "five pm",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "five pm",
+                    "_start": 57,
+                    "_end": 64
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998882155,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1ZtisJsgZNkEpX8iV",
+        "id": 66,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-current_location",
+            "O",
+            "B-condition_description",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Will there be a storm in Gibsonia at 8 p.m?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.99458468820577,
+                    "value": "storm",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "storm",
+                    "_start": 16,
+                    "_end": 21
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 22,
+                    "_end": 24
+                }
+            ],
+            "country": [
+                {
+                    "suggested": true,
+                    "confidence": 0.88224524726508,
+                    "value": "Gibsonia",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Gibsonia",
+                    "_start": 25,
+                    "_end": 33
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.93650045081612,
+                    "value": "8 p.m",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "8 p.m",
+                    "_start": 37,
+                    "_end": 42
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99961437814817,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1qiGM18WQ0nAFYwvm",
+        "id": 67,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-state",
+            "B-country",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the cold condition of our current position for tomorrow",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.84137068453148,
+                    "value": "cold",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "cold",
+                    "_start": 12,
+                    "_end": 16
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.88422714779122,
+                    "value": "current position",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "current position",
+                    "_start": 34,
+                    "_end": 50
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99367557047886,
+                    "value": "tomorrow",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "tomorrow",
+                    "_start": 55,
+                    "_end": 63
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99564344998502,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1hqKXUQv7Z7WxpEJs",
+        "id": 68,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "O",
+            "O",
+            "O",
+            "B-current_location",
+            "I-current_location",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "What will the weather be in Hialeah Gardens on October the 24th?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.92208400692619,
+                    "value": "Hialeah Gardens",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Hialeah Gardens",
+                    "_start": 28,
+                    "_end": 43
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99668034150028,
+                    "value": "October the 24th",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "October the 24th",
+                    "_start": 47,
+                    "_end": 63
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998046858,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "14RX0kUKn5cEZZ2qc",
+        "id": 69,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "I-city",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Will it be freezing today in Delaware and Lehigh National Heritage Corridor?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.9785892864619,
+                    "value": "freezing",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "freezing",
+                    "_start": 11,
+                    "_end": 19
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.98706869791253,
+                    "value": "today",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "today",
+                    "_start": 20,
+                    "_end": 25
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 26,
+                    "_end": 28
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.94199942795023,
+                    "value": "Delaware and Lehigh National Heritage Corridor",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Delaware and Lehigh National Heritage Corridor",
+                    "_start": 29,
+                    "_end": 75
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999983394876,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1xhvWlCf1VWgMmDCr",
+        "id": 70,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-timeRange",
+            "B-state",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi"
+        ]
+    },
+    {
+        "_text": "what is the forecast in Admire in TX starting at seventeen",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 21,
+                    "_end": 23
+                },
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 31,
+                    "_end": 33
+                },
+                {
+                    "confidence": 0.80278090540383,
+                    "value": "TX",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "TX",
+                    "_start": 34,
+                    "_end": 36
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.51741937816591,
+                    "value": "Admire",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Admire",
+                    "_start": 24,
+                    "_end": 30
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.90656793794806,
+                    "value": "seventeen",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "seventeen",
+                    "_start": 49,
+                    "_end": 58
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99996264028819,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1w3rwGDNet6Jo86OW",
+        "id": 71,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast in North Carolina for Edgemoor",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 21,
+                    "_end": 23
+                },
+                {
+                    "confidence": 0.98734730730132,
+                    "value": "North Carolina",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "North Carolina",
+                    "_start": 24,
+                    "_end": 38
+                }
+            ],
+            "city": [
+                {
+                    "confidence": 1,
+                    "value": "Edgemoor",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Edgemoor",
+                    "_start": 43,
+                    "_end": 51
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999175874608,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1qwxBsx0s6Hju0FBW",
+        "id": 72,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "what is the forecast for Costa Rica",
+        "entities": {
+            "country": [
+                {
+                    "confidence": 1,
+                    "value": "Costa Rica",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Costa Rica",
+                    "_start": 25,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999708420317,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1Q5XsMVsIU4wo5KEX",
+        "id": 73,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-country",
+            "I-country"
+        ]
+    },
+    {
+        "_text": "Need weather for Parc national Tolhuaca to see if it will be fog today",
+        "entities": {
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.44079440958846,
+                    "value": "Parc national Tolhuaca",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Parc national Tolhuaca",
+                    "_start": 17,
+                    "_end": 39
+                }
+            ],
+            "condition_description": [
+                {
+                    "confidence": 0.92846682915172,
+                    "value": "fog",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "fog",
+                    "_start": 61,
+                    "_end": 64
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99447496282362,
+                    "value": "today",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "today",
+                    "_start": 65,
+                    "_end": 70
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999832619,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "17tmYbMVOwPDaX8YT",
+        "id": 74,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "Weather in Walden Russia on 12/26/2018",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 8,
+                    "_end": 10
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.68863622315084,
+                    "value": "Walden",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Walden",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.96279032604783,
+                    "value": "Russia",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Russia",
+                    "_start": 18,
+                    "_end": 24
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99722130021667,
+                    "value": "12/26/2018",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "12/26/2018",
+                    "_start": 28,
+                    "_end": 38
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99913126354537,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1WR3T1mV1DJfuOagg",
+        "id": 75,
+        "labels": [
+            "O",
+            "B-state",
+            "B-city",
+            "B-country",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "What's the humidity here right now?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.96771619468643,
+                    "value": "humidity",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "humidity",
+                    "_start": 11,
+                    "_end": 19
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.98517316085831,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 20,
+                    "_end": 24
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99897231781494,
+                    "value": "now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "now",
+                    "_start": 31,
+                    "_end": 34
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99771643278422,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "13p8BgnEFKds5pULm",
+        "id": 76,
+        "labels": [
+            "O",
+            "O",
+            "B-condition_description",
+            "B-current_location",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "How's the weather at Petit Manan National Wildlife Refuge and nearby right now",
+        "entities": {
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "how",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "How",
+                    "_start": 0,
+                    "_end": 3
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.89289736014333,
+                    "value": "Petit Manan National Wildlife Refuge and",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Petit Manan National Wildlife Refuge and",
+                    "_start": 21,
+                    "_end": 61
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.97356430713757,
+                    "value": "nearby",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "nearby",
+                    "_start": 62,
+                    "_end": 68
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99550645238333,
+                    "value": "now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "now",
+                    "_start": 75,
+                    "_end": 78
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999980351395,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1LulgB3VjuphlUdWg",
+        "id": 77,
+        "labels": [
+            "B-object_name",
+            "O",
+            "O",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "B-spatial_relation",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for Lansford for temperate weather",
+        "entities": {
+            "city": [
+                {
+                    "confidence": 0.95136687287823,
+                    "value": "Lansford",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Lansford",
+                    "_start": 25,
+                    "_end": 33
+                }
+            ],
+            "condition_temperature": [
+                {
+                    "confidence": 0.74879045627909,
+                    "value": "temperate",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "temperate",
+                    "_start": 38,
+                    "_end": 47
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999699296,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1lwZoxEMxCpXjUYXM",
+        "id": 78,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-city",
+            "O",
+            "B-condition_temperature",
+            "O"
+        ]
+    },
+    {
+        "_text": "overcast on State Holiday in Pawling Nature Reserve  and neighboring places",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 1,
+                    "value": "overcast",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "overcast",
+                    "_start": 0,
+                    "_end": 8
+                }
+            ],
+            "geographic_poi": [
+                {
+                    "confidence": 1,
+                    "value": "state",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "State",
+                    "_start": 12,
+                    "_end": 17
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.80019160832258,
+                    "value": "Pawling Nature Reserve  and",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Pawling Nature Reserve  and",
+                    "_start": 29,
+                    "_end": 56
+                }
+            ],
+            "city": [
+                {
+                    "confidence": 1,
+                    "value": "Holiday",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Holiday",
+                    "_start": 18,
+                    "_end": 25
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 26,
+                    "_end": 28
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.95867195943055,
+                    "value": "neighboring",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "neighboring",
+                    "_start": 57,
+                    "_end": 68
+                }
+            ]
+        },
+        "msg_id": "1bJDzKk7vScJpfCfw",
+        "id": 79,
+        "labels": [
+            "B-condition_description",
+            "O",
+            "B-geographic_poi",
+            "B-city",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "O"
+        ]
+    },
+    {
+        "_text": "I need the weather in Wakarusa",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 19,
+                    "_end": 21
+                }
+            ],
+            "city": [
+                {
+                    "confidence": 0.77399792795684,
+                    "value": "Wakarusa",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Wakarusa",
+                    "_start": 22,
+                    "_end": 30
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99979631211112,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "15YDXDi5pp6w4Cfsu",
+        "id": 80,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "Tell me the forecast for 6 am in Tatra-Nationalpark",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "ME",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "me",
+                    "_start": 5,
+                    "_end": 7
+                },
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 30,
+                    "_end": 32
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99064395547291,
+                    "value": "6 am",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6 am",
+                    "_start": 25,
+                    "_end": 29
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.53929410918944,
+                    "value": "Tatra-Nationalpark",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Tatra-Nationalpark",
+                    "_start": 33,
+                    "_end": 51
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999910304841,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1CrYqO0QazAgoJsK1",
+        "id": 81,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "O",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "Tell me the weather forecast for UT on thursday",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "ME",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "me",
+                    "_start": 5,
+                    "_end": 7
+                },
+                {
+                    "confidence": 0.82044542824412,
+                    "value": "UT",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "UT",
+                    "_start": 33,
+                    "_end": 35
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99354373197312,
+                    "value": "thursday",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "thursday",
+                    "_start": 39,
+                    "_end": 47
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999712601,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1iI5OhRi3d105x3G9",
+        "id": 82,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for Turtle Islands National Park",
+        "entities": {
+            "geographic_poi": [
+                {
+                    "suggested": true,
+                    "confidence": 0.94766964884893,
+                    "value": "Turtle Islands National Park",
+                    "type": "value",
+                    "_entity": "geographic_poi",
+                    "_body": "Turtle Islands National Park",
+                    "_start": 25,
+                    "_end": 53
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999848523588,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1D8Xg9xAX6L6XWJJv",
+        "id": 83,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi",
+            "I-geographic_poi"
+        ]
+    },
+    {
+        "_text": "Will it be hotter in PR at 23 o'clock?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99585783936132,
+                    "value": "hotter",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "hotter",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 18,
+                    "_end": 20
+                },
+                {
+                    "confidence": 0.89151532270757,
+                    "value": "PR",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "PR",
+                    "_start": 21,
+                    "_end": 23
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99905822347646,
+                    "value": "23 o'clock",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "23 o'clock",
+                    "_start": 27,
+                    "_end": 37
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998620866307,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1QHeIzcMCnGFDJ2bc",
+        "id": 84,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-state",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Weather in two hours  in Uzbekistan",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 0.94373998973653,
+                    "value": "in two hours",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "in two hours",
+                    "_start": 8,
+                    "_end": 20
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 22,
+                    "_end": 24
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.99008715352675,
+                    "value": "Uzbekistan",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Uzbekistan",
+                    "_start": 25,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99992609359105,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "19xp1Ap4OZbKGJor4",
+        "id": 85,
+        "labels": [
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "O",
+            "B-state",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "What is the forecast for this afternoon for blizzard conditions in Dieterich Chad",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 25,
+                    "_end": 29
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.96527488639756,
+                    "value": "afternoon",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "afternoon",
+                    "_start": 30,
+                    "_end": 39
+                }
+            ],
+            "condition_description": [
+                {
+                    "confidence": 0.96269658389743,
+                    "value": "blizzard",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "blizzard",
+                    "_start": 44,
+                    "_end": 52
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 64,
+                    "_end": 66
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.79349435348899,
+                    "value": "Dieterich Chad",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Dieterich Chad",
+                    "_start": 67,
+                    "_end": 81
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999995986179,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1VFdtoQH8mx9Pob2I",
+        "id": 86,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_select",
+            "B-timeRange",
+            "O",
+            "B-condition_description",
+            "O",
+            "B-state",
+            "B-city",
+            "I-city"
+        ]
+    },
+    {
+        "_text": "how's the weather here at two Am",
+        "entities": {
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "how",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "how",
+                    "_start": 0,
+                    "_end": 3
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.95297064253381,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 18,
+                    "_end": 22
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99864163971407,
+                    "value": "two am",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "two Am",
+                    "_start": 26,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998130990828,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1wigLok8bJGuOVS1R",
+        "id": 87,
+        "labels": [
+            "B-object_name",
+            "O",
+            "O",
+            "B-current_location",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "will Custer National Forest be chillier at seven Pm",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.98265091810644,
+                    "value": "chillier",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "chillier",
+                    "_start": 31,
+                    "_end": 39
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99929644811086,
+                    "value": "seven pm",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "seven Pm",
+                    "_start": 43,
+                    "_end": 51
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99995395959249,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1CNcIXAltk14MnIzJ",
+        "id": 88,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "what is the forecast for starting at three a.m in Two Buttes for warm weather",
+        "entities": {
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.91527487970456,
+                    "value": "three a.m",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "three a.m",
+                    "_start": 37,
+                    "_end": 46
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 47,
+                    "_end": 49
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.70760480385742,
+                    "value": "Two Buttes",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Two Buttes",
+                    "_start": 50,
+                    "_end": 60
+                }
+            ],
+            "condition_temperature": [
+                {
+                    "confidence": 0.88694768356282,
+                    "value": "warm",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "warm",
+                    "_start": 65,
+                    "_end": 69
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999993933529,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1riv76MFeWKA740TJ",
+        "id": 89,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-city",
+            "I-city",
+            "O",
+            "B-condition_temperature",
+            "O"
+        ]
+    },
+    {
+        "_text": "What's the weather in Fox Chapel?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 19,
+                    "_end": 21
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.8891471647023,
+                    "value": "Fox Chapel",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Fox Chapel",
+                    "_start": 22,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999666486939,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1c8sLI3ymVTLYPDnJ",
+        "id": 90,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "I-city"
+        ]
+    },
+    {
+        "_text": "What is the rain forecast for one hour from now in South Korea",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.96456723792375,
+                    "value": "rain",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "rain",
+                    "_start": 12,
+                    "_end": 16
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.99595813265437,
+                    "value": "one hour from now",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "one hour from now",
+                    "_start": 30,
+                    "_end": 47
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 48,
+                    "_end": 50
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.98116133449562,
+                    "value": "South Korea",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "South Korea",
+                    "_start": 51,
+                    "_end": 62
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999991393064,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1sfbvFvLicqJcSJUB",
+        "id": 91,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "B-state",
+            "B-country",
+            "I-country"
+        ]
+    },
+    {
+        "_text": "Tell me the weather forecast here",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "ME",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "me",
+                    "_start": 5,
+                    "_end": 7
+                }
+            ],
+            "current_location": [
+                {
+                    "confidence": 0.96835033663778,
+                    "value": "here",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "here",
+                    "_start": 29,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999903248,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1CTIe1wtX3VvM8hZj",
+        "id": 92,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "B-current_location"
+        ]
+    },
+    {
+        "_text": "Will there be a cloud in VI in 14 minutes ?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.98880227890588,
+                    "value": "cloud",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "cloud",
+                    "_start": 16,
+                    "_end": 21
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 22,
+                    "_end": 24
+                },
+                {
+                    "confidence": 0.89630862704659,
+                    "value": "VI",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "VI",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.97397261284901,
+                    "value": "in 14 minutes",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "in 14 minutes",
+                    "_start": 28,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999334996415,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1DuZ7eCHLfzKAv5mL",
+        "id": 93,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-state",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "O"
+        ]
+    },
+    {
+        "_text": "How much colder will it be not far from Utah around 3 Am?",
+        "entities": {
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "how",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "How",
+                    "_start": 0,
+                    "_end": 3
+                }
+            ],
+            "condition_temperature": [
+                {
+                    "confidence": 0.96886698675036,
+                    "value": "colder",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "colder",
+                    "_start": 9,
+                    "_end": 15
+                }
+            ],
+            "spatial_relation": [
+                {
+                    "confidence": 0.98470014671439,
+                    "value": "not far",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "not far",
+                    "_start": 27,
+                    "_end": 34
+                },
+                {
+                    "confidence": 1,
+                    "value": "around",
+                    "type": "value",
+                    "_entity": "spatial_relation",
+                    "_body": "around",
+                    "_start": 45,
+                    "_end": 51
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 0.8551021596005,
+                    "value": "Utah",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "Utah",
+                    "_start": 40,
+                    "_end": 44
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.98988249903535,
+                    "value": "3 am",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "3 Am",
+                    "_start": 52,
+                    "_end": 56
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998924125129,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1RF1VRQaJrby8qaXS",
+        "id": 94,
+        "labels": [
+            "B-object_name",
+            "O",
+            "B-condition_temperature",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "O",
+            "B-state",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Will it be chilly midday in Cresbard Afghanistan?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99384176883611,
+                    "value": "chilly",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "chilly",
+                    "_start": 11,
+                    "_end": 17
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 0.98641528897288,
+                    "value": "midday",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "midday",
+                    "_start": 18,
+                    "_end": 24
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.64714688967472,
+                    "value": "Cresbard",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Cresbard",
+                    "_start": 28,
+                    "_end": 36
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.89107435926559,
+                    "value": "Afghanistan",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Afghanistan",
+                    "_start": 37,
+                    "_end": 48
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998115460625,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1Bot1C6kGlq7gyj4Y",
+        "id": 95,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-timeRange",
+            "B-state",
+            "B-city",
+            "B-country"
+        ]
+    },
+    {
+        "_text": "What will the weather be in Sarygamy\u00c5\u0178 Sanctuary on august 21, 2035?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.55370304117687,
+                    "value": "Sarygamy\u00c5\u0178 Sanctuary",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Sarygamy\u00c5\u0178 Sanctuary",
+                    "_start": 28,
+                    "_end": 48
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99844805044696,
+                    "value": "august 21, 2035",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "august 21, 2035",
+                    "_start": 52,
+                    "_end": 67
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999999774806,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1mRWgnf9UPKjRN9yB",
+        "id": 96,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "I-city",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Will it be rainy in Tenino?",
+        "entities": {
+            "condition_description": [
+                {
+                    "confidence": 0.99692264194549,
+                    "value": "rainy",
+                    "type": "value",
+                    "_entity": "condition_description",
+                    "_body": "rainy",
+                    "_start": 11,
+                    "_end": 16
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 17,
+                    "_end": 19
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.78414808208635,
+                    "value": "Tenino",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Tenino",
+                    "_start": 20,
+                    "_end": 26
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998942031017,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1vgAcM1QgWDoyqpwo",
+        "id": 97,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "B-state",
+            "B-city"
+        ]
+    },
+    {
+        "_text": "Will it be hot in the Netherlands on February 16th?",
+        "entities": {
+            "condition_temperature": [
+                {
+                    "confidence": 0.99645360254062,
+                    "value": "hot",
+                    "type": "value",
+                    "_entity": "condition_temperature",
+                    "_body": "hot",
+                    "_start": 11,
+                    "_end": 14
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 15,
+                    "_end": 17
+                }
+            ],
+            "country": [
+                {
+                    "confidence": 0.83277080052982,
+                    "value": "Netherlands",
+                    "type": "value",
+                    "_entity": "country",
+                    "_body": "Netherlands",
+                    "_start": 22,
+                    "_end": 33
+                }
+            ],
+            "timeRange": [
+                {
+                    "suggested": true,
+                    "confidence": 0.9913928583907,
+                    "value": "February 16th",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "February 16th",
+                    "_start": 37,
+                    "_end": 50
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999676130316,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1iPtDp0KhQ6syh611",
+        "id": 98,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-condition_temperature",
+            "B-state",
+            "O",
+            "B-country",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ]
+    },
+    {
+        "_text": "Where is Belgium located",
+        "entities": {
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.32902509078941,
+                    "value": "is Belgium located",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "is Belgium located",
+                    "_start": 6,
+                    "_end": 24
+                }
+            ]
+        },
+        "msg_id": "1jtCAtVFkELnLtbjB",
+        "id": 99,
+        "labels": [
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "What will the weather be in Milleville Beach?",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 25,
+                    "_end": 27
+                }
+            ],
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.99528397045461,
+                    "value": "Milleville Beach",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Milleville Beach",
+                    "_start": 28,
+                    "_end": 44
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998772078,
+                    "value": "GetWeather",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1IhJFdHiJ3kYaSkLo",
+        "id": 100,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "B-city",
+            "I-city"
+        ]
+    }
+]

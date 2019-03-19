@@ -1,0 +1,6187 @@
+[
+    {
+        "_text": "rate this album four out of 6 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.99777899738814,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 16,
+                    "_end": 20
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.70940053971528,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 28,
+                    "_end": 29
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 30,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998781342,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1TOPZDhDiqkN9tXc3",
+        "id": 1,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-music_item",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give this textbook four stars.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 10,
+                    "_end": 18
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 19,
+                    "_end": 23
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 24,
+                    "_end": 29
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999822074244,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1RVwz1MA9grunfoq8",
+        "id": 2,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate A Twist in the Tale zero out of 6 points",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "in",
+                    "_start": 13,
+                    "_end": 15
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 25,
+                    "_end": 29
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 37,
+                    "_end": 38
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 39,
+                    "_end": 45
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999997880789,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1P5UKXG3hOUl2ilMx",
+        "id": 3,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate The children of Niobe 1 out of 6 points.",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 27,
+                    "_end": 28
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 36,
+                    "_end": 37
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 38,
+                    "_end": 44
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999359306,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1USgk43B53K4hzQoi",
+        "id": 4,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give zero stars to Halo: Ghosts of Onyx",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.91450694517017,
+                    "value": "Halo: Ghosts of Onyx",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Halo: Ghosts of Onyx",
+                    "_start": 19,
+                    "_end": 39
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998296654909,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1LpMFDXhqJR6bKck0",
+        "id": 5,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "give this novel a score of 5",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.94933877686277,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "5",
+                    "_start": 27,
+                    "_end": 28
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998568289041,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1aLRgnEE7DLEhYmNB",
+        "id": 6,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "Give the current series four of 6 points.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "series",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "series",
+                    "_start": 17,
+                    "_end": 23
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 24,
+                    "_end": 28
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 32,
+                    "_end": 33
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 34,
+                    "_end": 40
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999997846524,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1qlYlnIwdwyNpIYUh",
+        "id": 7,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give 4 out of 6 points to The Spirit Ring chronicle",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 5,
+                    "_end": 6
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 14,
+                    "_end": 15
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 16,
+                    "_end": 22
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.96703619413356,
+                    "value": "Spirit Ring chronicle",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Spirit Ring chronicle",
+                    "_start": 30,
+                    "_end": 51
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999998713787,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1ZjrWUmAbPp2ws9sQ",
+        "id": 8,
+        "labels": [
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "Give two stars out of 6 to 36 Children",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "two",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "two",
+                    "_start": 5,
+                    "_end": 8
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 9,
+                    "_end": 14
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 22,
+                    "_end": 23
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.81580145402818,
+                    "value": "36 Children",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "36 Children",
+                    "_start": 27,
+                    "_end": 38
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999960808091,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1RKZjxg4jrOfTvr6g",
+        "id": 9,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "B-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "Rate The Sneetches and Other Stories a three",
+        "entities": {
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.2492792441179,
+                    "value": "Sneetches and Other Stories a three",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Sneetches and Other Stories a three",
+                    "_start": 9,
+                    "_end": 44
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.999897514906,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1YcX2HWOPlIpbdTvT",
+        "id": 10,
+        "labels": [
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "Rate the current series four stars.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "series",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "series",
+                    "_start": 17,
+                    "_end": 23
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 24,
+                    "_end": 28
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 29,
+                    "_end": 34
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999867913534,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1O9QnrDk4rXr644yD",
+        "id": 11,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate this book a 4 out of 6",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 10,
+                    "_end": 14
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.73199415513187,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "4",
+                    "_start": 17,
+                    "_end": 18
+                },
+                {
+                    "confidence": 0.96902183631365,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 26,
+                    "_end": 27
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999986581698,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1DzDeeVCa6VNtDccj",
+        "id": 12,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-party_size_number",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "rate the current novel 5 of 6 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 23,
+                    "_end": 24
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 28,
+                    "_end": 29
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 30,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999988574856,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1LRQOQKRD0wm3ZQHg",
+        "id": 13,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate this book a 1",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 10,
+                    "_end": 14
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.67647841562087,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "1",
+                    "_start": 17,
+                    "_end": 18
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99995464443261,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1FEixcgxpEVrfmaut",
+        "id": 14,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "Give zero out of 6 to the current album",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 17,
+                    "_end": 18
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 26,
+                    "_end": 33
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.96314984747325,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 34,
+                    "_end": 39
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999823942257,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1cFmoI3PTH1W9iyHB",
+        "id": 15,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-object_select",
+            "B-music_item"
+        ]
+    },
+    {
+        "_text": "Give this album 5 points.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.99392570505884,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 16,
+                    "_end": 17
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 18,
+                    "_end": 24
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999514691979,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "136dhZkinHFv0egJW",
+        "id": 16,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-music_item",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate The Mystery of the Tolling Bell series 4 stars.",
+        "entities": {
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "series",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "series",
+                    "_start": 37,
+                    "_end": 43
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 44,
+                    "_end": 45
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 46,
+                    "_end": 51
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99971106623297,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1tMw1reKB5S6etGue",
+        "id": 17,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_part_of_series_type",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give the current novel two stars.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "two",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "two",
+                    "_start": 23,
+                    "_end": 26
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 27,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99996335864891,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1qdOCitfnGVvZfnpH",
+        "id": 18,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give the current book 4 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 17,
+                    "_end": 21
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 22,
+                    "_end": 23
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 24,
+                    "_end": 29
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999929954985,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1qJwL19WjnNw0avGV",
+        "id": 19,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give Joe Magarac and His USA Citizen Papers 5 points",
+        "entities": {
+            "party_size_description": [
+                {
+                    "suggested": true,
+                    "confidence": 0.6501681206198,
+                    "value": "Give Joe Magarac and His USA",
+                    "type": "value",
+                    "_entity": "party_size_description",
+                    "_body": "Give Joe Magarac and His USA",
+                    "_start": 0,
+                    "_end": 28
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 44,
+                    "_end": 45
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 46,
+                    "_end": 52
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99991390176385,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1QOb5CLoqjnrS2l8P",
+        "id": 20,
+        "labels": [
+            "B-party_size_description",
+            "I-party_size_description",
+            "I-party_size_description",
+            "I-party_size_description",
+            "I-party_size_description",
+            "I-party_size_description",
+            "O",
+            "O",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate The Guilty 0 of 6 points",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 21,
+                    "_end": 22
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 23,
+                    "_end": 29
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999952538748,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1UroWr5V0fQ9Rm9cZ",
+        "id": 21,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate this textbook four out of 6",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 10,
+                    "_end": 18
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 19,
+                    "_end": 23
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 31,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999990818373,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1F7LjROEqgCFunGM2",
+        "id": 22,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-timeRange",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "Give the Catedral series four stars.",
+        "entities": {
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "series",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "series",
+                    "_start": 18,
+                    "_end": 24
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 25,
+                    "_end": 29
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 30,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99994546849886,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "147IliHKF0rENrVCx",
+        "id": 23,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_part_of_series_type",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Reminiscences of the Anti-Japanese Guerillas chronicle deserves zero points out of 6 for a rating.",
+        "entities": {
+            "cuisine": [
+                {
+                    "confidence": 1,
+                    "value": "japanese",
+                    "type": "value",
+                    "_entity": "cuisine",
+                    "_body": "Japanese",
+                    "_start": 26,
+                    "_end": 34
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "chronicle",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "chronicle",
+                    "_start": 45,
+                    "_end": 54
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 64,
+                    "_end": 68
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 69,
+                    "_end": 75
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.87032353580144,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 83,
+                    "_end": 84
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999999995561,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1vIr3a1NYrqQwxFRi",
+        "id": 24,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-cuisine",
+            "O",
+            "B-object_part_of_series_type",
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-party_size_number",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "Give Small Screen, Big Picture a 0 out of 6 rating.",
+        "entities": {
+            "city": [
+                {
+                    "suggested": true,
+                    "confidence": 0.15157039130744,
+                    "value": "Small Screen",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Small Screen",
+                    "_start": 5,
+                    "_end": 17
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "picture",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "Picture",
+                    "_start": 23,
+                    "_end": 30
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.96001059352657,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 42,
+                    "_end": 43
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999680065902,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1pnzJemyLf0hzuyxZ",
+        "id": 25,
+        "labels": [
+            "O",
+            "B-city",
+            "I-city",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number",
+            "O"
+        ]
+    },
+    {
+        "_text": "Gods and Pawns should get a three",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "three",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "three",
+                    "_start": 28,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.93477558468995,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1VYUyBZO9OQcoez3f",
+        "id": 26,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "Give zero stars to this textbook",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 19,
+                    "_end": 23
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 24,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999846381885,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1CLrB6tHCdYorhjkF",
+        "id": 27,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "_text": "Rate the current novel a 4 out of 6 stars.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 25,
+                    "_end": 26
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.85778115071524,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 34,
+                    "_end": 35
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 36,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999912846,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "151MzpenN3NGP4XDO",
+        "id": 28,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate the book The Atmospheric Railway 5 out of 6",
+        "entities": {
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 9,
+                    "_end": 13
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 38,
+                    "_end": 39
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 47,
+                    "_end": 48
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99992450804642,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1UPf14vEIVud9d775",
+        "id": 29,
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "rate Black Boy 4 out of 6",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 15,
+                    "_end": 16
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 24,
+                    "_end": 25
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999138114428,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1BJjsAZzotRU4S17l",
+        "id": 30,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "Rate the chronicle current 1 star",
+        "entities": {
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "chronicle",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "chronicle",
+                    "_start": 9,
+                    "_end": 18
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 19,
+                    "_end": 26
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 27,
+                    "_end": 28
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999275407603,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1zvFvZqz2w5ceppVt",
+        "id": 31,
+        "labels": [
+            "O",
+            "O",
+            "B-object_part_of_series_type",
+            "B-object_select",
+            "B-timeRange",
+            "O"
+        ]
+    },
+    {
+        "_text": "mark this album a score of 5",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.99604789686207,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.96106947555405,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "5",
+                    "_start": 27,
+                    "_end": 28
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99110294705833,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "11D00PY1L1TLRtBVq",
+        "id": 32,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-music_item",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "rate the current novel zero out of 6",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 23,
+                    "_end": 27
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.7681346133854,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 35,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999954971226,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1ywfO2fcNNk0MafRs",
+        "id": 33,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "rate the current novel a 2",
+        "entities": {
+            "current_location": [
+                {
+                    "confidence": 0.75159379330131,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 25,
+                    "_end": 26
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99992210003505,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1d1wuPDkrJKVn500j",
+        "id": 34,
+        "labels": [
+            "O",
+            "O",
+            "B-current_location",
+            "B-object_type",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "Give The Giant Devil Dingo 4 points.",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 27,
+                    "_end": 28
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 29,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99996147228618,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1gggZLx30TvvYwgCV",
+        "id": 35,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate this current novel two out of 6.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this current",
+                    "_start": 5,
+                    "_end": 17
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 18,
+                    "_end": 23
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "two",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "two",
+                    "_start": 24,
+                    "_end": 27
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.89815693351725,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 35,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999988913354,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1rTwgxId0JfFHMbpQ",
+        "id": 36,
+        "labels": [
+            "O",
+            "B-object_select",
+            "I-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "Give Monthly Index of Medical Specialities a two out of 6 rating.",
+        "entities": {
+            "entity_name": [
+                {
+                    "suggested": true,
+                    "confidence": 0.32397461711909,
+                    "value": "Monthly Index of Medical",
+                    "type": "value",
+                    "_entity": "entity_name",
+                    "_body": "Monthly Index of Medical",
+                    "_start": 5,
+                    "_end": 29
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.73346130914877,
+                    "value": "two",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "two",
+                    "_start": 45,
+                    "_end": 48
+                },
+                {
+                    "confidence": 0.94342739900494,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 56,
+                    "_end": 57
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999923427409,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1EWriiX6ZUst8JWfu",
+        "id": 37,
+        "labels": [
+            "O",
+            "B-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "O",
+            "O",
+            "B-party_size_number",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "rate this novel 2 out of 6 points",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 16,
+                    "_end": 17
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 25,
+                    "_end": 26
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 27,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999774812,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1be0MPKR0SMC04Faz",
+        "id": 38,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate the current novel 3 stars",
+        "entities": {
+            "current_location": [
+                {
+                    "confidence": 0.78020055204255,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "current_location",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "3",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "3",
+                    "_start": 23,
+                    "_end": 24
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 25,
+                    "_end": 30
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999433324734,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1VBy8GcPEROxDHOpN",
+        "id": 39,
+        "labels": [
+            "O",
+            "O",
+            "B-current_location",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate the current essay zero out of 6 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "essay",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "essay",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 23,
+                    "_end": 27
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 35,
+                    "_end": 36
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 37,
+                    "_end": 42
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999776935,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1t3vr9TSNJtBbID4k",
+        "id": 40,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate this current album 0 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this current",
+                    "_start": 5,
+                    "_end": 17
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.95879501581249,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 18,
+                    "_end": 23
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.57792679298633,
+                    "value": "0 stars",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "0 stars",
+                    "_start": 24,
+                    "_end": 31
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999910408208,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1KtuNSp9QOJ0Fc199",
+        "id": 41,
+        "labels": [
+            "O",
+            "B-object_select",
+            "I-object_select",
+            "B-music_item",
+            "B-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "Give A Brief Stop on the Road from Auschwitz 1 out of 6 stars",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 45,
+                    "_end": 46
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 54,
+                    "_end": 55
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 56,
+                    "_end": 61
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999492559549,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1I6sNP2AEVG7rzT60",
+        "id": 42,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate this album 4 out of 6 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.99778629038689,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 16,
+                    "_end": 17
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.74005389889569,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 25,
+                    "_end": 26
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 27,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999995627394,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1tboqUjfBCRDGfRs0",
+        "id": 43,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-music_item",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate Hate That Cat 1 out of 6 stars.",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 19,
+                    "_end": 20
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.81665561519042,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 28,
+                    "_end": 29
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 30,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999997309469,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "18EtWR6XY6YJoTlo1",
+        "id": 44,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "give my current book one of 6 stars",
+        "entities": {
+            "playlist_owner": [
+                {
+                    "confidence": 1,
+                    "value": "my",
+                    "type": "value",
+                    "_entity": "playlist_owner",
+                    "_body": "my",
+                    "_start": 5,
+                    "_end": 7
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 8,
+                    "_end": 15
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 16,
+                    "_end": 20
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 21,
+                    "_end": 24
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.68087657746908,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 28,
+                    "_end": 29
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 30,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999892337787,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1MfG7F4Vx271fLPO9",
+        "id": 45,
+        "labels": [
+            "O",
+            "B-playlist_owner",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate current novel one stars.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 5,
+                    "_end": 12
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 13,
+                    "_end": 18
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 19,
+                    "_end": 22
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 23,
+                    "_end": 28
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999609651958,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1ovoG9sbiyQzEG3t7",
+        "id": 46,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give five out of 6 points to this album",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "five",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "five",
+                    "_start": 5,
+                    "_end": 9
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 17,
+                    "_end": 18
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 19,
+                    "_end": 25
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 29,
+                    "_end": 33
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.99653992907806,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 34,
+                    "_end": 39
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999927953,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1oVonJpplcjEW17JH",
+        "id": 47,
+        "labels": [
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit",
+            "O",
+            "B-object_select",
+            "B-music_item"
+        ]
+    },
+    {
+        "_text": "Give a rating of 2 to Juneteenth.",
+        "entities": {
+            "party_size_number": [
+                {
+                    "confidence": 0.95955631031394,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "2",
+                    "_start": 17,
+                    "_end": 18
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.29834448730903,
+                    "value": "Juneteenth",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Juneteenth",
+                    "_start": 22,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999651194068,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1hbcDI9KRUQBVT6qR",
+        "id": 48,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number",
+            "O",
+            "B-playlist"
+        ]
+    },
+    {
+        "_text": "Rate Ruth five out of 6 points.",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "five",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "five",
+                    "_start": 10,
+                    "_end": 14
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 22,
+                    "_end": 23
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 24,
+                    "_end": 30
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999897644,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1XOqH9YstgjfcRyBa",
+        "id": 49,
+        "labels": [
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate The Sea of Trolls 1 stars out of 6",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 23,
+                    "_end": 24
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 38,
+                    "_end": 39
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 25,
+                    "_end": 30
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999995708251,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1UK5bjkOjJtkVZGOh",
+        "id": 50,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "give The Zenith Angle one out of 6 points",
+        "entities": {
+            "city": [
+                {
+                    "confidence": 1,
+                    "value": "Zenith",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Zenith",
+                    "_start": 9,
+                    "_end": 15
+                },
+                {
+                    "confidence": 1,
+                    "value": "Angle",
+                    "type": "value",
+                    "_entity": "city",
+                    "_body": "Angle",
+                    "_start": 16,
+                    "_end": 21
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 22,
+                    "_end": 25
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 33,
+                    "_end": 34
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 35,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999997309282,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "18P9Y0bjiE7gCg3y7",
+        "id": 51,
+        "labels": [
+            "O",
+            "O",
+            "B-city",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give zero stars to Rhialto the Marvellous",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.5641206181242,
+                    "value": "Rhialto the Marvellous",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Rhialto the Marvellous",
+                    "_start": 19,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99988356064878,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "19OJH47i9CeQNhovO",
+        "id": 52,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "B-rating_unit",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "give the current book a zero of 6",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 17,
+                    "_end": 21
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 24,
+                    "_end": 28
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.9648988817514,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 32,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999836130882,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1KTioKJ7TleMEYmbR",
+        "id": 53,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "rate Personal Demons 0 out of 6 points",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 30,
+                    "_end": 31
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 32,
+                    "_end": 38
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999965610853,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1r2eTmJ8nod5HGnQS",
+        "id": 54,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate the current series a 4",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "series",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "series",
+                    "_start": 17,
+                    "_end": 23
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 26,
+                    "_end": 27
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998024548804,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "12CyUBlB8n97n6qif",
+        "id": 55,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "Give one of 6 points to Who Will Cry When You Die",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 5,
+                    "_end": 8
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 12,
+                    "_end": 13
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 14,
+                    "_end": 20
+                }
+            ],
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "Who Will Cry When You Die",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "Who Will Cry When You Die",
+                    "_start": 24,
+                    "_end": 49
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999000669031,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1SPMGNwlDfeCLJ3h8",
+        "id": 56,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "B-timeRange",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "_text": "Give zero out of 6 stars to this album",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 17,
+                    "_end": 18
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 19,
+                    "_end": 24
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 28,
+                    "_end": 32
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.99651334596895,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 33,
+                    "_end": 38
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999998873974,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "11FUzaFRz65EV1Vm0",
+        "id": 57,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit",
+            "O",
+            "B-object_select",
+            "B-music_item"
+        ]
+    },
+    {
+        "_text": "Give this novel 2 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 16,
+                    "_end": 17
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 18,
+                    "_end": 23
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.999991608277,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "181Rh78fYeSKJrpAt",
+        "id": 58,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate The 8-Week Cholesterol Cure three out of 6.",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "8",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "8",
+                    "_start": 9,
+                    "_end": 10
+                },
+                {
+                    "confidence": 1,
+                    "value": "week",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "Week",
+                    "_start": 11,
+                    "_end": 15
+                },
+                {
+                    "confidence": 1,
+                    "value": "three",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "three",
+                    "_start": 33,
+                    "_end": 38
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.90126143585648,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 46,
+                    "_end": 47
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99996870896957,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1h2I4AyGyShKx96Bg",
+        "id": 59,
+        "labels": [
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "rate this novel 3 out of 6 points",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "3",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "3",
+                    "_start": 16,
+                    "_end": 17
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 25,
+                    "_end": 26
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 27,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999690402,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1vBLVJMZ0sK5HfoGX",
+        "id": 60,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate The Lives of John Lennon five points",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "five",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "five",
+                    "_start": 30,
+                    "_end": 34
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 35,
+                    "_end": 41
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999993956205,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "10cj3TCQRUk5mKTdV",
+        "id": 61,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give The American Scene 2 of 6 stars",
+        "entities": {
+            "cuisine": [
+                {
+                    "confidence": 1,
+                    "value": "american",
+                    "type": "value",
+                    "_entity": "cuisine",
+                    "_body": "American",
+                    "_start": 9,
+                    "_end": 17
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 24,
+                    "_end": 25
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 29,
+                    "_end": 30
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 31,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998726825763,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1O89TJKQYln24V9mf",
+        "id": 62,
+        "labels": [
+            "O",
+            "O",
+            "B-cuisine",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate this textbook a one.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 10,
+                    "_end": 18
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 21,
+                    "_end": 24
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999435475895,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1N2JOFRzchEEOghnV",
+        "id": 63,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "_text": "Give Summer of the Swans 1 points.",
+        "entities": {
+            "playlist": [
+                {
+                    "confidence": 1,
+                    "value": "summer",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Summer",
+                    "_start": 5,
+                    "_end": 11
+                }
+            ],
+            "movie_name": [
+                {
+                    "confidence": 1,
+                    "value": "The Swan",
+                    "type": "value",
+                    "_entity": "movie_name",
+                    "_body": "the Swan",
+                    "_start": 15,
+                    "_end": 23
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 25,
+                    "_end": 26
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 27,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99996291485031,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1xCTpM9QuZYx1RsxI",
+        "id": 64,
+        "labels": [
+            "O",
+            "B-playlist",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give the current textbook a rating of five.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 17,
+                    "_end": 25
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.97490165956253,
+                    "value": "five",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "five",
+                    "_start": 38,
+                    "_end": 42
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999999902138,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1GFxgjQYc7f21TlbE",
+        "id": 65,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "Give 4 points to The Person and the Common Good",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 5,
+                    "_end": 6
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 7,
+                    "_end": 13
+                }
+            ],
+            "restaurant_name": [
+                {
+                    "suggested": true,
+                    "confidence": 0.37075457252642,
+                    "value": "Common Good",
+                    "type": "value",
+                    "_entity": "restaurant_name",
+                    "_body": "Common Good",
+                    "_start": 36,
+                    "_end": 47
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99995843390519,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1D3fjXhad7krEyObl",
+        "id": 66,
+        "labels": [
+            "O",
+            "B-timeRange",
+            "B-rating_unit",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-restaurant_name",
+            "I-restaurant_name"
+        ]
+    },
+    {
+        "_text": "Give a four rating to A World Apart.",
+        "entities": {
+            "party_size_number": [
+                {
+                    "confidence": 0.78371787574598,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "four",
+                    "_start": 7,
+                    "_end": 11
+                }
+            ],
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "A World Apart",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "A World Apart",
+                    "_start": 22,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998249036843,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1yOQtrNM5MjN5zJsf",
+        "id": 67,
+        "labels": [
+            "O",
+            "O",
+            "B-party_size_number",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "_text": "rate this chronicle 0 points",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "chronicle",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "chronicle",
+                    "_start": 10,
+                    "_end": 19
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 22,
+                    "_end": 28
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999982189924,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1hNIkb72tFlR5Dxkg",
+        "id": 68,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give Wilco: Learning How to Die a rating of four points.",
+        "entities": {
+            "entity_name": [
+                {
+                    "suggested": true,
+                    "confidence": 0.73499570184538,
+                    "value": "Wilco: Learning How",
+                    "type": "value",
+                    "_entity": "entity_name",
+                    "_body": "Wilco: Learning How",
+                    "_start": 5,
+                    "_end": 24
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.89169479992512,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "four",
+                    "_start": 44,
+                    "_end": 48
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 49,
+                    "_end": 55
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999987820771,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1X02Ghwa9LdOSwfpC",
+        "id": 69,
+        "labels": [
+            "O",
+            "B-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate this saga two out of 6.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "saga",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "saga",
+                    "_start": 10,
+                    "_end": 14
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "two",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "two",
+                    "_start": 15,
+                    "_end": 18
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.92141556120931,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 26,
+                    "_end": 27
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999904616873,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "13JhHS1p4AZUZXiXb",
+        "id": 70,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "rate The Gift: Imagination and the Erotic Life of Property five stars",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "five",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "five",
+                    "_start": 59,
+                    "_end": 63
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 64,
+                    "_end": 69
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99997752782118,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1PxOVN0UrY197vgAv",
+        "id": 71,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate Neverwhere four out of 6",
+        "entities": {
+            "party_size_number": [
+                {
+                    "confidence": 0.69454550687801,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "four",
+                    "_start": 16,
+                    "_end": 20
+                },
+                {
+                    "confidence": 0.89135025209774,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 28,
+                    "_end": 29
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99993886585241,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1wSXN4ST1a6qmBnSH",
+        "id": 72,
+        "labels": [
+            "O",
+            "O",
+            "B-party_size_number",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "Rate In the Company of Cheerful Ladies a zero out of 6",
+        "entities": {
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "In",
+                    "_start": 5,
+                    "_end": 7
+                }
+            ],
+            "playlist": [
+                {
+                    "confidence": 1,
+                    "value": "cheerful",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Cheerful",
+                    "_start": 23,
+                    "_end": 31
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "zero",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "zero",
+                    "_start": 41,
+                    "_end": 45
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 53,
+                    "_end": 54
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999701609746,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1wVBWwE1MFwK6oFMl",
+        "id": 73,
+        "labels": [
+            "O",
+            "B-state",
+            "O",
+            "O",
+            "O",
+            "B-playlist",
+            "O",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "Give one start to the current book",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 5,
+                    "_end": 8
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 22,
+                    "_end": 29
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 30,
+                    "_end": 34
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99996625635791,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1FTZjtbn5f0ohDVMF",
+        "id": 74,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "_text": "Give this chronicle a 2 rating.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "chronicle",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "chronicle",
+                    "_start": 10,
+                    "_end": 19
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 22,
+                    "_end": 23
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999987362231,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "15rP3dg47esBQeStB",
+        "id": 75,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "O",
+            "B-timeRange",
+            "O"
+        ]
+    },
+    {
+        "_text": "rate this essay a 1",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "essay",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "essay",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 18,
+                    "_end": 19
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99997650809034,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1vEnMjuSukEVXbP9G",
+        "id": 76,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "Out of 6, give Rivers of Babylon a 1",
+        "entities": {
+            "party_size_number": [
+                {
+                    "confidence": 0.79571659956836,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 7,
+                    "_end": 8
+                }
+            ],
+            "entity_name": [
+                {
+                    "suggested": true,
+                    "confidence": 0.76156043412961,
+                    "value": "give Rivers of Babylon a 1",
+                    "type": "value",
+                    "_entity": "entity_name",
+                    "_body": "give Rivers of Babylon a 1",
+                    "_start": 10,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99995544885454,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1TlPrRtgHumHOMFiF",
+        "id": 77,
+        "labels": [
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name"
+        ]
+    },
+    {
+        "_text": "Give 5 of 6 stars to Expressive Processing",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 5,
+                    "_end": 6
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 10,
+                    "_end": 11
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 12,
+                    "_end": 17
+                }
+            ],
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "Expressive Processing",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "Expressive Processing",
+                    "_start": 21,
+                    "_end": 42
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999996231497,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1PlJOfDObcDv82vxg",
+        "id": 78,
+        "labels": [
+            "O",
+            "B-rating_value",
+            "O",
+            "B-timeRange",
+            "B-rating_unit",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "_text": "rate The Ghost House series a one",
+        "entities": {
+            "genre": [
+                {
+                    "confidence": 1,
+                    "value": "House",
+                    "type": "value",
+                    "_entity": "genre",
+                    "_body": "House",
+                    "_start": 15,
+                    "_end": 20
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "series",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "series",
+                    "_start": 21,
+                    "_end": 27
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 30,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99985517471876,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "12yQHPLpZvRv2BFON",
+        "id": 79,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-genre",
+            "B-object_part_of_series_type",
+            "O",
+            "B-rating_value"
+        ]
+    },
+    {
+        "_text": "rate Know Ye Not Agincourt? 2 out of 6 stars",
+        "entities": {
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "Know Ye Not Agincourt?",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "Know Ye Not Agincourt?",
+                    "_start": 5,
+                    "_end": 27
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 28,
+                    "_end": 29
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 37,
+                    "_end": 38
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 39,
+                    "_end": 44
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999951227365,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1jr7WomvbXWpObUgE",
+        "id": 80,
+        "labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "I would rate Theft: A Love Story four out of 6 stars.",
+        "entities": {
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "Love",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "Love",
+                    "_start": 22,
+                    "_end": 26
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 33,
+                    "_end": 37
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 45,
+                    "_end": 46
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 47,
+                    "_end": 52
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999884433,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "18UFJ9v49Y3ZQvbob",
+        "id": 81,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate The Further Adventures of The Joker four stars",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 41,
+                    "_end": 45
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 46,
+                    "_end": 51
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99988743221718,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1gqWQHosN84SPY9aE",
+        "id": 82,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give 0 rating to In the Heart of the Country",
+        "entities": {
+            "entity_name": [
+                {
+                    "suggested": true,
+                    "confidence": 0.47023655362626,
+                    "value": "0 rating",
+                    "type": "value",
+                    "_entity": "entity_name",
+                    "_body": "0 rating",
+                    "_start": 5,
+                    "_end": 13
+                }
+            ],
+            "state": [
+                {
+                    "confidence": 1,
+                    "value": "IN",
+                    "type": "value",
+                    "_entity": "state",
+                    "_body": "In",
+                    "_start": 17,
+                    "_end": 19
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.75355012935217,
+                    "value": "Heart of the Country",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Heart of the Country",
+                    "_start": 24,
+                    "_end": 44
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.98504526991811,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "19a5Kw66pk8XRVfaU",
+        "id": 83,
+        "labels": [
+            "O",
+            "B-entity_name",
+            "I-entity_name",
+            "O",
+            "B-state",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "Give 1 out of 6 rating to the current textbook",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 5,
+                    "_end": 6
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 14,
+                    "_end": 15
+                }
+            ],
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 30,
+                    "_end": 37
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 38,
+                    "_end": 46
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999461237,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1w1ZbYQfGTERSqT66",
+        "id": 84,
+        "labels": [
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type"
+        ]
+    },
+    {
+        "_text": "give the current chronicle five of 6 points",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "chronicle",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "chronicle",
+                    "_start": 17,
+                    "_end": 26
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "five",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "five",
+                    "_start": 27,
+                    "_end": 31
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 35,
+                    "_end": 36
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 37,
+                    "_end": 43
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999960258,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1nOVaozNUmNlII4wW",
+        "id": 85,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate Cotton Comes to Harlem a 2",
+        "entities": {
+            "object_name": [
+                {
+                    "confidence": 1,
+                    "value": "Cotton Comes to Harlem",
+                    "type": "value",
+                    "_entity": "object_name",
+                    "_body": "Cotton Comes to Harlem",
+                    "_start": 5,
+                    "_end": 27
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "2",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "2",
+                    "_start": 30,
+                    "_end": 31
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9934485981757,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1Sfn47hW16xa72xRM",
+        "id": 86,
+        "labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "Give this album one stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 0.99192653065678,
+                    "value": "album",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "album",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 16,
+                    "_end": 19
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 20,
+                    "_end": 25
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99998385283041,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1natf44DVsjjYuxwy",
+        "id": 87,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-music_item",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "rate The Adventures of Augie March one points",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 35,
+                    "_end": 38
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 39,
+                    "_end": 45
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999207765136,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1gZNl70Et89hUSlF3",
+        "id": 88,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate Soul Music a 0.",
+        "entities": {
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.5579662757643,
+                    "value": "Soul Music a 0",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Soul Music a 0",
+                    "_start": 5,
+                    "_end": 19
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.98988763586824,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1TTFbjN35gnqovhPw",
+        "id": 89,
+        "labels": [
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "Give Hindu Temples: What Happened to Them a 5 out of 6 stars.",
+        "entities": {
+            "entity_name": [
+                {
+                    "suggested": true,
+                    "confidence": 0.95231944332206,
+                    "value": "Hindu Temples: What Happened",
+                    "type": "value",
+                    "_entity": "entity_name",
+                    "_body": "Hindu Temples: What Happened",
+                    "_start": 5,
+                    "_end": 33
+                }
+            ],
+            "music_item": [
+                {
+                    "confidence": 1,
+                    "value": "them",
+                    "type": "value",
+                    "_entity": "music_item",
+                    "_body": "Them",
+                    "_start": 37,
+                    "_end": 41
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 44,
+                    "_end": 45
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.8717909408637,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 53,
+                    "_end": 54
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 55,
+                    "_end": 60
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999744130683,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1823q0t8FBMsSBM0r",
+        "id": 90,
+        "labels": [
+            "O",
+            "B-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "O",
+            "B-music_item",
+            "O",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give this novel a 1.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "novel",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "novel",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 18,
+                    "_end": 19
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999442259122,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1VytfaBQh9n5p4d2P",
+        "id": 91,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "_text": "rate the current textbook 1 out of 6",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 17,
+                    "_end": 25
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "1",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "1",
+                    "_start": 26,
+                    "_end": 27
+                },
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 35,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.9999998278713,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1GB0X4G5Xicln8PDh",
+        "id": 92,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-timeRange",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "Give this textbook 0 out of 6 stars",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "textbook",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "textbook",
+                    "_start": 10,
+                    "_end": 18
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "6",
+                    "_start": 28,
+                    "_end": 29
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 30,
+                    "_end": 35
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999428172,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1HlaLA5xRR9x9qcbU",
+        "id": 93,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Give The Crystal Snare 5 stars",
+        "entities": {
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "5",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "5",
+                    "_start": 23,
+                    "_end": 24
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 25,
+                    "_end": 30
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99974773593325,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "179Mqa2vsqp9pnbbF",
+        "id": 94,
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-rating_value",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate this saga two out of 6.",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "saga",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "saga",
+                    "_start": 10,
+                    "_end": 14
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "two",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "two",
+                    "_start": 15,
+                    "_end": 18
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.92141556120931,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 26,
+                    "_end": 27
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999904616873,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1jiunyISQ8X6bWVnA",
+        "id": 95,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "Give Wilco: Learning How to Die a rating of four points.",
+        "entities": {
+            "entity_name": [
+                {
+                    "suggested": true,
+                    "confidence": 0.73499570184538,
+                    "value": "Wilco: Learning How",
+                    "type": "value",
+                    "_entity": "entity_name",
+                    "_body": "Wilco: Learning How",
+                    "_start": 5,
+                    "_end": 24
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.89169479992512,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "four",
+                    "_start": 44,
+                    "_end": 48
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 49,
+                    "_end": 55
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999987820771,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1cE5c2YAF4V2lIbR5",
+        "id": 96,
+        "labels": [
+            "O",
+            "B-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-party_size_number",
+            "B-rating_unit"
+        ]
+    },
+    {
+        "_text": "Rate this book 3 stars out of 6",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "this",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "this",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "object_type": [
+                {
+                    "confidence": 1,
+                    "value": "book",
+                    "type": "value",
+                    "_entity": "object_type",
+                    "_body": "book",
+                    "_start": 10,
+                    "_end": 14
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.72288448453917,
+                    "value": "3",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "3",
+                    "_start": 15,
+                    "_end": 16
+                },
+                {
+                    "confidence": 0.88742700865308,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 30,
+                    "_end": 31
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 17,
+                    "_end": 22
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999999421643,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1SBooChDLn9z1KclE",
+        "id": 97,
+        "labels": [
+            "O",
+            "B-object_select",
+            "B-object_type",
+            "B-party_size_number",
+            "B-rating_unit",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "_text": "rate the Three Junes one out of 6",
+        "entities": {
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.29624039972748,
+                    "value": "Three Junes",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Three Junes",
+                    "_start": 9,
+                    "_end": 20
+                }
+            ],
+            "rating_value": [
+                {
+                    "confidence": 1,
+                    "value": "one",
+                    "type": "value",
+                    "_entity": "rating_value",
+                    "_body": "one",
+                    "_start": 21,
+                    "_end": 24
+                }
+            ],
+            "party_size_number": [
+                {
+                    "confidence": 0.80255160258181,
+                    "value": "6",
+                    "type": "value",
+                    "_entity": "party_size_number",
+                    "_body": "6",
+                    "_start": 32,
+                    "_end": 33
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999810566085,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1RLl6aTv5p8ObghF8",
+        "id": 98,
+        "labels": [
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "B-rating_value",
+            "O",
+            "O",
+            "B-party_size_number"
+        ]
+    },
+    {
+        "_text": "Give four stars to The Broken Window",
+        "entities": {
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "four",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "four",
+                    "_start": 5,
+                    "_end": 9
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "stars",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "stars",
+                    "_start": 10,
+                    "_end": 15
+                }
+            ],
+            "playlist": [
+                {
+                    "suggested": true,
+                    "confidence": 0.95004702445841,
+                    "value": "Broken Window",
+                    "type": "value",
+                    "_entity": "playlist",
+                    "_body": "Broken Window",
+                    "_start": 23,
+                    "_end": 36
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99706872659175,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1B5AjpwIatdTQHI79",
+        "id": 99,
+        "labels": [
+            "O",
+            "B-timeRange",
+            "B-rating_unit",
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "_text": "Rate the current series 4 points",
+        "entities": {
+            "object_select": [
+                {
+                    "confidence": 1,
+                    "value": "current",
+                    "type": "value",
+                    "_entity": "object_select",
+                    "_body": "current",
+                    "_start": 9,
+                    "_end": 16
+                }
+            ],
+            "object_part_of_series_type": [
+                {
+                    "confidence": 1,
+                    "value": "series",
+                    "type": "value",
+                    "_entity": "object_part_of_series_type",
+                    "_body": "series",
+                    "_start": 17,
+                    "_end": 23
+                }
+            ],
+            "timeRange": [
+                {
+                    "confidence": 1,
+                    "value": "4",
+                    "type": "value",
+                    "_entity": "timeRange",
+                    "_body": "4",
+                    "_start": 24,
+                    "_end": 25
+                }
+            ],
+            "rating_unit": [
+                {
+                    "confidence": 1,
+                    "value": "points",
+                    "type": "value",
+                    "_entity": "rating_unit",
+                    "_body": "points",
+                    "_start": 26,
+                    "_end": 32
+                }
+            ],
+            "intent": [
+                {
+                    "confidence": 0.99999856876291,
+                    "value": "RateBook",
+                    "_entity": "intent"
+                }
+            ]
+        },
+        "msg_id": "1Vgdl9pWcEcQKAL60",
+        "id": 100,
+        "labels": [
+            "O",
+            "O",
+            "B-object_select",
+            "B-object_part_of_series_type",
+            "B-timeRange",
+            "B-rating_unit"
+        ]
+    }
+]
