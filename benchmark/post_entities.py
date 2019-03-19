@@ -16,8 +16,10 @@ def read_config_file(config_file, app_name):
     url = config['URL']['post_entities_url']
     if app_name == 'snips':
         TOKEN = config['TOKEN']['snips_token']
-    else:
+    elif app_name == 'atis':
         TOKEN = config['TOKEN']['atis_token']
+    else:
+        TOKEN = config['TOKEN']['test_token']
 
 
 def post_entities(input_file):
