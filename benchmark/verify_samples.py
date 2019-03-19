@@ -16,8 +16,10 @@ def read_config_file(config_file, app_name):
     url = config['URL']['get_message']
     if app_name == 'snips':
         TOKEN = config['TOKEN']['snips_token']
-    else:
+    elif app_name == 'atis':
         TOKEN = config['TOKEN']['atis_token']
+    else:
+        TOKEN = config['TOKEN']['test_token']
 
 
 def get_messages(input_file, output_file, failed_file):
@@ -37,7 +39,7 @@ def get_messages(input_file, output_file, failed_file):
     failed_list = []
     response = []
     for sample in json_data:
-        sample_url = url + sample['text']
+        sample_url = url + sample['text'] + "&verbose=True"
         try:
             r = requests.get(sample_url, headers=headers)
             print(r.content)
