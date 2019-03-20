@@ -7,4 +7,8 @@ Library for sequence labeling evaluation: [seqeval](https://github.com/chakki-wo
 Intent detection evaluation:
    * error rate
    * confusion matrix
+  
+## SnipsNLU dataset
+### Intent detection
+![Alt text](pics/snips_confusionmat.PNG?raw=true "Confusion matrix for Snips")
 
