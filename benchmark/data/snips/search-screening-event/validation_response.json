@@ -1099,7 +1099,7 @@
             "B-object_type",
             "B-state",
             "O",
-            "O",
+            "B-object_type",
             "O",
             "O",
             "B-playlist",
@@ -1277,7 +1277,7 @@
             "B-object_location_type",
             "I-object_location_type",
             "O",
-            "O",
+            "B-object_type",
             "O"
         ]
     },
@@ -2452,8 +2452,8 @@
         "labels": [
             "B-object_type",
             "O",
-            "O",
-            "O",
+            "B-object_type",
+            "I-object_type",
             "B-state",
             "O",
             "B-poi"
@@ -2975,8 +2975,8 @@
             "B-state",
             "B-location_name",
             "I-location_name",
-            "O",
-            "O"
+            "B-object_type",
+            "I-object_type"
         ]
     },
     {
@@ -3315,7 +3315,7 @@
             "B-object_type",
             "B-state",
             "O",
-            "O",
+            "B-object_type",
             "O",
             "B-location_name",
             "I-location_name",
@@ -3431,7 +3431,7 @@
             "B-state",
             "O",
             "B-movie_type",
-            "O",
+            "B-state",
             "O",
             "B-poi"
         ]
@@ -3712,14 +3712,14 @@
             "B-object_type",
             "B-state",
             "O",
+            "B-object_type",
             "O",
-            "O",
-            "O",
+            "B-object_type",
             "O",
             "O",
             "O",
             "B-spatial_relation",
-            "O",
+            "B-object_type",
             "B-genre"
         ]
     },
@@ -3898,9 +3898,9 @@
             "B-object_type",
             "B-state",
             "O",
-            "O",
-            "O",
-            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-state",
             "O",
             "B-object_name"
         ]
@@ -3975,8 +3975,8 @@
             "B-object_type",
             "B-state",
             "O",
-            "O",
-            "O",
+            "B-object_type",
+            "I-object_type",
             "O",
             "B-movie_type",
             "O",
@@ -4052,8 +4052,8 @@
         "labels": [
             "B-object_type",
             "O",
-            "O",
-            "O",
+            "B-object_type",
+            "I-object_type",
             "O",
             "B-movie_type",
             "I-movie_type",
@@ -4063,16 +4063,16 @@
         ]
     },
     {
-        "_text": "Is The Eye \u00e2\u20ac\u201c Infinity playing at General Cinema Corporation",
+        "_text": "Is The Eye – Infinity playing at General Cinema Corporation",
         "entities": {
             "entity_name": [
                 {
                     "suggested": true,
                     "confidence": 0.36408965104155,
-                    "value": "Eye \u00e2\u20ac\u201c",
+                    "value": "Eye –",
                     "type": "value",
                     "_entity": "entity_name",
-                    "_body": "Eye \u00e2\u20ac\u201c",
+                    "_body": "Eye –",
                     "_start": 7,
                     "_end": 14
                 }
@@ -4399,7 +4399,7 @@
             "O",
             "O",
             "B-spatial_relation",
-            "O",
+            "B-object_type",
             "B-genre"
         ]
     },
@@ -5271,7 +5271,7 @@
         "labels": [
             "B-object_type",
             "O",
-            "O",
+            "B-object_type",
             "O",
             "B-city",
             "O",

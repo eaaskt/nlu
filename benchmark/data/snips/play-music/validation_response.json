@@ -1772,7 +1772,7 @@
             "O",
             "O",
             "B-playlist",
-            "O",
+            "B-playlist",
             "O"
         ]
     },
@@ -2709,7 +2709,7 @@
             "B-artist",
             "I-artist",
             "I-artist",
-            "O"
+            "B-music_item"
         ]
     },
     {
@@ -2753,7 +2753,7 @@
             "B-music_item",
             "O",
             "O",
-            "O",
+            "B-music_item",
             "O"
         ]
     },
@@ -3674,7 +3674,7 @@
         ]
     },
     {
-        "_text": "Use the last fm service to play A Mis Ni\u00c3\u00b1os de 30",
+        "_text": "Use the last fm service to play A Mis Niños de 30",
         "entities": {
             "object_select": [
                 {
@@ -3701,10 +3701,10 @@
             "playlist": [
                 {
                     "confidence": 0.97331924531843,
-                    "value": "a mis ni\u00c3\u00b1os de 30",
+                    "value": "a mis niños de 30",
                     "type": "value",
                     "_entity": "playlist",
-                    "_body": "A Mis Ni\u00c3\u00b1os de 30",
+                    "_body": "A Mis Niños de 30",
                     "_start": 32,
                     "_end": 50
                 }
@@ -4242,7 +4242,7 @@
         ]
     },
     {
-        "_text": "Play some blues brit\u00c3\u00a2nico.",
+        "_text": "Play some blues britânico.",
         "entities": {
             "playlist": [
                 {

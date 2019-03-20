@@ -442,9 +442,9 @@
             "B-playlist",
             "I-playlist",
             "O",
-            "O",
-            "O",
-            "O"
+            "B-playlist",
+            "I-playlist",
+            "I-playlist"
         ]
     },
     {
@@ -752,7 +752,7 @@
             "B-object_type",
             "I-object_type",
             "B-timeRange",
-            "O",
+            "B-timeRange",
             "O",
             "O"
         ]
@@ -2301,10 +2301,10 @@
             "I-playlist",
             "O",
             "O",
-            "O",
-            "O",
-            "O",
-            "O"
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist"
         ]
     },
     {
@@ -2602,7 +2602,7 @@
         ]
     },
     {
-        "_text": "Find me the novel with the name To Lose My Life\u00e2\u20ac\u00a6",
+        "_text": "Find me the novel with the name To Lose My Life…",
         "entities": {
             "state": [
                 {
@@ -2641,10 +2641,10 @@
                 {
                     "suggested": true,
                     "confidence": 0.83453776653417,
-                    "value": "Life\u00e2\u20ac\u00a6",
+                    "value": "Life…",
                     "type": "value",
                     "_entity": "playlist",
-                    "_body": "Life\u00e2\u20ac\u00a6",
+                    "_body": "Life…",
                     "_start": 43,
                     "_end": 50
                 }
@@ -4112,8 +4112,8 @@
             "O",
             "B-timeRange",
             "I-timeRange",
-            "O",
-            "O"
+            "B-state",
+            "B-state"
         ]
     },
     {
@@ -4331,7 +4331,7 @@
             "O",
             "B-object_type",
             "B-playlist",
-            "O"
+            "B-object_type"
         ]
     },
     {
