@@ -12,6 +12,16 @@ Intent detection evaluation:
 ### Intent detection
 ![Alt text](pics/snips_confusionmat.PNG?raw=true "Confusion matrix for Snips")
 
+| |f1|
+|---------|---------|
+AddToPlaylist|0.985075
+BookRestaurant|0.994975
+GetWeather| 0.989899
+PlayMusic| 0.979592
+RateBook| 1.00
+SearchCreativeWork|0.947867
+SearchScreeningEvent| 0.942408
+
 ### Slot filling
 #### AddToPlaylist
 * F1 score:   0.446337

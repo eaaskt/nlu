@@ -10,6 +10,7 @@ from seqeval.metrics import recall_score
 from seqeval.metrics import precision_score
 from seqeval.metrics import classification_report
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import f1_score as scikit_f1
 
 
 def plot_confusion_matrix(y_true, y_pred, labels,
@@ -198,3 +199,7 @@ if __name__ == '__main__':
     plot_confusion_matrix(intents_true, intents_pred, labels=intents,
                           title='Confusion matrix, without normalization')
     plt.show()
+
+    scores = scikit_f1(intents_true, intents_pred, average=None, labels=intents)
+    for i, s in zip(intents, scores):
+        print("%s : %lf" % (i, s))
