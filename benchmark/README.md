@@ -89,16 +89,16 @@ spatial_relation |      0.50|      0.57|      0.53|        14|
 
 | |precision|    recall|  f1-score|   support|
 |---------|----------|----------|----------|----------|
-      album|       0.00|      0.00|      0.00|        13|
-    service|       0.46|      0.33|      0.39|        39|
-     artist|       0.41|      0.25|      0.31|        63|
- music_item|       0.38|      0.35|      0.37|        31|
-      track|       0.00|      0.00|      0.00|         6|
-       year|       0.61|      0.44|      0.51|        25|
-       sort|       0.25|      0.12|      0.16|        17|
-   playlist|       0.08|      0.33|      0.12|         9|
-      genre|       0.00|      0.00|      0.00|         3|
-avg / total|      0.37 |     0.27 |     0.31 |      206|
+album|       0.00|      0.00|      0.00|        13
+service|       0.46|      0.33|      0.39|        39
+artist|       0.41|      0.25|      0.31|        63
+music_item|       0.38|      0.35|      0.37|        31
+track|       0.00|      0.00|      0.00|         6
+year|       0.61|      0.44|      0.51|        25
+sort|       0.25|      0.12|      0.16|        17
+playlist|       0.08|      0.33|      0.12|         9
+genre|       0.00|      0.00|      0.00|         3
+**avg / total**|      **0.37** |     **0.27** |     **0.31** |      **206**
 
 #### RateBook
 * F1 score: 0.081461
@@ -115,7 +115,7 @@ rating_unit|       0.17|      0.16|      0.17|        61
 object_part_of_series_type|       0.17|      0.13|      0.15|        15
 rating_value|       0.11|      0.04|      0.06|       100
 best_rating|       0.00|      0.00|      0.00|        51
-avg / total|       0.10|      0.08|      0.09|       367
+**avg / total**|       **0.10**|      **0.08**|      **0.09**|       **367**
 
 #### SearchCreativeWork
 * F1 score: 0.089005
@@ -127,7 +127,7 @@ avg / total|       0.10|      0.08|      0.09|       367
 |---------|----------|----------|----------|----------|
 object_name|       0.36 |     0.04|      0.07|       100|
 object_type|       0.33 |     0.18|      0.23|        73|
-avg / total|       0.35 |     0.10|      0.14|       173|
+**avg / total**|       **0.35** |     **0.10**|      **0.14**|       **173**|
 
 #### SearchScreeningEvent
 * F1 score: 0.016807
@@ -144,7 +144,7 @@ object_location_type|       0.00 |     0.00|      0.00|        20|
 location_name|       0.00 |     0.00|      0.00|        29|
 movie_type|       0.04 |     0.04|      0.04|        24|
 timeRange |      0.00 |     0.00|      0.00|        12|
-avg / total |      0.04 |     0.02|      0.02 |      212|
+**avg / total** |      **0.04** |     **0.02|      **0.02** |      **212**|
  
  
 The overall scores for each intent are summarized in the table below:
