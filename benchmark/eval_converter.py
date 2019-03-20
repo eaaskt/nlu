@@ -30,13 +30,14 @@ def convert_iob_prediction(item):
     """Takes a prediction response in Wit.ai format and returns the sequence labeling for the entities"""
     text = item['_text']
     seq_labels = ['O'] * len(text.split(' '))
-    for entity_name, entity_dict in item['entities'].items():
+    for entity_name, entity_list in item['entities'].items():
         if entity_name != 'intent':
-            seq_idx = words_before_index(text, entity_dict[0]['_start'])
-            entity_len = len(entity_dict[0]['value'].split(' '))
-            seq_labels[seq_idx] = 'B-' + entity_name
-            for w in range(1, entity_len):
-                seq_labels[seq_idx + w] = 'I-' + entity_name
+            for ent in entity_list:
+                seq_idx = words_before_index(text, ent['_start'])
+                entity_len = len(ent['value'].split(' '))
+                seq_labels[seq_idx] = 'B-' + entity_name
+                for w in range(1, entity_len):
+                    seq_labels[seq_idx + w] = 'I-' + entity_name
     return seq_labels
 
 
@@ -49,7 +50,7 @@ def convert(input_path, output_path, pred=False, ids=False):
             if ids:
                 d['id'] = curr_id
                 curr_id += 1
-            d['seq_labels'] = convert_iob_prediction(d)
+            d['labels'] = convert_iob_prediction(d)
 
     else:
         for d in data:
