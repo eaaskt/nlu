@@ -6,9 +6,10 @@ import matplotlib.pyplot as plt
 
 from seqeval.metrics import f1_score
 from seqeval.metrics import accuracy_score
+from seqeval.metrics import recall_score
+from seqeval.metrics import precision_score
 from seqeval.metrics import classification_report
 from sklearn.metrics import confusion_matrix
-from sklearn.utils.multiclass import unique_labels
 
 
 def plot_confusion_matrix(y_true, y_pred, labels,
@@ -28,7 +29,6 @@ def plot_confusion_matrix(y_true, y_pred, labels,
     # Compute confusion matrix
     cm = confusion_matrix(y_true, y_pred, labels=labels)
     # Only use the labels that appear in the data
-    # classes = labels[unique_labels(y_true, y_pred)]
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
         print("Normalized confusion matrix")
@@ -69,6 +69,8 @@ def eval_seq_scores(y_true, y_pred):
     scores = dict()
     scores['f1'] = f1_score(y_true, y_pred)
     scores['accuracy'] = accuracy_score(y_true, y_pred)
+    scores['precision'] = precision_score(y_true, y_pred)
+    scores['recall'] = recall_score(y_true, y_pred)
     scores['clf_report'] = classification_report(y_true, y_pred)
     return scores
 
@@ -150,9 +152,10 @@ if __name__ == '__main__':
     files = []
     with open(args.evaluation_file, 'r') as f:
         for line in f:
-            file_line = line.replace('\n', ' ').split(' ')
+            file_line = line.replace('\n', '').split(' ')
             if len(file_line) > 2:
-                print('Incorrect format for the eval file')
+                print('Incorrect format for the eval files %s' % str(file_line))
+                exit(1)
             files.append((file_line[0], file_line[1]))
 
     # Slot filling evaluation
@@ -165,10 +168,21 @@ if __name__ == '__main__':
         scores = eval_seq_scores(y_true, y_pred)
         print('F1 score: %lf' % scores['f1'])
         print('Accuracy: %lf' % scores['accuracy'])
+        print('Precision: %lf' % scores['precision'])
+        print('Recall: %lf' % scores['recall'])
         print(scores['clf_report'])
 
         total_y_true += y_true
         total_y_pred += y_pred
+
+    # Overall slot filling evaluation
+    scores = eval_seq_scores(total_y_true, total_y_pred)
+    print('Overall evaluation')
+    print('F1 score: %lf' % scores['f1'])
+    print('Accuracy: %lf' % scores['accuracy'])
+    print('Precision: %lf' % scores['precision'])
+    print('Recall: %lf' % scores['recall'])
+    print(scores['clf_report'])
 
     # Intent detection evaluation
     intents_true = []
