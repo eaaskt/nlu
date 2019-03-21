@@ -144,7 +144,7 @@ object_location_type|       0.00 |     0.00|      0.00|        20|
 location_name|       0.00 |     0.00|      0.00|        29|
 movie_type|       0.04 |     0.04|      0.04|        24|
 timeRange |      0.00 |     0.00|      0.00|        12|
-**avg / total** |      **0.04** |     **0.02|      **0.02** |      **212**|
+**avg / total** |      **0.04** |     **0.02**|      **0.02** |      **212**|
  
  
 The overall scores for each intent are summarized in the table below:
