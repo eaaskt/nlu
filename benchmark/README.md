@@ -148,13 +148,16 @@ timeRange |      0.00 |     0.00|      0.00|        12|
  
  
 The overall scores for each intent are summarized in the table below:
-        
+   
+   
+**UPDATED**
+ 
 | |accuracy| precision  | recall    | f1-score
 |----------|----------|----------|----------|----------|
 AddToPlaylist|0.56|0.42|0.48|0.45
-BookRestaurant|0.74 |0.50 |0.77 | 0.60
-GetWeather| 0.58|0.31 |0.42 | 0.36
-PlayMusic| 0.46| 0.27| 0.27| 0.27
-RateBook| 0.23| 0.08| 0.08| 0.08
-SearchCreativeWork|0.36 | 0.08| 0.10| 0.09
-SearchScreeningEvent| 0.23| 0.01| 0.02| 0.02
+BookRestaurant|0.34 |0.07 |0.11 | 0.09
+GetWeather| 0.64|0.34 |0.46 | 0.39
+PlayMusic| 0.29| 0.03| 0.03| 0.03
+RateBook| 0.60| 0.55| 0.52| 0.53
+SearchCreativeWork|0.46 | 0.19| 0.23| 0.20
+SearchScreeningEvent| 0.57| 0.40| 0.50| 0.45
