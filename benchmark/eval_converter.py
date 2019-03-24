@@ -15,11 +15,12 @@ def words_before_index(text, idx):
 def convert_iob_example(item):
     """Takes an example in Wit.ai format and returns the sequence labeling for the entities"""
     text = item['text']
-    seq_labels = ['O'] * len(text.split(' '))
+    text = ' '.join(text.replace('\n','').split()) # remove duplicate whitespace characters
+    seq_labels = ['O'] * len(text.rstrip().split(' '))
     for entity in item['entities']:
         if entity['entity'] != 'intent':
             seq_idx = words_before_index(text, entity['start'])
-            entity_len = len(entity['value'].split(' '))
+            entity_len = len(entity['value'].rstrip().split(' '))
             seq_labels[seq_idx] = 'B-' + entity['entity']
             for w in range(1, entity_len):
                 seq_labels[seq_idx + w] = 'I-' + entity['entity']
@@ -74,3 +75,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     convert(args.input_file, args.output_file, pred=args.pred, ids=args.ids)
     print('Converted results saved in {}'.format(args.output_file))
+

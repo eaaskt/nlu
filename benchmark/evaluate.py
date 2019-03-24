@@ -203,3 +203,14 @@ if __name__ == '__main__':
     scores = scikit_f1(intents_true, intents_pred, average=None, labels=intents)
     for i, s in zip(intents, scores):
         print("%s : %lf" % (i, s))
+
+    for f1, f2 in files:
+        with open(f1, errors='replace') as f:
+            val_data = json.load(f)
+        with open(f2, errors='replace') as f:
+            pred_data = json.load(f)
+        for v, p in zip(val_data, pred_data):
+            print(v['text'])
+            print(v['seq_labels'])
+            print(p['labels'])
+            print()
