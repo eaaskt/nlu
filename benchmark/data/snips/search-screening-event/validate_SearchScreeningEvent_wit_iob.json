@@ -1,6 +1,6 @@
 [
     {
-        "text": "Is Babar: King of the Elephants playing ",
+        "text": "Is Babar: King of the Elephants playing",
         "entities": [
             {
                 "entity": "intent",
@@ -13,7 +13,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 1,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -22,7 +21,8 @@
             "I-movie_name",
             "I-movie_name",
             "O"
-        ]
+        ],
+        "id": 1
     },
     {
         "text": "Is The Ghost playing",
@@ -38,13 +38,13 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 2,
         "seq_labels": [
             "O",
             "B-movie_name",
             "I-movie_name",
             "O"
-        ]
+        ],
+        "id": 2
     },
     {
         "text": "Is Bartok the Magnificent playing at seven AM?",
@@ -66,7 +66,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 3,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -76,7 +75,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 3
     },
     {
         "text": "What's the movie schedule",
@@ -92,13 +92,13 @@
                 "entity": "object_type"
             }
         ],
-        "id": 4,
         "seq_labels": [
             "O",
             "O",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 4
     },
     {
         "text": "i want to see JLA Adventures: Trapped In Time",
@@ -114,7 +114,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 5,
         "seq_labels": [
             "O",
             "O",
@@ -125,7 +124,8 @@
             "I-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 5
     },
     {
         "text": "when is The Fox and the Child playing in this cinema",
@@ -147,7 +147,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 6,
         "seq_labels": [
             "O",
             "O",
@@ -160,7 +159,8 @@
             "O",
             "O",
             "B-object_location_type"
-        ]
+        ],
+        "id": 6
     },
     {
         "text": "show me the schedule for Rat Rod Rockers!",
@@ -182,7 +182,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 7,
         "seq_labels": [
             "O",
             "O",
@@ -192,7 +191,8 @@
             "B-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 7
     },
     {
         "text": "Is Any Which Way You Can playing in 15 seconds",
@@ -214,7 +214,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 8,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -226,7 +225,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 8
     },
     {
         "text": "I want to see The Portrait of a Lady at the nearest cinema.",
@@ -254,7 +254,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 9,
         "seq_labels": [
             "O",
             "O",
@@ -269,7 +268,8 @@
             "O",
             "B-spatial_relation",
             "B-object_location_type"
-        ]
+        ],
+        "id": 9
     },
     {
         "text": "Where can I see The Prime Ministers: The Pioneers",
@@ -285,7 +285,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 10,
         "seq_labels": [
             "O",
             "O",
@@ -296,7 +295,8 @@
             "I-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 10
     },
     {
         "text": "I need to find the movie theatre showing The Crooked Web closest to me",
@@ -324,7 +324,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 11,
         "seq_labels": [
             "O",
             "O",
@@ -340,7 +339,8 @@
             "B-spatial_relation",
             "O",
             "O"
-        ]
+        ],
+        "id": 11
     },
     {
         "text": "I want to see While the Sun Shines at the closest movie house.",
@@ -368,7 +368,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 12,
         "seq_labels": [
             "O",
             "O",
@@ -383,7 +382,8 @@
             "B-spatial_relation",
             "B-object_location_type",
             "I-object_location_type"
-        ]
+        ],
+        "id": 12
     },
     {
         "text": "I want to see Those Kids from Town, when will it be showing?",
@@ -399,7 +399,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 13,
         "seq_labels": [
             "O",
             "O",
@@ -414,7 +413,8 @@
             "O",
             "O",
             "O"
-        ]
+        ],
+        "id": 13
     },
     {
         "text": "Find the schedule for The Comedian at Santikos Theatres.",
@@ -442,7 +442,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 14,
         "seq_labels": [
             "O",
             "O",
@@ -453,10 +452,11 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 14
     },
     {
-        "text": "What are the movie schedules for my favorite theaters ",
+        "text": "What are the movie schedules for my favorite theaters",
         "entities": [
             {
                 "entity": "intent",
@@ -475,7 +475,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 15,
         "seq_labels": [
             "O",
             "O",
@@ -486,10 +485,11 @@
             "O",
             "O",
             "B-location_name"
-        ]
+        ],
+        "id": 15
     },
     {
-        "text": "What are the movies showing in the neighbourhood ",
+        "text": "What are the movies showing in the neighbourhood",
         "entities": [
             {
                 "entity": "intent",
@@ -508,7 +508,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 16,
         "seq_labels": [
             "O",
             "O",
@@ -518,7 +517,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 16
     },
     {
         "text": "Is Without Witness playing twenty two hours from now",
@@ -540,7 +540,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 17,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -551,7 +550,8 @@
             "I-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 17
     },
     {
         "text": "I need animated movies in the area for dinner time",
@@ -579,7 +579,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 18,
         "seq_labels": [
             "O",
             "O",
@@ -591,7 +590,8 @@
             "O",
             "B-timeRange",
             "O"
-        ]
+        ],
+        "id": 18
     },
     {
         "text": "i want to see I Dream of Jeanie in a movie theatre",
@@ -613,7 +613,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 19,
         "seq_labels": [
             "O",
             "O",
@@ -627,7 +626,8 @@
             "O",
             "B-object_location_type",
             "I-object_location_type"
-        ]
+        ],
+        "id": 19
     },
     {
         "text": "Can I see Ellis Island Revisited in 1 minute",
@@ -649,7 +649,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 20,
         "seq_labels": [
             "O",
             "O",
@@ -660,7 +659,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 20
     },
     {
         "text": "I want animated movies at MJR Theatres",
@@ -682,7 +682,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 21,
         "seq_labels": [
             "O",
             "O",
@@ -691,7 +690,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 21
     },
     {
         "text": "show me the schedule for The Oblong Box",
@@ -713,7 +713,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 22,
         "seq_labels": [
             "O",
             "O",
@@ -723,7 +722,8 @@
             "B-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 22
     },
     {
         "text": "I want to know if there are any movies playing in the area.",
@@ -745,7 +745,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 23,
         "seq_labels": [
             "O",
             "O",
@@ -760,7 +759,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 23
     },
     {
         "text": "Is What a Wonderful Place showing at Cinemark Theatres",
@@ -782,7 +782,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 24,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -793,7 +792,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 24
     },
     {
         "text": "show the closest movie theatre that shows Boycott",
@@ -821,7 +821,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 25,
         "seq_labels": [
             "O",
             "O",
@@ -831,7 +830,8 @@
             "O",
             "O",
             "B-movie_name"
-        ]
+        ],
+        "id": 25
     },
     {
         "text": "I want to see DOA: Dead or Alive at Loews Cineplex Entertainment.",
@@ -853,7 +853,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 26,
         "seq_labels": [
             "O",
             "O",
@@ -867,7 +866,8 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 26
     },
     {
         "text": "is The Nightmare showing six hours from now at the nearest cinema.",
@@ -901,7 +901,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 27,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -915,7 +914,8 @@
             "O",
             "B-spatial_relation",
             "B-object_location_type"
-        ]
+        ],
+        "id": 27
     },
     {
         "text": "What is the nearest movie house with Window Connection playing at lunch",
@@ -949,7 +949,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 28,
         "seq_labels": [
             "O",
             "O",
@@ -963,7 +962,8 @@
             "O",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 28
     },
     {
         "text": "Is Patrick Still Lives showing at AMC Theaters",
@@ -985,7 +985,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 29,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -995,7 +994,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 29
     },
     {
         "text": "Fine the movie schedules for the Wanda Group.",
@@ -1017,7 +1017,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 30,
         "seq_labels": [
             "O",
             "O",
@@ -1027,7 +1026,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 30
     },
     {
         "text": "Give me the movie schedule nearby",
@@ -1049,7 +1049,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 31,
         "seq_labels": [
             "O",
             "O",
@@ -1057,7 +1056,8 @@
             "B-object_type",
             "I-object_type",
             "B-spatial_relation"
-        ]
+        ],
+        "id": 31
     },
     {
         "text": "Find the schedule at the Douglas Theatre Company.",
@@ -1079,7 +1079,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 32,
         "seq_labels": [
             "O",
             "O",
@@ -1089,7 +1088,8 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 32
     },
     {
         "text": "Show me the movies at Harkins Theatres.",
@@ -1111,7 +1111,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 33,
         "seq_labels": [
             "O",
             "O",
@@ -1120,7 +1119,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 33
     },
     {
         "text": "what movies at Star Theatres.",
@@ -1142,14 +1142,14 @@
                 "entity": "location_name"
             }
         ],
-        "id": 34,
         "seq_labels": [
             "O",
             "B-movie_type",
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 34
     },
     {
         "text": "I want a movie schedule.",
@@ -1165,14 +1165,14 @@
                 "entity": "object_type"
             }
         ],
-        "id": 35,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 35
     },
     {
         "text": "Can I get the movie times",
@@ -1188,7 +1188,6 @@
                 "entity": "object_type"
             }
         ],
-        "id": 36,
         "seq_labels": [
             "O",
             "O",
@@ -1196,7 +1195,8 @@
             "O",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 36
     },
     {
         "text": "I want to see Medal for the General",
@@ -1212,7 +1212,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 37,
         "seq_labels": [
             "O",
             "O",
@@ -1222,7 +1221,8 @@
             "I-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 37
     },
     {
         "text": "Can I get the times for movies in the neighbourhood",
@@ -1250,7 +1250,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 38,
         "seq_labels": [
             "O",
             "O",
@@ -1262,7 +1261,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 38
     },
     {
         "text": "May I have the movie schedules for Speakeasy Theaters",
@@ -1284,7 +1284,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 39,
         "seq_labels": [
             "O",
             "O",
@@ -1295,7 +1294,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 39
     },
     {
         "text": "Find animated movies close by",
@@ -1317,14 +1317,14 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 40,
         "seq_labels": [
             "O",
             "B-movie_type",
             "I-movie_type",
             "B-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 40
     },
     {
         "text": "Is American Primitive showing in Santikos Theatres",
@@ -1346,7 +1346,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 41,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -1355,7 +1354,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 41
     },
     {
         "text": "what are the movie schedules in the neighborhood",
@@ -1377,7 +1377,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 42,
         "seq_labels": [
             "O",
             "O",
@@ -1387,7 +1386,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 42
     },
     {
         "text": "Check the schedule for Bow Tie Cinemas.",
@@ -1409,7 +1409,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 43,
         "seq_labels": [
             "O",
             "O",
@@ -1418,7 +1417,8 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 43
     },
     {
         "text": "Check the timings for Snowbound at the closest movie theatre.",
@@ -1446,7 +1446,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 44,
         "seq_labels": [
             "O",
             "O",
@@ -1458,7 +1457,8 @@
             "B-spatial_relation",
             "B-object_location_type",
             "I-object_location_type"
-        ]
+        ],
+        "id": 44
     },
     {
         "text": "What are the movie times at Caribbean Cinemas",
@@ -1480,7 +1480,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 45,
         "seq_labels": [
             "O",
             "O",
@@ -1490,7 +1489,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 45
     },
     {
         "text": "I need films in the neighborhood",
@@ -1512,7 +1512,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 46,
         "seq_labels": [
             "O",
             "O",
@@ -1520,7 +1519,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 46
     },
     {
         "text": "Show the movie schedules in the neighborhood",
@@ -1542,7 +1542,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 47,
         "seq_labels": [
             "O",
             "O",
@@ -1551,7 +1550,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 47
     },
     {
         "text": "where's the nearest movie house showing foreign films",
@@ -1579,7 +1579,6 @@
                 "entity": "movie_type"
             }
         ],
-        "id": 48,
         "seq_labels": [
             "O",
             "O",
@@ -1589,7 +1588,8 @@
             "O",
             "O",
             "B-movie_type"
-        ]
+        ],
+        "id": 48
     },
     {
         "text": "What movies are showing now at the closest cinema?",
@@ -1623,7 +1623,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 49,
         "seq_labels": [
             "O",
             "B-movie_type",
@@ -1634,7 +1633,8 @@
             "O",
             "B-spatial_relation",
             "B-object_location_type"
-        ]
+        ],
+        "id": 49
     },
     {
         "text": "Is Rumor Has It playing",
@@ -1650,14 +1650,14 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 50,
         "seq_labels": [
             "O",
             "B-movie_name",
             "I-movie_name",
             "I-movie_name",
             "O"
-        ]
+        ],
+        "id": 50
     },
     {
         "text": "I need a list of Speakeasy Theaters movie times",
@@ -1679,7 +1679,6 @@
                 "entity": "object_type"
             }
         ],
-        "id": 51,
         "seq_labels": [
             "O",
             "O",
@@ -1690,7 +1689,8 @@
             "I-location_name",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 51
     },
     {
         "text": "When is The Outer Space Connection playing at the nearest cinema.",
@@ -1718,7 +1718,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 52,
         "seq_labels": [
             "O",
             "O",
@@ -1731,7 +1730,8 @@
             "O",
             "B-spatial_relation",
             "B-object_location_type"
-        ]
+        ],
+        "id": 52
     },
     {
         "text": "Find the movie times at Harkins Theatres.",
@@ -1753,7 +1753,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 53,
         "seq_labels": [
             "O",
             "O",
@@ -1762,7 +1761,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 53
     },
     {
         "text": "Find the films at Century Theatres.",
@@ -1784,7 +1784,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 54,
         "seq_labels": [
             "O",
             "O",
@@ -1792,7 +1791,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 54
     },
     {
         "text": "show the animated movies playing in the neighbourhood",
@@ -1814,7 +1814,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 55,
         "seq_labels": [
             "O",
             "O",
@@ -1824,7 +1823,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 55
     },
     {
         "text": "I want to see Fear Chamber.",
@@ -1840,7 +1840,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 56,
         "seq_labels": [
             "O",
             "O",
@@ -1848,7 +1847,8 @@
             "O",
             "B-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 56
     },
     {
         "text": "Show me Southern Theatres movie times",
@@ -1870,7 +1870,6 @@
                 "entity": "object_type"
             }
         ],
-        "id": 57,
         "seq_labels": [
             "O",
             "O",
@@ -1878,7 +1877,8 @@
             "I-location_name",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 57
     },
     {
         "text": "Is The Unnaturals showing at 13.",
@@ -1900,7 +1900,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 58,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -1908,7 +1907,8 @@
             "O",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 58
     },
     {
         "text": "Is No Time to Be Young showing at AMC Theaters",
@@ -1930,7 +1930,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 59,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -1942,7 +1941,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 59
     },
     {
         "text": "Find the movie schedules for Regal Entertainment Group.",
@@ -1964,7 +1964,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 60,
         "seq_labels": [
             "O",
             "O",
@@ -1974,7 +1973,8 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 60
     },
     {
         "text": "I want to see Shattered Image.",
@@ -1990,7 +1990,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 61,
         "seq_labels": [
             "O",
             "O",
@@ -1998,7 +1997,8 @@
             "O",
             "B-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 61
     },
     {
         "text": "Find the schedule at Star Theatres.",
@@ -2020,7 +2020,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 62,
         "seq_labels": [
             "O",
             "O",
@@ -2028,7 +2027,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 62
     },
     {
         "text": "Will I Think I Do be playing at 7 PM?",
@@ -2050,7 +2050,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 63,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -2062,7 +2061,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 63
     },
     {
         "text": "Show me the schedule for ArcLight Hollywood for only animated movies",
@@ -2090,7 +2090,6 @@
                 "entity": "movie_type"
             }
         ],
-        "id": 64,
         "seq_labels": [
             "O",
             "O",
@@ -2103,7 +2102,8 @@
             "O",
             "B-movie_type",
             "I-movie_type"
-        ]
+        ],
+        "id": 64
     },
     {
         "text": "Find the schedule for Great Mail Robbery.",
@@ -2125,7 +2125,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 65,
         "seq_labels": [
             "O",
             "O",
@@ -2134,10 +2133,11 @@
             "B-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 65
     },
     {
-        "text": "Give me the movies in the neighborhood ",
+        "text": "Give me the movies in the neighborhood",
         "entities": [
             {
                 "entity": "intent",
@@ -2156,7 +2156,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 66,
         "seq_labels": [
             "O",
             "O",
@@ -2165,7 +2164,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 66
     },
     {
         "text": "What movies are playing close by",
@@ -2187,7 +2187,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 67,
         "seq_labels": [
             "O",
             "B-movie_type",
@@ -2195,7 +2194,8 @@
             "O",
             "B-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 67
     },
     {
         "text": "Is The Two Gladiators playing",
@@ -2211,14 +2211,14 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 68,
         "seq_labels": [
             "O",
             "B-movie_name",
             "I-movie_name",
             "I-movie_name",
             "O"
-        ]
+        ],
+        "id": 68
     },
     {
         "text": "What's the movie schedule for Great Escape Theatres",
@@ -2240,7 +2240,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 69,
         "seq_labels": [
             "O",
             "O",
@@ -2250,7 +2249,8 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 69
     },
     {
         "text": "Find the movie schedule close by",
@@ -2272,7 +2272,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 70,
         "seq_labels": [
             "O",
             "O",
@@ -2280,7 +2279,8 @@
             "I-object_type",
             "B-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 70
     },
     {
         "text": "I want to see Outcast.",
@@ -2296,14 +2296,14 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 71,
         "seq_labels": [
             "O",
             "O",
             "O",
             "O",
             "B-movie_name"
-        ]
+        ],
+        "id": 71
     },
     {
         "text": "show me the schedule of movie The Great Gildersleeve near movie house",
@@ -2331,7 +2331,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 72,
         "seq_labels": [
             "O",
             "O",
@@ -2345,7 +2344,8 @@
             "O",
             "B-object_location_type",
             "I-object_location_type"
-        ]
+        ],
+        "id": 72
     },
     {
         "text": "I need times for A Yiddish World Remembered at Dipson Theatres",
@@ -2373,7 +2373,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 73,
         "seq_labels": [
             "O",
             "O",
@@ -2386,7 +2385,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 73
     },
     {
         "text": "Find the movie schedules at Goodrich Quality Theaters.",
@@ -2408,7 +2408,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 74,
         "seq_labels": [
             "O",
             "O",
@@ -2418,10 +2417,11 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 74
     },
     {
-        "text": "show me the movie schedule in the neighbourhood ",
+        "text": "show me the movie schedule in the neighbourhood",
         "entities": [
             {
                 "entity": "intent",
@@ -2440,7 +2440,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 75,
         "seq_labels": [
             "O",
             "O",
@@ -2450,10 +2449,11 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 75
     },
     {
-        "text": "show me the movie times for films  nearby",
+        "text": "show me the movie times for films nearby",
         "entities": [
             {
                 "entity": "intent",
@@ -2478,7 +2478,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 76,
         "seq_labels": [
             "O",
             "O",
@@ -2488,7 +2487,8 @@
             "O",
             "B-movie_type",
             "B-spatial_relation"
-        ]
+        ],
+        "id": 76
     },
     {
         "text": "show the movie times for animated movies in the neighbourhood",
@@ -2516,7 +2516,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 77,
         "seq_labels": [
             "O",
             "O",
@@ -2528,7 +2527,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 77
     },
     {
         "text": "Is The Eye – Infinity playing at General Cinema Corporation",
@@ -2550,7 +2550,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 78,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -2562,7 +2561,8 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 78
     },
     {
         "text": "Can you check the timings for Super Sweet 16: The Movie?",
@@ -2578,7 +2578,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 79,
         "seq_labels": [
             "O",
             "O",
@@ -2591,7 +2590,8 @@
             "I-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 79
     },
     {
         "text": "is We Are Northern Lights playing in any movie theatre",
@@ -2613,7 +2613,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 80,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -2625,7 +2624,8 @@
             "O",
             "B-object_location_type",
             "I-object_location_type"
-        ]
+        ],
+        "id": 80
     },
     {
         "text": "What times will The Young Swordsman be showing at my cinema?",
@@ -2653,7 +2653,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 81,
         "seq_labels": [
             "O",
             "B-object_type",
@@ -2666,10 +2665,11 @@
             "O",
             "O",
             "B-object_location_type"
-        ]
+        ],
+        "id": 81
     },
     {
-        "text": "Show the Sexy Dance 2times at the  closest movie house",
+        "text": "Show the Sexy Dance 2times at the closest movie house",
         "entities": [
             {
                 "entity": "intent",
@@ -2700,7 +2700,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 82,
         "seq_labels": [
             "O",
             "O",
@@ -2712,7 +2711,8 @@
             "B-spatial_relation",
             "B-object_location_type",
             "I-object_location_type"
-        ]
+        ],
+        "id": 82
     },
     {
         "text": "what are some close by animated movies showing",
@@ -2734,7 +2734,6 @@
                 "entity": "movie_type"
             }
         ],
-        "id": 83,
         "seq_labels": [
             "O",
             "O",
@@ -2744,7 +2743,8 @@
             "B-movie_type",
             "I-movie_type",
             "O"
-        ]
+        ],
+        "id": 83
     },
     {
         "text": "movie schedules close by for animated movies",
@@ -2772,7 +2772,6 @@
                 "entity": "movie_type"
             }
         ],
-        "id": 84,
         "seq_labels": [
             "B-object_type",
             "I-object_type",
@@ -2781,7 +2780,8 @@
             "O",
             "B-movie_type",
             "I-movie_type"
-        ]
+        ],
+        "id": 84
     },
     {
         "text": "what films are playing close by",
@@ -2803,7 +2803,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 85,
         "seq_labels": [
             "O",
             "B-movie_type",
@@ -2811,7 +2810,8 @@
             "O",
             "B-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 85
     },
     {
         "text": "Find the movie schedule in the area.",
@@ -2833,7 +2833,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 86,
         "seq_labels": [
             "O",
             "O",
@@ -2842,7 +2841,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 86
     },
     {
         "text": "Is Cowboy Canteen playing",
@@ -2858,13 +2858,13 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 87,
         "seq_labels": [
             "O",
             "B-movie_name",
             "I-movie_name",
             "O"
-        ]
+        ],
+        "id": 87
     },
     {
         "text": "Is Rare Birds showing at the nearest movie theatre at noon.",
@@ -2898,7 +2898,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 88,
         "seq_labels": [
             "O",
             "B-movie_name",
@@ -2911,7 +2910,8 @@
             "I-object_location_type",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 88
     },
     {
         "text": "What are the movie times",
@@ -2927,14 +2927,14 @@
                 "entity": "object_type"
             }
         ],
-        "id": 89,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 89
     },
     {
         "text": "Where can I find the movie schedules",
@@ -2950,7 +2950,6 @@
                 "entity": "object_type"
             }
         ],
-        "id": 90,
         "seq_labels": [
             "O",
             "O",
@@ -2959,7 +2958,8 @@
             "O",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 90
     },
     {
         "text": "Find the movie schedule for North American Cinemas in eleven seconds.",
@@ -2987,7 +2987,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 91,
         "seq_labels": [
             "O",
             "O",
@@ -3000,7 +2999,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 91
     },
     {
         "text": "Find the nearest cinema with movies playing",
@@ -3028,7 +3028,6 @@
                 "entity": "movie_type"
             }
         ],
-        "id": 92,
         "seq_labels": [
             "O",
             "O",
@@ -3037,7 +3036,8 @@
             "O",
             "B-movie_type",
             "O"
-        ]
+        ],
+        "id": 92
     },
     {
         "text": "what are the movie times",
@@ -3053,14 +3053,14 @@
                 "entity": "object_type"
             }
         ],
-        "id": 93,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-object_type",
             "I-object_type"
-        ]
+        ],
+        "id": 93
     },
     {
         "text": "what are the times for The Gingerbread Man",
@@ -3082,7 +3082,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 94,
         "seq_labels": [
             "O",
             "O",
@@ -3092,7 +3091,8 @@
             "B-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 94
     },
     {
         "text": "What films are playing close by",
@@ -3114,7 +3114,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 95,
         "seq_labels": [
             "O",
             "B-movie_type",
@@ -3122,7 +3121,8 @@
             "O",
             "B-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 95
     },
     {
         "text": "Is any cinema playing The Spirit of Youth",
@@ -3144,7 +3144,6 @@
                 "entity": "movie_name"
             }
         ],
-        "id": 96,
         "seq_labels": [
             "O",
             "O",
@@ -3154,7 +3153,8 @@
             "I-movie_name",
             "I-movie_name",
             "I-movie_name"
-        ]
+        ],
+        "id": 96
     },
     {
         "text": "What are the movie times for animated movies in the neighbourhood",
@@ -3182,7 +3182,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 97,
         "seq_labels": [
             "O",
             "O",
@@ -3195,7 +3194,8 @@
             "B-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 97
     },
     {
         "text": "What's the movie schedule at Great Escape Theatres",
@@ -3217,7 +3217,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 98,
         "seq_labels": [
             "O",
             "O",
@@ -3227,7 +3226,8 @@
             "B-location_name",
             "I-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 98
     },
     {
         "text": "Show the times for Cheers for Miss Bishop at Dipson Theatres.",
@@ -3255,7 +3255,6 @@
                 "entity": "location_name"
             }
         ],
-        "id": 99,
         "seq_labels": [
             "O",
             "O",
@@ -3268,7 +3267,8 @@
             "O",
             "B-location_name",
             "I-location_name"
-        ]
+        ],
+        "id": 99
     },
     {
         "text": "I want to see Married to the Enemy 2 at a cinema.",
@@ -3290,7 +3290,6 @@
                 "entity": "object_location_type"
             }
         ],
-        "id": 100,
         "seq_labels": [
             "O",
             "O",
@@ -3304,6 +3303,7 @@
             "O",
             "O",
             "B-object_location_type"
-        ]
+        ],
+        "id": 100
     }
 ]

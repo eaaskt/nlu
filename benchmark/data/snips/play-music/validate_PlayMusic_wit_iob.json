@@ -19,7 +19,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 1,
         "seq_labels": [
             "O",
             "O",
@@ -31,7 +30,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 1
     },
     {
         "text": "Play The Happy Blues by Ronnie Wood.",
@@ -53,7 +53,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 2,
         "seq_labels": [
             "O",
             "B-album",
@@ -62,7 +61,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 2
     },
     {
         "text": "Play the newest melody on Last Fm by Eddie Vinson.",
@@ -96,7 +96,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 3,
         "seq_labels": [
             "O",
             "O",
@@ -108,7 +107,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 3
     },
     {
         "text": "Use Groove Shark to play music",
@@ -124,7 +124,6 @@
                 "entity": "service"
             }
         ],
-        "id": 4,
         "seq_labels": [
             "O",
             "B-service",
@@ -132,10 +131,11 @@
             "O",
             "O",
             "O"
-        ]
+        ],
+        "id": 4
     },
     {
-        "text": "Please play something good from U-roy.  Any song from 1975 on Zvooq will do.",
+        "text": "Please play something good from U-roy. Any song from 1975 on Zvooq will do.",
         "entities": [
             {
                 "entity": "intent",
@@ -172,7 +172,6 @@
                 "entity": "service"
             }
         ],
-        "id": 5,
         "seq_labels": [
             "O",
             "O",
@@ -188,7 +187,8 @@
             "B-service",
             "O",
             "O"
-        ]
+        ],
+        "id": 5
     },
     {
         "text": "Play a symphony from 2013.",
@@ -210,14 +210,14 @@
                 "entity": "year"
             }
         ],
-        "id": 6,
         "seq_labels": [
             "O",
             "O",
             "B-music_item",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 6
     },
     {
         "text": "Let me hear the good songs from James Iha",
@@ -239,7 +239,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 7,
         "seq_labels": [
             "O",
             "O",
@@ -250,7 +249,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 7
     },
     {
         "text": "Play my inventive playlist",
@@ -266,13 +266,13 @@
                 "entity": "playlist"
             }
         ],
-        "id": 8,
         "seq_labels": [
             "O",
             "O",
             "B-playlist",
             "O"
-        ]
+        ],
+        "id": 8
     },
     {
         "text": "I want to play music from iheart",
@@ -288,7 +288,6 @@
                 "entity": "service"
             }
         ],
-        "id": 9,
         "seq_labels": [
             "O",
             "O",
@@ -297,7 +296,8 @@
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 9
     },
     {
         "text": "Play Subconscious Lobotomy from Jennifer Paull.",
@@ -319,7 +319,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 10,
         "seq_labels": [
             "O",
             "B-album",
@@ -327,7 +326,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 10
     },
     {
         "text": "I want to hear a seventies sound track.",
@@ -349,7 +349,6 @@
                 "entity": "music_item"
             }
         ],
-        "id": 11,
         "seq_labels": [
             "O",
             "O",
@@ -359,7 +358,8 @@
             "B-year",
             "B-music_item",
             "I-music_item"
-        ]
+        ],
+        "id": 11
     },
     {
         "text": "play a john maher track",
@@ -381,14 +381,14 @@
                 "entity": "music_item"
             }
         ],
-        "id": 12,
         "seq_labels": [
             "O",
             "O",
             "B-artist",
             "I-artist",
             "B-music_item"
-        ]
+        ],
+        "id": 12
     },
     {
         "text": "Please play something from Dihan Slabbert that's on the top fifty",
@@ -410,7 +410,6 @@
                 "entity": "sort"
             }
         ],
-        "id": 13,
         "seq_labels": [
             "O",
             "O",
@@ -423,7 +422,8 @@
             "O",
             "B-sort",
             "I-sort"
-        ]
+        ],
+        "id": 13
     },
     {
         "text": "Please play something catchy on Youtube",
@@ -445,7 +445,6 @@
                 "entity": "service"
             }
         ],
-        "id": 14,
         "seq_labels": [
             "O",
             "O",
@@ -453,7 +452,8 @@
             "B-playlist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 14
     },
     {
         "text": "Play something from 2004 by Imogen Heap on spotify",
@@ -481,7 +481,6 @@
                 "entity": "service"
             }
         ],
-        "id": 15,
         "seq_labels": [
             "O",
             "O",
@@ -492,7 +491,8 @@
             "I-artist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 15
     },
     {
         "text": "Play seventies music please.",
@@ -508,13 +508,13 @@
                 "entity": "year"
             }
         ],
-        "id": 16,
         "seq_labels": [
             "O",
             "B-year",
             "O",
             "O"
-        ]
+        ],
+        "id": 16
     },
     {
         "text": "Play music from the artist sean yseult and sort it through top-50",
@@ -536,7 +536,6 @@
                 "entity": "sort"
             }
         ],
-        "id": 17,
         "seq_labels": [
             "O",
             "O",
@@ -550,7 +549,8 @@
             "O",
             "O",
             "B-sort"
-        ]
+        ],
+        "id": 17
     },
     {
         "text": "Play anything Jd Natasha did in the thirties",
@@ -572,7 +572,6 @@
                 "entity": "year"
             }
         ],
-        "id": 18,
         "seq_labels": [
             "O",
             "O",
@@ -582,7 +581,8 @@
             "O",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 18
     },
     {
         "text": "Play music off Netflix.",
@@ -598,13 +598,13 @@
                 "entity": "service"
             }
         ],
-        "id": 19,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 19
     },
     {
         "text": "nineties songs on Zvooq",
@@ -626,13 +626,13 @@
                 "entity": "service"
             }
         ],
-        "id": 20,
         "seq_labels": [
             "B-year",
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 20
     },
     {
         "text": "Open itunes and play Ben Burnley Ready To Die",
@@ -660,7 +660,6 @@
                 "entity": "album"
             }
         ],
-        "id": 21,
         "seq_labels": [
             "O",
             "B-service",
@@ -671,7 +670,8 @@
             "B-album",
             "I-album",
             "I-album"
-        ]
+        ],
+        "id": 21
     },
     {
         "text": "Play an ep by Zak Starkey.",
@@ -693,7 +693,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 22,
         "seq_labels": [
             "O",
             "O",
@@ -701,7 +700,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 22
     },
     {
         "text": "Play an album from Nithyasree Mahadevan.",
@@ -723,7 +723,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 23,
         "seq_labels": [
             "O",
             "O",
@@ -731,7 +730,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 23
     },
     {
         "text": "I want to listen to something on Youtube",
@@ -747,7 +747,6 @@
                 "entity": "service"
             }
         ],
-        "id": 24,
         "seq_labels": [
             "O",
             "O",
@@ -757,7 +756,8 @@
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 24
     },
     {
         "text": "Start playing something from Iheart",
@@ -773,14 +773,14 @@
                 "entity": "service"
             }
         ],
-        "id": 25,
         "seq_labels": [
             "O",
             "O",
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 25
     },
     {
         "text": "Play Trance Life on Zvooq.",
@@ -802,14 +802,14 @@
                 "entity": "service"
             }
         ],
-        "id": 26,
         "seq_labels": [
             "O",
             "B-playlist",
             "I-playlist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 26
     },
     {
         "text": "Find and play a concerto on Zvooq from 1978 by Ginger Pooley",
@@ -843,7 +843,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 27,
         "seq_labels": [
             "O",
             "O",
@@ -857,7 +856,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 27
     },
     {
         "text": "Play All Things Must Pass.",
@@ -873,14 +873,14 @@
                 "entity": "track"
             }
         ],
-        "id": 28,
         "seq_labels": [
             "O",
             "B-track",
             "I-track",
             "I-track",
             "I-track"
-        ]
+        ],
+        "id": 28
     },
     {
         "text": "I want to hear music from Allen Toussaint from the fifties",
@@ -902,7 +902,6 @@
                 "entity": "year"
             }
         ],
-        "id": 29,
         "seq_labels": [
             "O",
             "O",
@@ -915,7 +914,8 @@
             "O",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 29
     },
     {
         "text": "Turn on Last Fm",
@@ -931,13 +931,13 @@
                 "entity": "service"
             }
         ],
-        "id": 30,
         "seq_labels": [
             "O",
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 30
     },
     {
         "text": "Play a song by Rahsaan Patterson.",
@@ -959,7 +959,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 31,
         "seq_labels": [
             "O",
             "O",
@@ -967,7 +966,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 31
     },
     {
         "text": "play Femme Fatale by Bonobo",
@@ -989,14 +989,14 @@
                 "entity": "artist"
             }
         ],
-        "id": 32,
         "seq_labels": [
             "O",
             "B-track",
             "I-track",
             "O",
             "B-artist"
-        ]
+        ],
+        "id": 32
     },
     {
         "text": "Play some anneliese van der pol from the thirties on Groove Shark",
@@ -1024,7 +1024,6 @@
                 "entity": "service"
             }
         ],
-        "id": 33,
         "seq_labels": [
             "O",
             "O",
@@ -1038,7 +1037,8 @@
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 33
     },
     {
         "text": "I want to listen to an ep from 1998.",
@@ -1060,7 +1060,6 @@
                 "entity": "year"
             }
         ],
-        "id": 34,
         "seq_labels": [
             "O",
             "O",
@@ -1071,7 +1070,8 @@
             "B-music_item",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 34
     },
     {
         "text": "Play Paul Mccartney",
@@ -1087,12 +1087,12 @@
                 "entity": "artist"
             }
         ],
-        "id": 35,
         "seq_labels": [
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 35
     },
     {
         "text": "play Jill Sobule album",
@@ -1114,13 +1114,13 @@
                 "entity": "music_item"
             }
         ],
-        "id": 36,
         "seq_labels": [
             "O",
             "B-album",
             "I-album",
             "B-music_item"
-        ]
+        ],
+        "id": 36
     },
     {
         "text": "Play chant's from 1973.",
@@ -1142,13 +1142,13 @@
                 "entity": "year"
             }
         ],
-        "id": 37,
         "seq_labels": [
             "O",
             "B-music_item",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 37
     },
     {
         "text": "Play something from 90s Pop Rock Essentials",
@@ -1164,7 +1164,6 @@
                 "entity": "playlist"
             }
         ],
-        "id": 38,
         "seq_labels": [
             "O",
             "O",
@@ -1173,7 +1172,8 @@
             "I-playlist",
             "I-playlist",
             "I-playlist"
-        ]
+        ],
+        "id": 38
     },
     {
         "text": "Play Have You Met Miss Jones by Nicole from Google Music.",
@@ -1201,7 +1201,6 @@
                 "entity": "service"
             }
         ],
-        "id": 39,
         "seq_labels": [
             "O",
             "B-track",
@@ -1214,7 +1213,8 @@
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 39
     },
     {
         "text": "play chant by Nigger Kojak on Itunes",
@@ -1242,7 +1242,6 @@
                 "entity": "service"
             }
         ],
-        "id": 40,
         "seq_labels": [
             "O",
             "B-music_item",
@@ -1251,7 +1250,8 @@
             "I-artist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 40
     },
     {
         "text": "Play some sixties songs on Google Music",
@@ -1273,7 +1273,6 @@
                 "entity": "service"
             }
         ],
-        "id": 41,
         "seq_labels": [
             "O",
             "O",
@@ -1282,7 +1281,8 @@
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 41
     },
     {
         "text": "Play a fifties album from Dj Yoda on Last Fm.",
@@ -1316,7 +1316,6 @@
                 "entity": "service"
             }
         ],
-        "id": 42,
         "seq_labels": [
             "O",
             "O",
@@ -1328,7 +1327,8 @@
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 42
     },
     {
         "text": "Please play my ecstatic playlist.",
@@ -1344,14 +1344,14 @@
                 "entity": "playlist"
             }
         ],
-        "id": 43,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-playlist",
             "O"
-        ]
+        ],
+        "id": 43
     },
     {
         "text": "Open deezer and play Curtain Call: The Hits by Junichi Okada.",
@@ -1379,7 +1379,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 44,
         "seq_labels": [
             "O",
             "B-service",
@@ -1392,10 +1391,11 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 44
     },
     {
-        "text": "Let's play Jamie Robertson's Handover on vimeo ",
+        "text": "Let's play Jamie Robertson's Handover on vimeo",
         "entities": [
             {
                 "entity": "intent",
@@ -1416,11 +1416,10 @@
             {
                 "start": 41,
                 "end": 47,
-                "value": "vimeo ",
+                "value": "vimeo",
                 "entity": "service"
             }
         ],
-        "id": 45,
         "seq_labels": [
             "O",
             "O",
@@ -1429,7 +1428,8 @@
             "B-album",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 45
     },
     {
         "text": "play a sixties soundtrack",
@@ -1451,13 +1451,13 @@
                 "entity": "music_item"
             }
         ],
-        "id": 46,
         "seq_labels": [
             "O",
             "O",
             "B-year",
             "B-music_item"
-        ]
+        ],
+        "id": 46
     },
     {
         "text": "Play This Is: Miles Davis on Lastfm.",
@@ -1479,7 +1479,6 @@
                 "entity": "service"
             }
         ],
-        "id": 47,
         "seq_labels": [
             "O",
             "B-playlist",
@@ -1488,7 +1487,8 @@
             "I-playlist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 47
     },
     {
         "text": "Live In L.aJoseph Meyer please",
@@ -1510,14 +1510,14 @@
                 "entity": "artist"
             }
         ],
-        "id": 48,
         "seq_labels": [
             "B-album",
             "I-album",
             "B-artist",
             "I-artist",
             "O"
-        ]
+        ],
+        "id": 48
     },
     {
         "text": "Play the top twenty Hisham Abbas on Youtube",
@@ -1545,7 +1545,6 @@
                 "entity": "service"
             }
         ],
-        "id": 49,
         "seq_labels": [
             "O",
             "O",
@@ -1555,7 +1554,8 @@
             "I-artist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 49
     },
     {
         "text": "play some seventies Filipp Kirkorow",
@@ -1577,14 +1577,14 @@
                 "entity": "artist"
             }
         ],
-        "id": 50,
         "seq_labels": [
             "O",
             "O",
             "B-year",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 50
     },
     {
         "text": "Play the most popular Puretone",
@@ -1606,14 +1606,14 @@
                 "entity": "artist"
             }
         ],
-        "id": 51,
         "seq_labels": [
             "O",
             "O",
             "B-sort",
             "I-sort",
             "B-artist"
-        ]
+        ],
+        "id": 51
     },
     {
         "text": "Play music from E-type.",
@@ -1629,13 +1629,13 @@
                 "entity": "artist"
             }
         ],
-        "id": 52,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-artist"
-        ]
+        ],
+        "id": 52
     },
     {
         "text": "Can you play A.j. Pero on Groove Shark?",
@@ -1657,7 +1657,6 @@
                 "entity": "service"
             }
         ],
-        "id": 53,
         "seq_labels": [
             "O",
             "O",
@@ -1667,7 +1666,8 @@
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 53
     },
     {
         "text": "Play a Bob Burns song",
@@ -1689,14 +1689,14 @@
                 "entity": "music_item"
             }
         ],
-        "id": 54,
         "seq_labels": [
             "O",
             "O",
             "B-artist",
             "I-artist",
             "B-music_item"
-        ]
+        ],
+        "id": 54
     },
     {
         "text": "I want to hear Leroi Moore on vimeo , play the song Chance Of A Lifetime.",
@@ -1730,7 +1730,6 @@
                 "entity": "track"
             }
         ],
-        "id": 55,
         "seq_labels": [
             "O",
             "O",
@@ -1748,7 +1747,8 @@
             "I-track",
             "I-track",
             "I-track"
-        ]
+        ],
+        "id": 55
     },
     {
         "text": "Play some symphony music from David Lindley.",
@@ -1770,7 +1770,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 56,
         "seq_labels": [
             "O",
             "O",
@@ -1779,7 +1778,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 56
     },
     {
         "text": "Please play something on Iheart from artist Ari Gold last album",
@@ -1813,7 +1813,6 @@
                 "entity": "music_item"
             }
         ],
-        "id": 57,
         "seq_labels": [
             "O",
             "O",
@@ -1826,7 +1825,8 @@
             "I-artist",
             "B-sort",
             "B-music_item"
-        ]
+        ],
+        "id": 57
     },
     {
         "text": "I want to hear them from the artist Murcof",
@@ -1848,7 +1848,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 58,
         "seq_labels": [
             "O",
             "O",
@@ -1859,7 +1858,8 @@
             "O",
             "O",
             "B-artist"
-        ]
+        ],
+        "id": 58
     },
     {
         "text": "Play sound track music from the twenties",
@@ -1881,7 +1881,6 @@
                 "entity": "year"
             }
         ],
-        "id": 59,
         "seq_labels": [
             "O",
             "B-music_item",
@@ -1890,7 +1889,8 @@
             "O",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 59
     },
     {
         "text": "Play Dance With The Devil by Mr. Lordi",
@@ -1912,7 +1912,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 60,
         "seq_labels": [
             "O",
             "B-track",
@@ -1922,7 +1921,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 60
     },
     {
         "text": "Play music from 1996.",
@@ -1938,13 +1938,13 @@
                 "entity": "year"
             }
         ],
-        "id": 61,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 61
     },
     {
         "text": "Go to Itunes and play Dr. Lecter by David Hodges",
@@ -1972,7 +1972,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 62,
         "seq_labels": [
             "O",
             "O",
@@ -1984,7 +1983,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 62
     },
     {
         "text": "Play S.t.r.e.e.t. D.a.d. from Hiromitsu Agatsuma through Pandora.",
@@ -2012,7 +2012,6 @@
                 "entity": "service"
             }
         ],
-        "id": 63,
         "seq_labels": [
             "O",
             "B-album",
@@ -2022,7 +2021,8 @@
             "I-artist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 63
     },
     {
         "text": "Play some movement from the fourties",
@@ -2044,7 +2044,6 @@
                 "entity": "year"
             }
         ],
-        "id": 64,
         "seq_labels": [
             "O",
             "O",
@@ -2052,7 +2051,8 @@
             "O",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 64
     },
     {
         "text": "Please tune into Chieko Ochi's good music",
@@ -2080,7 +2080,6 @@
                 "entity": "sort"
             }
         ],
-        "id": 65,
         "seq_labels": [
             "O",
             "B-music_item",
@@ -2089,7 +2088,8 @@
             "I-artist",
             "B-sort",
             "O"
-        ]
+        ],
+        "id": 65
     },
     {
         "text": "Play the greatest music from Bryan Maclean.",
@@ -2111,7 +2111,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 66,
         "seq_labels": [
             "O",
             "O",
@@ -2120,7 +2119,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 66
     },
     {
         "text": "Play something on Last Fm",
@@ -2136,14 +2136,14 @@
                 "entity": "service"
             }
         ],
-        "id": 67,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 67
     },
     {
         "text": "Play music by Joy Nilo.",
@@ -2159,14 +2159,14 @@
                 "entity": "artist"
             }
         ],
-        "id": 68,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 68
     },
     {
         "text": "play some Gary Lee Conner",
@@ -2182,14 +2182,14 @@
                 "entity": "artist"
             }
         ],
-        "id": 69,
         "seq_labels": [
             "O",
             "O",
             "B-artist",
             "I-artist",
             "I-artist"
-        ]
+        ],
+        "id": 69
     },
     {
         "text": "Play music by Brian Chase.",
@@ -2205,14 +2205,14 @@
                 "entity": "artist"
             }
         ],
-        "id": 70,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 70
     },
     {
         "text": "Can you play top Zvooq by Fink?",
@@ -2240,7 +2240,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 71,
         "seq_labels": [
             "O",
             "O",
@@ -2249,7 +2248,8 @@
             "B-service",
             "O",
             "B-artist"
-        ]
+        ],
+        "id": 71
     },
     {
         "text": "play the top-20 Nawang Khechog soundtrack",
@@ -2277,7 +2277,6 @@
                 "entity": "music_item"
             }
         ],
-        "id": 72,
         "seq_labels": [
             "O",
             "O",
@@ -2285,7 +2284,8 @@
             "B-artist",
             "I-artist",
             "B-music_item"
-        ]
+        ],
+        "id": 72
     },
     {
         "text": "Let's hear stuff from Andrew Hewitt.",
@@ -2301,7 +2301,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 73,
         "seq_labels": [
             "O",
             "O",
@@ -2309,7 +2308,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 73
     },
     {
         "text": "Play a good ep from the eighties by Peter Murphy.",
@@ -2343,7 +2343,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 74,
         "seq_labels": [
             "O",
             "O",
@@ -2355,7 +2354,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 74
     },
     {
         "text": "Play Another Passenger from Louis Nelson Delisle.",
@@ -2377,7 +2377,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 75,
         "seq_labels": [
             "O",
             "B-album",
@@ -2386,7 +2385,8 @@
             "B-artist",
             "I-artist",
             "I-artist"
-        ]
+        ],
+        "id": 75
     },
     {
         "text": "Play the top music from The Railway Children off Last Fm.",
@@ -2414,7 +2414,6 @@
                 "entity": "service"
             }
         ],
-        "id": 76,
         "seq_labels": [
             "O",
             "O",
@@ -2427,7 +2426,8 @@
             "O",
             "B-service",
             "I-service"
-        ]
+        ],
+        "id": 76
     },
     {
         "text": "play the best Becca",
@@ -2449,13 +2449,13 @@
                 "entity": "artist"
             }
         ],
-        "id": 77,
         "seq_labels": [
             "O",
             "O",
             "B-sort",
             "B-artist"
-        ]
+        ],
+        "id": 77
     },
     {
         "text": "Play something by Duke Ellington from the seventies",
@@ -2477,7 +2477,6 @@
                 "entity": "year"
             }
         ],
-        "id": 78,
         "seq_labels": [
             "O",
             "O",
@@ -2487,7 +2486,8 @@
             "O",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 78
     },
     {
         "text": "Use the last fm service to play A Mis Niños de 30",
@@ -2509,7 +2509,6 @@
                 "entity": "playlist"
             }
         ],
-        "id": 79,
         "seq_labels": [
             "O",
             "O",
@@ -2523,7 +2522,8 @@
             "I-playlist",
             "I-playlist",
             "I-playlist"
-        ]
+        ],
+        "id": 79
     },
     {
         "text": "Play my Black Sabbath: The Dio Years playlist.",
@@ -2539,7 +2539,6 @@
                 "entity": "playlist"
             }
         ],
-        "id": 80,
         "seq_labels": [
             "O",
             "O",
@@ -2549,7 +2548,8 @@
             "I-playlist",
             "I-playlist",
             "O"
-        ]
+        ],
+        "id": 80
     },
     {
         "text": "Play an ep from Mike Harding.",
@@ -2571,7 +2571,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 81,
         "seq_labels": [
             "O",
             "O",
@@ -2579,7 +2578,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 81
     },
     {
         "text": "I want to hear anything from the Rock Symphonique genre please.",
@@ -2595,7 +2595,6 @@
                 "entity": "genre"
             }
         ],
-        "id": 82,
         "seq_labels": [
             "O",
             "O",
@@ -2608,7 +2607,8 @@
             "I-genre",
             "O",
             "O"
-        ]
+        ],
+        "id": 82
     },
     {
         "text": "Please play a 1997 record.",
@@ -2630,14 +2630,14 @@
                 "entity": "music_item"
             }
         ],
-        "id": 83,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-year",
             "B-music_item"
-        ]
+        ],
+        "id": 83
     },
     {
         "text": "Put What Color Is Your Sky by Alana Davis on the stereo.",
@@ -2659,7 +2659,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 84,
         "seq_labels": [
             "O",
             "B-album",
@@ -2673,7 +2672,8 @@
             "O",
             "O",
             "O"
-        ]
+        ],
+        "id": 84
     },
     {
         "text": "Please play a movement from george formby jr.",
@@ -2695,7 +2695,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 85,
         "seq_labels": [
             "O",
             "O",
@@ -2705,7 +2704,8 @@
             "B-artist",
             "I-artist",
             "I-artist"
-        ]
+        ],
+        "id": 85
     },
     {
         "text": "play some new Les Vandyke on Slacker",
@@ -2733,7 +2733,6 @@
                 "entity": "service"
             }
         ],
-        "id": 86,
         "seq_labels": [
             "O",
             "O",
@@ -2742,7 +2741,8 @@
             "I-artist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 86
     },
     {
         "text": "Please open Zvooq",
@@ -2758,12 +2758,12 @@
                 "entity": "service"
             }
         ],
-        "id": 87,
         "seq_labels": [
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 87
     },
     {
         "text": "Play Progressive Metal.",
@@ -2779,12 +2779,12 @@
                 "entity": "genre"
             }
         ],
-        "id": 88,
         "seq_labels": [
             "O",
             "B-genre",
             "I-genre"
-        ]
+        ],
+        "id": 88
     },
     {
         "text": "I want to hear soundtrack music on Youtube from Helena Iren Michaelsen",
@@ -2812,7 +2812,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 89,
         "seq_labels": [
             "O",
             "O",
@@ -2826,7 +2825,8 @@
             "B-artist",
             "I-artist",
             "I-artist"
-        ]
+        ],
+        "id": 89
     },
     {
         "text": "play a song by Ramesh Narayan from 1960",
@@ -2854,7 +2854,6 @@
                 "entity": "year"
             }
         ],
-        "id": 90,
         "seq_labels": [
             "O",
             "O",
@@ -2864,7 +2863,8 @@
             "I-artist",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 90
     },
     {
         "text": "Play some blues britânico.",
@@ -2880,13 +2880,13 @@
                 "entity": "genre"
             }
         ],
-        "id": 91,
         "seq_labels": [
             "O",
             "O",
             "B-genre",
             "I-genre"
-        ]
+        ],
+        "id": 91
     },
     {
         "text": "Proceed with Hitomi Nabatame music from 2003.",
@@ -2908,7 +2908,6 @@
                 "entity": "year"
             }
         ],
-        "id": 92,
         "seq_labels": [
             "O",
             "O",
@@ -2917,7 +2916,8 @@
             "O",
             "O",
             "B-year"
-        ]
+        ],
+        "id": 92
     },
     {
         "text": "Play something on Zvooq",
@@ -2933,16 +2933,16 @@
                 "entity": "service"
             }
         ],
-        "id": 93,
         "seq_labels": [
             "O",
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 93
     },
     {
-        "text": "Play music from Lynn & Wade Llp.",
+        "text": "Play music from Lynn and Wade Llp.",
         "entities": [
             {
                 "entity": "intent",
@@ -2951,11 +2951,10 @@
             {
                 "start": 16,
                 "end": 31,
-                "value": "Lynn & Wade Llp",
+                "value": "Lynn and Wade Llp",
                 "entity": "artist"
             }
         ],
-        "id": 94,
         "seq_labels": [
             "O",
             "O",
@@ -2964,7 +2963,8 @@
             "I-artist",
             "I-artist",
             "I-artist"
-        ]
+        ],
+        "id": 94
     },
     {
         "text": "Let me hear Chris Knight music",
@@ -2980,7 +2980,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 95,
         "seq_labels": [
             "O",
             "O",
@@ -2988,7 +2987,8 @@
             "B-artist",
             "I-artist",
             "O"
-        ]
+        ],
+        "id": 95
     },
     {
         "text": "Let's hear good Mohammad Mamle on Vimeo.",
@@ -3016,7 +3016,6 @@
                 "entity": "service"
             }
         ],
-        "id": 96,
         "seq_labels": [
             "O",
             "O",
@@ -3025,7 +3024,8 @@
             "I-artist",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 96
     },
     {
         "text": "Please play a sound track from the fifties that's on Iheart",
@@ -3053,7 +3053,6 @@
                 "entity": "service"
             }
         ],
-        "id": 97,
         "seq_labels": [
             "O",
             "O",
@@ -3066,7 +3065,8 @@
             "O",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 97
     },
     {
         "text": "Play Music From Van-pires by Dmitry Malikov.",
@@ -3088,7 +3088,6 @@
                 "entity": "artist"
             }
         ],
-        "id": 98,
         "seq_labels": [
             "O",
             "B-album",
@@ -3097,7 +3096,8 @@
             "O",
             "B-artist",
             "I-artist"
-        ]
+        ],
+        "id": 98
     },
     {
         "text": "Play rich sex on Iheart",
@@ -3119,14 +3119,14 @@
                 "entity": "service"
             }
         ],
-        "id": 99,
         "seq_labels": [
             "O",
             "B-track",
             "I-track",
             "O",
             "B-service"
-        ]
+        ],
+        "id": 99
     },
     {
         "text": "Play Modern Psychedelia.",
@@ -3142,11 +3142,11 @@
                 "entity": "playlist"
             }
         ],
-        "id": 100,
         "seq_labels": [
             "O",
             "B-playlist",
             "I-playlist"
-        ]
+        ],
+        "id": 100
     }
 ]
