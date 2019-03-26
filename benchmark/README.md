@@ -22,6 +22,80 @@ RateBook| 1.00
 SearchCreativeWork|0.947867
 SearchScreeningEvent| 0.942408
 
+#### Incorrect intent predictions
+
+* Can you add last of the ghetto astronauts to the playlist called black sabbath the dio years?
+    - True: AddToPlaylist
+    - Pred: SearchCreativeWork
+
+* Lets eat near Oakfield 17 seconds from now at Ted Peters Famous Smoked Fish
+    - True: BookRestaurant
+    - Pred: SearchScreeningEvent
+
+* overcast on State Holiday in Pawling Nature Reserve and neighboring places
+    - True: GetWeather
+    - Pred: x
+
+* Where is Belgium located
+    - True: GetWeather
+    - Pred: x
+
+* Live In L.aJoseph Meyer please
+    - True: PlayMusic
+    - Pred: x
+
+* Please tune into Chieko Ochi's good music
+    - True: PlayMusic
+    - Pred: AddToPlaylist
+
+* play the top-20 Nawang Khechog soundtrack
+    - True: PlayMusic
+    - Pred: SearchCreativeWork
+
+* Put What Color Is Your Sky by Alana Davis on the stereo.
+    - True: PlayMusic
+    - Pred: AddToPlaylist
+
+* i want to see JLA Adventures: Trapped In Time
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
+* Where can I see The Prime Ministers: The Pioneers
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
+* Can I see Ellis Island Revisited in 1 minute
+    - True: SearchScreeningEvent
+    - Pred: x
+
+* show me the schedule for The Oblong Box
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
+* show the closest movie theatre that shows Boycott
+    - Pred: SearchCreativeWork
+    - True: SearchScreeningEvent
+
+* I want to see Medal for the General
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
+* I want to see Fear Chamber.
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
+* I want to see Shattered Image.
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
+* I want to see Outcast.
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
+* Can you check the timings for Super Sweet 16: The Movie?
+    - True: SearchScreeningEvent
+    - Pred: SearchCreativeWork
+
 ### Slot filling
 #### AddToPlaylist
 * F1 score:   0.446337
