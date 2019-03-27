@@ -19,7 +19,6 @@
                 "entity": "current_location"
             }
         ],
-        "id": 1,
         "seq_labels": [
             "O",
             "O",
@@ -29,7 +28,8 @@
             "B-spatial_relation",
             "O",
             "B-current_location"
-        ]
+        ],
+        "id": 1
     },
     {
         "text": "Will there be fog in Tahquamenon Falls State Park?",
@@ -51,7 +51,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 2,
         "seq_labels": [
             "O",
             "O",
@@ -62,7 +61,8 @@
             "I-geographic_poi",
             "I-geographic_poi",
             "I-geographic_poi"
-        ]
+        ],
+        "id": 2
     },
     {
         "text": "Tell me the weather forecast for Gibsland",
@@ -78,7 +78,6 @@
                 "entity": "city"
             }
         ],
-        "id": 3,
         "seq_labels": [
             "O",
             "O",
@@ -87,7 +86,8 @@
             "O",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 3
     },
     {
         "text": "Is there a storm now in NC?",
@@ -115,7 +115,6 @@
                 "entity": "state"
             }
         ],
-        "id": 4,
         "seq_labels": [
             "O",
             "O",
@@ -124,7 +123,8 @@
             "B-timeRange",
             "O",
             "B-state"
-        ]
+        ],
+        "id": 4
     },
     {
         "text": "What will the weather be in Monument of Lihula on december the 5th?",
@@ -146,7 +146,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 5,
         "seq_labels": [
             "O",
             "O",
@@ -161,7 +160,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 5
     },
     {
         "text": "Weather next year in Dominica",
@@ -183,14 +183,14 @@
                 "entity": "country"
             }
         ],
-        "id": 6,
         "seq_labels": [
             "O",
             "B-timeRange",
             "I-timeRange",
             "O",
             "B-country"
-        ]
+        ],
+        "id": 6
     },
     {
         "text": "When will it be hot here",
@@ -212,7 +212,6 @@
                 "entity": "current_location"
             }
         ],
-        "id": 7,
         "seq_labels": [
             "O",
             "O",
@@ -220,7 +219,8 @@
             "O",
             "B-condition_temperature",
             "B-current_location"
-        ]
+        ],
+        "id": 7
     },
     {
         "text": "What will the weather be in 1 day in Kuwait?",
@@ -242,7 +242,6 @@
                 "entity": "country"
             }
         ],
-        "id": 8,
         "seq_labels": [
             "O",
             "O",
@@ -254,7 +253,8 @@
             "I-timeRange",
             "O",
             "B-country"
-        ]
+        ],
+        "id": 8
     },
     {
         "text": "What kind of weather will be in Ukraine one minute from now?",
@@ -276,7 +276,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 9,
         "seq_labels": [
             "O",
             "O",
@@ -290,7 +289,8 @@
             "I-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 9
     },
     {
         "text": "humidity in Olvey New Hampshire",
@@ -318,14 +318,14 @@
                 "entity": "state"
             }
         ],
-        "id": 10,
         "seq_labels": [
             "B-condition_description",
             "O",
             "B-city",
             "B-state",
             "I-state"
-        ]
+        ],
+        "id": 10
     },
     {
         "text": "What's the weather going to be in UT?",
@@ -341,7 +341,6 @@
                 "entity": "state"
             }
         ],
-        "id": 11,
         "seq_labels": [
             "O",
             "O",
@@ -351,7 +350,8 @@
             "O",
             "O",
             "B-state"
-        ]
+        ],
+        "id": 11
     },
     {
         "text": "humidity not far from Colorado City on November the 7th, 2024",
@@ -385,7 +385,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 12,
         "seq_labels": [
             "B-condition_description",
             "B-spatial_relation",
@@ -398,7 +397,8 @@
             "I-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 12
     },
     {
         "text": "What is the forecast for Wyoming at Stanardsville during the storm",
@@ -426,7 +426,6 @@
                 "entity": "condition_description"
             }
         ],
-        "id": 13,
         "seq_labels": [
             "O",
             "O",
@@ -439,7 +438,8 @@
             "O",
             "O",
             "B-condition_description"
-        ]
+        ],
+        "id": 13
     },
     {
         "text": "What will the weather be in North Carolina?",
@@ -455,7 +455,6 @@
                 "entity": "state"
             }
         ],
-        "id": 14,
         "seq_labels": [
             "O",
             "O",
@@ -465,7 +464,8 @@
             "O",
             "B-state",
             "I-state"
-        ]
+        ],
+        "id": 14
     },
     {
         "text": "what is the forecast starting 11 weeks from now nearby the state of Wisconsin",
@@ -493,7 +493,6 @@
                 "entity": "state"
             }
         ],
-        "id": 15,
         "seq_labels": [
             "O",
             "O",
@@ -509,7 +508,8 @@
             "O",
             "O",
             "B-state"
-        ]
+        ],
+        "id": 15
     },
     {
         "text": "Will it be rainy at Sunrise in Ramey Saudi Arabia?",
@@ -543,7 +543,6 @@
                 "entity": "country"
             }
         ],
-        "id": 16,
         "seq_labels": [
             "O",
             "O",
@@ -555,7 +554,8 @@
             "B-city",
             "B-country",
             "I-country"
-        ]
+        ],
+        "id": 16
     },
     {
         "text": "Check the forecast for Nebraska.",
@@ -571,14 +571,14 @@
                 "entity": "state"
             }
         ],
-        "id": 17,
         "seq_labels": [
             "O",
             "O",
             "O",
             "O",
             "B-state"
-        ]
+        ],
+        "id": 17
     },
     {
         "text": "Will it be warmer in North Korea at nineteen o'clock",
@@ -606,7 +606,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 18,
         "seq_labels": [
             "O",
             "O",
@@ -618,7 +617,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 18
     },
     {
         "text": "Let me know the weather forecast around ten Pm faraway from here in Park Narodowy Brimstone Hill Fortress.",
@@ -652,7 +652,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 19,
         "seq_labels": [
             "O",
             "O",
@@ -672,7 +671,8 @@
             "I-geographic_poi",
             "I-geographic_poi",
             "I-geographic_poi"
-        ]
+        ],
+        "id": 19
     },
     {
         "text": "Will it be stormy in the Ouachita National Forest?",
@@ -694,7 +694,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 20,
         "seq_labels": [
             "O",
             "O",
@@ -705,7 +704,8 @@
             "B-geographic_poi",
             "I-geographic_poi",
             "I-geographic_poi"
-        ]
+        ],
+        "id": 20
     },
     {
         "text": "Tell me if it will be snowy 8 hours from now in Mount Airy, VI",
@@ -739,7 +739,6 @@
                 "entity": "state"
             }
         ],
-        "id": 21,
         "seq_labels": [
             "O",
             "O",
@@ -756,7 +755,8 @@
             "B-city",
             "I-city",
             "B-state"
-        ]
+        ],
+        "id": 21
     },
     {
         "text": "What will the weather be nineteen hours from now neighboring Saint Kitts and Nevis?",
@@ -784,7 +784,6 @@
                 "entity": "country"
             }
         ],
-        "id": 22,
         "seq_labels": [
             "O",
             "O",
@@ -800,7 +799,8 @@
             "I-country",
             "I-country",
             "I-country"
-        ]
+        ],
+        "id": 22
     },
     {
         "text": "Will there be hail on 11/12/2036 in Singapore",
@@ -828,7 +828,6 @@
                 "entity": "country"
             }
         ],
-        "id": 23,
         "seq_labels": [
             "O",
             "O",
@@ -838,7 +837,8 @@
             "B-timeRange",
             "O",
             "B-country"
-        ]
+        ],
+        "id": 23
     },
     {
         "text": "Will it be colder here in 48 and a half weeks",
@@ -866,7 +866,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 24,
         "seq_labels": [
             "O",
             "O",
@@ -879,7 +878,8 @@
             "I-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 24
     },
     {
         "text": "What's the weather going to be in Knobel?",
@@ -895,7 +895,6 @@
                 "entity": "city"
             }
         ],
-        "id": 25,
         "seq_labels": [
             "O",
             "O",
@@ -905,7 +904,8 @@
             "O",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 25
     },
     {
         "text": "What will the weather be in Dane on sep. the fifth, 2030?",
@@ -927,7 +927,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 26,
         "seq_labels": [
             "O",
             "O",
@@ -941,7 +940,8 @@
             "I-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 26
     },
     {
         "text": "What will the weather be in Ohio?",
@@ -957,7 +957,6 @@
                 "entity": "state"
             }
         ],
-        "id": 27,
         "seq_labels": [
             "O",
             "O",
@@ -966,7 +965,8 @@
             "O",
             "O",
             "B-state"
-        ]
+        ],
+        "id": 27
     },
     {
         "text": "I need to know the weather for Jan. the 3rd in Mexico when I go to Port Vue",
@@ -994,7 +994,6 @@
                 "entity": "city"
             }
         ],
-        "id": 28,
         "seq_labels": [
             "O",
             "O",
@@ -1014,7 +1013,8 @@
             "O",
             "B-city",
             "I-city"
-        ]
+        ],
+        "id": 28
     },
     {
         "text": "what is the forecast for Ōtone Prefectural Natural Park in 1 hour and within the same area",
@@ -1042,7 +1042,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 29,
         "seq_labels": [
             "O",
             "O",
@@ -1061,7 +1060,8 @@
             "I-spatial_relation",
             "I-spatial_relation",
             "I-spatial_relation"
-        ]
+        ],
+        "id": 29
     },
     {
         "text": "What kind of weather is forecast around one pmnear Vatican?",
@@ -1089,7 +1089,6 @@
                 "entity": "country"
             }
         ],
-        "id": 30,
         "seq_labels": [
             "O",
             "O",
@@ -1101,7 +1100,8 @@
             "B-timeRange",
             "B-spatial_relation",
             "B-country"
-        ]
+        ],
+        "id": 30
     },
     {
         "text": "Will it be chilly in Weldona?",
@@ -1123,7 +1123,6 @@
                 "entity": "city"
             }
         ],
-        "id": 31,
         "seq_labels": [
             "O",
             "O",
@@ -1131,7 +1130,8 @@
             "B-condition_temperature",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 31
     },
     {
         "text": "Will it be colder in Virgin Islands National Park?",
@@ -1153,7 +1153,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 32,
         "seq_labels": [
             "O",
             "O",
@@ -1164,7 +1163,8 @@
             "I-geographic_poi",
             "I-geographic_poi",
             "I-geographic_poi"
-        ]
+        ],
+        "id": 32
     },
     {
         "text": "Will it be hot at 13:19 in De Funiak Springs Serbia and Montenegro?",
@@ -1198,7 +1198,6 @@
                 "entity": "country"
             }
         ],
-        "id": 33,
         "seq_labels": [
             "O",
             "O",
@@ -1213,7 +1212,8 @@
             "B-country",
             "I-country",
             "I-country"
-        ]
+        ],
+        "id": 33
     },
     {
         "text": "What is the weather going to be like in Virginia on st. patrick's day?",
@@ -1235,7 +1235,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 34,
         "seq_labels": [
             "O",
             "O",
@@ -1251,7 +1250,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 34
     },
     {
         "text": "Weather in Kaneville Maryland",
@@ -1273,13 +1273,13 @@
                 "entity": "state"
             }
         ],
-        "id": 35,
         "seq_labels": [
             "O",
             "O",
             "B-city",
             "B-state"
-        ]
+        ],
+        "id": 35
     },
     {
         "text": "When is sunrise for AR",
@@ -1301,14 +1301,14 @@
                 "entity": "state"
             }
         ],
-        "id": 36,
         "seq_labels": [
             "O",
             "O",
             "B-timeRange",
             "O",
             "B-state"
-        ]
+        ],
+        "id": 36
     },
     {
         "text": "What will the weather be not far from here on October the nineteenth, 2026?",
@@ -1336,7 +1336,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 37,
         "seq_labels": [
             "O",
             "O",
@@ -1352,7 +1351,8 @@
             "I-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 37
     },
     {
         "text": "what is the forecast for Waurika in Samoa",
@@ -1374,7 +1374,6 @@
                 "entity": "country"
             }
         ],
-        "id": 38,
         "seq_labels": [
             "O",
             "O",
@@ -1384,7 +1383,8 @@
             "B-city",
             "O",
             "B-country"
-        ]
+        ],
+        "id": 38
     },
     {
         "text": "Tell me the weather forecast here",
@@ -1400,7 +1400,6 @@
                 "entity": "current_location"
             }
         ],
-        "id": 39,
         "seq_labels": [
             "O",
             "O",
@@ -1408,7 +1407,8 @@
             "O",
             "O",
             "B-current_location"
-        ]
+        ],
+        "id": 39
     },
     {
         "text": "What is the weather forecast nearby Nicodemus",
@@ -1430,7 +1430,6 @@
                 "entity": "city"
             }
         ],
-        "id": 40,
         "seq_labels": [
             "O",
             "O",
@@ -1439,7 +1438,8 @@
             "O",
             "B-spatial_relation",
             "B-city"
-        ]
+        ],
+        "id": 40
     },
     {
         "text": "What will the weather be in nov. in Brookneal?",
@@ -1461,7 +1461,6 @@
                 "entity": "city"
             }
         ],
-        "id": 41,
         "seq_labels": [
             "O",
             "O",
@@ -1472,7 +1471,8 @@
             "B-timeRange",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 41
     },
     {
         "text": "Will it be colder four months from now in Suwanee AK",
@@ -1506,7 +1506,6 @@
                 "entity": "state"
             }
         ],
-        "id": 42,
         "seq_labels": [
             "O",
             "O",
@@ -1519,7 +1518,8 @@
             "O",
             "B-city",
             "B-state"
-        ]
+        ],
+        "id": 42
     },
     {
         "text": "What is the weather forecast for Burundi",
@@ -1535,7 +1535,6 @@
                 "entity": "country"
             }
         ],
-        "id": 43,
         "seq_labels": [
             "O",
             "O",
@@ -1544,7 +1543,8 @@
             "O",
             "O",
             "B-country"
-        ]
+        ],
+        "id": 43
     },
     {
         "text": "What's the weather in Benton City?",
@@ -1560,7 +1560,6 @@
                 "entity": "city"
             }
         ],
-        "id": 44,
         "seq_labels": [
             "O",
             "O",
@@ -1568,7 +1567,8 @@
             "O",
             "B-city",
             "I-city"
-        ]
+        ],
+        "id": 44
     },
     {
         "text": "What will the weather be in KY on Oct. 16, 2036?",
@@ -1590,7 +1590,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 45,
         "seq_labels": [
             "O",
             "O",
@@ -1603,7 +1602,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 45
     },
     {
         "text": "Will the sun be out in 1 minute in Searcy, Uganda",
@@ -1637,7 +1637,6 @@
                 "entity": "country"
             }
         ],
-        "id": 46,
         "seq_labels": [
             "O",
             "O",
@@ -1650,7 +1649,8 @@
             "O",
             "B-city",
             "B-country"
-        ]
+        ],
+        "id": 46
     },
     {
         "text": "what is the weather here",
@@ -1666,14 +1666,14 @@
                 "entity": "current_location"
             }
         ],
-        "id": 47,
         "seq_labels": [
             "O",
             "O",
             "O",
             "O",
             "B-current_location"
-        ]
+        ],
+        "id": 47
     },
     {
         "text": "What will the weather be one second from now in Chad?",
@@ -1695,7 +1695,6 @@
                 "entity": "country"
             }
         ],
-        "id": 48,
         "seq_labels": [
             "O",
             "O",
@@ -1708,7 +1707,8 @@
             "I-timeRange",
             "O",
             "B-country"
-        ]
+        ],
+        "id": 48
     },
     {
         "text": "What kind of weather is forecast in MS now?",
@@ -1730,7 +1730,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 49,
         "seq_labels": [
             "O",
             "O",
@@ -1741,10 +1740,11 @@
             "O",
             "B-state",
             "B-timeRange"
-        ]
+        ],
+        "id": 49
     },
     {
-        "text": "what is the forecast for LA for freezing ",
+        "text": "what is the forecast for LA for freezing",
         "entities": [
             {
                 "entity": "intent",
@@ -1763,7 +1763,6 @@
                 "entity": "condition_temperature"
             }
         ],
-        "id": 50,
         "seq_labels": [
             "O",
             "O",
@@ -1772,12 +1771,12 @@
             "O",
             "B-state",
             "O",
-            "B-condition_temperature",
-            "O"
-        ]
+            "B-condition_temperature"
+        ],
+        "id": 50
     },
     {
-        "text": "how cold will it be here in 1 second ",
+        "text": "how cold will it be here in 1 second",
         "entities": [
             {
                 "entity": "intent",
@@ -1802,7 +1801,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 51,
         "seq_labels": [
             "O",
             "B-condition_temperature",
@@ -1812,9 +1810,9 @@
             "B-current_location",
             "B-timeRange",
             "I-timeRange",
-            "I-timeRange",
-            "O"
-        ]
+            "I-timeRange"
+        ],
+        "id": 51
     },
     {
         "text": "what is the forecast for hotter weather at Southford Falls State Park",
@@ -1836,7 +1834,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 52,
         "seq_labels": [
             "O",
             "O",
@@ -1850,7 +1847,8 @@
             "I-geographic_poi",
             "I-geographic_poi",
             "I-geographic_poi"
-        ]
+        ],
+        "id": 52
     },
     {
         "text": "what is the overcast forecast for the current position starting on jul. 19, 2030",
@@ -1878,7 +1876,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 53,
         "seq_labels": [
             "O",
             "O",
@@ -1894,10 +1891,11 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 53
     },
     {
-        "text": "what is the forecast for Morocco  at Lake Ozark on December seventeenth, 2022",
+        "text": "what is the forecast for Morocco at Lake Ozark on December seventeenth, 2022",
         "entities": [
             {
                 "entity": "intent",
@@ -1922,7 +1920,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 54,
         "seq_labels": [
             "O",
             "O",
@@ -1931,14 +1928,14 @@
             "O",
             "B-country",
             "O",
-            "O",
             "B-city",
             "I-city",
             "O",
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 54
     },
     {
         "text": "What will the humidity be in the current spot at 15:19:29?",
@@ -1966,7 +1963,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 55,
         "seq_labels": [
             "O",
             "O",
@@ -1979,7 +1975,8 @@
             "I-current_location",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 55
     },
     {
         "text": "what is the forecast in Nicodemus and nearby",
@@ -2001,7 +1998,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 56,
         "seq_labels": [
             "O",
             "O",
@@ -2011,7 +2007,8 @@
             "B-city",
             "O",
             "B-spatial_relation"
-        ]
+        ],
+        "id": 56
     },
     {
         "text": "What is the weather going to be like in Benton Colorado in 2 and a half months",
@@ -2039,7 +2036,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 57,
         "seq_labels": [
             "O",
             "O",
@@ -2058,7 +2054,8 @@
             "I-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 57
     },
     {
         "text": "What's the weather forecast for Bothe-Napa Valley State Park close by february 20?",
@@ -2086,7 +2083,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 58,
         "seq_labels": [
             "O",
             "O",
@@ -2101,7 +2097,8 @@
             "I-spatial_relation",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 58
     },
     {
         "text": "what is the forecast for beginning on nov. 17 for Franklinville",
@@ -2123,7 +2120,6 @@
                 "entity": "city"
             }
         ],
-        "id": 59,
         "seq_labels": [
             "O",
             "O",
@@ -2136,7 +2132,8 @@
             "I-timeRange",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 59
     },
     {
         "text": "what's the forecast for sep. 26 in Emerado Saint Pierre and Miquelon",
@@ -2164,7 +2161,6 @@
                 "entity": "country"
             }
         ],
-        "id": 60,
         "seq_labels": [
             "O",
             "O",
@@ -2178,7 +2174,8 @@
             "I-country",
             "I-country",
             "I-country"
-        ]
+        ],
+        "id": 60
     },
     {
         "text": "Will there be a blizzard next winter in Visalia, Idaho",
@@ -2212,7 +2209,6 @@
                 "entity": "state"
             }
         ],
-        "id": 61,
         "seq_labels": [
             "O",
             "O",
@@ -2224,7 +2220,8 @@
             "O",
             "B-city",
             "B-state"
-        ]
+        ],
+        "id": 61
     },
     {
         "text": "Will it be warmer in the District Of Columbia on may 25, 2033?",
@@ -2252,7 +2249,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 62,
         "seq_labels": [
             "O",
             "O",
@@ -2267,7 +2263,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 62
     },
     {
         "text": "What will the weather be here on dec. 7th?",
@@ -2289,7 +2286,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 63,
         "seq_labels": [
             "O",
             "O",
@@ -2300,7 +2296,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 63
     },
     {
         "text": "what is the forecast for colder temps beginning on Law Day here",
@@ -2328,7 +2325,6 @@
                 "entity": "current_location"
             }
         ],
-        "id": 64,
         "seq_labels": [
             "O",
             "O",
@@ -2342,7 +2338,8 @@
             "B-timeRange",
             "I-timeRange",
             "B-current_location"
-        ]
+        ],
+        "id": 64
     },
     {
         "text": "What's the weather like in Tyonek, New Jersey",
@@ -2364,7 +2361,6 @@
                 "entity": "state"
             }
         ],
-        "id": 65,
         "seq_labels": [
             "O",
             "O",
@@ -2374,7 +2370,8 @@
             "B-city",
             "B-state",
             "I-state"
-        ]
+        ],
+        "id": 65
     },
     {
         "text": "what is the forecast for here for blizzard conditions at five pm",
@@ -2402,7 +2399,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 66,
         "seq_labels": [
             "O",
             "O",
@@ -2416,7 +2412,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 66
     },
     {
         "text": "Will there be a storm in Gibsonia at 8 p.m?",
@@ -2444,7 +2441,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 67,
         "seq_labels": [
             "O",
             "O",
@@ -2456,7 +2452,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 67
     },
     {
         "text": "what is the cold condition of our current position for tomorrow",
@@ -2484,7 +2481,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 68,
         "seq_labels": [
             "O",
             "O",
@@ -2497,7 +2493,8 @@
             "I-current_location",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 68
     },
     {
         "text": "What will the weather be in Hialeah Gardens on October the 24th?",
@@ -2519,7 +2516,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 69,
         "seq_labels": [
             "O",
             "O",
@@ -2533,7 +2529,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 69
     },
     {
         "text": "Will it be freezing today in Delaware and Lehigh National Heritage Corridor?",
@@ -2561,7 +2558,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 70,
         "seq_labels": [
             "O",
             "O",
@@ -2575,10 +2571,11 @@
             "I-geographic_poi",
             "I-geographic_poi",
             "I-geographic_poi"
-        ]
+        ],
+        "id": 70
     },
     {
-        "text": "what is the forecast in Admire in TX starting at seventeen ",
+        "text": "what is the forecast in Admire in TX starting at seventeen",
         "entities": [
             {
                 "entity": "intent",
@@ -2603,7 +2600,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 71,
         "seq_labels": [
             "O",
             "O",
@@ -2615,9 +2611,9 @@
             "B-state",
             "O",
             "O",
-            "B-timeRange",
-            "O"
-        ]
+            "B-timeRange"
+        ],
+        "id": 71
     },
     {
         "text": "what is the forecast in North Carolina for Edgemoor",
@@ -2639,7 +2635,6 @@
                 "entity": "city"
             }
         ],
-        "id": 72,
         "seq_labels": [
             "O",
             "O",
@@ -2650,7 +2645,8 @@
             "I-state",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 72
     },
     {
         "text": "what is the forecast for Costa Rica",
@@ -2666,7 +2662,6 @@
                 "entity": "country"
             }
         ],
-        "id": 73,
         "seq_labels": [
             "O",
             "O",
@@ -2675,7 +2670,8 @@
             "O",
             "B-country",
             "I-country"
-        ]
+        ],
+        "id": 73
     },
     {
         "text": "Need weather for Parc national Tolhuaca to see if it will be fog today",
@@ -2697,7 +2693,6 @@
                 "entity": "condition_description"
             }
         ],
-        "id": 74,
         "seq_labels": [
             "O",
             "O",
@@ -2713,7 +2708,8 @@
             "O",
             "B-condition_description",
             "O"
-        ]
+        ],
+        "id": 74
     },
     {
         "text": "Weather in Walden Russia on 12/26/2018",
@@ -2741,7 +2737,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 75,
         "seq_labels": [
             "O",
             "O",
@@ -2749,7 +2744,8 @@
             "B-country",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 75
     },
     {
         "text": "What's the humidity here right now?",
@@ -2777,7 +2773,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 76,
         "seq_labels": [
             "O",
             "O",
@@ -2785,7 +2780,8 @@
             "B-current_location",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 76
     },
     {
         "text": "How's the weather at Petit Manan National Wildlife Refuge and nearby right now",
@@ -2813,7 +2809,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 77,
         "seq_labels": [
             "O",
             "O",
@@ -2828,7 +2823,8 @@
             "B-spatial_relation",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 77
     },
     {
         "text": "what is the forecast for Lansford for temperate weather",
@@ -2850,7 +2846,6 @@
                 "entity": "condition_temperature"
             }
         ],
-        "id": 78,
         "seq_labels": [
             "O",
             "O",
@@ -2861,10 +2856,11 @@
             "O",
             "B-condition_temperature",
             "O"
-        ]
+        ],
+        "id": 78
     },
     {
-        "text": "overcast on State Holiday in Pawling Nature Reserve  and neighboring places",
+        "text": "overcast on State Holiday in Pawling Nature Reserve and neighboring places",
         "entities": [
             {
                 "entity": "intent",
@@ -2895,7 +2891,6 @@
                 "entity": "spatial_relation"
             }
         ],
-        "id": 79,
         "seq_labels": [
             "B-condition_description",
             "O",
@@ -2906,10 +2901,10 @@
             "I-geographic_poi",
             "I-geographic_poi",
             "O",
-            "O",
             "B-spatial_relation",
             "O"
-        ]
+        ],
+        "id": 79
     },
     {
         "text": "I need the weather in Wakarusa",
@@ -2925,7 +2920,6 @@
                 "entity": "city"
             }
         ],
-        "id": 80,
         "seq_labels": [
             "O",
             "O",
@@ -2933,7 +2927,8 @@
             "O",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 80
     },
     {
         "text": "Tell me the forecast for 6 am in Tatra-Nationalpark",
@@ -2955,7 +2950,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 81,
         "seq_labels": [
             "O",
             "O",
@@ -2966,7 +2960,8 @@
             "I-timeRange",
             "O",
             "B-geographic_poi"
-        ]
+        ],
+        "id": 81
     },
     {
         "text": "Tell me the weather forecast for UT on thursday",
@@ -2988,7 +2983,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 82,
         "seq_labels": [
             "O",
             "O",
@@ -2999,7 +2993,8 @@
             "B-state",
             "O",
             "B-timeRange"
-        ]
+        ],
+        "id": 82
     },
     {
         "text": "what is the forecast for Turtle Islands National Park",
@@ -3015,7 +3010,6 @@
                 "entity": "geographic_poi"
             }
         ],
-        "id": 83,
         "seq_labels": [
             "O",
             "O",
@@ -3026,7 +3020,8 @@
             "I-geographic_poi",
             "I-geographic_poi",
             "I-geographic_poi"
-        ]
+        ],
+        "id": 83
     },
     {
         "text": "Will it be hotter in PR at 23 o'clock?",
@@ -3054,7 +3049,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 84,
         "seq_labels": [
             "O",
             "O",
@@ -3065,10 +3059,11 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 84
     },
     {
-        "text": "Weather in two hours  in Uzbekistan",
+        "text": "Weather in two hours in Uzbekistan",
         "entities": [
             {
                 "entity": "intent",
@@ -3087,16 +3082,15 @@
                 "entity": "country"
             }
         ],
-        "id": 85,
         "seq_labels": [
             "O",
             "B-timeRange",
             "I-timeRange",
             "I-timeRange",
             "O",
-            "O",
             "B-country"
-        ]
+        ],
+        "id": 85
     },
     {
         "text": "What is the forecast for this afternoon for blizzard conditions in Dieterich Chad",
@@ -3130,7 +3124,6 @@
                 "entity": "country"
             }
         ],
-        "id": 86,
         "seq_labels": [
             "O",
             "O",
@@ -3145,7 +3138,8 @@
             "O",
             "B-city",
             "B-country"
-        ]
+        ],
+        "id": 86
     },
     {
         "text": "how's the weather here at two Am",
@@ -3167,7 +3161,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 87,
         "seq_labels": [
             "O",
             "O",
@@ -3176,7 +3169,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 87
     },
     {
         "text": "will Custer National Forest be chillier at seven Pm",
@@ -3204,7 +3198,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 88,
         "seq_labels": [
             "O",
             "B-geographic_poi",
@@ -3215,7 +3208,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 88
     },
     {
         "text": "what is the forecast for starting at three a.m in Two Buttes for warm weather",
@@ -3243,7 +3237,6 @@
                 "entity": "condition_temperature"
             }
         ],
-        "id": 89,
         "seq_labels": [
             "O",
             "O",
@@ -3260,7 +3253,8 @@
             "O",
             "B-condition_temperature",
             "O"
-        ]
+        ],
+        "id": 89
     },
     {
         "text": "What's the weather in Fox Chapel?",
@@ -3276,7 +3270,6 @@
                 "entity": "city"
             }
         ],
-        "id": 90,
         "seq_labels": [
             "O",
             "O",
@@ -3284,7 +3277,8 @@
             "O",
             "B-city",
             "I-city"
-        ]
+        ],
+        "id": 90
     },
     {
         "text": "What is the rain forecast for one hour from now in South Korea",
@@ -3312,7 +3306,6 @@
                 "entity": "country"
             }
         ],
-        "id": 91,
         "seq_labels": [
             "O",
             "O",
@@ -3327,7 +3320,8 @@
             "O",
             "B-country",
             "I-country"
-        ]
+        ],
+        "id": 91
     },
     {
         "text": "Tell me the weather forecast here",
@@ -3343,7 +3337,6 @@
                 "entity": "current_location"
             }
         ],
-        "id": 92,
         "seq_labels": [
             "O",
             "O",
@@ -3351,7 +3344,8 @@
             "O",
             "O",
             "B-current_location"
-        ]
+        ],
+        "id": 92
     },
     {
         "text": "Will there be a cloud in VI in 14 minutes ?",
@@ -3379,7 +3373,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 93,
         "seq_labels": [
             "O",
             "O",
@@ -3392,7 +3385,8 @@
             "I-timeRange",
             "I-timeRange",
             "O"
-        ]
+        ],
+        "id": 93
     },
     {
         "text": "How much colder will it be not far from Utah around 3 Am?",
@@ -3426,7 +3420,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 94,
         "seq_labels": [
             "O",
             "O",
@@ -3441,7 +3434,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 94
     },
     {
         "text": "Will it be chilly midday in Cresbard Afghanistan?",
@@ -3475,7 +3469,6 @@
                 "entity": "country"
             }
         ],
-        "id": 95,
         "seq_labels": [
             "O",
             "O",
@@ -3485,7 +3478,8 @@
             "O",
             "B-city",
             "B-country"
-        ]
+        ],
+        "id": 95
     },
     {
         "text": "What will the weather be in Sarygamyş Sanctuary on august 21, 2035?",
@@ -3507,7 +3501,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 96,
         "seq_labels": [
             "O",
             "O",
@@ -3521,7 +3514,8 @@
             "B-timeRange",
             "I-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 96
     },
     {
         "text": "Will it be rainy in Tenino?",
@@ -3543,7 +3537,6 @@
                 "entity": "city"
             }
         ],
-        "id": 97,
         "seq_labels": [
             "O",
             "O",
@@ -3551,7 +3544,8 @@
             "B-condition_description",
             "O",
             "B-city"
-        ]
+        ],
+        "id": 97
     },
     {
         "text": "Will it be hot in the Netherlands on February 16th?",
@@ -3579,7 +3573,6 @@
                 "entity": "timeRange"
             }
         ],
-        "id": 98,
         "seq_labels": [
             "O",
             "O",
@@ -3591,7 +3584,8 @@
             "O",
             "B-timeRange",
             "I-timeRange"
-        ]
+        ],
+        "id": 98
     },
     {
         "text": "Where is Belgium located",
@@ -3607,13 +3601,13 @@
                 "entity": "country"
             }
         ],
-        "id": 99,
         "seq_labels": [
             "O",
             "O",
             "B-country",
             "O"
-        ]
+        ],
+        "id": 99
     },
     {
         "text": "What will the weather be in Milleville Beach?",
@@ -3629,7 +3623,6 @@
                 "entity": "city"
             }
         ],
-        "id": 100,
         "seq_labels": [
             "O",
             "O",
@@ -3639,6 +3632,7 @@
             "O",
             "B-city",
             "I-city"
-        ]
+        ],
+        "id": 100
     }
 ]

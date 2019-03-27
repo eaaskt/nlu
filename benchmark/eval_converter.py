@@ -13,53 +13,67 @@ def words_before_index(text, idx):
 
 
 def convert_iob_example(item):
-    """Takes an example in Wit.ai format and returns the sequence labeling for the entities"""
+    """Takes an example in Wit.ai format and returns the converted response"""
+    conv_item = dict(item)
     text = item['text']
+    text = ' '.join(text.replace('\n','').split())  # remove duplicate whitespace characters
+    text = text.replace('&', 'and').rstrip()
+    conv_item['text'] = text
     seq_labels = ['O'] * len(text.split(' '))
-    for entity in item['entities']:
+    for entity in conv_item['entities']:
         if entity['entity'] != 'intent':
             seq_idx = words_before_index(text, entity['start'])
-            entity_len = len(entity['value'].split(' '))
+            entity_value = entity['value']
+            entity_value = (' '.join(entity_value.replace('\n', '').split())).replace('&', 'and').rstrip()
+            entity['value'] = entity_value
+            entity_len = len(entity_value.split(' '))
             seq_labels[seq_idx] = 'B-' + entity['entity']
             for w in range(1, entity_len):
                 seq_labels[seq_idx + w] = 'I-' + entity['entity']
-    return seq_labels
+    conv_item['seq_labels'] = seq_labels
+    return conv_item
 
 
 def convert_iob_prediction(item):
-    """Takes a prediction response in Wit.ai format and returns the sequence labeling for the entities"""
+    """Takes a prediction response in Wit.ai format and returns the converted response"""
+    conv_item = dict(item)
     text = item['_text']
-    seq_labels = ['O'] * len(text.split(' '))
-    for entity_name, entity_dict in item['entities'].items():
+    seq_labels = ['O'] * len(text.rstrip().split(' '))
+    for entity_name, entity_list in item['entities'].items():
         if entity_name != 'intent':
-            seq_idx = words_before_index(text, entity_dict[0]['_start'])
-            entity_len = len(entity_dict[0]['value'].split(' '))
-            seq_labels[seq_idx] = 'B-' + entity_name
-            for w in range(1, entity_len):
-                seq_labels[seq_idx + w] = 'I-' + entity_name
-    return seq_labels
+            for ent in entity_list:
+                seq_idx = words_before_index(text, ent['_start'])
+                entity_len = len(ent['value'].split(' '))
+                seq_labels[seq_idx] = 'B-' + entity_name
+                for w in range(1, entity_len):
+                    seq_labels[seq_idx + w] = 'I-' + entity_name
+    conv_item['labels'] = seq_labels
+    return conv_item
 
 
 def convert(input_path, output_path, pred=False, ids=False):
     curr_id = 1
     with open(input_path, errors='replace') as f:
         data = json.load(f)
+    conv_data = []
     if pred:
         for d in data:
+            conv_d = convert_iob_prediction(d)
             if ids:
-                d['id'] = curr_id
+                conv_d['id'] = curr_id
                 curr_id += 1
-            d['seq_labels'] = convert_iob_prediction(d)
+            conv_data.append(conv_d)
 
     else:
         for d in data:
+            conv_d = convert_iob_example(d)
             if ids:
-                d['id'] = curr_id
+                conv_d['id'] = curr_id
                 curr_id += 1
-            d['seq_labels'] = convert_iob_example(d)
+            conv_data.append(conv_d)
 
     with open(output_path, 'w') as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
+        json.dump(conv_data, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
@@ -73,3 +87,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     convert(args.input_file, args.output_file, pred=args.pred, ids=args.ids)
     print('Converted results saved in {}'.format(args.output_file))
+
