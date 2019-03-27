@@ -1,0 +1,13 @@
+Error analysis:
+- In BookRestaurant: the word book is always labeled as object-type (understood as the noun book (carte) and not the verb book (rezerva)
+- the word 'in' is labeled as the state 'IN' (Indiana)
+- sometimes 'me' is labeled as the state 'ME' (Maine)
+
+book sot for me and my grandfather nearby West Reading
+['O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'B-spatial_relation', 'B-poi', 'I-poi']
+['B-object_type', 'O', 'O', 'B-state', 'O', 'B-playlist_owner', 'O', 'B-spatial_relation', 'B-city', 'I-city']
+
+
+Book me a reservation for a pub in Cormorant for a party of nine
+['O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-city', 'O', 'O', 'O', 'O', 'B-party_size_number']
+['B-object_type', 'B-state', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-state', 'B-city', 'O', 'O', 'B-playlist', 'O', 'B-party_size_number']
