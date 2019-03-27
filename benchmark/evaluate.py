@@ -114,10 +114,11 @@ def extract_intents(validation_file, response_file, verbose=False):
             print('Ids not matching! Something went wrong in the response file')
             return
 
+        text = v['text']
         found = False
         for entity in v['entities']:
             if entity['entity'] == 'intent':
-                i_true.append(entity['value'])
+                i_true.append((entity['value'], text))
                 found = True
                 if entity['value'] not in intents:
                     intents.append(entity['value'])
@@ -126,14 +127,14 @@ def extract_intents(validation_file, response_file, verbose=False):
                     print(entity['value'])
                 break
         if not found:
-            i_true.append(' ')
+            i_true.append((' ', text))
             intents.append(' ')
 
         if 'intent' not in r['entities']:
-            i_pred.append('x')
+            i_pred.append(('x', text))
             intents.append('x')
         else:
-            i_pred.append(r['entities']['intent'][0]['value'])
+            i_pred.append((r['entities']['intent'][0]['value'], text))
             if r['entities']['intent'][0]['value'] not in intents:
                 intents.append(r['entities']['intent'][0]['value'])
 
@@ -141,6 +142,24 @@ def extract_intents(validation_file, response_file, verbose=False):
                 print(r['entities']['intent'])
 
     return i_true, i_pred, intents
+
+
+def create_conllu_file(validation_file, response_file, i):
+    with open(validation_file, errors='replace') as f:
+        val_data = json.load(f)
+    with open(response_file, errors='replace') as f:
+        resp_data = json.load(f)
+
+    filename = 'output{}.txt'.format(i)
+    with open(filename, 'w') as f:
+
+        for v, r in zip(val_data, resp_data):
+            if v['id'] != r['id']:
+                print('Ids not matching! Something went wrong in the response file')
+                return
+            words = v['text'].split(' ')
+            for w, tl, pl in zip(words, v['seq_labels'], r['labels']):
+                f.write('%s - %s %s\n' % (w, tl, pl))
 
 
 if __name__ == '__main__':
@@ -188,12 +207,20 @@ if __name__ == '__main__':
     # Intent detection evaluation
     intents_true = []
     intents_pred = []
+    intents_true_with_text = []
+    intents_pred_with_text = []
     intents = []
     for f1, f2 in files:
-        i_true, i_pred, intents_list = extract_intents(f1, f2)
+        i_true_with_text, i_pred_with_text, intents_list = extract_intents(f1, f2)
+
+        i_true = [i for i,_ in i_true_with_text]
+        i_pred = [i for i, _ in i_pred_with_text]
 
         intents_true += i_true
         intents_pred += i_pred
+        intents_true_with_text += i_true_with_text
+        intents_pred_with_text += i_pred_with_text
+
         intents = list(set(intents).union(intents_list))
 
     plot_confusion_matrix(intents_true, intents_pred, labels=intents,
@@ -203,6 +230,15 @@ if __name__ == '__main__':
     scores = scikit_f1(intents_true, intents_pred, average=None, labels=intents)
     for i, s in zip(intents, scores):
         print("%s : %lf" % (i, s))
+
+    # View incorrectly predicted intents
+    print()
+    print('Incorrect intent predictions')
+    for t, p in zip(intents_true_with_text, intents_pred_with_text):
+        if t[0] != p[0]:
+            print('Text: ' + t[1])
+            print('True intent: ' + t[0])
+            print('Pred intent: ' + p[0] + '\n')
 
     for f1, f2 in files:
         with open(f1, errors='replace') as f:
