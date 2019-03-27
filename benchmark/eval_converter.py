@@ -38,7 +38,7 @@ def convert_iob_prediction(item):
     """Takes a prediction response in Wit.ai format and returns the converted response"""
     conv_item = dict(item)
     text = item['_text']
-    seq_labels = ['O'] * len(text.split(' '))
+    seq_labels = ['O'] * len(text.rstrip().split(' '))
     for entity_name, entity_list in item['entities'].items():
         if entity_name != 'intent':
             for ent in entity_list:
