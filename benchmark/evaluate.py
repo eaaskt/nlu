@@ -32,11 +32,6 @@ def plot_confusion_matrix(y_true, y_pred, labels,
     # Only use the labels that appear in the data
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-        print("Normalized confusion matrix")
-    else:
-        print('Confusion matrix, without normalization')
-
-    print(cm)
 
     fig, ax = plt.subplots()
     im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
@@ -51,17 +46,17 @@ def plot_confusion_matrix(y_true, y_pred, labels,
            xlabel='Predicted label')
 
     # Rotate the tick labels and set their alignment.
-    plt.setp(ax.get_xticklabels(), rotation=45, ha="right",
+    plt.setp(ax.get_xticklabels(), rotation='vertical', ha="right",
              rotation_mode="anchor")
 
     # Loop over data dimensions and create text annotations.
-    fmt = '.2f' if normalize else 'd'
-    thresh = cm.max() / 2.
-    for i in range(cm.shape[0]):
-        for j in range(cm.shape[1]):
-            ax.text(j, i, format(cm[i, j], fmt),
-                    ha="center", va="center",
-                    color="white" if cm[i, j] > thresh else "black")
+    # fmt = '.2f' if normalize else 'd'
+    # thresh = cm.max() / 2.
+    # for i in range(cm.shape[0]):
+    #     for j in range(cm.shape[1]):
+    #         ax.text(j, i, format(cm[i, j], fmt),
+    #                 ha="center", va="center",
+    #                 color="white" if cm[i, j] > thresh else "black")
     fig.tight_layout()
     return ax
 
@@ -196,13 +191,13 @@ if __name__ == '__main__':
         total_y_pred += y_pred
 
     # Overall slot filling evaluation
-    scores = eval_seq_scores(total_y_true, total_y_pred)
-    print('Overall evaluation')
-    print('F1 score: %lf' % scores['f1'])
-    print('Accuracy: %lf' % scores['accuracy'])
-    print('Precision: %lf' % scores['precision'])
-    print('Recall: %lf' % scores['recall'])
-    print(scores['clf_report'])
+    # scores = eval_seq_scores(total_y_true, total_y_pred)
+    # print('Overall evaluation')
+    # print('F1 score: %lf' % scores['f1'])
+    # print('Accuracy: %lf' % scores['accuracy'])
+    # print('Precision: %lf' % scores['precision'])
+    # print('Recall: %lf' % scores['recall'])
+    # print(scores['clf_report'])
 
     # Intent detection evaluation
     intents_true = []
@@ -224,29 +219,33 @@ if __name__ == '__main__':
         intents = list(set(intents).union(intents_list))
 
     plot_confusion_matrix(intents_true, intents_pred, labels=intents,
-                          title='Confusion matrix, without normalization')
+                          title='Confusion matrix, with normalization', normalize=True)
     plt.show()
 
+    # F1 score per intent
+    print('F1 score per intent')
     scores = scikit_f1(intents_true, intents_pred, average=None, labels=intents)
     for i, s in zip(intents, scores):
         print("%s : %lf" % (i, s))
 
     # View incorrectly predicted intents
-    print()
-    print('Incorrect intent predictions')
-    for t, p in zip(intents_true_with_text, intents_pred_with_text):
-        if t[0] != p[0]:
-            print('Text: ' + t[1])
-            print('True intent: ' + t[0])
-            print('Pred intent: ' + p[0] + '\n')
+    # print()
+    # print('Incorrect intent predictions')
+    # for t, p in zip(intents_true_with_text, intents_pred_with_text):
+    #     if t[0] != p[0]:
+    #         print('Text: ' + t[1])
+    #         print('True intent: ' + t[0])
+    #         print('Pred intent: ' + p[0] + '\n')
 
-    for f1, f2 in files:
-        with open(f1, errors='replace') as f:
-            val_data = json.load(f)
-        with open(f2, errors='replace') as f:
-            pred_data = json.load(f)
-        for v, p in zip(val_data, pred_data):
-            print(v['text'])
-            print(v['seq_labels'])
-            print(p['labels'])
-            print()
+    # for f1, f2 in files:
+    #     with open(f1, errors='replace') as f:
+    #         val_data = json.load(f)
+    #     with open(f2, errors='replace') as f:
+    #         pred_data = json.load(f)
+    #     for v, p in zip(val_data, pred_data):
+    #         for entity in v['entities']:
+    #             if entity['entity'] == 'intent' and entity['value'] == 'SearchCreativeWork':
+    #                 print(v['text'])
+    #                 print(v['seq_labels'])
+    #                 print(p['labels'])
+    #                 print()
