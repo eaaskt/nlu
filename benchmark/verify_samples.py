@@ -49,8 +49,8 @@ def get_messages(input_file, output_file, failed_file):
             else:
                 # process response to save in file
                 resp = json.loads(r.content)
+                resp = eval_converter.convert_iob_prediction(resp)
                 resp['id'] = sample['id']
-                resp['labels'] = eval_converter.convert_iob_prediction(resp)
                 response.append(resp)
 
         except Exception as e:
