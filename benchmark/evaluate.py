@@ -228,6 +228,10 @@ if __name__ == '__main__':
     for i, s in zip(intents, scores):
         print("%s : %lf" % (i, s))
 
+    print('Overall F1 score (micro-averaged)')
+    scores = scikit_f1(intents_true, intents_pred, average='micro', labels=intents)
+    print(scores)
+
     # View incorrectly predicted intents
     # print()
     # print('Incorrect intent predictions')
