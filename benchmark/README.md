@@ -118,8 +118,8 @@ SearchScreeningEvent| 0.942408
     - Pred: **SearchCreativeWork**
 
 * show the closest movie theatre that shows Boycott
-    - Pred: **SearchCreativeWork**
     - True: **SearchScreeningEvent**
+    - Pred: **SearchCreativeWork**
 
 * I want to see Medal for the General
     - True: **SearchScreeningEvent**
