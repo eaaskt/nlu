@@ -3903,70 +3903,6 @@
         ]
     },
     {
-        "text": "please find a flight from miami florida to las vegas nevada arriving before 4 o'clock pm",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "flight"
-            },
-            {
-                "start": 26,
-                "end": 31,
-                "value": "miami",
-                "entity": "fromloc.city_name"
-            },
-            {
-                "start": 32,
-                "end": 39,
-                "value": "florida",
-                "entity": "fromloc.state_name"
-            },
-            {
-                "start": 43,
-                "end": 52,
-                "value": "las vegas",
-                "entity": "toloc.city_name"
-            },
-            {
-                "start": 53,
-                "end": 59,
-                "value": "nevada",
-                "entity": "toloc.state_name"
-            },
-            {
-                "start": 69,
-                "end": 75,
-                "value": "before",
-                "entity": "arrive_time.time_relative"
-            },
-            {
-                "start": 76,
-                "end": 88,
-                "value": "4 o'clock pm",
-                "entity": "arrive_time.time"
-            }
-        ],
-        "id": 81,
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-fromloc.city_name",
-            "B-fromloc.state_name",
-            "O",
-            "B-toloc.city_name",
-            "I-toloc.city_name",
-            "B-toloc.state_name",
-            "O",
-            "B-arrive_time.time_relative",
-            "B-arrive_time.time",
-            "I-arrive_time.time",
-            "I-arrive_time.time"
-        ]
-    },
-    {
         "text": "please find a flight from las vegas to michigan",
         "entities": [
             {
@@ -30192,63 +30128,6 @@
             "B-airline_name",
             "O",
             "O"
-        ]
-    },
-    {
-        "text": "i would like a connecting flight from dallas to san francisco leaving after 4 o'clock",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "flight"
-            },
-            {
-                "start": 15,
-                "end": 25,
-                "value": "connecting",
-                "entity": "connect"
-            },
-            {
-                "start": 38,
-                "end": 44,
-                "value": "dallas",
-                "entity": "fromloc.city_name"
-            },
-            {
-                "start": 48,
-                "end": 61,
-                "value": "san francisco",
-                "entity": "toloc.city_name"
-            },
-            {
-                "start": 70,
-                "end": 75,
-                "value": "after",
-                "entity": "depart_time.time_relative"
-            },
-            {
-                "start": 76,
-                "end": 85,
-                "value": "4 o'clock",
-                "entity": "depart_time.time"
-            }
-        ],
-        "id": 729,
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-connect",
-            "O",
-            "O",
-            "B-fromloc.city_name",
-            "O",
-            "B-toloc.city_name",
-            "I-toloc.city_name",
-            "O",
-            "B-depart_time.time_relative",
-            "B-depart_time.time",
-            "I-depart_time.time"
         ]
     },
     {
