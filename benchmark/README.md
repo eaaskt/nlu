@@ -49,6 +49,41 @@ ground_service      |0.986301
 * Precision: 0.158039
 * Recall: 0.163128
 
+### After balancing the dataset
+We modified the dataset by removing the original 'flight' intent and grouping all 'x+something' intents
+into the original x intent.
+
+#### Intent detection
+![Alt text](pics/atis_no_flight_confusionmat.PNG?raw=true "Confustion matrix for ATIS (balanced)")
+
+| |f1|
+|-----|-----|
+airline        | 0.974359
+x              | 0.000000
+capacity       | 0.975610
+quantity       | 0.500000
+flight_time    | 1.000000
+airfare        | 0.849558
+flight         | 0.142857
+city           | 0.285714
+aircraft       | 0.900000
+ground_service | 0.972973
+distance       | 0.888889
+abbreviation   | 1.000000
+flight_no      | 0.941176
+ground_fare    | 0.833333
+airport        | 1.000000
+meal           | 0.800000
+day_name       | 0.000000
+
+##### Overall F1 (micro-averaged)
+**0.88**
+
+#### Slot filling
+F1 score: 0.350785
+Accuracy: 0.781904
+Precision: 0.354497
+Recall: 0.347150
 
 ## SnipsNLU dataset
 ### Intent detection
@@ -143,11 +178,11 @@ SearchScreeningEvent| 0.942408
 
 ### Slot filling
 #### AddToPlaylist
+
 * F1 score:   0.446337
 * Accuracy:   0.562628
 * Precision:  0.417197
 * Recall:     0.479853
-
 
 #### BookRestaurant
 * F1 score: 0.602203
