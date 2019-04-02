@@ -178,51 +178,50 @@ SearchScreeningEvent| 0.942408
 
 ### Slot filling
 #### AddToPlaylist
-
-* F1 score:   0.446337
-* Accuracy:   0.562628
-* Precision:  0.417197
-* Recall:     0.479853
+* F1 score: 0.848382
+* Accuracy: 0.896304
+* Precision: 0.792994
+* Recall: 0.912088
 
 #### BookRestaurant
-* F1 score: 0.602203
-* Accuracy: 0.737553
-* Precision: 0.495968
-* Recall: 0.766355
+* F1 score: 0.717258
+* Accuracy: 0.807790
+* Precision: 0.590726
+* Recall: 0.912773
 
 
 #### GetWeather
-* F1 score: 0.357268
-* Accuracy: 0.581818
-* Precision: 0.310030
-* Recall: 0.421488
+* F1 score: 0.749562
+* Accuracy: 0.868902
+* Precision: 0.650456
+* Recall: 0.884298
 
 
 #### PlayMusic
-* F1 score: 0.269880
-* Accuracy: 0.463687
-* Precision: 0.267943
-* Recall: 0.271845
+* F1 score: 0.559036
+* Accuracy: 0.690476
+* Precision: 0.555024
+* Recall: 0.563107
 
 
 #### RateBook
-* F1 score: 0.081461
-* Accuracy: 0.229529
-* Precision: 0.084058
-* Recall: 0.079019
+* F1 score: 0.533708
+* Accuracy: 0.603727
+* Precision: 0.550725
+* Recall: 0.517711
 
 
 #### SearchCreativeWork
-* F1 score: 0.089005
-* Accuracy: 0.356886
-* Precision: 0.081340
-* Recall: 0.098266
+* F1 score: 0.224543
+* Accuracy: 0.482014
+* Precision: 0.204762
+* Recall: 0.248555
 
 #### SearchScreeningEvent
-* F1 score: 0.016807
-* Accuracy: 0.231591
-* Precision: 0.015152
-* Recall: 0.018868
+* F1 score: 0.596639
+* Accuracy: 0.689820
+* Precision: 0.537879
+* Recall: 0.669811
  
 The overall scores for each intent are summarized in the table below:
  
