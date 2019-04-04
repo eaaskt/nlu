@@ -16,6 +16,7 @@ from sklearn.metrics import confusion_matrix
 class Dataset(Enum):
     snips = 'snips'
     atis = 'atis'
+    atis_no_flight = 'atis_no_flight'
 
     def __str__(self):
         return self.value
@@ -105,19 +106,31 @@ if __name__ == '__main__':
                 exit(1)
             files.append(file_line[0])
 
-    if args.dataset == Dataset.atis:
+    if args.dataset == Dataset.atis or args.dataset == Dataset.atis_no_flight:
         f = files[0]
         print('File: %s' % f)
-        if args.val:
-            intent_filename = 'atis_validation_intent_distribution'
-            intent_plot_title = 'ATIS Intent class distribution - validation set'
-            slots_filename = 'atis_validation_slots_distribution'
-            slots_plot_title = 'ATIS Slots distribution - validation set'
-        else:
-            intent_filename = 'atis_training_intent_distribution'
-            intent_plot_title = 'ATIS Intent class distribution - training set'
-            slots_filename = 'atis_training_slots_distribution'
-            slots_plot_title = 'ATIS Slots distribution - training set'
+        if args.dataset == Dataset.atis:
+            if args.val:
+                intent_filename = 'atis_validation_intent_distribution'
+                intent_plot_title = 'ATIS Intent class distribution - validation set'
+                slots_filename = 'atis_validation_slots_distribution'
+                slots_plot_title = 'ATIS Slots distribution - validation set'
+            else:
+                intent_filename = 'atis_training_intent_distribution'
+                intent_plot_title = 'ATIS Intent class distribution - training set'
+                slots_filename = 'atis_training_slots_distribution'
+                slots_plot_title = 'ATIS Slots distribution - training set'
+        elif args.dataset == Dataset.atis_no_flight:
+            if args.val:
+                intent_filename = 'atis_no_flight_validation_intent_distribution'
+                intent_plot_title = 'ATIS (removed original flight + clusters) Intent class distribution - validation set'
+                slots_filename = 'atis_no_flight_validation_slots_distribution'
+                slots_plot_title = 'ATIS (removed original flight + clusters) Slots distribution - validation set'
+            else:
+                intent_filename = 'atis_no_flight_training_intent_distribution'
+                intent_plot_title = 'ATIS (removed original flight + clusters) Intent class distribution - training set'
+                slots_filename = 'atis_no_flight_training_slots_distribution'
+                slots_plot_title = 'ATIS (removed original flight + clusters) Slots distribution - training set'
 
         # Plot intent class distribution
         intent_counts = count_intents([f])
