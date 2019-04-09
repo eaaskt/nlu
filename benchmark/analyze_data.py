@@ -55,9 +55,14 @@ def plot_distribution_joint_plot(tr_data, test_data, labels, plot_number, plot_t
     plt.figure(plot_number)
     # plt.bar(x_pos, data, color='blue', align='center')
     # plt.xticks(x_pos, labels, rotation='vertical')
-    subcategorybar(labels, [tr_data, test_data])
+    width = 0.8
+    plt.bar(x_pos - width / 2. * width, tr_data, width=width / 1.5, align="edge", label='training')
+    plt.bar(x_pos - width / 2. + 1 / 2. * width, test_data, width=width / 1.5, align="edge", label='test')
+    plt.xticks(x_pos, labels, rotation='vertical')
+    # subcategorybar(labels, [tr_data, test_data])
     plt.gcf().subplots_adjust(bottom=0.3)
     plt.title(plot_title)
+    plt.legend(loc='upper right')
     if ylim_top is not None:
         plt.ylim(top=ylim_top)
     if save_file and filename is not None:
