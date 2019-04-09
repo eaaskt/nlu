@@ -54,7 +54,7 @@ ground_service      |0.986301
 We modified the dataset by removing the original 'flight' intent and grouping all 'x+something' intents
 into the original x intent.
 #### Intent distribution
-![Alt text](pics/atis_no_flight_joint_intent_distribution1.PNG?raw=true "ATIS intent distribution")
+![Alt text](pics/atis_no_flight_joint_intent_distribution1.png?raw=true "ATIS intent distribution")
 
 #### Intent detection
 ![Alt text](pics/atis_no_flight_confusionmat.PNG?raw=true "Confustion matrix for ATIS (balanced)")
