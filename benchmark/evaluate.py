@@ -50,13 +50,13 @@ def plot_confusion_matrix(y_true, y_pred, labels,
              rotation_mode="anchor")
 
     # Loop over data dimensions and create text annotations.
-    # fmt = '.2f' if normalize else 'd'
-    # thresh = cm.max() / 2.
-    # for i in range(cm.shape[0]):
-    #     for j in range(cm.shape[1]):
-    #         ax.text(j, i, format(cm[i, j], fmt),
-    #                 ha="center", va="center",
-    #                 color="white" if cm[i, j] > thresh else "black")
+    fmt = '.2f' if normalize else 'd'
+    thresh = cm.max() / 2.
+    for i in range(cm.shape[0]):
+        for j in range(cm.shape[1]):
+            ax.text(j, i, format(cm[i, j], fmt),
+                    ha="center", va="center",
+                    color="white" if cm[i, j] > thresh else "black")
     fig.tight_layout()
     return ax
 
@@ -219,7 +219,7 @@ if __name__ == '__main__':
         intents = list(set(intents).union(intents_list))
 
     plot_confusion_matrix(intents_true, intents_pred, labels=intents,
-                          title='Confusion matrix, with normalization', normalize=True)
+                          title='Confusion matrix', normalize=False)
     plt.show()
 
     # F1 score per intent
@@ -233,13 +233,22 @@ if __name__ == '__main__':
     print(scores)
 
     # View incorrectly predicted intents
-    # print()
-    # print('Incorrect intent predictions')
-    # for t, p in zip(intents_true_with_text, intents_pred_with_text):
-    #     if t[0] != p[0]:
-    #         print('Text: ' + t[1])
-    #         print('True intent: ' + t[0])
-    #         print('Pred intent: ' + p[0] + '\n')
+    incorrect_intents = {}
+    print()
+    print('Incorrect intent predictions')
+    for t, p in zip(intents_true_with_text, intents_pred_with_text):
+        if t[0] != p[0]:
+            # print('Text: ' + t[1])
+            # print('True intent: ' + t[0])
+            # print('Pred intent: ' + p[0] + '\n')
+            if t[0] not in incorrect_intents:
+                incorrect_intents[t[0]] = []
+            incorrect_intents[t[0]].append((t[1], p[0]))
+
+    for k, v in incorrect_intents.items():
+        print(k)
+        for intent in v:
+            print('{} -> {}'.format(intent[0], intent[1]))
 
     # for f1, f2 in files:
     #     with open(f1, errors='replace') as f:
