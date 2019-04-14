@@ -1,0 +1,6708 @@
+[
+    {
+        "intent": {
+            "confidence": 0.4960095380737296,
+            "name": "SearchCreativeWork"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "Babar: King of the Elephants",
+                "confidence": 0.9984949806998159,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 31,
+                "start": 3
+            }
+        ],
+        "id": 1,
+        "intent_ranking": [
+            {
+                "confidence": 0.4960095380737296,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.23371762287223694,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.1717267613687648,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.038294650381568096,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.025879866908455368,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.02083691623849476,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.013534644156750703,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Is Babar: King of the Elephants playing"
+    },
+    {
+        "intent": {
+            "confidence": 0.9781380377223411,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "The Ghost",
+                "confidence": 0.9545460135483,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 12,
+                "start": 3
+            }
+        ],
+        "id": 2,
+        "intent_ranking": [
+            {
+                "confidence": 0.9781380377223411,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.016878367189296008,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.004935018978827931,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.25461978216771e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 9.733657363834299e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.97045107444108e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 7.325803274918421e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Is The Ghost playing"
+    },
+    {
+        "intent": {
+            "confidence": 0.935872700776254,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "Bartok the Magnificent",
+                "confidence": 0.9909045999003162,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 25,
+                "start": 3
+            },
+            {
+                "value": "seven AM",
+                "confidence": 0.9987871716492726,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 45,
+                "start": 37
+            }
+        ],
+        "id": 3,
+        "intent_ranking": [
+            {
+                "confidence": 0.935872700776254,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.04163923997960673,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.011886454314941852,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.006908984138195944,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.002509905548967664,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0007809890845876679,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00040172615744591734,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Is Bartok the Magnificent playing at seven AM?"
+    },
+    {
+        "intent": {
+            "confidence": 0.9882251278895581,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9940470169147729,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 25,
+                "start": 11
+            }
+        ],
+        "id": 4,
+        "intent_ranking": [
+            {
+                "confidence": 0.9882251278895581,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.01152253314187419,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 7.492546232676641e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.0059366303408926e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 5.7768450509027564e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 3.799250499974033e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.1593184428466024e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "What's the movie schedule"
+    },
+    {
+        "intent": {
+            "confidence": 0.5853733076952633,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ],
+        "entities": [
+            {
+                "value": "JLA Adventures: Trapped In Time",
+                "confidence": 0.8542509904435784,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 45,
+                "start": 14
+            }
+        ],
+        "id": 5,
+        "intent_ranking": [
+            {
+                "confidence": 0.5853733076952633,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.41130966261210744,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0016142848166117673,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0009777079714978472,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0002816055579580748,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00026147428412348904,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0001819570624377524,
+                "name": "RateBook"
+            }
+        ],
+        "text": "i want to see JLA Adventures: Trapped In Time"
+    },
+    {
+        "intent": {
+            "confidence": 0.9727202598554674,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "The Fox and the Child",
+                "confidence": 0.9894219304654526,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 29,
+                "start": 8
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.937717754793682,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 52,
+                "start": 46
+            }
+        ],
+        "id": 6,
+        "intent_ranking": [
+            {
+                "confidence": 0.9727202598554674,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.022961433720865964,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.003518633467818262,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0005024129162677345,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00014954559066039457,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 8.454075424439495e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.317369467568461e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "when is The Fox and the Child playing in this cinema"
+    },
+    {
+        "intent": {
+            "confidence": 0.6854525771900211,
+            "name": "SearchCreativeWork"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9580790458906894,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 20,
+                "start": 12
+            },
+            {
+                "value": "Rat Rod Rockers",
+                "confidence": 0.34271070851054136,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 40,
+                "start": 25
+            }
+        ],
+        "id": 7,
+        "intent_ranking": [
+            {
+                "confidence": 0.6854525771900211,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.2695843245010177,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.027466207320134575,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.013166153541687133,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.002892665685897466,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0009034278758471577,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0005346438853950804,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "show me the schedule for Rat Rod Rockers!"
+    },
+    {
+        "intent": {
+            "confidence": 0.916616524068783,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "in 15 seconds",
+                "confidence": 0.9033621597791905,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 46,
+                "start": 33
+            }
+        ],
+        "id": 8,
+        "intent_ranking": [
+            {
+                "confidence": 0.916616524068783,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.032105195055488894,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.024568120060369313,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.01656571658556504,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.005240114456088681,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0029274748684819983,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.001976854905223076,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "Is Any Which Way You Can playing in 15 seconds"
+    },
+    {
+        "intent": {
+            "confidence": 0.9022087182641226,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "The Portrait of a Lady",
+                "confidence": 0.9911112771504657,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 36,
+                "start": 14
+            },
+            {
+                "value": "nearest",
+                "confidence": 0.994402483815745,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 51,
+                "start": 44
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.9964906319743417,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 58,
+                "start": 52
+            }
+        ],
+        "id": 9,
+        "intent_ranking": [
+            {
+                "confidence": 0.9022087182641226,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.08585617470606542,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.010601755955526586,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00047201462198757265,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00042185554747021847,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00026638329682451264,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00017309760800323447,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "I want to see The Portrait of a Lady at the nearest cinema."
+    },
+    {
+        "intent": {
+            "confidence": 0.5406872372563176,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ],
+        "entities": [
+            {
+                "value": "The Prime Ministers: The Pioneers",
+                "confidence": 0.6255645778592175,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 49,
+                "start": 16
+            }
+        ],
+        "id": 10,
+        "intent_ranking": [
+            {
+                "confidence": 0.5406872372563176,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.4349916247188,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.014271834410288729,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.005234240934051629,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0024330587947379613,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0013063279261812362,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0010756759596231,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "Where can I see The Prime Ministers: The Pioneers"
+    },
+    {
+        "intent": {
+            "confidence": 0.6399086732737267,
+            "name": "SearchCreativeWork"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "B-spatial_relation",
+            "O",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "movie theatre",
+                "confidence": 0.9946221160013496,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 32,
+                "start": 19
+            },
+            {
+                "value": "The Crooked Web",
+                "confidence": 0.5785760385018979,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 56,
+                "start": 41
+            },
+            {
+                "value": "closest",
+                "confidence": 0.9846679427895442,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 64,
+                "start": 57
+            }
+        ],
+        "id": 11,
+        "intent_ranking": [
+            {
+                "confidence": 0.6399086732737267,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.35961972645258755,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00017496561242509977,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00015493179794273614,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 9.183672159935871e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.968971045267807e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.0176431266175893e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "I need to find the movie theatre showing The Crooked Web closest to me"
+    },
+    {
+        "intent": {
+            "confidence": 0.8720416439837416,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "While the Sun Shines",
+                "confidence": 0.7873702897796566,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 34,
+                "start": 14
+            },
+            {
+                "value": "closest",
+                "confidence": 0.9990711906576448,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 49,
+                "start": 42
+            },
+            {
+                "value": "movie house",
+                "confidence": 0.9993027413966004,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 61,
+                "start": 50
+            }
+        ],
+        "id": 12,
+        "intent_ranking": [
+            {
+                "confidence": 0.8720416439837416,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.12672739930217092,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00048245719084569324,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00039209493571361375,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00014759565902160257,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00011418623144599196,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 9.462269706139411e-05,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "I want to see While the Sun Shines at the closest movie house."
+    },
+    {
+        "intent": {
+            "confidence": 0.7757320761462687,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "Those Kids from Town",
+                "confidence": 0.6907156491114494,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 34,
+                "start": 14
+            }
+        ],
+        "id": 13,
+        "intent_ranking": [
+            {
+                "confidence": 0.7757320761462687,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.19742315089198673,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.011734610155643962,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.009349017381702575,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0028164720672327745,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0021916563365700498,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0007530170205955298,
+                "name": "RateBook"
+            }
+        ],
+        "text": "I want to see Those Kids from Town, when will it be showing?"
+    },
+    {
+        "intent": {
+            "confidence": 0.9969127282412027,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9559524023678276,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 17,
+                "start": 9
+            },
+            {
+                "value": "Santikos Theatres",
+                "confidence": 0.9988188064730414,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 55,
+                "start": 38
+            }
+        ],
+        "id": 14,
+        "intent_ranking": [
+            {
+                "confidence": 0.9969127282412027,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0030464514778665804,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.4598191651067093e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.0171576604846475e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.956732085421484e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.696449228228541e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.3973313614945285e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Find the schedule for The Comedian at Santikos Theatres."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999991422487695,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.9894613093165374,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 28,
+                "start": 13
+            },
+            {
+                "value": "my favorite theaters",
+                "confidence": 0.7216341453147679,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 53,
+                "start": 33
+            }
+        ],
+        "id": 15,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999991422487695,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 2.3701340604503057e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.6170079767152585e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.380791308498719e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.2319073232364585e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.1317780544121052e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 8.458935820947477e-08,
+                "name": "RateBook"
+            }
+        ],
+        "text": "What are the movie schedules for my favorite theaters"
+    },
+    {
+        "intent": {
+            "confidence": 0.9874386973975628,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movies",
+                "confidence": 0.9913957619518021,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 19,
+                "start": 13
+            },
+            {
+                "value": "in the neighbourhood",
+                "confidence": 0.9885024180265122,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 48,
+                "start": 28
+            }
+        ],
+        "id": 16,
+        "intent_ranking": [
+            {
+                "confidence": 0.9874386973975628,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.01227586732299004,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 8.898076927612932e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.700549393866037e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 5.8257522655588406e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.992663643644411e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.126485714039539e-05,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "What are the movies showing in the neighbourhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9725228596024575,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "Without Witness",
+                "confidence": 0.999159187346739,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 18,
+                "start": 3
+            },
+            {
+                "value": "twenty two hours from now",
+                "confidence": 0.9682094562830451,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 52,
+                "start": 27
+            }
+        ],
+        "id": 17,
+        "intent_ranking": [
+            {
+                "confidence": 0.9725228596024575,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.017579906540053952,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.007946770409204704,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00112657768914534,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00046923162497743576,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0002460281640202214,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00010862597014065714,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Is Without Witness playing twenty two hours from now"
+    },
+    {
+        "intent": {
+            "confidence": 0.9890425750683294,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation",
+            "O",
+            "B-timeRange",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "animated movies",
+                "confidence": 0.9960936619944044,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 22,
+                "start": 7
+            },
+            {
+                "value": "in the area",
+                "confidence": 0.9933216003720544,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 34,
+                "start": 23
+            },
+            {
+                "value": "dinner",
+                "confidence": 0.6863981173656005,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 45,
+                "start": 39
+            }
+        ],
+        "id": 18,
+        "intent_ranking": [
+            {
+                "confidence": 0.9890425750683294,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.007771037231305501,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0020180263010346937,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0008629573437278795,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00018078624227522966,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 9.638466735319785e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.8233145973876164e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "I need animated movies in the area for dinner time"
+    },
+    {
+        "intent": {
+            "confidence": 0.660962300093645,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-object_location_type",
+            "I-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "I Dream of Jeanie",
+                "confidence": 0.9037719222611824,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 31,
+                "start": 14
+            },
+            {
+                "value": "movie theatre",
+                "confidence": 0.9898298732782173,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 50,
+                "start": 37
+            }
+        ],
+        "id": 19,
+        "intent_ranking": [
+            {
+                "confidence": 0.660962300093645,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.3357725063203953,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.001911868665055139,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.000626687319589456,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0003968332526491794,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00019440737138213567,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00013539697728389438,
+                "name": "RateBook"
+            }
+        ],
+        "text": "i want to see I Dream of Jeanie in a movie theatre"
+    },
+    {
+        "intent": {
+            "confidence": 0.4596200121364614,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "Ellis Island Revisited",
+                "confidence": 0.6783632411536181,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 32,
+                "start": 10
+            },
+            {
+                "value": "in 1 minute",
+                "confidence": 0.9881721811291776,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 44,
+                "start": 33
+            }
+        ],
+        "id": 20,
+        "intent_ranking": [
+            {
+                "confidence": 0.4596200121364614,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.1924952113954709,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.12923374194765708,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.11896102801906937,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.04939821432548848,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.036353618960870346,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.013938173214982327,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Can I see Ellis Island Revisited in 1 minute"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999999822605176,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "animated movies",
+                "confidence": 0.9980981342037486,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 22,
+                "start": 7
+            },
+            {
+                "value": "MJR Theatres",
+                "confidence": 0.9984413585986953,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 38,
+                "start": 26
+            }
+        ],
+        "id": 21,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999999822605176,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 5.071488326641634e-09,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.473624792961887e-09,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.3556196739662293e-09,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.3018585260633966e-09,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.1039146721532053e-09,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.4329763722593035e-09,
+                "name": "RateBook"
+            }
+        ],
+        "text": "I want animated movies at MJR Theatres"
+    },
+    {
+        "intent": {
+            "confidence": 0.7510373678164513,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9582337496243601,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 20,
+                "start": 12
+            },
+            {
+                "value": "The Oblong Box",
+                "confidence": 0.63834748392556,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 39,
+                "start": 25
+            }
+        ],
+        "id": 22,
+        "intent_ranking": [
+            {
+                "confidence": 0.7510373678164513,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.23736480129628726,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.007978414305135389,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0017753859682955633,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0010805887205992926,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00038876221742698485,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00037467967580438256,
+                "name": "RateBook"
+            }
+        ],
+        "text": "show me the schedule for The Oblong Box"
+    },
+    {
+        "intent": {
+            "confidence": 0.887685070228519,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movies",
+                "confidence": 0.9935764002743717,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 38,
+                "start": 32
+            },
+            {
+                "value": "in the area",
+                "confidence": 0.9930473671359465,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 58,
+                "start": 47
+            }
+        ],
+        "id": 23,
+        "intent_ranking": [
+            {
+                "confidence": 0.887685070228519,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.08902997883629014,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0187245621781699,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0021370391703111214,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.001513297667064298,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0005809202008675141,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0003291317187782529,
+                "name": "RateBook"
+            }
+        ],
+        "text": "I want to know if there are any movies playing in the area."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999986082272053,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "What a Wonderful Place",
+                "confidence": 0.9577266039811655,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 25,
+                "start": 3
+            },
+            {
+                "value": "Cinemark Theatres",
+                "confidence": 0.9985371834601836,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 54,
+                "start": 37
+            }
+        ],
+        "id": 24,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999986082272053,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 3.951325807007804e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.8216775940138214e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.7138947681075993e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.2562875548793288e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.1567435978603918e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.0177986244926804e-07,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Is What a Wonderful Place showing at Cinemark Theatres"
+    },
+    {
+        "intent": {
+            "confidence": 0.9157656678499677,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "B-artist",
+            "I-artist"
+        ],
+        "entities": [
+            {
+                "value": "closest",
+                "confidence": 0.9990768071788685,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 16,
+                "start": 9
+            },
+            {
+                "value": "movie theatre",
+                "confidence": 0.9984848441179185,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 30,
+                "start": 17
+            },
+            {
+                "value": "shows Boycott",
+                "confidence": 0.5778949670358863,
+                "extractor": "ner_crf",
+                "entity": "artist",
+                "end": 49,
+                "start": 36
+            }
+        ],
+        "id": 25,
+        "intent_ranking": [
+            {
+                "confidence": 0.9157656678499677,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.08411016046500433,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.3450193047280506e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.305368357813743e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.1959670928753774e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.7355486035239114e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 8.352651438588534e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "show the closest movie theatre that shows Boycott"
+    },
+    {
+        "intent": {
+            "confidence": 0.7784639362821923,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "DOA: Dead or Alive",
+                "confidence": 0.9091266434944965,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 32,
+                "start": 14
+            },
+            {
+                "value": "Loews Cineplex Entertainment",
+                "confidence": 0.9890010449643066,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 64,
+                "start": 36
+            }
+        ],
+        "id": 26,
+        "intent_ranking": [
+            {
+                "confidence": 0.7784639362821923,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.21782658037114222,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0019263887876607268,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0007894911655562245,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0007704142659396942,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0001358901203754111,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.729900713321843e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "I want to see DOA: Dead or Alive at Loews Cineplex Entertainment."
+    },
+    {
+        "intent": {
+            "confidence": 0.9987354973458897,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "I-timeRange",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "The Nightmare",
+                "confidence": 0.9916325227377337,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 16,
+                "start": 3
+            },
+            {
+                "value": "six hours from now",
+                "confidence": 0.9730041350722815,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 43,
+                "start": 25
+            },
+            {
+                "value": "nearest",
+                "confidence": 0.9944628666863883,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 58,
+                "start": 51
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.9965006938834512,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 65,
+                "start": 59
+            }
+        ],
+        "id": 27,
+        "intent_ranking": [
+            {
+                "confidence": 0.9987354973458897,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0008445244891743496,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00030666851581148945,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.221908508730406e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.685895601203619e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.8685918632425372e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.545689392780338e-06,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "is The Nightmare showing six hours from now at the nearest cinema."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999976093989504,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "nearest",
+                "confidence": 0.9977602532063089,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 19,
+                "start": 12
+            },
+            {
+                "value": "movie house",
+                "confidence": 0.9986580584919579,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 31,
+                "start": 20
+            },
+            {
+                "value": "Window Connection",
+                "confidence": 0.9936524499749081,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 54,
+                "start": 37
+            },
+            {
+                "value": "lunch",
+                "confidence": 0.9914697109598704,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 71,
+                "start": 66
+            }
+        ],
+        "id": 28,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999976093989504,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 7.905208753466911e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.125691847178625e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.661362293983982e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.7696122181000786e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.758004800280414e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.6861305820016948e-07,
+                "name": "RateBook"
+            }
+        ],
+        "text": "What is the nearest movie house with Window Connection playing at lunch"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999998363326983,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "Patrick Still Lives",
+                "confidence": 0.995889623423258,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 22,
+                "start": 3
+            },
+            {
+                "value": "AMC Theaters",
+                "confidence": 0.998214461432922,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 46,
+                "start": 34
+            }
+        ],
+        "id": 29,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999998363326983,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 4.416184025845408e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.225422357633415e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.429800797231142e-08,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.5256588790598335e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.4021622031402623e-08,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.3675019005194229e-08,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Is Patrick Still Lives showing at AMC Theaters"
+    },
+    {
+        "intent": {
+            "confidence": 0.9443128047365444,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.9945576126953334,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 9
+            },
+            {
+                "value": "Wanda Group",
+                "confidence": 0.9811539161222274,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 44,
+                "start": 33
+            }
+        ],
+        "id": 30,
+        "intent_ranking": [
+            {
+                "confidence": 0.9443128047365444,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.04614163007022773,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.005915037460121879,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.001639500171065007,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0008752843056939297,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0008395466466426954,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00027619660970403263,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Fine the movie schedules for the Wanda Group."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999987606042905,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9901735152751717,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 26,
+                "start": 12
+            },
+            {
+                "value": "nearby",
+                "confidence": 0.9962762307894922,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 33,
+                "start": 27
+            }
+        ],
+        "id": 31,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999987606042905,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 3.1623040958842026e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.225707133702623e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.026127398840852e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.861575067970233e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.7803594407624244e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.3378839570623364e-07,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Give me the movie schedule nearby"
+    },
+    {
+        "intent": {
+            "confidence": 0.9775495536204702,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9280317074077901,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 17,
+                "start": 9
+            },
+            {
+                "value": "Douglas Theatre Company",
+                "confidence": 0.9812492007673141,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 48,
+                "start": 25
+            }
+        ],
+        "id": 32,
+        "intent_ranking": [
+            {
+                "confidence": 0.9775495536204702,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.02136492048684282,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0004148356292582058,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00026479277250070443,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0001868073908632073,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00013551353005533882,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.35765700093469e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Find the schedule at the Douglas Theatre Company."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999994211875562,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movies",
+                "confidence": 0.9949697284406611,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 18,
+                "start": 12
+            },
+            {
+                "value": "Harkins Theatres",
+                "confidence": 0.9976802433276755,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 38,
+                "start": 22
+            }
+        ],
+        "id": 33,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999994211875562,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.6108368444141527e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.2316866610457364e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 9.176993861084035e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 8.055409211965334e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 6.247088141463406e-08,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.97651811131785e-08,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Show me the movies at Harkins Theatres."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999999994120844,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movies",
+                "confidence": 0.9995233950118173,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 11,
+                "start": 5
+            },
+            {
+                "value": "Star Theatres",
+                "confidence": 0.9956462632316168,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 28,
+                "start": 15
+            }
+        ],
+        "id": 34,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999999994120844,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.872819006414047e-10,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.0101080997907045e-10,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.0034271946926394e-10,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.748768823181981e-11,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.295853997876484e-11,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.883394745827404e-11,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "what movies at Star Theatres."
+    },
+    {
+        "intent": {
+            "confidence": 0.938947722795913,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9889943059814809,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 23,
+                "start": 9
+            }
+        ],
+        "id": 35,
+        "intent_ranking": [
+            {
+                "confidence": 0.938947722795913,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.05936253551790099,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.001072607734626106,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0002243059120482481,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.000186828711002545,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0001139733029570199,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 9.202602555250545e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "I want a movie schedule."
+    },
+    {
+        "intent": {
+            "confidence": 0.9365564812781012,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9925907639872815,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 25,
+                "start": 14
+            }
+        ],
+        "id": 36,
+        "intent_ranking": [
+            {
+                "confidence": 0.9365564812781012,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.06202369138814596,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0006050048798760151,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00039002061136200484,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0002185168171395991,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00012803338736399112,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 7.825163801139222e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "Can I get the movie times"
+    },
+    {
+        "intent": {
+            "confidence": 0.6560941159887937,
+            "name": "SearchCreativeWork"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ],
+        "entities": [
+            {
+                "value": "Medal for the General",
+                "confidence": 0.9804972268371129,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 35,
+                "start": 14
+            }
+        ],
+        "id": 37,
+        "intent_ranking": [
+            {
+                "confidence": 0.6560941159887937,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.25613680849112924,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.05481275287148905,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.012397235799850144,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.011183909741234135,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.005884996575373499,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0034901805321301133,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "I want to see Medal for the General"
+    },
+    {
+        "intent": {
+            "confidence": 0.9656319166194286,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "times",
+                "confidence": 0.9817373530017347,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 19,
+                "start": 14
+            },
+            {
+                "value": "movies",
+                "confidence": 0.9992486156939085,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 30,
+                "start": 24
+            },
+            {
+                "value": "in the neighbourhood",
+                "confidence": 0.9986754294443309,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 51,
+                "start": 31
+            }
+        ],
+        "id": 38,
+        "intent_ranking": [
+            {
+                "confidence": 0.9656319166194286,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.029450968159028174,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0028165870270449953,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0007472319100086242,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0005232680489531558,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00044811505588590285,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00038191317965052677,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Can I get the times for movies in the neighbourhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999995104612434,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.9945249125546758,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 30,
+                "start": 15
+            },
+            {
+                "value": "Speakeasy Theaters",
+                "confidence": 0.9781939351156888,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 53,
+                "start": 35
+            }
+        ],
+        "id": 39,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999995104612434,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.4464506326475854e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.0178924414812152e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 8.419961498767737e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.54547814763416e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 5.8751677266372256e-08,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.469837557656912e-08,
+                "name": "RateBook"
+            }
+        ],
+        "text": "May I have the movie schedules for Speakeasy Theaters"
+    },
+    {
+        "intent": {
+            "confidence": 0.8291669238549016,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "animated movies",
+                "confidence": 0.9975885310214109,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 20,
+                "start": 5
+            },
+            {
+                "value": "close by",
+                "confidence": 0.9987379809021782,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 29,
+                "start": 21
+            }
+        ],
+        "id": 40,
+        "intent_ranking": [
+            {
+                "confidence": 0.8291669238549016,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.1701826178398998,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0006228282601627834,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.686277349544545e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.849450543371751e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.240240819915611e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.775801773924193e-07,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Find animated movies close by"
+    },
+    {
+        "intent": {
+            "confidence": 0.9986951348983675,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "American Primitive",
+                "confidence": 0.9991122234776398,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 21,
+                "start": 3
+            },
+            {
+                "value": "Santikos Theatres",
+                "confidence": 0.9816478492145078,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 50,
+                "start": 33
+            }
+        ],
+        "id": 41,
+        "intent_ranking": [
+            {
+                "confidence": 0.9986951348983675,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.001262897346486111,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.4493527025227957e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.11917581424318e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.432343388302865e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.034778231237538e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.887930687675587e-06,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "Is American Primitive showing in Santikos Theatres"
+    },
+    {
+        "intent": {
+            "confidence": 0.9977274478406349,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.999210299661021,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 28,
+                "start": 13
+            },
+            {
+                "value": "in the neighborhood",
+                "confidence": 0.9872900347128049,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 48,
+                "start": 29
+            }
+        ],
+        "id": 42,
+        "intent_ranking": [
+            {
+                "confidence": 0.9977274478406349,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.001771587255718893,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00048091798623330144,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 7.114363573193703e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 6.405431392547981e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.042115846805427e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.485006600346039e-06,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "what are the movie schedules in the neighborhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9797926689064704,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9577332592669096,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 18,
+                "start": 10
+            },
+            {
+                "value": "Bow Tie Cinemas",
+                "confidence": 0.9818727104921876,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 38,
+                "start": 23
+            }
+        ],
+        "id": 43,
+        "intent_ranking": [
+            {
+                "confidence": 0.9797926689064704,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.013137815877515346,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0029425321351842677,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.002238415310794301,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0008524368264610484,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0006205667744555006,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00041556416911920426,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "Check the schedule for Bow Tie Cinemas."
+    },
+    {
+        "intent": {
+            "confidence": 0.9932697156000261,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-condition_description",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "Snowbound",
+                "confidence": 0.37457626193364496,
+                "extractor": "ner_crf",
+                "entity": "condition_description",
+                "end": 31,
+                "start": 22
+            },
+            {
+                "value": "closest",
+                "confidence": 0.9990681662509341,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 46,
+                "start": 39
+            },
+            {
+                "value": "movie theatre",
+                "confidence": 0.9996712790462524,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 60,
+                "start": 47
+            }
+        ],
+        "id": 44,
+        "intent_ranking": [
+            {
+                "confidence": 0.9932697156000261,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00662233620159015,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.709078608648202e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.5281380472645886e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.0625728814426117e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.8892847673134303e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.6057455337280226e-05,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "Check the timings for Snowbound at the closest movie theatre."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999999868723145,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9949172885384968,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 13
+            },
+            {
+                "value": "Caribbean Cinemas",
+                "confidence": 0.9896505874304362,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 45,
+                "start": 28
+            }
+        ],
+        "id": 45,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999999868723145,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 3.9093966314409774e-09,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.75545443423513e-09,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.0803153346623107e-09,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.6831260419556222e-09,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.4697862124960971e-09,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.2296068332003947e-09,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "What are the movie times at Caribbean Cinemas"
+    },
+    {
+        "intent": {
+            "confidence": 0.9850388711670577,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "films",
+                "confidence": 0.9995054325150469,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 12,
+                "start": 7
+            },
+            {
+                "value": "in the neighborhood",
+                "confidence": 0.991577518927948,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 32,
+                "start": 13
+            }
+        ],
+        "id": 46,
+        "intent_ranking": [
+            {
+                "confidence": 0.9850388711670577,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.013847454589907434,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00040970571042162047,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.000213261830090514,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00018065373988248904,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00016461847408162427,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00014543448855868174,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "I need films in the neighborhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9948234626161292,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.999209173576988,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 9
+            },
+            {
+                "value": "in the neighborhood",
+                "confidence": 0.987289332171431,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 44,
+                "start": 25
+            }
+        ],
+        "id": 47,
+        "intent_ranking": [
+            {
+                "confidence": 0.9948234626161292,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.005106116604392406,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.2321655015257608e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.7934971477702568e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.3688610672958697e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 9.175826125902668e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.299716186385597e-06,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "Show the movie schedules in the neighborhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9991020908386241,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "O",
+            "B-movie_type"
+        ],
+        "entities": [
+            {
+                "value": "nearest",
+                "confidence": 0.9977803719846023,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 19,
+                "start": 12
+            },
+            {
+                "value": "movie house",
+                "confidence": 0.9991053058391045,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 31,
+                "start": 20
+            },
+            {
+                "value": "films",
+                "confidence": 0.865483855559392,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 53,
+                "start": 48
+            }
+        ],
+        "id": 48,
+        "intent_ranking": [
+            {
+                "confidence": 0.9991020908386241,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0008956975103833799,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 6.463375818852607e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.931992669998475e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.038487884287826e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.228605529308149e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.4540480247982666e-07,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "where's the nearest movie house showing foreign films"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999998788273197,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-timeRange",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "movies",
+                "confidence": 0.9995524013496578,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 11,
+                "start": 5
+            },
+            {
+                "value": "now",
+                "confidence": 0.9808573354707275,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 27,
+                "start": 24
+            },
+            {
+                "value": "closest",
+                "confidence": 0.9975981543153825,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 42,
+                "start": 35
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.9962228723087676,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 49,
+                "start": 43
+            }
+        ],
+        "id": 49,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999998788273197,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 3.6506953988301895e-08,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.646819922739697e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.9450538464603218e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.635009996325801e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.1347269213763793e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.1049619444904104e-08,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "What movies are showing now at the closest cinema?"
+    },
+    {
+        "intent": {
+            "confidence": 0.9719268767218676,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "Rumor Has It",
+                "confidence": 0.8984908919343546,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 15,
+                "start": 3
+            }
+        ],
+        "id": 50,
+        "intent_ranking": [
+            {
+                "confidence": 0.9719268767218676,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.014845088581026568,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.004885418734193493,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.004506927564903869,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0021147196219686443,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0015634815585604644,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00015748721747922283,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "Is Rumor Has It playing"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999979469222215,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "Speakeasy Theaters",
+                "confidence": 0.7655015918527542,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 35,
+                "start": 17
+            },
+            {
+                "value": "movie times",
+                "confidence": 0.975084420711663,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 47,
+                "start": 36
+            }
+        ],
+        "id": 51,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999979469222215,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 5.707464562418196e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.725083850817659e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.323185872315735e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.85101715259215e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.5340205379813015e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.3900058085826486e-07,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "I need a list of Speakeasy Theaters movie times"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999989811202065,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "The Outer Space Connection",
+                "confidence": 0.9931248491069196,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 34,
+                "start": 8
+            },
+            {
+                "value": "nearest",
+                "confidence": 0.9944501029378118,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 57,
+                "start": 50
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.9964978037558062,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 64,
+                "start": 58
+            }
+        ],
+        "id": 52,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999989811202065,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 2.7404169922492987e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.614152130996372e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.6648040099758314e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.339893355899717e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.0295535309458144e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.999779155582325e-08,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "When is The Outer Space Connection playing at the nearest cinema."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999999915445746,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9947227057450652,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 20,
+                "start": 9
+            },
+            {
+                "value": "Harkins Theatres",
+                "confidence": 0.9972425631735009,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 40,
+                "start": 24
+            }
+        ],
+        "id": 53,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999999915445746,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 2.5840500466874676e-09,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.887916221706712e-09,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.3720801593389652e-09,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 9.346051207727576e-10,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 8.964428506755179e-10,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.803309450321574e-10,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Find the movie times at Harkins Theatres."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999997113837248,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "films",
+                "confidence": 0.9979224327129641,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 14,
+                "start": 9
+            },
+            {
+                "value": "Century Theatres",
+                "confidence": 0.997429350830968,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 34,
+                "start": 18
+            }
+        ],
+        "id": 54,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999997113837248,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 8.69792273460386e-08,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 6.48564440818328e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 5.027163611465388e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.5144473918954735e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.5865338727659435e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.5499154964638047e-08,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Find the films at Century Theatres."
+    },
+    {
+        "intent": {
+            "confidence": 0.91598323068985,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "animated movies",
+                "confidence": 0.9992188381815662,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 24,
+                "start": 9
+            },
+            {
+                "value": "in the neighbourhood",
+                "confidence": 0.9925059273633129,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 53,
+                "start": 33
+            }
+        ],
+        "id": 55,
+        "intent_ranking": [
+            {
+                "confidence": 0.91598323068985,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0829939251284575,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0007736817225571613,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00014463216499234618,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.877910716167628e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.224410202306567e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.3507084958764007e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "show the animated movies playing in the neighbourhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.7114458095114842,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name"
+        ],
+        "entities": [
+            {
+                "value": "Fear Chamber",
+                "confidence": 0.9691671149885605,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 26,
+                "start": 14
+            }
+        ],
+        "id": 56,
+        "intent_ranking": [
+            {
+                "confidence": 0.7114458095114842,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.22074114069667353,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.04287032556756504,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.011004415518657086,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.005936141147268388,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.005424155631655195,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0025780119266964443,
+                "name": "RateBook"
+            }
+        ],
+        "text": "I want to see Fear Chamber."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999991060052309,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "Southern Theatres",
+                "confidence": 0.9737039919789025,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 25,
+                "start": 8
+            },
+            {
+                "value": "movie times",
+                "confidence": 0.9816397563770766,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 37,
+                "start": 26
+            }
+        ],
+        "id": 57,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999991060052309,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 2.742795063017084e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.8735776954967262e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.2174727211532443e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.1350188517663547e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.0916024280523486e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 8.794809316240894e-08,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "Show me Southern Theatres movie times"
+    },
+    {
+        "intent": {
+            "confidence": 0.9706151617240031,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "The Unnaturals",
+                "confidence": 0.9860001622874114,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 17,
+                "start": 3
+            },
+            {
+                "value": "13",
+                "confidence": 0.9657404828731609,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 31,
+                "start": 29
+            }
+        ],
+        "id": 58,
+        "intent_ranking": [
+            {
+                "confidence": 0.9706151617240031,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.017114199180318136,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0076692399539340875,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0024928787290169835,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0014979176632601622,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0005400454401982583,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.055730926924264e-05,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Is The Unnaturals showing at 13."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999998618328241,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "No Time to Be Young",
+                "confidence": 0.984565031873769,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 22,
+                "start": 3
+            },
+            {
+                "value": "AMC Theaters",
+                "confidence": 0.9982140472931741,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 46,
+                "start": 34
+            }
+        ],
+        "id": 59,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999998618328241,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 4.286904619292502e-08,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.069312286603423e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.364803515830998e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.4617237395370673e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.3787697599786962e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.255203662361686e-08,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Is No Time to Be Young showing at AMC Theaters"
+    },
+    {
+        "intent": {
+            "confidence": 0.9310196776824953,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.9945515694518824,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 9
+            },
+            {
+                "value": "Regal Entertainment Group",
+                "confidence": 0.9894252976991207,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 54,
+                "start": 29
+            }
+        ],
+        "id": 60,
+        "intent_ranking": [
+            {
+                "confidence": 0.9310196776824953,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.06821884396190306,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0002661162692992003,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00019337968978287002,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00018966376874645383,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 9.174998103187504e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.0568646741615998e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Find the movie schedules for Regal Entertainment Group."
+    },
+    {
+        "intent": {
+            "confidence": 0.9716519191435344,
+            "name": "SearchCreativeWork"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ],
+        "entities": [
+            {
+                "value": "Shattered Image",
+                "confidence": 0.4593759766196572,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 29,
+                "start": 14
+            }
+        ],
+        "id": 61,
+        "intent_ranking": [
+            {
+                "confidence": 0.9716519191435344,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.02612471013349664,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0017356427800172929,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0002675634988550617,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0001052715629281813,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00010088649267972405,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.4006388488945351e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "I want to see Shattered Image."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999999781692238,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9279739451948475,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 17,
+                "start": 9
+            },
+            {
+                "value": "Star Theatres",
+                "confidence": 0.9956127553246695,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 34,
+                "start": 21
+            }
+        ],
+        "id": 62,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999999781692238,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 6.682708644909199e-09,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 4.915772302981387e-09,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.6380977913550045e-09,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.576848847398415e-09,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.07736939443058e-09,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.9399792488066244e-09,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Find the schedule at Star Theatres."
+    },
+    {
+        "intent": {
+            "confidence": 0.9276855593406775,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-timeRange",
+            "I-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "7 PM",
+                "confidence": 0.9984487826513245,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 36,
+                "start": 32
+            }
+        ],
+        "id": 63,
+        "intent_ranking": [
+            {
+                "confidence": 0.9276855593406775,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.03507017995924904,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.018437586117450326,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.01571248740045615,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0017432202608154046,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0009774567531244725,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0003735101682270963,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Will I Think I Do be playing at 7 PM?"
+    },
+    {
+        "intent": {
+            "confidence": 0.9861843635674554,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "O",
+            "O",
+            "B-movie_type",
+            "I-movie_type"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.95901866492148,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 20,
+                "start": 12
+            },
+            {
+                "value": "ArcLight Hollywood",
+                "confidence": 0.9646537673450325,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 43,
+                "start": 25
+            },
+            {
+                "value": "animated movies",
+                "confidence": 0.9974133995237129,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 68,
+                "start": 53
+            }
+        ],
+        "id": 64,
+        "intent_ranking": [
+            {
+                "confidence": 0.9861843635674554,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.013092493144327512,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0003888487414605612,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00017368806826643875,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 6.142960371912997e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 5.1135079561960424e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.804179520870972e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Show me the schedule for ArcLight Hollywood for only animated movies"
+    },
+    {
+        "intent": {
+            "confidence": 0.6588288526041509,
+            "name": "SearchCreativeWork"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9559261246656929,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 17,
+                "start": 9
+            },
+            {
+                "value": "Great Mail Robbery",
+                "confidence": 0.6628837516857219,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 40,
+                "start": 22
+            }
+        ],
+        "id": 65,
+        "intent_ranking": [
+            {
+                "confidence": 0.6588288526041509,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.3402989144025487,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0004249703473938865,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00017497892666483512,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00015023785949931079,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00010666556392950491,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.5380295812753946e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Find the schedule for Great Mail Robbery."
+    },
+    {
+        "intent": {
+            "confidence": 0.9641121477618316,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movies",
+                "confidence": 0.9990442250678341,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 18,
+                "start": 12
+            },
+            {
+                "value": "in the neighborhood",
+                "confidence": 0.99601231050796,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 38,
+                "start": 19
+            }
+        ],
+        "id": 66,
+        "intent_ranking": [
+            {
+                "confidence": 0.9641121477618316,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.03479337134470396,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.000443658856852371,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00019406834760712455,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00018654392732979225,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0001665961232863841,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00010361363838861695,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Give me the movies in the neighborhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9909311594239123,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movies",
+                "confidence": 0.9995478377381061,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 11,
+                "start": 5
+            },
+            {
+                "value": "close by",
+                "confidence": 0.9987668042589141,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 32,
+                "start": 24
+            }
+        ],
+        "id": 67,
+        "intent_ranking": [
+            {
+                "confidence": 0.9909311594239123,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.007661997029047422,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.001342191634857312,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.1051684730594326e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.102034129011553e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.7666537618956847e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.913348543149489e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "What movies are playing close by"
+    },
+    {
+        "intent": {
+            "confidence": 0.8663199827927986,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "The Two Gladiators",
+                "confidence": 0.9903056483315253,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 21,
+                "start": 3
+            }
+        ],
+        "id": 68,
+        "intent_ranking": [
+            {
+                "confidence": 0.8663199827927986,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.11513250381496985,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.009956021461945571,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00800224005340775,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.000410194849873022,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00011529956444004046,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.375746256532398e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Is The Two Gladiators playing"
+    },
+    {
+        "intent": {
+            "confidence": 0.9953758599134265,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9874166968246042,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 25,
+                "start": 11
+            },
+            {
+                "value": "Great Escape Theatres",
+                "confidence": 0.983785282770958,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 51,
+                "start": 30
+            }
+        ],
+        "id": 69,
+        "intent_ranking": [
+            {
+                "confidence": 0.9953758599134265,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.004562945076425297,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.9320330612615807e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.5443700575131887e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.0214853329236774e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 9.803451276168966e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 6.412674355078355e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "What's the movie schedule for Great Escape Theatres"
+    },
+    {
+        "intent": {
+            "confidence": 0.9876068220572003,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9988432435946457,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 23,
+                "start": 9
+            },
+            {
+                "value": "close by",
+                "confidence": 0.9971211288364982,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 32,
+                "start": 24
+            }
+        ],
+        "id": 70,
+        "intent_ranking": [
+            {
+                "confidence": 0.9876068220572003,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.012092134948138707,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00010301834400765984,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 6.591324246918311e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 5.351120629286248e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.300608955744882e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.55941123337822e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Find the movie schedule close by"
+    },
+    {
+        "intent": {
+            "confidence": 0.9260112613246663,
+            "name": "SearchCreativeWork"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "entities": [],
+        "id": 71,
+        "intent_ranking": [
+            {
+                "confidence": 0.9260112613246663,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.03745012629331528,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.02886700330234623,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.004149652645587524,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0023030989472259174,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0008805038268391656,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00033835366001947116,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "I want to see Outcast."
+    },
+    {
+        "intent": {
+            "confidence": 0.9103754545778244,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "schedule",
+                "confidence": 0.9397411885471516,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 20,
+                "start": 12
+            },
+            {
+                "value": "movie",
+                "confidence": 0.47739427466211265,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 29,
+                "start": 24
+            },
+            {
+                "value": "The Great Gildersleeve",
+                "confidence": 0.43298634851157725,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 52,
+                "start": 30
+            },
+            {
+                "value": "near",
+                "confidence": 0.890288343485499,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 57,
+                "start": 53
+            },
+            {
+                "value": "movie house",
+                "confidence": 0.9951991434321255,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 69,
+                "start": 58
+            }
+        ],
+        "id": 72,
+        "intent_ranking": [
+            {
+                "confidence": 0.9103754545778244,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.08940665478047227,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 6.871798472821904e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.808984146451935e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.126618242522909e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.2799029936878043e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.701760314828506e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "show me the schedule of movie The Great Gildersleeve near movie house"
+    },
+    {
+        "intent": {
+            "confidence": 0.9879178075911672,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "times",
+                "confidence": 0.7443638353021457,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 12,
+                "start": 7
+            },
+            {
+                "value": "A Yiddish World Remembered",
+                "confidence": 0.6767216251843804,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 43,
+                "start": 17
+            },
+            {
+                "value": "Dipson Theatres",
+                "confidence": 0.9948961084406936,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 62,
+                "start": 47
+            }
+        ],
+        "id": 73,
+        "intent_ranking": [
+            {
+                "confidence": 0.9879178075911672,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.006113911559519429,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.002079613629688914,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.001565936936567572,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0010284076691871576,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0009128491943285775,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0003814734195408304,
+                "name": "RateBook"
+            }
+        ],
+        "text": "I need times for A Yiddish World Remembered at Dipson Theatres"
+    },
+    {
+        "intent": {
+            "confidence": 0.9990072144282924,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.9972805115849774,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 9
+            },
+            {
+                "value": "Goodrich Quality Theaters",
+                "confidence": 0.9995345808233377,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 53,
+                "start": 28
+            }
+        ],
+        "id": 74,
+        "intent_ranking": [
+            {
+                "confidence": 0.9990072144282924,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0009863979355015252,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.5525959125683893e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.337567262732185e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.473567126336417e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 5.462478433486434e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.038684746484536e-07,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Find the movie schedules at Goodrich Quality Theaters."
+    },
+    {
+        "intent": {
+            "confidence": 0.9626494891007065,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9985035450105881,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 26,
+                "start": 12
+            },
+            {
+                "value": "in the neighbourhood",
+                "confidence": 0.9893321791114185,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 47,
+                "start": 27
+            }
+        ],
+        "id": 75,
+        "intent_ranking": [
+            {
+                "confidence": 0.9626494891007065,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.037045728269552325,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00012201977447017259,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.102022088290383e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.9116200791212205e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.9289476960916505e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.3336956636017917e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "show me the movie schedule in the neighbourhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9975311929842415,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-movie_type",
+            "B-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9875826622938388,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 23,
+                "start": 12
+            },
+            {
+                "value": "films",
+                "confidence": 0.9959714990544212,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 33,
+                "start": 28
+            },
+            {
+                "value": "nearby",
+                "confidence": 0.9984201561390514,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 40,
+                "start": 34
+            }
+        ],
+        "id": 76,
+        "intent_ranking": [
+            {
+                "confidence": 0.9975311929842415,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0024552058581555998,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 3.6429249640470817e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.205242244905548e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.4587690533215866e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.3163968227929614e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.9778245176238815e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "show me the movie times for films nearby"
+    },
+    {
+        "intent": {
+            "confidence": 0.9619909212749921,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9872119379474361,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 20,
+                "start": 9
+            },
+            {
+                "value": "animated movies",
+                "confidence": 0.998547261014888,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 40,
+                "start": 25
+            },
+            {
+                "value": "in the neighbourhood",
+                "confidence": 0.9979824689360446,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 61,
+                "start": 41
+            }
+        ],
+        "id": 77,
+        "intent_ranking": [
+            {
+                "confidence": 0.9619909212749921,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.037780366618301545,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00010893195540038995,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.8248033438104786e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.9268030688345126e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.9000337189227482e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.3263749990563673e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "show the movie times for animated movies in the neighbourhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.9727286022468605,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "The Eye – Infinity",
+                "confidence": 0.9754157413245632,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 21,
+                "start": 3
+            },
+            {
+                "value": "General Cinema Corporation",
+                "confidence": 0.9920135493019712,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 59,
+                "start": 33
+            }
+        ],
+        "id": 78,
+        "intent_ranking": [
+            {
+                "confidence": 0.9727286022468605,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.024065859878148636,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0012790468160327885,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.000923737281452816,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0008406730951305183,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 8.836108187560118e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.37196004988341e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Is The Eye – Infinity playing at General Cinema Corporation"
+    },
+    {
+        "intent": {
+            "confidence": 0.5406169981395905,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ],
+        "entities": [
+            {
+                "value": "Super Sweet 16: The Movie",
+                "confidence": 0.43307432828479053,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 55,
+                "start": 30
+            }
+        ],
+        "id": 79,
+        "intent_ranking": [
+            {
+                "confidence": 0.5406169981395905,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.45529158860379937,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00139441591497942,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0010633832109767682,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.000990082570934176,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00043979693184061666,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00020373462787911305,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "Can you check the timings for Super Sweet 16: The Movie?"
+    },
+    {
+        "intent": {
+            "confidence": 0.9650642068157507,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type",
+            "I-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "We Are Northern Lights",
+                "confidence": 0.9516613638039163,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 25,
+                "start": 3
+            },
+            {
+                "value": "movie theatre",
+                "confidence": 0.9944750817644608,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 54,
+                "start": 41
+            }
+        ],
+        "id": 80,
+        "intent_ranking": [
+            {
+                "confidence": 0.9650642068157507,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.03379895003179414,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.000980695219025962,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.54576383868025e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.957317796436821e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.830793846737529e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.8091786105164477e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "is We Are Northern Lights playing in any movie theatre"
+    },
+    {
+        "intent": {
+            "confidence": 0.9950483515742942,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "times",
+                "confidence": 0.8675680150805087,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 10,
+                "start": 5
+            },
+            {
+                "value": "The Young Swordsman",
+                "confidence": 0.8786914194493383,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 35,
+                "start": 16
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.9823866652728274,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 59,
+                "start": 53
+            }
+        ],
+        "id": 81,
+        "intent_ranking": [
+            {
+                "confidence": 0.9950483515742942,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0046481265915364195,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00015049339218017752,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.387316810630559e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.143822749510519e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.6960364704881498e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.075668168307106e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "What times will The Young Swordsman be showing at my cinema?"
+    },
+    {
+        "intent": {
+            "confidence": 0.9192396831230827,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "Sexy Dance 2times",
+                "confidence": 0.7000240955930874,
+                "extractor": "ner_crf",
+                "entity": "playlist",
+                "end": 26,
+                "start": 9
+            },
+            {
+                "value": "closest",
+                "confidence": 0.9990630453517901,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 41,
+                "start": 34
+            },
+            {
+                "value": "movie house",
+                "confidence": 0.997257139327964,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 53,
+                "start": 42
+            }
+        ],
+        "id": 82,
+        "intent_ranking": [
+            {
+                "confidence": 0.9192396831230827,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.08035835020242763,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0002268178804117849,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.486890094083165e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 6.726864413240351e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.2585421469392117e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.042582753498267e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Show the Sexy Dance 2times at the closest movie house"
+    },
+    {
+        "intent": {
+            "confidence": 0.9648373875379164,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "B-movie_type",
+            "I-movie_type",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "close by",
+                "confidence": 0.7596999825870255,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 22,
+                "start": 14
+            },
+            {
+                "value": "animated movies",
+                "confidence": 0.9993734699158271,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 38,
+                "start": 23
+            }
+        ],
+        "id": 83,
+        "intent_ranking": [
+            {
+                "confidence": 0.9648373875379164,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.034403896267226494,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0003975964188855132,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00024579819718559585,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.586948805863969e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.3835734801553876e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.5616355925896657e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "what are some close by animated movies showing"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999986988862541,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "O",
+            "B-movie_type",
+            "I-movie_type"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.9951379354716159,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 15,
+                "start": 0
+            },
+            {
+                "value": "close by",
+                "confidence": 0.9905989714480736,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 24,
+                "start": 16
+            },
+            {
+                "value": "animated movies",
+                "confidence": 0.9988347823684841,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 44,
+                "start": 29
+            }
+        ],
+        "id": 84,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999986988862541,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 4.1158936253451703e-07,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.4275863303775316e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.2409575512500502e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.6443487952141116e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.447654178752821e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.134696977714604e-07,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "movie schedules close by for animated movies"
+    },
+    {
+        "intent": {
+            "confidence": 0.9891962017547141,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "films",
+                "confidence": 0.9998220713051785,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 10,
+                "start": 5
+            },
+            {
+                "value": "close by",
+                "confidence": 0.9987667938588596,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 31,
+                "start": 23
+            }
+        ],
+        "id": 85,
+        "intent_ranking": [
+            {
+                "confidence": 0.9891962017547141,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00911504867767275,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0016058296546941726,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.9416458433417232e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.659296051741236e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.9216584322472265e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 7.693909645690995e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "what films are playing close by"
+    },
+    {
+        "intent": {
+            "confidence": 0.9497883401994743,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9984680592369412,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 23,
+                "start": 9
+            },
+            {
+                "value": "in the area",
+                "confidence": 0.9813731773672938,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 35,
+                "start": 24
+            }
+        ],
+        "id": 86,
+        "intent_ranking": [
+            {
+                "confidence": 0.9497883401994743,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.049954832859561926,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 8.714376804836009e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.974534374027846e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.481341703960038e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.958455170952909e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 5.539860425783259e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Find the movie schedule in the area."
+    },
+    {
+        "intent": {
+            "confidence": 0.9960233764498982,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "Cowboy Canteen",
+                "confidence": 0.9878141198431406,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 17,
+                "start": 3
+            }
+        ],
+        "id": 87,
+        "intent_ranking": [
+            {
+                "confidence": 0.9960233764498982,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.002709485242743387,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0007625585293808884,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00036011671023649636,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00013482838721339346,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.372326022433532e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.262354505028628e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Is Cowboy Canteen playing"
+    },
+    {
+        "intent": {
+            "confidence": 0.9999998404817639,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "I-object_location_type",
+            "O",
+            "B-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "Rare Birds",
+                "confidence": 0.9945457856246844,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 13,
+                "start": 3
+            },
+            {
+                "value": "nearest",
+                "confidence": 0.9977832123047673,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 36,
+                "start": 29
+            },
+            {
+                "value": "movie theatre",
+                "confidence": 0.999566377790126,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 50,
+                "start": 37
+            },
+            {
+                "value": "noon",
+                "confidence": 0.993717157358445,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 58,
+                "start": 54
+            }
+        ],
+        "id": 88,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999998404817639,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 4.5394477367452116e-08,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 4.228559328311671e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.0672931618509765e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.5622519593844793e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.3414475779680584e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.212823843078252e-08,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Is Rare Birds showing at the nearest movie theatre at noon."
+    },
+    {
+        "intent": {
+            "confidence": 0.9925632048405812,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9925918493235322,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 13
+            }
+        ],
+        "id": 89,
+        "intent_ranking": [
+            {
+                "confidence": 0.9925632048405812,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0073310048328053285,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 4.242578633782849e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.3687820877613766e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.8223350169662206e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.1681821782755094e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 9.771547445580879e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "What are the movie times"
+    },
+    {
+        "intent": {
+            "confidence": 0.9565729827389967,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "movie schedules",
+                "confidence": 0.996691191292977,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 36,
+                "start": 21
+            }
+        ],
+        "id": 90,
+        "intent_ranking": [
+            {
+                "confidence": 0.9565729827389967,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.043038202086630825,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.000123935021728125,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00012360006192865616,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 7.37822626733192e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.2515589451004935e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.4982238591241715e-05,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Where can I find the movie schedules"
+    },
+    {
+        "intent": {
+            "confidence": 0.9869537906414556,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name",
+            "B-timeRange",
+            "I-timeRange",
+            "I-timeRange"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9873036705040512,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 23,
+                "start": 9
+            },
+            {
+                "value": "North American Cinemas",
+                "confidence": 0.9933554087909949,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 50,
+                "start": 28
+            },
+            {
+                "value": "in eleven seconds",
+                "confidence": 0.9273649349329753,
+                "extractor": "ner_crf",
+                "entity": "timeRange",
+                "end": 68,
+                "start": 51
+            }
+        ],
+        "id": 91,
+        "intent_ranking": [
+            {
+                "confidence": 0.9869537906414556,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.01274624370167481,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 9.629983545788033e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 8.621802599873387e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.1789119446393825e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.8742461454673385e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 3.691621451200089e-05,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "text": "Find the movie schedule for North American Cinemas in eleven seconds."
+    },
+    {
+        "intent": {
+            "confidence": 0.9999999492130517,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-spatial_relation",
+            "B-object_location_type",
+            "O",
+            "B-movie_type",
+            "O"
+        ],
+        "entities": [
+            {
+                "value": "nearest",
+                "confidence": 0.9943955284580717,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 16,
+                "start": 9
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.9962648074731699,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 23,
+                "start": 17
+            },
+            {
+                "value": "movies",
+                "confidence": 0.9925953940016826,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 35,
+                "start": 29
+            }
+        ],
+        "id": 92,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999999492130517,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.5799235523322806e-08,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 9.655981870714256e-09,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 8.170271537191874e-09,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.776864145996126e-09,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.508597915415411e-09,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.875997256029213e-09,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Find the nearest cinema with movies playing"
+    },
+    {
+        "intent": {
+            "confidence": 0.9925632048405812,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9925918493235322,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 13
+            }
+        ],
+        "id": 93,
+        "intent_ranking": [
+            {
+                "confidence": 0.9925632048405812,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0073310048328053285,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 4.242578633782849e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.3687820877613766e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.8223350169662206e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.1681821782755094e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 9.771547445580879e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "what are the movie times"
+    },
+    {
+        "intent": {
+            "confidence": 0.8511741179914822,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ],
+        "entities": [
+            {
+                "value": "times",
+                "confidence": 0.9628876267866915,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 18,
+                "start": 13
+            },
+            {
+                "value": "The Gingerbread Man",
+                "confidence": 0.7110226342044057,
+                "extractor": "ner_crf",
+                "entity": "object_name",
+                "end": 42,
+                "start": 23
+            }
+        ],
+        "id": 94,
+        "intent_ranking": [
+            {
+                "confidence": 0.8511741179914822,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.13340940336652282,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.006372363609592385,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.004709685118446086,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0022443370924833755,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0011882260899076997,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0009018667315653054,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "what are the times for The Gingerbread Man"
+    },
+    {
+        "intent": {
+            "confidence": 0.9891962017547141,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "B-movie_type",
+            "O",
+            "O",
+            "B-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "films",
+                "confidence": 0.9998220713051785,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 10,
+                "start": 5
+            },
+            {
+                "value": "close by",
+                "confidence": 0.9987667938588596,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 31,
+                "start": 23
+            }
+        ],
+        "id": 95,
+        "intent_ranking": [
+            {
+                "confidence": 0.9891962017547141,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00911504867767275,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0016058296546941726,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.9416458433417232e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.659296051741236e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.9216584322472265e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 7.693909645690995e-06,
+                "name": "RateBook"
+            }
+        ],
+        "text": "What films are playing close by"
+    },
+    {
+        "intent": {
+            "confidence": 0.9896209285676123,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_location_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ],
+        "entities": [
+            {
+                "value": "cinema",
+                "confidence": 0.9930361089845874,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 13,
+                "start": 7
+            },
+            {
+                "value": "The Spirit of Youth",
+                "confidence": 0.8759716386124594,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 41,
+                "start": 22
+            }
+        ],
+        "id": 96,
+        "intent_ranking": [
+            {
+                "confidence": 0.9896209285676123,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.007288272240838076,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0025766419573650203,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0004943166423881674,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.1678704448272424e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 5.704817603479049e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.457069744967076e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "Is any cinema playing The Spirit of Youth"
+    },
+    {
+        "intent": {
+            "confidence": 0.9847647609401037,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-movie_type",
+            "I-movie_type",
+            "B-spatial_relation",
+            "I-spatial_relation",
+            "I-spatial_relation"
+        ],
+        "entities": [
+            {
+                "value": "movie times",
+                "confidence": 0.9875728093919471,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 24,
+                "start": 13
+            },
+            {
+                "value": "animated movies",
+                "confidence": 0.9985472612655335,
+                "extractor": "ner_crf",
+                "entity": "movie_type",
+                "end": 44,
+                "start": 29
+            },
+            {
+                "value": "in the neighbourhood",
+                "confidence": 0.9979824689360878,
+                "extractor": "ner_crf",
+                "entity": "spatial_relation",
+                "end": 65,
+                "start": 45
+            }
+        ],
+        "id": 97,
+        "intent_ranking": [
+            {
+                "confidence": 0.9847647609401037,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.014812200684594868,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00011456919149825004,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 9.115763771339756e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 7.679794727341557e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.533999962510393e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.517359919124024e-05,
+                "name": "PlayMusic"
+            }
+        ],
+        "text": "What are the movie times for animated movies in the neighbourhood"
+    },
+    {
+        "intent": {
+            "confidence": 0.999268472323648,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-location_name",
+            "I-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "movie schedule",
+                "confidence": 0.9937221913999946,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 25,
+                "start": 11
+            },
+            {
+                "value": "Great Escape Theatres",
+                "confidence": 0.9865177893655417,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 50,
+                "start": 29
+            }
+        ],
+        "id": 98,
+        "intent_ranking": [
+            {
+                "confidence": 0.999268472323648,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0007244726261711537,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.9303756991360457e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.68235532966784e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 5.935686478650446e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.6764590494945384e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.8110459895958864e-07,
+                "name": "BookRestaurant"
+            }
+        ],
+        "text": "What's the movie schedule at Great Escape Theatres"
+    },
+    {
+        "intent": {
+            "confidence": 0.9855116755321314,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "B-location_name",
+            "I-location_name"
+        ],
+        "entities": [
+            {
+                "value": "times",
+                "confidence": 0.973535324655253,
+                "extractor": "ner_crf",
+                "entity": "object_type",
+                "end": 14,
+                "start": 9
+            },
+            {
+                "value": "Cheers for Miss Bishop",
+                "confidence": 0.7744715190317923,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 41,
+                "start": 19
+            },
+            {
+                "value": "Dipson Theatres",
+                "confidence": 0.9957028238539771,
+                "extractor": "ner_crf",
+                "entity": "location_name",
+                "end": 60,
+                "start": 45
+            }
+        ],
+        "id": 99,
+        "intent_ranking": [
+            {
+                "confidence": 0.9855116755321314,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.009866528791537375,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.002505432482147159,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0009070425937884167,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0006244459635081512,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0004183774041921488,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00016649723269525208,
+                "name": "RateBook"
+            }
+        ],
+        "text": "Show the times for Cheers for Miss Bishop at Dipson Theatres."
+    },
+    {
+        "intent": {
+            "confidence": 0.9012113320903641,
+            "name": "SearchScreeningEvent"
+        },
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "O",
+            "O",
+            "B-object_location_type"
+        ],
+        "entities": [
+            {
+                "value": "Married to the Enemy 2",
+                "confidence": 0.9873087319987515,
+                "extractor": "ner_crf",
+                "entity": "movie_name",
+                "end": 36,
+                "start": 14
+            },
+            {
+                "value": "cinema",
+                "confidence": 0.9936879879506743,
+                "extractor": "ner_crf",
+                "entity": "object_location_type",
+                "end": 48,
+                "start": 42
+            }
+        ],
+        "id": 100,
+        "intent_ranking": [
+            {
+                "confidence": 0.9012113320903641,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.06529071832736999,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.022835880741038806,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.008001207744278777,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0013395224581374257,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0009375185489600391,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0003838200898507905,
+                "name": "GetWeather"
+            }
+        ],
+        "text": "I want to see Married to the Enemy 2 at a cinema."
+    }
+]

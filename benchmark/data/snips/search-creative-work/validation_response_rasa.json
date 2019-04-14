@@ -1,0 +1,6338 @@
+[
+    {
+        "text": "Wish to find the movie the Heart Beat",
+        "intent": {
+            "confidence": 0.8029627302767848,
+            "name": "SearchCreativeWork"
+        },
+        "id": 1,
+        "intent_ranking": [
+            {
+                "confidence": 0.8029627302767848,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.19497778301829427,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0014144124110118323,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00042918708431770986,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00012048611689537359,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.12086440257697e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.4192448670486412e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "movie",
+                "start": 17,
+                "confidence": 0.9664629122107534
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_name",
+                "value": "the Heart Beat",
+                "start": 23,
+                "confidence": 0.9913635305912782
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please look up the TV show, Vanity.",
+        "intent": {
+            "confidence": 0.997751770859831,
+            "name": "SearchCreativeWork"
+        },
+        "id": 2,
+        "intent_ranking": [
+            {
+                "confidence": 0.997751770859831,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0009969554888300189,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0009902937443279477,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00016227168834482346,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.732491265890553e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.035538125720242e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.347767881482467e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 26,
+                "entity": "object_type",
+                "value": "TV show",
+                "start": 19,
+                "confidence": 0.9981618685621848
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O"
+        ]
+    },
+    {
+        "text": "Get me the Elvis' Christmas Album TV show.",
+        "intent": {
+            "confidence": 0.9999840491085538,
+            "name": "SearchCreativeWork"
+        },
+        "id": 3,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999840491085538,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 1.5129445932159571e-05,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 3.233346333371423e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.1824752844041866e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.1274802667807564e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 8.817077452245343e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.894455109588426e-08,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 33,
+                "entity": "object_name",
+                "value": "Elvis' Christmas Album",
+                "start": 11,
+                "confidence": 0.8334254265375173
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 41,
+                "entity": "object_type",
+                "value": "TV show",
+                "start": 34,
+                "confidence": 0.9965405724360118
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Please find me the saga, The Deep Six.",
+        "intent": {
+            "confidence": 0.9637302891146511,
+            "name": "SearchCreativeWork"
+        },
+        "id": 4,
+        "intent_ranking": [
+            {
+                "confidence": 0.9637302891146511,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.01884119091327879,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.008456853241213104,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.006948230203153403,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0009791390199991785,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0005427470605300883,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0005015504471748683,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 23,
+                "entity": "object_part_of_series_type",
+                "value": "saga",
+                "start": 19,
+                "confidence": 0.5357304287126379
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_name",
+                "value": "The Deep Six",
+                "start": 25,
+                "confidence": 0.684995858810247
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_part_of_series_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Wish to see the photograph with the name Live: Right Here",
+        "intent": {
+            "confidence": 0.9829542614873992,
+            "name": "SearchCreativeWork"
+        },
+        "id": 5,
+        "intent_ranking": [
+            {
+                "confidence": 0.9829542614873992,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.012868964582417056,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0026592263153807174,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0010568828191372687,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00021898485594197122,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00015058195544762502,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 9.109798427610906e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 26,
+                "entity": "object_type",
+                "value": "photograph",
+                "start": 16,
+                "confidence": 0.9980633429351042
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 57,
+                "entity": "object_name",
+                "value": "Live: Right Here",
+                "start": 41,
+                "confidence": 0.9705042983365185
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Looking for a novel called Death March",
+        "intent": {
+            "confidence": 0.9999038264611405,
+            "name": "SearchCreativeWork"
+        },
+        "id": 6,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999038264611405,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 9.60050776706387e-05,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 5.101427506224996e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.971660160110666e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.87387921615078e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.5676697426334196e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.3314822602793366e-08,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 19,
+                "entity": "object_type",
+                "value": "novel",
+                "start": 14,
+                "confidence": 0.9998360017506313
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 38,
+                "entity": "object_name",
+                "value": "Death March",
+                "start": 27,
+                "confidence": 0.9538523122153097
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you find me the work, The Curse of Oak Island?",
+        "intent": {
+            "confidence": 0.9109178576226311,
+            "name": "SearchCreativeWork"
+        },
+        "id": 7,
+        "intent_ranking": [
+            {
+                "confidence": 0.9109178576226311,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.07003425086044167,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.009409148211075429,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.004569069897476877,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0019470964002661559,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0017689083601385037,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0013536686479702462,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 49,
+                "entity": "object_name",
+                "value": "The Curse of Oak Island",
+                "start": 26,
+                "confidence": 0.883233526061052
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please get me The Sacred and Profane Love Machine game.",
+        "intent": {
+            "confidence": 0.9414390086300655,
+            "name": "SearchCreativeWork"
+        },
+        "id": 8,
+        "intent_ranking": [
+            {
+                "confidence": 0.9414390086300655,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.03682847033657743,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.01935782817319921,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0014478952118559913,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0007340209268304272,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00015015559170926152,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.262112976213463e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 49,
+                "entity": "object_name",
+                "value": "Sacred and Profane Love Machine",
+                "start": 18,
+                "confidence": 0.9955285818680655
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 54,
+                "entity": "object_type",
+                "value": "game",
+                "start": 50,
+                "confidence": 0.9335637600807685
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Need a creative work called Hit by Love",
+        "intent": {
+            "confidence": 0.831410543265529,
+            "name": "SearchCreativeWork"
+        },
+        "id": 9,
+        "intent_ranking": [
+            {
+                "confidence": 0.831410543265529,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.10849757059555361,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.037284792346711476,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.007608090922076474,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.006770775979306938,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0044055656349708695,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.004022661255851306,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 39,
+                "entity": "object_name",
+                "value": "Hit by Love",
+                "start": 28,
+                "confidence": 0.612002472238135
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "search for the trailer for The Office",
+        "intent": {
+            "confidence": 0.9858719825422961,
+            "name": "SearchCreativeWork"
+        },
+        "id": 10,
+        "intent_ranking": [
+            {
+                "confidence": 0.9858719825422961,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.013727537059066493,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0001220771535243084,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 9.118025644718835e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 8.228693323975294e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.65738965676966e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.8362158858287434e-05,
+                "name": "PlayMusic"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "trailer",
+                "start": 15,
+                "confidence": 0.9993375262720868
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Looking for a creative work called Plant Ecology",
+        "intent": {
+            "confidence": 0.9999724741547932,
+            "name": "SearchCreativeWork"
+        },
+        "id": 11,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999724741547932,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 2.721438868678741e-05,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 9.417408947134878e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 9.353705789767998e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.875275433200595e-08,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.419816114127168e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.079445713184414e-08,
+                "name": "PlayMusic"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 48,
+                "entity": "object_name",
+                "value": "Plant Ecology",
+                "start": 35,
+                "confidence": 0.9470610993259538
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Find the television show To Me",
+        "intent": {
+            "confidence": 0.9987005648546644,
+            "name": "SearchCreativeWork"
+        },
+        "id": 12,
+        "intent_ranking": [
+            {
+                "confidence": 0.9987005648546644,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0012953470636474652,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.086172269754293e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 9.702095812764796e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.380656928120748e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.213369355636305e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 5.722972087212473e-07,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 24,
+                "entity": "object_type",
+                "value": "television show",
+                "start": 9,
+                "confidence": 0.9982648587296226
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Can you please find me the saga Chump Change?",
+        "intent": {
+            "confidence": 0.9542976471218862,
+            "name": "SearchCreativeWork"
+        },
+        "id": 13,
+        "intent_ranking": [
+            {
+                "confidence": 0.9542976471218862,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.04244080759827398,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00179931502975977,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0009172031345972501,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0003247353443021395,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0002020607245148375,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.8231046665607646e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 31,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 27,
+                "confidence": 0.6986328192486796
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 44,
+                "entity": "object_name",
+                "value": "Chump Change",
+                "start": 32,
+                "confidence": 0.9771082220588705
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you find me The Ridiculous 6 book?",
+        "intent": {
+            "confidence": 0.9803973036062054,
+            "name": "SearchCreativeWork"
+        },
+        "id": 14,
+        "intent_ranking": [
+            {
+                "confidence": 0.9803973036062054,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.011781858166191051,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.006345170388746213,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0008818499366910296,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0002765354036193003,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0002692605952531434,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.8021903294058855e-05,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "best_rating",
+                "value": "6",
+                "start": 31,
+                "confidence": 0.578269172139566
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-best_rating",
+            "O"
+        ]
+    },
+    {
+        "text": "Please fine me the TV series, Now We Are Married.",
+        "intent": {
+            "confidence": 0.7907247057597712,
+            "name": "SearchCreativeWork"
+        },
+        "id": 15,
+        "intent_ranking": [
+            {
+                "confidence": 0.7907247057597712,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.20382736060736872,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.002561142028062324,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0014356876392796962,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0006596912176035646,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0004277212059824575,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00036369154193209384,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 28,
+                "entity": "object_type",
+                "value": "TV series",
+                "start": 19,
+                "confidence": 0.9932613431074049
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 48,
+                "entity": "object_name",
+                "value": "Now We Are Married",
+                "start": 30,
+                "confidence": 0.6824656258990658
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please look up the work, Bachelor Pad.",
+        "intent": {
+            "confidence": 0.9948990629799346,
+            "name": "SearchCreativeWork"
+        },
+        "id": 16,
+        "intent_ranking": [
+            {
+                "confidence": 0.9948990629799346,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0017535349981874222,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0013846369947783173,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0006650021117313941,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0006316060129622604,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00043062692103298873,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0002355299813734021,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_name",
+                "value": "Bachelor Pad",
+                "start": 25,
+                "confidence": 0.6540280038743054
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please help me find the Late Night Heartbroken Blues television show.",
+        "intent": {
+            "confidence": 0.9917831113658104,
+            "name": "SearchCreativeWork"
+        },
+        "id": 17,
+        "intent_ranking": [
+            {
+                "confidence": 0.9917831113658104,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0065692023461697115,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0015481274320973664,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.926591793524445e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.738281344024277e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.64909341304021e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.905563230463894e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 52,
+                "entity": "object_name",
+                "value": "the Late Night Heartbroken Blues",
+                "start": 20,
+                "confidence": 0.9832402032691918
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 68,
+                "entity": "object_type",
+                "value": "television show",
+                "start": 53,
+                "confidence": 0.9942307473368224
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Please help me find, Bend It Like Beckham the Musical.",
+        "intent": {
+            "confidence": 0.8223095709257608,
+            "name": "SearchCreativeWork"
+        },
+        "id": 18,
+        "intent_ranking": [
+            {
+                "confidence": 0.8223095709257608,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.10622481582095118,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.06313654985206932,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.006282691869248772,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0008355265291616008,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0007652693523149489,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00044557565049285633,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 53,
+                "entity": "object_name",
+                "value": "Bend It Like Beckham the Musical",
+                "start": 21,
+                "confidence": 0.6234662385527271
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please look up the TV series Parables for Wooden Ears.",
+        "intent": {
+            "confidence": 0.9869403408850631,
+            "name": "SearchCreativeWork"
+        },
+        "id": 19,
+        "intent_ranking": [
+            {
+                "confidence": 0.9869403408850631,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.01001219369686483,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0023215885735266032,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0003521187566645742,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00032961648245941034,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.9936664746024426e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.2049406756871415e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 28,
+                "entity": "object_type",
+                "value": "TV series",
+                "start": 19,
+                "confidence": 0.9977378205701783
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 53,
+                "entity": "object_name",
+                "value": "Parables for Wooden Ears",
+                "start": 29,
+                "confidence": 0.9950842688202334
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you find me, Hey Man?",
+        "intent": {
+            "confidence": 0.9362114353578457,
+            "name": "SearchCreativeWork"
+        },
+        "id": 20,
+        "intent_ranking": [
+            {
+                "confidence": 0.9362114353578457,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.05718309514598733,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.005144055978115171,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0005007908905153913,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0004558923433967561,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0003600594806416686,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00014467080349800707,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 24,
+                "entity": "object_name",
+                "value": "Hey Man",
+                "start": 17,
+                "confidence": 0.4557104542739927
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please search for Switched.",
+        "intent": {
+            "confidence": 0.9235229687469644,
+            "name": "SearchCreativeWork"
+        },
+        "id": 21,
+        "intent_ranking": [
+            {
+                "confidence": 0.9235229687469644,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.06789414140780241,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.004020976716334577,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0035904772367960944,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0004674215637674271,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0003363229533106702,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00016769137502439254,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Can you get me the Controlled Conversations TV series?",
+        "intent": {
+            "confidence": 0.9513418597221759,
+            "name": "SearchCreativeWork"
+        },
+        "id": 22,
+        "intent_ranking": [
+            {
+                "confidence": 0.9513418597221759,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.04316833658272438,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.004580178939516642,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00039369482857108104,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0003918602827048229,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.894499623528847e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 5.5124648071927736e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 43,
+                "entity": "object_name",
+                "value": "the Controlled Conversations",
+                "start": 15,
+                "confidence": 0.8088068585368567
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 53,
+                "entity": "object_type",
+                "value": "TV series",
+                "start": 44,
+                "confidence": 0.9992077901282396
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Please look up the song The Mad Magician.",
+        "intent": {
+            "confidence": 0.9794360135844667,
+            "name": "SearchCreativeWork"
+        },
+        "id": 23,
+        "intent_ranking": [
+            {
+                "confidence": 0.9794360135844667,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.014562172086070678,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.004094149846496054,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0016900551208389235,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00020443303220222668,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.863274862798518e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.3130550627020515e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 23,
+                "entity": "object_type",
+                "value": "song",
+                "start": 19,
+                "confidence": 0.9672715768113189
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 40,
+                "entity": "object_name",
+                "value": "The Mad Magician",
+                "start": 24,
+                "confidence": 0.9645754987393141
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please search for the TV show, The Best of White Lion.",
+        "intent": {
+            "confidence": 0.9885375762390463,
+            "name": "SearchCreativeWork"
+        },
+        "id": 24,
+        "intent_ranking": [
+            {
+                "confidence": 0.9885375762390463,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.011148192732932525,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 8.742641591688654e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.88224999048213e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.437190898423497e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.818073439826989e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.542946881677892e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 29,
+                "entity": "object_type",
+                "value": "TV show",
+                "start": 22,
+                "confidence": 0.9984019796207013
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 53,
+                "entity": "object_name",
+                "value": "The Best of White Lion",
+                "start": 31,
+                "confidence": 0.9600667977867505
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please find me Phineas Redux.",
+        "intent": {
+            "confidence": 0.9929614645843126,
+            "name": "SearchCreativeWork"
+        },
+        "id": 25,
+        "intent_ranking": [
+            {
+                "confidence": 0.9929614645843126,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.005621309764918943,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0013921884377734724,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.8775784488710415e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.4193552844529323e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.280295662521715e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.5617775595336837e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 28,
+                "entity": "object_name",
+                "value": "Phineas Redux",
+                "start": 15,
+                "confidence": 0.9627453099040021
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Get me the Procession of Ants TV show.",
+        "intent": {
+            "confidence": 0.99862712915423,
+            "name": "SearchCreativeWork"
+        },
+        "id": 26,
+        "intent_ranking": [
+            {
+                "confidence": 0.99862712915423,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0013679085679709274,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.224825219859731e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.136733225624056e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 9.133951578657928e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.79665723795165e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 8.076584720142885e-07,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 29,
+                "entity": "object_name",
+                "value": "the Procession of Ants",
+                "start": 7,
+                "confidence": 0.573950206084514
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_type",
+                "value": "TV show",
+                "start": 30,
+                "confidence": 0.9969830047618394
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Looking for a game called Phinally Phamous",
+        "intent": {
+            "confidence": 0.9936236633195268,
+            "name": "SearchCreativeWork"
+        },
+        "id": 27,
+        "intent_ranking": [
+            {
+                "confidence": 0.9936236633195268,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00422350960732367,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.001148981541116518,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0008375152423676489,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00012806970024320234,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.043636293461867e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.824226487445142e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 18,
+                "entity": "object_type",
+                "value": "game",
+                "start": 14,
+                "confidence": 0.9973083876735906
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 42,
+                "entity": "object_name",
+                "value": "Phinally Phamous",
+                "start": 26,
+                "confidence": 0.9471975833144262
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you search the Daring Youth saga?",
+        "intent": {
+            "confidence": 0.9946286967370992,
+            "name": "SearchCreativeWork"
+        },
+        "id": 28,
+        "intent_ranking": [
+            {
+                "confidence": 0.9946286967370992,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.005300601361575396,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 2.2043207030789267e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.8176669293884475e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.137857021222952e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 9.720968525131877e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 9.382486263400521e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 31,
+                "entity": "object_name",
+                "value": "the Daring Youth",
+                "start": 15,
+                "confidence": 0.6330059059260664
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 36,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 32,
+                "confidence": 0.9019983817716725
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "look for the book The Girl Who Was Plugged In",
+        "intent": {
+            "confidence": 0.9107107277369367,
+            "name": "SearchCreativeWork"
+        },
+        "id": 29,
+        "intent_ranking": [
+            {
+                "confidence": 0.9107107277369367,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.05390569695379842,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.02761419152059689,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.005518737283172124,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0009564849465275441,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0006751016887895146,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0006190598701790501,
+                "name": "PlayMusic"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 17,
+                "entity": "object_type",
+                "value": "book",
+                "start": 13,
+                "confidence": 0.9870229128743202
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 30,
+                "entity": "object_name",
+                "value": "The Girl Who",
+                "start": 18,
+                "confidence": 0.9783291609560946
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Find me a TV show called Baby Blue",
+        "intent": {
+            "confidence": 0.9996550310759658,
+            "name": "SearchCreativeWork"
+        },
+        "id": 30,
+        "intent_ranking": [
+            {
+                "confidence": 0.9996550310759658,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00034465820478479624,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 9.118547466040451e-08,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.193629667949058e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 6.495376726142652e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.8249584164268016e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.4394126601742937e-08,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 17,
+                "entity": "object_type",
+                "value": "TV show",
+                "start": 10,
+                "confidence": 0.9983953305022282
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 34,
+                "entity": "object_name",
+                "value": "Baby Blue",
+                "start": 25,
+                "confidence": 0.994196656524559
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Search for Appalachian Journey",
+        "intent": {
+            "confidence": 0.9999032424101004,
+            "name": "SearchCreativeWork"
+        },
+        "id": 31,
+        "intent_ranking": [
+            {
+                "confidence": 0.9999032424101004,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 9.673746016676612e-05,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 6.483251983658016e-09,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.666817458503319e-09,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.777035579156405e-09,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.0538651261669922e-09,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.1487628032044596e-09,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 30,
+                "entity": "object_name",
+                "value": "Appalachian Journey",
+                "start": 11,
+                "confidence": 0.7355153768494226
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Look for the television show Meet the Prince",
+        "intent": {
+            "confidence": 0.9652529910664953,
+            "name": "SearchCreativeWork"
+        },
+        "id": 32,
+        "intent_ranking": [
+            {
+                "confidence": 0.9652529910664953,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.03422536428197926,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00017091143170714046,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00012953963887378563,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00011558531798866123,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 6.558712390668237e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.002113904923084e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 28,
+                "entity": "object_type",
+                "value": "television show",
+                "start": 13,
+                "confidence": 0.9986121285250452
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 44,
+                "entity": "object_name",
+                "value": "Meet the Prince",
+                "start": 29,
+                "confidence": 0.9938757193731858
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you find me Cracks the Safe?",
+        "intent": {
+            "confidence": 0.9313780082678385,
+            "name": "SearchCreativeWork"
+        },
+        "id": 33,
+        "intent_ranking": [
+            {
+                "confidence": 0.9313780082678385,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.06406033555346644,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.002650612181285466,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0012742624782747967,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0003193789231492635,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00021843413067107066,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 9.89684653146105e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 31,
+                "entity": "object_name",
+                "value": "Cracks the Safe",
+                "start": 16,
+                "confidence": 0.6025919084929446
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please help me search the Hell Money saga.",
+        "intent": {
+            "confidence": 0.9976724457087857,
+            "name": "SearchCreativeWork"
+        },
+        "id": 34,
+        "intent_ranking": [
+            {
+                "confidence": 0.9976724457087857,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.002313723419703697,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 3.822101442173087e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 3.4810753805542074e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.8731339195161653e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.0324220059200873e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.6221387625202988e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 36,
+                "entity": "object_name",
+                "value": "Hell Money",
+                "start": 26,
+                "confidence": 0.9998345062415808
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 41,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 37,
+                "confidence": 0.9142728167915244
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Get me the Secret South song.",
+        "intent": {
+            "confidence": 0.9799906092074377,
+            "name": "SearchCreativeWork"
+        },
+        "id": 35,
+        "intent_ranking": [
+            {
+                "confidence": 0.9799906092074377,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.009751384134592353,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.008697034167883814,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0012477048800086869,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00016450374940001232,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.000108414856119715,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.03490045572009e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 23,
+                "entity": "object_name",
+                "value": "the Secret South",
+                "start": 7,
+                "confidence": 0.7721855330729559
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 28,
+                "entity": "object_type",
+                "value": "song",
+                "start": 24,
+                "confidence": 0.7226578433131413
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Can you find me the work titled Music for Millions?",
+        "intent": {
+            "confidence": 0.9955477034553718,
+            "name": "SearchCreativeWork"
+        },
+        "id": 36,
+        "intent_ranking": [
+            {
+                "confidence": 0.9955477034553718,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0022470846025063633,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0020854375039662857,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00010365359590434952,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.533627546195515e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.394062299229975e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.193152405827743e-06,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 50,
+                "entity": "object_name",
+                "value": "Music for Millions",
+                "start": 32,
+                "confidence": 0.9360892958209209
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please search for the painting titled This Is the Night.",
+        "intent": {
+            "confidence": 0.9965230729541481,
+            "name": "SearchCreativeWork"
+        },
+        "id": 37,
+        "intent_ranking": [
+            {
+                "confidence": 0.9965230729541481,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.003442110631425179,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 9.199043771733191e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.333555908758389e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.694222735433858e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.246079573769404e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.343512436986606e-06,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 30,
+                "entity": "object_type",
+                "value": "painting",
+                "start": 22,
+                "confidence": 0.9998826066396331
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 55,
+                "entity": "object_name",
+                "value": "This Is the Night",
+                "start": 38,
+                "confidence": 0.6157063257497334
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Could you locate the Epic Conditions picture?",
+        "intent": {
+            "confidence": 0.9749567009711375,
+            "name": "SearchCreativeWork"
+        },
+        "id": 38,
+        "intent_ranking": [
+            {
+                "confidence": 0.9749567009711375,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.024409500842856847,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00030138913411796196,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00021921426738502291,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.425611744532781e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.143731568710707e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.501351370422624e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 44,
+                "entity": "object_type",
+                "value": "picture",
+                "start": 37,
+                "confidence": 0.9907113379400767
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "get me the trailer of Good Morning Sunshine",
+        "intent": {
+            "confidence": 0.9525728777110201,
+            "name": "SearchCreativeWork"
+        },
+        "id": 39,
+        "intent_ranking": [
+            {
+                "confidence": 0.9525728777110201,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.027891471394741546,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.013793616911558055,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.002220498420156739,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.002197183018321757,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0011266350544705957,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0001977174897308865,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 18,
+                "entity": "object_type",
+                "value": "trailer",
+                "start": 11,
+                "confidence": 0.9990666866187181
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 43,
+                "entity": "object_name",
+                "value": "Good Morning Sunshine",
+                "start": 22,
+                "confidence": 0.7771104464895532
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please search the An Introduction to Karl Marx painting.",
+        "intent": {
+            "confidence": 0.9811212919587458,
+            "name": "SearchCreativeWork"
+        },
+        "id": 40,
+        "intent_ranking": [
+            {
+                "confidence": 0.9811212919587458,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.011377716604697557,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0038033725070039377,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0019258039941569246,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0012725727778802383,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0002834807262818452,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00021576143123414005,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 46,
+                "entity": "object_name",
+                "value": "An Introduction to Karl Marx",
+                "start": 18,
+                "confidence": 0.8490769287672804
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 55,
+                "entity": "object_type",
+                "value": "painting",
+                "start": 47,
+                "confidence": 0.9794905864956547
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Can you find me the Blue Spring trailer?",
+        "intent": {
+            "confidence": 0.9763639052002784,
+            "name": "SearchCreativeWork"
+        },
+        "id": 41,
+        "intent_ranking": [
+            {
+                "confidence": 0.9763639052002784,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.023178870181703427,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0001837591511875377,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0001401895924343481,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 9.542610780578173e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 2.322632289020285e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.462344370071557e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 31,
+                "entity": "object_name",
+                "value": "the Blue Spring",
+                "start": 16,
+                "confidence": 0.7494255010616556
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 39,
+                "entity": "object_type",
+                "value": "trailer",
+                "start": 32,
+                "confidence": 0.9971518357037583
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Could you find the TV series The Approach",
+        "intent": {
+            "confidence": 0.9991474751363992,
+            "name": "SearchCreativeWork"
+        },
+        "id": 42,
+        "intent_ranking": [
+            {
+                "confidence": 0.9991474751363992,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.000850630159952578,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 4.4850289184988806e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.3320384694657347e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 3.931859245507964e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.1914726580782255e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.006637189727166e-07,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 28,
+                "entity": "object_type",
+                "value": "TV series",
+                "start": 19,
+                "confidence": 0.9943933192323663
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 41,
+                "entity": "object_name",
+                "value": "The Approach",
+                "start": 29,
+                "confidence": 0.9259731627071229
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Search for the TV show, A Lawless Street.",
+        "intent": {
+            "confidence": 0.9955066225311763,
+            "name": "SearchCreativeWork"
+        },
+        "id": 43,
+        "intent_ranking": [
+            {
+                "confidence": 0.9955066225311763,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.004444377954651152,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.4672878047630614e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.0128159411173323e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.88929705763886e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.761009796804444e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.548169859462089e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "TV show",
+                "start": 15,
+                "confidence": 0.9983522644165351
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 40,
+                "entity": "object_name",
+                "value": "A Lawless Street",
+                "start": 24,
+                "confidence": 0.9445823143543404
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please look up Three Essays on the Theory of Sexuality show.",
+        "intent": {
+            "confidence": 0.9524168057064449,
+            "name": "SearchCreativeWork"
+        },
+        "id": 44,
+        "intent_ranking": [
+            {
+                "confidence": 0.9524168057064449,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.04034250924331263,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.004619436662269033,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0016192626930180583,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0006367371942176161,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00022432992609322796,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00014091857464445417,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 54,
+                "entity": "object_name",
+                "value": "Three Essays on the Theory of Sexuality",
+                "start": 15,
+                "confidence": 0.6409835100607122
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 59,
+                "entity": "object_type",
+                "value": "show",
+                "start": 55,
+                "confidence": 0.9171680201351474
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Please get me the Compulsive Disclosure song.",
+        "intent": {
+            "confidence": 0.9608511875105894,
+            "name": "SearchCreativeWork"
+        },
+        "id": 45,
+        "intent_ranking": [
+            {
+                "confidence": 0.9608511875105894,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.020027593752864496,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.015279868690440583,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.003128468576630604,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0003513579005014323,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00019569542384914,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00016582814512452668,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 39,
+                "entity": "object_name",
+                "value": "Compulsive Disclosure",
+                "start": 18,
+                "confidence": 0.9009480174472726
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 44,
+                "entity": "object_type",
+                "value": "song",
+                "start": 40,
+                "confidence": 0.7784734931985587
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Can you look up the Molecular Oncology saga?",
+        "intent": {
+            "confidence": 0.992615828535392,
+            "name": "SearchCreativeWork"
+        },
+        "id": 46,
+        "intent_ranking": [
+            {
+                "confidence": 0.992615828535392,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0059100061747373095,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0010819541383348009,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00018871025530625926,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 8.846285701484502e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.81119480320568e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.6926091182597544e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 38,
+                "entity": "object_name",
+                "value": "the Molecular Oncology",
+                "start": 16,
+                "confidence": 0.8996215014714599
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 43,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 39,
+                "confidence": 0.9137076017119793
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Search for The Sound of One Hand Clapping",
+        "intent": {
+            "confidence": 0.9581425693289722,
+            "name": "SearchCreativeWork"
+        },
+        "id": 47,
+        "intent_ranking": [
+            {
+                "confidence": 0.9581425693289722,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.03953005596188613,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.002076860039433931,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 8.930123883256545e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.207056367687756e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.039281172163357e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 8.750055476721101e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 41,
+                "entity": "movie_name",
+                "value": "The Sound of One Hand Clapping",
+                "start": 11,
+                "confidence": 0.38732336918548066
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name",
+            "I-movie_name"
+        ]
+    },
+    {
+        "text": "Find the creative work Deadly Weapons",
+        "intent": {
+            "confidence": 0.9996776108463,
+            "name": "SearchCreativeWork"
+        },
+        "id": 48,
+        "intent_ranking": [
+            {
+                "confidence": 0.9996776108463,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00032204655732963306,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.3463554003224362e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.673903331447591e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.743829862737388e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.3177709579974505e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 4.0605788852525676e-08,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_name",
+                "value": "Deadly Weapons",
+                "start": 23,
+                "confidence": 0.9746022122468245
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Need the creative work called The Logic of Scientific Discovery",
+        "intent": {
+            "confidence": 0.999391422412764,
+            "name": "SearchCreativeWork"
+        },
+        "id": 49,
+        "intent_ranking": [
+            {
+                "confidence": 0.999391422412764,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0006057660427605463,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.1975452873934212e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.852237892317206e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.3537154931421663e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.5016976214564393e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.4323408724720904e-07,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 63,
+                "entity": "object_name",
+                "value": "The Logic of Scientific Discovery",
+                "start": 30,
+                "confidence": 0.9956877326821703
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you find me the National Anthem of the Ancient Britons television show?",
+        "intent": {
+            "confidence": 0.9808634445884895,
+            "name": "SearchCreativeWork"
+        },
+        "id": 50,
+        "intent_ranking": [
+            {
+                "confidence": 0.9808634445884895,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.01837452697945435,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00021131322341184333,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0001978337241820491,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00013458499663401605,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00011805180555405932,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00010024468227421133,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 58,
+                "entity": "object_name",
+                "value": "National Anthem of the Ancient Britons",
+                "start": 20,
+                "confidence": 0.9565477984321177
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 74,
+                "entity": "object_type",
+                "value": "television show",
+                "start": 59,
+                "confidence": 0.998856104711443
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type",
+            "I-object_type"
+        ]
+    },
+    {
+        "text": "Can you please find me the Harry Hood saga?",
+        "intent": {
+            "confidence": 0.9850478541138994,
+            "name": "SearchCreativeWork"
+        },
+        "id": 51,
+        "intent_ranking": [
+            {
+                "confidence": 0.9850478541138994,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.013702355949653763,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00106290245892896,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.70060194514224e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 6.971602521251221e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.371093475672063e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.454498097434713e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_name",
+                "value": "the Harry Hood",
+                "start": 23,
+                "confidence": 0.6348573673693065
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 42,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 38,
+                "confidence": 0.914167011502207
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Can you find me the work, Bible translations into Hawaii Pidgin?",
+        "intent": {
+            "confidence": 0.9427644220906694,
+            "name": "SearchCreativeWork"
+        },
+        "id": 52,
+        "intent_ranking": [
+            {
+                "confidence": 0.9427644220906694,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.029274961140637854,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0146044475056101,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.005790482786373307,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00500270180053901,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.002239949615890558,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0003230350602799002,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 63,
+                "entity": "object_name",
+                "value": "Bible translations into Hawaii Pidgin",
+                "start": 26,
+                "confidence": 0.46128174097743946
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please look up and find me Monty Python Live at the Hollywood Bowl.",
+        "intent": {
+            "confidence": 0.7286365057116537,
+            "name": "SearchCreativeWork"
+        },
+        "id": 53,
+        "intent_ranking": [
+            {
+                "confidence": 0.7286365057116537,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.2368690026394539,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.02562003792710434,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.004458827657290041,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0023523097303090198,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0013904989071360531,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.000672817427052434,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 66,
+                "entity": "object_name",
+                "value": "Monty Python Live at the Hollywood Bowl",
+                "start": 27,
+                "confidence": 0.6546881359607561
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please search for Mary.",
+        "intent": {
+            "confidence": 0.9898772666974818,
+            "name": "SearchCreativeWork"
+        },
+        "id": 54,
+        "intent_ranking": [
+            {
+                "confidence": 0.9898772666974818,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.007662975134567287,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0013464220168270078,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0008915068884681023,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00013019946277395837,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.672605284503527e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.490374703711981e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "timeRange",
+                "value": "Mary",
+                "start": 18,
+                "confidence": 0.2404983249918633
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-timeRange"
+        ]
+    },
+    {
+        "text": "Please search the game ATLA: All This Life Allows.",
+        "intent": {
+            "confidence": 0.9783396052732646,
+            "name": "SearchCreativeWork"
+        },
+        "id": 55,
+        "intent_ranking": [
+            {
+                "confidence": 0.9783396052732646,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.016403021702162686,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.004728768829380453,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0003787142485239298,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00011726633199639028,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.8235238357787583e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.4388376314441397e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "game",
+                "start": 18,
+                "confidence": 0.9818591238572427
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 49,
+                "entity": "object_name",
+                "value": "ATLA: All This Life Allows",
+                "start": 23,
+                "confidence": 0.9928691100075451
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Find me the novel with the name To Lose My Life…",
+        "intent": {
+            "confidence": 0.9944081640838173,
+            "name": "SearchCreativeWork"
+        },
+        "id": 56,
+        "intent_ranking": [
+            {
+                "confidence": 0.9944081640838173,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0025387925609342576,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.001196981528929446,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0011900056173673411,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0005700869914537887,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.89062521940011e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.706296530373157e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 17,
+                "entity": "object_type",
+                "value": "novel",
+                "start": 12,
+                "confidence": 0.9813465552085923
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Looking for a song with the title of Live at the Kings Center",
+        "intent": {
+            "confidence": 0.9723331787264546,
+            "name": "SearchCreativeWork"
+        },
+        "id": 57,
+        "intent_ranking": [
+            {
+                "confidence": 0.9723331787264546,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.02109942631797189,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0047130774778462396,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0006598219082942918,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0006024934238276995,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0005493335959314218,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.266854967403716e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 18,
+                "entity": "music_item",
+                "value": "song",
+                "start": 14,
+                "confidence": 0.7150598366257942
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 61,
+                "entity": "object_name",
+                "value": "Live at the Kings Center",
+                "start": 37,
+                "confidence": 0.9667266530870207
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you find the American Bison photograph?",
+        "intent": {
+            "confidence": 0.9984895198367237,
+            "name": "SearchCreativeWork"
+        },
+        "id": 58,
+        "intent_ranking": [
+            {
+                "confidence": 0.9984895198367237,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.001503733611592407,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.7136003838605304e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.6156219503830046e-06,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.3224572113583531e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.147502813255293e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 9.473693249165823e-07,
+                "name": "PlayMusic"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 31,
+                "entity": "object_name",
+                "value": "the American Bison",
+                "start": 13,
+                "confidence": 0.6634414071721441
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 42,
+                "entity": "object_type",
+                "value": "photograph",
+                "start": 32,
+                "confidence": 0.9987357169088814
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Can you find me the Free for All show?",
+        "intent": {
+            "confidence": 0.9923714586072251,
+            "name": "SearchCreativeWork"
+        },
+        "id": 59,
+        "intent_ranking": [
+            {
+                "confidence": 0.9923714586072251,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.007472881056505833,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 3.960907613659435e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 3.59425071051122e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.4137905427187966e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.5355291793371367e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.0615555806782534e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "object_name",
+                "value": "Free for All",
+                "start": 20,
+                "confidence": 0.9442856196473696
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_type",
+                "value": "show",
+                "start": 33,
+                "confidence": 0.8900289669308157
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Please find me the Olympia 74 soundtrack.",
+        "intent": {
+            "confidence": 0.9612995985255836,
+            "name": "SearchCreativeWork"
+        },
+        "id": 60,
+        "intent_ranking": [
+            {
+                "confidence": 0.9612995985255836,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.025766606349804953,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.011744907250320576,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0005515857038043495,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00032337084723759666,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0002370053763331923,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.69259469156142e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 29,
+                "entity": "object_name",
+                "value": "Olympia 74",
+                "start": 19,
+                "confidence": 0.9613350395676491
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 40,
+                "entity": "object_type",
+                "value": "soundtrack",
+                "start": 30,
+                "confidence": 0.9483164945785912
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Look for the album Slave to the Grind",
+        "intent": {
+            "confidence": 0.9521498901740109,
+            "name": "SearchCreativeWork"
+        },
+        "id": 61,
+        "intent_ranking": [
+            {
+                "confidence": 0.9521498901740109,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.037809860254829124,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.005966598354142514,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.002089042565110017,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0019196017275788986,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.338907983040444e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.161784449791439e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 18,
+                "entity": "object_type",
+                "value": "album",
+                "start": 13,
+                "confidence": 0.6181281192595318
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_name",
+                "value": "Slave to the Grind",
+                "start": 19,
+                "confidence": 0.6357918645984801
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please find me the Projekt: The New Face of Goth.",
+        "intent": {
+            "confidence": 0.9666981639045599,
+            "name": "SearchCreativeWork"
+        },
+        "id": 62,
+        "intent_ranking": [
+            {
+                "confidence": 0.9666981639045599,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.012863375028714468,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.01267248022540333,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.004441780051438915,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0021040483194334153,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0007389959787393512,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00048115649171061374,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 48,
+                "entity": "object_name",
+                "value": "Projekt: The New Face of Goth",
+                "start": 19,
+                "confidence": 0.9939637785964731
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you get me the Message from God saga?",
+        "intent": {
+            "confidence": 0.9511688192629281,
+            "name": "SearchCreativeWork"
+        },
+        "id": 63,
+        "intent_ranking": [
+            {
+                "confidence": 0.9511688192629281,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0344044193884827,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.009836000224862527,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00285748157187349,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0014954002087154917,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00020286747605107144,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.5011867086365166e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 35,
+                "entity": "object_name",
+                "value": "Message from God",
+                "start": 19,
+                "confidence": 0.9591585544601201
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 40,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 36,
+                "confidence": 0.884667087941872
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Find me the soundtrack A Honeymoon Adventure",
+        "intent": {
+            "confidence": 0.9825602037888254,
+            "name": "SearchCreativeWork"
+        },
+        "id": 64,
+        "intent_ranking": [
+            {
+                "confidence": 0.9825602037888254,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.014758366849361096,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.001826369397669354,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0006612756225566162,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00014688012743641453,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.903486243084879e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.7869351720124597e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "soundtrack",
+                "start": 12,
+                "confidence": 0.9295946221593056
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 44,
+                "entity": "object_name",
+                "value": "A Honeymoon Adventure",
+                "start": 23,
+                "confidence": 0.8037338391207438
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please get me The Henderson Kids saga.",
+        "intent": {
+            "confidence": 0.7366715771082851,
+            "name": "SearchCreativeWork"
+        },
+        "id": 65,
+        "intent_ranking": [
+            {
+                "confidence": 0.7366715771082851,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.2098437787715721,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.04122623007349774,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00392968676534106,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0036858371273500827,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.002881366767896914,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.001761523386057104,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "object_name",
+                "value": "Henderson Kids",
+                "start": 18,
+                "confidence": 0.9569775216107907
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 33,
+                "confidence": 0.8761863989230507
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Find the movie Splendor in the Grass",
+        "intent": {
+            "confidence": 0.720866870205995,
+            "name": "SearchCreativeWork"
+        },
+        "id": 66,
+        "intent_ranking": [
+            {
+                "confidence": 0.720866870205995,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.2788784681965577,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 8.700021484462664e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.411681672150186e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.5646309692888496e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.5689941491098913e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.2208314697165092e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 14,
+                "entity": "object_type",
+                "value": "movie",
+                "start": 9,
+                "confidence": 0.9153424376433447
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 36,
+                "entity": "object_name",
+                "value": "Splendor in the Grass",
+                "start": 15,
+                "confidence": 0.9429245278774363
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Am looking for a book with the title Free to Play",
+        "intent": {
+            "confidence": 0.9768274103873936,
+            "name": "SearchCreativeWork"
+        },
+        "id": 67,
+        "intent_ranking": [
+            {
+                "confidence": 0.9768274103873936,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.01678970050710882,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0035648386029670915,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0019472810394060792,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0007471297260222615,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.455406371006381e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 3.908567339211328e-05,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 21,
+                "entity": "object_type",
+                "value": "book",
+                "start": 17,
+                "confidence": 0.849862379008636
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 41,
+                "entity": "object_name",
+                "value": "Free",
+                "start": 37,
+                "confidence": 0.2928025899674688
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Look for the TV series Jersey Boys",
+        "intent": {
+            "confidence": 0.9996337607435779,
+            "name": "SearchCreativeWork"
+        },
+        "id": 68,
+        "intent_ranking": [
+            {
+                "confidence": 0.9996337607435779,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0003658909344972973,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 8.674855729918698e-08,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 7.46814991448399e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.21823867691531e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 7.01274902266585e-08,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 4.458199141134284e-08,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "TV series",
+                "start": 13,
+                "confidence": 0.9950654551184028
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 34,
+                "entity": "object_name",
+                "value": "Jersey Boys",
+                "start": 23,
+                "confidence": 0.9761204291751775
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you search the book, Paris - When It Sizzles?",
+        "intent": {
+            "confidence": 0.9577502222882893,
+            "name": "SearchCreativeWork"
+        },
+        "id": 69,
+        "intent_ranking": [
+            {
+                "confidence": 0.9577502222882893,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.03920131608722423,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.001570619549094997,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0007946064237392419,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0003136983599802684,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.000223330796007855,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00014620649566413413,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 23,
+                "entity": "object_type",
+                "value": "book",
+                "start": 19,
+                "confidence": 0.9763852470362373
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 48,
+                "entity": "object_name",
+                "value": "Paris - When It Sizzles",
+                "start": 25,
+                "confidence": 0.9293378306170303
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Looking for a painting with the title With You",
+        "intent": {
+            "confidence": 0.9924863194611367,
+            "name": "SearchCreativeWork"
+        },
+        "id": 70,
+        "intent_ranking": [
+            {
+                "confidence": 0.9924863194611367,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.005977336252406245,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0006455159062524731,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0003540806770869307,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00029015130107479297,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0002282525798362821,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.834382220646661e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "painting",
+                "start": 14,
+                "confidence": 0.9975351165984567
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Please find me the Classified book.",
+        "intent": {
+            "confidence": 0.9944660998901286,
+            "name": "SearchCreativeWork"
+        },
+        "id": 71,
+        "intent_ranking": [
+            {
+                "confidence": 0.9944660998901286,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.004359391201948779,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0008168656287714656,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00012811389575193157,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00012450182108297508,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 9.297834225622151e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.2049220059951524e-05,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 34,
+                "entity": "object_type",
+                "value": "book",
+                "start": 30,
+                "confidence": 0.8326584711793509
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Look for the show V-The New Mythology Suite",
+        "intent": {
+            "confidence": 0.9988071560574068,
+            "name": "SearchCreativeWork"
+        },
+        "id": 72,
+        "intent_ranking": [
+            {
+                "confidence": 0.9988071560574068,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0005280520829679762,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00041093575679040706,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00014661599871728162,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 5.508694092393733e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 3.490105190154124e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 1.725211129227998e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 17,
+                "entity": "object_type",
+                "value": "show",
+                "start": 13,
+                "confidence": 0.9761684524053897
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 43,
+                "entity": "object_name",
+                "value": "V-The New Mythology Suite",
+                "start": 18,
+                "confidence": 0.9946588417185496
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Find the creative work Face Down",
+        "intent": {
+            "confidence": 0.9989711354965131,
+            "name": "SearchCreativeWork"
+        },
+        "id": 73,
+        "intent_ranking": [
+            {
+                "confidence": 0.9989711354965131,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.001025805473758324,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 8.135285541220804e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.548495817393794e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 5.945284494175434e-07,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.95809491303045e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.003136519710046e-07,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "object_name",
+                "value": "Face Down",
+                "start": 23,
+                "confidence": 0.9583461388905954
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Find Four Songs",
+        "intent": {
+            "confidence": 0.993306498959812,
+            "name": "SearchCreativeWork"
+        },
+        "id": 74,
+        "intent_ranking": [
+            {
+                "confidence": 0.993306498959812,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.006170050911517425,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0003752994232465716,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 9.103460251656465e-05,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 4.275784497847611e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 8.104272994026475e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.253984935181789e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 9,
+                "entity": "rating_value",
+                "value": "Four",
+                "start": 5,
+                "confidence": 0.4523071714052367
+            }
+        ],
+        "labels": [
+            "O",
+            "B-rating_value",
+            "O"
+        ]
+    },
+    {
+        "text": "Find me the soundtrack Live at the Greek Theatre",
+        "intent": {
+            "confidence": 0.6751889379763695,
+            "name": "SearchCreativeWork"
+        },
+        "id": 75,
+        "intent_ranking": [
+            {
+                "confidence": 0.6751889379763695,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.3222946421888623,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0016720176237934932,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0007971645850749691,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 2.0910644347075382e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.0173459428612892e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 6.153522124193066e-06,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 22,
+                "entity": "object_type",
+                "value": "soundtrack",
+                "start": 12,
+                "confidence": 0.9902614581489197
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 48,
+                "entity": "object_name",
+                "value": "Live at the Greek Theatre",
+                "start": 23,
+                "confidence": 0.9843484723760094
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please search for the television show, Episodi di The Blacklist.",
+        "intent": {
+            "confidence": 0.9932352703372131,
+            "name": "SearchCreativeWork"
+        },
+        "id": 76,
+        "intent_ranking": [
+            {
+                "confidence": 0.9932352703372131,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0051883549839713845,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0014312587498500615,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 6.701785818482413e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 3.970264952874361e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.559103727766743e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.2804383973794796e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 37,
+                "entity": "object_type",
+                "value": "television show",
+                "start": 22,
+                "confidence": 0.9980920790288645
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 63,
+                "entity": "object_name",
+                "value": "Episodi di The Blacklist",
+                "start": 39,
+                "confidence": 0.9565786153884496
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Find a creative work called Fire in the Hole",
+        "intent": {
+            "confidence": 0.9506928121218704,
+            "name": "SearchCreativeWork"
+        },
+        "id": 77,
+        "intent_ranking": [
+            {
+                "confidence": 0.9506928121218704,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.04309876401547916,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0024184341390363,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0019468818628850572,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0008339574416031981,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0007000616354092662,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0003090887837168257,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 44,
+                "entity": "object_name",
+                "value": "Fire in the Hole",
+                "start": 28,
+                "confidence": 0.9916020702466231
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Looking for the picture with the name of Who Made Stevie Crye?",
+        "intent": {
+            "confidence": 0.8575682248736616,
+            "name": "SearchCreativeWork"
+        },
+        "id": 78,
+        "intent_ranking": [
+            {
+                "confidence": 0.8575682248736616,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.08405555260541862,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.03575799871921749,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.007127957581188135,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.006778356898465305,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.005914875679004909,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0027970336430440347,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 23,
+                "entity": "object_type",
+                "value": "picture",
+                "start": 16,
+                "confidence": 0.9844638549978106
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 61,
+                "entity": "object_name",
+                "value": "Who Made Stevie Crye",
+                "start": 41,
+                "confidence": 0.7648851803114577
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Look for the album Wolves Within",
+        "intent": {
+            "confidence": 0.984639473450179,
+            "name": "SearchCreativeWork"
+        },
+        "id": 79,
+        "intent_ranking": [
+            {
+                "confidence": 0.984639473450179,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.011301140919809317,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0014364967766954798,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0009695186988920228,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0008058000768630844,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0007085200705135101,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0001390500070474042,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 18,
+                "entity": "object_type",
+                "value": "album",
+                "start": 13,
+                "confidence": 0.5956774647047304
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "object_name",
+                "value": "Wolves Within",
+                "start": 19,
+                "confidence": 0.6065668817183942
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Find the album Orphan Girl at the Cemetery",
+        "intent": {
+            "confidence": 0.9727932242646927,
+            "name": "SearchCreativeWork"
+        },
+        "id": 80,
+        "intent_ranking": [
+            {
+                "confidence": 0.9727932242646927,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.02613901658258521,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0007466871218414186,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00017025929144409216,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.507609609832591e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 6.046158057092576e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 2.527506276729294e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 14,
+                "entity": "object_type",
+                "value": "album",
+                "start": 9,
+                "confidence": 0.8734277147808975
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 42,
+                "entity": "object_name",
+                "value": "Orphan Girl at the Cemetery",
+                "start": 15,
+                "confidence": 0.9082129402909368
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please find me the Journal of the British Astronomical Association movie.",
+        "intent": {
+            "confidence": 0.968512501878418,
+            "name": "SearchCreativeWork"
+        },
+        "id": 81,
+        "intent_ranking": [
+            {
+                "confidence": 0.968512501878418,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.03089045226796412,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00026680120484731337,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00015718658214520218,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 7.10611211297559e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 5.2840164992306915e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 4.915678050335068e-05,
+                "name": "PlayMusic"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 66,
+                "entity": "object_name",
+                "value": "Journal of the British Astronomical Association",
+                "start": 19,
+                "confidence": 0.9936053127731176
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 72,
+                "entity": "object_type",
+                "value": "movie",
+                "start": 67,
+                "confidence": 0.8860432269944876
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Find the TV show The Daydreamer",
+        "intent": {
+            "confidence": 0.9967624699504157,
+            "name": "SearchCreativeWork"
+        },
+        "id": 82,
+        "intent_ranking": [
+            {
+                "confidence": 0.9967624699504157,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0032115651730563574,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 7.1583510353502256e-06,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.891231195709714e-06,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 4.226344785137601e-06,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.9419882031589375e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.7469613086421667e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 16,
+                "entity": "object_type",
+                "value": "TV show",
+                "start": 9,
+                "confidence": 0.9970434477251527
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 31,
+                "entity": "object_name",
+                "value": "The Daydreamer",
+                "start": 17,
+                "confidence": 0.9827032837820249
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you please get me the book Dracula 5: The Blood Legacy?",
+        "intent": {
+            "confidence": 0.9526107474813524,
+            "name": "SearchCreativeWork"
+        },
+        "id": 83,
+        "intent_ranking": [
+            {
+                "confidence": 0.9526107474813524,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.023893133667085828,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.01951499007759366,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.001860762890071249,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0012424233996552623,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0004983115814178047,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00037963090282408393,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 30,
+                "entity": "object_type",
+                "value": "book",
+                "start": 26,
+                "confidence": 0.9869837128582143
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 58,
+                "entity": "object_name",
+                "value": "Dracula 5: The Blood Legacy",
+                "start": 31,
+                "confidence": 0.9906664397838605
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please look up the novel, Live to Dance.",
+        "intent": {
+            "confidence": 0.9645571421574304,
+            "name": "SearchCreativeWork"
+        },
+        "id": 84,
+        "intent_ranking": [
+            {
+                "confidence": 0.9645571421574304,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.027058036051069115,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.003800624156042191,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0027920029617901675,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0009639213237314559,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0006281490298828106,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.00020012432005364294,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 24,
+                "entity": "object_type",
+                "value": "novel",
+                "start": 19,
+                "confidence": 0.9954306998667952
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 39,
+                "entity": "object_name",
+                "value": "Live to Dance",
+                "start": 26,
+                "confidence": 0.9891919738710971
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please find me the video game titled 20 Hours in America.",
+        "intent": {
+            "confidence": 0.9847259025247302,
+            "name": "SearchCreativeWork"
+        },
+        "id": 85,
+        "intent_ranking": [
+            {
+                "confidence": 0.9847259025247302,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.010253086823262668,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00434383762604018,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.000367749322807012,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.00010930791676626054,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00010045540566980475,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 9.966038072367023e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 29,
+                "entity": "object_type",
+                "value": "video game",
+                "start": 19,
+                "confidence": 0.9919423605159433
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 56,
+                "entity": "object_name",
+                "value": "20 Hours in America",
+                "start": 37,
+                "confidence": 0.6134269734610635
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "I-object_type",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Find the creative work The Devil in Stitches",
+        "intent": {
+            "confidence": 0.968507294457879,
+            "name": "SearchCreativeWork"
+        },
+        "id": 86,
+        "intent_ranking": [
+            {
+                "confidence": 0.968507294457879,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.027931295167773474,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.001636753911666834,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0014788056984724714,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00016567176550398973,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00015457620972171573,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.0001256027889826283,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 44,
+                "entity": "object_name",
+                "value": "The Devil in Stitches",
+                "start": 23,
+                "confidence": 0.9297941895534977
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please look up the work, Prophets.",
+        "intent": {
+            "confidence": 0.9348471903276113,
+            "name": "SearchCreativeWork"
+        },
+        "id": 87,
+        "intent_ranking": [
+            {
+                "confidence": 0.9348471903276113,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.029879850791360296,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.015924410912149068,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.007196201180682667,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 0.005360599535992864,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0035302073634822816,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.003261539888721471,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "I'm looking for Welcome to the Canteen",
+        "intent": {
+            "confidence": 0.7975914910433639,
+            "name": "BookRestaurant"
+        },
+        "id": 88,
+        "intent_ranking": [
+            {
+                "confidence": 0.7975914910433639,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.16745090362575246,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.018200313290591828,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.013958623444706615,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.001562103347818598,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0010233443296924763,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0002132209180742894,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 38,
+                "entity": "object_name",
+                "value": "Welcome to the Canteen",
+                "start": 16,
+                "confidence": 0.9295920366575697
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please search for the Journal of Official Statistics show.",
+        "intent": {
+            "confidence": 0.9990031978852456,
+            "name": "SearchCreativeWork"
+        },
+        "id": 89,
+        "intent_ranking": [
+            {
+                "confidence": 0.9990031978852456,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0009939741579045231,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 7.818637674840793e-07,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 5.989784974629576e-07,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 5.84208905376492e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 5.464751057686246e-07,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.164305738499879e-07,
+                "name": "PlayMusic"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 52,
+                "entity": "object_name",
+                "value": "Journal of Official Statistics",
+                "start": 22,
+                "confidence": 0.9939653927984484
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 57,
+                "entity": "object_type",
+                "value": "show",
+                "start": 53,
+                "confidence": 0.8938209527118742
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Please look up Show-Biz Blues photograph.",
+        "intent": {
+            "confidence": 0.9998259205360759,
+            "name": "SearchCreativeWork"
+        },
+        "id": 90,
+        "intent_ranking": [
+            {
+                "confidence": 0.9998259205360759,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.0001736846671851475,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 1.241818888777128e-07,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.787962516004654e-08,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 7.371953447430309e-08,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 6.148321273789663e-08,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.7532477785381054e-08,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 19,
+                "entity": "object_type",
+                "value": "Show",
+                "start": 15,
+                "confidence": 0.5904292552384109
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 29,
+                "entity": "object_name",
+                "value": "-Biz Blues",
+                "start": 19,
+                "confidence": 0.9964122393699602
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 40,
+                "entity": "object_type",
+                "value": "photograph",
+                "start": 30,
+                "confidence": 0.9977245961469294
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Please search the Woodsmen of the West.",
+        "intent": {
+            "confidence": 0.9906302137424136,
+            "name": "SearchCreativeWork"
+        },
+        "id": 91,
+        "intent_ranking": [
+            {
+                "confidence": 0.9906302137424136,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.008221979154711553,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0008092065076440656,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00018085379960397532,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 8.433407607996117e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.3801807077856135e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.9610912468992257e-05,
+                "name": "AddToPlaylist"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 38,
+                "entity": "object_name",
+                "value": "the Woodsmen of the West",
+                "start": 14,
+                "confidence": 0.8137958368860947
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Can you find the creative works associated with Caryl and Marilyn: Real Friends",
+        "intent": {
+            "confidence": 0.857615289786467,
+            "name": "SearchCreativeWork"
+        },
+        "id": 92,
+        "intent_ranking": [
+            {
+                "confidence": 0.857615289786467,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.12952699784436353,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00728140883101139,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0023956012544632086,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0014328308317592081,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.0010678204986252168,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0006800509533103225,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 79,
+                "entity": "object_name",
+                "value": "associated with Caryl and Marilyn: Real Friends",
+                "start": 32,
+                "confidence": 0.9871602457656478
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Please get me the Dead Soul saga.",
+        "intent": {
+            "confidence": 0.9871923149159979,
+            "name": "SearchCreativeWork"
+        },
+        "id": 93,
+        "intent_ranking": [
+            {
+                "confidence": 0.9871923149159979,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.00600345490486538,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.004533052084086667,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0012061420202463468,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0010374274702685544,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 2.2388273347612072e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 5.22033118758533e-06,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 27,
+                "entity": "object_name",
+                "value": "the Dead Soul",
+                "start": 14,
+                "confidence": 0.6201801312485841
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "object_type",
+                "value": "saga",
+                "start": 28,
+                "confidence": 0.8727728918362975
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Please search the Live from Leeds album.",
+        "intent": {
+            "confidence": 0.8456920140999425,
+            "name": "SearchCreativeWork"
+        },
+        "id": 94,
+        "intent_ranking": [
+            {
+                "confidence": 0.8456920140999425,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.1512388663296119,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0020403891416985427,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0006462596249247209,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.000309191860680349,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 5.651168587456721e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 1.6767257267732522e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 33,
+                "entity": "object_name",
+                "value": "Live from Leeds",
+                "start": 18,
+                "confidence": 0.9753870104751567
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 39,
+                "entity": "object_type",
+                "value": "album",
+                "start": 34,
+                "confidence": 0.9342080569502297
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Please look up the Johnny English - La rinascita painting.",
+        "intent": {
+            "confidence": 0.9934105900838341,
+            "name": "SearchCreativeWork"
+        },
+        "id": 95,
+        "intent_ranking": [
+            {
+                "confidence": 0.9934105900838341,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.003932528574021135,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0015627027557913603,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.0007598883017283836,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.00019130441853425174,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.00012124017214039529,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 2.1745693950382153e-05,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 48,
+                "entity": "object_name",
+                "value": "Johnny English - La rinascita",
+                "start": 19,
+                "confidence": 0.9934752495817637
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 57,
+                "entity": "object_type",
+                "value": "painting",
+                "start": 49,
+                "confidence": 0.9873896014362366
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Can you find me The Sword with No Name trailer?",
+        "intent": {
+            "confidence": 0.9892425973441841,
+            "name": "SearchCreativeWork"
+        },
+        "id": 96,
+        "intent_ranking": [
+            {
+                "confidence": 0.9892425973441841,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.010481184487717546,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 8.073168340683725e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 6.219808814375284e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 6.12264420839015e-05,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 3.791839004884588e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 3.4143564415033606e-05,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 46,
+                "entity": "object_type",
+                "value": "trailer",
+                "start": 39,
+                "confidence": 0.9988360955985822
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "I wish to watch The Fold trailer, please search.",
+        "intent": {
+            "confidence": 0.9881474492773796,
+            "name": "SearchCreativeWork"
+        },
+        "id": 97,
+        "intent_ranking": [
+            {
+                "confidence": 0.9881474492773796,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.008876453517930465,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0025992910349420207,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.00021107441604583654,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.0001464024667225565,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 1.4453844662687708e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 4.875442316872792e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 24,
+                "entity": "object_name",
+                "value": "The Fold",
+                "start": 16,
+                "confidence": 0.5032806670647227
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "object_type",
+                "value": "trailer",
+                "start": 25,
+                "confidence": 0.9404047306452712
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "B-object_type",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Can you find me the ALMOST HUMAN painting?",
+        "intent": {
+            "confidence": 0.9869086416155869,
+            "name": "SearchCreativeWork"
+        },
+        "id": 98,
+        "intent_ranking": [
+            {
+                "confidence": 0.9869086416155869,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.012671742124487673,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.00010481976911007934,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 9.187581598380495e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 8.104944425928564e-05,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 7.621424601370966e-05,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 6.565698455850514e-05,
+                "name": "BookRestaurant"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 32,
+                "entity": "object_name",
+                "value": "the ALMOST HUMAN",
+                "start": 16,
+                "confidence": 0.6358197803669564
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 41,
+                "entity": "object_type",
+                "value": "painting",
+                "start": 33,
+                "confidence": 0.9902098215493477
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Please find me the work, Serious Awesomeness!.",
+        "intent": {
+            "confidence": 0.8877110060645217,
+            "name": "SearchCreativeWork"
+        },
+        "id": 99,
+        "intent_ranking": [
+            {
+                "confidence": 0.8877110060645217,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.04748267123596616,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.043329429543181336,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 0.007514783747500051,
+                "name": "GetWeather"
+            },
+            {
+                "confidence": 0.0070858228658019625,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 0.004700110722846402,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 0.002176175820182521,
+                "name": "RateBook"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 46,
+                "entity": "object_name",
+                "value": "Serious Awesomeness!.",
+                "start": 25,
+                "confidence": 0.3733131448271535
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Search for the game Difficult Loves",
+        "intent": {
+            "confidence": 0.9755368498305655,
+            "name": "SearchCreativeWork"
+        },
+        "id": 100,
+        "intent_ranking": [
+            {
+                "confidence": 0.9755368498305655,
+                "name": "SearchCreativeWork"
+            },
+            {
+                "confidence": 0.02382055481516019,
+                "name": "SearchScreeningEvent"
+            },
+            {
+                "confidence": 0.0005944826582488556,
+                "name": "PlayMusic"
+            },
+            {
+                "confidence": 1.994764383206292e-05,
+                "name": "AddToPlaylist"
+            },
+            {
+                "confidence": 1.9759627213540845e-05,
+                "name": "BookRestaurant"
+            },
+            {
+                "confidence": 5.261901768121619e-06,
+                "name": "RateBook"
+            },
+            {
+                "confidence": 3.1435232118674245e-06,
+                "name": "GetWeather"
+            }
+        ],
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "end": 19,
+                "entity": "object_type",
+                "value": "game",
+                "start": 15,
+                "confidence": 0.9638288453281745
+            },
+            {
+                "extractor": "ner_crf",
+                "end": 35,
+                "entity": "object_name",
+                "value": "Difficult Loves",
+                "start": 20,
+                "confidence": 0.9689973157832571
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name"
+        ]
+    }
+]
