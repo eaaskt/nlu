@@ -1,0 +1,6466 @@
+[
+    {
+        "text": "can you put on Like A Hurricane by Paul Landers",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Hurricane",
+                "end": 31,
+                "confidence": 0.14061861899453362,
+                "start": 22,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Paul Landers",
+                "end": 47,
+                "confidence": 0.9966910589413004,
+                "start": 35,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "AddToPlaylist",
+            "confidence": 0.4261818712689145
+        },
+        "id": 1,
+        "intent_ranking": [
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.4261818712689145
+            },
+            {
+                "name": "PlayMusic",
+                "confidence": 0.21779610779550898
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.1376003841757892
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.12091704139030093
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.04889244247523832
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.031114230971995394
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.017497921922252302
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play The Happy Blues by Ronnie Wood.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "The Happy Blues",
+                "end": 20,
+                "confidence": 0.4247449450825863,
+                "start": 5,
+                "entity": "track"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Ronnie Wood",
+                "end": 35,
+                "confidence": 0.9930248998679775,
+                "start": 24,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.997563995763724
+        },
+        "id": 2,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.997563995763724
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.002386461987951745
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.476181031800648e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.992891498439148e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 4.603431006879899e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.9037885333588539e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.2803269674243209e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "B-track",
+            "I-track",
+            "I-track",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play the newest melody on Last Fm by Eddie Vinson.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "newest",
+                "end": 15,
+                "confidence": 0.9817040464370521,
+                "start": 9,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "melody",
+                "end": 22,
+                "confidence": 0.9958062309120136,
+                "start": 16,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Last Fm",
+                "end": 33,
+                "confidence": 0.993912203003877,
+                "start": 26,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Eddie Vinson",
+                "end": 49,
+                "confidence": 0.9988144594361912,
+                "start": 37,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9998880279097162
+        },
+        "id": 3,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9998880279097162
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00010555491783795035
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 5.2473936901899435e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.0776315170410654e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 6.094113237004088e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.610988623343397e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.5096219864944768e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "B-music_item",
+            "O",
+            "B-service",
+            "I-service",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Use Groove Shark to play music",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Groove Shark",
+                "end": 16,
+                "confidence": 0.9843981827546413,
+                "start": 4,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9973335149221809
+        },
+        "id": 4,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9973335149221809
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0026452326940464965
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.1785178327592688e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 4.437546317260823e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.8525200324263924e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.7698474964123067e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.4072915987676635e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "B-service",
+            "I-service",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Please play something good from U-roy. Any song from 1975 on Zvooq will do.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "good",
+                "end": 26,
+                "confidence": 0.3958486194667028,
+                "start": 22,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "song",
+                "end": 47,
+                "confidence": 0.9887988001556265,
+                "start": 43,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "1975",
+                "end": 57,
+                "confidence": 0.9976308468440008,
+                "start": 53,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Zvooq",
+                "end": 66,
+                "confidence": 0.9977808736221293,
+                "start": 61,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9637476046932993
+        },
+        "id": 5,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9637476046932993
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.03245104397312043
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0018327127732528923
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0010139812641838648
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.0005371632409873446
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.00021675524958916494
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00020073880556712733
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-sort",
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-year",
+            "O",
+            "B-service",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Play a symphony from 2013.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "symphony",
+                "end": 15,
+                "confidence": 0.9952916741595873,
+                "start": 7,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "2013",
+                "end": 25,
+                "confidence": 0.964444686988512,
+                "start": 21,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9999353394901134
+        },
+        "id": 6,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9999353394901134
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 4.85147764397254e-05
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.5653940288127383e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.645049831240551e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.292092911852196e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.416343610234268e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.9509028941043466e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Let me hear the good songs from James Iha",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "good",
+                "end": 20,
+                "confidence": 0.9647247576485427,
+                "start": 16,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "James Iha",
+                "end": 41,
+                "confidence": 0.953483965730614,
+                "start": 32,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.7686626396296339
+        },
+        "id": 7,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.7686626396296339
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.21596585767258547
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.012621294318735366
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0023909552279873076
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00023292648644751367
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 8.552755425808406e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.079911035218784e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-sort",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play my inventive playlist",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "inventive",
+                "end": 17,
+                "confidence": 0.9870298152253519,
+                "start": 8,
+                "entity": "playlist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9845549097929975
+        },
+        "id": 8,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9845549097929975
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.014904973553645744
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.000539032753255795
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.9553681011505733e-07
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.9868501434522787e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.0540067542426608e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.8427760091889896e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-playlist",
+            "O"
+        ]
+    },
+    {
+        "text": "I want to play music from iheart",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "iheart",
+                "end": 32,
+                "confidence": 0.9792661292786418,
+                "start": 26,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9998214358691176
+        },
+        "id": 9,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9998214358691176
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00017811625601061557
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.8543080862841003e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.4232192886924225e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.062601572023192e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 9.940021281915359e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 7.645833057115236e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play Subconscious Lobotomy from Jennifer Paull.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Subconscious Lobotomy",
+                "end": 26,
+                "confidence": 0.6269923836483359,
+                "start": 5,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Jennifer Paull",
+                "end": 46,
+                "confidence": 0.9044673668717745,
+                "start": 32,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9946381156934518
+        },
+        "id": 10,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9946381156934518
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.005134759542075749
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00018858995225266118
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.6552550918441214e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.633170563475692e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 6.769231455936746e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.579859281851896e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "I want to hear a seventies sound track.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "seventies",
+                "end": 26,
+                "confidence": 0.9969703709358055,
+                "start": 17,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "sound track",
+                "end": 38,
+                "confidence": 0.999558879290197,
+                "start": 27,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.989656774148968
+        },
+        "id": 11,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.989656774148968
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.009257787911999785
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0009050740862210926
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00012474824256405626
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.911378715422566e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.440327900086285e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.0985440921312335e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-year",
+            "B-music_item",
+            "I-music_item"
+        ]
+    },
+    {
+        "text": "play a john maher track",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "john maher",
+                "end": 17,
+                "confidence": 0.9841748173422253,
+                "start": 7,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "track",
+                "end": 23,
+                "confidence": 0.9920170878782,
+                "start": 18,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.997734037621996
+        },
+        "id": 12,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.997734037621996
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0012049224642476093
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0010268015946970765
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.0849078060516296e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.0881706220892365e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.255033186835201e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.2525015914701901e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "B-music_item"
+        ]
+    },
+    {
+        "text": "Please play something from Dihan Slabbert that's on the top fifty",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Dihan Slabbert",
+                "end": 41,
+                "confidence": 0.8193073897796984,
+                "start": 27,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "top fifty",
+                "end": 65,
+                "confidence": 0.8994727116850326,
+                "start": 56,
+                "entity": "sort"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9279911303367794
+        },
+        "id": 13,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9279911303367794
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.03739209624877351
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.010081302709892557
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.007735029006783348
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0077185561097505555
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.005768911940258038
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0033129736477624395
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "O",
+            "O",
+            "B-sort",
+            "I-sort"
+        ]
+    },
+    {
+        "text": "Please play something catchy on Youtube",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Youtube",
+                "end": 39,
+                "confidence": 0.9812638126225792,
+                "start": 32,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9985966527524712
+        },
+        "id": 14,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9985966527524712
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0013996367043162313
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.2987066415577106e-06
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 8.237906787734005e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 5.615280784333138e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.160760491897665e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 5.104417648450727e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play something from 2004 by Imogen Heap on spotify",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "2004",
+                "end": 24,
+                "confidence": 0.9949937949030544,
+                "start": 20,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Imogen Heap",
+                "end": 39,
+                "confidence": 0.9910157799299456,
+                "start": 28,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "spotify",
+                "end": 50,
+                "confidence": 0.9933182182557538,
+                "start": 43,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9999853623912776
+        },
+        "id": 15,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9999853623912776
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 1.2127185948441423e-05
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.6118958805876042e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 8.953241362936499e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.151262443221756e-09
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 6.02562054959203e-10
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 4.4893254655892075e-10
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-year",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play seventies music please.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "seventies",
+                "end": 14,
+                "confidence": 0.995060405229434,
+                "start": 5,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9997456518690621
+        },
+        "id": 16,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9997456518690621
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00025280346280177657
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.4308058408693871e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 3.889286018302205e-08
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.849996743507505e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.886069516646018e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.7608772391466516e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "B-year",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Play music from the artist sean yseult and sort it through top-50",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "artist",
+                "end": 26,
+                "confidence": 0.7230837257276569,
+                "start": 20,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "sean yseult",
+                "end": 38,
+                "confidence": 0.7423894813000945,
+                "start": 27,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9754108364953041
+        },
+        "id": 17,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9754108364953041
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.02201262934145293
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.00204373378864774
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0004717519136103216
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.087739864164901e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.6551946627603796e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.3619115715418189e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "B-artist",
+            "I-artist",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Play anything Jd Natasha did in the thirties",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "thirties",
+                "end": 44,
+                "confidence": 0.8043564761137177,
+                "start": 36,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9560270355755436
+        },
+        "id": 18,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9560270355755436
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.01669067020211291
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.009016439122516082
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.008157475584487919
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.007635849590627734
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.0015260758817904126
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.0009464540429213655
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Play music off Netflix.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Netflix",
+                "end": 22,
+                "confidence": 0.9873520877001667,
+                "start": 15,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9997268484152829
+        },
+        "id": 19,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9997268484152829
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0002709983626271032
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.0216296521190774e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 4.979399761273208e-08
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.391597417758539e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.0754668080733337e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.712779794149918e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "nineties songs on Zvooq",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "nineties",
+                "end": 8,
+                "confidence": 0.7957475799640389,
+                "start": 0,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Zvooq",
+                "end": 23,
+                "confidence": 0.998282579070576,
+                "start": 18,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.8285071262786801
+        },
+        "id": 20,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.8285071262786801
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.17137254378833047
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 9.448388782698119e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.8671589076921975e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.274668905289909e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.5801107327310804e-06
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.1967644792830787e-07
+            }
+        ],
+        "labels": [
+            "B-year",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Open itunes and play Ben Burnley Ready To Die",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "itunes",
+                "end": 11,
+                "confidence": 0.9896967120673146,
+                "start": 5,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Ben Burnley",
+                "end": 32,
+                "confidence": 0.5161795148330246,
+                "start": 21,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9138952507235122
+        },
+        "id": 21,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9138952507235122
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.06605821849036567
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.010480080861274691
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.004679973548963221
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0043621608653179635
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.0004263854003468896
+            },
+            {
+                "name": "RateBook",
+                "confidence": 9.793011021973862e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "B-service",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Play an ep by Zak Starkey.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "ep",
+                "end": 10,
+                "confidence": 0.9902321670697763,
+                "start": 8,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Zak Starkey",
+                "end": 25,
+                "confidence": 0.9946837586603071,
+                "start": 14,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9998426213203405
+        },
+        "id": 22,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9998426213203405
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00015268766508777222
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.05407422591686e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.611237706219126e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.3352912088574363e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 7.302823087951334e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.046904218291454e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play an album from Nithyasree Mahadevan.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "album",
+                "end": 13,
+                "confidence": 0.9659634662054314,
+                "start": 8,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Nithyasree Mahadevan",
+                "end": 39,
+                "confidence": 0.9647937843974843,
+                "start": 19,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9969423936003677
+        },
+        "id": 23,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9969423936003677
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0030395089092536964
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.305907546496473e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 5.842720307746016e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.1513877366617174e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.0012626150048266e-06
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 7.962121726278091e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "I want to listen to something on Youtube",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Youtube",
+                "end": 40,
+                "confidence": 0.9947984220469035,
+                "start": 33,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9016066236301127
+        },
+        "id": 24,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9016066236301127
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.08767648697136593
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.009330367394985654
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0011006603922780614
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0001392797874741538
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 9.951123540149733e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.707058838191006e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Start playing something from Iheart",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Iheart",
+                "end": 35,
+                "confidence": 0.9628727543674503,
+                "start": 29,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9977346219911442
+        },
+        "id": 25,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9977346219911442
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0022351566361840268
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 2.378437846462803e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.0667751854949573e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.8939009899858448e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.5792144138541014e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 8.971036176529672e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play Trance Life on Zvooq.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Trance Life",
+                "end": 16,
+                "confidence": 0.49175222509380667,
+                "start": 5,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Zvooq",
+                "end": 25,
+                "confidence": 0.9985575753596759,
+                "start": 20,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9979912547532436
+        },
+        "id": 26,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9979912547532436
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0019647558500566725
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.6175724263208555e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.284306755357567e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.5152594509568694e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.0879361660287302e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 9.261700643920539e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Find and play a concerto on Zvooq from 1978 by Ginger Pooley",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "concerto",
+                "end": 24,
+                "confidence": 0.985881972038074,
+                "start": 16,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Zvooq",
+                "end": 33,
+                "confidence": 0.9988812849320711,
+                "start": 28,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "1978",
+                "end": 43,
+                "confidence": 0.9981050175960768,
+                "start": 39,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Ginger Pooley",
+                "end": 60,
+                "confidence": 0.9931997939677593,
+                "start": 47,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9953397164990733
+        },
+        "id": 27,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9953397164990733
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.001851206315996038
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.001523759556078075
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.000749566431047136
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.00043419379024184704
+            },
+            {
+                "name": "RateBook",
+                "confidence": 5.8945651015367224e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 4.261175654826847e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-service",
+            "O",
+            "B-year",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play All Things Must Pass.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "All Things Must Pass",
+                "end": 25,
+                "confidence": 0.6941672938266109,
+                "start": 5,
+                "entity": "object_name"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.6409181064963325
+        },
+        "id": 28,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.6409181064963325
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.30192629736687054
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.047980055633558415
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.003496011102301101
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0025731160240749563
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.0016106459640667333
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0014957674127963419
+            }
+        ],
+        "labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "I want to hear music from Allen Toussaint from the fifties",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Allen Toussaint",
+                "end": 41,
+                "confidence": 0.8304018003090065,
+                "start": 26,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "fifties",
+                "end": 58,
+                "confidence": 0.9902942362634236,
+                "start": 51,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9882773320241909
+        },
+        "id": 29,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9882773320241909
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.010187020382757688
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0009718533824985647
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.00032439113994773666
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00021173079109970867
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.1240846362233563e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.43143314299876e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Turn on Last Fm",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Last Fm",
+                "end": 15,
+                "confidence": 0.9871148671461771,
+                "start": 8,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9877156748155068
+        },
+        "id": 30,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9877156748155068
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.007061301178770258
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.003833802927324669
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.0005537365436925877
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0003727367597994612
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.00027428812072473145
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00018845965418147156
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "Play a song by Rahsaan Patterson.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "song",
+                "end": 11,
+                "confidence": 0.9614462668070453,
+                "start": 7,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Rahsaan Patterson",
+                "end": 32,
+                "confidence": 0.9964780824324236,
+                "start": 15,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9997163753530742
+        },
+        "id": 31,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9997163753530742
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0002814723375456358
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.9841646780631175e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 7.363802036453942e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 5.3896528238330704e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.3539290539043386e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.7070863249316578e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "play Femme Fatale by Bonobo",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Femme Fatale",
+                "end": 17,
+                "confidence": 0.6296985339182848,
+                "start": 5,
+                "entity": "track"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Bonobo",
+                "end": 27,
+                "confidence": 0.9772556089088229,
+                "start": 21,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9997006192798822
+        },
+        "id": 32,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9997006192798822
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0001634977716764299
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00013573913189903345
+            },
+            {
+                "name": "RateBook",
+                "confidence": 7.296567811622969e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 3.524630441111122e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.0266559574819157e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.5338000406098166e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "B-track",
+            "I-track",
+            "O",
+            "B-artist"
+        ]
+    },
+    {
+        "text": "Play some anneliese van der pol from the thirties on Groove Shark",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "anneliese van der pol",
+                "end": 31,
+                "confidence": 0.6255142032310184,
+                "start": 10,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "thirties",
+                "end": 49,
+                "confidence": 0.9943856202168693,
+                "start": 41,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Groove Shark",
+                "end": 65,
+                "confidence": 0.9971923060084044,
+                "start": 53,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9530403266637711
+        },
+        "id": 33,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9530403266637711
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.042149561014226296
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.002058047163102426
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0013408724551901771
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.000988509445897103
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.00025967704727173887
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00016300621054099817
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "I-artist",
+            "I-artist",
+            "O",
+            "O",
+            "B-year",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "I want to listen to an ep from 1998.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "ep",
+                "end": 25,
+                "confidence": 0.9914788176019841,
+                "start": 23,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "1998",
+                "end": 35,
+                "confidence": 0.9969315647570299,
+                "start": 31,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.872087410506455
+        },
+        "id": 34,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.872087410506455
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.11458135409771047
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.004224322450066972
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0034285361705407038
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.002836245200135695
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.002631291890277999
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.0002108396848134287
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Play Paul Mccartney",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Paul Mccartney",
+                "end": 19,
+                "confidence": 0.996928160678044,
+                "start": 5,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9997425248844765
+        },
+        "id": 35,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9997425248844765
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00025728120922392165
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 7.460189046977279e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 4.5717034648800274e-08
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.1945088003076984e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.8250388895372627e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.3391897478922433e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "play Jill Sobule album",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Jill Sobule",
+                "end": 16,
+                "confidence": 0.7771072563241809,
+                "start": 5,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "album",
+                "end": 22,
+                "confidence": 0.9238250926395296,
+                "start": 17,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.987956942925717
+        },
+        "id": 36,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.987956942925717
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.011858135087982542
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 8.412169801458894e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.6914509227950124e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.436744140020124e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.891622729963665e-05
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 6.021103581236359e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "B-artist",
+            "I-artist",
+            "B-music_item"
+        ]
+    },
+    {
+        "text": "Play chant's from 1973.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "chant",
+                "end": 10,
+                "confidence": 0.8240795577710444,
+                "start": 5,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "1973",
+                "end": 22,
+                "confidence": 0.9978185083210847,
+                "start": 18,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9995413978523914
+        },
+        "id": 37,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9995413978523914
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0004227370823569258
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.446065571092287e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.119600980264692e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.4895993475031209e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.545637782368332e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.039224795133547e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "B-music_item",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Play something from 90s Pop Rock Essentials",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "90s Pop Rock Essentials",
+                "end": 43,
+                "confidence": 0.9897144911739549,
+                "start": 20,
+                "entity": "playlist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9949629444605538
+        },
+        "id": 38,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9949629444605538
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0025162483136676
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.002490670937181494
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.7475093958494794e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 9.61371186563463e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 9.21684121761862e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 7.781393302699647e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "text": "Play Have You Met Miss Jones by Nicole from Google Music.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Have You Met Miss Jones",
+                "end": 28,
+                "confidence": 0.6401791964267839,
+                "start": 5,
+                "entity": "entity_name"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Nicole",
+                "end": 38,
+                "confidence": 0.9640074167077108,
+                "start": 32,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Google Music",
+                "end": 56,
+                "confidence": 0.9902417088734654,
+                "start": 44,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9966220369599516
+        },
+        "id": 39,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9966220369599516
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0032465526070740458
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00011576419759148924
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 6.5075825310508554e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.37835605922579e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.127804404070719e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.632492388634448e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "B-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "O",
+            "B-artist",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "play chant by Nigger Kojak on Itunes",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "chant",
+                "end": 10,
+                "confidence": 0.9767866130088498,
+                "start": 5,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Nigger Kojak",
+                "end": 26,
+                "confidence": 0.9955857957219215,
+                "start": 14,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Itunes",
+                "end": 36,
+                "confidence": 0.9989078705556405,
+                "start": 30,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9999959781005465
+        },
+        "id": 40,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9999959781005465
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 3.957068746125797e-06
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.966615006960428e-08
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.5124382556665685e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.8005100846174528e-11
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 6.975240967464461e-12
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.194435667424013e-12
+            }
+        ],
+        "labels": [
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play some sixties songs on Google Music",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "sixties",
+                "end": 17,
+                "confidence": 0.9802841773564936,
+                "start": 10,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Google Music",
+                "end": 39,
+                "confidence": 0.994068440214261,
+                "start": 27,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.999953242141421
+        },
+        "id": 41,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.999953242141421
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 4.666100061193985e-05
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 4.444379478523258e-08
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.734017977214426e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.663304731714162e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.328428709223067e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 4.112516253597511e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-year",
+            "O",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "Play a fifties album from Dj Yoda on Last Fm.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "fifties",
+                "end": 14,
+                "confidence": 0.9986168603666522,
+                "start": 7,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "album",
+                "end": 20,
+                "confidence": 0.9993527720440191,
+                "start": 15,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Dj Yoda",
+                "end": 33,
+                "confidence": 0.9988367637894233,
+                "start": 26,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Last Fm",
+                "end": 44,
+                "confidence": 0.9933157441410436,
+                "start": 37,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9999612106957664
+        },
+        "id": 42,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9999612106957664
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 3.503495117556355e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.3086126176548347e-06
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 4.379907800279648e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 5.0450799770796645e-09
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.6050192900574397e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.0995612709414132e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-year",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "Please play my ecstatic playlist.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "ecstatic",
+                "end": 23,
+                "confidence": 0.9979955402043543,
+                "start": 15,
+                "entity": "playlist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.997036429941931
+        },
+        "id": 43,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.997036429941931
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0017278629091093379
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0012134226151263299
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.010678249470481e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.12952960684057e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.937824392741218e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 6.710159386414892e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-playlist",
+            "O"
+        ]
+    },
+    {
+        "text": "Open deezer and play Curtain Call: The Hits by Junichi Okada.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "deezer",
+                "end": 11,
+                "confidence": 0.9967736149572175,
+                "start": 5,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Curtain Call: The Hits",
+                "end": 43,
+                "confidence": 0.7144623096857605,
+                "start": 21,
+                "entity": "object_name"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Junichi Okada",
+                "end": 60,
+                "confidence": 0.9549562945778078,
+                "start": 47,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9985289274814844
+        },
+        "id": 44,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9985289274814844
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0014157762553620242
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.0018357211442923e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.2434066580191066e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.5520989470224752e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 7.30291459085422e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.614489558076397e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "B-service",
+            "O",
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Let's play Jamie Robertson's Handover on vimeo",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Jamie Robertson",
+                "end": 26,
+                "confidence": 0.9986876684340557,
+                "start": 11,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Handover",
+                "end": 37,
+                "confidence": 0.3284664995675709,
+                "start": 29,
+                "entity": "album"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "vimeo",
+                "end": 46,
+                "confidence": 0.9929111911602538,
+                "start": 41,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.97911096604982
+        },
+        "id": 45,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.97911096604982
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.017955625194795315
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0018842745255379888
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.000578440948869068
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0003132656804342185
+            },
+            {
+                "name": "RateBook",
+                "confidence": 8.099243739000666e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 7.643516315332326e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "B-album",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "play a sixties soundtrack",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "sixties",
+                "end": 14,
+                "confidence": 0.9919887993822889,
+                "start": 7,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "soundtrack",
+                "end": 25,
+                "confidence": 0.8672214832639348,
+                "start": 15,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9986880269825911
+        },
+        "id": 46,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9986880269825911
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0013066627215076432
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.9450630049265054e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.097178891260056e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.5538199913037144e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.5126050105722e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 3.6141150473944744e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-year",
+            "B-music_item"
+        ]
+    },
+    {
+        "text": "Play This Is: Miles Davis on Lastfm.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "This Is:",
+                "end": 13,
+                "confidence": 0.4406245518151177,
+                "start": 5,
+                "entity": "playlist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Miles Davis",
+                "end": 25,
+                "confidence": 0.4406245518151177,
+                "start": 14,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Lastfm",
+                "end": 35,
+                "confidence": 0.9924782519076597,
+                "start": 29,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9972305672026068
+        },
+        "id": 47,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9972305672026068
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.001515636372680961
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0005325677691719533
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0002843452005080607
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00023226219228086794
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.00012291757353977798
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.17036892114984e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Live In L.aJoseph Meyer please",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Live In L.aJoseph Meyer",
+                "end": 23,
+                "confidence": 0.9508704154861275,
+                "start": 0,
+                "entity": "object_name"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.27002676340716825
+        },
+        "id": 48,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.27002676340716825
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.22302129266731832
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.1668164453985139
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.14055136239827354
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.13693609292450662
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0449946923296321
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.017653350874587283
+            }
+        ],
+        "labels": [
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name",
+            "O"
+        ]
+    },
+    {
+        "text": "Play the top twenty Hisham Abbas on Youtube",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "top twenty",
+                "end": 19,
+                "confidence": 0.9554557800008859,
+                "start": 9,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Hisham Abbas",
+                "end": 32,
+                "confidence": 0.6729949831405102,
+                "start": 20,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Youtube",
+                "end": 43,
+                "confidence": 0.9956818379344552,
+                "start": 36,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9986226423203314
+        },
+        "id": 49,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9986226423203314
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.001102963706819377
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00016965150621971645
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00010051821532103341
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.6820820458451933e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 9.3396914521339e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 6.082001173098297e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "I-sort",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "play some seventies Filipp Kirkorow",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "seventies",
+                "end": 19,
+                "confidence": 0.9734039230995566,
+                "start": 10,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Filipp Kirkorow",
+                "end": 35,
+                "confidence": 0.735857968901352,
+                "start": 20,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9996910896399432
+        },
+        "id": 50,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9996910896399432
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00030230437191079056
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 6.11777120653032e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.446220911151184e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.6450684979820622e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 4.00374254784452e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.9050572904527055e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-year",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play the most popular Puretone",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "most popular",
+                "end": 21,
+                "confidence": 0.9802829122289934,
+                "start": 9,
+                "entity": "sort"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9973508249539188
+        },
+        "id": 51,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9973508249539188
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.002155966709150434
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00047888364201947273
+            },
+            {
+                "name": "RateBook",
+                "confidence": 8.325018495656757e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.770471338842875e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.9595907733376465e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.269614303459859e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "I-sort",
+            "O"
+        ]
+    },
+    {
+        "text": "Play music from E-type.",
+        "entities": [],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9673990343733198
+        },
+        "id": 52,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9673990343733198
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.032156627568223226
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00040879021945626097
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.35151600046999e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 8.7361232004933e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.6072692865268767e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.892865090234891e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Can you play A.j. Pero on Groove Shark?",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Pero",
+                "end": 22,
+                "confidence": 0.5367924141407987,
+                "start": 18,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Groove Shark",
+                "end": 38,
+                "confidence": 0.9974321099137053,
+                "start": 26,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9694563461640728
+        },
+        "id": 53,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9694563461640728
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.025808541251989267
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0038478095319409993
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.000441294839753631
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.00036601746026538624
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 5.2007532834723574e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.798321914292568e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "Play a Bob Burns song",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Bob Burns",
+                "end": 16,
+                "confidence": 0.9655285639333178,
+                "start": 7,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "song",
+                "end": 21,
+                "confidence": 0.9646649476386732,
+                "start": 17,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.999454629811703
+        },
+        "id": 54,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.999454629811703
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0005432236154615725
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.5242213779819449e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.926207667772873e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.387079433501857e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.0863842458541798e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 8.238432290053854e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "B-music_item"
+        ]
+    },
+    {
+        "text": "I want to hear Leroi Moore on vimeo , play the song Chance Of A Lifetime.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Leroi Moore",
+                "end": 26,
+                "confidence": 0.9477851968491537,
+                "start": 15,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "vimeo",
+                "end": 35,
+                "confidence": 0.9976426538607759,
+                "start": 30,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "song",
+                "end": 51,
+                "confidence": 0.9636940743970702,
+                "start": 47,
+                "entity": "object_type"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Chance Of A Lifetime",
+                "end": 72,
+                "confidence": 0.9734044002654685,
+                "start": 52,
+                "entity": "object_name"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.847032251931702
+        },
+        "id": 55,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.847032251931702
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.14777213490315705
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.002977465452944827
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.001876586744294319
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00022220252519083276
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 5.98957007052701e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.94627420060038e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service",
+            "O",
+            "O",
+            "O",
+            "B-object_type",
+            "B-object_name",
+            "I-object_name",
+            "I-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Play some symphony music from David Lindley.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "symphony",
+                "end": 18,
+                "confidence": 0.9637353323869458,
+                "start": 10,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "David Lindley",
+                "end": 43,
+                "confidence": 0.9975717274713765,
+                "start": 30,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9998657365373101
+        },
+        "id": 56,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9998657365373101
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0001333814318141098
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 8.245510719659838e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.8560614408665987e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.741942938035152e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 6.64369753121961e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 4.856062513122e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Please play something on Iheart from artist Ari Gold last album",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Iheart",
+                "end": 31,
+                "confidence": 0.9967574781320534,
+                "start": 25,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Ari Gold last",
+                "end": 57,
+                "confidence": 0.48632131224223507,
+                "start": 44,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "album",
+                "end": 63,
+                "confidence": 0.7207565813571777,
+                "start": 58,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9963559240174575
+        },
+        "id": 57,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9963559240174575
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0021361194856834615
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0014777080351003095
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.7336803721081182e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.687233430575654e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.377433624626315e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.469909826116649e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-service",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "I-artist",
+            "B-music_item"
+        ]
+    },
+    {
+        "text": "I want to hear them from the artist Murcof",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "them",
+                "end": 19,
+                "confidence": 0.9885900771928403,
+                "start": 15,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "artist",
+                "end": 35,
+                "confidence": 0.786349026701391,
+                "start": 29,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.6674065507330319
+        },
+        "id": 58,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.6674065507330319
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.30542633003967967
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.020277854063333267
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.004830100376423321
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0009835432443606124
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.0007488607091478048
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.0003267608340236085
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "O",
+            "B-music_item",
+            "O"
+        ]
+    },
+    {
+        "text": "Play sound track music from the twenties",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "sound track",
+                "end": 16,
+                "confidence": 0.8917491895704713,
+                "start": 5,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "twenties",
+                "end": 40,
+                "confidence": 0.9948604067951581,
+                "start": 32,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9998586492887777
+        },
+        "id": 59,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9998586492887777
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00014108175408067544
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.1520573245123526e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.8962175653207163e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.3640898812778642e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.765064330866386e-09
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 5.3832704026875515e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "B-music_item",
+            "I-music_item",
+            "O",
+            "O",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Play Dance With The Devil by Mr. Lordi",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Dance With The Devil",
+                "end": 25,
+                "confidence": 0.5874167686588635,
+                "start": 5,
+                "entity": "album"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Mr. Lordi",
+                "end": 38,
+                "confidence": 0.6824230913647723,
+                "start": 29,
+                "entity": "object_name"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9965343090167369
+        },
+        "id": 60,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9965343090167369
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0022882044016013735
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0007364168925175149
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.00043425204139904455
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.389965637581747e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.148584286619049e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.1282367927814359e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "B-album",
+            "I-album",
+            "I-album",
+            "I-album",
+            "O",
+            "B-object_name",
+            "I-object_name"
+        ]
+    },
+    {
+        "text": "Play music from 1996.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "1996",
+                "end": 20,
+                "confidence": 0.9973788344418119,
+                "start": 16,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9997180252663692
+        },
+        "id": 61,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9997180252663692
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0002704179151360922
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.1433854123797467e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 4.546470416024695e-08
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.595036694361976e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.5082400505611808e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.646689905914418e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Go to Itunes and play Dr. Lecter by David Hodges",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Itunes",
+                "end": 12,
+                "confidence": 0.9753649217175562,
+                "start": 6,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Dr",
+                "end": 24,
+                "confidence": 0.34147156325449474,
+                "start": 22,
+                "entity": "track"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "David Hodges",
+                "end": 48,
+                "confidence": 0.9862410793076914,
+                "start": 36,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9992799279494662
+        },
+        "id": 62,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9992799279494662
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0003435568620494065
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0002969497456263286
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 5.621825771851796e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.087750766953191e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 8.332542365298981e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.1371351047159224e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-service",
+            "O",
+            "O",
+            "B-track",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play S.t.r.e.e.t. D.a.d. from Hiromitsu Agatsuma through Pandora.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "S.t.r.e.e.t. D.a.d",
+                "end": 23,
+                "confidence": 0.5759169594261027,
+                "start": 5,
+                "entity": "object_name"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Hiromitsu Agatsuma",
+                "end": 48,
+                "confidence": 0.6187602006568677,
+                "start": 30,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Pandora",
+                "end": 64,
+                "confidence": 0.8144041249010503,
+                "start": 57,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9996183082385743
+        },
+        "id": 63,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9996183082385743
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00035596499140865006
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.0110128664325798e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.836910054029581e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.1256994443127552e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.7875874934334015e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.7527310494786236e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "B-object_name",
+            "I-object_name",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play some movement from the fourties",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "movement",
+                "end": 18,
+                "confidence": 0.9946149990072586,
+                "start": 10,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "fourties",
+                "end": 36,
+                "confidence": 0.9949911450285103,
+                "start": 28,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9933376327606458
+        },
+        "id": 64,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9933376327606458
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.006268720019914933
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00032740039694701117
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.402268970505603e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.8442076981956207e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.2621855317436406e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.1160200487667515e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Please tune into Chieko Ochi's good music",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "tune",
+                "end": 11,
+                "confidence": 0.9947822015550153,
+                "start": 7,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Chieko Ochi",
+                "end": 28,
+                "confidence": 0.9048184434706505,
+                "start": 17,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "good",
+                "end": 35,
+                "confidence": 0.9264996981454655,
+                "start": 31,
+                "entity": "sort"
+            }
+        ],
+        "intent": {
+            "name": "AddToPlaylist",
+            "confidence": 0.6326058836233679
+        },
+        "id": 65,
+        "intent_ranking": [
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.6326058836233679
+            },
+            {
+                "name": "PlayMusic",
+                "confidence": 0.33770758210172436
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.02937224008029826
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0002090701909040662
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 6.629818457272201e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.44140888048353e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.4511730327968452e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist",
+            "B-sort",
+            "O"
+        ]
+    },
+    {
+        "text": "Play the greatest music from Bryan Maclean.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "greatest",
+                "end": 17,
+                "confidence": 0.9911778379696903,
+                "start": 9,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Bryan Maclean",
+                "end": 42,
+                "confidence": 0.9749513013020356,
+                "start": 29,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.999105634229303
+        },
+        "id": 66,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.999105634229303
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0008585789449060755
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.461982832597757e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 5.124224642362546e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.3929138075789427e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.2857362105408064e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.8670999888174126e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play something on Last Fm",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Last Fm",
+                "end": 25,
+                "confidence": 0.9900475921602908,
+                "start": 18,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.999983198591777
+        },
+        "id": 67,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.999983198591777
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 1.5554991171831758e-05
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.0642702550418503e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.816820121597855e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.67281549273393e-10
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.142144816176531e-10
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.328803833136144e-11
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "Play music by Joy Nilo.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Joy Nilo",
+                "end": 22,
+                "confidence": 0.9955974422821707,
+                "start": 14,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9999710018030237
+        },
+        "id": 68,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9999710018030237
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 2.8649631009241837e-05
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.230119834279457e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.445150080180408e-08
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 6.421086518084634e-10
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.716494651053871e-10
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.8872470574311088e-10
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "play some Gary Lee Conner",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Gary Lee Conner",
+                "end": 25,
+                "confidence": 0.7651171780463851,
+                "start": 10,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9870709684868918
+        },
+        "id": 69,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9870709684868918
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.012553431161118102
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00017163082516906874
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 9.114917197790688e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.27635659965816e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.7862592238965766e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 3.2194196607504044e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play music by Brian Chase.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Brian Chase",
+                "end": 25,
+                "confidence": 0.9798413420532542,
+                "start": 14,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9994400765537551
+        },
+        "id": 70,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9994400765537551
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.000557655618160028
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.8021006622752763e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.095766204506246e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.0441737171928525e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 8.725200770823226e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 6.448142261189789e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Can you play top Zvooq by Fink?",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "top",
+                "end": 16,
+                "confidence": 0.8817270735986419,
+                "start": 13,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Zvooq",
+                "end": 22,
+                "confidence": 0.9013075695312888,
+                "start": 17,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Fink",
+                "end": 30,
+                "confidence": 0.6641855623021633,
+                "start": 26,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9927672208117004
+        },
+        "id": 71,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9927672208117004
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.006204758725090476
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0009605733826275164
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.0920728048285314e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.04580679707752e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.3885990618387672e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.21822939442658e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-sort",
+            "B-service",
+            "O",
+            "B-artist"
+        ]
+    },
+    {
+        "text": "play the top-20 Nawang Khechog soundtrack",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "top-20",
+                "end": 15,
+                "confidence": 0.46247080668588814,
+                "start": 9,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "soundtrack",
+                "end": 41,
+                "confidence": 0.502057644737022,
+                "start": 31,
+                "entity": "object_type"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9807972096560327
+        },
+        "id": 72,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9807972096560327
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.017868210402635372
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0008526105608230477
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.00021630698246108247
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.0001067269384504393
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 9.135756258240511e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 6.757789701474423e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "O",
+            "O",
+            "B-object_type"
+        ]
+    },
+    {
+        "text": "Let's hear stuff from Andrew Hewitt.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Andrew Hewitt",
+                "end": 35,
+                "confidence": 0.9892730719480293,
+                "start": 22,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.8792284362448087
+        },
+        "id": 73,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.8792284362448087
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0770499749734652
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.036650394427157514
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0030475942356488687
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0018173576185693638
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.0017458702798676807
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00046037222048257747
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play a good ep from the eighties by Peter Murphy.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "good",
+                "end": 11,
+                "confidence": 0.9225945340581428,
+                "start": 7,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "ep",
+                "end": 14,
+                "confidence": 0.9943829722189188,
+                "start": 12,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "eighties",
+                "end": 32,
+                "confidence": 0.9957746593229599,
+                "start": 24,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Peter Murphy",
+                "end": 48,
+                "confidence": 0.9918233108656676,
+                "start": 36,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9979592574487938
+        },
+        "id": 74,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9979592574487938
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.001876566459041723
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00011208290332563675
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.741997493213774e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.7164958967105307e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.158556087303685e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 7.981619225520469e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "B-music_item",
+            "O",
+            "O",
+            "B-year",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play Another Passenger from Louis Nelson Delisle.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Another Passenger",
+                "end": 22,
+                "confidence": 0.4667190080199926,
+                "start": 5,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Louis Nelson Delisle",
+                "end": 48,
+                "confidence": 0.8617720453154657,
+                "start": 28,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9878603319531267
+        },
+        "id": 75,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9878603319531267
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.005075746568465368
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0042404643260664475
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0017588978947343716
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0009791755439914466
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 4.823458438273236e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.7149129232721996e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-artist",
+            "I-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play the top music from The Railway Children off Last Fm.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "top",
+                "end": 12,
+                "confidence": 0.991082064555164,
+                "start": 9,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "The Railway Children",
+                "end": 44,
+                "confidence": 0.8292568964574449,
+                "start": 24,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Last Fm",
+                "end": 56,
+                "confidence": 0.9855730815834378,
+                "start": 49,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9881336283646119
+        },
+        "id": 76,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9881336283646119
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.008482276027881278
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.002820784163344647
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0002874105701609388
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0001242768149818736
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 9.260342349842245e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 5.902063552088058e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "I-artist",
+            "O",
+            "B-service",
+            "I-service"
+        ]
+    },
+    {
+        "text": "play the best Becca",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "best",
+                "end": 13,
+                "confidence": 0.3500466152586353,
+                "start": 9,
+                "entity": "sort"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9298325878793491
+        },
+        "id": 77,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9298325878793491
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0694563331215139
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0005355834212046367
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.000140374657604249
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.132200735625073e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 7.443598728615511e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 6.355314243201435e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "O"
+        ]
+    },
+    {
+        "text": "Play something by Duke Ellington from the seventies",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Duke Ellington",
+                "end": 32,
+                "confidence": 0.9965309337528845,
+                "start": 18,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "seventies",
+                "end": 51,
+                "confidence": 0.9940423476095911,
+                "start": 42,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9982456134585067
+        },
+        "id": 78,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9982456134585067
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.001144058219138336
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0005691276823749269
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 3.860212667987172e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.742791251578434e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 6.45704938853991e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.1001711011333994e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Use the last fm service to play A Mis Niños de 30",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "last fm",
+                "end": 15,
+                "confidence": 0.9667309872649843,
+                "start": 8,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "A Mis Niños de 30",
+                "end": 49,
+                "confidence": 0.6900897383313446,
+                "start": 32,
+                "entity": "playlist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9693419673158061
+        },
+        "id": 79,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9693419673158061
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.009605530269801212
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.008112568675676422
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.006304608898835697
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0034312129507978128
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0018896649216441448
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.0013144469674389596
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-service",
+            "I-service",
+            "O",
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist"
+        ]
+    },
+    {
+        "text": "Play my Black Sabbath: The Dio Years playlist.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Black Sabbath: The Dio Years",
+                "end": 36,
+                "confidence": 0.7617344139715514,
+                "start": 8,
+                "entity": "playlist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.7034981740027417
+        },
+        "id": 80,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.7034981740027417
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.17702162122317736
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.09602660029068522
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.010160599126899178
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.008545158780174736
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0026126265596021284
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.002135220016719535
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist",
+            "I-playlist",
+            "O"
+        ]
+    },
+    {
+        "text": "Play an ep from Mike Harding.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "ep",
+                "end": 10,
+                "confidence": 0.9880720512718254,
+                "start": 8,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Mike Harding",
+                "end": 28,
+                "confidence": 0.9918507881214115,
+                "start": 16,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9955510137452023
+        },
+        "id": 81,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9955510137452023
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00409195642469247
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0003000860419355153
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.6302216276353115e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.0212711955892629e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 6.586539783262406e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 3.842320154110302e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "I want to hear anything from the Rock Symphonique genre please.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Rock Symphonique",
+                "end": 49,
+                "confidence": 0.4380776951672813,
+                "start": 33,
+                "entity": "playlist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9688710923143662
+        },
+        "id": 82,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9688710923143662
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.025759529125828844
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0041478900428266584
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0010851094009644384
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.915686582421928e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.833117635643999e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.8891073833025568e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-playlist",
+            "I-playlist",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Please play a 1997 record.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "1997",
+                "end": 18,
+                "confidence": 0.9957340764857713,
+                "start": 14,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "record",
+                "end": 25,
+                "confidence": 0.9783392559217926,
+                "start": 19,
+                "entity": "music_item"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9927217142653502
+        },
+        "id": 83,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9927217142653502
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.006080790631336923
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0009847830706263736
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.0001598332053745237
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.249432332723234e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.8600923809727e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.1783580174723348e-05
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-year",
+            "B-music_item"
+        ]
+    },
+    {
+        "text": "Put What Color Is Your Sky by Alana Davis on the stereo.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "What Color Is Your Sky",
+                "end": 26,
+                "confidence": 0.5297391675477787,
+                "start": 4,
+                "entity": "entity_name"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Alana Davis",
+                "end": 41,
+                "confidence": 0.9909697305796227,
+                "start": 30,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.44695554954737776
+        },
+        "id": 84,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.44695554954737776
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.3075732386808173
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.17575144213708732
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.034913898483256524
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.016807375856407545
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.011346241119783905
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.006652254175269638
+            }
+        ],
+        "labels": [
+            "O",
+            "B-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "I-entity_name",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Please play a movement from george formby jr.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "movement",
+                "end": 22,
+                "confidence": 0.995541763406068,
+                "start": 14,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "george formby jr",
+                "end": 44,
+                "confidence": 0.9755072941020757,
+                "start": 28,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9812958477538103
+        },
+        "id": 85,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9812958477538103
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.010370096976722408
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.004924165907041567
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.002430472764714134
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0007627806559736901
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00010888339613564852
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.00010775254560228267
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "play some new Les Vandyke on Slacker",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "new",
+                "end": 13,
+                "confidence": 0.6228741981290279,
+                "start": 10,
+                "entity": "sort"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Les Vandyke",
+                "end": 25,
+                "confidence": 0.8502688209577738,
+                "start": 14,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Slacker",
+                "end": 36,
+                "confidence": 0.9979314474649041,
+                "start": 29,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.999924874567282
+        },
+        "id": 86,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.999924874567282
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 5.4705172840943305e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.4448756635491523e-05
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 5.941390720608649e-06
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 2.1644712182567884e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.845433213493773e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 3.6223755750287126e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-sort",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Please open Zvooq",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Zvooq",
+                "end": 17,
+                "confidence": 0.9974440005900898,
+                "start": 12,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.42712840984606765
+        },
+        "id": 87,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.42712840984606765
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.2844041601603412
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.14951152716395255
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.07029479330139075
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.03866238223632454
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.023831041596728525
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.006167685695194368
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play Progressive Metal.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Progressive Metal",
+                "end": 22,
+                "confidence": 0.4224136169561185,
+                "start": 5,
+                "entity": "genre"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9957657205028129
+        },
+        "id": 88,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9957657205028129
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.003924814271709789
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.00028554577583605464
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.1553588489186868e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.608056854283232e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.2995788369894965e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 3.458225460901872e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "B-genre",
+            "I-genre"
+        ]
+    },
+    {
+        "text": "I want to hear soundtrack music on Youtube from Helena Iren Michaelsen",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "soundtrack",
+                "end": 25,
+                "confidence": 0.7676589714042243,
+                "start": 15,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Youtube",
+                "end": 42,
+                "confidence": 0.996267377866989,
+                "start": 35,
+                "entity": "service"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Helena Iren Michaelsen",
+                "end": 70,
+                "confidence": 0.8645592083382211,
+                "start": 48,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9605120308634636
+        },
+        "id": 89,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9605120308634636
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.036408009530311064
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.003004327298736645
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 4.307076384216287e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.1643928229519577e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 9.983164200083317e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 9.344512168481651e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "O",
+            "B-service",
+            "O",
+            "B-artist",
+            "I-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "play a song by Ramesh Narayan from 1960",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "song",
+                "end": 11,
+                "confidence": 0.9615444745609982,
+                "start": 7,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Ramesh Narayan",
+                "end": 29,
+                "confidence": 0.9972413041798215,
+                "start": 15,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "1960",
+                "end": 39,
+                "confidence": 0.9970386650671009,
+                "start": 35,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9997948891969787
+        },
+        "id": 90,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9997948891969787
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00019761505551090777
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 6.819287915456169e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.226714466173632e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 3.005639237853269e-08
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.5037573107866435e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 8.694182706264098e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-music_item",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Play some blues britânico.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "blues britânico",
+                "end": 25,
+                "confidence": 0.5001477641977798,
+                "start": 10,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9995922416988144
+        },
+        "id": 91,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9995922416988144
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00040514376326871506
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 2.077902094504123e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.3181349747799095e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.2173476868106338e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.574335918517132e-08
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 3.7344197029182204e-08
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Proceed with Hitomi Nabatame music from 2003.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "2003",
+                "end": 44,
+                "confidence": 0.9760046662869414,
+                "start": 40,
+                "entity": "year"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.975362345408116
+        },
+        "id": 92,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.975362345408116
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.011681166452484902
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.0066404549581431166
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.003432776247530333
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0016398428424796235
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.001040087373468734
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.00020332671777728597
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-year"
+        ]
+    },
+    {
+        "text": "Play something on Zvooq",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Zvooq",
+                "end": 23,
+                "confidence": 0.9989551940159017,
+                "start": 18,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9969267978469425
+        },
+        "id": 93,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9969267978469425
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.002901652741597519
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0001588404697375765
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 4.21013499215005e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.1124900034044876e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.7573419051084466e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.6289748216797365e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play music from Lynn and Wade Llp.",
+        "entities": [],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9971488640250351
+        },
+        "id": 94,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9971488640250351
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0027484853019841666
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 8.990611421015391e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 6.195981491738878e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 2.837659860532053e-06
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.9653184946734937e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 1.7455989238824881e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ]
+    },
+    {
+        "text": "Let me hear Chris Knight music",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Chris Knight",
+                "end": 24,
+                "confidence": 0.9763456710259477,
+                "start": 12,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.933227376709958
+        },
+        "id": 95,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.933227376709958
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.06527845889317146
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0008621268484072446
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.0005870598250966625
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 3.3780629812355594e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 9.02480829823277e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.1722852560631482e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "I-artist",
+            "O"
+        ]
+    },
+    {
+        "text": "Let's hear good Mohammad Mamle on Vimeo.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "good Mohammad Mamle",
+                "end": 30,
+                "confidence": 0.4836918265184031,
+                "start": 11,
+                "entity": "track"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Vimeo",
+                "end": 39,
+                "confidence": 0.9973517062938463,
+                "start": 34,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9726672827591655
+        },
+        "id": 96,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9726672827591655
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 0.009200486391002276
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00759808827408793
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.005783614144630015
+            },
+            {
+                "name": "RateBook",
+                "confidence": 0.002357982670048607
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 0.002153739146034095
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 0.00023880661503158425
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "B-track",
+            "I-track",
+            "I-track",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Please play a sound track from the fifties that's on Iheart",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "sound track",
+                "end": 25,
+                "confidence": 0.9744465197840574,
+                "start": 14,
+                "entity": "music_item"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "fifties",
+                "end": 42,
+                "confidence": 0.9915059408555422,
+                "start": 35,
+                "entity": "year"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Iheart",
+                "end": 59,
+                "confidence": 0.9973936056450792,
+                "start": 53,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9986138872164021
+        },
+        "id": 97,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9986138872164021
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 0.0007490783778198442
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0004552070479256563
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 7.489558942369988e-05
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 7.35702852267849e-05
+            },
+            {
+                "name": "RateBook",
+                "confidence": 2.6550061062165136e-05
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 6.811422140171374e-06
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-music_item",
+            "I-music_item",
+            "O",
+            "O",
+            "B-year",
+            "O",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play Music From Van-pires by Dmitry Malikov.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Van-pires",
+                "end": 25,
+                "confidence": 0.18139034793529438,
+                "start": 16,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Dmitry Malikov",
+                "end": 43,
+                "confidence": 0.9866074308924041,
+                "start": 29,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9986652654415864
+        },
+        "id": 98,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9986652654415864
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0013205301303284805
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.0957735448912238e-05
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 1.5278239278163236e-06
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 7.307829448409197e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 5.09244556367691e-07
+            },
+            {
+                "name": "RateBook",
+                "confidence": 4.788412072600168e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-artist",
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    },
+    {
+        "text": "Play rich sex on Iheart",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "rich sex",
+                "end": 13,
+                "confidence": 0.9294527086708768,
+                "start": 5,
+                "entity": "artist"
+            },
+            {
+                "extractor": "ner_crf",
+                "value": "Iheart",
+                "end": 23,
+                "confidence": 0.9950144007446317,
+                "start": 17,
+                "entity": "service"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9998957282368963
+        },
+        "id": 99,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9998957282368963
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.00010283623437729122
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.0318484149134694e-06
+            },
+            {
+                "name": "RateBook",
+                "confidence": 3.911956863431749e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 5.444493332452511e-09
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 4.208295393212873e-09
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 2.831836345661033e-09
+            }
+        ],
+        "labels": [
+            "O",
+            "B-artist",
+            "I-artist",
+            "O",
+            "B-service"
+        ]
+    },
+    {
+        "text": "Play Modern Psychedelia.",
+        "entities": [
+            {
+                "extractor": "ner_crf",
+                "value": "Modern Psychedelia",
+                "end": 23,
+                "confidence": 0.36184018534892226,
+                "start": 5,
+                "entity": "artist"
+            }
+        ],
+        "intent": {
+            "name": "PlayMusic",
+            "confidence": 0.9992258562601838
+        },
+        "id": 100,
+        "intent_ranking": [
+            {
+                "name": "PlayMusic",
+                "confidence": 0.9992258562601838
+            },
+            {
+                "name": "SearchCreativeWork",
+                "confidence": 0.0007727301960145448
+            },
+            {
+                "name": "RateBook",
+                "confidence": 6.016146863712654e-07
+            },
+            {
+                "name": "AddToPlaylist",
+                "confidence": 3.9320168256770267e-07
+            },
+            {
+                "name": "BookRestaurant",
+                "confidence": 1.5977800629597593e-07
+            },
+            {
+                "name": "SearchScreeningEvent",
+                "confidence": 1.3830069594478158e-07
+            },
+            {
+                "name": "GetWeather",
+                "confidence": 1.2064873041878528e-07
+            }
+        ],
+        "labels": [
+            "O",
+            "B-artist",
+            "I-artist"
+        ]
+    }
+]
