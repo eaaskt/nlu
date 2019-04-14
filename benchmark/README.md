@@ -1,3 +1,5 @@
+[Wit.ai results](#wit.ai-benchmark)
+
 # Wit.ai benchmark
 
 Evaluating the performance of Wit.ai on two datasets: ATIS and SnipsNLU
@@ -42,7 +44,7 @@ distance            |0.750000
 ground_service      |0.986301
 
 #### Overall F1 (micro-averaged)
-**0.93**
+**0.90**
 
 ### Slot filling
 * F1 score: 0.160543
@@ -90,7 +92,7 @@ Recall: 0.347150
 
 ## SnipsNLU dataset
 ### Intent detection
-![Alt text](pics/snips_confusionmat.PNG?raw=true "Confusion matrix for Snips")
+![Alt text](pics/snips_confusionmat.png?raw=true "Confusion matrix for Snips")
 
 | |f1|
 |---------|---------|
@@ -237,3 +239,115 @@ PlayMusic| 0.69| 0.55| 0.56| 0.56
 RateBook| 0.60| 0.55| 0.52| 0.53
 SearchCreativeWork|0.48 | 0.20| 0.25| 0.22
 SearchScreeningEvent| 0.69| 0.54| 0.67| 0.60
+
+
+# Rasa benchmark
+
+## ATIS dataset
+### Intent detection
+
+![Alt text](pics/rasa_atis_confusionmat.png?raw=true "Confustion matrix for ATIS (balanced)")
+
+| |f1|
+|-----|-----|
+abbreviation        | 0.970588
+aircraft            | 0.615385
+airfare             | 0.604651
+airfare+flight      | 0.000000
+airline             | 0.931507
+airport             | 0.882353
+capacity            | 0.764706
+city                | 0.000000
+day_name            | 0.000000
+distance            | 0.761905
+flight              | 0.941538
+flight+airfare      | 0.285714
+flight+airline      | 0.000000
+flight_no           | 0.769231
+flight_no+airline   | 0.000000
+flight_time         | 1.000000
+ground_fare         | 0.833333
+ground_service      | 0.972973
+meal                | 0.500000
+quantity            | 0.600000
+
+
+#### Overall F1 score
+**0.9857**
+
+### Slot filling
+* F1 score: 0.921440
+* Accuracy: 0.963579
+* Precision: 0.927195
+* Recall: 0.915756
+
+## SnipsNLU dataset
+### Intent detection
+![Alt text](pics/rasa_snips_confusionmat.png?raw=true "Confusion matrix for Snips")
+
+| |f1|
+|---------|---------|
+AddToPlaylist|0.990099
+BookRestaurant|0.995025
+GetWeather| 1.00
+PlayMusic| 0.989899
+RateBook| 1.00
+SearchCreativeWork| 0.961165
+SearchScreeningEvent| 0.963731
+
+#### Overall F1 score
+**0.9857**
+
+
+### Slot filling
+#### AddToPlaylist
+* F1 score: 0.899818
+* Accuracy: 0.931211
+* Precision: 0.894928
+* Recall: 0.904762
+
+#### BookRestaurant
+* F1 score: 0.939347
+* Accuracy: 0.966977
+* Precision: 0.937888
+* Recall: 0.940810
+
+
+#### GetWeather
+* F1 score: 0.933610
+* Accuracy: 0.971545
+* Precision: 0.937500
+* Recall: 0.929752
+
+
+#### PlayMusic
+* F1 score: 0.820000
+* Accuracy: 0.869748
+* Precision: 0.845361
+* Recall: 0.796117
+
+
+#### RateBook
+* F1 score: 0.968536
+* Accuracy: 0.970186
+* Precision: 0.972527
+* Recall: 0.964578
+
+
+#### SearchCreativeWork
+* F1 score: 0.823881
+* Accuracy: 0.911271
+* Precision: 0.851852
+* Recall: 0.797688
+
+#### SearchScreeningEvent
+* F1 score: 0.926366
+* Accuracy: 0.938922
+* Precision: 0.933014
+* Recall: 0.919811
+
+### Overall slot filling results
+* F1 score: 0.912665
+* Accuracy: 0.940572
+* Precision: 0.919638
+* Recall: 0.905797
