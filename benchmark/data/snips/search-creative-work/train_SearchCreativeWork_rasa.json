@@ -1,0 +1,5004 @@
+{
+    "rasa_nlu_data": {
+        "common_examples": [
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 42,
+                        "value": "Bloom: Remix Album",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 43,
+                        "end": 47,
+                        "value": "song",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please help me find the Bloom: Remix Album song."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 22,
+                        "value": "soundtrack",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 30,
+                        "end": 47,
+                        "value": "Enter the Chicken",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the soundtrack called Enter the Chicken"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 42,
+                        "value": "Ellington at Newport",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please search Ellington at Newport?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 40,
+                        "value": "Youth Against Fascism",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 56,
+                        "value": "television show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Youth Against Fascism television show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 16,
+                        "value": "book",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 24,
+                        "end": 30,
+                        "value": "Suffer",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the book called Suffer"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 37,
+                        "value": "The Legend of Korra",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 38,
+                        "end": 42,
+                        "value": "book",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for The Legend of Korra book."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 40,
+                        "value": "Two Row Times",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 45,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you help me search the Two Row Times show?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 40,
+                        "value": "Curiosity Quest",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you search the work, Curiosity Quest?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 18,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 22,
+                        "end": 66,
+                        "value": "Masters of the Universe: The Super Adventure",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for a picture of Masters of the Universe: The Super Adventure"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 16,
+                        "value": "saga",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 17,
+                        "end": 28,
+                        "value": "Air Cavalry",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the saga Air Cavalry"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 31,
+                        "value": "game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 33,
+                        "end": 38,
+                        "value": "Coast",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you help me locate the game, Coast?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 34,
+                        "value": "Disney Universe",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up for Disney Universe."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 13,
+                        "value": "song",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 14,
+                        "end": 28,
+                        "value": "Shomoyer Kotha",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the song Shomoyer Kotha"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 19,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 20,
+                        "end": 38,
+                        "value": "Live in Paris 1975",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the picture Live in Paris 1975"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 52,
+                        "value": "Formula One Championship Edition",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 53,
+                        "end": 58,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "I'm looking for the Formula One Championship Edition album"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 22,
+                        "value": "Abby",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 23,
+                        "end": 27,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search the Abby saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 44,
+                        "end": 86,
+                        "value": "Sometimes the Blues Is Just a Passing Bird",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need to find a creative work with the title Sometimes the Blues Is Just a Passing Bird"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 34,
+                        "value": "Miracle in the Rain",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you search Miracle in the Rain?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 32,
+                        "value": "The Banker",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 33,
+                        "end": 48,
+                        "value": "television show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please help me search The Banker television show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 21,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 57,
+                        "value": "New Zealand Local Government",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the album by the New Zealand Local Government"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 23,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 27,
+                        "end": 36,
+                        "value": "Road Hogs",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "search for a photograph of Road Hogs"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 21,
+                        "end": 34,
+                        "value": "The Patrician",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you help me find The Patrician?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 31,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 33,
+                        "end": 40,
+                        "value": "Healthy",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please locate the movie, Healthy?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 48,
+                        "value": "All the Times I Cried",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Could you locate the work, All the Times I Cried?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 13,
+                        "value": "show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 14,
+                        "end": 24,
+                        "value": "ActivePerl",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the show ActivePerl"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 39,
+                        "value": "Jenny of the Prairie",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 40,
+                        "end": 55,
+                        "value": "television show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Jenny of the Prairie television show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 28,
+                        "value": "Sad Love Story",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 29,
+                        "end": 34,
+                        "value": "novel",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please locate Sad Love Story novel for me."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 21,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 33,
+                        "value": "Tailwind",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for a photograph of Tailwind"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 67,
+                        "value": "Atheist Manifesto: The Case Against Christianity",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 68,
+                        "end": 73,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Atheist Manifesto: The Case Against Christianity album."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 31,
+                        "end": 40,
+                        "value": "The Sperm",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you help me find the work, The Sperm?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 30,
+                        "value": "Peace Arch News",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the novel Peace Arch News"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 59,
+                        "value": "The Crucible of Man: Something Wicked Part 2",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 60,
+                        "end": 65,
+                        "value": "novel",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you locate The Crucible of Man: Something Wicked Part 2 novel?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 24,
+                        "value": "game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 34,
+                        "value": "The Hits",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the game, The Hits?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 40,
+                        "value": "The East Is Red",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 45,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search and get me The East Is Red saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 36,
+                        "value": "Critical Condition",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 37,
+                        "end": 41,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the Critical Condition show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 42,
+                        "value": "The Only Hope for Me Is You",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 43,
+                        "end": 47,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me The Only Hope for Me Is You game?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 5,
+                        "end": 20,
+                        "value": "The Right Fight",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find The Right Fight"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 13,
+                        "value": "game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 14,
+                        "end": 38,
+                        "value": "Just Dance Greatest Hits",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the game Just Dance Greatest Hits"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 29,
+                        "value": "Comet",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 30,
+                        "end": 40,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please help me find the Comet photograph."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 30,
+                        "end": 49,
+                        "value": "At the Cafe Bohemia",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Acreative work with the title At the Cafe Bohemia"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 10,
+                        "end": 15,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 30,
+                        "end": 35,
+                        "value": "Oshin",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me a movie with the name Oshin"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 22,
+                        "end": 33,
+                        "value": "Spasmolytic",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the album titled Spasmolytic"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 31,
+                        "value": "Home at Last",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 32,
+                        "end": 39,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Home at Last trailer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 34,
+                        "value": "All Killer",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please get me the work, All Killer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 33,
+                        "end": 60,
+                        "value": "Guilt by Association Vol. 2",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the creative work called Guilt by Association Vol. 2"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 36,
+                        "value": "Songs for the Deaf",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 37,
+                        "end": 47,
+                        "value": "video game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search the Songs for the Deaf video game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 46,
+                        "value": "Warlock 2: The Exiled",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you locate the work, Warlock 2: The Exiled?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 27,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 35,
+                        "end": 51,
+                        "value": "Hippocratic Oath",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the trailer of the Hippocratic Oath?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 31,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 39,
+                        "end": 53,
+                        "value": "American Dream",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the television show called American Dream"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 27,
+                        "value": "My Island Home",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 28,
+                        "end": 37,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find My Island Home TV series?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 23,
+                        "value": "Leadership",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "can you find Leadership in my library, please?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 50,
+                        "value": "Transformers: Beast Machines",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 51,
+                        "end": 58,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the Transformers: Beast Machines trailer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 49,
+                        "value": "Live in San Juan Capistrano",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 50,
+                        "end": 57,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the Live in San Juan Capistrano picture."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 13,
+                        "value": "book",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 21,
+                        "end": 25,
+                        "value": "ANAK",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need the book called ANAK"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 26,
+                        "value": "video game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 34,
+                        "end": 62,
+                        "value": "Spartacus: Gods of the Arena",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the video game called Spartacus: Gods of the Arena"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 33,
+                        "end": 49,
+                        "value": "A Little Curious",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the work titled, A Little Curious?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 13,
+                        "value": "book",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 14,
+                        "end": 35,
+                        "value": "A Glorious Way to Die",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the book A Glorious Way to Die"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 27,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 28,
+                        "end": 39,
+                        "value": "MythBusters",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the television show MythBusters"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 28,
+                        "end": 40,
+                        "value": "Wholehearted",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please search for the work, Wholehearted."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 19,
+                        "value": "video game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 20,
+                        "end": 43,
+                        "value": "High Hopes & Heartbreak",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the video game High Hopes & Heartbreak"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 60,
+                        "value": "Wild Things: Diamonds in the Rough",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the work, Wild Things: Diamonds in the Rough?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 54,
+                        "value": "Naked City – Justice with a Bullet",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 55,
+                        "end": 60,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the Naked City – Justice with a Bullet album?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 38,
+                        "value": "Thrilling Cities",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 39,
+                        "end": 49,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the Thrilling Cities photograph."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 31,
+                        "value": "Dante's Peak",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 32,
+                        "end": 40,
+                        "value": "painting",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Dante's Peak painting."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 30,
+                        "value": "Worms Clan Wars",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please fine me Worms Clan Wars."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 40,
+                        "value": "Cracking Contraptions",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 48,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me the Cracking Contraptions picture?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 27,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 28,
+                        "end": 68,
+                        "value": "Beyond Iconic: Photographer Dennis Stock",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the painting Beyond Iconic: Photographer Dennis Stock."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 17,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 21,
+                        "end": 71,
+                        "value": "Adventure Time: The Secret of the Nameless Kingdom",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find a photograph of Adventure Time: The Secret of the Nameless Kingdom"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 19,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 23,
+                        "end": 44,
+                        "value": "Amusement Parks U.S.A",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for a painting of Amusement Parks U.S.A."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 30,
+                        "value": "SchoolTool",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 31,
+                        "end": 38,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the SchoolTool picture?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 22,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 35,
+                        "value": "The Falls",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Search for the trailer of The Falls"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 42,
+                        "value": "The Burning World",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me the work, The Burning World."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 50,
+                        "value": "Before Crisis: Final Fantasy VII",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 51,
+                        "end": 66,
+                        "value": "television show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the Before Crisis: Final Fantasy VII television show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 24,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 32,
+                        "end": 48,
+                        "value": "The Days of Mars",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need to find the picture titled The Days of Mars"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 74,
+                        "value": "Frisbee: The Life and Death of a Hippie Preacher",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the work, Frisbee: The Life and Death of a Hippie Preacher?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 34,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 42,
+                        "end": 53,
+                        "value": "Start It Up",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "can you get me the television show called Start It Up?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 18,
+                        "value": "book",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 46,
+                        "value": "Hollywood Connection",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need find the book called Hollywood Connection"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 44,
+                        "value": "The Notebook of Trigorin",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 45,
+                        "end": 49,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you please find The Notebook of Trigorin game?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 32,
+                        "value": "All the Lovers",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 33,
+                        "end": 40,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for All the Lovers trailer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 28,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 60,
+                        "value": "Giant Killer Shark: The Musical",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the TV series Giant Killer Shark: The Musical."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 24,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 36,
+                        "value": "Fresh Gear",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the movie, Fresh Gear."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 26,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 34,
+                        "end": 48,
+                        "value": "The Accounting",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you search the picture titled The Accounting?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 56,
+                        "value": "Selections from the Arista Years",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 57,
+                        "end": 67,
+                        "value": "video game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please help me find the Selections from the Arista Years video game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 35,
+                        "end": 56,
+                        "value": "Rats: Night of Terror",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "I am looking for the creative work Rats: Night of Terror"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 25,
+                        "value": "Rounin",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 26,
+                        "end": 36,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Rounin photograph."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 26,
+                        "value": "The Big Game",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 27,
+                        "end": 31,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search The Big Game show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 41,
+                        "value": "Earth 2150: Lost Souls",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 42,
+                        "end": 46,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Earth 2150: Lost Souls game?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 21,
+                        "value": "To Heart 2",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Search for To Heart 2"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 33,
+                        "value": "Snowman's Land",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 34,
+                        "end": 39,
+                        "value": "movie",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me the Snowman's Land movie?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 19,
+                        "value": "Plastic",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 20,
+                        "end": 27,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Find me the Plastic trailer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 30,
+                        "value": "The Real McCoy",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 31,
+                        "end": 36,
+                        "value": "novel",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me The Real McCoy novel?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 20,
+                        "value": "saga",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 28,
+                        "end": 40,
+                        "value": "The Scofflaw",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the saga called The Scofflaw"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 92,
+                        "value": "The Lamentable Journey of Omaha Bigelow into the Impenetrable Loisaida Jungle",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 93,
+                        "end": 108,
+                        "value": "television show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up The Lamentable Journey of Omaha Bigelow into the Impenetrable Loisaida Jungle television show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 23,
+                        "value": "show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 102,
+                        "value": "The Society for the Study of the Multi-Ethnic Literature of the United States",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the show, The Society for the Study of the Multi-Ethnic Literature of the United States."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 29,
+                        "value": "Kiss the Crystal Flake",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Get me Kiss the Crystal Flake"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 32,
+                        "value": "The Young Warriors",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 33,
+                        "end": 37,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search The Young Warriors game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 19,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 20,
+                        "end": 40,
+                        "value": "We Lived for Estonia",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the TV show We Lived for Estonia"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 30,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 38,
+                        "end": 49,
+                        "value": "Whole Again",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Wish to fins a television show called Whole Again"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 39,
+                        "value": "Welcome to the Rileys",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 40,
+                        "end": 44,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the Welcome to the Rileys game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 30,
+                        "value": "Ties That Bind",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please fine me, Ties That Bind."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 54,
+                        "value": "All Night Long 3: The Final Chapter",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 55,
+                        "end": 60,
+                        "value": "novel",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me the All Night Long 3: The Final Chapter novel?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 21,
+                        "value": "show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 48,
+                        "value": "Hunters of the Dusk",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Wish to find the show called Hunters of the Dusk"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 41,
+                        "value": "Irish Pictorial Weekly",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 42,
+                        "end": 49,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Irish Pictorial Weekly trailer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 32,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 34,
+                        "end": 43,
+                        "value": "My Choice",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Help me find the television show, My Choice."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 43,
+                        "value": "The Education of Little Tree",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 44,
+                        "end": 48,
+                        "value": "song",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me The Education of Little Tree song?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 42,
+                        "value": "Wispolitics.com",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 43,
+                        "end": 47,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you please find me the Wispolitics.com game?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 21,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 38,
+                        "value": "The Wannadies",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "search for a painting of The Wannadies"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 74,
+                        "value": "The Assassination of Jesse James by the Coward Robert Ford",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 75,
+                        "end": 79,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me The Assassination of Jesse James by the Coward Robert Ford saga?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 25,
+                        "value": "All That Matters",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for All That Matters"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 22,
+                        "value": "soundtrack",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 23,
+                        "end": 40,
+                        "value": "The Remote Viewer",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the soundtrack The Remote Viewer"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 25,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 38,
+                        "value": "Chelsea Girl",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please search the TV show Chelsea Girl."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 17,
+                        "value": "Top Gear 2",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "I need Top Gear 2, please search it for me."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 35,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 36,
+                        "end": 51,
+                        "value": "A Mouse Divided",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please help me search the TV series A Mouse Divided."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 14,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 18,
+                        "end": 28,
+                        "value": "Music Hole",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find a picture of Music Hole"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 27,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 31,
+                        "end": 46,
+                        "value": "Highlands Today",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "I'm looking for the trailer of Highlands Today"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 44,
+                        "value": "Poison Ivy: The New Seduction",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the movie Poison Ivy: The New Seduction"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 18,
+                        "value": "program",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 40,
+                        "value": "The Last Flight",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "is there a program about The Last Flight?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 36,
+                        "value": "The Purple Vigilantes",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 37,
+                        "end": 41,
+                        "value": "book",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me The Purple Vigilantes book."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 17,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 21,
+                        "end": 89,
+                        "value": "Crayon Shin-chan: The Storm Called: The Battle of the Warring States",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find a photograph of Crayon Shin-chan: The Storm Called: The Battle of the Warring States"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 24,
+                        "value": "game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 38,
+                        "value": "King of Raop",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the game, King of Raop?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 19,
+                        "value": "Infantry",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Search for Infantry"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 18,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 19,
+                        "end": 38,
+                        "value": "Darkness Come Alive",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for the movie Darkness Come Alive"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 25,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 38,
+                        "value": "The Countess",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the movie The Countess?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 48,
+                        "value": "Instrumental Directions",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me the work, Instrumental Directions."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 34,
+                        "value": "Dicey Business",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 35,
+                        "end": 44,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the Dicey Business TV series?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 17,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 18,
+                        "end": 36,
+                        "value": "The Acoustic Album",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the painting The Acoustic Album"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 19,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 21,
+                        "end": 35,
+                        "value": "Colour of Love",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look up the picture, Colour of Love."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 47,
+                        "value": "Never Turn Your Back on a Friend",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 48,
+                        "end": 52,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you search Never Turn Your Back on a Friend show?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 25,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 27,
+                        "end": 51,
+                        "value": "The Girl and the General",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the movie, The Girl and the General?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 13,
+                        "value": "saga",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 35,
+                        "value": "Black Lamp",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need the saga called the Black Lamp"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 32,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 40,
+                        "end": 58,
+                        "value": "PlayMaker Football",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you help me search the album titled PlayMaker Football?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 25,
+                        "value": "soundtrack",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 51,
+                        "value": "Today with Kris Aquino",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Search for the soundtrack of Today with Kris Aquino"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 29,
+                        "end": 38,
+                        "value": "Black Box",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up for the work, Black Box."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 34,
+                        "value": "Platinum Box II",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 35,
+                        "end": 39,
+                        "value": "song",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Platinum Box II song?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 18,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 19,
+                        "end": 31,
+                        "value": "Joy Of A Toy",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the TV series Joy Of A Toy"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 32,
+                        "value": "The Border Patrol",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 33,
+                        "end": 37,
+                        "value": "song",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me The Border Patrol song?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 14,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 18,
+                        "end": 31,
+                        "value": "A Breed Apart",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find a picture of A Breed Apart"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 50,
+                        "value": "The Best of Steely Dan: Then and Now",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 51,
+                        "end": 55,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search The Best of Steely Dan: Then and Now saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 21,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 39,
+                        "value": "Crossbones",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the movie called Crossbones"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 33,
+                        "value": "Future of the Past",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the album Future of the Past"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 25,
+                        "value": "UFC on Fox",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 26,
+                        "end": 30,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Help me search UFC on Fox show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 20,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 28,
+                        "end": 45,
+                        "value": "African Holocaust",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Wish to find a novel called African Holocaust"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 29,
+                        "value": "The Desert Sun",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the album The Desert Sun"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 45,
+                        "value": "The Pickwick Papers",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the creative work The Pickwick Papers"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 32,
+                        "value": "Thirayum Theeravum",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 33,
+                        "end": 43,
+                        "value": "video game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search Thirayum Theeravum video game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 29,
+                        "value": "Drop-In",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 30,
+                        "end": 34,
+                        "value": "song",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the Drop-In song."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 69,
+                        "value": "Blood of Emeralds – The Very Best of Gary Moore Part 2",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the album Blood of Emeralds – The Very Best of Gary Moore Part 2"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 38,
+                        "value": "We No Who U R",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 39,
+                        "end": 43,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you help me find the We No Who U R game?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 26,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 30,
+                        "end": 46,
+                        "value": "The Multiversity",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "can you get me the trailer of The Multiversity?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 40,
+                        "value": "Stairway to Heaven",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me work, Stairway to Heaven?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 34,
+                        "value": "The Lakes of Canada",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 35,
+                        "end": 40,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up The Lakes of Canada album."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 33,
+                        "end": 45,
+                        "value": "The Holy Man",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please find me the work, The Holy Man?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 26,
+                        "value": "Hectic",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 27,
+                        "end": 31,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the Hectic game?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 27,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 44,
+                        "value": "Chicken Noodles",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you get me the painting, Chicken Noodles?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 48,
+                        "value": "Two Faces of My Girlfriend",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 49,
+                        "end": 53,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the Two Faces of My Girlfriend saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 36,
+                        "value": "Sealed with a Kiss",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 37,
+                        "end": 42,
+                        "value": "movie",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for Sealed with a Kiss movie."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 59,
+                        "value": "Stories from the English and Scottish Ballads",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 60,
+                        "end": 64,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me Stories from the English and Scottish Ballads show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 36,
+                        "value": "Infrared Riding Hood",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 37,
+                        "end": 44,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find the Infrared Riding Hood TV show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 40,
+                        "value": "Karobar Economic Daily",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 48,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search the Karobar Economic Daily picture."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 23,
+                        "value": "song",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 41,
+                        "value": "Twist of shadows",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the song, Twist of shadows."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 29,
+                        "value": "The Paper Chase",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 30,
+                        "end": 37,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me The Paper Chase TV show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 16,
+                        "value": "book",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 35,
+                        "end": 51,
+                        "value": "The Rainwater LP",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the book with the title of The Rainwater LP"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 30,
+                        "value": "Rear Mirror",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 31,
+                        "end": 35,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Rear Mirror saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 26,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 34,
+                        "end": 57,
+                        "value": "Administrative Behavior",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need to find the TV series called Administrative Behavior"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 27,
+                        "value": "A New Machine",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 28,
+                        "end": 37,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search A New Machine TV series."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 17,
+                        "value": "game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 18,
+                        "end": 28,
+                        "value": "Whitehorse",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for the game Whitehorse"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 53,
+                        "value": "The Wizard of Stone Mountain",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me the work, The Wizard of Stone Mountain."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 27,
+                        "value": "Ironbound",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 28,
+                        "end": 35,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search the Ironbound picture."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 44,
+                        "value": "They Came to Rob Hong Kong",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 45,
+                        "end": 55,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the They Came to Rob Hong Kong photograph."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 23,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 24,
+                        "end": 38,
+                        "value": "Brotherly Love",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need to see the TV show Brotherly Love"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 36,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 44,
+                        "end": 65,
+                        "value": "The Second Deadly Sin",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please find me the TV series titled The Second Deadly Sin?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 50,
+                        "value": "Around the World in Eighty Days",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 51,
+                        "end": 56,
+                        "value": "movie",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Around the World in Eighty Days movie."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 40,
+                        "end": 72,
+                        "value": "The Lonesome Death of Buck McCoy",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Is there a creative work with the title The Lonesome Death of Buck McCoy"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 42,
+                        "value": "Project Gotham Racing 2",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 43,
+                        "end": 52,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Project Gotham Racing 2 TV series."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 25,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 27,
+                        "end": 35,
+                        "value": "Literacy",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the novel, Literacy?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 37,
+                        "value": "The Mercenary",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please search the work, The Mercenary."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 24,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 55,
+                        "value": "My First Holly Golightly Album",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the television show My First Holly Golightly Album"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 29,
+                        "value": "Rough and Ready",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 30,
+                        "end": 34,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me Rough and Ready saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 25,
+                        "value": "Trance Visionary",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 26,
+                        "end": 30,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Find the Trance Visionary saga"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 18,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 19,
+                        "end": 38,
+                        "value": "Behind closed doors",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for the novel Behind closed doors"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 35,
+                        "end": 53,
+                        "value": "The Cowra Breakout",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for a creative work called The Cowra Breakout"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 41,
+                        "value": "American Hot Wax",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Help me search the work, American Hot Wax."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 21,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 43,
+                        "value": "I Wanna Sex You Up",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for a photograph of I Wanna Sex You Up"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 35,
+                        "value": "The Immortals",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 46,
+                        "end": 50,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Wish to find the work The Immortals that is a show"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 30,
+                        "value": "Chance Pe Dance",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me Chance Pe Dance."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 36,
+                        "value": "Restless Natives",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the Restless Natives?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 35,
+                        "end": 51,
+                        "value": "We Own The Night",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up for the work titled We Own The Night."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 24,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 32,
+                        "end": 43,
+                        "value": "Toxic Waste",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "I need to find the novel called Toxic Waste"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 23,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 31,
+                        "end": 42,
+                        "value": "Neon Nights",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the TV show called Neon Nights"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 8,
+                        "end": 44,
+                        "value": "The Rise and Fall of the Great Lakes",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 45,
+                        "end": 49,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Find me The Rise and Fall of the Great Lakes saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 17,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 36,
+                        "end": 44,
+                        "value": "Twitches",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the movie with the title of Twitches"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 47,
+                        "value": "Jack Johnson En Concert",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 48,
+                        "end": 55,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you please find the Jack Johnson En Concert picture?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 23,
+                        "value": "book",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 24,
+                        "end": 43,
+                        "value": "Step Into My Groove",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me the book Step Into My Groove."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 37,
+                        "value": "Short Program",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 38,
+                        "end": 42,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please help me find the Short Program saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 28,
+                        "value": "City of Scars",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you search City of Scars?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 23,
+                        "end": 33,
+                        "value": "D.R.E.A.M.",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please find me D.R.E.A.M.?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 47,
+                        "end": 72,
+                        "value": "With or Without Your Help",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the creative work with the name of With or Without Your Help"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 19,
+                        "value": "video game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 20,
+                        "end": 34,
+                        "value": "Out of My Head",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the video game Out of My Head"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 34,
+                        "value": "Girl on the Trapeze",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the movie Girl on the Trapeze"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 40,
+                        "value": "Earth Intruders",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me the work, Earth Intruders."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 17,
+                        "value": "show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 18,
+                        "end": 29,
+                        "value": "Card Hunter",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for the show Card Hunter"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 48,
+                        "value": "Growing Artichokes in Mimongo",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 49,
+                        "end": 54,
+                        "value": "movie",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me the Growing Artichokes in Mimongo movie?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 29,
+                        "value": "Shockwave",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 30,
+                        "end": 37,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the Shockwave picture?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 31,
+                        "value": "Stand Proud",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 32,
+                        "end": 36,
+                        "value": "book",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the Stand Proud book?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 43,
+                        "value": "Back When I Knew It All",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 44,
+                        "end": 49,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the Back When I Knew It All album?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 17,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 45,
+                        "value": "Ressha Sentai ToQger",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the novel called Ressha Sentai ToQger"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 38,
+                        "value": "Ace of Spades",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me the work, Ace of Spades."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 29,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 37,
+                        "end": 76,
+                        "value": "A Monetary History of the United States",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you search the photograph titled A Monetary History of the United States "
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 37,
+                        "value": "Beauty on the Fire",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 38,
+                        "end": 42,
+                        "value": "show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Beauty on the Fire show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 55,
+                        "value": "The Testament of Gideon Mack",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "look for the creative work The Testament of Gideon Mack"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 35,
+                        "value": "Twilight Is Gone",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you search for Twilight Is Gone?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 18,
+                        "value": "movie",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 19,
+                        "end": 42,
+                        "value": "Songs in the Key of You",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for the movie Songs in the Key of You"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 34,
+                        "value": "Tammy and the T-Rex",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up Tammy and the T-Rex work."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 42,
+                        "value": "Falls Church News-Press",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 43,
+                        "end": 48,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Falls Church News-Press album."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 30,
+                        "value": "Club Nation",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 31,
+                        "end": 35,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me the Club Nation game?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 48,
+                        "value": "Scud: The Disposable Assassin",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 49,
+                        "end": 57,
+                        "value": "painting",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Scud: The Disposable Assassin painting."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 36,
+                        "end": 46,
+                        "value": "The Prayer",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Want to find a creative work called The Prayer"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 29,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 31,
+                        "end": 45,
+                        "value": "The New People",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the photograph, The New People."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 22,
+                        "value": "song",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 23,
+                        "end": 40,
+                        "value": "Poomadhathe Pennu",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please search the song Poomadhathe Pennu."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 33,
+                        "value": "Walk the River",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Want a work called Walk the River"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 26,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 31,
+                        "end": 45,
+                        "value": "Crimson Climax",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the photograph the Crimson Climax"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 10,
+                        "end": 20,
+                        "value": "video game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 28,
+                        "end": 56,
+                        "value": "Dating in the Dark Australia",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me a video game called Dating in the Dark Australia"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 72,
+                        "value": "When the Lovelight Starts Shining Through His Eyes",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 73,
+                        "end": 82,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the When the Lovelight Starts Shining Through His Eyes TV series."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 33,
+                        "end": 40,
+                        "value": "Goodbye",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please find me the work, Goodbye?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 27,
+                        "value": "Encheiridion",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the album Encheiridion"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 23,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 24,
+                        "end": 34,
+                        "value": "The Movies",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please search TV series The Movies."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 53,
+                        "end": 89,
+                        "value": "Journal of Pharmacy and Pharmacology",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "I am looking for any creative work with the title of Journal of Pharmacy and Pharmacology"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 49,
+                        "value": "Children of Jerusalem: Yehuda",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 50,
+                        "end": 55,
+                        "value": "movie",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the Children of Jerusalem: Yehuda movie?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 18,
+                        "value": "song",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 37,
+                        "end": 61,
+                        "value": "Hollywood Star Playhouse",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for a song with the title of Hollywood Star Playhouse"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 18,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 19,
+                        "end": 33,
+                        "value": "Rings of Steel",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for the novel Rings of Steel"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 14,
+                        "value": "album",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 15,
+                        "end": 32,
+                        "value": "Follow That Camel",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the album Follow That Camel"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 16,
+                        "value": "show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 34,
+                        "end": 42,
+                        "value": "For Hope",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find me the show with the name of For Hope"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 29,
+                        "value": "Magic Hour",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 30,
+                        "end": 34,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Magic Hour saga."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 28,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 36,
+                        "end": 51,
+                        "value": "Across the Line",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the painting titled Across the Line?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 47,
+                        "value": "An InCONvenient Truth",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the work, An InCONvenient Truth?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 51,
+                        "value": "Irv Gotti Presents: The Murderers",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 52,
+                        "end": 59,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search the Irv Gotti Presents: The Murderers picture."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 28,
+                        "value": "Hat Trick",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 29,
+                        "end": 34,
+                        "value": "novel",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me the Hat Trick novel."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 28,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 65,
+                        "value": "The Tibetan Book of Living and Dying",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "look for the television show The Tibetan Book of Living and Dying"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 5,
+                        "end": 17,
+                        "value": "My Only Wish",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find My Only Wish in some form of creative work"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 23,
+                        "end": 40,
+                        "value": "Brilliant! Tragic",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the creative work Brilliant! Tragic!"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 35,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 39,
+                        "end": 51,
+                        "value": "Glinda of Oz",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "do you know if there is a TV series of Glinda of Oz?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 57,
+                        "value": "Meltdown – Days of Destruction",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "look for the creative work Meltdown – Days of Destruction"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 37,
+                        "value": "Happy Birthday BBC Two",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me Happy Birthday BBC Two."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 23,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 28,
+                        "end": 35,
+                        "value": "Tin Toy",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the TV show the Tin Toy"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 27,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 41,
+                        "value": "Modern times",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the painting, Modern times."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 48,
+                        "value": "British Journal of Dermatology",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 49,
+                        "end": 53,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the British Journal of Dermatology game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 20,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 24,
+                        "end": 96,
+                        "value": "Guitar Heaven: Santana Performs the Greatest Guitar Classics of All Time",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Look for the trailer of Guitar Heaven: Santana Performs the Greatest Guitar Classics of All Time"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 23,
+                        "end": 67,
+                        "value": "The Biggest Loser Brunei: The Spirit of Life",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 68,
+                        "end": 78,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you please find me The Biggest Loser Brunei: The Spirit of Life photograph?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 23,
+                        "end": 30,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 35,
+                        "end": 58,
+                        "value": "An Experiment with Time",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Would like to find the trailer for An Experiment with Time"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 34,
+                        "value": "video game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 35,
+                        "end": 70,
+                        "value": "John Michael Montgomery discography",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please help me find the video game John Michael Montgomery discography."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 22,
+                        "value": "novel",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 30,
+                        "end": 58,
+                        "value": "The Wizard of Stone Mountain",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Wish to read the novel called The Wizard of Stone Mountain"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 25,
+                        "end": 39,
+                        "value": "Author! Author",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 48,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you help me find the Author! Author! trailer?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 11,
+                        "value": "show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 19,
+                        "end": 33,
+                        "value": "The Inheritors",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find a show called The Inheritors"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 25,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 33,
+                        "end": 49,
+                        "value": "The Nine Maidens",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Want to find a photograph called The Nine Maidens"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 33,
+                        "value": "The Hanging Valley",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 34,
+                        "end": 39,
+                        "value": "movie",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please find me The Hanging Valley movie."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 36,
+                        "end": 54,
+                        "value": "Unholy Confessions",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need a creative work with the title Unholy Confessions"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 33,
+                        "value": "Just the Hits 2",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 34,
+                        "end": 41,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the Just the Hits 2 TV show."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 28,
+                        "value": "Bireswar",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 29,
+                        "end": 34,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you look up the Bireswar album?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 44,
+                        "value": "Columbia Records 1958–1986",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please search for Columbia Records 1958–1986."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 24,
+                        "end": 32,
+                        "value": "Journals",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please find me, Journals?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 30,
+                        "value": "Maldeamores",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 31,
+                        "end": 35,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you get me the Maldeamores saga?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 31,
+                        "value": "game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 33,
+                        "end": 46,
+                        "value": "The Islanders",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please look up the game, The Islanders?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 37,
+                        "value": "Packed to the Rafters",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find the Packed to the Rafters work."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 35,
+                        "value": "Glass Cloud – Single",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please find me Glass Cloud – Single."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 24,
+                        "value": "The Olympic Champ",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 25,
+                        "end": 29,
+                        "value": "book",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Search The Olympic Champ book."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 51,
+                        "value": "The National Medical Journal of India",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 52,
+                        "end": 56,
+                        "value": "game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me The National Medical Journal of India game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 25,
+                        "value": "video game",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 26,
+                        "end": 53,
+                        "value": "The Book of Heroic Failures",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Search for the video game The Book of Heroic Failures"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 23,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 28,
+                        "end": 42,
+                        "value": "Shaolin Temple",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the trailer for Shaolin Temple"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 57,
+                        "value": "Cultural depictions of Matthew Shepard",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 58,
+                        "end": 67,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Cultural depictions of Matthew Shepard TV series."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 21,
+                        "end": 47,
+                        "value": "Preaching to the Perverted",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you help me find Preaching to the Perverted?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 28,
+                        "value": "Out There",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 29,
+                        "end": 36,
+                        "value": "picture",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Out There picture."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 22,
+                        "value": "Edgemont",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 23,
+                        "end": 33,
+                        "value": "soundtrack",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me Edgemont soundtrack."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 23,
+                        "end": 38,
+                        "value": "Season of Glass",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you please find me Season of Glass?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 36,
+                        "end": 48,
+                        "value": "In my memory",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Looking for the crative work called In my memory"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 20,
+                        "value": "picture",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 24,
+                        "end": 41,
+                        "value": "Darker than black",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Search for a picture of Darker than black"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 18,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 19,
+                        "end": 39,
+                        "value": "Right here right now",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Find the TV series Right here right now"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 23,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 27,
+                        "end": 58,
+                        "value": "Ju-On: The Beginning of the End",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Wish to fins a painting by Ju-On: The Beginning of the End"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 33,
+                        "value": "The Source Family",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 34,
+                        "end": 39,
+                        "value": "novel",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me The Source Family novel?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 30,
+                        "value": "painting",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 31,
+                        "end": 53,
+                        "value": "Live at the Tokyo Dome",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please search for the painting Live at the Tokyo Dome."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 63,
+                        "value": "Chet Baker with Fifty Italian Strings",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you find me the work, Chet Baker with Fifty Italian Strings?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 27,
+                        "value": "soundtrack",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 35,
+                        "end": 53,
+                        "value": "Fire in the Valley",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Need to find the soundtrack called Fire in the Valley"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 23,
+                        "value": "book",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 25,
+                        "end": 43,
+                        "value": "The Wacken Carnage",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the book, The Wacken Carnage."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 70,
+                        "value": "Armageddon March Eternal – Symphonies of Slit Wrists",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 71,
+                        "end": 78,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the Armageddon March Eternal – Symphonies of Slit Wrists trailer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 38,
+                        "value": "East Asia Image Collection",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 39,
+                        "end": 44,
+                        "value": "movie",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Find me the East Asia Image Collection movie."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 22,
+                        "value": "House of Stairs",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "get me House of Stairs"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 41,
+                        "value": "Willy and the Poor Boys",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 42,
+                        "end": 46,
+                        "value": "song",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for Willy and the Poor Boys song."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 44,
+                        "value": "WWE Legends of Wrestling",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 45,
+                        "end": 49,
+                        "value": "book",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the WWE Legends of Wrestling book?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 27,
+                        "value": "TV show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 29,
+                        "end": 60,
+                        "value": "The Great Rock 'n' Roll Swindle",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Can you look up the TV show, The Great Rock 'n' Roll Swindle?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 36,
+                        "value": "Utility Directory",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 37,
+                        "end": 42,
+                        "value": "album",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please look up the Utility Directory album."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 40,
+                        "value": "Puppet on a String",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 51,
+                        "value": "video game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the Puppet on a String video game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 29,
+                        "value": "Youth Against Christ",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 30,
+                        "end": 34,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Find the Youth Against Christ saga"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 33,
+                        "value": "Lost My Way",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 34,
+                        "end": 41,
+                        "value": "trailer",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search for the Lost My Way trailer."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 34,
+                        "value": "television show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 36,
+                        "end": 60,
+                        "value": "Noel Hill & Tony Linnane",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the television show, Noel Hill & Tony Linnane."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 32,
+                        "value": "The World of Music",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 33,
+                        "end": 41,
+                        "value": "painting",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please search The World of Music painting."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 40,
+                        "value": "The Lateness of the Hour",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 41,
+                        "end": 51,
+                        "value": "photograph",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you look up The Lateness of the Hour photograph?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 22,
+                        "value": "Mystery Woman",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 23,
+                        "end": 27,
+                        "value": "saga",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Find the Mystery Woman saga"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 72,
+                        "value": "Armed America: Portraits of Gun Owners in Their Homes",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 73,
+                        "end": 88,
+                        "value": "television show",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you search the Armed America: Portraits of Gun Owners in Their Homes television show?"
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 27,
+                        "value": "Follow Me",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 28,
+                        "end": 38,
+                        "value": "video game",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Please get me the Follow Me video game."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 23,
+                        "value": "show",
+                        "entity": "object_type"
+                    },
+                    {
+                        "start": 24,
+                        "end": 46,
+                        "value": "Statue of James Outram",
+                        "entity": "object_name"
+                    }
+                ],
+                "text": "Please look up the show Statue of James Outram."
+            },
+            {
+                "intent": "SearchCreativeWork",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 33,
+                        "value": "I Am Very Far",
+                        "entity": "object_name"
+                    },
+                    {
+                        "start": 34,
+                        "end": 43,
+                        "value": "TV series",
+                        "entity": "object_type"
+                    }
+                ],
+                "text": "Can you find me the I Am Very Far TV series?"
+            }
+        ]
+    }
+}
