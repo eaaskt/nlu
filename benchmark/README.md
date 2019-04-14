@@ -273,7 +273,7 @@ quantity            | 0.600000
 
 
 #### Overall F1 score
-**0.9857**
+**0.90**
 
 ### Slot filling
 * F1 score: 0.921440
