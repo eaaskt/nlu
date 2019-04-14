@@ -44,7 +44,7 @@ distance            |0.750000
 ground_service      |0.986301
 
 #### Overall F1 (micro-averaged)
-**0.90**
+**0.93**
 
 ### Slot filling
 * F1 score: 0.160543
