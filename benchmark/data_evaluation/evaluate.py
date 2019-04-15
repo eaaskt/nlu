@@ -93,6 +93,14 @@ def extract_slot_labels(validation_file, response_file, verbose=False):
             print('Ids not matching! Something went wrong in the response file')
             print('%d != %d' % (v['id'], r['id']))
             return
+        if len(v['seq_labels']) != len(r['labels']):
+            print('Mismatch in sequences length!')
+            return
+        for l in range(len(v['seq_labels'])):
+            # For atis dataset, some entity names contain '.', which had to be removed to work with wit.ai
+            v['seq_labels'][l] = str(v['seq_labels'][l].replace('.', '_'))
+            r['labels'][l] = str(r['labels'][l].replace('.', '_'))
+
         y_true.append(v['seq_labels'])
         y_pred.append(r['labels'])
 
@@ -229,30 +237,30 @@ if __name__ == '__main__':
             files.append((file_line[0], file_line[1]))
 
     # Slot filling evaluation
-    # total_y_true = []
-    # total_y_pred = []
-    # for f1, f2 in files:
-    #     y_true, y_pred = extract_slot_labels(f1, f2)
-    #
-    #     print(f1.split('\\')[-1])
-    #     scores = eval_seq_scores(y_true, y_pred)
-    #     print('F1 score: %lf' % scores['f1'])
-    #     print('Accuracy: %lf' % scores['accuracy'])
-    #     print('Precision: %lf' % scores['precision'])
-    #     print('Recall: %lf' % scores['recall'])
-    #     print(scores['clf_report'])
-    #
-    #     total_y_true += y_true
-    #     total_y_pred += y_pred
-    #
-    # # Overall slot filling evaluation
-    # scores = eval_seq_scores(total_y_true, total_y_pred)
-    # print('Overall evaluation')
-    # print('F1 score: %lf' % scores['f1'])
-    # print('Accuracy: %lf' % scores['accuracy'])
-    # print('Precision: %lf' % scores['precision'])
-    # print('Recall: %lf' % scores['recall'])
-    # print(scores['clf_report'])
+    total_y_true = []
+    total_y_pred = []
+    for f1, f2 in files:
+        y_true, y_pred = extract_slot_labels(f1, f2)
+
+        print(f1.split('\\')[-1])
+        scores = eval_seq_scores(y_true, y_pred)
+        print('F1 score: %lf' % scores['f1'])
+        print('Accuracy: %lf' % scores['accuracy'])
+        print('Precision: %lf' % scores['precision'])
+        print('Recall: %lf' % scores['recall'])
+        print(scores['clf_report'])
+
+        total_y_true += y_true
+        total_y_pred += y_pred
+
+    # Overall slot filling evaluation
+    scores = eval_seq_scores(total_y_true, total_y_pred)
+    print('Overall evaluation')
+    print('F1 score: %lf' % scores['f1'])
+    print('Accuracy: %lf' % scores['accuracy'])
+    print('Precision: %lf' % scores['precision'])
+    print('Recall: %lf' % scores['recall'])
+    print(scores['clf_report'])
 
     # Intent detection evaluation
     intents_true = []
