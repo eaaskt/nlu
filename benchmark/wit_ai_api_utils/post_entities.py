@@ -8,18 +8,13 @@ url = ''
 TOKEN = ''
 
 
-def read_config_file(config_file, app_name):
+def read_config_file(config_file):
     global url
     global TOKEN
     config = configparser.ConfigParser()
     config.read(config_file)
     url = config['URL']['post_entities_url']
-    if app_name == 'snips':
-        TOKEN = config['TOKEN']['snips_token']
-    elif app_name == 'atis':
-        TOKEN = config['TOKEN']['atis_token']
-    else:
-        TOKEN = config['TOKEN']['test_token']
+    TOKEN = config['TOKEN']['token']
 
 
 def post_entities(input_file):
@@ -52,8 +47,7 @@ if __name__ == '__main__':
                 usage="post_entities.py <config_file> <input_file> <app_name")
     parser.add_argument('config_file', help='Config file')
     parser.add_argument('input_file', help='Input file')
-    parser.add_argument('app', help='App to post data to')
     args = parser.parse_args()
-    read_config_file(args.config_file, args.app)
+    read_config_file(args.config_file)
     post_entities(input_file=args.input_file)
 
