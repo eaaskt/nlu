@@ -18,7 +18,7 @@ Accuracy = # of tokens correctly detected by SLU / # of total tokens
 ## ATIS dataset 
 
 ### Intent detection
-![Alt text](pics/atis_confusionmat.PNG?raw=true "Confustion matrix for ATIS")
+![Alt text](pics/atis_confusionmat.png?raw=true "Confusion matrix for ATIS")
 
 | |f1|
 |-----|-----|
@@ -47,10 +47,10 @@ ground_service      |0.986301
 **0.93**
 
 ### Slot filling
-* F1 score: 0.160543
-* Accuracy: 0.663467
-* Precision: 0.158039
-* Recall: 0.163128
+* F1 score: 0.919528
+* Accuracy: 0.962274
+* Precision: 0.905087
+* Recall: 0.934438
 
 ### After balancing the dataset
 We modified the dataset by removing the original 'flight' intent and grouping all 'x+something' intents
@@ -106,80 +106,6 @@ SearchScreeningEvent| 0.942408
 
 #### Overall F1 score
 **0.97**
-
-#### Incorrect intent predictions
-
-* Can you add last of the ghetto astronauts to the playlist called black sabbath the dio years?
-    - True: **AddToPlaylist**
-    - Pred: **SearchCreativeWork**
-
-* Lets eat near Oakfield 17 seconds from now at Ted Peters Famous Smoked Fish
-    - True: **BookRestaurant**
-    - Pred: **SearchScreeningEvent**
-
-* overcast on State Holiday in Pawling Nature Reserve and neighboring places
-    - True: **GetWeather**
-    - Pred: **x**
-
-* Where is Belgium located
-    - True: **GetWeather**
-    - Pred: **x**
-
-* Live In L.aJoseph Meyer please
-    - True: **PlayMusic**
-    - Pred: **x**
-
-* Please tune into Chieko Ochi's good music
-    - True: **PlayMusic**
-    - Pred: **AddToPlaylist**
-
-* play the top-20 Nawang Khechog soundtrack
-    - True: **PlayMusic**
-    - Pred: **SearchCreativeWork**
-
-* Put What Color Is Your Sky by Alana Davis on the stereo.
-    - True: **PlayMusic**
-    - Pred: **AddToPlaylist**
-
-* i want to see JLA Adventures: Trapped In Time
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* Where can I see The Prime Ministers: The Pioneers
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* Can I see Ellis Island Revisited in 1 minute
-    - True: **SearchScreeningEvent**
-    - Pred: **x**
-
-* show me the schedule for The Oblong Box
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* show the closest movie theatre that shows Boycott
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* I want to see Medal for the General
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* I want to see Fear Chamber.
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* I want to see Shattered Image.
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* I want to see Outcast.
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
-
-* Can you check the timings for Super Sweet 16: The Movie?
-    - True: **SearchScreeningEvent**
-    - Pred: **SearchCreativeWork**
 
 ### Slot filling
 #### AddToPlaylist
@@ -239,6 +165,12 @@ PlayMusic| 0.69| 0.55| 0.56| 0.56
 RateBook| 0.60| 0.55| 0.52| 0.53
 SearchCreativeWork|0.48 | 0.20| 0.25| 0.22
 SearchScreeningEvent| 0.69| 0.54| 0.67| 0.60
+
+#### Overall slot filling scores
+* F1 score: **0.629639**
+* Accuracy: 0.733207
+* Precision: 0.575450
+* Recall: 0.695095
 
 
 # Rasa benchmark
@@ -346,8 +278,8 @@ SearchScreeningEvent| 0.963731
 * Precision: 0.933014
 * Recall: 0.919811
 
-### Overall slot filling results
-* F1 score: 0.912665
+#### Overall slot filling scores
+* F1 score: **0.912665**
 * Accuracy: 0.940572
 * Precision: 0.919638
 * Recall: 0.905797

@@ -3,7 +3,15 @@ import requests
 import argparse
 import configparser
 import datetime
-import data_evaluation.eval_converter
+
+import sys
+import os
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
+import data_evaluation.eval_converter as eval_conv
 
 url = ''
 TOKEN = ''
@@ -48,8 +56,8 @@ def get_messages(input_file, output_file, failed_file):
                 failed_list.append(sample)
             else:
                 # process response to save in file
-                resp = json.loads(r.content)
-                resp = data_evaluation.eval_converter.convert_iob_prediction(resp)
+                resp = json.loads(r.content.decode('utf-8'))
+                resp = eval_conv.convert_iob_prediction(resp)
                 resp['id'] = sample['id']
                 response.append(resp)
 
@@ -66,7 +74,7 @@ def get_messages(input_file, output_file, failed_file):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
                 description="Get results from Wit.ai for validation set",
-                usage="post_entities.py <config_file> <input_file> <failed_samples_file> <app_name>")
+                usage="post_entities.py <config_file> <input_file> <output_file> <failed_samples_file> <app_name>")
     parser.add_argument('config_file', help='Config file')
     parser.add_argument('input_file', help='Input file')
     parser.add_argument('output_file', help='Output file')

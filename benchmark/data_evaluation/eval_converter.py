@@ -43,7 +43,12 @@ def convert_iob_prediction(item):
         if entity_name != 'intent':
             for ent in entity_list:
                 seq_idx = words_before_index(text, ent['_start'])
-                entity_len = len(ent['value'].split(' '))
+                entity_value = ent['value']
+                entity_text_value = text[ent['_start']:ent['_end']]
+                if len(entity_value.strip().split(' ')) != len(entity_text_value.strip().split(' ')):
+                    entity_len = len(entity_text_value.strip().split(' '))
+                else:
+                    entity_len = len(entity_value.split(' '))
                 seq_labels[seq_idx] = 'B-' + entity_name
                 for w in range(1, entity_len):
                     seq_labels[seq_idx + w] = 'I-' + entity_name
@@ -87,4 +92,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
     convert(args.input_file, args.output_file, pred=args.pred, ids=args.ids)
     print('Converted results saved in {}'.format(args.output_file))
-
