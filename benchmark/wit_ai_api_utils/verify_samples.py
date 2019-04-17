@@ -17,21 +17,16 @@ url = ''
 TOKEN = ''
 
 
-def read_config_file(config_file, app_name):
+def read_config_file(config_file):
     global url
     global TOKEN
     config = configparser.ConfigParser()
     config.read(config_file)
     url = config['URL']['get_message']
-    if app_name == 'snips':
-        TOKEN = config['TOKEN']['snips_token']
-    elif app_name == 'atis':
-        TOKEN = config['TOKEN']['atis_token']
-    else:
-        TOKEN = config['TOKEN']['test_token']
+    TOKEN = config['TOKEN']['token']
 
 
-def get_messages(input_file, output_file, failed_file):
+def get_messages(input_file, output_file):
     global url
     now = datetime.datetime.now()
     url = url + str(now.year) + '{num:02d}'.format(num=now.month) + '{num:02d}'.format(num=now.day) + '&q='
@@ -45,7 +40,6 @@ def get_messages(input_file, output_file, failed_file):
     with open(input_file) as inf:
         json_data = json.loads(inf.read())
 
-    failed_list = []
     response = []
     for sample in json_data:
         sample_url = url + sample['text'] + "&verbose=True"
@@ -53,7 +47,7 @@ def get_messages(input_file, output_file, failed_file):
             r = requests.get(sample_url, headers=headers)
             print(r.content)
             if r.status_code != 200:
-                failed_list.append(sample)
+                print(sample)
             else:
                 # process response to save in file
                 resp = json.loads(r.content.decode('utf-8'))
@@ -63,9 +57,6 @@ def get_messages(input_file, output_file, failed_file):
 
         except Exception as e:
             print(e)
-
-    with open(failed_file, "w") as ff:
-        json.dump(failed_list, ff)
 
     with open(output_file, "w") as of:
         json.dump(response, of, indent=4)
@@ -78,9 +69,7 @@ if __name__ == '__main__':
     parser.add_argument('config_file', help='Config file')
     parser.add_argument('input_file', help='Input file')
     parser.add_argument('output_file', help='Output file')
-    parser.add_argument('failed_file', help='failed file')
-    parser.add_argument('app', help='App to post data to')
     args = parser.parse_args()
-    read_config_file(args.config_file, args.app)
-    get_messages(input_file=args.input_file, failed_file=args.failed_file, output_file=args.output_file)
+    read_config_file(args.config_file)
+    get_messages(input_file=args.input_file, output_file=args.output_file)
 
