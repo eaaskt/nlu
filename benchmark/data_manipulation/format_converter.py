@@ -54,7 +54,7 @@ def convert_entry_snips(itm, intent, output_format):
 
 
 def convert(input_path, output_path, init_format, output_format):
-    with open(input_path, errors='replace') as f:
+    with open(input_path, errors='replace', encoding='utf-8-sig') as f:
         data = json.load(f)
     if init_format == InputFormat.snips:
         assert len(data.keys()) == 1
