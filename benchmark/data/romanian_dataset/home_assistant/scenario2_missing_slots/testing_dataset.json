@@ -1,0 +1,4086 @@
+﻿{
+	"rasa_nlu_data": {
+		"common_examples": [
+			{
+				"text": "Aprinde curentul in sufragerie",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "loc",
+						"start": 20,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "poti sa pornesti becurile",
+				"intent": "aprindeLumina",
+				"entities": []
+			},
+			{
+				"text": "Buna Pepper, imi poti porni becurile in dormitor",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 40,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "poti sa pornesti becul in camara",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 32,
+						"entity": "loc",
+						"start": 26,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, imi poti porni becurile in camera de zi",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 40,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "porneste becul",
+				"intent": "aprindeLumina",
+				"entities": []
+			},
+			{
+				"text": "porneste becul in camara",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 24,
+						"entity": "loc",
+						"start": 18,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "imi poti porni becul in dormitor",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 32,
+						"entity": "loc",
+						"start": 24,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa pornesti becul in camara",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "loc",
+						"start": 29,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, imi poti porni becul",
+				"intent": "aprindeLumina",
+				"entities": []
+			},
+			{
+				"text": "porneste becurile in pivnita",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "loc",
+						"start": 21,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, porneste becurile in camera de zi",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "loc",
+						"start": 34,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "porneste becul in dormitor",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 26,
+						"entity": "loc",
+						"start": 18,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, poti sa pornesti becurile in dormitor",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 42,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "poti sa pornesti becurile in camara",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "loc",
+						"start": 29,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "imi poti porni becul in pivnita",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 31,
+						"entity": "loc",
+						"start": 24,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, porneste becul",
+				"intent": "aprindeLumina",
+				"entities": []
+			},
+			{
+				"text": "Buna Pepper, poti sa pornesti becurile in camera de zi",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 54,
+						"entity": "loc",
+						"start": 42,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, porneste becurile in pivnita",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "loc",
+						"start": 34,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa pornesti becul in camera de zi",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "loc",
+						"start": 29,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "imi poti porni becul in camara",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "loc",
+						"start": 24,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, imi poti porni becurile",
+				"intent": "aprindeLumina",
+				"entities": []
+			},
+			{
+				"text": "imi poti porni becurile in dormitor",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "loc",
+						"start": 27,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "porneste becul in camera de zi",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "loc",
+						"start": 18,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, imi poti porni becul in camera de zi",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 37,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, porneste becurile in dormitor",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 42,
+						"entity": "loc",
+						"start": 34,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "imi poti porni becurile in camara",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 33,
+						"entity": "loc",
+						"start": 27,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, imi poti porni becul in pivnita",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 44,
+						"entity": "loc",
+						"start": 37,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "poti sa pornesti becurile in pivnita",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 36,
+						"entity": "loc",
+						"start": 29,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa pornesti becul in dormitor",
+				"intent": "aprindeLumina",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "loc",
+						"start": 29,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Pepper, stinge lumina in sufragerie",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "loc",
+						"start": 25,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "opreste becurile",
+				"intent": "stingeLumina",
+				"entities": []
+			},
+			{
+				"text": "poti inchide becurile in camara",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 31,
+						"entity": "loc",
+						"start": 25,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, as vrea sa opresti becul in dormitor",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 41,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "inchide becurile in dormitor",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "loc",
+						"start": 20,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, opreste becurile",
+				"intent": "stingeLumina",
+				"entities": []
+			},
+			{
+				"text": "inchide becurile in camara",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 26,
+						"entity": "loc",
+						"start": 20,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "opreste becul in dormitor",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 25,
+						"entity": "loc",
+						"start": 17,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa opresti becurile in pivnita",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "loc",
+						"start": 31,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "poti inchide becurile",
+				"intent": "stingeLumina",
+				"entities": []
+			},
+			{
+				"text": "poti inchide becul in pivnita",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "loc",
+						"start": 22,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "imi poti opri becul in camara",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "loc",
+						"start": 23,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, as vrea sa opresti becurile in dormitor",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 44,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "opreste becul in pivnita",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 24,
+						"entity": "loc",
+						"start": 17,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, poti inchide becul",
+				"intent": "stingeLumina",
+				"entities": []
+			},
+			{
+				"text": "inchide becul in camera de zi",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "loc",
+						"start": 17,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, as vrea sa opresti becurile in pivnita",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 51,
+						"entity": "loc",
+						"start": 44,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, opreste becul",
+				"intent": "stingeLumina",
+				"entities": []
+			},
+			{
+				"text": "poti inchide becul in camara",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "loc",
+						"start": 22,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "poti inchide becurile in camera de zi",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "loc",
+						"start": 25,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "opreste becurile in camara",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 26,
+						"entity": "loc",
+						"start": 20,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, imi poti opri becul in camera de zi",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 36,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "poti inchide becul in dormitor",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "loc",
+						"start": 22,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, as vrea sa opresti becurile",
+				"intent": "stingeLumina",
+				"entities": []
+			},
+			{
+				"text": "imi poti opri becurile in camera de zi",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "loc",
+						"start": 26,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, poti inchide becurile in dormitor",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "loc",
+						"start": 38,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, imi poti opri becurile in camera de zi",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 51,
+						"entity": "loc",
+						"start": 39,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Buna Pepper, inchide becurile in camara",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "loc",
+						"start": 33,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "inchide becul in pivnita",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 24,
+						"entity": "loc",
+						"start": 17,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "inchide becurile in pivnita",
+				"intent": "stingeLumina",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "loc",
+						"start": 20,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "Salut, as vrea sa scazi intensitatea iluminatului in curte la 1",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 58,
+						"entity": "loc",
+						"start": 53,
+						"value": "curte"
+					},
+					{
+						"end": 63,
+						"entity": "nivel",
+						"start": 62,
+						"value": "1"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica intensitatea becurilor in dormitor",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "loc",
+						"start": 38,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Pepper redu lumina in camera de zi",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "loc",
+						"start": 22,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica intensitatea becurilor in dormitor la sfert",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "loc",
+						"start": 38,
+						"value": "dormitor"
+					},
+					{
+						"end": 55,
+						"entity": "nivel",
+						"start": 50,
+						"value": "sfert"
+					}
+				]
+			},
+			{
+				"text": "Pepper fa mai mica intensitatea becurilor",
+				"intent": "scadeIntensitateLumina",
+				"entities": []
+			},
+			{
+				"text": "fa mai mica lumina",
+				"intent": "scadeIntensitateLumina",
+				"entities": []
+			},
+			{
+				"text": "fa mai mica intensitatea becurilor in camera de zi la 3",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 38,
+						"value": "camera de zi"
+					},
+					{
+						"end": 55,
+						"entity": "nivel",
+						"start": 54,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "Salut, as vrea sa reduci intensitatea becurilor in camera de zi la sfert",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 63,
+						"entity": "loc",
+						"start": 51,
+						"value": "camera de zi"
+					},
+					{
+						"end": 72,
+						"entity": "nivel",
+						"start": 67,
+						"value": "sfert"
+					}
+				]
+			},
+			{
+				"text": "diminueaza intensitatea becurilor in camara",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "loc",
+						"start": 37,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica intensitatea becurilor in camera de zi la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 38,
+						"value": "camera de zi"
+					},
+					{
+						"end": 55,
+						"entity": "nivel",
+						"start": 54,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa reduci intensitatea becurilor in pivnita la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 51,
+						"entity": "loc",
+						"start": 44,
+						"value": "pivnita"
+					},
+					{
+						"end": 56,
+						"entity": "nivel",
+						"start": 55,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "Salut, fa mai mica intensitatea becurilor in dormitor la sfert",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 53,
+						"entity": "loc",
+						"start": 45,
+						"value": "dormitor"
+					},
+					{
+						"end": 62,
+						"entity": "nivel",
+						"start": 57,
+						"value": "sfert"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa reduci intensitatea becurilor in camara la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 54,
+						"entity": "loc",
+						"start": 48,
+						"value": "camara"
+					},
+					{
+						"end": 59,
+						"entity": "nivel",
+						"start": 58,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "Pepper redu intensitatea becurilor in camara",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 44,
+						"entity": "loc",
+						"start": 38,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Pepper redu lumina in pivnita",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "loc",
+						"start": 22,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "Pepper diminueaza intensitatea becurilor in camara la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 44,
+						"value": "camara"
+					},
+					{
+						"end": 55,
+						"entity": "nivel",
+						"start": 54,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa reduci intensitatea becurilor in camara la sfert",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 54,
+						"entity": "loc",
+						"start": 48,
+						"value": "camara"
+					},
+					{
+						"end": 63,
+						"entity": "nivel",
+						"start": 58,
+						"value": "sfert"
+					}
+				]
+			},
+			{
+				"text": "Pepper fa mai mica intensitatea becurilor in pivnita la 3",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 45,
+						"value": "pivnita"
+					},
+					{
+						"end": 57,
+						"entity": "nivel",
+						"start": 56,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "Pepper redu intensitatea becurilor in dormitor",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "loc",
+						"start": 38,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "poti sa reduci intensitatea becurilor in dormitor la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 41,
+						"value": "dormitor"
+					},
+					{
+						"end": 54,
+						"entity": "nivel",
+						"start": 53,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica intensitatea becurilor",
+				"intent": "scadeIntensitateLumina",
+				"entities": []
+			},
+			{
+				"text": "Salut, redu intensitatea becurilor in camera de zi la sfert",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 38,
+						"value": "camera de zi"
+					},
+					{
+						"end": 59,
+						"entity": "nivel",
+						"start": 54,
+						"value": "sfert"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa reduci intensitatea becurilor in pivnita",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 55,
+						"entity": "loc",
+						"start": 48,
+						"value": "pivnita"
+					}
+				]
+			},
+			{
+				"text": "Salut, fa mai mica intensitatea becurilor in camera de zi la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 57,
+						"entity": "loc",
+						"start": 45,
+						"value": "camera de zi"
+					},
+					{
+						"end": 62,
+						"entity": "nivel",
+						"start": 61,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa reduci intensitatea becurilor in camera de zi la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 56,
+						"entity": "loc",
+						"start": 44,
+						"value": "camera de zi"
+					},
+					{
+						"end": 61,
+						"entity": "nivel",
+						"start": 60,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica intensitatea becurilor in camara la sfert",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 44,
+						"entity": "loc",
+						"start": 38,
+						"value": "camara"
+					},
+					{
+						"end": 53,
+						"entity": "nivel",
+						"start": 48,
+						"value": "sfert"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa reduci intensitatea becurilor in dormitor la 3",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 56,
+						"entity": "loc",
+						"start": 48,
+						"value": "dormitor"
+					},
+					{
+						"end": 61,
+						"entity": "nivel",
+						"start": 60,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "Pepper fa mai mica lumina in camera de zi",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "loc",
+						"start": 29,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "diminueaza intensitatea becurilor in dormitor",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 45,
+						"entity": "loc",
+						"start": 37,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa reduci intensitatea becurilor in camara la 4",
+				"intent": "scadeIntensitateLumina",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 44,
+						"value": "camara"
+					},
+					{
+						"end": 55,
+						"entity": "nivel",
+						"start": 54,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "Salut, creste intensitatea iluminatului in sufragerie la 4",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 53,
+						"entity": "loc",
+						"start": 43,
+						"value": "sufragerie"
+					},
+					{
+						"end": 58,
+						"entity": "nivel",
+						"start": 57,
+						"value": "4"
+					}
+				]
+			},
+			{
+				"text": "Pepper ai putea oare mari becurilor in dormitor la 2",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "loc",
+						"start": 39,
+						"value": "dormitor"
+					},
+					{
+						"end": 52,
+						"entity": "nivel",
+						"start": 51,
+						"value": "2"
+					}
+				]
+			},
+			{
+				"text": "Pepper mareste intensitatea becurilor la 2",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 42,
+						"entity": "nivel",
+						"start": 41,
+						"value": "2"
+					}
+				]
+			},
+			{
+				"text": "Salut, fa mai mare lumina",
+				"intent": "cresteIntensitateLumina",
+				"entities": []
+			},
+			{
+				"text": "Pepper mareste intensitatea becurilor in dormitor",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 41,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Salut, poti sa maresti intensitatea becurilor in camara la maxim",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 55,
+						"entity": "loc",
+						"start": 49,
+						"value": "camara"
+					},
+					{
+						"end": 64,
+						"entity": "nivel",
+						"start": 59,
+						"value": "maxim"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa maresti intensitatea becurilor la maxim",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 54,
+						"entity": "nivel",
+						"start": 49,
+						"value": "maxim"
+					}
+				]
+			},
+			{
+				"text": "mareste lumina in camera de zi",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "loc",
+						"start": 18,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Pepper ai putea oare mari becurilor in dormitor la 3",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "loc",
+						"start": 39,
+						"value": "dormitor"
+					},
+					{
+						"end": 52,
+						"entity": "nivel",
+						"start": 51,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "Salut, mareste lumina in camera de zi",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "loc",
+						"start": 25,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "Pepper ai putea oare mari becurilor in camara",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 45,
+						"entity": "loc",
+						"start": 39,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "poti sa maresti intensitatea becurilor in dormitor la maxim",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 42,
+						"value": "dormitor"
+					},
+					{
+						"end": 59,
+						"entity": "nivel",
+						"start": 54,
+						"value": "maxim"
+					}
+				]
+			},
+			{
+				"text": "Salut, as vrea sa maresti intensitatea becurilor in dormitor la 2",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 60,
+						"entity": "loc",
+						"start": 52,
+						"value": "dormitor"
+					},
+					{
+						"end": 65,
+						"entity": "nivel",
+						"start": 64,
+						"value": "2"
+					}
+				]
+			},
+			{
+				"text": "Pepper as vrea sa maresti intensitatea becurilor in dormitor la 3",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 60,
+						"entity": "loc",
+						"start": 52,
+						"value": "dormitor"
+					},
+					{
+						"end": 65,
+						"entity": "nivel",
+						"start": 64,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "Pepper mareste intensitatea becurilor in dormitor la 2",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 41,
+						"value": "dormitor"
+					},
+					{
+						"end": 54,
+						"entity": "nivel",
+						"start": 53,
+						"value": "2"
+					}
+				]
+			},
+			{
+				"text": "Pepper mareste intensitatea becurilor in pivnita la maxim",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 41,
+						"value": "pivnita"
+					},
+					{
+						"end": 57,
+						"entity": "nivel",
+						"start": 52,
+						"value": "maxim"
+					}
+				]
+			},
+			{
+				"text": "mareste intensitatea becurilor la 3",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "nivel",
+						"start": 34,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "fa mai mare lumina in camara",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "loc",
+						"start": 22,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa maresti intensitatea becurilor in camera de zi",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 49,
+						"value": "camera de zi"
+					}
+				]
+			},
+			{
+				"text": "mareste intensitatea becurilor in pivnita la 2",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "loc",
+						"start": 34,
+						"value": "pivnita"
+					},
+					{
+						"end": 46,
+						"entity": "nivel",
+						"start": 45,
+						"value": "2"
+					}
+				]
+			},
+			{
+				"text": "Pepper imbunatateste lumina in dormitor",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "loc",
+						"start": 31,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa maresti intensitatea becurilor in camera de zi la 3",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 49,
+						"value": "camera de zi"
+					},
+					{
+						"end": 66,
+						"entity": "nivel",
+						"start": 65,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "Salut, mareste intensitatea becurilor in camara",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "loc",
+						"start": 41,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Pepper poti sa maresti intensitatea becurilor in camera de zi la maxim",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 49,
+						"value": "camera de zi"
+					},
+					{
+						"end": 70,
+						"entity": "nivel",
+						"start": 65,
+						"value": "maxim"
+					}
+				]
+			},
+			{
+				"text": "Salut, as vrea sa maresti intensitatea becurilor in pivnita la 3",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 59,
+						"entity": "loc",
+						"start": 52,
+						"value": "pivnita"
+					},
+					{
+						"end": 64,
+						"entity": "nivel",
+						"start": 63,
+						"value": "3"
+					}
+				]
+			},
+			{
+				"text": "Salut, mareste intensitatea becurilor in pivnita la maxim",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 41,
+						"value": "pivnita"
+					},
+					{
+						"end": 57,
+						"entity": "nivel",
+						"start": 52,
+						"value": "maxim"
+					}
+				]
+			},
+			{
+				"text": "creste lumina",
+				"intent": "cresteIntensitateLumina",
+				"entities": []
+			},
+			{
+				"text": "as vrea sa maresti intensitatea becurilor in camara",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 51,
+						"entity": "loc",
+						"start": 45,
+						"value": "camara"
+					}
+				]
+			},
+			{
+				"text": "Pepper mareste intensitatea becurilor in pivnita la 2",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 41,
+						"value": "pivnita"
+					},
+					{
+						"end": 53,
+						"entity": "nivel",
+						"start": 52,
+						"value": "2"
+					}
+				]
+			},
+			{
+				"text": "Salut, creste lumina in dormitor",
+				"intent": "cresteIntensitateLumina",
+				"entities": [
+					{
+						"end": 32,
+						"entity": "loc",
+						"start": 24,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "as vrea sa pui temperatura la 19 grade in sufragerie",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "grade",
+						"start": 30,
+						"value": "19 grade"
+					},
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 42,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "Hey, modifica aproximativ la douazeci si cinci de grade in tot apartamentul",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 55,
+						"entity": "grade",
+						"start": 29,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 75,
+						"entity": "loc",
+						"start": 59,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "schimba temperatura aproximativ la douazeci si sapte de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 61,
+						"entity": "grade",
+						"start": 35,
+						"value": "douazeci si sapte de grade"
+					}
+				]
+			},
+			{
+				"text": "modifica temperatura aproximativ la douazeci si sapte de grade peste tot",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 62,
+						"entity": "grade",
+						"start": 36,
+						"value": "douazeci si sapte de grade"
+					},
+					{
+						"end": 72,
+						"entity": "loc",
+						"start": 63,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "schimba temperatura aproape de douazeci si trei de grade in toata casa",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 56,
+						"entity": "grade",
+						"start": 31,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 70,
+						"entity": "loc",
+						"start": 60,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "modifica aproape de douazeci si sapte de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "grade",
+						"start": 20,
+						"value": "douazeci si sapte de grade"
+					}
+				]
+			},
+			{
+				"text": "Hey, schimba cam la douazeci si trei de grade in toata casa",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 45,
+						"entity": "grade",
+						"start": 20,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 59,
+						"entity": "loc",
+						"start": 49,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "modifica temperatura cam la douazeci si cinci de grade peste tot",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 54,
+						"entity": "grade",
+						"start": 28,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 64,
+						"entity": "loc",
+						"start": 55,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "schimba aproximativ pe douazeci si sase de grade in tot apartamentul",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "grade",
+						"start": 23,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 68,
+						"entity": "loc",
+						"start": 52,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "Hey, modifica cam la douazeci si sapte de grade in toata casa",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "grade",
+						"start": 21,
+						"value": "douazeci si sapte de grade"
+					},
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 51,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "Hey, schimba aproape de douazeci si cinci de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "grade",
+						"start": 24,
+						"value": "douazeci si cinci de grade"
+					}
+				]
+			},
+			{
+				"text": "Hey, schimba temperatura cam la douazeci si trei de grade peste tot",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 57,
+						"entity": "grade",
+						"start": 32,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 67,
+						"entity": "loc",
+						"start": 58,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Hey, ajusteaza temperatura aproape de douazeci si cinci de grade in toata casa",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 64,
+						"entity": "grade",
+						"start": 38,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 78,
+						"entity": "loc",
+						"start": 68,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "schimba cam la douazeci si patru de grade in tot apartamentul",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "grade",
+						"start": 15,
+						"value": "douazeci si patru de grade"
+					},
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 45,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "ajusteaza temperatura cam la douazeci si cinci de grade peste tot",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 55,
+						"entity": "grade",
+						"start": 29,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 65,
+						"entity": "loc",
+						"start": 56,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "ajusteaza cam la douazeci si cinci de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "grade",
+						"start": 17,
+						"value": "douazeci si cinci de grade"
+					}
+				]
+			},
+			{
+				"text": "Hey, schimba aproximativ la douazeci si sapte de grade peste tot",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 54,
+						"entity": "grade",
+						"start": 28,
+						"value": "douazeci si sapte de grade"
+					},
+					{
+						"end": 64,
+						"entity": "loc",
+						"start": 55,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Hey, ajusteaza temperatura aproximativ la douazeci si trei de grade in tot apartamentul",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 67,
+						"entity": "grade",
+						"start": 42,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 87,
+						"entity": "loc",
+						"start": 71,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "ajusteaza cam la douazeci si sapte de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "grade",
+						"start": 17,
+						"value": "douazeci si sapte de grade"
+					}
+				]
+			},
+			{
+				"text": "modifica aproape de douazeci si patru de grade in tot apartamentul",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "grade",
+						"start": 20,
+						"value": "douazeci si patru de grade"
+					},
+					{
+						"end": 66,
+						"entity": "loc",
+						"start": 50,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "Hey, modifica temperatura aproape de douazeci si trei de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 62,
+						"entity": "grade",
+						"start": 37,
+						"value": "douazeci si trei de grade"
+					}
+				]
+			},
+			{
+				"text": "modifica cam la douazeci si trei de grade in toata casa",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "grade",
+						"start": 16,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 55,
+						"entity": "loc",
+						"start": 45,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "schimba aproximativ pe douazeci si sase de grade peste tot",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "grade",
+						"start": 23,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 58,
+						"entity": "loc",
+						"start": 49,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "schimba aproximativ la douazeci si sase de grade in tot apartamentul",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "grade",
+						"start": 23,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 68,
+						"entity": "loc",
+						"start": 52,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "Hey, modifica aproape de douazeci si trei de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "grade",
+						"start": 25,
+						"value": "douazeci si trei de grade"
+					}
+				]
+			},
+			{
+				"text": "Hey, modifica cam la douazeci si sapte de grade in tot apartamentul",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "grade",
+						"start": 21,
+						"value": "douazeci si sapte de grade"
+					},
+					{
+						"end": 67,
+						"entity": "loc",
+						"start": 51,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "modifica cam la douazeci si cinci de grade peste tot",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 42,
+						"entity": "grade",
+						"start": 16,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 43,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Hey, ajusteaza temperatura aproape de douazeci si trei de grade in toata casa",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 63,
+						"entity": "grade",
+						"start": 38,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 77,
+						"entity": "loc",
+						"start": 67,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "Hey, modifica aproximativ la douazeci si sase de grade in toata casa",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 54,
+						"entity": "grade",
+						"start": 29,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 68,
+						"entity": "loc",
+						"start": 58,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "ajusteaza temperatura aproape de douazeci si patru de grade",
+				"intent": "seteazaTemperatura",
+				"entities": [
+					{
+						"end": 59,
+						"entity": "grade",
+						"start": 33,
+						"value": "douazeci si patru de grade"
+					}
+				]
+			},
+			{
+				"text": "Salut, ridica pe 27 grade in toata casa",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 25,
+						"entity": "grade",
+						"start": 17,
+						"value": "27 grade"
+					},
+					{
+						"end": 39,
+						"entity": "loc",
+						"start": 29,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "poti mari in sufragerie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 23,
+						"entity": "loc",
+						"start": 13,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "Salut, poti mari cu doua grade",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "grade",
+						"start": 20,
+						"value": "doua grade"
+					}
+				]
+			},
+			{
+				"text": "Pepper, fa mai mare la douazeci de grade peste tot",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "grade",
+						"start": 23,
+						"value": "douazeci de grade"
+					},
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 41,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Salut, mareste cu un grad in sufragerie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 25,
+						"entity": "grade",
+						"start": 18,
+						"value": "un grad"
+					},
+					{
+						"end": 39,
+						"entity": "loc",
+						"start": 29,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "fa mai mare temperatura cu un grad peste tot",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "grade",
+						"start": 27,
+						"value": "un grad"
+					},
+					{
+						"end": 44,
+						"entity": "loc",
+						"start": 35,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "creste pe douazeci si unu de grade in baie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "grade",
+						"start": 10,
+						"value": "douazeci si unu de grade"
+					},
+					{
+						"end": 42,
+						"entity": "loc",
+						"start": 38,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "fa mai mare temperatura la douazeci de grade in baie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 44,
+						"entity": "grade",
+						"start": 27,
+						"value": "douazeci de grade"
+					},
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 48,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, mareste temperatura la optsprezece grade in dormitor",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "grade",
+						"start": 31,
+						"value": "optsprezece grade"
+					},
+					{
+						"end": 60,
+						"entity": "loc",
+						"start": 52,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "creste la nouasprezece grade peste tot",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "grade",
+						"start": 10,
+						"value": "nouasprezece grade"
+					},
+					{
+						"end": 38,
+						"entity": "loc",
+						"start": 29,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "creste temperatura la douazeci si doua de grade in sufragerie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "grade",
+						"start": 22,
+						"value": "douazeci si doua de grade"
+					},
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 51,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "mareste temperatura pe douazeci de grade in bucatarie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "grade",
+						"start": 23,
+						"value": "douazeci de grade"
+					},
+					{
+						"end": 53,
+						"entity": "loc",
+						"start": 44,
+						"value": "bucatarie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, poti mari temperatura cu doua grade in bucatarie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "grade",
+						"start": 33,
+						"value": "doua grade"
+					},
+					{
+						"end": 56,
+						"entity": "loc",
+						"start": 47,
+						"value": "bucatarie"
+					}
+				]
+			},
+			{
+				"text": "mareste temperatura pe douazeci si unu de grade in baie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "grade",
+						"start": 23,
+						"value": "douazeci si unu de grade"
+					},
+					{
+						"end": 55,
+						"entity": "loc",
+						"start": 51,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, poti mari pe saptesprezece grade in dormitor",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "grade",
+						"start": 21,
+						"value": "saptesprezece grade"
+					},
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 44,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "poti mari pe douazeci si unu de grade peste tot",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "grade",
+						"start": 13,
+						"value": "douazeci si unu de grade"
+					},
+					{
+						"end": 47,
+						"entity": "loc",
+						"start": 38,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Pepper, mareste temperatura pe saptesprezece grade in baie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "grade",
+						"start": 31,
+						"value": "saptesprezece grade"
+					},
+					{
+						"end": 58,
+						"entity": "loc",
+						"start": 54,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, poti mari temperatura la optsprezece grade in baie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "grade",
+						"start": 33,
+						"value": "optsprezece grade"
+					},
+					{
+						"end": 58,
+						"entity": "loc",
+						"start": 54,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, poti mari la douazeci de grade in sufragerie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "grade",
+						"start": 21,
+						"value": "douazeci de grade"
+					},
+					{
+						"end": 52,
+						"entity": "loc",
+						"start": 42,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "mareste la douazeci si unu de grade in dormitor",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "grade",
+						"start": 11,
+						"value": "douazeci si unu de grade"
+					},
+					{
+						"end": 47,
+						"entity": "loc",
+						"start": 39,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Pepper, fa mai mare temperatura in baie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "loc",
+						"start": 35,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "mareste la douazeci de grade in baie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "grade",
+						"start": 11,
+						"value": "douazeci de grade"
+					},
+					{
+						"end": 36,
+						"entity": "loc",
+						"start": 32,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, creste temperatura cu un grad in bucatarie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "grade",
+						"start": 30,
+						"value": "un grad"
+					},
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 41,
+						"value": "bucatarie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, fa mai mare pe douazeci si unu de grade peste tot",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "grade",
+						"start": 23,
+						"value": "douazeci si unu de grade"
+					},
+					{
+						"end": 57,
+						"entity": "loc",
+						"start": 48,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Pepper, poti mari temperatura pe nouasprezece grade in sufragerie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 51,
+						"entity": "grade",
+						"start": 33,
+						"value": "nouasprezece grade"
+					},
+					{
+						"end": 65,
+						"entity": "loc",
+						"start": 55,
+						"value": "sufragerie"
+					}
+				]
+			},
+			{
+				"text": "Salut, creste la douazeci si doua de grade in dormitor",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 42,
+						"entity": "grade",
+						"start": 17,
+						"value": "douazeci si doua de grade"
+					},
+					{
+						"end": 54,
+						"entity": "loc",
+						"start": 46,
+						"value": "dormitor"
+					}
+				]
+			},
+			{
+				"text": "Salut, fa mai mare temperatura pe nouasprezece grade in bucatarie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 52,
+						"entity": "grade",
+						"start": 34,
+						"value": "nouasprezece grade"
+					},
+					{
+						"end": 65,
+						"entity": "loc",
+						"start": 56,
+						"value": "bucatarie"
+					}
+				]
+			},
+			{
+				"text": "Salut, fa mai mare pe douazeci si doua de grade in bucatarie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "grade",
+						"start": 22,
+						"value": "douazeci si doua de grade"
+					},
+					{
+						"end": 60,
+						"entity": "loc",
+						"start": 51,
+						"value": "bucatarie"
+					}
+				]
+			},
+			{
+				"text": "Pepper, mareste temperatura la saptesprezece grade peste tot",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 50,
+						"entity": "grade",
+						"start": 31,
+						"value": "saptesprezece grade"
+					},
+					{
+						"end": 60,
+						"entity": "loc",
+						"start": 51,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "creste la douazeci si unu de grade in bucatarie",
+				"intent": "cresteTemperatura",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "grade",
+						"start": 10,
+						"value": "douazeci si unu de grade"
+					},
+					{
+						"end": 47,
+						"entity": "loc",
+						"start": 38,
+						"value": "bucatarie"
+					}
+				]
+			},
+			{
+				"text": "Salut, ai putea scadea temperatura pe 22 grade in baie",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "grade",
+						"start": 38,
+						"value": "22 grade"
+					},
+					{
+						"end": 54,
+						"entity": "loc",
+						"start": 50,
+						"value": "baie"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica in toata casa",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 25,
+						"entity": "loc",
+						"start": 15,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "Hey, du in jos cu patru grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "grade",
+						"start": 18,
+						"value": "patru grade"
+					},
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 33,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "micsoreaza cu patru grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 25,
+						"entity": "grade",
+						"start": 14,
+						"value": "patru grade"
+					},
+					{
+						"end": 35,
+						"entity": "loc",
+						"start": 26,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "redu peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 14,
+						"entity": "loc",
+						"start": 5,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Hey, redu pe douazeci si sapte de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "grade",
+						"start": 13,
+						"value": "douazeci si sapte de grade"
+					},
+					{
+						"end": 59,
+						"entity": "loc",
+						"start": 43,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica temperatura pe douazeci si sase de grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 52,
+						"entity": "grade",
+						"start": 27,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 62,
+						"entity": "loc",
+						"start": 53,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "redu temperatura la douazeci si cinci de grade in toata casa",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "grade",
+						"start": 20,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 60,
+						"entity": "loc",
+						"start": 50,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica pe douazeci si cinci de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "grade",
+						"start": 15,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 45,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "micsoreaza la douazeci si trei de grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "grade",
+						"start": 14,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 40,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "micsoreaza la douazeci si patru de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "grade",
+						"start": 14,
+						"value": "douazeci si patru de grade"
+					},
+					{
+						"end": 60,
+						"entity": "loc",
+						"start": 44,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica temperatura cu trei grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "grade",
+						"start": 27,
+						"value": "trei grade"
+					},
+					{
+						"end": 57,
+						"entity": "loc",
+						"start": 41,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "Hey, micsoreaza la douazeci si sapte de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 45,
+						"entity": "grade",
+						"start": 19,
+						"value": "douazeci si sapte de grade"
+					},
+					{
+						"end": 65,
+						"entity": "loc",
+						"start": 49,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "du in jos pe douazeci si cinci de grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "grade",
+						"start": 13,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 40,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "du in jos la douazeci si cinci de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "grade",
+						"start": 13,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 59,
+						"entity": "loc",
+						"start": 43,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "du in jos la douazeci si sase de grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "grade",
+						"start": 13,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 39,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Hey, micsoreaza temperatura la douazeci si cinci de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 57,
+						"entity": "grade",
+						"start": 31,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 77,
+						"entity": "loc",
+						"start": 61,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "redu temperatura cu cinci grade in toata casa",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 31,
+						"entity": "grade",
+						"start": 20,
+						"value": "cinci grade"
+					},
+					{
+						"end": 45,
+						"entity": "loc",
+						"start": 35,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica temperatura cu cinci grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "grade",
+						"start": 27,
+						"value": "cinci grade"
+					},
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 39,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Hey, fa mai mica temperatura cu patru grade",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "grade",
+						"start": 32,
+						"value": "patru grade"
+					}
+				]
+			},
+			{
+				"text": "fa mai mica pe douazeci si patru de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 41,
+						"entity": "grade",
+						"start": 15,
+						"value": "douazeci si patru de grade"
+					},
+					{
+						"end": 61,
+						"entity": "loc",
+						"start": 45,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "du in jos la douazeci si patru de grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "grade",
+						"start": 13,
+						"value": "douazeci si patru de grade"
+					},
+					{
+						"end": 49,
+						"entity": "loc",
+						"start": 40,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "micsoreaza pe douazeci si trei de grade in toata casa",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "grade",
+						"start": 14,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 53,
+						"entity": "loc",
+						"start": 43,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "Hey, micsoreaza la douazeci si sase de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 44,
+						"entity": "grade",
+						"start": 19,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 64,
+						"entity": "loc",
+						"start": 48,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "Hey, du in jos temperatura pe douazeci si cinci de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 56,
+						"entity": "grade",
+						"start": 30,
+						"value": "douazeci si cinci de grade"
+					},
+					{
+						"end": 76,
+						"entity": "loc",
+						"start": 60,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "du in jos temperatura cu cinci grade in toata casa",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 36,
+						"entity": "grade",
+						"start": 25,
+						"value": "cinci grade"
+					},
+					{
+						"end": 50,
+						"entity": "loc",
+						"start": 40,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "Hey, fa mai mica temperatura la douazeci si sase de grade peste tot",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 57,
+						"entity": "grade",
+						"start": 32,
+						"value": "douazeci si sase de grade"
+					},
+					{
+						"end": 67,
+						"entity": "loc",
+						"start": 58,
+						"value": "peste tot"
+					}
+				]
+			},
+			{
+				"text": "Hey, du in jos in toata casa",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "loc",
+						"start": 18,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "micsoreaza temperatura la douazeci si trei de grade in tot apartamentul",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 51,
+						"entity": "grade",
+						"start": 26,
+						"value": "douazeci si trei de grade"
+					},
+					{
+						"end": 71,
+						"entity": "loc",
+						"start": 55,
+						"value": "tot apartamentul"
+					}
+				]
+			},
+			{
+				"text": "redu pe douazeci si sapte de grade in toata casa",
+				"intent": "scadeTemperatura",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "grade",
+						"start": 8,
+						"value": "douazeci si sapte de grade"
+					},
+					{
+						"end": 48,
+						"entity": "loc",
+						"start": 38,
+						"value": "toata casa"
+					}
+				]
+			},
+			{
+				"text": "Pepper, te rog as vrea sa pui muzica de Vivaldi",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "artist",
+						"start": 40,
+						"value": "Vivaldi"
+					}
+				]
+			},
+			{
+				"text": "Servus, te rog cantec cantat de Sting",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "artist",
+						"start": 32,
+						"value": "Sting"
+					}
+				]
+			},
+			{
+				"text": "Servus, te rog pune melodia compusa de Pink Floyd",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 49,
+						"entity": "artist",
+						"start": 39,
+						"value": "Pink Floyd"
+					}
+				]
+			},
+			{
+				"text": "Servus, te rog pune cantec",
+				"intent": "puneMuzica",
+				"entities": []
+			},
+			{
+				"text": "Servus, pune piesa compusa de Sting",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "artist",
+						"start": 30,
+						"value": "Sting"
+					}
+				]
+			},
+			{
+				"text": "te rog concert cantat de Rahmaninov",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "artist",
+						"start": 25,
+						"value": "Rahmaninov"
+					}
+				]
+			},
+			{
+				"text": "Servus, pune piesa cantata de Beatles",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "artist",
+						"start": 30,
+						"value": "Beatles"
+					}
+				]
+			},
+			{
+				"text": "Servus, pune cantec cantat de Rahmaninov",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "artist",
+						"start": 30,
+						"value": "Rahmaninov"
+					}
+				]
+			},
+			{
+				"text": "Servus, melodia cantata de Rahmaninov",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "artist",
+						"start": 27,
+						"value": "Rahmaninov"
+					}
+				]
+			},
+			{
+				"text": "Servus, piesa cantata de Pink Floyd",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "artist",
+						"start": 25,
+						"value": "Pink Floyd"
+					}
+				]
+			},
+			{
+				"text": "te rog concert compus de Liszt",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "artist",
+						"start": 25,
+						"value": "Liszt"
+					}
+				]
+			},
+			{
+				"text": "te rog pune simfonia compusa de Sting",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "artist",
+						"start": 32,
+						"value": "Sting"
+					}
+				]
+			},
+			{
+				"text": "te rog melodia compusa de Rahmaninov",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 36,
+						"entity": "artist",
+						"start": 26,
+						"value": "Rahmaninov"
+					}
+				]
+			},
+			{
+				"text": "te rog simfonia compusa de Liszt",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 32,
+						"entity": "artist",
+						"start": 27,
+						"value": "Liszt"
+					}
+				]
+			},
+			{
+				"text": "Servus, pune concert compus de Sting",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 36,
+						"entity": "artist",
+						"start": 31,
+						"value": "Sting"
+					}
+				]
+			},
+			{
+				"text": "Servus, simfonia cantata de Beatles",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "artist",
+						"start": 28,
+						"value": "Beatles"
+					}
+				]
+			},
+			{
+				"text": "pune cantec compus de Sting",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "artist",
+						"start": 22,
+						"value": "Sting"
+					}
+				]
+			},
+			{
+				"text": "simfonia compusa de Liszt",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 25,
+						"entity": "artist",
+						"start": 20,
+						"value": "Liszt"
+					}
+				]
+			},
+			{
+				"text": "Servus, simfonia compusa de Sting",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 33,
+						"entity": "artist",
+						"start": 28,
+						"value": "Sting"
+					}
+				]
+			},
+			{
+				"text": "cantec compus de Beatles",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 24,
+						"entity": "artist",
+						"start": 17,
+						"value": "Beatles"
+					}
+				]
+			},
+			{
+				"text": "pune melodia",
+				"intent": "puneMuzica",
+				"entities": []
+			},
+			{
+				"text": "te rog pune piesa compusa de Rahmaninov",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "artist",
+						"start": 29,
+						"value": "Rahmaninov"
+					}
+				]
+			},
+			{
+				"text": "Servus, pune cantec compus de Pink Floyd",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "artist",
+						"start": 30,
+						"value": "Pink Floyd"
+					}
+				]
+			},
+			{
+				"text": "Servus, pune melodia compusa de Leonard Cohen",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 45,
+						"entity": "artist",
+						"start": 32,
+						"value": "Leonard Cohen"
+					}
+				]
+			},
+			{
+				"text": "Servus, te rog pune concert compus de Pink Floyd",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 48,
+						"entity": "artist",
+						"start": 38,
+						"value": "Pink Floyd"
+					}
+				]
+			},
+			{
+				"text": "Servus, pune simfonia cantata de Liszt",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "artist",
+						"start": 33,
+						"value": "Liszt"
+					}
+				]
+			},
+			{
+				"text": "pune cantec compus de Liszt",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "artist",
+						"start": 22,
+						"value": "Liszt"
+					}
+				]
+			},
+			{
+				"text": "te rog piesa compusa de Sting",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "artist",
+						"start": 24,
+						"value": "Sting"
+					}
+				]
+			},
+			{
+				"text": "Servus, pune piesa cantata de Rahmaninov",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "artist",
+						"start": 30,
+						"value": "Rahmaninov"
+					}
+				]
+			},
+			{
+				"text": "Servus, concert cantat de Pink Floyd",
+				"intent": "puneMuzica",
+				"entities": [
+					{
+						"end": 36,
+						"entity": "artist",
+						"start": 26,
+						"value": "Pink Floyd"
+					}
+				]
+			},
+			{
+				"text": "Pepper aprinde pe HBO",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 21,
+						"entity": "canal",
+						"start": 18,
+						"value": "HBO"
+					}
+				]
+			},
+			{
+				"text": "te rog poti pune pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 26,
+						"entity": "canal",
+						"start": 20,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "servus seteaza pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 24,
+						"entity": "canal",
+						"start": 18,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "ai putea pune TV pe History",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "canal",
+						"start": 20,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "servus te rog seteaza pe History",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 32,
+						"entity": "canal",
+						"start": 25,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "te rog poti sa setezi TV pe JazzTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "canal",
+						"start": 28,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "te rog ai putea pune TV pe AXN",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "canal",
+						"start": 27,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "te rog poti sa setezi pe JazzTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 31,
+						"entity": "canal",
+						"start": 25,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "servus poti sa setezi TV pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "canal",
+						"start": 28,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "ai putea pune pe JazzTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 23,
+						"entity": "canal",
+						"start": 17,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "servus te rog seteaza TV pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "canal",
+						"start": 28,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "te rog poti pune TV pe History",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 30,
+						"entity": "canal",
+						"start": 23,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "poti sa setezi pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 24,
+						"entity": "canal",
+						"start": 18,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "servus te rog seteaza TV pe AXN",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 31,
+						"entity": "canal",
+						"start": 28,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "servus poti sa setezi TV pe TNT",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 31,
+						"entity": "canal",
+						"start": 28,
+						"value": "TNT"
+					}
+				]
+			},
+			{
+				"text": "poti sa aprinzi TV",
+				"intent": "puneTV",
+				"entities": []
+			},
+			{
+				"text": "servus seteaza TV pe History",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 28,
+						"entity": "canal",
+						"start": 21,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "te rog seteaza pe AXN",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 21,
+						"entity": "canal",
+						"start": 18,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "poti sa setezi TV pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "canal",
+						"start": 21,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "servus te rog ai putea pune pe AXN",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "canal",
+						"start": 31,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "servus te rog poti sa setezi TV pe TNT",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "canal",
+						"start": 35,
+						"value": "TNT"
+					}
+				]
+			},
+			{
+				"text": "seteaza pe TNT",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 14,
+						"entity": "canal",
+						"start": 11,
+						"value": "TNT"
+					}
+				]
+			},
+			{
+				"text": "te rog poti pune TV pe AXN",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 26,
+						"entity": "canal",
+						"start": 23,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "poti sa setezi pe TNT",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 21,
+						"entity": "canal",
+						"start": 18,
+						"value": "TNT"
+					}
+				]
+			},
+			{
+				"text": "poti sa setezi TV pe JazzTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "canal",
+						"start": 21,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "servus poti pune pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 26,
+						"entity": "canal",
+						"start": 20,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "servus te rog poti sa setezi pe History",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "canal",
+						"start": 32,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "ai putea aprinde TV",
+				"intent": "puneTV",
+				"entities": []
+			},
+			{
+				"text": "te rog ai putea pune pe TNT",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "canal",
+						"start": 24,
+						"value": "TNT"
+					}
+				]
+			},
+			{
+				"text": "servus ai putea pune TV pe FoodTV",
+				"intent": "puneTV",
+				"entities": [
+					{
+						"end": 33,
+						"entity": "canal",
+						"start": 27,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "salut ai putea da pe canalul Mezzo",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "canal",
+						"start": 29,
+						"value": "Mezzo"
+					}
+				]
+			},
+			{
+				"text": "ai putea schimba pe programul History",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 37,
+						"entity": "canal",
+						"start": 30,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "poti schimba pe programul JazzTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 32,
+						"entity": "canal",
+						"start": 26,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "te rog schimba pe programul History",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 35,
+						"entity": "canal",
+						"start": 28,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "servus ai putea schimba pe programul TNT",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "canal",
+						"start": 37,
+						"value": "TNT"
+					}
+				]
+			},
+			{
+				"text": "servus te rog poti schimba pe programul AXN",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "canal",
+						"start": 40,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "servus te rog ai putea schimba pe programul AXN",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "canal",
+						"start": 44,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "poti schimba pe programul AXN",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 29,
+						"entity": "canal",
+						"start": 26,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "servus te rog poti schimba pe programul FoodTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 46,
+						"entity": "canal",
+						"start": 40,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "te rog ai putea schimba pe programul FoodTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "canal",
+						"start": 37,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "schimba pe programul JazzTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "canal",
+						"start": 21,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "ai putea schimba canalul",
+				"intent": "schimbaCanalTV",
+				"entities": []
+			},
+			{
+				"text": "te rog schimba pe programul FoodTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "canal",
+						"start": 28,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "schimba pe programul AXN",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 24,
+						"entity": "canal",
+						"start": 21,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "te rog poti schimba pe programul JazzTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "canal",
+						"start": 33,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "te rog schimba pe programul JazzTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 34,
+						"entity": "canal",
+						"start": 28,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "servus schimba pe programul AXN",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 31,
+						"entity": "canal",
+						"start": 28,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "poti schimba canalul",
+				"intent": "schimbaCanalTV",
+				"entities": []
+			},
+			{
+				"text": "te rog ai putea schimba pe programul JazzTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 43,
+						"entity": "canal",
+						"start": 37,
+						"value": "JazzTV"
+					}
+				]
+			},
+			{
+				"text": "poti schimba pe programul FoodTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 32,
+						"entity": "canal",
+						"start": 26,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "te rog ai putea schimba pe programul History",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 44,
+						"entity": "canal",
+						"start": 37,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "schimba pe programul FoodTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 27,
+						"entity": "canal",
+						"start": 21,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "te rog ai putea schimba canalul",
+				"intent": "schimbaCanalTV",
+				"entities": []
+			},
+			{
+				"text": "te rog ai putea schimba pe programul AXN",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "canal",
+						"start": 37,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "servus poti schimba pe programul History",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "canal",
+						"start": 33,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "servus te rog ai putea schimba canalul",
+				"intent": "schimbaCanalTV",
+				"entities": []
+			},
+			{
+				"text": "servus te rog schimba pe programul AXN",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 38,
+						"entity": "canal",
+						"start": 35,
+						"value": "AXN"
+					}
+				]
+			},
+			{
+				"text": "te rog poti schimba pe programul FoodTV",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 39,
+						"entity": "canal",
+						"start": 33,
+						"value": "FoodTV"
+					}
+				]
+			},
+			{
+				"text": "te rog poti schimba pe programul History",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 40,
+						"entity": "canal",
+						"start": 33,
+						"value": "History"
+					}
+				]
+			},
+			{
+				"text": "servus te rog poti schimba pe programul History",
+				"intent": "schimbaCanalTV",
+				"entities": [
+					{
+						"end": 47,
+						"entity": "canal",
+						"start": 40,
+						"value": "History"
+					}
+				]
+			}
+		]
+	}
+}
