@@ -317,15 +317,17 @@ if __name__ == '__main__':
     #     for intent in v:
     #         print('{} -> {}'.format(intent[0], intent[1]))
 
-    # for f1, f2 in files:
-    #     with open(f1, errors='replace') as f:
-    #         val_data = json.load(f)
-    #     with open(f2, errors='replace') as f:
-    #         pred_data = json.load(f)
-    #     for v, p in zip(val_data, pred_data):
-    #         for entity in v['entities']:
-    #             if entity['entity'] == 'intent' and entity['value'] == 'SearchCreativeWork':
-    #                 print(v['text'])
-    #                 print(v['seq_labels'])
-    #                 print(p['labels'])
-    #                 print()
+    for f1, f2 in files:
+        with open(f1, errors='replace') as f:
+            val_data = json.load(f)
+        with open(f2, errors='replace') as f:
+            pred_data = json.load(f)
+        for v, p in zip(val_data, pred_data):
+            if v['seq_labels'] != p['labels']:
+                print(v['text'])
+                for ent in v['entities']:
+                    if ent['entity'] == 'intent':
+                        print(ent['value'])
+                print(v['seq_labels'])
+                print(p['labels'])
+                print()

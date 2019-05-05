@@ -1,0 +1,6147 @@
+[
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9501111832809448
+        },
+        "entities": [
+            {
+                "start": 51,
+                "end": 58,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.9939317376323396,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 62,
+                "end": 63,
+                "value": "3",
+                "entity": "nivel",
+                "confidence": 0.9842791880838175,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9501111832809448
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.014768463018690753
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.014396642275523085
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.010423516251856483
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.006361928429393801
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.003938266743591037
+            }
+        ],
+        "text": "Pepper poti sa cresti intensitatea iluminatului in pivnita la 3",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 1
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9579546194284346
+        },
+        "entities": [
+            {
+                "start": 47,
+                "end": 52,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.993427471214023,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 56,
+                "end": 61,
+                "value": "dublu",
+                "entity": "nivel",
+                "confidence": 0.9702141252865812,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9579546194284346
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.015907476609801543
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.008433365101775328
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.008310855109770676
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.005967697835219863
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0034259859149978777
+            }
+        ],
+        "text": "Pepper poti sa maresti intensitatea luminii in curte la dublu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 2
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.8540954182290442
+        },
+        "entities": [
+            {
+                "start": 51,
+                "end": 57,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9897815982579955,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 61,
+                "end": 62,
+                "value": "2",
+                "entity": "nivel",
+                "confidence": 0.985557091203923,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.8540954182290442
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.04977497505546627
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.0490370325966223
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.02395779929479666
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.01427935603493988
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.00885541878913037
+            }
+        ],
+        "text": "Salut, as vrea sa cresti intensitatea becurilor in camara la 2",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 3
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.935103561847896
+        },
+        "entities": [
+            {
+                "start": 49,
+                "end": 54,
+                "value": "dublu",
+                "entity": "nivel",
+                "confidence": 0.9702189230846053,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.935103561847896
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.021916575228551404
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01735990812544882
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.011206955961608058
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.008894144984848177
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.005518853851647673
+            }
+        ],
+        "text": "Salut, poti sa cresti intensitatea luminii in la dublu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 4
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.941830111380774
+        },
+        "entities": [
+            {
+                "start": 51,
+                "end": 56,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274342763499,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 60,
+                "end": 61,
+                "value": "3",
+                "entity": "nivel",
+                "confidence": 0.9842792023115379,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.941830111380774
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.023170657358871517
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.014122646019800887
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.009883553941147729
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.00690291342259118
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.004090117876814797
+            }
+        ],
+        "text": "Pepper poti sa cresti intensitatea iluminatului in curte la 3",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 5
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9341063797018567
+        },
+        "entities": [
+            {
+                "start": 39,
+                "end": 44,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274653402724,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 48,
+                "end": 49,
+                "value": "5",
+                "entity": "nivel",
+                "confidence": 0.9806493776616529,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9341063797018567
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.03091123814263865
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.023475075198667865
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.007514968916252947
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.002353251524283431
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.0016390865163007137
+            }
+        ],
+        "text": "Pepper mareste intensitatea luminii in curte la 5",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 6
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9482933450883249
+        },
+        "entities": [
+            {
+                "start": 49,
+                "end": 56,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.9939317484921107,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 60,
+                "end": 66,
+                "value": "triplu",
+                "entity": "nivel",
+                "confidence": 0.974535302817103,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9482933450883249
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01844434987382367
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.011612396448035916
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.009621275334081091
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.009238867837847286
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0027897654178869343
+            }
+        ],
+        "text": "Pepper as vrea sa cresti intensitatea luminii in pivnita la triplu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 7
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.8352238140194238
+        },
+        "entities": [
+            {
+                "start": 44,
+                "end": 48,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6117570042531476,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.8352238140194238
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.07095043103005352
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.05909025926431044
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.024415790352159225
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.005553899462720737
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.004765805871332254
+            }
+        ],
+        "text": "poti sa cresti intensitatea iluminatului in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 8
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.8475761241104824
+        },
+        "entities": [
+            {
+                "start": 58,
+                "end": 59,
+                "value": "4",
+                "entity": "nivel",
+                "confidence": 0.9862971209195219,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.8475761241104824
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.06637466019646462
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.03476150285716677
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.027880681457599775
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.015401320250562735
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.00800571112772359
+            }
+        ],
+        "text": "Salut, as vrea sa maresti intensitatea iluminatului in la 4",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 9
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9018660704548166
+        },
+        "entities": [
+            {
+                "start": 50,
+                "end": 56,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9897815712776553,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 60,
+                "end": 66,
+                "value": "triplu",
+                "entity": "nivel",
+                "confidence": 0.9745353870678194,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9018660704548166
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.032191338370157634
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02299113674823294
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.02203658818047679
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.014359754197141415
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0065551120491745924
+            }
+        ],
+        "text": "Salut, as vrea sa maresti intensitatea luminii in camara la triplu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 10
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.928824573095751
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 42,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.9830618470325768,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 46,
+                "end": 51,
+                "value": "dublu",
+                "entity": "nivel",
+                "confidence": 0.9702135114793695,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.928824573095751
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.024300038055294997
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.020154801328061942
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.016525408754959673
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.006531576023997388
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.0036636027419347755
+            }
+        ],
+        "text": "Salut, creste intensitatea luminii in baie la dublu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 11
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.8707894574603042
+        },
+        "entities": [
+            {
+                "start": 48,
+                "end": 57,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.9774984331840252,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 61,
+                "end": 66,
+                "value": "maxim",
+                "entity": "nivel",
+                "confidence": 0.9743176632548017,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.8707894574603042
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.0832594910832605
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.013340786934239431
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.013056204671353338
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01261902326095054
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.006935036589891632
+            }
+        ],
+        "text": "Salut, poti sa cresti intensitatea becurilor in bucatarie la maxim",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 12
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9537966422447087
+        },
+        "entities": [
+            {
+                "start": 49,
+                "end": 50,
+                "value": "2",
+                "entity": "nivel",
+                "confidence": 0.9853511312555655,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9537966422447087
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.017958421036492755
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.013895057830233258
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.006744361783923189
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.004436737411034164
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.003168779693607902
+            }
+        ],
+        "text": "Pepper poti sa cresti intensitatea luminii in la 2",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 13
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.7065593560709085
+        },
+        "entities": [
+            {
+                "start": 44,
+                "end": 54,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6767597457374184,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.7065593560709085
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.14260842906390583
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.05806069708450545
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.041571905555055744
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.03685721263915327
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01434239958647086
+            }
+        ],
+        "text": "Salut, mareste intensitatea iluminatului in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-incapere"
+        ],
+        "id": 14
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9142989080452946
+        },
+        "entities": [
+            {
+                "start": 54,
+                "end": 59,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274111686883,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 63,
+                "end": 64,
+                "value": "4",
+                "entity": "nivel",
+                "confidence": 0.986489878356549,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9142989080452946
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.03608064433289798
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.019848299240833554
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.015099884310839301
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.010793881026487298
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.003878383043647289
+            }
+        ],
+        "text": "Pepper as vrea sa cresti intensitatea iluminatului in curte la 4",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 15
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.251208894160976
+        },
+        "entities": [
+            {
+                "start": 27,
+                "end": 37,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6767612916395693,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.251208894160976
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.24892007730012583
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.20255249544818746
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.120451586803793
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.11330771719809231
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.06355922908882534
+            }
+        ],
+        "text": "Pepper aprinde becurile in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-incapere"
+        ],
+        "id": 81
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.907597293907059
+        },
+        "entities": [
+            {
+                "start": 33,
+                "end": 40,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.975377466954823,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.907597293907059
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02952259873719946
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.029497665293757625
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.016155456776494413
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.009148912459237244
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.008078072826252268
+            }
+        ],
+        "text": "Salut, poti sa imi dai lumina in pivnita",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 82
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.8316072314636782
+        },
+        "entities": [
+            {
+                "start": 37,
+                "end": 46,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.5496102683794101,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.8316072314636782
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.06497821259285032
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.06233493572986542
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.0181352850418513
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.012189283214840946
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.010755051956913413
+            }
+        ],
+        "text": "Salut, as vrea sa pornesti lumina in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 83
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.9374777109591699
+        },
+        "entities": [],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.9374777109591699
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02989147288943929
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.019961465842025017
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.006334640130387191
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.003557872328893954
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0027768378500843513
+            }
+        ],
+        "text": "Pepper as vrea sa-mi dai lumina",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 84
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.4423962357982953
+        },
+        "entities": [],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.4423962357982953
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.17209965979931757
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.14276473260748487
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.12142187285897552
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.06381472365574231
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.05750277528018395
+            }
+        ],
+        "text": "porneste lumina",
+        "labels": [
+            "O",
+            "O"
+        ],
+        "id": 85
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.9474285006640631
+        },
+        "entities": [
+            {
+                "start": 35,
+                "end": 40,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9735010901008059,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.9474285006640631
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.030785692101918543
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.007868143437415685
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.007633776630808814
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0031888538119687762
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.003095033353824787
+            }
+        ],
+        "text": "Pepper as vrea sa aprinzi becul in curte",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 86
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.9001880314556635
+        },
+        "entities": [
+            {
+                "start": 28,
+                "end": 36,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5858808103626255,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.9001880314556635
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.05509710749971703
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.024940781370942713
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.012481093745874305
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0037836528878655218
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.003509333039936685
+            }
+        ],
+        "text": "poti sa aprinzi becurile in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 87
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.9089375081898126
+        },
+        "entities": [
+            {
+                "start": 35,
+                "end": 43,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5858822836571957,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.9089375081898126
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.06515586411650304
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.011537893305042029
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.008016667924835534
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0033923862903977595
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0029596801734093673
+            }
+        ],
+        "text": "Pepper as vrea sa aprinzi becul in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 88
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.2650303879743817
+        },
+        "entities": [
+            {
+                "start": 26,
+                "end": 34,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5858833872405365,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.2650303879743817
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.24275780457812243
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.1958817038556038
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.14754406283635033
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.09101751750071474
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.05776852325482654
+            }
+        ],
+        "text": "Pepper porneste lumina in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 89
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.9294910933430517
+        },
+        "entities": [
+            {
+                "start": 35,
+                "end": 40,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9735013116662793,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.9294910933430517
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.028770046327112848
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02432775642423494
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.008114296519659602
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.005093540198826206
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0042032671871144985
+            }
+        ],
+        "text": "Pepper as vrea sa-mi dai lumina in curte",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 90
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.9389230976320851
+        },
+        "entities": [],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.9389230976320851
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.04183891798692401
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.01074693111967497
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.004783365283029742
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0018541024819403416
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.001853585496345702
+            }
+        ],
+        "text": "poti sa aprinzi becurile",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 91
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.8285567212260306
+        },
+        "entities": [
+            {
+                "start": 32,
+                "end": 42,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6767599049028774,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.8285567212260306
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.09786989372838165
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.03378363268167827
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.020711699473842486
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.01026257840022133
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.008815474489845933
+            }
+        ],
+        "text": "Salut, poti sa aprinzi becul in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-incapere"
+        ],
+        "id": 92
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.8187963038073571
+        },
+        "entities": [
+            {
+                "start": 33,
+                "end": 40,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.9753774799613771,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.8187963038073571
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.08096022404491644
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.03796947980581368
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.03450870020462819
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.01401043804249524
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.013754854094789434
+            }
+        ],
+        "text": "Salut, poti sa aprinzi lumina in pivnita",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 93
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.29169493295337173
+        },
+        "entities": [
+            {
+                "start": 25,
+                "end": 29,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6117578651616586,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.29169493295337173
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.25728280927300595
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.21076198559124887
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.09653538111115
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.07867600238513192
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.06504888868609082
+            }
+        ],
+        "text": "Pepper aprinde lumina in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 94
+    },
+    {
+        "intent": {
+            "name": "aprindeLumina",
+            "confidence": 0.5526522036043383
+        },
+        "entities": [
+            {
+                "start": 25,
+                "end": 33,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5858822134762264,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.5526522036043383
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.15117878853663902
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.12743027549716712
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.07877261893341113
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.052516842593549995
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.037449270834894514
+            }
+        ],
+        "text": "Pepper porneste becul in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 95
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8868847321287404
+        },
+        "entities": [
+            {
+                "start": 31,
+                "end": 36,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9735008290510967,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8868847321287404
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.07312732568121513
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.019398668452012536
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.011451062059938079
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0049902431207687545
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.004147968557325172
+            }
+        ],
+        "text": "as vrea sa opresti becurile in curte",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 161
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.9215287385576018
+        },
+        "entities": [
+            {
+                "start": 27,
+                "end": 33,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9594591518923029,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.9215287385576018
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.059500788619663444
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.007344208913807522
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.006882251120863828
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.002560247628145214
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0021837651599184485
+            }
+        ],
+        "text": "as vrea sa stingi becul in camara",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 162
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8092194269978343
+        },
+        "entities": [
+            {
+                "start": 35,
+                "end": 44,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.5496101891557237,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8092194269978343
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.08739222070988482
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.038169229584996245
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.036878921702695945
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.015007395466528219
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.013332805538060488
+            }
+        ],
+        "text": "Salut, as vrea sa stingi lumina in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 163
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8711992361349041
+        },
+        "entities": [
+            {
+                "start": 34,
+                "end": 40,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.959459151912195,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8711992361349041
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.09962296093399135
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.012829327237359444
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.00890715009558616
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.004050180153486286
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.003391145444672862
+            }
+        ],
+        "text": "Pepper as vrea sa stingi becul in camara",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 164
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8737316074423288
+        },
+        "entities": [
+            {
+                "start": 34,
+                "end": 38,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6117553709619532,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8737316074423288
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.04146280625360134
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.031131369473221593
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.024952102806688376
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.014530092761193845
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.014192021262966021
+            }
+        ],
+        "text": "Salut, poti sa stingi becurile in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 165
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8970961586142934
+        },
+        "entities": [
+            {
+                "start": 19,
+                "end": 25,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9594584473601292,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8970961586142934
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.04185675717146585
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.020071491642478203
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.014955537336391893
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.014909075032515437
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.011110980202855255
+            }
+        ],
+        "text": "stinge becurile in camara",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 166
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.938373150687428
+        },
+        "entities": [
+            {
+                "start": 27,
+                "end": 33,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9594585914126992,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.938373150687428
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.02780367191891052
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.01719736469730807
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.010591707126533881
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0031853948826092928
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.002848710687210664
+            }
+        ],
+        "text": "poti sa stingi becurile in camara",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 167
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.947222460559498
+        },
+        "entities": [],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.947222460559498
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.021632614188099017
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.0153334184607772
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.011735594935321137
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0020467553940692928
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.002029156462234992
+            }
+        ],
+        "text": "as vrea sa stingi lumina",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 168
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8199634685836482
+        },
+        "entities": [
+            {
+                "start": 34,
+                "end": 44,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6767611617997845,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8199634685836482
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.06560153926200829
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.05125985069413826
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.02656933590375461
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.020559665629547814
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.01604613992690274
+            }
+        ],
+        "text": "Salut, poti sa stingi becurile in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-incapere"
+        ],
+        "id": 169
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8726574296414253
+        },
+        "entities": [
+            {
+                "start": 36,
+                "end": 40,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6117579806671583,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8726574296414253
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.0636032382771533
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.041778789141644776
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.010722895349192248
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.006797843435032208
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.00443980415555235
+            }
+        ],
+        "text": "Pepper as vrea sa opresti lumina in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 170
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.8123259654776668
+        },
+        "entities": [
+            {
+                "start": 26,
+                "end": 33,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.9753769488144151,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.8123259654776668
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.051182504820062986
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.05111315358113141
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.03449217514965444
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.031017318089244034
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.019868882882239966
+            }
+        ],
+        "text": "Pepper stinge becurile in pivnita",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 171
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.9523982942179375
+        },
+        "entities": [],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.9523982942179375
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.026529221008916203
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.01115786072676829
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.005820324442840274
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0025563368168823584
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0015379627866550839
+            }
+        ],
+        "text": "poti sa opresti becurile",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 172
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.9124802561149432
+        },
+        "entities": [
+            {
+                "start": 17,
+                "end": 22,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9735010208475636,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.9124802561149432
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.023431468049600675
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.022914745337356067
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.016576207734906038
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.014496023224943179
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.010101299538250699
+            }
+        ],
+        "text": "opreste becul in curte",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 173
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.9077435533509427
+        },
+        "entities": [
+            {
+                "start": 20,
+                "end": 26,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9594584058504023,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.9077435533509427
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.026895331253396586
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.017863359109099367
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.017596230143340354
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.015296502773685827
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.014605023369535263
+            }
+        ],
+        "text": "opreste becurile in camara",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 174
+    },
+    {
+        "intent": {
+            "name": "stingeLumina",
+            "confidence": 0.7701339957892219
+        },
+        "entities": [
+            {
+                "start": 32,
+                "end": 37,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9735013262230418,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "stingeLumina",
+                "confidence": 0.7701339957892219
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.08535613138834333
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.08135406717063433
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.025992407563300516
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.019828262825109803
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.01733513526339033
+            }
+        ],
+        "text": "Salut, poti sa stingi lumina in curte",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 175
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.9154210786677668
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 42,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.983061453607243,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 46,
+                "end": 51,
+                "value": "minim",
+                "entity": "nivel",
+                "confidence": 0.9420361263150631,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.9154210786677668
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.039369537593439904
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.013536986979827062
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.012606975962453214
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.011428302024459262
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.007637118772053519
+            }
+        ],
+        "text": "poti sa scazi intensitatea luminii in baie la minim",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 241
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.6389015161029342
+        },
+        "entities": [
+            {
+                "start": 53,
+                "end": 63,
+                "value": "sufragerie",
+                "entity": "loc",
+                "confidence": 0.9428772752805097,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 67,
+                "end": 68,
+                "value": "4",
+                "entity": "nivel",
+                "confidence": 0.9864860545946915,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.6389015161029342
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.20963372236409855
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.06150874398094374
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.05270894150258857
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.024718018362019638
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.012529057687415546
+            }
+        ],
+        "text": "Pepper as vrea sa scazi intensitatea iluminatului in sufragerie la 4",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 242
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.5677605419059787
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 44,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9594590627522214,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.5677605419059787
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.13693699330920417
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.10257727395127518
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.07939079193002034
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.06594033659689912
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.047394062306622534
+            }
+        ],
+        "text": "Pepper redu intensitatea becurilor in camara",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 243
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.9712189358807756
+        },
+        "entities": [
+            {
+                "start": 30,
+                "end": 40,
+                "value": "sufragerie",
+                "entity": "loc",
+                "confidence": 0.942876884068196,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 44,
+                "end": 45,
+                "value": "1",
+                "entity": "nivel",
+                "confidence": 0.9760043534369289,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.9712189358807756
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.012070133145204508
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.008245250081865323
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.003088080100736865
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.0030062646954420883
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.002371336095975763
+            }
+        ],
+        "text": "scade intensitatea luminii in sufragerie la 1",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 244
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.7567234654316878
+        },
+        "entities": [
+            {
+                "start": 50,
+                "end": 54,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.9830614720100771,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 58,
+                "end": 63,
+                "value": "minim",
+                "entity": "nivel",
+                "confidence": 0.942036126308873,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.7567234654316878
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.06992820123052738
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.06097129136796033
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.06024189093929332
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.031549243515676104
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.020585907514855072
+            }
+        ],
+        "text": "Salut, as vrea sa scazi intensitatea becurilor in baie la minim",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 245
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.7260110305953442
+        },
+        "entities": [
+            {
+                "start": 41,
+                "end": 51,
+                "value": "sufragerie",
+                "entity": "loc",
+                "confidence": 0.9428772754013025,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 55,
+                "end": 56,
+                "value": "4",
+                "entity": "nivel",
+                "confidence": 0.9864860545946329,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.7260110305953442
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.19937277878172208
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.03708923288023937
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.020175105992931045
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.012292472515320266
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.005059379234442772
+            }
+        ],
+        "text": "Pepper redu intensitatea iluminatului in sufragerie la 4",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 246
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.8310240921885496
+        },
+        "entities": [
+            {
+                "start": 51,
+                "end": 58,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.9939318904596247,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 62,
+                "end": 70,
+                "value": "jumatate",
+                "entity": "nivel",
+                "confidence": 0.9537265102682335,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.8310240921885496
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.06429934114551411
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.04635630531882185
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.029825754451923623
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.019443854205930932
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.009050652689260022
+            }
+        ],
+        "text": "Pepper poti sa reduci intensitatea iluminatului in pivnita la jumatate",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 247
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.606719187307838
+        },
+        "entities": [
+            {
+                "start": 53,
+                "end": 62,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.9774975201498102,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "value": "4",
+                "entity": "nivel",
+                "confidence": 0.9864883966324756,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.606719187307838
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.23833020947234454
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.06388418252479652
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.05435867395602615
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.024014245176358015
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.012693501562636763
+            }
+        ],
+        "text": "Pepper as vrea sa scazi intensitatea iluminatului in bucatarie la 4",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 248
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.7518899339154511
+        },
+        "entities": [],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.7518899339154511
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.07901578909454131
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.07528370187749213
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.0401877792280541
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.028851372183413534
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.024771423701047617
+            }
+        ],
+        "text": "Salut, as vrea sa reduci intensitatea iluminatului",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 249
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.6233581131459528
+        },
+        "entities": [
+            {
+                "start": 37,
+                "end": 47,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6767596072313435,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.6233581131459528
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.1216702510437613
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.0853975855733478
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.06556698937083512
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.06366803179180584
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.040339029074297476
+            }
+        ],
+        "text": "Pepper scade intensitatea luminii in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-incapere"
+        ],
+        "id": 250
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.8858782525666826
+        },
+        "entities": [
+            {
+                "start": 51,
+                "end": 58,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.9939318643300505,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 62,
+                "end": 67,
+                "value": "sfert",
+                "entity": "nivel",
+                "confidence": 0.95804112124884,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.8858782525666826
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.034646212246287944
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.02838278846162901
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.02179414406139729
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.01681885460682672
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.012479748057176363
+            }
+        ],
+        "text": "Salut, poti sa reduci intensitatea iluminatului in pivnita la sfert",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 251
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.8562494897466915
+        },
+        "entities": [
+            {
+                "start": 47,
+                "end": 57,
+                "value": "sufragerie",
+                "entity": "loc",
+                "confidence": 0.9428767391599095,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 61,
+                "end": 62,
+                "value": "3",
+                "entity": "nivel",
+                "confidence": 0.9842747628192378,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.8562494897466915
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.06711907756029364
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.029691242730597568
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.02145863842135805
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.01677969713766681
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.008701854403392027
+            }
+        ],
+        "text": "Pepper poti sa scazi intensitatea becurilor in sufragerie la 3",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 252
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.7472008655665912
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 45,
+                "value": "pivnita",
+                "entity": "loc",
+                "confidence": 0.9939317411441335,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 49,
+                "end": 50,
+                "value": "2",
+                "entity": "nivel",
+                "confidence": 0.9855569859283013,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.7472008655665912
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.16829272786241892
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.03512868670756427
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.02412025376959598
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.018051166900644174
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.00720629919318537
+            }
+        ],
+        "text": "Pepper redu intensitatea becurilor in pivnita la 2",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 253
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.8882168165536914
+        },
+        "entities": [
+            {
+                "start": 51,
+                "end": 55,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.983061682700842,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 59,
+                "end": 64,
+                "value": "sfert",
+                "entity": "nivel",
+                "confidence": 0.9580402839181525,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.8882168165536914
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.031866764533950716
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.025449563305813987
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.022315151771746318
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.020005654879380164
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.01214604895541716
+            }
+        ],
+        "text": "Pepper poti sa reduci intensitatea iluminatului in baie la sfert",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 254
+    },
+    {
+        "intent": {
+            "name": "scadeIntensitateLumina",
+            "confidence": 0.853720096089123
+        },
+        "entities": [
+            {
+                "start": 48,
+                "end": 53,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274615640497,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 57,
+                "end": 58,
+                "value": "1",
+                "entity": "nivel",
+                "confidence": 0.9760085820076029,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.853720096089123
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.054322034777021085
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.04298268184604942
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.028130293769630565
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.011976115376151385
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.008868778142025073
+            }
+        ],
+        "text": "Pepper as vrea sa scazi intensitatea luminii in curte la 1",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 255
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.8337321930910602
+        },
+        "entities": [
+            {
+                "start": 30,
+                "end": 38,
+                "value": "26 grade",
+                "entity": "grade",
+                "confidence": 0.7752744381191682,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 42,
+                "end": 50,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5856521763191841,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.8337321930910602
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.07571037840226179
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.03740049958390813
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.02387364891852462
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.014765884872202052
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.014517395132043103
+            }
+        ],
+        "text": "te rog schimba temperatura la 26 grade in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 321
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.7985006503427582
+        },
+        "entities": [
+            {
+                "start": 45,
+                "end": 69,
+                "value": "douazeci si unu de grade",
+                "entity": "grade",
+                "confidence": 0.9596849323393543,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 73,
+                "end": 83,
+                "value": "toata casa",
+                "entity": "incapere",
+                "confidence": 0.9828086790085712,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.7985006503427582
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.09100974254701805
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.03447505052291353
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.0320253551835753
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02752950670107754
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.016459694702657263
+            }
+        ],
+        "text": "Pepper te rog ridica temperatura aproximativ douazeci si unu de grade in toata casa",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 322
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.9496603420429203
+        },
+        "entities": [
+            {
+                "start": 11,
+                "end": 36,
+                "value": "douazeci si sase de grade",
+                "entity": "grade",
+                "confidence": 0.9427205384207314,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 40,
+                "end": 48,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5856476674985533,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.9496603420429203
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.015996039164735448
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.013176689929316789
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.007716351365328282
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.007380560194524759
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.006070017303174095
+            }
+        ],
+        "text": "seteaza pe douazeci si sase de grade in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 323
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.9343467367407466
+        },
+        "entities": [
+            {
+                "start": 15,
+                "end": 23,
+                "value": "22 grade",
+                "entity": "grade",
+                "confidence": 0.9800620554958662,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 27,
+                "end": 36,
+                "value": "peste tot",
+                "entity": "incapere",
+                "confidence": 0.9688791282531359,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.9343467367407466
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.016962728777785718
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.016197988643436897
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.012550468221972363
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.01170605210477128
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.008236025511287388
+            }
+        ],
+        "text": "Salut, pune pe 22 grade in peste tot",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 324
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.8530694566127693
+        },
+        "entities": [
+            {
+                "start": 44,
+                "end": 52,
+                "value": "22 grade",
+                "entity": "grade",
+                "confidence": 0.9802955579210514,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 56,
+                "end": 66,
+                "value": "toata casa",
+                "entity": "incapere",
+                "confidence": 0.9828086541184611,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.8530694566127693
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.06703551189093881
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.024703949890135714
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.021425745082199712
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.01927322147794486
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01449211504601171
+            }
+        ],
+        "text": "Pepper te rog ridica temperatura aproape de 22 grade in toata casa",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 325
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.934782641410499
+        },
+        "entities": [
+            {
+                "start": 23,
+                "end": 31,
+                "value": "17 grade",
+                "entity": "grade",
+                "confidence": 0.9802791005278465,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 35,
+                "end": 44,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.5493783878150021,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.934782641410499
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.01552233623755147
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.015025052740502984
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01287105329436246
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.01285139802855767
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.008947518288526374
+            }
+        ],
+        "text": "Pepper pune aproape de 17 grade in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 326
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.858049245865754
+        },
+        "entities": [
+            {
+                "start": 33,
+                "end": 57,
+                "value": "douazeci si unu de grade",
+                "entity": "grade",
+                "confidence": 0.9599072966309732,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 61,
+                "end": 77,
+                "value": "tot apartamentul",
+                "entity": "incapere",
+                "confidence": 0.9427727565799673,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.858049245865754
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.07298331302315254
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.02029237924212904
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.0185389119785084
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.01746973572200264
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01266641416845334
+            }
+        ],
+        "text": "Pepper te rog schimba aproape de douazeci si unu de grade in tot apartamentul",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 327
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.8787376807404954
+        },
+        "entities": [
+            {
+                "start": 27,
+                "end": 52,
+                "value": "douazeci si trei de grade",
+                "entity": "grade",
+                "confidence": 0.9592466757602677,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 56,
+                "end": 60,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6115320934240182,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.8787376807404954
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.032878420949393784
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.031459984402945264
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.0243738127973225
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.019356392648128228
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.013193708461714998
+            }
+        ],
+        "text": "Pepper coboara aproximativ douazeci si trei de grade in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 328
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.7916934300465972
+        },
+        "entities": [
+            {
+                "start": 39,
+                "end": 64,
+                "value": "douazeci si sase de grade",
+                "entity": "grade",
+                "confidence": 0.9309857031999245,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 68,
+                "end": 78,
+                "value": "toata casa",
+                "entity": "incapere",
+                "confidence": 0.9828086570366864,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.7916934300465972
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.07153368182614248
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.05182054138226425
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.03369591791951045
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.03295987100980066
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.018296557815684594
+            }
+        ],
+        "text": "Salut, te rog ajusteaza temperatura la douazeci si sase de grade in toata casa",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 329
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.8811755919327408
+        },
+        "entities": [
+            {
+                "start": 36,
+                "end": 44,
+                "value": "17 grade",
+                "entity": "grade",
+                "confidence": 0.9801913639630054,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 48,
+                "end": 57,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.549378454130763,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.8811755919327408
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.03829900256302009
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.025310654089365777
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.025276779611111015
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.015759838581102022
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.014178133222660235
+            }
+        ],
+        "text": "Salut, te rog ridica temperatura pe 17 grade in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 330
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.8994118982316581
+        },
+        "entities": [
+            {
+                "start": 22,
+                "end": 47,
+                "value": "douazeci si sase de grade",
+                "entity": "grade",
+                "confidence": 0.9309819815511057,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 51,
+                "end": 55,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6115325503394436,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.8994118982316581
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.026250926016979394
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.02224476164968647
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.021301580656088715
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.015446938284637222
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.015343895160949984
+            }
+        ],
+        "text": "te rog coboara cam la douazeci si sase de grade in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 331
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.6777948866077754
+        },
+        "entities": [
+            {
+                "start": 27,
+                "end": 35,
+                "value": "22 grade",
+                "entity": "grade",
+                "confidence": 0.7752745866845219,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 39,
+                "end": 48,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.5493781239224255,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.6777948866077754
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.15906144623616641
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.10337978539261533
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0272003984256109
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.017569023256247467
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.014994460081584542
+            }
+        ],
+        "text": "Salut, pune temperatura la 22 grade in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 332
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.6900084382738774
+        },
+        "entities": [
+            {
+                "start": 15,
+                "end": 23,
+                "value": "25 grade",
+                "entity": "grade",
+                "confidence": 0.7752571267430515,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 27,
+                "end": 36,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.5493781237006233,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.6900084382738774
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.1795627742961867
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.08842679125684184
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.014437408135473406
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.013956470000511798
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.013608118037108938
+            }
+        ],
+        "text": "Pepper pune la 25 grade in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 333
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.7895280598416035
+        },
+        "entities": [
+            {
+                "start": 29,
+                "end": 37,
+                "value": "24 grade",
+                "entity": "grade",
+                "confidence": 0.7752549965000248,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 41,
+                "end": 50,
+                "value": "peste tot",
+                "entity": "incapere",
+                "confidence": 0.9688791429552785,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.7895280598416035
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.10451052574230951
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.04877712125916768
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.01978949878780445
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01967847913713427
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.017716315231980594
+            }
+        ],
+        "text": "Salut, te rog schimba cam la 24 grade in peste tot",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 334
+    },
+    {
+        "intent": {
+            "name": "seteazaTemperatura",
+            "confidence": 0.8023671557449802
+        },
+        "entities": [
+            {
+                "start": 20,
+                "end": 38,
+                "value": "nouasprezece grade",
+                "entity": "grade",
+                "confidence": 0.967262431190175,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 42,
+                "end": 52,
+                "value": "toata casa",
+                "entity": "incapere",
+                "confidence": 0.9828085578917525,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.8023671557449802
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.0527899530828105
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.04401203040821111
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.042335790395857255
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.03175947848361147
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.026735591884529213
+            }
+        ],
+        "text": "Salut, ajusteaza pe nouasprezece grade in toata casa",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 335
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9132164021378367
+        },
+        "entities": [
+            {
+                "start": 55,
+                "end": 59,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.9830611346554377,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 63,
+                "end": 64,
+                "value": "2",
+                "entity": "nivel",
+                "confidence": 0.9855557127739049,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9132164021378367
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.04002448912875055
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.014635127625501948
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.013863072319490235
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.012482174200687871
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.005778734587732651
+            }
+        ],
+        "text": "Pepper as vrea sa maresti intensitatea iluminatului in baie la 2",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 401
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9288866296596495
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 43,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274713087957,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 47,
+                "end": 52,
+                "value": "dublu",
+                "entity": "nivel",
+                "confidence": 0.9702141252865754,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9288866296596495
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.028284825480410714
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.020754990469754396
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0140283837239815
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.005554658418980533
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.0024905122472232634
+            }
+        ],
+        "text": "Salut, creste intensitatea luminii in curte la dublu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 402
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.8829141944497544
+        },
+        "entities": [
+            {
+                "start": 50,
+                "end": 56,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9897815620645722,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 60,
+                "end": 61,
+                "value": "2",
+                "entity": "nivel",
+                "confidence": 0.9855570912080184,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.8829141944497544
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.04367358163052331
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.028093453347262046
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.02159368975192709
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0148729871921692
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.00885209362836438
+            }
+        ],
+        "text": "Salut, as vrea sa maresti intensitatea luminii in camara la 2",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 403
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9276766201358756
+        },
+        "entities": [
+            {
+                "start": 54,
+                "end": 60,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9897815941979101,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 64,
+                "end": 65,
+                "value": "3",
+                "entity": "nivel",
+                "confidence": 0.9842793025261042,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9276766201358756
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.030001776913874897
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.016972433344811192
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.010807989988392918
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.01066062770488314
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.003880551912162302
+            }
+        ],
+        "text": "Pepper as vrea sa cresti intensitatea iluminatului in camara la 3",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 404
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.6762139963350752
+        },
+        "entities": [
+            {
+                "start": 45,
+                "end": 53,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.585882060242695,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.6762139963350752
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.16376504126667438
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.11573852503711868
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.03172522207574427
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.008261327008791525
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.004295888276595703
+            }
+        ],
+        "text": "as vrea sa maresti intensitatea becurilor in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 405
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.8999170568735545
+        },
+        "entities": [
+            {
+                "start": 49,
+                "end": 55,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9897815825654066,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 59,
+                "end": 60,
+                "value": "4",
+                "entity": "nivel",
+                "confidence": 0.9864899646695181,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.8999170568735545
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.03011058412701582
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.026542143492326337
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.020229538416811056
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.014611745227252516
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.008588931863039932
+            }
+        ],
+        "text": "Salut, poti sa maresti intensitatea becurilor in camara la 4",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 406
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9595064898301462
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 44,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.989781571452002,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 48,
+                "end": 54,
+                "value": "triplu",
+                "entity": "nivel",
+                "confidence": 0.9745353870678095,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9595064898301462
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.019840331037617103
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.010346646345927014
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.005607991887778046
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.0027984058425711356
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.0019001350559604247
+            }
+        ],
+        "text": "Pepper creste intensitatea luminii in camara la triplu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 407
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9305286718392647
+        },
+        "entities": [
+            {
+                "start": 52,
+                "end": 62,
+                "value": "sufragerie",
+                "entity": "loc",
+                "confidence": 0.9428767390545642,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "value": "3",
+                "entity": "nivel",
+                "confidence": 0.9842747628192966,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9305286718392647
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.02313662506792566
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.018752291975867908
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.012495714253544477
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.010612566932992592
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.004474129930404897
+            }
+        ],
+        "text": "Pepper as vrea sa maresti intensitatea becurilor in sufragerie la 3",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 408
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9074115071536426
+        },
+        "entities": [
+            {
+                "start": 40,
+                "end": 45,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274952863918,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 49,
+                "end": 54,
+                "value": "dublu",
+                "entity": "nivel",
+                "confidence": 0.9702141252854126,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9074115071536426
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.04489426831098007
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.022367340471527743
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.015335945755269647
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.007070632372019997
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.0029203059365596517
+            }
+        ],
+        "text": "Salut, creste intensitatea becurilor in curte la dublu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 409
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9348316200667495
+        },
+        "entities": [
+            {
+                "start": 39,
+                "end": 48,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.9774969377741319,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 52,
+                "end": 53,
+                "value": "5",
+                "entity": "nivel",
+                "confidence": 0.9806472679487847,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9348316200667495
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02865174719304195
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.024772444531908834
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.007594915638869209
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.002340503619350172
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.001808768950080389
+            }
+        ],
+        "text": "Pepper mareste intensitatea luminii in bucatarie la 5",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 410
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9042463836024672
+        },
+        "entities": [
+            {
+                "start": 52,
+                "end": 58,
+                "value": "camara",
+                "entity": "loc",
+                "confidence": 0.9897816256398494,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 62,
+                "end": 67,
+                "value": "dublu",
+                "entity": "nivel",
+                "confidence": 0.9702142119794176,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9042463836024672
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.033508228610955586
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.02142551334916866
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.018286940846114378
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.014598640765925265
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.007934292825368776
+            }
+        ],
+        "text": "Salut, poti sa maresti intensitatea iluminatului in camara la dublu",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 411
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9545380548754651
+        },
+        "entities": [
+            {
+                "start": 39,
+                "end": 44,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274652212451,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 48,
+                "end": 49,
+                "value": "5",
+                "entity": "nivel",
+                "confidence": 0.9806493776616751,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9545380548754651
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.020916712546696366
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.010619524788945343
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.007200867656431476
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.0040996325925349375
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.0026252075399265306
+            }
+        ],
+        "text": "poti sa cresti intensitatea luminii in curte la 5",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 412
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.6804604835782411
+        },
+        "entities": [
+            {
+                "start": 52,
+                "end": 56,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6117570042206834,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.6804604835782411
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.1446003347019767
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.09117960484376596
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.04939318145353841
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.019059817266456877
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.015306578156021359
+            }
+        ],
+        "text": "Salut, poti sa maresti intensitatea iluminatului in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 413
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.8969735337320472
+        },
+        "entities": [
+            {
+                "start": 52,
+                "end": 57,
+                "value": "curte",
+                "entity": "loc",
+                "confidence": 0.9934274378761963,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 61,
+                "end": 62,
+                "value": "2",
+                "entity": "nivel",
+                "confidence": 0.9855569990164236,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.8969735337320472
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.046961762603000015
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.023067761442419194
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.015803148865227847
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.011890982907732125
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.005302810449573674
+            }
+        ],
+        "text": "Pepper as vrea sa maresti intensitatea becurilor in curte la 2",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 414
+    },
+    {
+        "intent": {
+            "name": "cresteIntensitateLumina",
+            "confidence": 0.9431450107882802
+        },
+        "entities": [],
+        "intent_ranking": [
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.9431450107882802
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.0208039475501296
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.012740875360965138
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.012410464935451738
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.0068063803824244895
+            },
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.004093320982748589
+            }
+        ],
+        "text": "Pepper poti sa maresti intensitatea becurilor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 415
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.9303998132202569
+        },
+        "entities": [
+            {
+                "start": 12,
+                "end": 23,
+                "value": "patru grade",
+                "entity": "grade",
+                "confidence": 0.9583100407325954,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 27,
+                "end": 31,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.611539445757849,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.9303998132202569
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.028145905427221937
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.01705753056411227
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.010918970039380263
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.006771685563685697
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.00670609518534299
+            }
+        ],
+        "text": "modifica cu patru grade in baie",
+        "labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 481
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.8048442068666014
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 46,
+                "value": "un grade",
+                "entity": "grade",
+                "confidence": 0.9578661869810351,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 50,
+                "end": 54,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6115395385579804,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.8048442068666014
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.08059271567934388
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.04677660790934386
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.025274103643358168
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02393282074189649
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.018579545159456444
+            }
+        ],
+        "text": "Pepper te rog modifica temperatura cu un grade in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 482
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.8966934586618814
+        },
+        "entities": [
+            {
+                "start": 24,
+                "end": 31,
+                "value": "3 grade",
+                "entity": "grade",
+                "confidence": 0.9952214490913844,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 35,
+                "end": 45,
+                "value": "toata casa",
+                "entity": "incapere",
+                "confidence": 0.9828087050665202,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.8966934586618814
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.04218237912161535
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.018397883428059803
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.017162944741164497
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.014992292259570666
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.010571041787707961
+            }
+        ],
+        "text": "modifica temperatura cu 3 grade in toata casa",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 483
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.8633283730338542
+        },
+        "entities": [
+            {
+                "start": 26,
+                "end": 34,
+                "value": "un grade",
+                "entity": "grade",
+                "confidence": 0.9578886582223535,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 38,
+                "end": 46,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5856550653894725,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.8633283730338542
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.043566501570593295
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.034001814932877
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.025570799854369844
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02150266612438512
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.012029844483920298
+            }
+        ],
+        "text": "Pepper te rog modifica cu un grade in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 484
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.9316342047808803
+        },
+        "entities": [
+            {
+                "start": 12,
+                "end": 23,
+                "value": "patru grade",
+                "entity": "grade",
+                "confidence": 0.9583109847108053,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 27,
+                "end": 36,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.5493809420448872,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.9316342047808803
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.022300519930082217
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.01487955870794784
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.011426025475806956
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.010310415601414
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.009449275503869032
+            }
+        ],
+        "text": "modifica cu patru grade in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 485
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.9029419398729273
+        },
+        "entities": [
+            {
+                "start": 24,
+                "end": 31,
+                "value": "3 grade",
+                "entity": "grade",
+                "confidence": 0.9952214352613431,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 35,
+                "end": 44,
+                "value": "peste tot",
+                "entity": "incapere",
+                "confidence": 0.968879232800692,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.9029419398729273
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.049841219662311156
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.018534925519943506
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.012131579368088027
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.010255468592333712
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.006294866984396349
+            }
+        ],
+        "text": "modifica temperatura cu 3 grade in peste tot",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 486
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.9327344225533447
+        },
+        "entities": [
+            {
+                "start": 12,
+                "end": 19,
+                "value": "4 grade",
+                "entity": "grade",
+                "confidence": 0.9950600384654436,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 23,
+                "end": 33,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6769532311401809,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.9327344225533447
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.020714542379127267
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.016958575188210652
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.012197230265330839
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.009721283893961265
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.007673945720025175
+            }
+        ],
+        "text": "modifica cu 4 grade in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere"
+        ],
+        "id": 487
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.880196867411885
+        },
+        "entities": [
+            {
+                "start": 31,
+                "end": 38,
+                "value": "4 grade",
+                "entity": "grade",
+                "confidence": 0.9950774141828344,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 42,
+                "end": 46,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6115362030689577,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.880196867411885
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.05880126618852071
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.020695844394689297
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.0172745146229884
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.011860629344943169
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.011170878036973263
+            }
+        ],
+        "text": "te rog modifica temperatura cu 4 grade in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 488
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.892627367165901
+        },
+        "entities": [
+            {
+                "start": 24,
+                "end": 35,
+                "value": "cinci grade",
+                "entity": "grade",
+                "confidence": 0.988661009311887,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 39,
+                "end": 48,
+                "value": "peste tot",
+                "entity": "incapere",
+                "confidence": 0.9688791577216295,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.892627367165901
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.060176710035424644
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.012987558263743924
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01172895650097011
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.011259900829481358
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.011219507204479005
+            }
+        ],
+        "text": "modifica temperatura cu cinci grade in peste tot",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 489
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.8761383169367043
+        },
+        "entities": [
+            {
+                "start": 19,
+                "end": 26,
+                "value": "5 grade",
+                "entity": "grade",
+                "confidence": 0.9953714724929527,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 30,
+                "end": 34,
+                "value": "baie",
+                "entity": "loc",
+                "confidence": 0.6115362028033752,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.8761383169367043
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.050671361817587225
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.02640001378052845
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.02244771601836704
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.013643276256239532
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.01069931519057347
+            }
+        ],
+        "text": "Salut, modifica cu 5 grade in baie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 490
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.8222408646003643
+        },
+        "entities": [
+            {
+                "start": 38,
+                "end": 45,
+                "value": "5 grade",
+                "entity": "grade",
+                "confidence": 0.9953867911748044,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 49,
+                "end": 65,
+                "value": "tot apartamentul",
+                "entity": "incapere",
+                "confidence": 0.9427725950698677,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.8222408646003643
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.09223533448468837
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.026638393310589207
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.02526538672943728
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.020997131032588455
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.012622889842332318
+            }
+        ],
+        "text": "Pepper te rog modifica temperatura cu 5 grade in tot apartamentul",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere",
+            "I-incapere"
+        ],
+        "id": 491
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.9523709400195158
+        },
+        "entities": [
+            {
+                "start": 12,
+                "end": 22,
+                "value": "trei grade",
+                "entity": "grade",
+                "confidence": 0.9733297751056514,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 26,
+                "end": 36,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6769514768265633,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.9523709400195158
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.013706402985524235
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.010724830561751199
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.00889422734152799
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.007704990502227851
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.006598608589453069
+            }
+        ],
+        "text": "modifica cu trei grade in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere"
+        ],
+        "id": 492
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.8759705257962338
+        },
+        "entities": [
+            {
+                "start": 19,
+                "end": 26,
+                "value": "4 grade",
+                "entity": "grade",
+                "confidence": 0.9950617890031355,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 30,
+                "end": 38,
+                "value": "dormitor",
+                "entity": "loc",
+                "confidence": 0.5856515783429644,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.8759705257962338
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.04319938920569482
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.028010687836321588
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.021633763951520515
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.018112094703928768
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.013073538506300495
+            }
+        ],
+        "text": "Pepper modifica cu 4 grade in dormitor",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 493
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.9071314449966389
+        },
+        "entities": [
+            {
+                "start": 24,
+                "end": 34,
+                "value": "trei grade",
+                "entity": "grade",
+                "confidence": 0.9733143411568902,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 38,
+                "end": 47,
+                "value": "bucatarie",
+                "entity": "loc",
+                "confidence": 0.549379647221833,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.9071314449966389
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.03674758604936461
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.0175018892494046
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.01470402340884647
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.012198601505719227
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.011716454790026205
+            }
+        ],
+        "text": "modifica temperatura cu trei grade in bucatarie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 494
+    },
+    {
+        "intent": {
+            "name": "modificaTemperatura",
+            "confidence": 0.8624542383257803
+        },
+        "entities": [
+            {
+                "start": 24,
+                "end": 30,
+                "value": "1 grad",
+                "entity": "grade",
+                "confidence": 0.9571541883484869,
+                "extractor": "ner_crf"
+            },
+            {
+                "start": 34,
+                "end": 44,
+                "value": "sufragerie",
+                "entity": "incapere",
+                "confidence": 0.6770064191603598,
+                "extractor": "ner_crf"
+            }
+        ],
+        "intent_ranking": [
+            {
+                "name": "modificaTemperatura",
+                "confidence": 0.8624542383257803
+            },
+            {
+                "name": "scadeIntensitateLumina",
+                "confidence": 0.04325772217688798
+            },
+            {
+                "name": "cresteIntensitateLumina",
+                "confidence": 0.0398427415937755
+            },
+            {
+                "name": "seteazaTemperatura",
+                "confidence": 0.028890397878008373
+            },
+            {
+                "name": "aprindeLumina",
+                "confidence": 0.015094876027186132
+            },
+            {
+                "name": "stingeLumina",
+                "confidence": 0.010460023998361878
+            }
+        ],
+        "text": "modifica temperatura cu 1 grad in sufragerie",
+        "labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-incapere"
+        ],
+        "id": 495
+    }
+]
