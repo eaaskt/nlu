@@ -239,6 +239,7 @@ if __name__ == '__main__':
     # Slot filling evaluation
     total_y_true = []
     total_y_pred = []
+    print("Slot filling")
     for f1, f2 in files:
         y_true, y_pred = extract_slot_labels(f1, f2)
 
@@ -300,22 +301,22 @@ if __name__ == '__main__':
     print(scores)
 
     # View incorrectly predicted intents
-    # incorrect_intents = {}
-    # print()
-    # print('Incorrect intent predictions')
-    # for t, p in zip(intents_true_with_text, intents_pred_with_text):
-    #     if t[0] != p[0]:
-    #         # print('Text: ' + t[1])
-    #         # print('True intent: ' + t[0])
-    #         # print('Pred intent: ' + p[0] + '\n')
-    #         if t[0] not in incorrect_intents:
-    #             incorrect_intents[t[0]] = []
-    #         incorrect_intents[t[0]].append((t[1], p[0]))
-    #
-    # for k, v in incorrect_intents.items():
-    #     print(k)
-    #     for intent in v:
-    #         print('{} -> {}'.format(intent[0], intent[1]))
+    incorrect_intents = {}
+    print()
+    print('Incorrect intent predictions')
+    for t, p in zip(intents_true_with_text, intents_pred_with_text):
+        if t[0] != p[0]:
+            # print('Text: ' + t[1])
+            # print('True intent: ' + t[0])
+            # print('Pred intent: ' + p[0] + '\n')
+            if t[0] not in incorrect_intents:
+                incorrect_intents[t[0]] = []
+            incorrect_intents[t[0]].append((t[1], p[0]))
+
+    for k, v in incorrect_intents.items():
+        print(k)
+        for intent in v:
+            print('{} -> {}'.format(intent[0], intent[1]))
 
     # for f1, f2 in files:
     #     with open(f1, errors='replace') as f:
