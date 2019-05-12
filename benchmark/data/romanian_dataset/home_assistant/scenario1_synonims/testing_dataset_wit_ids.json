@@ -2550,7 +2550,7 @@
         "id": 94
     },
     {
-        "text": "Pepper ai putea oare mari becurilor in dormitor la 3",
+        "text": "Pepper ai putea oare mari intensitatea becurilor in dormitor la 3",
         "entities": [
             {
                 "entity": "intent",
@@ -2576,15 +2576,16 @@
             "O",
             "O",
             "O",
-            "O",
             "B-loc",
             "O",
-            "B-nivel"
+            "B-nivel",
+            "O",
+            "O"
         ],
         "id": 95
     },
     {
-        "text": "Pepper ai putea oare mari becurilor in pivnita la maxim",
+        "text": "Pepper ai putea oare mari intensitatea becurilor in pivnita la maxim",
         "entities": [
             {
                 "entity": "intent",
@@ -2610,15 +2611,16 @@
             "O",
             "O",
             "O",
-            "O",
             "B-loc",
+            "B-nivel",
             "O",
-            "B-nivel"
+            "O",
+            "O"
         ],
         "id": 96
     },
     {
-        "text": "Pepper ai putea oare mari becurilor in pivnita la 2",
+        "text": "Pepper ai putea oare mari intensitatea becurilor in pivnita la 2",
         "entities": [
             {
                 "entity": "intent",
@@ -2644,15 +2646,16 @@
             "O",
             "O",
             "O",
-            "O",
             "B-loc",
+            "B-nivel",
             "O",
-            "B-nivel"
+            "O",
+            "O"
         ],
         "id": 97
     },
     {
-        "text": "Salut, ai putea oare mari becurilor in dormitor la triplu",
+        "text": "Salut, ai putea oare mari intensitatea becurilor in dormitor la triplu",
         "entities": [
             {
                 "entity": "intent",
@@ -2678,15 +2681,16 @@
             "O",
             "O",
             "O",
-            "O",
             "B-loc",
             "O",
-            "B-nivel"
+            "B-nivel",
+            "O",
+            "O"
         ],
         "id": 98
     },
     {
-        "text": "Salut, ai putea oare mari becurilor in baie la 5",
+        "text": "Salut, ai putea oare mari intensitatea becurilor in baie la 5",
         "entities": [
             {
                 "entity": "intent",
@@ -2712,10 +2716,11 @@
             "O",
             "O",
             "O",
+            "B-nivel",
             "O",
-            "B-loc",
             "O",
-            "B-nivel"
+            "O",
+            "O"
         ],
         "id": 99
     },
@@ -3148,7 +3153,7 @@
         "id": 113
     },
     {
-        "text": "ai putea oare mari becurilor in baie la dublu",
+        "text": "ai putea oare mari intensitatea becurilor in baie la dublu",
         "entities": [
             {
                 "entity": "intent",
@@ -3173,10 +3178,11 @@
             "O",
             "O",
             "O",
+            "B-nivel",
             "O",
-            "B-loc",
             "O",
-            "B-nivel"
+            "O",
+            "O"
         ],
         "id": 114
     },
@@ -3340,7 +3346,7 @@
         "id": 119
     },
     {
-        "text": "ai putea oare mari becurilor in camara",
+        "text": "ai putea oare mari intensitatea becurilor in camara",
         "entities": [
             {
                 "entity": "intent",
@@ -3359,8 +3365,9 @@
             "O",
             "O",
             "O",
+            "B-loc",
             "O",
-            "B-loc"
+            "O"
         ],
         "id": 120
     },

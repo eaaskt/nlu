@@ -1,0 +1,36 @@
+{
+  "speed":{
+    "nwords":17074,
+    "cpu":431.1675802586,
+    "gpu":430.0689563104
+  },
+  "accuracy":{
+    "uas":87.6564813568,
+    "las":80.1521066092,
+    "ents_p":0.0,
+    "ents_r":0.0,
+    "ents_f":0.0,
+    "tags_acc":95.8416305494,
+    "token_acc":100.0
+  },
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":"spacy_pretrained_vectors"
+  },
+  "name":"base",
+  "lang":"ro",
+  "pipeline":[
+    "tagger",
+    "parser",
+    "ner"
+  ],
+  "version":"1.0.0",
+  "spacy_version":">=2.1.4.dev0",
+  "description":"RO model - no embeddings",
+  "author":"KEG UTCN",
+  "email":"test@example.com",
+  "url":"https://example.com",
+  "license":"MIT"
+}

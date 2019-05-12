@@ -25,7 +25,8 @@ class RespFormat(Enum):
 def plot_confusion_matrix(y_true, y_pred, labels,
                           normalize=False,
                           title=None,
-                          cmap=plt.cm.Blues):
+                          cmap=plt.cm.Blues,
+                          numbers=False):
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
@@ -57,15 +58,18 @@ def plot_confusion_matrix(y_true, y_pred, labels,
     # Rotate the tick labels and set their alignment.
     plt.setp(ax.get_xticklabels(), rotation='vertical', ha="right",
              rotation_mode="anchor")
+    plt.tight_layout()
 
     # Loop over data dimensions and create text annotations.
-    # fmt = '.2f' if normalize else 'd'
-    # thresh = cm.max() / 2.
-    # for i in range(cm.shape[0]):
-    #     for j in range(cm.shape[1]):
-    #         ax.text(j, i, format(cm[i, j], fmt),
-    #                 ha="center", va="center",
-    #                 color="white" if cm[i, j] > thresh else "black")
+    if numbers:
+
+        fmt = '.2f' if normalize else 'd'
+        thresh = cm.max() / 2.
+        for i in range(cm.shape[0]):
+            for j in range(cm.shape[1]):
+                ax.text(j, i, format(cm[i, j], fmt),
+                        ha="center", va="center",
+                        color="white" if cm[i, j] > thresh else "black")
     # fig.tight_layout()
     return ax
 
@@ -94,7 +98,7 @@ def extract_slot_labels(validation_file, response_file, verbose=False):
             print('%d != %d' % (v['id'], r['id']))
             return
         if len(v['seq_labels']) != len(r['labels']):
-            print('Mismatch in sequences length!')
+            print('Mismatch in sequences length! %d, %d' % (v['id'], r['id']))
             return
         for l in range(len(v['seq_labels'])):
             # For atis dataset, some entity names contain '.', which had to be removed to work with wit.ai
@@ -236,14 +240,12 @@ if __name__ == '__main__':
                 exit(1)
             files.append((file_line[0], file_line[1]))
 
-    # Slot filling evaluation
-    total_y_true = []
-    total_y_pred = []
-    print("Slot filling")
+    # Process each pair of files individually - they should all refer to separate datasets and will be evaluated as such
     for f1, f2 in files:
-        y_true, y_pred = extract_slot_labels(f1, f2)
+        print('RESULTS FOR' + f1)
 
-        print(f1.split('\\')[-1])
+        # Slot filling evaluation
+        y_true, y_pred = extract_slot_labels(f1, f2)
         scores = eval_seq_scores(y_true, y_pred)
         print('F1 score: %lf' % scores['f1'])
         print('Accuracy: %lf' % scores['accuracy'])
@@ -251,82 +253,89 @@ if __name__ == '__main__':
         print('Recall: %lf' % scores['recall'])
         print(scores['clf_report'])
 
-        total_y_true += y_true
-        total_y_pred += y_pred
+        # Intent detection evaluation
+        intents_true = []
+        intents_pred = []
+        intents_true_with_text = []
+        intents_pred_with_text = []
+        intents = []
 
-    # Overall slot filling evaluation
-    scores = eval_seq_scores(total_y_true, total_y_pred)
-    print('Overall evaluation')
-    print('F1 score: %lf' % scores['f1'])
-    print('Accuracy: %lf' % scores['accuracy'])
-    print('Precision: %lf' % scores['precision'])
-    print('Recall: %lf' % scores['recall'])
-    print(scores['clf_report'])
-
-    # Intent detection evaluation
-    intents_true = []
-    intents_pred = []
-    intents_true_with_text = []
-    intents_pred_with_text = []
-    intents = []
-    for f1, f2 in files:
         if args.resp_format == RespFormat.wit:
-            i_true_with_text, i_pred_with_text, intents_list = extract_intents_wit(f1, f2)
+            intents_true_with_text, intents_pred_with_text, intents_list = extract_intents_wit(f1, f2)
         elif args.resp_format == RespFormat.rasa:
-            i_true_with_text, i_pred_with_text, intents_list = extract_intents_rasa(f1, f2)
+            intents_true_with_text, intents_pred_with_text, intents_list = extract_intents_rasa(f1, f2)
 
-        i_true = [i for i,_ in i_true_with_text]
-        i_pred = [i for i, _ in i_pred_with_text]
-
-        intents_true += i_true
-        intents_pred += i_pred
-        intents_true_with_text += i_true_with_text
-        intents_pred_with_text += i_pred_with_text
+        intents_true = [i for i, _ in intents_true_with_text]
+        intents_pred = [i for i, _ in intents_pred_with_text]
 
         intents = list(set(intents).union(intents_list))
+        intents = sorted(intents)
 
-    intents = sorted(intents)
-    plot_confusion_matrix(intents_true, intents_pred, labels=intents,
-                          title='Confusion matrix', normalize=True)
-    plt.show()
+        plot_confusion_matrix(intents_true, intents_pred, labels=intents,
+                              title='Confusion matrix', normalize=True, numbers=False)
+        plt.show()
 
-    # F1 score per intent
-    print('F1 score per intent')
-    scores = scikit_f1(intents_true, intents_pred, average=None, labels=intents)
-    for i, s in zip(intents, scores):
-        print("%s : %lf" % (i, s))
+        # F1 score per intent
+        print('F1 score per intent')
+        scores = scikit_f1(intents_true, intents_pred, average=None, labels=intents)
+        for i, s in zip(intents, scores):
+            print("%s : %lf" % (i, s))
 
-    print('Overall F1 score (micro-averaged)')
-    scores = scikit_f1(intents_true, intents_pred, average='micro', labels=intents)
-    print(scores)
+        print('Overall F1 score (micro-averaged)')
+        scores = scikit_f1(intents_true, intents_pred, average='micro', labels=intents)
+        print(scores)
 
-    # View incorrectly predicted intents
-    incorrect_intents = {}
-    print()
-    print('Incorrect intent predictions')
-    for t, p in zip(intents_true_with_text, intents_pred_with_text):
-        if t[0] != p[0]:
-            # print('Text: ' + t[1])
-            # print('True intent: ' + t[0])
-            # print('Pred intent: ' + p[0] + '\n')
-            if t[0] not in incorrect_intents:
-                incorrect_intents[t[0]] = []
-            incorrect_intents[t[0]].append((t[1], p[0]))
+        # View incorrectly predicted intents
+        incorrect_intents = {}
+        print()
+        print('Incorrect intent predictions')
+        for t, p in zip(intents_true_with_text, intents_pred_with_text):
+            if t[0] != p[0]:
+                # print('Text: ' + t[1])
+                # print('True intent: ' + t[0])
+                # print('Pred intent: ' + p[0] + '\n')
+                if t[0] not in incorrect_intents:
+                    incorrect_intents[t[0]] = []
+                incorrect_intents[t[0]].append((t[1], p[0]))
 
-    for k, v in incorrect_intents.items():
-        print(k)
-        for intent in v:
-            print('{} -> {}'.format(intent[0], intent[1]))
+        for k, v in incorrect_intents.items():
+            print(k)
+            for intent in v:
+                print('{} -> {}'.format(intent[0], intent[1]))
+            print()
 
-    # for f1, f2 in files:
-    #     with open(f1, errors='replace') as f:
-    #         val_data = json.load(f)
-    #     with open(f2, errors='replace') as f:
-    #         pred_data = json.load(f)
-    #     for v, p in zip(val_data, pred_data):
-    #         for entity in v['entities']:
-    #             if entity['entity'] == 'intent' and entity['value'] == 'SearchCreativeWork':
-    #                 print(v['text'])
-    #                 print(v['seq_labels'])
-    #                 print(p['labels'])
-    #                 print()
+        # View incorrect slot sequences
+        with open(f1, errors='replace') as f:
+            val_data = json.load(f)
+        with open(f2, errors='replace') as f:
+            pred_data = json.load(f)
+        for v, p in zip(val_data, pred_data):
+            if v['seq_labels'] != p['labels']:
+                print(v['text'])
+                for ent in v['entities']:
+                    if ent['entity'] == 'intent':
+                        print("True Intent = " + ent['value'])
+                print(v['seq_labels'])
+                print(p['labels'])
+                print()
+
+        # For the Romanian dataset, plot the confusion matrix for the higher-level classes
+        intent_classes = {'aprindeLumina': 'lumina',
+                          'cresteIntensitateLumina': 'lumina',
+                          'cresteTemperatura': 'temperatura',
+                          'opresteMuzica': 'media',
+                          'opresteTV': 'media',
+                          'pornesteTV': 'media',
+                          'puneMuzica': 'media',
+                          'scadeIntensitateLumina': 'lumina',
+                          'scadeTemperatura': 'temperatura',
+                          'schimbaCanalTV': 'media',
+                          'schimbaIntensitateMuzica': 'media',
+                          'seteazaTemperatura': 'temperatura',
+                          'stingeLumina': 'lumina'}
+        intent_classes_labels = ['lumina', 'media', 'temperatura']
+        intent_classes_true = [intent_classes[intent] for intent in intents_true]
+        intent_classes_pred = [intent_classes[intent] for intent in intents_pred]
+        plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
+                              title='Confusion matrix', normalize=True, numbers=True)
+        plt.show()
