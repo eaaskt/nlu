@@ -332,8 +332,9 @@ if __name__ == '__main__':
                           'schimbaCanalTV': 'media',
                           'schimbaIntensitateMuzica': 'media',
                           'seteazaTemperatura': 'temperatura',
-                          'stingeLumina': 'lumina'}
-        intent_classes_labels = ['lumina', 'media', 'temperatura']
+                          'stingeLumina': 'lumina',
+                          'x': 'x'}
+        intent_classes_labels = ['lumina', 'media', 'temperatura', 'x']
         intent_classes_true = [intent_classes[intent] for intent in intents_true]
         intent_classes_pred = [intent_classes[intent] for intent in intents_pred]
         plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
