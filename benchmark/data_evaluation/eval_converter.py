@@ -58,7 +58,7 @@ def convert_iob_prediction(item):
 
 def convert(input_path, output_path, pred=False, ids=False):
     curr_id = 1
-    with open(input_path, errors='replace', encoding='utf-8-sig') as f:
+    with open(input_path, errors='replace', encoding='utf-8') as f:
         data = json.load(f)
     conv_data = []
     if pred:
@@ -77,7 +77,7 @@ def convert(input_path, output_path, pred=False, ids=False):
                 curr_id += 1
             conv_data.append(conv_d)
 
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(conv_data, f, ensure_ascii=False, indent=4)
 
 
