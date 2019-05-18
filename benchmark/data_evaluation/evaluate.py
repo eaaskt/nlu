@@ -195,9 +195,14 @@ def extract_intents_rasa(validation_file, response_file, verbose=False):
             i_pred.append(('x', text))
             intents.append('x')
         else:
-            i_pred.append((r['intent']['name'], text))
-            if r['intent']['name'] not in intents:
-                intents.append(r['intent']['name'])
+            if r['intent']['name'] is None:
+                i_pred.append(('x', text))
+                if 'x' not in intents:
+                    intents.append('x')
+            else:
+                i_pred.append((r['intent']['name'], text))
+                if r['intent']['name'] not in intents:
+                    intents.append(r['intent']['name'])
 
             if verbose:
                 print(r['intent'])
