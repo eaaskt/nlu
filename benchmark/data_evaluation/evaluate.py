@@ -317,7 +317,7 @@ if __name__ == '__main__':
             pred_data = json.load(f)
         for v, p in zip(val_data, pred_data):
             if v['seq_labels'] != p['labels']:
-                # print(v['text'])
+                print(v['text'])
                 for ent in v['entities']:
                     if ent['entity'] == 'intent':
                         # print("True Intent = " + ent['value'])
@@ -325,9 +325,9 @@ if __name__ == '__main__':
                             incorrect_slots_per_intent[ent['value']] = 1
                         else:
                             incorrect_slots_per_intent[ent['value']] += 1
-                # print(v['seq_labels'])
-                # print(p['labels'])
-                # print()
+                print(v['seq_labels'])
+                print(p['labels'])
+                print()
         if incorrect_slots_per_intent:
             plt.bar(incorrect_slots_per_intent.keys(), incorrect_slots_per_intent.values(), width=0.5, color='g')
             plt.xticks(rotation='vertical')
