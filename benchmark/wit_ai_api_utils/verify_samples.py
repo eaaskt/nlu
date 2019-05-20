@@ -42,7 +42,7 @@ def get_messages(input_file, output_file):
 
     response = []
     for sample in json_data:
-        sample_url = url + sample['text'] + "&verbose=True"
+        sample_url = url + sample['text'] + "&verbose=True" + "&n=5"
         try:
             r = requests.get(sample_url, headers=headers)
             print(r.content)
