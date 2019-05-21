@@ -276,9 +276,9 @@ if __name__ == '__main__':
         intents = list(set(intents).union(intents_list))
         intents = sorted(intents)
 
-        # plot_confusion_matrix(intents_true, intents_pred, labels=intents,
-        #                       title='Confusion matrix', normalize=True, numbers=False)
-        # plt.show()
+        plot_confusion_matrix(intents_true, intents_pred, labels=intents,
+                              title='Confusion matrix', normalize=True, numbers=False)
+        plt.show()
 
         # F1 score per intent
         print('F1 score per intent')
@@ -303,11 +303,11 @@ if __name__ == '__main__':
                     incorrect_intents[t[0]] = []
                 incorrect_intents[t[0]].append((t[1], p[0]))
 
-        # for k, v in incorrect_intents.items():
-        #     print(k)
-        #     for intent in v:
-        #         print('{} -> {}'.format(intent[0], intent[1]))
-        #     print()
+        for k, v in incorrect_intents.items():
+            print(k)
+            for intent in v:
+                print('{} -> {}'.format(intent[0], intent[1]))
+            print()
 
         # View incorrect slot sequences
         incorrect_slots_per_intent = {}
@@ -328,11 +328,11 @@ if __name__ == '__main__':
                 print(v['seq_labels'])
                 print(p['labels'])
                 print()
-        if incorrect_slots_per_intent:
-            plt.bar(incorrect_slots_per_intent.keys(), incorrect_slots_per_intent.values(), width=0.5, color='g')
-            plt.xticks(rotation='vertical')
-            plt.tight_layout()
-            plt.show()
+        # if incorrect_slots_per_intent:
+        #     plt.bar(incorrect_slots_per_intent.keys(), incorrect_slots_per_intent.values(), width=0.5, color='g')
+        #     plt.xticks(rotation='vertical')
+        #     plt.tight_layout()
+        #     plt.show()
 
         # For the Romanian dataset, plot the confusion matrix for the higher-level classes
         intent_classes = {'aprindeLumina': 'lumina',
@@ -356,6 +356,6 @@ if __name__ == '__main__':
             intent_classes_labels = ['lumina', 'media', 'temperatura']
         intent_classes_true = [intent_classes[intent] for intent in intents_true]
         intent_classes_pred = [intent_classes[intent] for intent in intents_pred]
-        # plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
-        #                       title='Confusion matrix', normalize=True, numbers=True)
-        # plt.show()
+        plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
+                              title='Confusion matrix', normalize=True, numbers=True)
+        plt.show()
