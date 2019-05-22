@@ -1,0 +1,140 @@
+inchide becurile
+True Intent = stingeLumina
+['O', 'O']
+['O', 'B-loc']
+
+Pepper as vrea sa reduci intensitatea becurilor in camera de zi la 4
+True Intent = scadeIntensitateLumina
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+redu intensitatea becurilor in camera de zi la sfert
+True Intent = scadeIntensitateLumina
+['O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Pepper fa mai mica intensitatea becurilor in camera de zi la 4
+True Intent = scadeIntensitateLumina
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Salut, diminueaza intensitatea becurilor in camera de zi la sfert
+True Intent = scadeIntensitateLumina
+['O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+diminueaza intensitatea becurilor in camera de zi la 3
+True Intent = scadeIntensitateLumina
+['O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+fa mai mica intensitatea becurilor in camera de zi la 4
+True Intent = scadeIntensitateLumina
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+diminueaza intensitatea becurilor in camera de zi la sfert
+True Intent = scadeIntensitateLumina
+['O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Salut, ai putea oare mari intensitatea becurilor in camera de zi la 3
+True Intent = cresteIntensitateLumina
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+mareste intensitatea becurilor in camera de zi la 3
+True Intent = cresteIntensitateLumina
+['O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Hey, ajusteaza aproape de douazeci si sase de grade
+True Intent = seteazaTemperatura
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade']
+
+modifica aproape de douazeci si sapte de grade peste tot
+True Intent = seteazaTemperatura
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc']
+
+schimba temperatura aproape de douazeci si patru de grade in toata casa
+True Intent = seteazaTemperatura
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+ajusteaza aproape de douazeci si cinci de grade in tot apartamentul
+True Intent = seteazaTemperatura
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Salut, fa mai mare temperatura cu un grad in sufragerie
+True Intent = cresteTemperatura
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc']
+
+Salut, poti mari temperatura cu un grad in bucatarie
+True Intent = cresteTemperatura
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc']
+
+poti mari temperatura cu un grad in sufragerie
+True Intent = cresteTemperatura
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc']
+
+Pepper, mareste temperatura cu un grad in sufragerie
+True Intent = cresteTemperatura
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc']
+
+Servus, pune cantec cantat de Pink Floyd
+True Intent = puneMuzica
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+['O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog pune piesa cantata de Pink Floyd
+True Intent = puneMuzica
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog concert compus de Pink Floyd
+True Intent = puneMuzica
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+['O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus, piesa compusa de Pink Floyd
+True Intent = puneMuzica
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+['O', 'O', 'O', 'O', 'O', 'O']
+
+pune melodia compusa de Pink Floyd
+True Intent = puneMuzica
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+['O', 'O', 'O', 'O', 'O', 'O']
+
+te rog da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+poti da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-nivel']
+
+servus poti da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Pepper, te rog poti schimba volumul putin mai tare
+True Intent = schimbaIntensitateMuzica
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc']
+
+te rog poti suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
+

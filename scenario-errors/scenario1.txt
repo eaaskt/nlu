@@ -1,0 +1,90 @@
+Pepper, poti mari cu un grad in toata casa
+True Intent = cresteTemperatura
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc']
+
+Hey, du in jos la nouasprezece grade in bucatarie
+True Intent = scadeTemperatura
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'B-loc', 'O', 'B-grade', 'I-grade', 'O', 'B-loc']
+
+du in jos la douazeci si sase de grade in baie
+True Intent = scadeTemperatura
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'B-loc', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+
+Servus, suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O']
+['O', 'O', 'B-canal']
+
+Servus, te rog poti stinge TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal']
+
+te rog poti stinge TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
+
+te rog stinge TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+poti stinge TV
+True Intent = opresteTV
+['O', 'O', 'O']
+['O', 'O', 'B-canal']
+
+Servus, te rog stinge TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
+
+Servus, te rog poti sa stingi TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal']
+
+te rog suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+Servus, te rog poti suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal']
+
+stinge TV
+True Intent = opresteTV
+['O', 'O']
+['O', 'B-canal']
+
+suspenda TV
+True Intent = opresteTV
+['O', 'O']
+['O', 'B-canal']
+
+Servus, poti stinge TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+poti suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O']
+['O', 'O', 'B-canal']
+
+Servus, poti suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+te rog poti suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
+

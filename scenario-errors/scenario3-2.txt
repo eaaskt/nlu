@@ -1,0 +1,134 @@
+Buna Pepper, imi poti opri becurile
+True Intent = stingeLumina
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-loc']
+
+poti mari cu un grad peste tot
+True Intent = cresteTemperatura
+['O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc']
+
+fa mai mare cu un grad
+True Intent = cresteTemperatura
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade']
+['O', 'O', 'O', 'O', 'O', 'B-canal']
+
+Servus, simfonia cantata de Pink Floyd
+True Intent = puneMuzica
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+['O', 'O', 'O', 'O', 'O', 'B-artist']
+
+servus te rog ai putea deschide TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal']
+
+servus te rog poti da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+servus ai putea deschide TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
+
+da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-nivel']
+
+te rog da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+servus te rog deschide TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
+
+ai putea deschide TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+te rog poti da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+servus poti da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+servus te rog da drumul la TV
+True Intent = pornesteTV
+['O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Servus, te rog poti opri melodia
+True Intent = opresteMuzica
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal']
+
+Servus, te rog poti sa inchizi melodia
+True Intent = opresteMuzica
+['O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal']
+
+Pepper, da mai tare
+True Intent = schimbaIntensitateMuzica
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+te rog poti sa stingi TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal']
+
+Servus, stinge TV
+True Intent = opresteTV
+['O', 'O', 'O']
+['O', 'O', 'B-canal']
+
+Servus, poti suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+Servus, poti sa stingi TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
+
+stinge TV
+True Intent = opresteTV
+['O', 'O']
+['O', 'B-canal']
+
+poti sa stingi TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+te rog suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+Servus, te rog poti stinge TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal']
+
+te rog stinge TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal']
+
+Servus, te rog suspenda TV
+True Intent = opresteTV
+['O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal']
