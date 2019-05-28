@@ -8,13 +8,18 @@ def convert_entry(itm):
     entities = itm['entities']
     intent = ''
     text = itm['text'].replace(',', '')
+    slots = []
     for entity in entities:
         if entity['entity'] == 'intent':
             intent = entity['value']
-            split_intent = re.sub('([a-z])([A-Z])', r'\1 \2', intent).split()
-            split_intent = [w.lower() for w in split_intent]
-            intent = ' '.join(split_intent)
-    return intent, text
+
+            # For zero-shot CapsNet
+            # split_intent = re.sub('([a-z])([A-Z])', r'\1 \2', intent).split()
+            # split_intent = [w.lower() for w in split_intent]
+            # intent = ' '.join(split_intent)
+
+    slots = itm['seq_labels']
+    return intent, text, slots
 
 
 def convert(input_path, output_path, shuffle=False):
@@ -23,16 +28,23 @@ def convert(input_path, output_path, shuffle=False):
     output = [convert_entry(itm) for itm in data]
     if shuffle:
         random.shuffle(output)
-    intents = []
+    intents = set()
+    all_slots = set()
     with open(output_path, 'w') as f:
-        for intent, text in output:
+        for intent, text, slots in output:
             f.write(intent)
+            f.write('\t')
+            f.write(' '.join(slots))
             f.write('\t')
             f.write(text)
             f.write('\n')
-            intents.append(intent)
-    intents = list(set(intents))
+            intents.add(intent)
+            for s in slots:
+                all_slots.add(s)
+    intents = list(intents)
+    slots = list(all_slots)
     print(intents)
+    print(slots)
 
 
 if __name__ == '__main__':
