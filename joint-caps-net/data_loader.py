@@ -167,4 +167,3 @@ def read_datasets():
     print("------------------read datasets end---------------------")
     return data
 
-read_datasets()
