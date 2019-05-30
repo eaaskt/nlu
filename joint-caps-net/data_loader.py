@@ -19,6 +19,7 @@ def load_w2v(file_name):
             file_name, binary=False)
     return w2v
 
+
 def load_vec(file_path, w2v, in_max_len):
     """ load input data
         input:
@@ -41,8 +42,10 @@ def load_vec(file_path, w2v, in_max_len):
     max_len = 0
 
     intent_dict = {}
+    intent_id_dict = {}
     intent_id = 0
     slot_dict = {}
+    slot_id_dict = {}
     slot_id = 0
 
     for line in open(file_path):
@@ -53,6 +56,7 @@ def load_vec(file_path, w2v, in_max_len):
 
         if intent not in intent_dict:
             intent_dict[intent] = intent_id
+            intent_id_dict[intent_id] = intent
             intent_id += 1
 
         if len(slots) != len(text):
@@ -66,6 +70,7 @@ def load_vec(file_path, w2v, in_max_len):
             if w in w2v.vocab:
                 if s not in slot_dict:
                     slot_dict[s] = slot_id
+                    slot_id_dict[slot_id] = s
                     slot_id += 1
                 x_vectors.append(w2v.vocab[w].index)
                 y_slots.append(slot_dict[s])
@@ -101,7 +106,8 @@ def load_vec(file_path, w2v, in_max_len):
     input_y = np.asarray(input_y)
     input_y_s = np.asarray(y_s_padding)
     sentences_length = np.asarray(sentences_length)
-    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_dict, slot_dict
+    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_id_dict, slot_id_dict
+
 
 def get_label(data):
     y_intents = data['y_intents_tr']
