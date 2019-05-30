@@ -60,18 +60,32 @@ class capsnet():
                                              shape=[self.vocab_size, self.word_emb_size],
                                              initializer=self.initializer, trainable=False)
         with tf.name_scope("slot_capsule_weights"):
-            slot_capsule_weights_init = tf.get_variable("slot_capsule_weights",
+            slot_capsule_weights_init = tf.get_variable("slot_capsule_weights_init",
                                                         shape=[1, self.max_sentence_length, self.slots_nr,
                                                                self.slot_output_dim, self.hidden_size * 2],
                                                         initializer=self.initializer)
             self.slot_capsule_weights = tf.tile(slot_capsule_weights_init, [self.batch_size, 1, 1, 1, 1])
 
+        with tf.name_scope("slot_capsule_biases"):
+            slot_capsule_biases_init = tf.get_variable("slot_capsule_biases_init",
+                                                       shape=[1, self.max_sentence_length, self.slots_nr,
+                                                              self.slot_output_dim, 1],
+                                                       initializer=self.initializer)
+            self.slot_capsule_biases = tf.tile(slot_capsule_biases_init, [self.batch_size, 1, 1, 1, 1])
+
         with tf.name_scope("intent_capsule_weights"):
-            intent_capsule_weights_init = tf.get_variable("intent_capsule_weights",
+            intent_capsule_weights_init = tf.get_variable("intent_capsule_weights_init",
                                                           shape=[1, self.slots_nr, self.intents_nr,
                                                                  self.intent_output_dim, self.slot_output_dim],
                                                           initializer=self.initializer)
             self.intent_capsule_weights = tf.tile(intent_capsule_weights_init, [self.batch_size, 1, 1, 1, 1])
+
+        with tf.name_scope("intent_capsule_biases"):
+            intent_capsule_biases_init = tf.get_variable("intent_capsule_biases_init",
+                                                         shape=[1, self.slots_nr, self.intents_nr,
+                                                                self.intent_output_dim, 1],
+                                                         initializer=self.initializer)
+            self.intent_capsule_biases = tf.tile(intent_capsule_biases_init, [self.batch_size, 1, 1, 1, 1])
 
         # with tf.name_scope("rerouting_capsule_weights"):
         #     self.rerouting_capsule_weights = tf.get_variable("rerouting_capsule_weights",
@@ -163,14 +177,15 @@ class capsnet():
         word_caps_output_tiled = tf.tile(word_caps_output_tile, [1, 1, self.slots_nr, 1, 1],
                                          name="word_caps_output_tiled")
 
-        slot_caps_predicted = tf.matmul(self.slot_capsule_weights, word_caps_output_tiled, name="slot_caps_predicted")
+        slot_caps_predicted_matmul = tf.matmul(self.slot_capsule_weights, word_caps_output_tiled, name="slot_caps_predicted_matmul")
+        slot_caps_predicted = tf.tanh(tf.add(slot_caps_predicted_matmul, self.slot_capsule_biases))
 
         output_vector, weights_b, weights_c = self._update_routing(
             caps1_n_caps=self.max_sentence_length,
             caps2_n_caps=self.slots_nr,
             caps2_predicted=slot_caps_predicted,
             num_iter=self.slot_routing_num,
-            )
+        )
         return output_vector, weights_c, slot_caps_predicted, weights_b
 
     def intent_capsule(self):
@@ -182,7 +197,8 @@ class capsnet():
         slot_caps_output_tiled = tf.tile(slot_caps_output_transposed, [1, 1, self.intents_nr, 1, 1],
                                          name="slot_caps_output_tiled")
 
-        intent_caps_predicted = tf.matmul(self.intent_capsule_weights, slot_caps_output_tiled, name="intent_caps_predicted")
+        intent_caps_predicted_matmul = tf.matmul(self.intent_capsule_weights, slot_caps_output_tiled, name="intent_caps_predicted")
+        intent_caps_predicted = tf.tanh(tf.add(intent_caps_predicted_matmul, self.intent_capsule_biases))
 
         output_vector, weights_b, weights_c = self._update_routing(
             caps1_n_caps=self.slots_nr,

@@ -27,7 +27,7 @@ def setting(data):
 
     FLAGS = tf.app.flags.FLAGS
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("hidden_size", 32, "embedding vector size")
+    tf.app.flags.DEFINE_integer("hidden_size", 128, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("num_epochs", 100, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
@@ -44,8 +44,8 @@ def setting(data):
     tf.app.flags.DEFINE_integer("slot_routing_num", 2, "slot routing num")
     tf.app.flags.DEFINE_integer("intent_routing_num", 2, "intent routing num")
     tf.app.flags.DEFINE_integer("re_routing_num", 2, "re routing num")
-    tf.app.flags.DEFINE_integer("intent_output_dim", 8, "intent output dimension")
-    tf.app.flags.DEFINE_integer("slot_output_dim", 10, "slot output dimension")
+    tf.app.flags.DEFINE_integer("intent_output_dim", 32, "intent output dimension")
+    tf.app.flags.DEFINE_integer("slot_output_dim", 256, "slot output dimension")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
 
     return FLAGS
@@ -74,10 +74,8 @@ def evaluate_test(data, FLAGS, sess):
     y_slots_te = data['y_slots_te']
     slots_dict = data['slots_dict']
 
-    # total_intent_pred = np.array([], dtype=np.int64)
     total_intent_pred = []
     total_slots_pred = []
-    # total_slots_pred = np.empty(shape=(FLAGS.test_num, FLAGS.max_sentence_length), dtype=np.int64)
 
     batch_size = FLAGS.batch_size
     test_batch = int(math.ceil(FLAGS.test_num / float(batch_size)))
@@ -86,8 +84,6 @@ def evaluate_test(data, FLAGS, sess):
         end_index = min((i + 1) * batch_size, FLAGS.test_num)
         batch_te = x_te[begin_index: end_index]
         batch_sentences_len = sentences_length_te[begin_index: end_index]
-        # batch_intents = y_intents_te[begin_index : end_index]
-        # batch_slots = y_slots_te[begin_index : end_index]
 
         [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
             capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
@@ -100,12 +96,10 @@ def evaluate_test(data, FLAGS, sess):
         [intent_predictions, slot_predictions] = sess.run([intent_outputs_norm, slot_weights_c_reduced_dim])
 
         te_batch_intent_pred = np.argmax(intent_predictions, axis=1)
-        # total_intent_pred = np.concatenate((total_intent_pred, te_batch_intent_pred))
         total_intent_pred += np.ndarray.tolist(te_batch_intent_pred)
 
         te_batch_slots_pred = np.argmax(slot_predictions, axis=2)
         total_slots_pred += (np.ndarray.tolist(te_batch_slots_pred))
-        # total_slots_pred = np.concatenate((total_slots_pred, te_batch_slots_pred))
 
     print("           TEST SET PERFORMANCE        ")
     print("Intent detection")
