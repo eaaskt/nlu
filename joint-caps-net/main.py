@@ -47,6 +47,7 @@ def setting(data):
     tf.app.flags.DEFINE_integer("slot_output_dim", 64, "slot output dimension")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
+    tf.app.flags.DEFINE_string("summaries_dir", './logs', "tensorboard summaries")
 
     return FLAGS
 
@@ -191,6 +192,9 @@ if __name__ == "__main__":
                 saver.restore(sess, tf.train.latest_checkpoint(FLAGS.ckpt_dir))
             else:
                 print('Initializing Variables')
+                merged = tf.summary.merge_all()
+                train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train', sess.graph)
+                test_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/test', sess.graph)
                 sess.run(tf.global_variables_initializer())
                 if FLAGS.use_embedding:
                     # load pre-trained word embedding
@@ -216,16 +220,17 @@ if __name__ == "__main__":
                     batch_intents_one_hot = one_hot_y_intents_tr[batch_index]
                     batch_slots_one_hot = one_hot_y_slots_tr[batch_index]
 
-                    [_, loss, intent_pred, slot_pred] = sess.run([capsnet.train_op, capsnet.loss_val,
+                    [_, loss, intent_pred, slot_pred, summary] = sess.run([capsnet.train_op, capsnet.loss_val,
                                                                   capsnet.intent_output_vectors,
-                                                                  capsnet.slot_output_vectors],
+                                                                  capsnet.slot_output_vectors, merged],
                                                                  feed_dict={capsnet.input_x: batch_x,
                                                                             capsnet.encoded_intents: batch_intents_one_hot,
                                                                             capsnet.encoded_slots: batch_slots_one_hot,
                                                                             capsnet.sentences_length: batch_sentences_len})
+                    train_writer.add_summary(summary, batch_num * epoch + batch)
 
                 print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
-                intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=True)
+                intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=False)
                 f_score_mean = (intent_f_score + slot_f_score) / 2
                 if f_score_mean > best_f_score:
                     # save model
