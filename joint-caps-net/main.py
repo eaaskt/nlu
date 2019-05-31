@@ -9,6 +9,7 @@ import math
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import normalize
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score as scikit_f1
 from seqeval.metrics import f1_score
 from seqeval.metrics import accuracy_score
 from seqeval.metrics import recall_score
@@ -67,21 +68,30 @@ def eval_seq_scores(y_true, y_pred):
     return scores
 
 
-def evaluate_test(data, FLAGS, sess):
-    x_te = data['x_te']
-    sentences_length_te = data['sentences_len_te']
-    y_intents_te = data['y_intents_te']
-    y_slots_te = data['y_slots_te']
+def evaluate(data, FLAGS, sess, validation=False):
+    if validation:
+        x_te  =  data['x_val']
+        sentences_length_te  =   data['y_intents_val']
+        y_intents_te  =  data['y_slots_val']
+        y_slots_te  =  data['sentences_len_val']
+    else:
+        x_te = data['x_te']
+        sentences_length_te = data['sentences_len_te']
+        y_intents_te = data['y_intents_te']
+        y_slots_te = data['y_slots_te']
+
     slots_dict = data['slots_dict']
+    intents_dict = data['intents_dict']
 
     total_intent_pred = []
     total_slots_pred = []
 
+    num_samples = len(x_te)
     batch_size = FLAGS.batch_size
-    test_batch = int(math.ceil(FLAGS.test_num / float(batch_size)))
+    test_batch = int(math.ceil( num_samples / float(batch_size)))
     for i in range(test_batch):
         begin_index = i * batch_size
-        end_index = min((i + 1) * batch_size, FLAGS.test_num)
+        end_index = min((i + 1) * batch_size, num_samples )
         batch_te = x_te[begin_index: end_index]
         batch_sentences_len = sentences_length_te[begin_index: end_index]
 
@@ -103,8 +113,14 @@ def evaluate_test(data, FLAGS, sess):
 
     print("           TEST SET PERFORMANCE        ")
     print("Intent detection")
-    acc = accuracy_score(y_intents_te, total_intent_pred)
-    print(classification_report(y_intents_te, total_intent_pred, digits=4))
+    intents_acc = accuracy_score(y_intents_te, total_intent_pred)
+    y_intent_labels_true = [intents_dict[i] for i in y_intents_te]
+    y_intent_labels_pred = [intents_dict[i] for i in total_intent_pred]
+    intents = sorted(list(set(y_intent_labels_true)))
+    f_score = scikit_f1(y_intent_labels_true, y_intent_labels_pred, average='micro', labels=intents)
+    print(classification_report(y_intent_labels_true, y_intent_labels_pred, digits=4))
+    print('Intent accuracy %lf' % intents_acc)
+    print('F score %lf' % f_score)
 
     y_slots_te_true = np.ndarray.tolist(y_slots_te)
     y_slot_labels_true = [[slots_dict[slot_idx] for slot_idx in ex] for ex in y_slots_te_true]
@@ -115,7 +131,7 @@ def evaluate_test(data, FLAGS, sess):
     print('Accuracy: %lf' % scores['accuracy'])
     print('Precision: %lf' % scores['precision'])
     print('Recall: %lf' % scores['recall'])
-    return acc
+    return f_score, scores['f1']
 
 
 def generate_batch(n, batch_size):
@@ -167,11 +183,15 @@ if __name__ == "__main__":
                 # load pre-trained word embedding
                 assign_pretrained_word_embedding(sess, data, capsnet)
 
-        best_acc = 0.0
-        cur_acc = evaluate_test(data, FLAGS, sess)
-        if cur_acc > best_acc:
-            best_acc = cur_acc
+        best_f_score = 0.0
+        intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=True)
+        f_score_mean = (intent_f_score + slot_f_score) / 2
+        if f_score_mean > best_f_score:
+            # save model
+            best_f_score = f_score_mean
         var_saver = tf.train.Saver()
+
+
 
         # Training cycle
         batch_num = int(FLAGS.sample_num / FLAGS.batch_size)
@@ -194,10 +214,11 @@ if __name__ == "__main__":
                                                                         capsnet.sentences_length: batch_sentences_len})
 
             print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
-            cur_acc = evaluate_test(data, FLAGS, sess)
-            if cur_acc > best_acc:
+            intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=True)
+            f_score_mean = (intent_f_score +  slot_f_score) / 2
+            if f_score_mean > best_f_score:
                 # save model
-                best_acc = cur_acc
+                best_f_score = f_score_mean
                 var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
-            print("cur_acc", cur_acc)
-            print("best_acc", best_acc)
+            print("Current F score mean", f_score_mean)
+            print("Best F score mean", best_f_score)

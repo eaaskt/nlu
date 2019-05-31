@@ -210,9 +210,7 @@ class capsnet():
 
     def cross_entropy_loss(self):
         reduced_dim_slot_weights_c = tf.squeeze(self.slot_weights_c, axis=[3, 4])
-        c_shape = reduced_dim_slot_weights_c.shape
         epsilon = 1e-7
-        # epsilon = tf.constant(10 ** -15, shape=c_shape, dtype="float32")
         log_weights_c = tf.log(tf.maximum(reduced_dim_slot_weights_c, epsilon))
         loss_matrix = tf.multiply(self.encoded_slots, log_weights_c)
         loss_vectors = tf.reduce_sum(loss_matrix, axis=2)

@@ -3,6 +3,8 @@
 
 import numpy as np
 import tool
+from random import Random
+from datetime import datetime
 from gensim.models.keyedvectors import KeyedVectors
 
 word2vec_path = 'data/word-vec/wiki.ro.vec'
@@ -150,11 +152,32 @@ def read_datasets():
     x_tr, y_intents_tr, y_slots_tr, sentences_length_tr, max_len, intents_dict, slots_dict = load_vec(training_data_path, w2v, max_len)
     x_te, y_intents_te, y_slots_te, sentences_length_te, max_len, test_intents_dict, test_slots_dict = load_vec(test_data_path, w2v, max_len)
 
-    data['x_tr'] = x_tr
-    data['y_intents_tr'] = y_intents_tr
-    data['y_slots_tr'] = y_slots_tr
+    # hold data for validation
+    gen = Random()
+    gen.seed(datetime.now())
+    data_length = len(x_tr)
+    validation_index = gen.sample(range(data_length), int(0.2 * data_length))
+    tr_index = [i for i in range(data_length) if i not in validation_index]
 
-    data['sentences_len_tr'] = sentences_length_tr
+    x_val = x_tr[validation_index]
+    y_intents_val = y_intents_tr[validation_index]
+    y_slots_val = y_slots_tr[validation_index]
+    sentences_length_val = sentences_length_tr[validation_index]
+
+    x_train = x_tr[tr_index]
+    y_intents_train = y_intents_tr[tr_index]
+    y_slots_train = y_slots_tr[tr_index]
+    sentences_length_train = sentences_length_tr[tr_index]
+
+    data['x_tr'] = x_train
+    data['y_intents_tr'] = y_intents_train
+    data['y_slots_tr'] = y_slots_train
+    data['sentences_len_tr'] = sentences_length_train
+
+    data['x_val'] = x_val
+    data['y_intents_val'] = y_intents_val
+    data['y_slots_val'] = y_slots_val
+    data['sentences_len_val'] = sentences_length_val
 
     data['intents_dict'] = intents_dict
     data['slots_dict'] = slots_dict
