@@ -216,7 +216,9 @@ class capsnet():
         loss_vectors = tf.reduce_sum(loss_matrix, axis=2)
         loss = tf.reduce_sum(loss_vectors, axis=1)
         final_loss = tf.reduce_mean(loss)
-        return tf.negative(final_loss)
+        negative_loss = tf.negative(final_loss)
+        tf.summary.scalar('cross_entropy_loss', negative_loss)
+        return negative_loss
 
     def _margin_loss(self, labels, raw_logits, margin=0.4, downweight=0.5):
         """Penalizes deviations from margin for each logit.
@@ -250,11 +252,14 @@ class capsnet():
         intent_output_norm = self.safe_norm(intent_vectors)
         loss_val = self._margin_loss(self.encoded_intents, intent_output_norm)
         loss_val = tf.reduce_mean(loss_val)
-        return 1000 * loss_val
+        margin_loss = 1000 * loss_val
+        tf.summary.scalar('margin_loss', margin_loss)
+        return margin_loss
 
     def loss(self):
-        return tf.reduce_mean(self.margin_loss() + self.cross_entropy_loss())
-        # return self.margin_loss()
+        total_loss = tf.reduce_mean(self.margin_loss() + self.cross_entropy_loss()) 
+        tf.summary.scalar('total_loss', total_loss)
+        return total_loss
 
     def train(self):
         train_op = tf.train.AdamOptimizer(self.learning_rate).minimize(self.loss_val)
