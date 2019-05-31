@@ -8,8 +8,7 @@ class capsnet():
         for users' questions
     """
 
-    def __init__(self, FLAGS, initializer=
-    tf.contrib.layers.xavier_initializer()):
+    def __init__(self, FLAGS, initializer=tf.contrib.layers.xavier_initializer()):
         """
             lstm class initialization
         """
@@ -217,7 +216,8 @@ class capsnet():
         loss = tf.reduce_sum(loss_vectors, axis=1)
         final_loss = tf.reduce_mean(loss)
         negative_loss = tf.negative(final_loss)
-        tf.summary.scalar('cross_entropy_loss', negative_loss)
+        self.cross_entropy_tr_summary = tf.summary.scalar('cross_entropy_loss_training', negative_loss)
+        self.cross_entropy_val_summary = tf.summary.scalar('cross_entropy_loss_validation', negative_loss)
         return negative_loss
 
     def _margin_loss(self, labels, raw_logits, margin=0.4, downweight=0.5):
@@ -253,12 +253,14 @@ class capsnet():
         loss_val = self._margin_loss(self.encoded_intents, intent_output_norm)
         loss_val = tf.reduce_mean(loss_val)
         margin_loss = 1000 * loss_val
-        tf.summary.scalar('margin_loss', margin_loss)
+        self.margin_loss_tr_summary = tf.summary.scalar('margin_loss_training', margin_loss)
+        self.margin_loss_val_summary = tf.summary.scalar('margin_loss_validation', margin_loss)
         return margin_loss
 
     def loss(self):
         total_loss = tf.reduce_mean(self.margin_loss() + self.cross_entropy_loss()) 
-        tf.summary.scalar('total_loss', total_loss)
+        self.loss_tr_summary = tf.summary.scalar('total_loss_training', total_loss)
+        self.loss_val_summary = tf.summary.scalar('total_loss_validation', total_loss)
         return total_loss
 
     def train(self):

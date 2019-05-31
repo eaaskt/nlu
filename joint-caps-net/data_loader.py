@@ -9,7 +9,7 @@ from gensim.models.keyedvectors import KeyedVectors
 
 word2vec_path = 'data/word-vec/wiki.ro.vec'
 training_data_path = 'data/scenario0/train.txt'
-test_data_path = 'data/scenario0/test.txt'
+test_data_path = 'data/scenario0/train.txt'
 
 
 def load_w2v(file_name):
@@ -112,24 +112,35 @@ def load_vec(file_path, w2v, in_max_len):
 
 
 def get_label(data):
-    y_intents = data['y_intents_tr']
-    y_slots = data['y_slots_tr']
+    y_intents_tr = data['y_intents_tr']
+    y_slots_tr = data['y_slots_tr']
+    y_intents_val = data['y_intents_val']
+    y_slots_val = data['y_slots_val']
     max_len = data['max_len']
-    sample_num = y_intents.shape[0]
+    sample_num_tr = y_intents_tr.shape[0]
+    sample_num_val = y_intents_val.shape[0]
     nr_intents = len(data['intents_dict'])
     nr_slots = len(data['slots_dict'])
     intents_id = range(nr_intents)
     slots_id = range(nr_slots)
 
     # get label index
-    ind_intents = np.zeros((sample_num, nr_intents), dtype=np.float32)
-    ind_slots = np.zeros((sample_num, max_len, nr_slots), dtype=np.float32)
+    ind_intents_tr = np.zeros((sample_num_tr, nr_intents), dtype=np.float32)
+    ind_slots_tr = np.zeros((sample_num_tr, max_len, nr_slots), dtype=np.float32)
     for i in range(nr_intents):
-        ind_intents[y_intents == intents_id[i], i] = 1
-    for i in range(sample_num):
+        ind_intents_tr[y_intents_tr == intents_id[i], i] = 1
+    for i in range(sample_num_tr):
         for j in range(nr_slots):
-            ind_slots[i, y_slots[i] == slots_id[j], j] = 1
-    return ind_intents, ind_slots
+            ind_slots_tr[i, y_slots_tr[i] == slots_id[j], j] = 1
+
+    ind_intents_val = np.zeros((sample_num_val, nr_intents), dtype=np.float32)
+    ind_slots_val = np.zeros((sample_num_val, max_len, nr_slots), dtype=np.float32)
+    for i in range(nr_intents):
+        ind_intents_val[y_intents_val == intents_id[i], i] = 1
+    for i in range(sample_num_val):
+        for j in range(nr_slots):
+            ind_slots_val[i, y_slots_val[i] == slots_id[j], j] = 1
+    return ind_intents_tr, ind_slots_tr, ind_intents_val, ind_slots_val
 
 
 def read_datasets():
@@ -190,9 +201,11 @@ def read_datasets():
 
     data['max_len'] = max_len
 
-    one_hot_y_intents_tr, one_hot_y_slots_tr = get_label(data)
-    data['encoded_intents'] = one_hot_y_intents_tr
-    data['encoded_slots'] = one_hot_y_slots_tr
+    one_hot_y_intents_tr, one_hot_y_slots_tr, one_hot_y_intents_val, one_hot_y_slots_val = get_label(data)
+    data['encoded_intents_tr'] = one_hot_y_intents_tr
+    data['encoded_slots_tr'] = one_hot_y_slots_tr
+    data['encoded_intents_val'] = one_hot_y_intents_val
+    data['encoded_slots_val'] = one_hot_y_slots_val
     print("------------------read datasets end---------------------")
     return data
 

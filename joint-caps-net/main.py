@@ -28,13 +28,13 @@ def setting(data):
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
     tf.app.flags.DEFINE_integer("hidden_size", 32, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
-    tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
+    tf.app.flags.DEFINE_integer("num_epochs", 50, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("max_sentence_length", max_sentence_length, "max number of words in one sentence")
     tf.app.flags.DEFINE_integer("sample_num", sample_num, "sample number of training data")
     tf.app.flags.DEFINE_integer("test_num", test_num, "number of test data")
-    tf.app.flags.DEFINE_integer("intents_nr", intents_number, "intents_number") #
-    tf.app.flags.DEFINE_integer("slots_nr", slots_number, "slots_number") #
+    tf.app.flags.DEFINE_integer("intents_nr", intents_number, "intents_number")  #
+    tf.app.flags.DEFINE_integer("slots_nr", slots_number, "slots_number")  #
     tf.app.flags.DEFINE_integer("word_emb_size", word_emb_size, "embedding size of word vectors")
     tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/', "check point dir")
     tf.app.flags.DEFINE_boolean("use_embedding", True, "whether to use embedding or not.")
@@ -68,12 +68,15 @@ def eval_seq_scores(y_true, y_pred):
     return scores
 
 
-def evaluate(data, FLAGS, sess, validation=False):
+def evaluate(data, FLAGS, sess, validation=False, epoch=0):
     if validation:
         x_te = data['x_val']
         sentences_length_te = data['sentences_len_val']
         y_intents_te = data['y_intents_val']
         y_slots_te = data['y_slots_val']
+        encoded_intents = data['encoded_intents_val']
+        encoded_slots = data['encoded_slots_val']
+        writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation', sess.graph)
     else:
         x_te = data['x_te']
         sentences_length_te = data['sentences_len_te']
@@ -88,16 +91,32 @@ def evaluate(data, FLAGS, sess, validation=False):
 
     num_samples = len(x_te)
     batch_size = FLAGS.batch_size
-    test_batch = int(math.ceil( num_samples / float(batch_size)))
+    test_batch = int(math.ceil(num_samples / float(batch_size)))
     for i in range(test_batch):
         begin_index = i * batch_size
-        end_index = min((i + 1) * batch_size, num_samples )
+        end_index = min((i + 1) * batch_size, num_samples)
         batch_te = x_te[begin_index: end_index]
         batch_sentences_len = sentences_length_te[begin_index: end_index]
+        if validation:
+            batch_intents_one_hot = encoded_intents[begin_index: end_index]
+            batch_slots_one_hot = encoded_slots[begin_index: end_index]
 
-        [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
-            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
-            feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len})
+        if validation:
+            [intent_outputs, slots_outputs, slot_weights_c, cross_entropy_summary,
+             margin_loss_summary, loss_summary] = sess.run([
+                capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c,
+                capsnet.cross_entropy_val_summary,
+                capsnet.margin_loss_val_summary, capsnet.loss_val_summary],
+                feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
+                           capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot})
+
+            writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
+            writer.add_summary(margin_loss_summary, epoch * test_batch + i)
+            writer.add_summary(loss_summary, epoch * test_batch + i)
+        else:
+            [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
+                capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
+                feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len})
 
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs)
         intent_outputs_norm = safe_norm(intent_outputs_reduced_dim)
@@ -111,7 +130,11 @@ def evaluate(data, FLAGS, sess, validation=False):
         te_batch_slots_pred = np.argmax(slot_predictions, axis=2)
         total_slots_pred += (np.ndarray.tolist(te_batch_slots_pred))
 
-    print("           TEST SET PERFORMANCE        ")
+    if validation:
+        print("           VALIDATION SET PERFORMANCE        ")
+    else:
+        print("           TEST SET PERFORMANCE        ")
+
     print("Intent detection")
     intents_acc = accuracy_score(y_intents_te, total_intent_pred)
     y_intents_true = np.ndarray.tolist(y_intents_te)
@@ -132,6 +155,7 @@ def evaluate(data, FLAGS, sess, validation=False):
     print('Accuracy: %lf' % scores['accuracy'])
     print('Precision: %lf' % scores['precision'])
     print('Recall: %lf' % scores['recall'])
+
     return f_score, scores['f1']
 
 
@@ -145,7 +169,8 @@ def assign_pretrained_word_embedding(sess, data, textRNN):
     embedding = data['embedding']
 
     word_embedding = tf.constant(embedding, dtype=tf.float32)  # convert to tensor
-    t_assign_embedding = tf.assign(textRNN.Embedding, word_embedding)  # assign this value to our embedding variables of our model.
+    t_assign_embedding = tf.assign(textRNN.Embedding,
+                                   word_embedding)  # assign this value to our embedding variables of our model.
     sess.run(t_assign_embedding)
     print("using pre-trained word emebedding.ended...")
 
@@ -157,16 +182,14 @@ if __name__ == "__main__":
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
 
-    one_hot_y_intents_tr = data['encoded_intents']
-    one_hot_y_slots_tr = data['encoded_slots']
+    one_hot_y_intents_tr = data['encoded_intents_tr']
+    one_hot_y_slots_tr = data['encoded_slots_tr']
 
     sentences_length_tr = data['sentences_len_tr']
     embedding = data['embedding']
 
     # load settings
     FLAGS = setting(data)
-
-    print(FLAGS.test)
 
     # start
     tf.reset_default_graph()
@@ -192,9 +215,6 @@ if __name__ == "__main__":
                 saver.restore(sess, tf.train.latest_checkpoint(FLAGS.ckpt_dir))
             else:
                 print('Initializing Variables')
-                merged = tf.summary.merge_all()
-                train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train', sess.graph)
-                test_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/test', sess.graph)
                 sess.run(tf.global_variables_initializer())
                 if FLAGS.use_embedding:
                     # load pre-trained word embedding
@@ -208,6 +228,8 @@ if __name__ == "__main__":
                 best_f_score = f_score_mean
             var_saver = tf.train.Saver()
 
+            train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train', sess.graph)
+
             # Training cycle
             batch_num = int(FLAGS.sample_num / FLAGS.batch_size)
             for epoch in range(FLAGS.num_epochs):
@@ -220,17 +242,23 @@ if __name__ == "__main__":
                     batch_intents_one_hot = one_hot_y_intents_tr[batch_index]
                     batch_slots_one_hot = one_hot_y_slots_tr[batch_index]
 
-                    [_, loss, intent_pred, slot_pred, summary] = sess.run([capsnet.train_op, capsnet.loss_val,
-                                                                  capsnet.intent_output_vectors,
-                                                                  capsnet.slot_output_vectors, merged],
-                                                                 feed_dict={capsnet.input_x: batch_x,
-                                                                            capsnet.encoded_intents: batch_intents_one_hot,
-                                                                            capsnet.encoded_slots: batch_slots_one_hot,
-                                                                            capsnet.sentences_length: batch_sentences_len})
-                    train_writer.add_summary(summary, batch_num * epoch + batch)
+                    [_, loss, intent_pred, slot_pred,
+                     cross_entropy_summary, margin_loss_summary,
+                     loss_summary] = sess.run([capsnet.train_op, capsnet.loss_val,
+                                               capsnet.intent_output_vectors,
+                                               capsnet.slot_output_vectors, capsnet.cross_entropy_tr_summary,
+                                               capsnet.margin_loss_tr_summary, capsnet.loss_tr_summary],
+                                              feed_dict={capsnet.input_x: batch_x,
+                                                         capsnet.encoded_intents: batch_intents_one_hot,
+                                                         capsnet.encoded_slots: batch_slots_one_hot,
+                                                         capsnet.sentences_length: batch_sentences_len})
+
+                    train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
+                    train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
+                    train_writer.add_summary(loss_summary, batch_num * epoch + batch)
 
                 print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
-                intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=False)
+                intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=True, epoch=epoch)
                 f_score_mean = (intent_f_score + slot_f_score) / 2
                 if f_score_mean > best_f_score:
                     # save model
