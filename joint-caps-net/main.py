@@ -4,10 +4,8 @@ import data_loader
 import numpy as np
 import tensorflow as tf
 import model
-import tool
 import math
 from sklearn.metrics import classification_report
-from sklearn.preprocessing import normalize
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score as scikit_f1
 from seqeval.metrics import f1_score
@@ -48,6 +46,7 @@ def setting(data):
     tf.app.flags.DEFINE_integer("intent_output_dim", 32, "intent output dimension")
     tf.app.flags.DEFINE_integer("slot_output_dim", 256, "slot output dimension")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
+    tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
 
     return FLAGS
 
@@ -70,10 +69,10 @@ def eval_seq_scores(y_true, y_pred):
 
 def evaluate(data, FLAGS, sess, validation=False):
     if validation:
-        x_te  =  data['x_val']
-        sentences_length_te  =   data['y_intents_val']
-        y_intents_te  =  data['y_slots_val']
-        y_slots_te  =  data['sentences_len_val']
+        x_te = data['x_val']
+        sentences_length_te = data['sentences_len_val']
+        y_intents_te = data['y_intents_val']
+        y_slots_te = data['y_slots_val']
     else:
         x_te = data['x_te']
         sentences_length_te = data['sentences_len_te']
@@ -114,7 +113,8 @@ def evaluate(data, FLAGS, sess, validation=False):
     print("           TEST SET PERFORMANCE        ")
     print("Intent detection")
     intents_acc = accuracy_score(y_intents_te, total_intent_pred)
-    y_intent_labels_true = [intents_dict[i] for i in y_intents_te]
+    y_intents_true = np.ndarray.tolist(y_intents_te)
+    y_intent_labels_true = [intents_dict[i] for i in y_intents_true]
     y_intent_labels_pred = [intents_dict[i] for i in total_intent_pred]
     intents = sorted(list(set(y_intent_labels_true)))
     f_score = scikit_f1(y_intent_labels_true, y_intent_labels_pred, average='micro', labels=intents)
@@ -165,60 +165,71 @@ if __name__ == "__main__":
     # load settings
     FLAGS = setting(data)
 
+    print(FLAGS.test)
+
     # start
     tf.reset_default_graph()
-    config=tf.ConfigProto()
+    config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
         capsnet = model.capsnet(FLAGS)
 
-        if os.path.exists(FLAGS.ckpt_dir):
-            print("Restoring Variables from Checkpoint for rnn model.")
-            saver = tf.train.Saver()
-            saver.restore(sess,tf.train.latest_checkpoint(FLAGS.ckpt_dir))
+        if FLAGS.test:
+            if os.path.exists(FLAGS.ckpt_dir):
+                print("Restoring Variables from Checkpoint for testing")
+                saver = tf.train.Saver()
+                saver.restore(sess, tf.train.latest_checkpoint(FLAGS.ckpt_dir))
+
+                intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=False)
+            else:
+                print("No trained model exists in checkpoint dir!")
+
         else:
-            print('Initializing Variables')
-            sess.run(tf.global_variables_initializer())
-            if FLAGS.use_embedding:
-                # load pre-trained word embedding
-                assign_pretrained_word_embedding(sess, data, capsnet)
+            if os.path.exists(FLAGS.ckpt_dir):
+                print("Restoring Variables from Checkpoint for rnn model.")
+                saver = tf.train.Saver()
+                saver.restore(sess, tf.train.latest_checkpoint(FLAGS.ckpt_dir))
+            else:
+                print('Initializing Variables')
+                sess.run(tf.global_variables_initializer())
+                if FLAGS.use_embedding:
+                    # load pre-trained word embedding
+                    assign_pretrained_word_embedding(sess, data, capsnet)
 
-        best_f_score = 0.0
-        intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=True)
-        f_score_mean = (intent_f_score + slot_f_score) / 2
-        if f_score_mean > best_f_score:
-            # save model
-            best_f_score = f_score_mean
-        var_saver = tf.train.Saver()
-
-
-
-        # Training cycle
-        batch_num = int(FLAGS.sample_num / FLAGS.batch_size)
-        for epoch in range(FLAGS.num_epochs):
-            for batch in range(batch_num):
-                batch_index = generate_batch(FLAGS.sample_num, FLAGS.batch_size)
-                batch_x = x_tr[batch_index]
-                batch_y_intents = y_intents_tr[batch_index]
-                batch_y_slots = y_slots_tr[batch_index]
-                batch_sentences_len = sentences_length_tr[batch_index]
-                batch_intents_one_hot = one_hot_y_intents_tr[batch_index]
-                batch_slots_one_hot = one_hot_y_slots_tr[batch_index]
-
-                [_, loss, intent_pred, slot_pred] = sess.run([capsnet.train_op, capsnet.loss_val,
-                                                              capsnet.intent_output_vectors,
-                                                              capsnet.slot_output_vectors],
-                                                             feed_dict={capsnet.input_x: batch_x,
-                                                                        capsnet.encoded_intents: batch_intents_one_hot,
-                                                                        capsnet.encoded_slots: batch_slots_one_hot,
-                                                                        capsnet.sentences_length: batch_sentences_len})
-
-            print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
+            best_f_score = 0.0
             intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=True)
-            f_score_mean = (intent_f_score +  slot_f_score) / 2
+            f_score_mean = (intent_f_score + slot_f_score) / 2
             if f_score_mean > best_f_score:
                 # save model
                 best_f_score = f_score_mean
-                var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
-            print("Current F score mean", f_score_mean)
-            print("Best F score mean", best_f_score)
+            var_saver = tf.train.Saver()
+
+            # Training cycle
+            batch_num = int(FLAGS.sample_num / FLAGS.batch_size)
+            for epoch in range(FLAGS.num_epochs):
+                for batch in range(batch_num):
+                    batch_index = generate_batch(FLAGS.sample_num, FLAGS.batch_size)
+                    batch_x = x_tr[batch_index]
+                    batch_y_intents = y_intents_tr[batch_index]
+                    batch_y_slots = y_slots_tr[batch_index]
+                    batch_sentences_len = sentences_length_tr[batch_index]
+                    batch_intents_one_hot = one_hot_y_intents_tr[batch_index]
+                    batch_slots_one_hot = one_hot_y_slots_tr[batch_index]
+
+                    [_, loss, intent_pred, slot_pred] = sess.run([capsnet.train_op, capsnet.loss_val,
+                                                                  capsnet.intent_output_vectors,
+                                                                  capsnet.slot_output_vectors],
+                                                                 feed_dict={capsnet.input_x: batch_x,
+                                                                            capsnet.encoded_intents: batch_intents_one_hot,
+                                                                            capsnet.encoded_slots: batch_slots_one_hot,
+                                                                            capsnet.sentences_length: batch_sentences_len})
+
+                print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
+                intent_f_score, slot_f_score = evaluate(data, FLAGS, sess, validation=True)
+                f_score_mean = (intent_f_score + slot_f_score) / 2
+                if f_score_mean > best_f_score:
+                    # save model
+                    best_f_score = f_score_mean
+                    var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
+                print("Current F score mean", f_score_mean)
+                print("Best F score mean", best_f_score)
