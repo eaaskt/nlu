@@ -26,9 +26,9 @@ def setting(data):
 
     FLAGS = tf.app.flags.FLAGS
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("hidden_size", 128, "embedding vector size")
+    tf.app.flags.DEFINE_integer("hidden_size", 32, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
-    tf.app.flags.DEFINE_integer("num_epochs", 100, "num of epochs")
+    tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("max_sentence_length", max_sentence_length, "max number of words in one sentence")
     tf.app.flags.DEFINE_integer("sample_num", sample_num, "sample number of training data")
@@ -36,7 +36,7 @@ def setting(data):
     tf.app.flags.DEFINE_integer("intents_nr", intents_number, "intents_number") #
     tf.app.flags.DEFINE_integer("slots_nr", slots_number, "slots_number") #
     tf.app.flags.DEFINE_integer("word_emb_size", word_emb_size, "embedding size of word vectors")
-    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/' , "check point dir")
+    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/', "check point dir")
     tf.app.flags.DEFINE_boolean("use_embedding", True, "whether to use embedding or not.")
     tf.app.flags.DEFINE_float("learning_rate", 0.01, "learning rate")
     tf.app.flags.DEFINE_float("margin", 1.0, "ranking loss margin")
@@ -44,7 +44,7 @@ def setting(data):
     tf.app.flags.DEFINE_integer("intent_routing_num", 2, "intent routing num")
     tf.app.flags.DEFINE_integer("re_routing_num", 2, "re routing num")
     tf.app.flags.DEFINE_integer("intent_output_dim", 32, "intent output dimension")
-    tf.app.flags.DEFINE_integer("slot_output_dim", 256, "slot output dimension")
+    tf.app.flags.DEFINE_integer("slot_output_dim", 64, "slot output dimension")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
 
