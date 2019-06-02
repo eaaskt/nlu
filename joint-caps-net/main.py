@@ -242,7 +242,6 @@ def main():
         fold = 1
         for train_index, val_index in StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr):
             print("FOLD %d" % fold)
-            fold += 1
             best_f_score_mean_fold = 0.0
             best_f_score_intent_fold = 0.0
             best_f_score_slot_fold = 0.0
@@ -338,6 +337,8 @@ def main():
                         best_f_score_intent_fold = intent_f_score
                         best_f_score_slot_fold = slot_f_score
 
+            fold += 1
+
             # For each fold, add best scores to mean
             intent_scores += best_f_score_intent_fold
             slot_scores += best_f_score_slot_fold
@@ -349,6 +350,7 @@ def main():
         print('Mean intent F1 score %lf' % mean_intent_score)
         print('Mean slot F1 score %lf' % mean_slot_score)
         print('Mean F1 score %lf' % mean_score)
+
 
     else:
         # testing
