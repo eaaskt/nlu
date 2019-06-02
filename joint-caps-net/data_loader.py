@@ -18,11 +18,11 @@ def load_w2v(file_name):
         output: w2v model
     """
     w2v = KeyedVectors.load_word2vec_format(
-            file_name, binary=False)
+        file_name, binary=False)
     return w2v
 
 
-def load_vec(file_path, w2v, in_max_len):
+def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot_id):
     """ load input data
         input:
             file_path: input data file
@@ -43,13 +43,6 @@ def load_vec(file_path, w2v, in_max_len):
     sentences_length = []
     max_len = 0
 
-    intent_dict = {}
-    intent_id_dict = {}
-    intent_id = 0
-    slot_dict = {}
-    slot_id_dict = {}
-    slot_id = 0
-
     for line in open(file_path):
         arr = line.strip().split('\t')
         intent = arr[0]
@@ -58,7 +51,6 @@ def load_vec(file_path, w2v, in_max_len):
 
         if intent not in intent_dict:
             intent_dict[intent] = intent_id
-            intent_id_dict[intent_id] = intent
             intent_id += 1
 
         if len(slots) != len(text):
@@ -72,12 +64,11 @@ def load_vec(file_path, w2v, in_max_len):
             if w in w2v.vocab:
                 if s not in slot_dict:
                     slot_dict[s] = slot_id
-                    slot_id_dict[slot_id] = s
                     slot_id += 1
                 x_vectors.append(w2v.vocab[w].index)
                 y_slots.append(slot_dict[s])
             # else:
-                # print(w + ' not in vocab')
+            # print(w + ' not in vocab')
 
         sentence_length = len(x_vectors)
         if sentence_length <= 1:
@@ -110,7 +101,7 @@ def load_vec(file_path, w2v, in_max_len):
     input_y = np.asarray(input_y)
     input_y_s = np.asarray(y_s_padding)
     sentences_length = np.asarray(sentences_length)
-    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_id_dict, slot_id_dict
+    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_dict, intent_id, slot_dict, slot_id
 
 
 def get_label(data):
@@ -150,16 +141,26 @@ def read_datasets():
 
     # trans data into embedding vectors
     max_len = 0
-    x_tr, y_intents_tr, y_slots_tr, sentences_length_tr, max_len, intents_dict, slots_dict = load_vec(training_data_path, w2v, max_len)
-    x_te, y_intents_te, y_slots_te, sentences_length_te, max_len, test_intents_dict, test_slots_dict = load_vec(test_data_path, w2v, max_len)
+    slots_dict = dict()
+    intents_dict = dict()
+    slot_id = 0
+    intent_id = 0
+    (x_tr, y_intents_tr, y_slots_tr, sentences_length_tr,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(training_data_path, w2v, max_len,
+                                                                       intents_dict, intent_id, slots_dict, slot_id)
+    (x_te, y_intents_te, y_slots_te, sentences_length_te,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(test_data_path, w2v, max_len, intents_dict,
+                                                                       intent_id, slots_dict, slot_id)
+    intents_id_dict = {v: k for k, v in intents_dict.items()}
+    slots_id_dict = {v: k for k, v in slots_dict.items()}
 
     data['x_tr'] = x_tr
     data['y_intents_tr'] = y_intents_tr
     data['y_slots_tr'] = y_slots_tr
     data['sentences_len_tr'] = sentences_length_tr
 
-    data['intents_dict'] = intents_dict
-    data['slots_dict'] = slots_dict
+    data['intents_dict'] = intents_id_dict
+    data['slots_dict'] = slots_id_dict
 
     data['x_te'] = x_te
     data['y_intents_te'] = y_intents_te
@@ -173,4 +174,3 @@ def read_datasets():
     data['encoded_slots_tr'] = one_hot_y_slots_tr
     print("------------------read datasets end---------------------")
     return data
-
