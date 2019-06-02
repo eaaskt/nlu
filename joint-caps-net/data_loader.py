@@ -7,7 +7,7 @@ from random import Random
 from datetime import datetime
 from gensim.models.keyedvectors import KeyedVectors
 
-word2vec_path = 'data/word-vec/wiki.ro.vec'
+word2vec_path = 'data/word-vec/cc.ro.300.vec'
 training_data_path = 'data/scenario0/train.txt'
 test_data_path = 'data/scenario0/test.txt'
 

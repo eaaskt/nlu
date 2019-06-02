@@ -26,8 +26,8 @@ def setting(data):
 
     FLAGS = tf.app.flags.FLAGS
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("n_splits", 2, "Number of cross-validation splits")
-    tf.app.flags.DEFINE_integer("hidden_size", 32, "embedding vector size")
+    tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
+    tf.app.flags.DEFINE_integer("hidden_size", 128, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
@@ -210,9 +210,8 @@ def generate_batch(n, batch_size):
 
 def assign_pretrained_word_embedding(sess, embedding, capsnet):
     print("using pre-trained word emebedding.begin...")
-    word_embedding = tf.constant(embedding, dtype=tf.float32)  # convert to tensor
-    t_assign_embedding = tf.assign(capsnet.Embedding, word_embedding)  # assign this value to model
-    sess.run(t_assign_embedding)
+    word_embedding_placeholder = tf.placeholder(dtype=tf.float32, shape=embedding.shape)
+    sess.run(capsnet.Embedding.assign(word_embedding_placeholder), {word_embedding_placeholder: embedding})
     print("using pre-trained word emebedding.ended...")
 
 
