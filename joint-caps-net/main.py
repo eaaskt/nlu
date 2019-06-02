@@ -26,10 +26,10 @@ def setting(data):
 
     FLAGS = tf.app.flags.FLAGS
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
+    tf.app.flags.DEFINE_integer("n_splits", 2, "Number of cross-validation splits")
     tf.app.flags.DEFINE_integer("hidden_size", 32, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
-    tf.app.flags.DEFINE_integer("num_epochs", 2, "num of epochs")
+    tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("max_sentence_length", max_sentence_length, "max number of words in one sentence")
     tf.app.flags.DEFINE_integer("intents_nr", intents_number, "intents_number")  #
@@ -128,7 +128,7 @@ def evaluate_test(capsnet, data, FLAGS, sess):
     return f_score, scores['f1']
 
 
-def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch):
+def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
     x_te = val_data['x_val']
     sentences_length_te = val_data['sentences_len_val']
     y_intents_te = val_data['y_intents_val']
@@ -138,7 +138,7 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch):
     slots_dict = val_data['slots_dict']
     intents_dict = val_data['intents_dict']
 
-    writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation', sess.graph)
+    writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
 
     total_intent_pred = []
     total_slots_pred = []
@@ -243,6 +243,10 @@ def main():
         for train_index, val_index in StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr):
             print("FOLD %d" % fold)
             fold += 1
+            best_f_score_mean_fold = 0.0
+            best_f_score_intent_fold = 0.0
+            best_f_score_slot_fold = 0.0
+
             x_train, x_val = x_tr[train_index], x_tr[val_index]
             y_intents_train, y_intents_val = y_intents_tr[train_index], y_intents_tr[val_index]
             y_slots_train, y_slots_val = y_slots_tr[train_index], y_slots_tr[val_index]
@@ -274,13 +278,20 @@ def main():
                     # load pre-trained word embedding
                     assign_pretrained_word_embedding(sess, embedding, capsnet)
 
-                intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS, sess, epoch=0)
+                intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
+                                                                   sess, epoch=0, fold=fold)
                 f_score_mean = (intent_f_score + slot_f_score) / 2
                 if f_score_mean > best_f_score:
                     best_f_score = f_score_mean
                 var_saver = tf.train.Saver()
 
-                train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train', sess.graph)
+                if f_score_mean > best_f_score_mean_fold:
+                    # best mean in this fold, save scores
+                    best_f_score_mean_fold = f_score_mean
+                    best_f_score_intent_fold = intent_f_score
+                    best_f_score_slot_fold = slot_f_score
+
+                train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-fold' + str(fold), sess.graph)
 
                 # Training cycle
                 train_sample_num = x_train.shape[0]
@@ -311,17 +322,26 @@ def main():
                         train_writer.add_summary(loss_summary, batch_num * epoch + batch)
 
                     print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
-                    intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS, sess, epoch=epoch + 1)
+                    intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
+                                                                       sess, epoch=epoch+1, fold=fold)
                     f_score_mean = (intent_f_score + slot_f_score) / 2
                     if f_score_mean > best_f_score:
-                        # save model
+                        # best score overall -> save model
                         best_f_score = f_score_mean
                         var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
                     print("Current F score mean", f_score_mean)
                     print("Best F score mean", best_f_score)
-                    intent_scores += intent_f_score
-                    slot_scores += slot_f_score
-                    mean_scores += f_score_mean
+
+                    if f_score_mean > best_f_score_mean_fold:
+                        # best mean in this fold, save scores
+                        best_f_score_mean_fold = f_score_mean
+                        best_f_score_intent_fold = intent_f_score
+                        best_f_score_slot_fold = slot_f_score
+
+            # For each fold, add best scores to mean
+            intent_scores += best_f_score_intent_fold
+            slot_scores += best_f_score_slot_fold
+            mean_scores += best_f_score_mean_fold
 
         mean_intent_score = intent_scores / FLAGS.n_splits
         mean_slot_score = slot_scores / FLAGS.n_splits
