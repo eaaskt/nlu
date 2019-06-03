@@ -1,17 +1,18 @@
+import math
 import os
 from random import *
+
 import data_loader
+import model
 import numpy as np
 import tensorflow as tf
-import model
-import math
-from sklearn.metrics import classification_report
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score as scikit_f1
-from seqeval.metrics import f1_score
 from seqeval.metrics import accuracy_score
-from seqeval.metrics import recall_score
+from seqeval.metrics import f1_score
 from seqeval.metrics import precision_score
+from seqeval.metrics import recall_score
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import f1_score as scikit_f1
 from sklearn.model_selection import StratifiedKFold
 
 a = Random()
@@ -408,7 +409,8 @@ def main():
                 y_slots_train, y_slots_val = y_slots_tr[train_index], y_slots_tr[val_index]
                 sentences_length_train, sentences_length_val = sentences_length_tr[train_index], sentences_length_tr[
                     val_index]
-                one_hot_intents_train, one_hot_intents_val = one_hot_intents_tr[train_index], one_hot_intents_tr[val_index]
+                one_hot_intents_train, one_hot_intents_val = one_hot_intents_tr[train_index], one_hot_intents_tr[
+                    val_index]
                 one_hot_slots_train, one_hot_slots_val = one_hot_slots_tr[train_index], one_hot_slots_tr[val_index]
 
                 train_data = dict()
@@ -417,7 +419,7 @@ def main():
                 train_data['y_slots_tr'] = y_slots_train
                 train_data['sentences_len_tr'] = sentences_length_train
                 train_data['one_hot_intents_tr'] = one_hot_intents_train
-                train_data['one_hot_intents_tr'] = one_hot_slots_train
+                train_data['one_hot_slots_tr'] = one_hot_slots_train
 
                 val_data = dict()
                 val_data['x_val'] = x_val
@@ -453,7 +455,7 @@ def main():
             train_data['y_slots_tr'] = y_slots_tr
             train_data['sentences_len_tr'] = sentences_length_tr
             train_data['one_hot_intents_tr'] = one_hot_intents_tr
-            train_data['one_hot_intents_tr'] = one_hot_slots_tr
+            train_data['one_hot_slots_tr'] = one_hot_slots_tr
 
             test_data = dict()
             test_data['x_te'] = data['x_te']
