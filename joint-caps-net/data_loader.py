@@ -3,13 +3,11 @@
 
 import numpy as np
 import tool
-from random import Random
-from datetime import datetime
 from gensim.models.keyedvectors import KeyedVectors
 
 word2vec_path = 'data/word-vec/wiki.ro.vec'
 training_data_path = 'data/scenario0/train.txt'
-test_data_path = 'data/scenario0/train.txt'
+test_data_path = 'data/scenario0/test.txt'
 
 
 def load_w2v(file_name):
@@ -18,11 +16,11 @@ def load_w2v(file_name):
         output: w2v model
     """
     w2v = KeyedVectors.load_word2vec_format(
-            file_name, binary=False)
+        file_name, binary=False)
     return w2v
 
 
-def load_vec(file_path, w2v, in_max_len):
+def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot_id):
     """ load input data
         input:
             file_path: input data file
@@ -37,18 +35,11 @@ def load_vec(file_path, w2v, in_max_len):
             intent_dict: intents dictionary
             slot_dict: slots dictionary
     """
-    input_x = [] # input sentence word ids
-    input_y = [] # input label ids
-    input_y_s = [] # input sentence slots
-    sentences_length = [] # input sentence length
+    input_x = []
+    input_y = []
+    input_y_s = []
+    sentences_length = []
     max_len = 0
-
-    intent_dict = {}
-    intent_id_dict = {}
-    intent_id = 0
-    slot_dict = {}
-    slot_id_dict = {}
-    slot_id = 0
 
     for line in open(file_path):
         arr = line.strip().split('\t')
@@ -58,7 +49,6 @@ def load_vec(file_path, w2v, in_max_len):
 
         if intent not in intent_dict:
             intent_dict[intent] = intent_id
-            intent_id_dict[intent_id] = intent
             intent_id += 1
 
         if len(slots) != len(text):
@@ -72,10 +62,11 @@ def load_vec(file_path, w2v, in_max_len):
             if w in w2v.vocab:
                 if s not in slot_dict:
                     slot_dict[s] = slot_id
-                    slot_id_dict[slot_id] = s
                     slot_id += 1
                 x_vectors.append(w2v.vocab[w].index)
                 y_slots.append(slot_dict[s])
+            # else:
+            # print(w + ' not in vocab')
 
         sentence_length = len(x_vectors)
         if sentence_length <= 1:
@@ -108,17 +99,14 @@ def load_vec(file_path, w2v, in_max_len):
     input_y = np.asarray(input_y)
     input_y_s = np.asarray(y_s_padding)
     sentences_length = np.asarray(sentences_length)
-    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_id_dict, slot_id_dict
+    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_dict, intent_id, slot_dict, slot_id
 
 
 def get_label(data):
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
-    y_intents_val = data['y_intents_val']
-    y_slots_val = data['y_slots_val']
     max_len = data['max_len']
     sample_num_tr = y_intents_tr.shape[0]
-    sample_num_val = y_intents_val.shape[0]
     nr_intents = len(data['intents_dict'])
     nr_slots = len(data['slots_dict'])
     intents_id = range(nr_intents)
@@ -132,15 +120,7 @@ def get_label(data):
     for i in range(sample_num_tr):
         for j in range(nr_slots):
             ind_slots_tr[i, y_slots_tr[i] == slots_id[j], j] = 1
-
-    ind_intents_val = np.zeros((sample_num_val, nr_intents), dtype=np.float32)
-    ind_slots_val = np.zeros((sample_num_val, max_len, nr_slots), dtype=np.float32)
-    for i in range(nr_intents):
-        ind_intents_val[y_intents_val == intents_id[i], i] = 1
-    for i in range(sample_num_val):
-        for j in range(nr_slots):
-            ind_slots_val[i, y_slots_val[i] == slots_id[j], j] = 1
-    return ind_intents_tr, ind_slots_tr, ind_intents_val, ind_slots_val
+    return ind_intents_tr, ind_slots_tr
 
 
 def read_datasets():
@@ -154,58 +134,41 @@ def read_datasets():
 
     # load normalized word embeddings
     embedding = w2v.vectors
-    data['embedding'] = embedding
     norm_embedding = tool.norm_matrix(embedding)
     data['embedding'] = norm_embedding
 
     # trans data into embedding vectors
     max_len = 0
-    x_tr, y_intents_tr, y_slots_tr, sentences_length_tr, max_len, intents_dict, slots_dict = load_vec(training_data_path, w2v, max_len)
-    x_te, y_intents_te, y_slots_te, sentences_length_te, max_len, test_intents_dict, test_slots_dict = load_vec(test_data_path, w2v, max_len)
+    slots_dict = dict()
+    intents_dict = dict()
+    slot_id = 0
+    intent_id = 0
+    (x_tr, y_intents_tr, y_slots_tr, sentences_length_tr,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(training_data_path, w2v, max_len,
+                                                                       intents_dict, intent_id, slots_dict, slot_id)
+    (x_te, y_intents_te, y_slots_te, sentences_length_te,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(test_data_path, w2v, max_len, intents_dict,
+                                                                       intent_id, slots_dict, slot_id)
+    intents_id_dict = {v: k for k, v in intents_dict.items()}
+    slots_id_dict = {v: k for k, v in slots_dict.items()}
 
-    # hold data for validation
-    gen = Random()
-    gen.seed(datetime.now())
-    data_length = len(x_tr)
-    validation_index = gen.sample(range(data_length), int(0.2 * data_length))
-    tr_index = [i for i in range(data_length) if i not in validation_index]
+    data['x_tr'] = x_tr
+    data['y_intents_tr'] = y_intents_tr
+    data['y_slots_tr'] = y_slots_tr
+    data['sentences_len_tr'] = sentences_length_tr
 
-    x_val = x_tr[validation_index]
-    y_intents_val = y_intents_tr[validation_index]
-    y_slots_val = y_slots_tr[validation_index]
-    sentences_length_val = sentences_length_tr[validation_index]
-
-    x_train = x_tr[tr_index]
-    y_intents_train = y_intents_tr[tr_index]
-    y_slots_train = y_slots_tr[tr_index]
-    sentences_length_train = sentences_length_tr[tr_index]
-
-    data['x_tr'] = x_train
-    data['y_intents_tr'] = y_intents_train
-    data['y_slots_tr'] = y_slots_train
-    data['sentences_len_tr'] = sentences_length_train
-
-    data['x_val'] = x_val
-    data['y_intents_val'] = y_intents_val
-    data['y_slots_val'] = y_slots_val
-    data['sentences_len_val'] = sentences_length_val
-
-    data['intents_dict'] = intents_dict
-    data['slots_dict'] = slots_dict
+    data['intents_dict'] = intents_id_dict
+    data['slots_dict'] = slots_id_dict
 
     data['x_te'] = x_te
     data['y_intents_te'] = y_intents_te
     data['y_slots_te'] = y_slots_te
-
     data['sentences_len_te'] = sentences_length_te
 
     data['max_len'] = max_len
 
-    one_hot_y_intents_tr, one_hot_y_slots_tr, one_hot_y_intents_val, one_hot_y_slots_val = get_label(data)
+    one_hot_y_intents_tr, one_hot_y_slots_tr = get_label(data)
     data['encoded_intents_tr'] = one_hot_y_intents_tr
     data['encoded_slots_tr'] = one_hot_y_slots_tr
-    data['encoded_intents_val'] = one_hot_y_intents_val
-    data['encoded_slots_val'] = one_hot_y_slots_val
     print("------------------read datasets end---------------------")
     return data
-
