@@ -26,7 +26,6 @@ def setting(data):
 
     FLAGS = tf.app.flags.FLAGS
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
     tf.app.flags.DEFINE_integer("hidden_size", 128, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
@@ -35,7 +34,6 @@ def setting(data):
     tf.app.flags.DEFINE_integer("intents_nr", intents_number, "intents_number")  #
     tf.app.flags.DEFINE_integer("slots_nr", slots_number, "slots_number")  #
     tf.app.flags.DEFINE_integer("word_emb_size", word_emb_size, "embedding size of word vectors")
-    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/', "check point dir")
     tf.app.flags.DEFINE_boolean("use_embedding", True, "whether to use embedding or not.")
     tf.app.flags.DEFINE_float("learning_rate", 0.01, "learning rate")
     tf.app.flags.DEFINE_float("margin", 1.0, "ranking loss margin")
@@ -46,7 +44,11 @@ def setting(data):
     tf.app.flags.DEFINE_integer("slot_output_dim", 64, "slot output dimension")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
+    tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
+    tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
     tf.app.flags.DEFINE_string("summaries_dir", './logs', "tensorboard summaries")
+    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/', "check point dir")
+    tf.app.flags.DEFINE_string("scenario_num", '', "Scenario number")
 
     return FLAGS
 
@@ -215,6 +217,164 @@ def assign_pretrained_word_embedding(sess, embedding, capsnet):
     print("using pre-trained word emebedding.ended...")
 
 
+def train(train_data, test_data, embedding, FLAGS):
+    # start
+    x_train = train_data['x_tr']
+    sentences_length_train = train_data['sentences_len_tr']
+    one_hot_intents_train = train_data['one_hot_intents_tr']
+    one_hot_slots_train = train_data['one_hot_intents_tr']
+
+    best_f_score = 0.0
+    best_f_score_intent = 0.0
+    best_f_score_slot = 0.0
+
+    tf.reset_default_graph()
+    config = tf.ConfigProto()
+    with tf.Session(config=config) as sess:
+        # Instantiate Model
+        capsnet = model.capsnet(FLAGS)
+
+        print('Initializing Variables')
+        sess.run(tf.global_variables_initializer())
+        if FLAGS.use_embedding:
+            # load pre-trained word embedding
+            assign_pretrained_word_embedding(sess, embedding, capsnet)
+
+        intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess)
+        f_score_mean = (intent_f_score + slot_f_score) / 2
+        if f_score_mean > best_f_score:
+            best_f_score = f_score_mean
+            best_f_score_intent = intent_f_score
+            best_f_score_slot = slot_f_score
+        var_saver = tf.train.Saver()
+
+        train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train', sess.graph)
+
+        # Training cycle
+        train_sample_num = x_train.shape[0]
+        batch_num = int(train_sample_num / FLAGS.batch_size)
+        for epoch in range(FLAGS.num_epochs):
+            for batch in range(batch_num):
+                batch_index = generate_batch(train_sample_num, FLAGS.batch_size)
+                batch_x = x_train[batch_index]
+                batch_sentences_len = sentences_length_train[batch_index]
+                batch_intents_one_hot = one_hot_intents_train[batch_index]
+                batch_slots_one_hot = one_hot_slots_train[batch_index]
+
+                [_, loss, _, _,
+                 cross_entropy_summary, margin_loss_summary,
+                 loss_summary] = sess.run([capsnet.train_op, capsnet.loss_val,
+                                           capsnet.intent_output_vectors,
+                                           capsnet.slot_output_vectors, capsnet.cross_entropy_tr_summary,
+                                           capsnet.margin_loss_tr_summary, capsnet.loss_tr_summary],
+                                          feed_dict={capsnet.input_x: batch_x,
+                                                     capsnet.encoded_intents: batch_intents_one_hot,
+                                                     capsnet.encoded_slots: batch_slots_one_hot,
+                                                     capsnet.sentences_length: batch_sentences_len})
+
+                train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
+                train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
+                train_writer.add_summary(loss_summary, batch_num * epoch + batch)
+
+            print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
+            intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess)
+            f_score_mean = (intent_f_score + slot_f_score) / 2
+            if f_score_mean > best_f_score:
+                # best score overall -> save model
+                best_f_score = f_score_mean
+                best_f_score_intent = intent_f_score
+                best_f_score_slot = slot_f_score
+                var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
+            print("Current F score mean", f_score_mean)
+            print("Best F score mean", best_f_score)
+
+    return best_f_score, best_f_score_intent, best_f_score_slot
+
+
+def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_score):
+    # start
+    x_train = train_data['x_tr']
+    sentences_length_train = train_data['sentences_len_tr']
+    one_hot_intents_train = train_data['one_hot_intents_tr']
+    one_hot_slots_train = train_data['one_hot_intents_tr']
+
+    best_f_score_mean_fold = 0.0
+    best_f_score_intent_fold = 0.0
+    best_f_score_slot_fold = 0.0
+
+    tf.reset_default_graph()
+    config = tf.ConfigProto()
+    with tf.Session(config=config) as sess:
+        # Instantiate Model
+        capsnet = model.capsnet(FLAGS)
+
+        print('Initializing Variables')
+        sess.run(tf.global_variables_initializer())
+        if FLAGS.use_embedding:
+            # load pre-trained word embedding
+            assign_pretrained_word_embedding(sess, embedding, capsnet)
+
+        intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
+                                                           sess, epoch=0, fold=fold)
+        f_score_mean = (intent_f_score + slot_f_score) / 2
+        if f_score_mean > best_f_score:
+            best_f_score = f_score_mean
+        var_saver = tf.train.Saver()
+
+        if f_score_mean > best_f_score_mean_fold:
+            # best mean in this fold, save scores
+            best_f_score_mean_fold = f_score_mean
+            best_f_score_intent_fold = intent_f_score
+            best_f_score_slot_fold = slot_f_score
+
+        train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-fold' + str(fold), sess.graph)
+
+        # Training cycle
+        train_sample_num = x_train.shape[0]
+        batch_num = int(train_sample_num / FLAGS.batch_size)
+        for epoch in range(FLAGS.num_epochs):
+            for batch in range(batch_num):
+                batch_index = generate_batch(train_sample_num, FLAGS.batch_size)
+                batch_x = x_train[batch_index]
+                batch_sentences_len = sentences_length_train[batch_index]
+                batch_intents_one_hot = one_hot_intents_train[batch_index]
+                batch_slots_one_hot = one_hot_slots_train[batch_index]
+
+                [_, loss, _, _,
+                 cross_entropy_summary, margin_loss_summary,
+                 loss_summary] = sess.run([capsnet.train_op, capsnet.loss_val,
+                                           capsnet.intent_output_vectors,
+                                           capsnet.slot_output_vectors, capsnet.cross_entropy_tr_summary,
+                                           capsnet.margin_loss_tr_summary, capsnet.loss_tr_summary],
+                                          feed_dict={capsnet.input_x: batch_x,
+                                                     capsnet.encoded_intents: batch_intents_one_hot,
+                                                     capsnet.encoded_slots: batch_slots_one_hot,
+                                                     capsnet.sentences_length: batch_sentences_len})
+
+                train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
+                train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
+                train_writer.add_summary(loss_summary, batch_num * epoch + batch)
+
+            print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
+            intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
+                                                               sess, epoch=epoch + 1, fold=fold)
+            f_score_mean = (intent_f_score + slot_f_score) / 2
+            if f_score_mean > best_f_score:
+                # best score overall -> save model
+                best_f_score = f_score_mean
+                var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
+            print("Current F score mean", f_score_mean)
+            print("Best F score mean", best_f_score)
+
+            if f_score_mean > best_f_score_mean_fold:
+                # best mean in this fold, save scores
+                best_f_score_mean_fold = f_score_mean
+                best_f_score_intent_fold = intent_f_score
+                best_f_score_slot_fold = slot_f_score
+
+    return best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold
+
+
 def main():
     # load data
     data = data_loader.read_datasets()
@@ -241,9 +401,6 @@ def main():
         fold = 1
         for train_index, val_index in StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr):
             print("FOLD %d" % fold)
-            best_f_score_mean_fold = 0.0
-            best_f_score_intent_fold = 0.0
-            best_f_score_slot_fold = 0.0
 
             x_train, x_val = x_tr[train_index], x_tr[val_index]
             y_intents_train, y_intents_val = y_intents_tr[train_index], y_intents_tr[val_index]
@@ -252,6 +409,14 @@ def main():
                 val_index]
             one_hot_intents_train, one_hot_intents_val = one_hot_intents_tr[train_index], one_hot_intents_tr[val_index]
             one_hot_slots_train, one_hot_slots_val = one_hot_slots_tr[train_index], one_hot_slots_tr[val_index]
+
+            train_data = dict()
+            train_data['x_tr'] = x_train
+            train_data['y_intents_tr'] = y_intents_train
+            train_data['y_slots_tr'] = y_slots_train
+            train_data['sentences_len_tr'] = sentences_length_train
+            train_data['one_hot_intents_tr'] = one_hot_intents_train
+            train_data['one_hot_intents_tr'] = one_hot_slots_train
 
             val_data = dict()
             val_data['x_val'] = x_val
@@ -263,78 +428,7 @@ def main():
             val_data['slots_dict'] = data['slots_dict']
             val_data['intents_dict'] = data['intents_dict']
 
-            # start
-            tf.reset_default_graph()
-            config = tf.ConfigProto()
-            with tf.Session(config=config) as sess:
-                # Instantiate Model
-                capsnet = model.capsnet(FLAGS)
-
-                print('Initializing Variables')
-                sess.run(tf.global_variables_initializer())
-                if FLAGS.use_embedding:
-                    # load pre-trained word embedding
-                    assign_pretrained_word_embedding(sess, embedding, capsnet)
-
-                intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
-                                                                   sess, epoch=0, fold=fold)
-                f_score_mean = (intent_f_score + slot_f_score) / 2
-                if f_score_mean > best_f_score:
-                    best_f_score = f_score_mean
-                var_saver = tf.train.Saver()
-
-                if f_score_mean > best_f_score_mean_fold:
-                    # best mean in this fold, save scores
-                    best_f_score_mean_fold = f_score_mean
-                    best_f_score_intent_fold = intent_f_score
-                    best_f_score_slot_fold = slot_f_score
-
-                train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-fold' + str(fold), sess.graph)
-
-                # Training cycle
-                train_sample_num = x_train.shape[0]
-                batch_num = int(train_sample_num / FLAGS.batch_size)
-                for epoch in range(FLAGS.num_epochs):
-                    for batch in range(batch_num):
-                        batch_index = generate_batch(train_sample_num, FLAGS.batch_size)
-                        batch_x = x_train[batch_index]
-                        batch_y_intents = y_intents_train[batch_index]
-                        batch_y_slots = y_slots_train[batch_index]
-                        batch_sentences_len = sentences_length_train[batch_index]
-                        batch_intents_one_hot = one_hot_intents_train[batch_index]
-                        batch_slots_one_hot = one_hot_slots_train[batch_index]
-
-                        [_, loss, intent_pred, slot_pred,
-                         cross_entropy_summary, margin_loss_summary,
-                         loss_summary] = sess.run([capsnet.train_op, capsnet.loss_val,
-                                                   capsnet.intent_output_vectors,
-                                                   capsnet.slot_output_vectors, capsnet.cross_entropy_tr_summary,
-                                                   capsnet.margin_loss_tr_summary, capsnet.loss_tr_summary],
-                                                  feed_dict={capsnet.input_x: batch_x,
-                                                             capsnet.encoded_intents: batch_intents_one_hot,
-                                                             capsnet.encoded_slots: batch_slots_one_hot,
-                                                             capsnet.sentences_length: batch_sentences_len})
-
-                        train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
-                        train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
-                        train_writer.add_summary(loss_summary, batch_num * epoch + batch)
-
-                    print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
-                    intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
-                                                                       sess, epoch=epoch+1, fold=fold)
-                    f_score_mean = (intent_f_score + slot_f_score) / 2
-                    if f_score_mean > best_f_score:
-                        # best score overall -> save model
-                        best_f_score = f_score_mean
-                        var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
-                    print("Current F score mean", f_score_mean)
-                    print("Best F score mean", best_f_score)
-
-                    if f_score_mean > best_f_score_mean_fold:
-                        # best mean in this fold, save scores
-                        best_f_score_mean_fold = f_score_mean
-                        best_f_score_intent_fold = intent_f_score
-                        best_f_score_slot_fold = slot_f_score
+            best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold = train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_score)
 
             fold += 1
 
@@ -349,7 +443,6 @@ def main():
         print('Mean intent F1 score %lf' % mean_intent_score)
         print('Mean slot F1 score %lf' % mean_slot_score)
         print('Mean F1 score %lf' % mean_score)
-
 
     else:
         # testing
@@ -371,6 +464,8 @@ def main():
                 saver = tf.train.Saver()
                 saver.restore(sess, tf.train.latest_checkpoint(FLAGS.ckpt_dir))
                 intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess)
+                print("Intent F1: %lf" % intent_f_score)
+                print("Slot F1: %lf" % slot_f_score)
             else:
                 print("No trained model exists in checkpoint dir!")
 
