@@ -10,7 +10,7 @@ from seqeval.metrics import accuracy_score
 from seqeval.metrics import f1_score
 from seqeval.metrics import precision_score
 from seqeval.metrics import recall_score
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score as scikit_accuracy
 from sklearn.metrics import classification_report
 from sklearn.metrics import f1_score as scikit_f1
 from sklearn.model_selection import StratifiedKFold
@@ -108,7 +108,7 @@ def evaluate_test(capsnet, data, FLAGS, sess):
 
     print("           TEST SET PERFORMANCE        ")
     print("Intent detection")
-    intents_acc = accuracy_score(y_intents_te, total_intent_pred)
+    intents_acc = scikit_accuracy(y_intents_te, total_intent_pred)
     y_intents_true = np.ndarray.tolist(y_intents_te)
     y_intent_labels_true = [intents_dict[i] for i in y_intents_true]
     y_intent_labels_pred = [intents_dict[i] for i in total_intent_pred]
@@ -183,7 +183,7 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
 
     print("           VALIDATION SET PERFORMANCE        ")
     print("Intent detection")
-    intents_acc = accuracy_score(y_intents_te, total_intent_pred)
+    intents_acc = scikit_accuracy(y_intents_te, total_intent_pred)
     y_intents_true = np.ndarray.tolist(y_intents_te)
     y_intent_labels_true = [intents_dict[i] for i in y_intents_true]
     y_intent_labels_pred = [intents_dict[i] for i in total_intent_pred]
@@ -223,7 +223,7 @@ def train(train_data, test_data, embedding, FLAGS):
     x_train = train_data['x_tr']
     sentences_length_train = train_data['sentences_len_tr']
     one_hot_intents_train = train_data['one_hot_intents_tr']
-    one_hot_slots_train = train_data['one_hot_intents_tr']
+    one_hot_slots_train = train_data['one_hot_slots_tr']
 
     best_f_score = 0.0
     best_f_score_intent = 0.0
@@ -297,7 +297,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
     x_train = train_data['x_tr']
     sentences_length_train = train_data['sentences_len_tr']
     one_hot_intents_train = train_data['one_hot_intents_tr']
-    one_hot_slots_train = train_data['one_hot_intents_tr']
+    one_hot_slots_train = train_data['one_hot_slots_tr']
 
     best_f_score_mean_fold = 0.0
     best_f_score_intent_fold = 0.0
