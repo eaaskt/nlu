@@ -392,57 +392,81 @@ def main():
     FLAGS = setting(data)
 
     if not FLAGS.test:
-        # k-fold cross-validation
-        intent_scores = 0
-        slot_scores = 0
-        mean_scores = 0
-        best_f_score = 0.0
-        print("------------------start cross-validation-------------------")
-        fold = 1
-        for train_index, val_index in StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr):
-            print("FOLD %d" % fold)
+        if FLAGS.crossval:
+            # k-fold cross-validation
+            intent_scores = 0
+            slot_scores = 0
+            mean_scores = 0
+            best_f_score = 0.0
+            print("------------------start cross-validation-------------------")
+            fold = 1
+            for train_index, val_index in StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr):
+                print("FOLD %d" % fold)
 
-            x_train, x_val = x_tr[train_index], x_tr[val_index]
-            y_intents_train, y_intents_val = y_intents_tr[train_index], y_intents_tr[val_index]
-            y_slots_train, y_slots_val = y_slots_tr[train_index], y_slots_tr[val_index]
-            sentences_length_train, sentences_length_val = sentences_length_tr[train_index], sentences_length_tr[
-                val_index]
-            one_hot_intents_train, one_hot_intents_val = one_hot_intents_tr[train_index], one_hot_intents_tr[val_index]
-            one_hot_slots_train, one_hot_slots_val = one_hot_slots_tr[train_index], one_hot_slots_tr[val_index]
+                x_train, x_val = x_tr[train_index], x_tr[val_index]
+                y_intents_train, y_intents_val = y_intents_tr[train_index], y_intents_tr[val_index]
+                y_slots_train, y_slots_val = y_slots_tr[train_index], y_slots_tr[val_index]
+                sentences_length_train, sentences_length_val = sentences_length_tr[train_index], sentences_length_tr[
+                    val_index]
+                one_hot_intents_train, one_hot_intents_val = one_hot_intents_tr[train_index], one_hot_intents_tr[val_index]
+                one_hot_slots_train, one_hot_slots_val = one_hot_slots_tr[train_index], one_hot_slots_tr[val_index]
 
+                train_data = dict()
+                train_data['x_tr'] = x_train
+                train_data['y_intents_tr'] = y_intents_train
+                train_data['y_slots_tr'] = y_slots_train
+                train_data['sentences_len_tr'] = sentences_length_train
+                train_data['one_hot_intents_tr'] = one_hot_intents_train
+                train_data['one_hot_intents_tr'] = one_hot_slots_train
+
+                val_data = dict()
+                val_data['x_val'] = x_val
+                val_data['y_intents_val'] = y_intents_val
+                val_data['y_slots_val'] = y_slots_val
+                val_data['sentences_len_val'] = sentences_length_val
+                val_data['one_hot_intents_val'] = one_hot_intents_val
+                val_data['one_hot_slots_val'] = one_hot_slots_val
+                val_data['slots_dict'] = data['slots_dict']
+                val_data['intents_dict'] = data['intents_dict']
+
+                best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold = train_cross_validation(
+                    train_data, val_data, embedding, FLAGS, fold, best_f_score)
+
+                fold += 1
+
+                # For each fold, add best scores to mean
+                intent_scores += best_f_score_intent_fold
+                slot_scores += best_f_score_slot_fold
+                mean_scores += best_f_score_mean_fold
+
+            mean_intent_score = intent_scores / FLAGS.n_splits
+            mean_slot_score = slot_scores / FLAGS.n_splits
+            mean_score = mean_scores / FLAGS.n_splits
+            print('Mean intent F1 score %lf' % mean_intent_score)
+            print('Mean slot F1 score %lf' % mean_slot_score)
+            print('Mean F1 score %lf' % mean_score)
+
+        else:
             train_data = dict()
-            train_data['x_tr'] = x_train
-            train_data['y_intents_tr'] = y_intents_train
-            train_data['y_slots_tr'] = y_slots_train
-            train_data['sentences_len_tr'] = sentences_length_train
-            train_data['one_hot_intents_tr'] = one_hot_intents_train
-            train_data['one_hot_intents_tr'] = one_hot_slots_train
+            train_data['x_tr'] = x_tr
+            train_data['y_intents_tr'] = y_intents_tr
+            train_data['y_slots_tr'] = y_slots_tr
+            train_data['sentences_len_tr'] = sentences_length_tr
+            train_data['one_hot_intents_tr'] = one_hot_intents_tr
+            train_data['one_hot_intents_tr'] = one_hot_slots_tr
 
-            val_data = dict()
-            val_data['x_val'] = x_val
-            val_data['y_intents_val'] = y_intents_val
-            val_data['y_slots_val'] = y_slots_val
-            val_data['sentences_len_val'] = sentences_length_val
-            val_data['one_hot_intents_val'] = one_hot_intents_val
-            val_data['one_hot_slots_val'] = one_hot_slots_val
-            val_data['slots_dict'] = data['slots_dict']
-            val_data['intents_dict'] = data['intents_dict']
+            test_data = dict()
+            test_data['x_te'] = data['x_te']
+            test_data['y_intents_te'] = data['y_intents_te']
+            test_data['y_slots_te'] = data['y_slots_te']
+            test_data['sentences_len_te'] = data['sentences_len_te']
+            test_data['slots_dict'] = data['slots_dict']
+            test_data['intents_dict'] = data['intents_dict']
 
-            best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold = train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_score)
-
-            fold += 1
-
-            # For each fold, add best scores to mean
-            intent_scores += best_f_score_intent_fold
-            slot_scores += best_f_score_slot_fold
-            mean_scores += best_f_score_mean_fold
-
-        mean_intent_score = intent_scores / FLAGS.n_splits
-        mean_slot_score = slot_scores / FLAGS.n_splits
-        mean_score = mean_scores / FLAGS.n_splits
-        print('Mean intent F1 score %lf' % mean_intent_score)
-        print('Mean slot F1 score %lf' % mean_slot_score)
-        print('Mean F1 score %lf' % mean_score)
+            best_f_score, best_f_score_intent, best_f_score_slot = train(train_data, test_data, embedding, FLAGS)
+            print("Best F score: %lf" % best_f_score)
+            print("Best intent F score: %lf" % best_f_score_intent)
+            print("Best slot F score: %lf" % best_f_score_slot)
 
     else:
         # testing
