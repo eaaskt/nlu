@@ -31,6 +31,8 @@ class capsnet():
 
         # parameters for self attention
         self.max_sentence_length = FLAGS.max_sentence_length
+        self.attention_dimenison = FLAGS.attention_output_dimenison
+        self.r = FLAGS.r
 
         # input data
         self.input_x = tf.placeholder("int64", [None, self.max_sentence_length])
@@ -42,10 +44,12 @@ class capsnet():
         # graph
         self.instantiate_weights()
         self.H = self.word_caps()
-        # capsule
+        self.attention, self.semantic_caps_output_vectors = self.semantic_caps()
+        # slot capsule
         self.slot_output_vectors, self.slot_weights_c, self.slot_predictions, self.slot_weights_b = self.slot_capsule()
-        self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_capsule()
-        # = self.rerouting()
+        # capsule
+        self.intent_output_vectors, self.weights_c, self.intent_predictions, self.weights_b = self.intent_capsule()
+
         self.loss_val = self.loss()
 
         self.train_op = self.train()
@@ -74,8 +78,8 @@ class capsnet():
 
         with tf.name_scope("intent_capsule_weights"):
             intent_capsule_weights_init = tf.get_variable("intent_capsule_weights_init",
-                                                          shape=[1, self.slots_nr, self.intents_nr,
-                                                                 self.intent_output_dim, self.slot_output_dim],
+                                                          shape=[1, self.intents_nr,
+                                                                 2 * self.hidden_size, self.intent_output_dim],
                                                           initializer=self.initializer)
             self.intent_capsule_weights = tf.tile(intent_capsule_weights_init, [self.batch_size, 1, 1, 1, 1])
 
@@ -86,11 +90,44 @@ class capsnet():
                                                          initializer=self.initializer)
             self.intent_capsule_biases = tf.tile(intent_capsule_biases_init, [self.batch_size, 1, 1, 1, 1])
 
-        # with tf.name_scope("rerouting_capsule_weights"):
-        #     self.rerouting_capsule_weights = tf.get_variable("rerouting_capsule_weights",
-        #                                                      shape=[None, self.max_sentence_length, self.slots_nr,
-        #                                                             self.slot_output_dim, self.intent_output_dim],
-        #                                                      initializer=self.initializer)
+        with tf.name_scope("self_attention_w_s1"):
+            # shape(W_s1) = attention_out_dim * 2u
+            w_s1_init = tf.get_variable('W_s1_init', shape=[1, self.attention_dimenison, 2 * self.hidden_size],
+                                        initializer=self.initializer)
+            self.W_s1 = tf.tile(w_s1_init, [self.batch_size, 1, 1])
+
+            # shape(W_s2) = r * attention_out_dim
+            w_s2_init = tf.get_variable('W_s2_init', shape=[1, self.r, self.attention_dimenison],
+                                        initializer=self.initializer)
+            self.W_s2 = tf.tile(w_s2_init, [self.batch_size, 1, 1])
+
+    def semantic_caps(self):
+        """
+            self attention
+        """
+        input_embed = tf.nn.embedding_lookup(self.Embedding, self.input_x, max_norm=1)
+
+        cell_fw = tf.contrib.rnn.LSTMCell(self.hidden_size)
+        cell_bw = tf.contrib.rnn.LSTMCell(self.hidden_size)
+
+        H, _ = tf.nn.bidirectional_dynamic_rnn(
+            cell_fw,
+            cell_bw,
+            input_embed,
+            self.sentences_length,
+            dtype=tf.float32)
+        H = tf.concat([H[0], H[1]], axis=2)
+
+        A = tf.nn.softmax(
+            tf.map_fn(
+              lambda x: tf.matmul(self.W_s2, x),
+              tf.tanh(
+                tf.map_fn(
+                  lambda x: tf.matmul(self.W_s1, tf.transpose(x)),
+                  H))))
+
+        M = tf.matmul(A, H)
+        return A, M
 
     def word_caps(self):
         # shape:[None, sentence_length, embed_size]
@@ -188,6 +225,26 @@ class capsnet():
         return output_vector, weights_c, slot_caps_predicted, weights_b
 
     def intent_capsule(self):
+        # shape = [ batch_size, r, 2*h]
+        semantic_caps_output = tf.nn.dropout(self.semantic_caps_output_vectors, self.keep_prob)
+
+        semantic_caps_output_tile = tf.expand_dims(semantic_caps_output, axis=1, name="semantic_caps_output_tile")
+        semantic_caps_output_tiled = tf.tile(semantic_caps_output_tile, [1, self.intents_nr, 1, 1],
+                                             name="semantic_caps_output_tiled")
+
+        # size = [batch_size, intents_nr, r, intent_caps_out_dim]
+        intent_caps_predicted_matmul = tf.matmul(semantic_caps_output_tiled, self.intent_capsule_weights,
+                                                 name="intent_caps_predicted_matmul")
+
+        output_vector, weights_b, weights_c = self._update_routing(
+            caps1_n_caps=self.r,
+            caps2_n_caps=self.intents_nr,
+            caps2_predicted=intent_caps_predicted_matmul,
+            num_iter=2)
+
+        return output_vector, weights_c, intent_caps_predicted_matmul, weights_b
+
+    def intent_capsule_old(self):
         slot_caps_output = tf.nn.dropout(self.slot_output_vectors, self.keep_prob)
 
         slots_output_tshape = [0, 2, 1, 3, 4]

@@ -43,6 +43,8 @@ def setting(data):
     tf.app.flags.DEFINE_integer("re_routing_num", 2, "re routing num")
     tf.app.flags.DEFINE_integer("intent_output_dim", 32, "intent output dimension")
     tf.app.flags.DEFINE_integer("slot_output_dim", 64, "slot output dimension")
+    tf.app.flags.DEFINE_integer("attention_output_dimension", 20, "self attention weight hidden units number")
+    tf.app.flags.DEFINE_integer("r", 3, "self attention weight hops")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
     tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
