@@ -27,7 +27,7 @@ def setting(data):
 
     FLAGS = tf.app.flags.FLAGS
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("hidden_size", 128, "embedding vector size")
+    tf.app.flags.DEFINE_integer("hidden_size", 64, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
@@ -41,9 +41,10 @@ def setting(data):
     tf.app.flags.DEFINE_integer("slot_routing_num", 2, "slot routing num")
     tf.app.flags.DEFINE_integer("intent_routing_num", 2, "intent routing num")
     tf.app.flags.DEFINE_integer("re_routing_num", 2, "re routing num")
-    tf.app.flags.DEFINE_integer("intent_output_dim", 32, "intent output dimension")
+    tf.app.flags.DEFINE_integer("intent_output_dim", 128, "intent output dimension")
     tf.app.flags.DEFINE_integer("slot_output_dim", 64, "slot output dimension")
-    tf.app.flags.DEFINE_integer("attention_output_dimension", 20, "self attention weight hidden units number")
+    tf.app.flags.DEFINE_integer("attention_output_dimenison", 20, "self attention weight hidden units number")
+    tf.app.flags.DEFINE_float("alpha", 0.001, "coefficient for self attention loss")
     tf.app.flags.DEFINE_integer("r", 3, "self attention weight hops")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
