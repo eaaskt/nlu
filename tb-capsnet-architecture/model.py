@@ -277,10 +277,9 @@ class capsnet():
         return output_vector, weights_c, intent_caps_predicted, weights_b
 
     def cross_entropy_loss(self):
-        # todo make sure you remove the c's from intents
         # sliced_slot_weights_c = self.slot_weights_c[:, :self.sentences_length, :, :, :]
-        sliced_slot_weights_c = tf.slice(self.slot_weights_c, [0, 0, 0, 0, 0],
-                                         [self.batch_size, self.sentences_length, self.slots_nr, 1, 1])
+        sliced_slot_weights_c = tf.slice(self.slot_weights_c, begin=[0, 0, 0, 0, 0],
+                                         size=[-1, self.max_sentence_length, -1, -1, -1])
         reduced_dim_slot_weights_c = tf.squeeze(sliced_slot_weights_c, axis=[3, 4])
         epsilon = 1e-7
         log_weights_c = tf.log(tf.maximum(reduced_dim_slot_weights_c, epsilon))

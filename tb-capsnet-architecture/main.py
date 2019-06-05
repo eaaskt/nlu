@@ -42,10 +42,10 @@ def setting(data):
     tf.app.flags.DEFINE_integer("intent_routing_num", 2, "intent routing num")
     tf.app.flags.DEFINE_integer("re_routing_num", 2, "re routing num")
     tf.app.flags.DEFINE_integer("intent_output_dim", 128, "intent output dimension")
-    tf.app.flags.DEFINE_integer("slot_output_dim", 64, "slot output dimension")
+    tf.app.flags.DEFINE_integer("slot_output_dim", 128, "slot output dimension")
     tf.app.flags.DEFINE_integer("attention_output_dimenison", 20, "self attention weight hidden units number")
     tf.app.flags.DEFINE_float("alpha", 0.001, "coefficient for self attention loss")
-    tf.app.flags.DEFINE_integer("r", 3, "self attention weight hops")
+    tf.app.flags.DEFINE_integer("r", 4, "self attention weight hops")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
     tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
@@ -99,7 +99,9 @@ def evaluate_test(capsnet, data, FLAGS, sess):
 
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs)
         intent_outputs_norm = safe_norm(intent_outputs_reduced_dim)
-        slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c)
+        sliced_slot_weights_c = tf.slice(slot_weights_c, begin=[0, 0, 0, 0, 0],
+                                         size=[-1, capsnet.max_sentence_length, -1, -1, -1])
+        slot_weights_c_reduced_dim = tf.squeeze(sliced_slot_weights_c)
 
         [intent_predictions, slot_predictions] = sess.run([intent_outputs_norm, slot_weights_c_reduced_dim])
 
