@@ -19,16 +19,30 @@ a = Random()
 a.seed(1)
 
 
-def setting(data):
+def define_app_flags():
+    FLAGS = tf.app.flags.FLAGS
+
+    tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
+    tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
+    tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
+    tf.app.flags.DEFINE_string("summaries_dir", './logs', "tensorboard summaries")
+    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/', "check point dir")
+    tf.app.flags.DEFINE_string("scenario_num", '', "Scenario number")
+    tf.app.flags.DEFINE_string("errors_dir", "./errors/", "Errors dir")
+
+    return FLAGS
+
+
+def set_data_flags(data):
     vocab_size, word_emb_size = data['embedding'].shape
     _, max_sentence_length = data['x_tr'].shape
     intents_number = len(data['intents_dict'])
     slots_number = len(data['slots_dict'])
+    hidden_size = 64
 
-    FLAGS = tf.app.flags.FLAGS
     tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("hidden_size", 128, "embedding vector size")
-    tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
+    tf.app.flags.DEFINE_integer("hidden_size", hidden_size, "embedding vector size")
+    tf.app.flags.DEFINE_integer("batch_size", 64, "batch size")
     tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("max_sentence_length", max_sentence_length, "max number of words in one sentence")
@@ -40,18 +54,12 @@ def setting(data):
     tf.app.flags.DEFINE_float("margin", 1.0, "ranking loss margin")
     tf.app.flags.DEFINE_integer("slot_routing_num", 2, "slot routing num")
     tf.app.flags.DEFINE_integer("intent_routing_num", 2, "intent routing num")
-    tf.app.flags.DEFINE_integer("re_routing_num", 2, "re routing num")
     tf.app.flags.DEFINE_integer("intent_output_dim", 32, "intent output dimension")
-    tf.app.flags.DEFINE_integer("slot_output_dim", 64, "slot output dimension")
-    tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
-    tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
-    tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
+    tf.app.flags.DEFINE_integer("slot_output_dim", 2 * hidden_size, "slot output dimension")
+    tf.app.flags.DEFINE_integer("d_a", 20, "self attention weight hidden units number")
+    tf.app.flags.DEFINE_integer("r", 3, "number of self attention heads")
+    tf.app.flags.DEFINE_float("alpha", 0.0001, "coefficient for self attention loss")
     tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
-    tf.app.flags.DEFINE_string("summaries_dir", './logs', "tensorboard summaries")
-    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/', "check point dir")
-    tf.app.flags.DEFINE_string("scenario_num", '', "Scenario number")
-
-    return FLAGS
 
 
 def safe_norm(s, axis=-1, epsilon=1e-7, keep_dims=False, name=None):
@@ -70,16 +78,22 @@ def eval_seq_scores(y_true, y_pred):
     return scores
 
 
-def evaluate_test(capsnet, data, FLAGS, sess):
+def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
     x_te = data['x_te']
     sentences_length_te = data['sentences_len_te']
     y_intents_te = data['y_intents_te']
     y_slots_te = data['y_slots_te']
     slots_dict = data['slots_dict']
     intents_dict = data['intents_dict']
+    one_hot_intents = data['one_hot_intents_te']
+    one_hot_slots = data['one_hot_slots_te']
+    if log_errs:
+        x_text_te = data['x_text_te']
 
     total_intent_pred = []
     total_slots_pred = []
+
+    writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/test', sess.graph)
 
     num_samples = len(x_te)
     batch_size = FLAGS.batch_size
@@ -89,10 +103,20 @@ def evaluate_test(capsnet, data, FLAGS, sess):
         end_index = min((i + 1) * batch_size, num_samples)
         batch_te = x_te[begin_index: end_index]
         batch_sentences_len = sentences_length_te[begin_index: end_index]
+        batch_intents_one_hot = one_hot_intents[begin_index: end_index]
+        batch_slots_one_hot = one_hot_slots[begin_index: end_index]
 
-        [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
-            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
-            feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len})
+        [intent_outputs, slots_outputs, slot_weights_c, cross_entropy_summary,
+         margin_loss_summary, loss_summary] = sess.run([
+            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c,
+            capsnet.cross_entropy_val_summary,
+            capsnet.margin_loss_val_summary, capsnet.loss_val_summary],
+            feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
+                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot})
+
+        writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
+        writer.add_summary(margin_loss_summary, epoch * test_batch + i)
+        writer.add_summary(loss_summary, epoch * test_batch + i)
 
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs)
         intent_outputs_norm = safe_norm(intent_outputs_reduced_dim)
@@ -127,6 +151,43 @@ def evaluate_test(capsnet, data, FLAGS, sess):
     print('Accuracy: %lf' % scores['accuracy'])
     print('Precision: %lf' % scores['precision'])
     print('Recall: %lf' % scores['recall'])
+
+    # Write errors to error log
+    if log_errs:
+        if FLAGS.scenario_num != '':
+            errors_dir = FLAGS.errors_dir + 'scenario' + FLAGS.scenario_num + '/'
+            if not os.path.exists(errors_dir):
+                os.makedirs(errors_dir)
+        else:
+            errors_dir = FLAGS.errors_dir
+
+        incorrect_intents = {}
+        i = 0
+        for t, p in zip(y_intent_labels_true, y_intent_labels_pred):
+            if t != p:
+                if t not in incorrect_intents:
+                    incorrect_intents[t] = []
+                incorrect_intents[t].append((' '.join(x_text_te[i]), p))
+            i += 1
+
+        with open(os.path.join(errors_dir, "errors.txt"), 'w') as f:
+            f.write('INTENT ERRORS\n')
+            for k, v in incorrect_intents.items():
+                f.write(k + '\n')
+                for intent in v:
+                    f.write('{} -> {}\n'.format(intent[0], intent[1]))
+                f.write('\n')
+
+            # View incorrect slot sequences
+            f.write('SLOT ERRORS\n')
+            i = 0
+            for v, p in zip(y_slot_labels_true, y_slot_labels_pred):
+                if v != p:
+                    f.write(' '.join(x_text_te[i]) + '\n')
+                    f.write(str(v) + '\n')
+                    f.write(str(p) + '\n')
+                    f.write('\n')
+                i += 1
 
     return f_score, scores['f1']
 
@@ -278,14 +339,20 @@ def train(train_data, test_data, embedding, FLAGS):
                 train_writer.add_summary(loss_summary, batch_num * epoch + batch)
 
             print("------------------epoch : ", epoch, " Loss: ", loss, "----------------------")
-            intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess)
+            intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess, epoch=epoch)
             f_score_mean = (intent_f_score + slot_f_score) / 2
             if f_score_mean > best_f_score:
                 # best score overall -> save model
                 best_f_score = f_score_mean
                 best_f_score_intent = intent_f_score
                 best_f_score_slot = slot_f_score
-                var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
+                if FLAGS.scenario_num != '':
+                    ckpt_dir = FLAGS.ckpt_dir + 'scenario' + FLAGS.scenario_num + '/'
+                    if not os.path.exists(ckpt_dir):
+                        os.makedirs(ckpt_dir)
+                else:
+                    ckpt_dir = FLAGS.ckpt_dir
+                var_saver.save(sess, os.path.join(ckpt_dir, "model.ckpt"), 1)
             print("Current F score mean", f_score_mean)
             print("Best F score mean", best_f_score)
 
@@ -363,7 +430,13 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
             if f_score_mean > best_f_score:
                 # best score overall -> save model
                 best_f_score = f_score_mean
-                var_saver.save(sess, os.path.join(FLAGS.ckpt_dir, "model.ckpt"), 1)
+                if FLAGS.scenario_num != '':
+                    ckpt_dir = FLAGS.ckpt_dir + 'scenario' + FLAGS.scenario_num + '/'
+                    if not os.path.exists(ckpt_dir):
+                        os.makedirs(ckpt_dir)
+                else:
+                    ckpt_dir = FLAGS.ckpt_dir
+                var_saver.save(sess, os.path.join(ckpt_dir, "model.ckpt"), 1)
             print("Current F score mean", f_score_mean)
             print("Best F score mean", best_f_score)
 
@@ -377,8 +450,10 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
 
 
 def main():
+    FLAGS = define_app_flags()
+
     # load data
-    data = data_loader.read_datasets()
+    data = data_loader.read_datasets(test=FLAGS.test)
     x_tr = data['x_tr']
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
@@ -389,8 +464,7 @@ def main():
 
     embedding = data['embedding']
 
-    # load settings
-    FLAGS = setting(data)
+    set_data_flags(data)
 
     if not FLAGS.test:
         if FLAGS.crossval:
@@ -464,6 +538,8 @@ def main():
             test_data['sentences_len_te'] = data['sentences_len_te']
             test_data['slots_dict'] = data['slots_dict']
             test_data['intents_dict'] = data['intents_dict']
+            test_data['one_hot_intents_te'] = data['encoded_intents_te']
+            test_data['one_hot_slots_te'] = data['encoded_slots_te']
 
             best_f_score, best_f_score_intent, best_f_score_slot = train(train_data, test_data, embedding, FLAGS)
             print("Best F score: %lf" % best_f_score)
@@ -474,22 +550,29 @@ def main():
         # testing
         test_data = dict()
         test_data['x_te'] = data['x_te']
+        test_data['x_text_te'] = data['x_text_te']
         test_data['y_intents_te'] = data['y_intents_te']
         test_data['y_slots_te'] = data['y_slots_te']
         test_data['sentences_len_te'] = data['sentences_len_te']
         test_data['slots_dict'] = data['slots_dict']
         test_data['intents_dict'] = data['intents_dict']
+        test_data['one_hot_intents_te'] = data['encoded_intents_te']
+        test_data['one_hot_slots_te'] = data['encoded_slots_te']
 
         tf.reset_default_graph()
         config = tf.ConfigProto()
         with tf.Session(config=config) as sess:
             # Instantiate Model
             capsnet = model.capsnet(FLAGS)
-            if os.path.exists(FLAGS.ckpt_dir):
+            if FLAGS.scenario_num != '':
+                ckpt_dir = FLAGS.ckpt_dir + 'scenario' + FLAGS.scenario_num + '/'
+            else:
+                ckpt_dir = FLAGS.ckpt_dir
+            if os.path.exists(ckpt_dir):
                 print("Restoring Variables from Checkpoint for testing")
                 saver = tf.train.Saver()
-                saver.restore(sess, tf.train.latest_checkpoint(FLAGS.ckpt_dir))
-                intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess)
+                saver.restore(sess, tf.train.latest_checkpoint(ckpt_dir))
+                intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess, log_errs=True)
                 print("Intent F1: %lf" % intent_f_score)
                 print("Slot F1: %lf" % slot_f_score)
             else:
