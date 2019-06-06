@@ -478,7 +478,8 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
                                           feed_dict={capsnet.input_x: batch_x,
                                                      capsnet.encoded_intents: batch_intents_one_hot,
                                                      capsnet.encoded_slots: batch_slots_one_hot,
-                                                     capsnet.sentences_length: batch_sentences_len})
+                                                     capsnet.sentences_length: batch_sentences_len,
+                                                     capsnet.keep_prob: FLAGS.keep_prob})
 
                 train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
                 train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
