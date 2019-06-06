@@ -21,9 +21,11 @@ class capsnet():
         self.intents_nr = FLAGS.intents_nr
         self.slots_nr = FLAGS.slots_nr
         self.margin = FLAGS.margin
-        self.keep_prob = FLAGS.keep_prob
+        # self.keep_prob = FLAGS.keep_prob
         self.slot_routing_num = FLAGS.slot_routing_num
         self.intent_routing_num = FLAGS.intent_routing_num
+
+        self.keep_prob = tf.placeholder(tf.float32, name='keep_prob')
 
         # self.slot_output_dim = FLAGS.slot_output_dim
         self.slot_output_dim = FLAGS.hidden_size * 2  # same as SemanticCaps output dim --> to be able to perform dynamic routing by agreement

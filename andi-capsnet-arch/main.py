@@ -12,8 +12,10 @@ from seqeval.metrics import precision_score
 from seqeval.metrics import recall_score
 from sklearn.metrics import accuracy_score as scikit_accuracy
 from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score as scikit_f1
 from sklearn.model_selection import StratifiedKFold
+import matplotlib.pyplot as plt
 
 a = Random()
 a.seed(1)
@@ -40,9 +42,9 @@ def set_data_flags(data):
     slots_number = len(data['slots_dict'])
     hidden_size = 64
 
-    tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
+    tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate for training")
     tf.app.flags.DEFINE_integer("hidden_size", hidden_size, "embedding vector size")
-    tf.app.flags.DEFINE_integer("batch_size", 64, "batch size")
+    tf.app.flags.DEFINE_integer("batch_size", 32, "batch size")
     tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("max_sentence_length", max_sentence_length, "max number of words in one sentence")
@@ -54,7 +56,7 @@ def set_data_flags(data):
     tf.app.flags.DEFINE_float("margin", 1.0, "ranking loss margin")
     tf.app.flags.DEFINE_integer("slot_routing_num", 2, "slot routing num")
     tf.app.flags.DEFINE_integer("intent_routing_num", 2, "intent routing num")
-    tf.app.flags.DEFINE_integer("intent_output_dim", 32, "intent output dimension")
+    tf.app.flags.DEFINE_integer("intent_output_dim", 16, "intent output dimension")
     tf.app.flags.DEFINE_integer("slot_output_dim", 2 * hidden_size, "slot output dimension")
     tf.app.flags.DEFINE_integer("d_a", 20, "self attention weight hidden units number")
     tf.app.flags.DEFINE_integer("r", 3, "number of self attention heads")
@@ -67,6 +69,58 @@ def safe_norm(s, axis=-1, epsilon=1e-7, keep_dims=False, name=None):
         squared_norm = tf.reduce_sum(tf.square(s), axis=axis,
                                      keep_dims=keep_dims)
         return tf.sqrt(squared_norm + epsilon)
+
+
+def plot_confusion_matrix(y_true, y_pred, labels,
+                          normalize=False,
+                          title=None,
+                          cmap=plt.cm.Blues,
+                          numbers=False):
+    """
+    This function prints and plots the confusion matrix.
+    Normalization can be applied by setting `normalize=True`.
+    """
+    if not title:
+        if normalize:
+            title = 'Normalized confusion matrix'
+        else:
+            title = 'Confusion matrix, without normalization'
+
+    # Compute confusion matrix
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
+    # Only use the labels that appear in the data
+    if normalize:
+        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+
+    fig, ax = plt.subplots()
+    im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
+    ax.figure.colorbar(im, ax=ax)
+    # We want to show all ticks...
+    ax.set(xticks=np.arange(cm.shape[1]),
+           yticks=np.arange(cm.shape[0]),
+           # ... and label them with the respective list entries
+           xticklabels=labels, yticklabels=labels,
+           title=title,
+           ylabel='True label',
+           xlabel='Predicted label')
+
+    # Rotate the tick labels and set their alignment.
+    plt.setp(ax.get_xticklabels(), rotation='vertical', ha="right",
+             rotation_mode="anchor")
+    plt.tight_layout()
+
+    # Loop over data dimensions and create text annotations.
+    if numbers:
+
+        fmt = '.2f' if normalize else 'd'
+        thresh = cm.max() / 2.
+        for i in range(cm.shape[0]):
+            for j in range(cm.shape[1]):
+                ax.text(j, i, format(cm[i, j], fmt),
+                        ha="center", va="center",
+                        color="white" if cm[i, j] > thresh else "black")
+    # fig.tight_layout()
+    return ax
 
 
 def eval_seq_scores(y_true, y_pred):
@@ -112,7 +166,8 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             capsnet.cross_entropy_val_summary,
             capsnet.margin_loss_val_summary, capsnet.loss_val_summary],
             feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
-                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot})
+                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
+                       capsnet.keep_prob: 1.0})
 
         writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
         writer.add_summary(margin_loss_summary, epoch * test_batch + i)
@@ -160,6 +215,10 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                 os.makedirs(errors_dir)
         else:
             errors_dir = FLAGS.errors_dir
+
+        plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
+                              title='Confusion matrix', normalize=True, numbers=False)
+        plt.show()
 
         incorrect_intents = {}
         i = 0
@@ -224,7 +283,8 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
             capsnet.cross_entropy_val_summary,
             capsnet.margin_loss_val_summary, capsnet.loss_val_summary],
             feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
-                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot})
+                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
+                       capsnet.keep_prob: 1.0})
 
         writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
         writer.add_summary(margin_loss_summary, epoch * test_batch + i)
@@ -332,7 +392,8 @@ def train(train_data, test_data, embedding, FLAGS):
                                           feed_dict={capsnet.input_x: batch_x,
                                                      capsnet.encoded_intents: batch_intents_one_hot,
                                                      capsnet.encoded_slots: batch_slots_one_hot,
-                                                     capsnet.sentences_length: batch_sentences_len})
+                                                     capsnet.sentences_length: batch_sentences_len,
+                                                     capsnet.keep_prob: FLAGS.keep_prob})
 
                 train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
                 train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
