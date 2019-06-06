@@ -5,9 +5,9 @@ import numpy as np
 import tool
 from gensim.models.keyedvectors import KeyedVectors
 
-word2vec_path = 'data/word-vec/wiki.ro.vec'
-training_data_path = 'data/scenario0/train.txt'
-test_data_path = 'data/scenario0/test.txt'
+word2vec_path = '../data-capsnets/word-vec/wiki.ro.vec'
+training_data_path = '../data-capsnets/scenario0/train.txt'
+test_data_path = '../data-capsnets/scenario0/test.txt'
 
 
 def load_w2v(file_name):
