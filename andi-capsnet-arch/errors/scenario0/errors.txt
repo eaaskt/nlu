@@ -1,0 +1,21 @@
+INTENT ERRORS
+seteazaTemperatura
+Hey mi-ar placea sa pui pe saptesprezece grade in sufragerie 0 0 0 0 0 -> cresteTemperatura
+
+SLOT ERRORS
+poti sa reduci intensitatea becurilor in curte la jumatate 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper as vrea sa setezi temperatura aproape de douazeci si doua de grade peste tot
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'O']
+
+Buna Pepper as vrea sa scazi temperatura pe 27 grade in baie 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Pepper te rog poti da drumul la TV pe canal Cinemax 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
