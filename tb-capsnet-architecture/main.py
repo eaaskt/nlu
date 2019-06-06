@@ -10,10 +10,12 @@ from seqeval.metrics import accuracy_score
 from seqeval.metrics import f1_score
 from seqeval.metrics import precision_score
 from seqeval.metrics import recall_score
+from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score as scikit_accuracy
 from sklearn.metrics import classification_report
 from sklearn.metrics import f1_score as scikit_f1
 from sklearn.model_selection import StratifiedKFold
+import matplotlib.pyplot as plt
 
 a = Random()
 a.seed(1)
@@ -26,7 +28,7 @@ def setting(data):
     slots_number = len(data['slots_dict'])
 
     FLAGS = tf.app.flags.FLAGS
-    tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
+    # tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
     tf.app.flags.DEFINE_integer("hidden_size", 64, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
@@ -45,13 +47,13 @@ def setting(data):
     tf.app.flags.DEFINE_integer("slot_output_dim", 128, "slot output dimension")
     tf.app.flags.DEFINE_integer("attention_output_dimenison", 20, "self attention weight hidden units number")
     tf.app.flags.DEFINE_float("alpha", 0.001, "coefficient for self attention loss")
-    tf.app.flags.DEFINE_integer("r", 5, "self attention weight hops")
+    tf.app.flags.DEFINE_integer("r", 4, "self attention weight hops")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
     tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
     tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
     tf.app.flags.DEFINE_string("summaries_dir", './logs', "tensorboard summaries")
-    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/', "check point dir")
+    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/Run1', "check point dir")
     tf.app.flags.DEFINE_string("scenario_num", '', "Scenario number")
 
     return FLAGS
@@ -62,6 +64,57 @@ def safe_norm(s, axis=-1, epsilon=1e-7, keep_dims=False, name=None):
         squared_norm = tf.reduce_sum(tf.square(s), axis=axis,
                                      keep_dims=keep_dims)
         return tf.sqrt(squared_norm + epsilon)
+
+
+def plot_confusion_matrix(y_true, y_pred, labels,
+                          normalize=False,
+                          title=None,
+                          cmap=plt.cm.Blues,
+                          numbers=False):
+    """
+    This function prints and plots the confusion matrix.
+    Normalization can be applied by setting `normalize=True`.
+    """
+    if not title:
+        if normalize:
+            title = 'Normalized confusion matrix'
+        else:
+            title = 'Confusion matrix, without normalization'
+
+    # Compute confusion matrix
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
+    # Only use the labels that appear in the data
+    if normalize:
+        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+
+    fig, ax = plt.subplots()
+    im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
+    ax.figure.colorbar(im, ax=ax)
+    # We want to show all ticks...
+    ax.set(xticks=np.arange(cm.shape[1]),
+           yticks=np.arange(cm.shape[0]),
+           # ... and label them with the respective list entries
+           xticklabels=labels, yticklabels=labels,
+           title=title,
+           ylabel='True label',
+           xlabel='Predicted label')
+
+    # Rotate the tick labels and set their alignment.
+    plt.setp(ax.get_xticklabels(), rotation='vertical', ha="right",
+             rotation_mode="anchor")
+    plt.tight_layout()
+
+    # Loop over data dimensions and create text annotations.
+    if numbers:
+        fmt = '.2f' if normalize else 'd'
+        thresh = cm.max() / 2.
+        for i in range(cm.shape[0]):
+            for j in range(cm.shape[1]):
+                ax.text(j, i, format(cm[i, j], fmt),
+                        ha="center", va="center",
+                        color="white" if cm[i, j] > thresh else "black")
+    # fig.tight_layout()
+    return ax
 
 
 def eval_seq_scores(y_true, y_pred):
@@ -79,6 +132,7 @@ def evaluate_test(capsnet, data, FLAGS, sess):
     y_intents_te = data['y_intents_te']
     y_slots_te = data['y_slots_te']
     slots_dict = data['slots_dict']
+
     intents_dict = data['intents_dict']
 
     total_intent_pred = []
@@ -95,7 +149,8 @@ def evaluate_test(capsnet, data, FLAGS, sess):
 
         [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
             capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
-            feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len})
+            feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
+                       capsnet.keep_prob: 1.0})
 
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs)
         intent_outputs_norm = safe_norm(intent_outputs_reduced_dim)
@@ -110,7 +165,6 @@ def evaluate_test(capsnet, data, FLAGS, sess):
 
         te_batch_slots_pred = np.argmax(slot_predictions, axis=2)
         total_slots_pred += (np.ndarray.tolist(te_batch_slots_pred))
-
     print("           TEST SET PERFORMANCE        ")
     print("Intent detection")
     intents_acc = scikit_accuracy(y_intents_te, total_intent_pred)
@@ -132,6 +186,10 @@ def evaluate_test(capsnet, data, FLAGS, sess):
     print('Accuracy: %lf' % scores['accuracy'])
     print('Precision: %lf' % scores['precision'])
     print('Recall: %lf' % scores['recall'])
+
+    plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
+                          title='Confusion matrix', normalize=True, numbers=False)
+    plt.show()
 
     return f_score, scores['f1']
 
@@ -209,6 +267,10 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
     print('Accuracy: %lf' % scores['accuracy'])
     # print('Precision: %lf' % scores['precision'])
     # print('Recall: %lf' % scores['recall'])
+
+    plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
+                          title='Confusion matrix', normalize=True, numbers=False)
+    plt.show()
 
     return f_score, scores['f1']
 

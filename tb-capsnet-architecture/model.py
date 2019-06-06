@@ -22,13 +22,12 @@ class capsnet():
         self.intents_nr = FLAGS.intents_nr
         self.slots_nr = FLAGS.slots_nr
         self.margin = FLAGS.margin
-        self.keep_prob = FLAGS.keep_prob
         self.slot_routing_num = FLAGS.slot_routing_num
         self.intent_routing_num = FLAGS.intent_routing_num
         self.re_routing_num = FLAGS.re_routing_num
         self.slot_output_dim = FLAGS.slot_output_dim
         self.intent_output_dim = FLAGS.intent_output_dim
-
+        self.keep_prob = tf.placeholder(tf.float32, name='keep_prob')
         # parameters for self attention
         self.max_sentence_length = FLAGS.max_sentence_length
         self.attention_dimenison = FLAGS.attention_output_dimenison
@@ -133,23 +132,6 @@ class capsnet():
 
             M = tf.matmul(A, H)
             return A, M, H
-
-    def word_caps(self):
-        # shape:[None, sentence_length, embed_size]
-        with tf.variable_scope('bidir-lstm1'):
-            input_embed = tf.nn.embedding_lookup(self.Embedding, self.input_x, max_norm=1)
-
-            cell_fw = tf.contrib.rnn.LSTMCell(self.hidden_size)
-            cell_bw = tf.contrib.rnn.LSTMCell(self.hidden_size)
-
-            H, _ = tf.nn.bidirectional_dynamic_rnn(
-                cell_fw,
-                cell_bw,
-                input_embed,
-                self.sentences_length,
-                dtype=tf.float32)
-            H = tf.concat([H[0], H[1]], axis=2)
-            return H
 
     def _squash(self, input_tensor, axis=-1, epsilon=1e-7, name=None):
         with tf.name_scope(name, default_name="squash"):

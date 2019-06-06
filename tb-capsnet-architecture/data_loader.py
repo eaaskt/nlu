@@ -5,7 +5,8 @@ import numpy as np
 import tool
 from gensim.models.keyedvectors import KeyedVectors
 
-word2vec_path = '../data-capsnets/word-vec/wiki.ro.vec'
+
+word2vec_path = 'C:\Projects\\nlu\word-vec\cc.ro.300.vec.gz'
 training_data_path = '../data-capsnets/scenario0/train.txt'
 test_data_path = '../data-capsnets/scenario0/test.txt'
 
