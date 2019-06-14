@@ -112,9 +112,9 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                        capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
                        capsnet.keep_prob: 1.0})
 
-        intent_outputs_reduced_dim = tf.squeeze(intent_outputs)
+        intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
         intent_outputs_norm = util.safe_norm(intent_outputs_reduced_dim)
-        slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c)
+        slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c, axis=[3, 4])
 
         [intent_predictions, slot_predictions] = sess.run([intent_outputs_norm, slot_weights_c_reduced_dim])
 
