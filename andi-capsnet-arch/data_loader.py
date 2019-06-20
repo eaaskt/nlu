@@ -1,8 +1,5 @@
-""" input data preprocess.
-"""
-
 import numpy as np
-import tool
+import util
 from gensim.models.keyedvectors import KeyedVectors
 
 word2vec_path = '../data-capsnets/word-vec/cc.ro.300.vec'
@@ -149,17 +146,17 @@ def get_label(data, test=False):
 
 
 def read_datasets(test=False):
-    print("------------------read datasets begin-------------------")
+    print('------------------read datasets begin-------------------')
     data = {}
 
     # load word2vec model
-    print("------------------load word2vec begin-------------------")
+    print('------------------load word2vec begin-------------------')
     w2v = load_w2v(word2vec_path)
-    print("------------------load word2vec end---------------------")
+    print('------------------load word2vec end---------------------')
 
     # load normalized word embeddings
     embedding = w2v.vectors
-    norm_embedding = tool.norm_matrix(embedding)
+    norm_embedding = util.norm_matrix(embedding)
     data['embedding'] = norm_embedding
 
     # trans data into embedding vectors
@@ -206,5 +203,5 @@ def read_datasets(test=False):
     one_hot_y_intents_te, one_hot_y_slots_te = get_label(data, test=True)
     data['encoded_intents_te'] = one_hot_y_intents_te
     data['encoded_slots_te'] = one_hot_y_slots_te
-    print("------------------read datasets end---------------------")
+    print('------------------read datasets end---------------------')
     return data

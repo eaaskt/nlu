@@ -49,8 +49,8 @@ def convert(input_path, output_path, shuffle=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-                description="Convert to format needed for CapsNets",
-                usage="format_converter.py <input_file> <output_file> [--shuffle]")
+                description='Convert to format needed for CapsNets',
+                usage='format_converter.py <input_file> <output_file> [--shuffle]')
     parser.add_argument('input_file', help='Input file')
     parser.add_argument('output_file', help='Output file')
     parser.add_argument('--shuffle', help='shuffles the dataset', action='store_true')
