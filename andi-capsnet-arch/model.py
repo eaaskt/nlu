@@ -3,7 +3,7 @@ import numpy as np
 import util
 
 
-class capsnet():
+class CapsNet:
     """
         Using bidirectional LSTM to learn sentence embedding
         for users' questions
@@ -46,8 +46,8 @@ class capsnet():
         self.H = self.word_caps()
         self.attention, self.M = self.semantic_caps()
         # capsule
-        self.slot_output_vectors, self.slot_weights_c, self.slot_predictions, self.slot_weights_b = self.slot_capsule()
-        self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_capsule()
+        self.slot_output_vectors, self.slot_weights_c, self.slot_predictions, self.slot_weights_b = self.slot_caps()
+        self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_caps()
         self.loss_val = self.loss()
 
         self.train_op = self.train()
@@ -96,7 +96,6 @@ class capsnet():
                                         initializer=self.initializer)
 
     def word_caps(self):
-        # shape:[None, sentence_length, embed_size]
         input_embed = tf.nn.embedding_lookup(self.Embedding, self.input_x, max_norm=1)
 
         cell_fw = tf.contrib.rnn.LSTMCell(self.hidden_size)
@@ -183,7 +182,7 @@ class capsnet():
 
         return output_vectors.read(num_iter - 1), raw_weights, routing_weights
 
-    def slot_capsule(self):
+    def slot_caps(self):
         word_caps_output = tf.nn.dropout(self.H, self.keep_prob)
 
         word_caps_output_expanded = tf.expand_dims(word_caps_output, axis=-1, name='word_caps_output_expanded')
@@ -203,7 +202,7 @@ class capsnet():
         )
         return output_vector, weights_c, slot_caps_predicted, weights_b
 
-    def intent_capsule(self):
+    def intent_caps(self):
         # Expand dims for M
         semantic_caps_expanded = tf.expand_dims(self.M, axis=-1, name='semantic_caps_expanded_partial')
         semantic_caps_tile = tf.expand_dims(semantic_caps_expanded, axis=1, name='semantic_caps_expanded')
@@ -283,5 +282,6 @@ class capsnet():
         return total_loss
 
     def train(self):
-        train_op = tf.train.AdamOptimizer(self.learning_rate).minimize(self.loss_val)
+        train_op = tf.train.AdamOptimizer(self.learning_rate) \
+            .minimize(self.loss_val)
         return train_op

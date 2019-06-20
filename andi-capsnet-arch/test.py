@@ -213,7 +213,7 @@ def test():
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
-        capsnet = model.capsnet(FLAGS)
+        capsnet = model.CapsNet(FLAGS)
         if FLAGS.scenario_num != '':
             ckpt_dir = FLAGS.ckpt_dir + 'scenario' + FLAGS.scenario_num + '/'
         else:
