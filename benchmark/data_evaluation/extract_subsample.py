@@ -96,6 +96,8 @@ if __name__ == '__main__':
         intent_errors += intent_err
         slot_errors += slot_err
 
+    print('Total # of errors (intent):' + str(len(intent_errors)))
+    print('Total # of errors (slot):' + str(len(slot_errors)))
     intent_sample = sample(intent_errors)
     slot_sample = sample(slot_errors)
 
