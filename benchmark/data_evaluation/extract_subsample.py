@@ -9,14 +9,14 @@ import matplotlib.pyplot as plt
 from enum import Enum
 
 
-TEST_DATA_3_1 = '../data/romanian_dataset/home_assistant/take3/scenario3_imbalance/3.1/testing_dataset_wit_ids.json'
-TEST_DATA_3_2 = '../data/romanian_dataset/home_assistant/take3/scenario3_imbalance/3.2/testing_dataset_wit_ids.json'
-TEST_DATA_3_3 = '../data/romanian_dataset/home_assistant/take3/scenario3_imbalance/3.3/testing_dataset_wit_ids.json'
+TEST_DATA_3_1 = '../data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.1/testing_dataset_wit_ids.json'
+TEST_DATA_3_2 = '../data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.2/testing_dataset_wit_ids.json'
+TEST_DATA_3_3 = '../data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.3/testing_dataset_wit_ids.json'
 TEST_DATA = [TEST_DATA_3_1, TEST_DATA_3_2, TEST_DATA_3_3]
 
-RESP_3_1 = '../data/romanian_dataset/home_assistant/take3/scenario3_imbalance/3.1/validation_results.json'
-RESP_3_2 = '../data/romanian_dataset/home_assistant/take3/scenario3_imbalance/3.2/validation_results.json'
-RESP_3_3 = '../data/romanian_dataset/home_assistant/take3/scenario3_imbalance/3.3/validation_results.json'
+RESP_3_1 = '../data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.1/validation_results.json'
+RESP_3_2 = '../data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.2/validation_results.json'
+RESP_3_3 = '../data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.3/validation_results.json'
 RESP = [RESP_3_1, RESP_3_2, RESP_3_3]
 
 
