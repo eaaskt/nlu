@@ -1,0 +1,34 @@
+%[puneMuzica]('training': '1', 'testing': '30')
+    ~[greet?] ~[te rog?] ~[pune] ~[muzicaF] ~[deF] @[artist]
+    ~[greet?] ~[te rog?] ~[pune] ~[muzicaM] ~[deM] @[artist]
+    ~[greet?] ~[te rog?] ~[alege] ~[muzicaAny] ~[deF] @[artist]
+
+@[artist]
+    ~[Bach]
+    ~[Vivaldi]
+    ~[Wagner]
+    ~[Beethoven]
+    ~[Brahms]
+    ~[Mozart]
+~[greet]
+    Servus,
+~[deF]
+    cantata de
+    compusa de
+~[deM]
+    cantat de
+    compus de
+~[muzicaF]
+    piesa
+    melodia
+    simfonia
+~[muzicaM]
+    cantec
+    concert
+~[muzicaAny]
+    o piesa
+    o melodie
+    o simfonie
+~[pune]
+    incepe
+    porneste

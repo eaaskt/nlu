@@ -1,0 +1,45 @@
+%[scadeTemperatura]('training': '1', 'testing': '30')
+    ~[salut?] ~[scade] ~[temperatura?] ~[la] @[grade#abs] ~[in] @[loc]
+    ~[salut?] ~[scade] ~[temperatura?] ~[cu] @[grade#rel] ~[in] @[loc]
+    ~[salut?] ~[scade] ~[temperatura?] ~[cu] @[grade#rel] @[loc#tot]
+    ~[salut?] ~[scade] ~[temperatura?] ~[la] @[grade#abs] @[loc#tot]
+    ~[salut?] ~[scade] ~[temperatura?] ~[cu] @[grade#rel]
+    ~[salut?] ~[scade] ~[temperatura?] @[loc#tot]
+    ~[salut?] ~[scade] ~[temperatura?] ~[in] @[loc]
+
+@[grade#rel]
+    trei grade
+    patru grade
+    cinci grade
+
+
+@[grade#abs]
+    douazeci si trei de grade
+    douazeci si patru de grade
+    douazeci si sase de grade
+    douazeci si cinci de grade
+    douazeci si sapte de grade
+
+
+@[loc]
+    tot apartamentul
+    toata casa
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Hey,
+
+~[la]
+    la
+    pe
+
+~[in]
+    in
+
+~[scade]
+    redu
+    micsoreaza
+    fa mai mica
+    du in jos
