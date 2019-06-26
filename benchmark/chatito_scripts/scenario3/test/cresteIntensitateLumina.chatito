@@ -1,0 +1,44 @@
+%[cresteIntensitateLumina]('training': '1', 'testing': '30')
+    ~[greet?] ~[action] ~[lumina] ~[in] @[loc] ~[la] @[nivel#relativ]
+    ~[greet?] ~[action] ~[lumina] ~[in] @[loc] ~[la] @[nivel#absolut]
+    ~[greet?] ~[action] ~[lumina] ~[la] @[nivel#relativ]
+    ~[greet?] ~[action] ~[lumina] ~[la] @[nivel#absolut]
+    ~[greet?] ~[action] ~[lumina] ~[in] @[loc]
+    ~[greet?] ~[actionR] ~[luminaR] ~[in] @[loc]
+    ~[greet?] ~[action] ~[lumina]
+    ~[greet?] ~[actionR] ~[luminaR]
+
+@[loc]
+    ~[camara]
+    ~[dormitor]
+    ~[pivnita]
+    ~[camera de zi]
+
+@[nivel#relativ]
+    ~[maxim]
+
+@[nivel#absolut]
+    ~[2]
+    ~[3]
+
+~[greet]
+    Pepper
+    Salut,
+
+~[action]
+    mareste intensitatea
+    as vrea sa maresti intensitatea
+    poti sa maresti intensitatea
+    ai putea oare mari intensitatea
+
+~[lumina]
+    becurilor
+
+~[actionR]
+    creste
+    fa mai mare
+    mareste
+    imbunatateste
+
+~[luminaR]
+    lumina

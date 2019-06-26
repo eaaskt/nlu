@@ -1,0 +1,46 @@
+%[puneMuzica]('training': '90', 'testing': '30')
+    ~[greet?] ~[te rog?] ~[pune] ~[muzica] ~[de] @[artist]
+    ~[greet?] ~[te rog?] ~[pune] ~[muzicaF] ~[deF] @[artist]
+    ~[greet?] ~[te rog?] ~[pune] ~[muzicaM] ~[deM] @[artist]
+    ~[greet?] ~[te rog?] ~[alege] ~[muzicaAny] ~[deF] @[artist]
+
+@[artist]
+    ~[Bach]
+    ~[Vivaldi]
+    ~[Wagner]
+    ~[Beethoven]
+    ~[Brahms]
+    ~[Mozart]
+~[greet]
+    Pepper,
+    Salut,
+    Hey,
+~[pune]
+    poti sa pui
+    as vrea sa pui
+    ai putea sa pui
+    pune
+    incepe
+    porneste
+~[de]
+    de
+    compusa de
+~[muzica]
+    muzica
+~[deF]
+    cantata de
+    compusa de
+~[deM]
+    cantat de
+    compus de
+~[muzicaF]
+    piesa
+    melodia
+    simfonia
+~[muzicaM]
+    cantec
+    concert
+~[muzicaAny]
+    o piesa
+    o melodie
+    o simfonie

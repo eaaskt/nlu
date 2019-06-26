@@ -1,0 +1,30 @@
+%[cresteIntensitateLumina]('training': '90', 'testing': '1')
+    ~[greet?] ~[action] ~[lumina] ~[in] @[loc] ~[la] @[nivel#relativ]
+    ~[greet?] ~[action] ~[lumina] ~[in] @[loc] ~[la] @[nivel#absolut]
+    ~[greet?] ~[action] ~[lumina] ~[in] @[loc]
+
+@[loc]
+    ~[bucatarie]
+    ~[baie]
+    ~[curte]
+    ~[sufragerie]
+
+@[nivel#relativ]
+    ~[dublu]
+    ~[triplu]
+
+@[nivel#absolut]
+    ~[4]
+    ~[5]
+
+~[greet]
+    Pepper
+    Salut,
+
+~[action]
+    creste intensitatea
+    as vrea sa cresti intensitatea
+
+~[lumina]
+    luminii
+    iluminatului

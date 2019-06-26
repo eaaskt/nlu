@@ -1,0 +1,36 @@
+%[seteazaTemperatura]('training': '1', 'testing': '30')
+    ~[salut?] ~[pune] ~[temperatura?] ~[la] @[grade] ~[in] @[loc]
+    ~[salut?] ~[pune] ~[temperatura?] ~[la] @[grade] @[loc#tot]
+    ~[salut?] ~[pune] ~[temperatura?]
+    ~[salut?] ~[pune] ~[temperatura?] ~[la] @[grade]
+
+@[grade]
+    douazeci si trei de grade
+    douazeci si patru de grade
+    douazeci si sase de grade
+    douazeci si cinci de grade
+    douazeci si sapte de grade
+
+@[loc]
+    tot apartamentul
+    toata casa
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Hey,
+
+~[la]
+    aproximativ	la
+    aproximativ pe
+    aproape de
+    cam la
+
+~[in]
+    in
+
+~[pune]
+    modifica
+    schimba
+    ajusteaza
