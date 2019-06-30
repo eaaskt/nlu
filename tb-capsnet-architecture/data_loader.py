@@ -2,13 +2,28 @@
 """
 
 import numpy as np
-import tool
 from gensim.models.keyedvectors import KeyedVectors
 
 
-word2vec_path = 'C:\Projects\\nlu\word-vec\cc.ro.300.vec.gz'
-training_data_path = '../data-capsnets/scenario0/train.txt'
-test_data_path = '../data-capsnets/scenario0/test.txt'
+word2vec_path = 'C:\Projects\\nlu\word-vec\cc.ro.300.vec'
+training_data_path = '../data-capsnets/scenario3.3/train.txt'
+test_data_path = '../data-capsnets/scenario3.3/test.txt'
+
+def norm_matrix(matrix):
+    """
+        normalize matrix by column
+        input : numpy array, dtype = float32
+        output : normalized numpy array, dtype = float32
+      """
+    # check dtype of the input matrix
+    np.testing.assert_equal(type(matrix).__name__, 'ndarray')
+    np.testing.assert_equal(matrix.dtype, np.float32)
+
+    row_sums = matrix.sum(axis=1)
+    # replace zero denominator
+    row_sums[row_sums == 0] = 1
+    norm_matrix = matrix / row_sums[:, np.newaxis]
+    return norm_matrix
 
 
 def load_w2v(file_name):
@@ -19,6 +34,14 @@ def load_w2v(file_name):
     w2v = KeyedVectors.load_word2vec_format(
         file_name, binary=False)
     return w2v
+
+
+def load_original_sentences(file_path):
+    sentences = []
+    for line in open(file_path):
+        arr = line.strip().split('\t')
+        sentences.append(arr[2])
+    return sentences
 
 
 def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot_id):
@@ -135,7 +158,7 @@ def read_datasets():
 
     # load normalized word embeddings
     embedding = w2v.vectors
-    norm_embedding = tool.norm_matrix(embedding)
+    norm_embedding = norm_matrix(embedding)
     data['embedding'] = norm_embedding
 
     # trans data into embedding vectors
@@ -150,6 +173,9 @@ def read_datasets():
     (x_te, y_intents_te, y_slots_te, sentences_length_te,
      max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(test_data_path, w2v, max_len, intents_dict,
                                                                        intent_id, slots_dict, slot_id)
+
+    # load test set original sentences
+    original_sentences = load_original_sentences(test_data_path)
     intents_id_dict = {v: k for k, v in intents_dict.items()}
     slots_id_dict = {v: k for k, v in slots_dict.items()}
 
@@ -171,5 +197,6 @@ def read_datasets():
     one_hot_y_intents_tr, one_hot_y_slots_tr = get_label(data)
     data['encoded_intents_tr'] = one_hot_y_intents_tr
     data['encoded_slots_tr'] = one_hot_y_slots_tr
+    data['original_sentences'] = original_sentences
     print("------------------read datasets end---------------------")
     return data

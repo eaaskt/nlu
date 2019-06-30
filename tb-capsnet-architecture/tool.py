@@ -1,24 +1,6 @@
 import numpy as np
 import scipy.spatial.distance as ds
 
-
-def norm_matrix(matrix):
-    """
-        normalize matrix by column
-        input : numpy array, dtype = float32
-        output : normalized numpy array, dtype = float32
-      """
-    # check dtype of the input matrix
-    np.testing.assert_equal(type(matrix).__name__, 'ndarray')
-    np.testing.assert_equal(matrix.dtype, np.float32)
-
-    row_sums = matrix.sum(axis=1)
-    # replace zero denominator
-    row_sums[row_sums == 0] = 1
-    norm_matrix = matrix / row_sums[:, np.newaxis]
-    return norm_matrix
-
-
 def replace_nan(X):
     """ replace nan and inf to 0
     """

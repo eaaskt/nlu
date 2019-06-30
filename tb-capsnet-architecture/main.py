@@ -28,8 +28,8 @@ def setting(data):
     slots_number = len(data['slots_dict'])
 
     FLAGS = tf.app.flags.FLAGS
-    # tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
-    tf.app.flags.DEFINE_integer("hidden_size", 64, "embedding vector size")
+    tf.app.flags.DEFINE_float("keep_prob", 0.8, "embedding dropout keep rate")
+    tf.app.flags.DEFINE_integer("hidden_size", 32, "embedding vector size")
     tf.app.flags.DEFINE_integer("batch_size", 64, "vocab size of word vectors")
     tf.app.flags.DEFINE_integer("num_epochs", 20, "num of epochs")
     tf.app.flags.DEFINE_integer("vocab_size", vocab_size, "vocab size of word vectors")
@@ -40,20 +40,20 @@ def setting(data):
     tf.app.flags.DEFINE_boolean("use_embedding", True, "whether to use embedding or not.")
     tf.app.flags.DEFINE_float("learning_rate", 0.01, "learning rate")
     tf.app.flags.DEFINE_float("margin", 1.0, "ranking loss margin")
-    tf.app.flags.DEFINE_integer("slot_routing_num", 2, "slot routing num")
-    tf.app.flags.DEFINE_integer("intent_routing_num", 2, "intent routing num")
-    tf.app.flags.DEFINE_integer("re_routing_num", 2, "re routing num")
-    tf.app.flags.DEFINE_integer("intent_output_dim", 128, "intent output dimension")
+    tf.app.flags.DEFINE_integer("slot_routing_num", 4, "slot routing num")
+    tf.app.flags.DEFINE_integer("intent_routing_num", 4, "intent routing num")
+    tf.app.flags.DEFINE_integer("re_routing_num", 3, "re routing num")
+    tf.app.flags.DEFINE_integer("intent_output_dim", 64, "intent output dimension")
     tf.app.flags.DEFINE_integer("slot_output_dim", 128, "slot output dimension")
     tf.app.flags.DEFINE_integer("attention_output_dimenison", 20, "self attention weight hidden units number")
     tf.app.flags.DEFINE_float("alpha", 0.001, "coefficient for self attention loss")
-    tf.app.flags.DEFINE_integer("r", 4, "self attention weight hops")
+    tf.app.flags.DEFINE_integer("r", 3, "self attention weight hops")
     tf.app.flags.DEFINE_boolean("save_model", False, "save model to disk")
     tf.app.flags.DEFINE_boolean("test", False, "Evaluate model on test data")
     tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
     tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
     tf.app.flags.DEFINE_string("summaries_dir", './logs', "tensorboard summaries")
-    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/Run1', "check point dir")
+    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/Scenario3.3', "check point dir")
     tf.app.flags.DEFINE_string("scenario_num", '', "Scenario number")
 
     return FLAGS
@@ -191,6 +191,41 @@ def evaluate_test(capsnet, data, FLAGS, sess):
                           title='Confusion matrix', normalize=True, numbers=False)
     plt.show()
 
+    # extract erronous sentences
+    original_sentences = data['original_sentences']
+
+    misclassified_sentences = dict()
+    # initialise misclassified dictionary
+    for k, v in data['intents_dict'].items():
+        misclassified_sentences[v] = []
+
+    for i in range(len(y_intent_labels_pred)):
+        if y_intent_labels_pred[i] != y_intent_labels_true[i]:
+            false_intent = y_intent_labels_pred[i]
+            true_intent = y_intent_labels_true[i]
+            misclassified_sentences[true_intent].append([false_intent, original_sentences[i]])
+
+    print("Incorrect intent classifications per class\n\n")
+
+    for intent, bad_sentences in misclassified_sentences.items():
+        print(intent)
+        for pair in bad_sentences:
+            print(pair[1] + ' -> ' + pair[0])
+
+    print("Incorrect slot predictions\n\n")
+
+    for i in range(len(y_slot_labels_true)):
+        for j in range(len(y_slot_labels_true[i])):
+            if y_slot_labels_true[i][j] != y_slot_labels_pred[i][j]:
+                print(original_sentences[i])
+                original_slots = y_slot_labels_true[i]
+                pred_slots = y_slot_labels_pred[i]
+                print(original_slots)
+                print(pred_slots)
+                print('\n')
+                break
+
+
     return f_score, scores['f1']
 
 
@@ -226,7 +261,8 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
             capsnet.cross_entropy_val_summary,
             capsnet.margin_loss_val_summary, capsnet.loss_val_summary],
             feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
-                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot})
+                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
+                       capsnet.keep_prob: 1.0})
 
         writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
         writer.add_summary(margin_loss_summary, epoch * test_batch + i)
@@ -267,10 +303,6 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
     print('Accuracy: %lf' % scores['accuracy'])
     # print('Precision: %lf' % scores['precision'])
     # print('Recall: %lf' % scores['recall'])
-
-    plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
-                          title='Confusion matrix', normalize=True, numbers=False)
-    plt.show()
 
     return f_score, scores['f1']
 
@@ -340,7 +372,8 @@ def train(train_data, test_data, embedding, FLAGS):
                                           feed_dict={capsnet.input_x: batch_x,
                                                      capsnet.encoded_intents: batch_intents_one_hot,
                                                      capsnet.encoded_slots: batch_slots_one_hot,
-                                                     capsnet.sentences_length: batch_sentences_len})
+                                                     capsnet.sentences_length: batch_sentences_len,
+                                                     capsnet.keep_prob: FLAGS.keep_prob})
 
                 train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
                 train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
@@ -419,7 +452,8 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
                                           feed_dict={capsnet.input_x: batch_x,
                                                      capsnet.encoded_intents: batch_intents_one_hot,
                                                      capsnet.encoded_slots: batch_slots_one_hot,
-                                                     capsnet.sentences_length: batch_sentences_len})
+                                                     capsnet.sentences_length: batch_sentences_len,
+                                                     capsnet.keep_prob: FLAGS.keep_prob})
 
                 train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
                 train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
@@ -533,6 +567,7 @@ def main():
             test_data['sentences_len_te'] = data['sentences_len_te']
             test_data['slots_dict'] = data['slots_dict']
             test_data['intents_dict'] = data['intents_dict']
+            test_data['original_sentences'] = data['original_sentences']
 
             best_f_score, best_f_score_intent, best_f_score_slot = train(train_data, test_data, embedding, FLAGS)
             print("Best F score: %lf" % best_f_score)
@@ -548,6 +583,7 @@ def main():
         test_data['sentences_len_te'] = data['sentences_len_te']
         test_data['slots_dict'] = data['slots_dict']
         test_data['intents_dict'] = data['intents_dict']
+        test_data['original_sentences'] = data['original_sentences']
 
         tf.reset_default_graph()
         config = tf.ConfigProto()
