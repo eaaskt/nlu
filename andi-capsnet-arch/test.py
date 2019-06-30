@@ -159,6 +159,31 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                               title='Confusion matrix', normalize=True, numbers=False)
         plt.show()
 
+        intent_classes = {'aprindeLumina': 'lumina',
+                          'cresteIntensitateLumina': 'lumina',
+                          'cresteTemperatura': 'temperatura',
+                          'opresteMuzica': 'media',
+                          'opresteTV': 'media',
+                          'pornesteTV': 'media',
+                          'puneMuzica': 'media',
+                          'scadeIntensitateLumina': 'lumina',
+                          'scadeTemperatura': 'temperatura',
+                          'schimbaCanalTV': 'media',
+                          'schimbaIntensitateMuzica': 'media',
+                          'seteazaTemperatura': 'temperatura',
+                          'stingeLumina': 'lumina',
+                          'x': 'x'}
+
+        if 'x' in y_intent_labels_true or 'x' in y_intent_labels_pred:
+            intent_classes_labels = ['lumina', 'media', 'temperatura', 'x']
+        else:
+            intent_classes_labels = ['lumina', 'media', 'temperatura']
+        intent_classes_true = [intent_classes[intent] for intent in y_intent_labels_true]
+        intent_classes_pred = [intent_classes[intent] for intent in y_intent_labels_pred]
+        plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
+                              title='Confusion matrix', normalize=True, numbers=True)
+        plt.show()
+
         incorrect_intents = {}
         i = 0
         for t, p in zip(y_intent_labels_true, y_intent_labels_pred):
