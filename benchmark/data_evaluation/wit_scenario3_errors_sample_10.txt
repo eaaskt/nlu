@@ -1,0 +1,470 @@
+INTENT ERRORS
+Text: poti mari temperatura la saptesprezece grade in bucatarie
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: stinge emisiunea
+TRUE: opresteTV
+PRED: stingeLumina
+
+Text: ai putea oare mari intensitatea becurilor in camera de zi la maxim
+TRUE: cresteIntensitateLumina
+PRED: scadeIntensitateLumina
+
+Text: as vrea sa opresti becurile in camera de zi
+TRUE: stingeLumina
+PRED: aprindeLumina
+
+Text: stinge TV
+TRUE: opresteTV
+PRED: stingeLumina
+
+Text: Servus, as vrea sa inchizi melodia
+TRUE: opresteMuzica
+PRED: opresteTV
+
+Text: schimba pe programul TNT
+TRUE: schimbaCanalTV
+PRED: schimbaIntensitateMuzica
+
+Text: Buna Pepper, as vrea sa opresti becul in dormitor
+TRUE: stingeLumina
+PRED: aprindeLumina
+
+Text: da drumul la pe AXN
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: Salut, poti mari pe douazeci si unu de grade in bucatarie
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: te rog ai putea deschide TV pe FoodTV
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: stinge filmul
+TRUE: opresteTV
+PRED: stingeLumina
+
+Text: Buna Pepper, poti sa pornesti becurile
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: fa mai mare lumina in camera de zi
+TRUE: cresteIntensitateLumina
+PRED: aprindeLumina
+
+Text: Buna Pepper, poti sa pornesti becul in pivnita
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: Pepper, poti mari temperatura cu doua grade peste tot
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: du in jos temperatura pe douazeci si cinci de grade in tot apartamentul
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: te rog poti suspenda emisiunea
+TRUE: opresteTV
+PRED: schimbaCanalTV
+
+Text: Salut, redu intensitatea becurilor in dormitor la 4
+TRUE: scadeIntensitateLumina
+PRED: cresteIntensitateLumina
+
+Text: Hey, du in jos la douazeci si trei de grade in toata casa
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: Buna Pepper, inchide becurile
+TRUE: stingeLumina
+PRED: schimbaCanalTV
+
+Text: poti mari temperatura in dormitor
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: Servus, poti suspenda TV
+TRUE: opresteTV
+PRED: schimbaCanalTV
+
+Text: Hey, schimba temperatura aproape de douazeci si cinci de grade in toata casa
+TRUE: seteazaTemperatura
+PRED: cresteTemperatura
+
+Text: servus te rog ai putea schimba canalul
+TRUE: schimbaCanalTV
+PRED: schimbaIntensitateMuzica
+
+Text: du in jos temperatura cu cinci grade in toata casa
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: Salut, creste temperatura la optsprezece grade in dormitor
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: Salut, fa mai mica intensitatea becurilor in camara la sfert
+TRUE: scadeIntensitateLumina
+PRED: schimbaIntensitateMuzica
+
+Text: poti inchide becurile in camara
+TRUE: stingeLumina
+PRED: opresteMuzica
+
+Text: imi poti porni becurile in dormitor
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: Servus, as vrea sa stingi melodia
+TRUE: opresteMuzica
+PRED: stingeLumina
+
+Text: Servus, pune concertul mai incet
+TRUE: schimbaIntensitateMuzica
+PRED: seteazaTemperatura
+
+Text: te rog da drumul la pe AXN
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: Pepper poti sa reduci intensitatea becurilor in camera de zi
+TRUE: scadeIntensitateLumina
+PRED: cresteIntensitateLumina
+
+Text: Buna Pepper, porneste becul in camara
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: poti stinge piesa
+TRUE: opresteMuzica
+PRED: stingeLumina
+
+Text: as vrea sa opresti becul in camera de zi
+TRUE: stingeLumina
+PRED: aprindeLumina
+
+Text: te rog suspenda emisiunea
+TRUE: opresteTV
+PRED: schimbaCanalTV
+
+Text: fa mai mica temperatura pe douazeci si trei de grade in toata casa
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: Hey, modifica temperatura cam la douazeci si patru de grade in tot apartamentul
+TRUE: seteazaTemperatura
+PRED: cresteTemperatura
+
+Text: Pepper, fa mai mare la douazeci si unu de grade in dormitor
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: Hey, redu pe douazeci si cinci de grade in tot apartamentul
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: as vrea sa stingi melodia
+TRUE: opresteMuzica
+PRED: pornesteTV
+
+Text: poti stinge concertul
+TRUE: opresteMuzica
+PRED: stingeLumina
+
+Text: Servus, te rog pune cantec cantat de Rahmaninov
+TRUE: puneMuzica
+PRED: schimbaCanalTV
+
+Text: Hey, redu pe douazeci si trei de grade in toata casa
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: fa mai mica intensitatea becurilor in camera de zi la 3
+TRUE: scadeIntensitateLumina
+PRED: schimbaIntensitateMuzica
+
+Text: du in jos temperatura cu patru grade in tot apartamentul
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: te rog da drumul la TV pe History
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: Hey, ajusteaza aproximativ la douazeci si sapte de grade in tot apartamentul
+TRUE: seteazaTemperatura
+PRED: cresteTemperatura
+
+Text: as vrea sa pornesti becurile in camara
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: Servus, te rog ai putea pune concertul mai incet
+TRUE: schimbaIntensitateMuzica
+PRED: schimbaCanalTV
+
+Text: Salut, mareste temperatura cu un grad in baie
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: Servus, poti sa stingi filmul
+TRUE: opresteTV
+PRED: stingeLumina
+
+Text: Hey, redu temperatura la douazeci si patru de grade in toata casa
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: opreste becul in camara
+TRUE: stingeLumina
+PRED: cresteIntensitateLumina
+
+Text: cantec cantat de Pink Floyd
+TRUE: puneMuzica
+PRED: scadeIntensitateLumina
+
+Text: poti sa stingi emisiunea
+TRUE: opresteTV
+PRED: schimbaIntensitateMuzica
+
+Text: Hey, schimba aproape de douazeci si trei de grade
+TRUE: seteazaTemperatura
+PRED: puneMuzica
+
+Text: Buna Pepper, poti sa pornesti becurile in camera de zi
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: imi poti opri becul in pivnita
+TRUE: stingeLumina
+PRED: aprindeLumina
+
+Text: Salut, redu intensitatea becurilor in camara la 4
+TRUE: scadeIntensitateLumina
+PRED: cresteIntensitateLumina
+
+Text: Buna Pepper, as vrea sa pornesti becul in camara
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: Buna Pepper, imi poti opri becul in camera de zi
+TRUE: stingeLumina
+PRED: schimbaCanalTV
+
+Text: fa mai mica lumina in camara
+TRUE: scadeIntensitateLumina
+PRED: schimbaIntensitateMuzica
+
+Text: Salut, ai putea oare mari intensitatea becurilor in camera de zi la maxim
+TRUE: cresteIntensitateLumina
+PRED: scadeIntensitateLumina
+
+Text: servus te rog schimba pe programul AXN
+TRUE: schimbaCanalTV
+PRED: schimbaIntensitateMuzica
+
+Text: Pepper, poti mari temperatura pe douazeci si doua de grade in baie
+TRUE: cresteTemperatura
+PRED: seteazaTemperatura
+
+Text: Buna Pepper, porneste becurile in camera de zi
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: servus da drumul la pe History
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: micsoreaza temperatura la douazeci si cinci de grade peste tot
+TRUE: scadeTemperatura
+PRED: seteazaTemperatura
+
+Text: ajusteaza cam la douazeci si sase de grade in toata casa
+TRUE: seteazaTemperatura
+PRED: cresteTemperatura
+
+Text: te rog stinge TV
+TRUE: opresteTV
+PRED: stingeLumina
+
+Text: pune piesa cantata de Rahmaninov
+TRUE: puneMuzica
+PRED: schimbaCanalTV
+
+Text: servus da drumul la pe AXN
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: Servus, poti suspenda emisiunea
+TRUE: opresteTV
+PRED: schimbaCanalTV
+
+Text: servus ai putea deschide TV pe FoodTV
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: redu temperatura in toata casa
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: du in jos temperatura cu cinci grade in tot apartamentul
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: fa mai mica temperatura la douazeci si trei de grade in toata casa
+TRUE: scadeTemperatura
+PRED: cresteTemperatura
+
+Text: Buna Pepper, porneste becurile in dormitor
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+Text: te rog da drumul la pe TNT
+TRUE: pornesteTV
+PRED: schimbaCanalTV
+
+Text: poti inchide becurile in camera de zi
+TRUE: stingeLumina
+PRED: puneMuzica
+
+Text: Buna Pepper, poti sa pornesti becurile in dormitor
+TRUE: aprindeLumina
+PRED: pornesteTV
+
+
+SLOT ERRORS
+Text: redu intensitatea becurilor in camera de zi
+TRUE: ['O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'B-artist']
+
+Text: fa mai mica pe douazeci si patru de grade peste tot
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc']
+
+Text: Hey, micsoreaza temperatura pe douazeci si trei de grade in toata casa
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Pepper mareste intensitatea becurilor in camera de zi la 3
+TRUE: ['O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: pune simfonia compusa de Leonard Cohen
+TRUE: ['O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O']
+
+Text: poti sa maresti intensitatea becurilor in camera de zi la 3
+TRUE: ['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: schimba aproximativ pe douazeci si cinci de grade
+TRUE: ['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-artist']
+
+Text: diminueaza intensitatea becurilor in pivnita la 3
+TRUE: ['O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: Pepper as vrea sa maresti intensitatea becurilor in camera de zi la 3
+TRUE: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: servus schimba pe programul JazzTV
+TRUE: ['O', 'O', 'O', 'O', 'B-canal']
+PRED: ['O', 'O', 'O', 'O', 'O']
+
+Text: servus te rog poti da drumul la TV
+TRUE: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: servus te rog da drumul la TV
+TRUE: ['O', 'O', 'O', 'O', 'O', 'O', 'O']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: Servus, concert compus de Leonard Cohen
+TRUE: ['O', 'O', 'O', 'O', 'B-artist', 'I-artist']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O']
+
+Text: ajusteaza temperatura aproximativ la douazeci si sapte de grade peste tot
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc']
+
+Text: Hey, redu temperatura pe douazeci si sapte de grade in tot apartamentul
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Hey, redu pe douazeci si patru de grade in tot apartamentul
+TRUE: ['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Pepper diminueaza intensitatea becurilor in pivnita la sfert
+TRUE: ['O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: du in jos la douazeci si sase de grade peste tot
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc']
+
+Text: micsoreaza temperatura pe douazeci si sapte de grade in tot apartamentul
+TRUE: ['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Hey, fa mai mica temperatura la douazeci si cinci de grade in tot apartamentul
+TRUE: ['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Pepper poti sa maresti intensitatea becurilor in camera de zi
+TRUE: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-artist']
+
+Text: Hey, modifica temperatura aproximativ la douazeci si cinci de grade in toata casa
+TRUE: ['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Servus, te rog stinge TV
+TRUE: ['O', 'O', 'O', 'O', 'O']
+PRED: ['O', 'O', 'O', 'O', 'B-canal']
+
+Text: Hey, modifica aproximativ pe douazeci si patru de grade in toata casa
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: modifica temperatura cam la douazeci si cinci de grade in toata casa
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Hey, schimba temperatura aproximativ pe douazeci si patru de grade peste tot
+TRUE: ['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc']
+
+Text: fa mai mica intensitatea becurilor in camera de zi la 3
+TRUE: ['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel']
+
+Text: Hey, micsoreaza temperatura pe douazeci si trei de grade in toata casa
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: schimba cam la douazeci si sase de grade in toata casa
+TRUE: ['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: fa mai mica temperatura la douazeci si trei de grade in toata casa
+TRUE: ['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Hey, micsoreaza la douazeci si cinci de grade in toata casa
+TRUE: ['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+
+Text: Hey, modifica temperatura aproximativ pe douazeci si sase de grade peste tot
+TRUE: ['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc']
+
+Text: schimba temperatura aproape de douazeci si patru de grade in toata casa
+TRUE: ['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+PRED: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
