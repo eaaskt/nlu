@@ -6,8 +6,11 @@ from gensim.models.keyedvectors import KeyedVectors
 
 
 word2vec_path = 'C:\Projects\\nlu\word-vec\cc.ro.300.vec'
-training_data_path = '../data-capsnets/scenario3.3/train.txt'
-test_data_path = '../data-capsnets/scenario3.3/test.txt'
+# word2vec_path = 'C:\Projects\\nlu\word-vec\wiki.ro.vec'
+training_data_path = '../data-capsnets/scenario0/train.txt'
+test_data_path = '../data-capsnets/scenario0/test.txt'
+
+w2v_dict = dict()
 
 def norm_matrix(matrix):
     """
@@ -147,6 +150,8 @@ def get_label(data):
     return ind_intents_tr, ind_slots_tr
 
 
+
+
 def read_datasets():
     print("------------------read datasets begin-------------------")
     data = {}
@@ -154,6 +159,7 @@ def read_datasets():
     # load word2vec model
     print("------------------load word2vec begin-------------------")
     w2v = load_w2v(word2vec_path)
+    w2v_dict['w2v'] = w2v
     print("------------------load word2vec end---------------------")
 
     # load normalized word embeddings
@@ -200,3 +206,5 @@ def read_datasets():
     data['original_sentences'] = original_sentences
     print("------------------read datasets end---------------------")
     return data
+
+

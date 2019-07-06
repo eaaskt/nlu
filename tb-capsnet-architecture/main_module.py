@@ -53,7 +53,7 @@ def setting(data):
     tf.app.flags.DEFINE_boolean("crossval", False, "Perform k-fold cross validation")
     tf.app.flags.DEFINE_integer("n_splits", 3, "Number of cross-validation splits")
     tf.app.flags.DEFINE_string("summaries_dir", './logs', "tensorboard summaries")
-    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/Scenario3.3', "check point dir")
+    tf.app.flags.DEFINE_string("ckpt_dir", './saved_models/Scenario0', "check point dir")
     tf.app.flags.DEFINE_string("scenario_num", '', "Scenario number")
 
     return FLAGS
@@ -125,6 +125,36 @@ def eval_seq_scores(y_true, y_pred):
     scores['recall'] = recall_score(y_true, y_pred)
     return scores
 
+
+def evaluate_sample(capsnet, data, sess):
+    x_te = data['sample_utterance']
+
+    slots_dict = data['slots_dict']
+
+    [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
+        capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
+        feed_dict={capsnet.input_x: [x_te], capsnet.sentences_length: [len(x_te)],
+                   capsnet.keep_prob: 1.0})
+
+    intent_outputs_reduced_dim = tf.squeeze(intent_outputs)
+    intent_outputs_norm = safe_norm(intent_outputs_reduced_dim)
+    sliced_slot_weights_c = tf.slice(slot_weights_c, begin=[0, 0, 0, 0, 0],
+                                     size=[-1, capsnet.max_sentence_length, -1, -1, -1])
+    slot_weights_c_reduced_dim = tf.squeeze(sliced_slot_weights_c)
+
+    [intent_predictions, slot_predictions] = sess.run([intent_outputs_norm, slot_weights_c_reduced_dim])
+
+    y_intent_label_pred = np.argmax(intent_predictions, axis=0)
+
+    te_slots_pred = np.argmax(slot_predictions, axis=1)
+    total_slots_pred = (np.ndarray.tolist(te_slots_pred))
+
+    y_slot_labels_pred = [slots_dict[slot_idx] for slot_idx in total_slots_pred]
+
+    print("Utterance classified as: " + data['intents_dict'][y_intent_label_pred])
+    print("Slots:\n" + str(y_slot_labels_pred))
+
+    return y_slot_labels_pred, y_intent_label_pred
 
 def evaluate_test(capsnet, data, FLAGS, sess):
     x_te = data['x_te']
