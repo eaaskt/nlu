@@ -58,7 +58,7 @@ def validate(input_path, output_path, interpreter):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Obtain validation set predictions',
-        usage="validate_samples.py <input_file> <output_file> <model>")
+        usage="test_prediction.py <input_file> <output_file> <model>")
     parser.add_argument('input_file', help='Input file - containing validation set examples')
     parser.add_argument('output_file', help='Output file - where the predictions will be saved')
     parser.add_argument('model', help='Path where model is stored')
