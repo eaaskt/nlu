@@ -231,7 +231,7 @@ def create_conllu_file(validation_file, response_file, i):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Evaluation script',
-        usage='evaluate.py <evaluation_file> <validation_resp_format')
+        usage='evaluate.py <evaluation_file> <validation_resp_format>')
     parser.add_argument('evaluation_file', help='File containing pairs validation - response files')
     parser.add_argument('resp_format', help='Format of response file', type=RespFormat, choices=list(RespFormat))
     args = parser.parse_args()

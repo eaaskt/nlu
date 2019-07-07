@@ -2,18 +2,26 @@ import tensorflow as tf
 
 
 def define_app_flags():
+    """ Define the TensorFlow application-wide flags
+        Returns:
+            FLAGS: TensorFlow flags
+    """
     FLAGS = tf.app.flags.FLAGS
 
     tf.app.flags.DEFINE_boolean('save_model', False, 'save model to disk')
     tf.app.flags.DEFINE_string('summaries_dir', './logs', 'tensorboard summaries')
     tf.app.flags.DEFINE_string('ckpt_dir', './saved_models/', 'check point dir')
-    tf.app.flags.DEFINE_string('scenario_num', '', 'Scenario number')
+    tf.app.flags.DEFINE_string('scenario_num', '0', 'Scenario number')
     tf.app.flags.DEFINE_string('errors_dir', './errors/', 'Errors dir')
 
     return FLAGS
 
 
 def set_data_flags(data):
+    """ Sets other TensorFlow flags that depend on the input data + hyperparameters of the model
+        Args:
+            data: data dictionary
+    """
     vocab_size, word_emb_size = data['embedding'].shape
     _, max_sentence_length = data['x_tr'].shape
     intents_number = len(data['intents_dict'])

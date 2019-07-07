@@ -3,14 +3,16 @@ import util
 from gensim.models.keyedvectors import KeyedVectors
 
 word2vec_path = '../data-capsnets/word-vec/cc.ro.300.vec'
-training_data_path = '../data-capsnets/home_assistant_v2/scenario3.3/train.txt'
-test_data_path = '../data-capsnets/home_assistant_v2/scenario3.3/test.txt'
+training_data_path = '../data-capsnets/scenario0/train.txt'
+test_data_path = '../data-capsnets/scenario0/test.txt'
 
 
 def load_w2v(file_name):
-    """ load w2v model
-        input: model file name
-        output: w2v model
+    """ Load Word2Vec model
+        Args:
+            file_name: model file name
+        Returns:
+            w2v: w2v model
     """
     w2v = KeyedVectors.load_word2vec_format(
         file_name, binary=False)
@@ -18,19 +20,28 @@ def load_w2v(file_name):
 
 
 def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot_id, load_text=False):
-    """ load input data
-        input:
-            file_path: input data file
+    """ Load input data in w2v index format
+        Args:
+            file_path: path to input data file
             w2v: word2vec model
-            in_max_len: max length of sentence
-        output:
-            input_x: input sentence word ids
-            input_y: input label ids
+            in_max_len: max length of sentence so far (used if loading test data)
+            intent_dict: mapping of intent class id to intent class label (used if loading test data)
+            intent_id: last used intent class id
+            slot_dict: mapping of slot class id to slot class label (used if loading test data)
+            slot_id: last used slot class id
+            load_text: True if the original text should be loaded, False otherwise
+
+        Returns:
+            x_padding: input sentence word ids (with padding if necessary
+            input_y: input intent ids
             input_y_s: input slot ids
-            s_len: input sentence length
+            sentences_len: input sentences length
             max_len: max length of sentence
             intent_dict: intents dictionary
+            intent_id: last used intent id
             slot_dict: slots dictionary
+            slot_id: last used slot id
+            x_text_padding: input sentences (in raw text format)
     """
     input_x = []
     input_y = []
@@ -121,6 +132,14 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
 
 
 def get_label(data, test=False):
+    """ Encodes the intent and slot labels in one-hot format
+        Args:
+            data: data dictionary
+            test: True if should encode test labels
+        Returns:
+            ind_intents: one-hot encoded intents (of shape [nr_samples, nr_intents])
+            ind_slots: one-hot encoded slots (of shape [nr_samples, max_len, nr_slots])
+    """
     if test:
         y_intents = data['y_intents_te']
         y_slots = data['y_slots_te']
@@ -146,6 +165,12 @@ def get_label(data, test=False):
 
 
 def read_datasets(test=False):
+    """ Encodes the intent and slot labels in one-hot format
+        Args:
+            test: True if running test on the model -- this will load the test data in raw text format
+        Returns:
+            data: data dictionary
+    """
     print('------------------read datasets begin-------------------')
     data = {}
 
