@@ -164,8 +164,75 @@ def get_label(data, test=False):
     return ind_intents, ind_slots
 
 
+def read_input_data(w2v, training_data, test_data, test=False):
+    """ Reads the data from the given input files
+        Args:
+            w2v: Word2Vec model
+            training_data: path to training data file
+            test_data: path to test data file
+            test: True if running test on the model -- this will load the test data in raw text format
+
+        Returns:
+            data: data dictionary
+    """
+    print('------------------read datasets begin-------------------')
+    data = {}
+
+    # load normalized word embeddings
+    embedding = w2v.vectors
+    norm_embedding = util.norm_matrix(embedding)
+    data['embedding'] = norm_embedding
+
+    # trans data into embedding vectors
+    max_len = 0
+    slots_dict = dict()
+    intents_dict = dict()
+    slot_id = 0
+    intent_id = 0
+    (x_tr, y_intents_tr, y_slots_tr, sentences_length_tr,
+     max_len, intents_dict, intent_id, slots_dict, slot_id,
+     x_text_tr) = load_vec(training_data_path, w2v, max_len,
+                           intents_dict, intent_id, slots_dict, slot_id,
+                           load_text=False)
+    (x_te, y_intents_te, y_slots_te, sentences_length_te,
+     max_len, intents_dict, intent_id, slots_dict, slot_id,
+     x_text_te) = load_vec(test_data_path, w2v, max_len, intents_dict,
+                           intent_id, slots_dict, slot_id,
+                           load_text=test)
+    intents_id_dict = {v: k for k, v in intents_dict.items()}
+    slots_id_dict = {v: k for k, v in slots_dict.items()}
+
+    data['x_tr'] = x_tr
+    data['y_intents_tr'] = y_intents_tr
+    data['y_slots_tr'] = y_slots_tr
+    data['sentences_len_tr'] = sentences_length_tr
+
+    data['intents_dict'] = intents_id_dict
+    data['slots_dict'] = slots_id_dict
+
+    data['x_te'] = x_te
+    data['y_intents_te'] = y_intents_te
+    data['y_slots_te'] = y_slots_te
+    data['sentences_len_te'] = sentences_length_te
+
+    if test:
+        data['x_text_te'] = x_text_te
+
+    data['max_len'] = max_len
+
+    one_hot_y_intents_tr, one_hot_y_slots_tr = get_label(data)
+    data['encoded_intents_tr'] = one_hot_y_intents_tr
+    data['encoded_slots_tr'] = one_hot_y_slots_tr
+
+    one_hot_y_intents_te, one_hot_y_slots_te = get_label(data, test=True)
+    data['encoded_intents_te'] = one_hot_y_intents_te
+    data['encoded_slots_te'] = one_hot_y_slots_te
+    print('------------------read datasets end---------------------')
+    return data
+
+
 def read_datasets(test=False):
-    """ Encodes the intent and slot labels in one-hot format
+    """ Reads word embeddings and train and test data
         Args:
             test: True if running test on the model -- this will load the test data in raw text format
         Returns:

@@ -22,7 +22,6 @@ class CapsNet:
         self.initializer = initializer
         self.intents_nr = FLAGS.intents_nr
         self.slots_nr = FLAGS.slots_nr
-        self.margin = FLAGS.margin
         self.slot_routing_num = FLAGS.slot_routing_num
         self.intent_routing_num = FLAGS.intent_routing_num
         self.keep_prob = tf.placeholder(tf.float32, name='keep_prob')

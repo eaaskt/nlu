@@ -39,7 +39,6 @@ def set_data_flags(data):
     tf.app.flags.DEFINE_integer('word_emb_size', word_emb_size, 'embedding size of word vectors')
     tf.app.flags.DEFINE_boolean('use_embedding', True, 'whether to use embedding or not.')
     tf.app.flags.DEFINE_float('learning_rate', 0.01, 'learning rate')
-    tf.app.flags.DEFINE_float('margin', 1.0, 'ranking loss margin')
     tf.app.flags.DEFINE_integer('slot_routing_num', 2, 'slot routing num')
     tf.app.flags.DEFINE_integer('intent_routing_num', 3, 'intent routing num')
     tf.app.flags.DEFINE_integer('intent_output_dim', 16, 'intent output dimension')
