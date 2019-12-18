@@ -54,7 +54,7 @@ def convert_entry_snips(itm, intent, output_format):
 
 
 def convert(input_path, output_path, init_format, output_format):
-    with open(input_path, errors='replace', encoding='utf-8-sig') as f:
+    with open(input_path, errors='replace', encoding='utf-8') as f:
         data = json.load(f)
     if init_format == InputFormat.snips:
         assert len(data.keys()) == 1
@@ -66,12 +66,12 @@ def convert(input_path, output_path, init_format, output_format):
             output['rasa_nlu_data']['common_examples'] = examples
         elif output_format == OutputFormat.wit:
             output = examples
-        with open(output_path, 'w') as f:
+        with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(output, f, ensure_ascii=False, indent=4)
     elif init_format == InputFormat.rasa:
         data = data['rasa_nlu_data']['common_examples']
         output = [convert_entry_rasa(itm, output_format) for itm in data]
-        with open(output_path, 'w') as f:
+        with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(output, f, ensure_ascii=False, indent=4)
 
 
