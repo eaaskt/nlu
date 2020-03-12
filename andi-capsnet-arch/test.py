@@ -27,6 +27,14 @@ def plot_confusion_matrix(y_true, y_pred, labels,
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
+        Args:
+            y_true: true slot labels
+            y_pred: predicted slot labels
+            labels: list of class labels, will be places on the axes
+            title: title of plot
+            cmap: colormap
+            numbers: True if numbers should be shown inside the confusion matrix, if many classes it is recommended
+                     that this is set to False
     """
     if not title:
         if normalize:
@@ -72,6 +80,13 @@ def plot_confusion_matrix(y_true, y_pred, labels,
 
 
 def eval_seq_scores(y_true, y_pred):
+    """ Performs sequence evaluation on slot labels
+        Args:
+            y_true: true slot labels
+            y_pred: predicted slot labels
+        Returns:
+            scores: dict containing the evaluation scores: f1, accuracy, precision, recall
+    """
     scores = dict()
     scores['f1'] = f1_score(y_true, y_pred)
     scores['accuracy'] = accuracy_score(y_true, y_pred)
@@ -81,6 +96,19 @@ def eval_seq_scores(y_true, y_pred):
 
 
 def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
+    """ Evaluates the model on the test set
+        Args:
+            capsnet: CapsNet model
+            data: test data dict
+            FLAGS: TensorFlow flags
+            sess: TensorFlow session
+            log_errs: if True, the intent and slot errors will be logged to a error file and confusion matrices will
+                      be displayed
+            epoch: current epoch
+        Returns:
+            f_score: intent detection F1 score
+            scores['f1']: slot filling F1 score
+    """
     x_te = data['x_te']
     sentences_length_te = data['sentences_len_te']
     y_intents_te = data['y_intents_te']
@@ -159,6 +187,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                               title='Confusion matrix', normalize=True, numbers=False)
         plt.show()
 
+        # For super-class confusion mat
         intent_classes = {'aprindeLumina': 'lumina',
                           'cresteIntensitateLumina': 'lumina',
                           'cresteTemperatura': 'temperatura',
@@ -218,11 +247,11 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 def test():
     FLAGS = flags.define_app_flags()
 
-    # load data
+    # Load data
     data = data_loader.read_datasets(test=True)
     flags.set_data_flags(data)
 
-    # testing
+    # Testing
     test_data = dict()
     test_data['x_te'] = data['x_te']
     test_data['x_text_te'] = data['x_text_te']

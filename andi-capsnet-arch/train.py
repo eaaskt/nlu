@@ -21,6 +21,13 @@ a.seed(1)
 
 
 def eval_seq_scores(y_true, y_pred):
+    """ Performs sequence evaluation on slot labels
+        Args:
+            y_true: true slot labels
+            y_pred: predicted slot labels
+        Returns:
+            scores: dict containing the evaluation scores: f1, accuracy, precision, recall
+    """
     scores = dict()
     scores['f1'] = f1_score(y_true, y_pred)
     scores['accuracy'] = accuracy_score(y_true, y_pred)
@@ -30,6 +37,18 @@ def eval_seq_scores(y_true, y_pred):
 
 
 def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
+    """ Evaluates the model on the validation set
+        Args:
+            capsnet: CapsNet model
+            val_data: validation data dict
+            FLAGS: TensorFlow flags
+            sess: TensorFlow session in which the training was run
+            epoch: current epoch of training
+            fold: current fold of K-fold cross-validation
+        Returns:
+            f_score: intent detection F1 score
+            scores['f1']: slot filling F1 score
+    """
     x_te = val_data['x_val']
     sentences_length_te = val_data['sentences_len_val']
     y_intents_te = val_data['y_intents_val']
@@ -39,6 +58,7 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
     slots_dict = val_data['slots_dict']
     intents_dict = val_data['intents_dict']
 
+    # Define TensorBoard writer
     writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
 
     total_intent_pred = []
@@ -55,6 +75,7 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
         batch_intents_one_hot = one_hot_intents[begin_index: end_index]
         batch_slots_one_hot = one_hot_slots[begin_index: end_index]
 
+        # Get predictions for current validation batch
         [intent_outputs, slots_outputs, slot_weights_c, cross_entropy_summary,
          margin_loss_summary, loss_summary] = sess.run([
             capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c,
@@ -64,19 +85,23 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
                        capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
                        capsnet.keep_prob: 1.0})
 
+        # Add TensorBoard summaries to FileWriter
         writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
         writer.add_summary(margin_loss_summary, epoch * test_batch + i)
         writer.add_summary(loss_summary, epoch * test_batch + i)
 
+        # Modify prediction vectors dimensions to prepare for argmax
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
         intent_outputs_norm = util.safe_norm(intent_outputs_reduced_dim)
         slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c, axis=[3, 4])
 
         [intent_predictions, slot_predictions] = sess.run([intent_outputs_norm, slot_weights_c_reduced_dim])
 
+        # Obtain intent prediction
         te_batch_intent_pred = np.argmax(intent_predictions, axis=1)
         total_intent_pred += np.ndarray.tolist(te_batch_intent_pred)
 
+        # Obtain slots prediction
         te_batch_slots_pred = np.argmax(slot_predictions, axis=2)
         total_slots_pred += (np.ndarray.tolist(te_batch_slots_pred))
 
@@ -106,11 +131,24 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
 
 
 def generate_batch(n, batch_size):
+    """ Generates a set of batch indices
+        Args:
+            n: total number of samples in set
+            batch_size: size of batch
+        Returns:
+            batch_index: a list of length batch_size containing randomly sampled indices
+    """
     batch_index = a.sample(range(n), batch_size)
     return batch_index
 
 
 def assign_pretrained_word_embedding(sess, embedding, capsnet):
+    """ Assigns word embeddings to the CapsNet model
+        Args:
+            sess: TensorFlow session
+            embedding: array containing the word embeddings
+            capsnet: CapsNet model
+    """
     print('using pre-trained word emebedding.begin...')
     word_embedding_placeholder = tf.placeholder(dtype=tf.float32, shape=embedding.shape)
     sess.run(capsnet.Embedding.assign(word_embedding_placeholder), {word_embedding_placeholder: embedding})
@@ -118,6 +156,20 @@ def assign_pretrained_word_embedding(sess, embedding, capsnet):
 
 
 def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_score):
+    """ Trains the model for one cross-validation fold
+        Args:
+            train_data: training data dictionary
+            val_data: validation data dictionary
+            embedding: array containing pre-trained word embeddings
+            FLAGS: TensorFlow application flags
+            fold: current fold index
+            best_f_score: best overall F1 score (across all folds so far)
+        Returns:
+            best_f_score: best overall F1 score (across all folds so far, including after this one)
+            best_f_score_mean_fold: best overall F1 score for this fold
+            best_f_score_intent_fold: best intent F1 score for this fold
+            best_f_score_slot_fold: best slot F1 score for this fold
+    """
     # start
     x_train = train_data['x_tr']
     sentences_length_train = train_data['sentences_len_tr']
@@ -128,6 +180,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
     best_f_score_intent_fold = 0.0
     best_f_score_slot_fold = 0.0
 
+    # We must reset the graph to start a brand new training of the model
     tf.reset_default_graph()
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
@@ -140,8 +193,8 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
             # load pre-trained word embedding
             assign_pretrained_word_embedding(sess, embedding, capsnet)
 
-        intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
-                                                           sess, epoch=0, fold=fold)
+        # Initial evaluation on validation set
+        intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS, sess, epoch=0, fold=fold)
         f_score_mean = (intent_f_score + slot_f_score) / 2
         if f_score_mean > best_f_score:
             best_f_score = f_score_mean
@@ -209,9 +262,10 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
 
 
 def main():
+    # Define the flags
     FLAGS = flags.define_app_flags()
 
-    # load data
+    # Load data
     data = data_loader.read_datasets()
     x_tr = data['x_tr']
     y_intents_tr = data['y_intents_tr']
@@ -235,6 +289,7 @@ def main():
     for train_index, val_index in StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr):
         print('FOLD %d' % fold)
 
+        # Split the data according to train_index, val_index
         x_train, x_val = x_tr[train_index], x_tr[val_index]
         y_intents_train, y_intents_val = y_intents_tr[train_index], y_intents_tr[val_index]
         y_slots_train, y_slots_val = y_slots_tr[train_index], y_slots_tr[val_index]
@@ -262,6 +317,7 @@ def main():
         val_data['slots_dict'] = data['slots_dict']
         val_data['intents_dict'] = data['intents_dict']
 
+        # Train on split
         best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold = train_cross_validation(
             train_data, val_data, embedding, FLAGS, fold, best_f_score)
 
@@ -272,6 +328,7 @@ def main():
         slot_scores += best_f_score_slot_fold
         mean_scores += best_f_score_mean_fold
 
+    # Compute mean score
     mean_intent_score = intent_scores / FLAGS.n_splits
     mean_slot_score = slot_scores / FLAGS.n_splits
     mean_score = mean_scores / FLAGS.n_splits
