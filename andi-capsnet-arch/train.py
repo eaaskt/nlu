@@ -58,8 +58,9 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
     slots_dict = val_data['slots_dict']
     intents_dict = val_data['intents_dict']
 
+    # TODO: parameterize the Tensorboard part so that it's configurable
     # Define TensorBoard writer
-    writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
+    # writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
 
     total_intent_pred = []
     total_slots_pred = []
@@ -86,9 +87,9 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
                        capsnet.keep_prob: 1.0})
 
         # Add TensorBoard summaries to FileWriter
-        writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
-        writer.add_summary(margin_loss_summary, epoch * test_batch + i)
-        writer.add_summary(loss_summary, epoch * test_batch + i)
+        # writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
+        # writer.add_summary(margin_loss_summary, epoch * test_batch + i)
+        # writer.add_summary(loss_summary, epoch * test_batch + i)
 
         # Modify prediction vectors dimensions to prepare for argmax
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])

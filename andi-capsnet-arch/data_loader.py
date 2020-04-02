@@ -2,10 +2,10 @@ import numpy as np
 import util
 from gensim.models.keyedvectors import KeyedVectors
 
-word2vec_path = '../data-capsnets/word-vec/cc.ro.300.vec'
+word2vec_path = '../../romanian_word_vecs/cc.ro.300.vec'
 
-training_data_path = '../data-capsnets/diacritics/scenario2/train.txt'
-test_data_path = '../data-capsnets/diacritics/scenario2/test.txt'
+# training_data_path = '../data-capsnets/diacritics/scenario2/train.txt'
+# test_data_path = '../data-capsnets/diacritics/scenario2/test.txt'
 
 
 def load_w2v(file_name):
@@ -167,7 +167,8 @@ def get_label(data, test=False):
     return ind_intents, ind_slots
 
 
-def read_datasets(test=False):
+def read_datasets(training_data_path, test_data_path, test=False):
+    # TODO: split read into read train and read test
     """ Encodes the intent and slot labels in one-hot format
         Args:
             test: True if running test on the model -- this will load the test data in raw text format
