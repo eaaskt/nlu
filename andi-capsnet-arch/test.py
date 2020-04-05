@@ -244,12 +244,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
     return f_score, scores['f1']
 
 
-def test():
-    FLAGS = flags.define_app_flags()
-
-    # Load data
-    data = data_loader.read_datasets(test=True)
-    flags.set_data_flags(data)
+def test(data, FLAGS):
 
     # Testing
     test_data = dict()
@@ -283,5 +278,23 @@ def test():
             print('No trained model exists in checkpoint dir!')
 
 
+def main():
+    word2vec_path = '../../romanian_word_vecs/cc.ro.300.vec'
+
+    training_data_path = '../data-capsnets/scenario0/train.txt'
+    test_data_path = '../data-capsnets/scenario0/test.txt'
+
+    FLAGS = flags.define_app_flags('0')
+
+    # Load data
+    print('------------------load word2vec begin-------------------')
+    w2v = data_loader.load_w2v(word2vec_path)
+    print('------------------load word2vec end---------------------')
+    data = data_loader.read_datasets(w2v, training_data_path, test_data_path, test=True)
+    flags.set_data_flags(data)
+
+    test(data, FLAGS)
+
+
 if __name__ == '__main__':
-    test()
+    main()

@@ -36,7 +36,7 @@ def eval_seq_scores(y_true, y_pred):
     return scores
 
 
-def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
+def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False):
     """ Evaluates the model on the validation set
         Args:
             capsnet: CapsNet model
@@ -59,7 +59,8 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
     intents_dict = val_data['intents_dict']
 
     # Define TensorBoard writer
-    writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
+    if log:
+        writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
 
     total_intent_pred = []
     total_slots_pred = []
@@ -86,9 +87,10 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold):
                        capsnet.keep_prob: 1.0})
 
         # Add TensorBoard summaries to FileWriter
-        writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
-        writer.add_summary(margin_loss_summary, epoch * test_batch + i)
-        writer.add_summary(loss_summary, epoch * test_batch + i)
+        if log:
+            writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
+            writer.add_summary(margin_loss_summary, epoch * test_batch + i)
+            writer.add_summary(loss_summary, epoch * test_batch + i)
 
         # Modify prediction vectors dimensions to prepare for argmax
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
@@ -155,7 +157,7 @@ def assign_pretrained_word_embedding(sess, embedding, capsnet):
     print('using pre-trained word emebedding.ended...')
 
 
-def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_score):
+def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_score, log=False):
     """ Trains the model for one cross-validation fold
         Args:
             train_data: training data dictionary
@@ -206,7 +208,8 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
             best_f_score_intent_fold = intent_f_score
             best_f_score_slot_fold = slot_f_score
 
-        train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-fold' + str(fold), sess.graph)
+        if log:
+            train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-fold' + str(fold), sess.graph)
 
         # Training cycle
         train_sample_num = x_train.shape[0]
@@ -231,13 +234,14 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
                                                      capsnet.sentences_length: batch_sentences_len,
                                                      capsnet.keep_prob: FLAGS.keep_prob})
 
-                train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
-                train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
-                train_writer.add_summary(loss_summary, batch_num * epoch + batch)
+                if log:
+                    train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
+                    train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
+                    train_writer.add_summary(loss_summary, batch_num * epoch + batch)
 
             print('------------------epoch : ', epoch, ' Loss: ', loss, '----------------------')
             intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
-                                                               sess, epoch=epoch + 1, fold=fold)
+                                                               sess, epoch=epoch + 1, fold=fold, log=log)
             f_score_mean = (intent_f_score + slot_f_score) / 2
             if f_score_mean > best_f_score:
                 # best score overall -> save model
@@ -261,12 +265,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
     return best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold
 
 
-def main():
-    # Define the flags
-    FLAGS = flags.define_app_flags()
-
-    # Load data
-    data = data_loader.read_datasets()
+def train(data, FLAGS, log=False):
     x_tr = data['x_tr']
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
@@ -276,8 +275,6 @@ def main():
     one_hot_slots_tr = data['encoded_slots_tr']
 
     embedding = data['embedding']
-
-    flags.set_data_flags(data)
 
     # k-fold cross-validation
     intent_scores = 0
@@ -319,7 +316,7 @@ def main():
 
         # Train on split
         best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold = train_cross_validation(
-            train_data, val_data, embedding, FLAGS, fold, best_f_score)
+            train_data, val_data, embedding, FLAGS, fold, best_f_score, log)
 
         fold += 1
 
@@ -335,6 +332,26 @@ def main():
     print('Mean intent F1 score %lf' % mean_intent_score)
     print('Mean slot F1 score %lf' % mean_slot_score)
     print('Mean F1 score %lf' % mean_score)
+
+
+def main():
+    word2vec_path = '../../romanian_word_vecs/cc.ro.300.vec'
+
+    training_data_path = '../data-capsnets/diacritics/scenario0/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario0/test.txt'
+
+    # Define the flags
+    FLAGS = flags.define_app_flags('s0')
+
+    # Load data
+    print('------------------load word2vec begin-------------------')
+    w2v = data_loader.load_w2v(word2vec_path)
+    print('------------------load word2vec end---------------------')
+    data = data_loader.read_datasets(w2v, training_data_path, test_data_path)
+
+    flags.set_data_flags(data)
+
+    train(data, FLAGS)
 
 
 if __name__ == '__main__':

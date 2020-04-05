@@ -1,7 +1,7 @@
 import tensorflow as tf
 
 
-def define_app_flags():
+def define_app_flags(scenario_num):
     """ Define the TensorFlow application-wide flags
         Returns:
             FLAGS: TensorFlow flags
@@ -11,7 +11,7 @@ def define_app_flags():
     tf.app.flags.DEFINE_boolean('save_model', False, 'save model to disk')
     tf.app.flags.DEFINE_string('summaries_dir', './logs', 'tensorboard summaries')
     tf.app.flags.DEFINE_string('ckpt_dir', './saved_models/', 'check point dir')
-    tf.app.flags.DEFINE_string('scenario_num', '0', 'Scenario number')
+    tf.app.flags.DEFINE_string('scenario_num', scenario_num, 'Scenario number')
     tf.app.flags.DEFINE_string('errors_dir', './errors/', 'Errors dir')
 
     return FLAGS
