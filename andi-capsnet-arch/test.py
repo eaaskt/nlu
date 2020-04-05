@@ -222,7 +222,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                 incorrect_intents[t].append((' '.join(x_text_te[i]), p))
             i += 1
 
-        with open(os.path.join(errors_dir, 'errors.txt'), 'w') as f:
+        with open(os.path.join(errors_dir, 'errors.txt'), 'w', encoding='utf-8') as f:
             f.write('INTENT ERRORS\n')
             for k, v in incorrect_intents.items():
                 f.write(k + '\n')

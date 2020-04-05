@@ -3,8 +3,9 @@ import util
 from gensim.models.keyedvectors import KeyedVectors
 
 word2vec_path = '../data-capsnets/word-vec/cc.ro.300.vec'
-training_data_path = '../data-capsnets/scenario0/train.txt'
-test_data_path = '../data-capsnets/scenario0/test.txt'
+
+training_data_path = '../data-capsnets/diacritics/scenario2/train.txt'
+test_data_path = '../data-capsnets/diacritics/scenario2/test.txt'
 
 
 def load_w2v(file_name):
@@ -51,7 +52,7 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
 
     input_x_text = []
 
-    for line in open(file_path):
+    for line in open(file_path, encoding='utf-8'):
         arr = line.strip().split('\t')
         intent = arr[0]
         slots = arr[1].split(' ')
@@ -79,6 +80,8 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
 
                 if load_text:
                     x_text.append(w)
+            else:
+                print("Word {} not in W2V vocabulary!".format(w))
 
         sentence_length = len(x_vectors)
         if sentence_length <= 1:

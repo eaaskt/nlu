@@ -30,7 +30,7 @@ def convert(input_path, output_path, shuffle=False):
         random.shuffle(output)
     intents = set()
     all_slots = set()
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         for intent, text, slots in output:
             f.write(intent)
             f.write('\t')
