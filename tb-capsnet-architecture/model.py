@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 
 
-class capsnet():
+class Capsnet:
     """
         Using bidirectional LSTM to learn sentence embedding
         for users' questions

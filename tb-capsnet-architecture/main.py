@@ -2,8 +2,8 @@ import math
 import os
 from random import *
 
-import data_loader
-import model
+from .data_loader import *
+from .model import Capsnet
 import numpy as np
 import tensorflow as tf
 from seqeval.metrics import accuracy_score
@@ -73,7 +73,7 @@ def eval_seq_scores(y_true, y_pred):
     return scores
 
 
-def evaluate_test(capsnet, data, FLAGS, sess):
+def evaluate_test(capsnet, data, flags, sess):
     x_te = data['x_te']
     sentences_length_te = data['sentences_len_te']
     y_intents_te = data['y_intents_te']
@@ -85,7 +85,7 @@ def evaluate_test(capsnet, data, FLAGS, sess):
     total_slots_pred = []
 
     num_samples = len(x_te)
-    batch_size = FLAGS.batch_size
+    batch_size = flags.batch_size
     test_batch = int(math.ceil(num_samples / float(batch_size)))
     for i in range(test_batch):
         begin_index = i * batch_size
@@ -240,7 +240,7 @@ def train(train_data, test_data, embedding, FLAGS):
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
-        capsnet = model.capsnet(FLAGS)
+        capsnet = Capsnet(FLAGS)
 
         print('Initializing Variables')
         sess.run(tf.global_variables_initializer())
@@ -314,7 +314,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
-        capsnet = model.capsnet(FLAGS)
+        capsnet = Capsnet(FLAGS)
 
         print('Initializing Variables')
         sess.run(tf.global_variables_initializer())
@@ -385,7 +385,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
 
 def main():
     # load data
-    data = data_loader.read_datasets()
+    data = read_datasets()
     x_tr = data['x_tr']
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
@@ -491,7 +491,7 @@ def main():
         config = tf.ConfigProto()
         with tf.Session(config=config) as sess:
             # Instantiate Model
-            capsnet = model.capsnet(FLAGS)
+            capsnet = Capsnet(FLAGS)
             if os.path.exists(FLAGS.ckpt_dir):
                 print("Restoring Variables from Checkpoint for testing")
                 saver = tf.train.Saver()
