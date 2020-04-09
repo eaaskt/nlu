@@ -28,7 +28,7 @@ def set_data_flags(data):
     slots_number = len(data['slots_dict'])
     hidden_size = 64
 
-    tf.app.flags.DEFINE_float('keep_prob', 0.8, 'embedding dropout keep rate for training')
+    tf.app.flags.DEFINE_float('keep_prob', 1, 'embedding dropout keep rate for training')
     tf.app.flags.DEFINE_integer('hidden_size', hidden_size, 'embedding vector size')
     tf.app.flags.DEFINE_integer('batch_size', 32, 'batch size')
     tf.app.flags.DEFINE_integer('num_epochs', 20, 'num of epochs')
