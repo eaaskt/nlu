@@ -1,0 +1,530 @@
+INTENT ERRORS
+aprindeLumina
+Buna Pepper poti sa pornesti becul in camera de zi 0 0 0 -> pornesteTV
+Buna Pepper as vrea sa pornesti becurile in sufragerie 0 0 0 0 -> stingeLumina
+Buna Pepper poti sa pornesti becul in sufragerie 0 0 0 0 0 -> stingeLumina
+Buna Pepper poti sa pornesti becurile in curte 0 0 0 0 0 -> stingeLumina
+poti sa pornesti becul in camera de zi 0 0 0 0 0 -> stingeLumina
+Buna Pepper poti sa pornesti becul in camara 0 0 0 0 0 -> stingeLumina
+porneste becul in bucatarie 0 0 0 0 0 0 0 0 0 -> stingeLumina
+poti sa pornesti becurile in camera de zi 0 0 0 0 0 -> stingeLumina
+Buna Pepper poti sa pornesti becurile in dormitor 0 0 0 0 0 -> stingeLumina
+poti sa pornesti becul in baie 0 0 0 0 0 0 0 -> stingeLumina
+as vrea sa pornesti becurile in curte 0 0 0 0 0 0 -> stingeLumina
+poti sa pornesti becurile in pivnita 0 0 0 0 0 0 0 -> stingeLumina
+Buna Pepper as vrea sa pornesti becul in bucatarie 0 0 0 0 -> stingeLumina
+poti sa pornesti becurile in camara 0 0 0 0 0 0 0 -> stingeLumina
+
+stingeLumina
+Buna Pepper poti inchide becurile in pivnita 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper inchide becurile in camera de zi 0 0 0 0 0 -> aprindeLumina
+Buna Pepper imi poti opri becul in dormitor 0 0 0 0 0 -> aprindeLumina
+poti inchide becurile in dormitor 0 0 0 0 0 0 0 0 -> aprindeLumina
+imi poti opri becul in camara 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper opreste becul in bucatarie 0 0 0 0 0 0 0 -> aprindeLumina
+opreste becul in camera de zi 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper as vrea sa opresti becul in pivnita 0 0 0 0 -> aprindeLumina
+inchide becurile in baie 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper as vrea sa opresti becurile in bucatarie 0 0 0 0 -> aprindeLumina
+Buna Pepper poti inchide becul in pivnita 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper opreste becul in curte 0 0 0 0 0 0 0 -> aprindeLumina
+imi poti opri becul in sufragerie 0 0 0 0 0 0 0 -> aprindeLumina
+inchide becurile in camera de zi 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper opreste becurile in dormitor 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper imi poti opri becurile in camara 0 0 0 0 0 -> aprindeLumina
+Buna Pepper opreste becul in pivnita 0 0 0 0 0 0 0 -> aprindeLumina
+inchide becul in baie 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+imi poti opri becurile in camera de zi 0 0 0 0 0 -> aprindeLumina
+poti inchide becul in curte 0 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper opreste becurile in camera de zi 0 0 0 0 0 -> aprindeLumina
+Buna Pepper inchide becul in bucatarie 0 0 0 0 0 0 0 -> aprindeLumina
+inchide becurile in curte 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper inchide becurile in sufragerie 0 0 0 0 0 0 0 -> aprindeLumina
+imi poti opri becul in curte 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper opreste becul in sufragerie 0 0 0 0 0 0 0 -> aprindeLumina
+Buna Pepper opreste becul in camera de zi 0 0 0 0 0 -> aprindeLumina
+inchide becul in bucatarie 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+poti inchide becurile in baie 0 0 0 0 0 0 0 0 -> aprindeLumina
+
+scadeIntensitateLumina
+Pepper fa mai mica intensitatea becurilor in curte 0 0 0 0 0 -> cresteIntensitateLumina
+Pepper poti sa reduci intensitatea becurilor in dormitor la 2 0 0 0 -> cresteIntensitateLumina
+fa mai mica intensitatea becurilor in dormitor la 4 0 0 0 0 -> cresteIntensitateLumina
+Salut as vrea sa reduci intensitatea becurilor in camera de zi la 1 -> cresteIntensitateLumina
+Pepper as vrea sa reduci intensitatea becurilor in camara la 3 0 0 -> cresteIntensitateLumina
+Pepper diminueaza intensitatea becurilor in camera de zi 0 0 0 0 0 -> cresteIntensitateLumina
+Pepper as vrea sa reduci intensitatea becurilor in camara la 4 0 0 -> cresteIntensitateLumina
+Pepper fa mai mica intensitatea becurilor in camera de zi la 2 0 -> cresteIntensitateLumina
+Salut diminueaza intensitatea becurilor in camara la jumatate 0 0 0 0 0 -> cresteIntensitateLumina
+Salut fa mai mica intensitatea becurilor in baie la 4 0 0 0 -> cresteIntensitateLumina
+fa mai mica intensitatea becurilor in curte la jumatate 0 0 0 0 -> cresteIntensitateLumina
+as vrea sa reduci intensitatea becurilor in camara la jumatate 0 0 0 -> cresteIntensitateLumina
+as vrea sa reduci intensitatea becurilor in camera de zi la 3 0 -> cresteIntensitateLumina
+Pepper diminueaza intensitatea becurilor in camera de zi la 1 0 0 0 -> cresteIntensitateLumina
+fa mai mica intensitatea becurilor in bucatarie la minim 0 0 0 0 -> cresteIntensitateLumina
+Pepper poti sa reduci intensitatea becurilor in camera de zi la 2 0 -> cresteIntensitateLumina
+fa mai mica intensitatea becurilor in curte la 1 0 0 0 0 -> cresteIntensitateLumina
+Salut as vrea sa reduci intensitatea becurilor in camera de zi la minim -> cresteIntensitateLumina
+Salut fa mai mica intensitatea becurilor in pivnita la 2 0 0 0 -> cresteIntensitateLumina
+as vrea sa reduci intensitatea becurilor in camera de zi la 2 0 -> cresteIntensitateLumina
+Pepper diminueaza intensitatea becurilor in sufragerie la 4 0 0 0 0 0 -> cresteIntensitateLumina
+Pepper as vrea sa reduci intensitatea becurilor in camara la 2 0 0 -> cresteIntensitateLumina
+Pepper poti sa reduci intensitatea becurilor in camera de zi la minim 0 -> cresteIntensitateLumina
+diminueaza intensitatea becurilor in bucatarie la sfert 0 0 0 0 0 0 -> cresteIntensitateLumina
+Salut poti sa reduci intensitatea becurilor in camera de zi la 3 0 -> cresteIntensitateLumina
+Salut poti sa reduci intensitatea becurilor in sufragerie la jumatate 0 0 0 -> cresteIntensitateLumina
+
+cresteIntensitateLumina
+Salut imbunatateste lumina in pivnita 0 0 0 0 0 0 0 0 -> aprindeLumina
+Salut fa mai mare lumina in baie 0 0 0 0 0 0 -> aprindeLumina
+Salut creste lumina in camera de zi 0 0 0 0 0 0 -> aprindeLumina
+Pepper imbunatateste lumina in dormitor 0 0 0 0 0 0 0 0 -> aprindeLumina
+Pepper fa mai mare lumina in dormitor 0 0 0 0 0 0 -> aprindeLumina
+
+seteazaTemperatura
+Hey ajusteaza temperatura aproximativ la douazeci si sapte de grade in baie 0 -> scadeTemperatura
+Hey schimba aproximativ pe saptesprezece grade in bucatarie 0 0 0 0 0 -> scadeTemperatura
+ajusteaza aproximativ la nouasprezece grade in sufragerie 0 0 0 0 0 0 -> scadeTemperatura
+Hey ajusteaza aproximativ la douazeci si sase de grade peste tot 0 0 -> scadeTemperatura
+schimba aproximativ la saptesprezece grade in sufragerie 0 0 0 0 0 0 -> scadeTemperatura
+Hey ajusteaza cam la douazeci si patru de grade in baie 0 0 -> scadeTemperatura
+Hey modifica aproximativ la douazeci de grade in baie 0 0 0 0 -> scadeTemperatura
+Hey schimba cam la douazeci si unu de grade in tot apartamentul 0 -> scadeTemperatura
+Hey schimba temperatura aproximativ pe nouasprezece grade in baie 0 0 0 0 -> scadeTemperatura
+ajusteaza temperatura aproximativ la optsprezece grade in dormitor 0 0 0 0 0 -> scadeTemperatura
+Hey ajusteaza temperatura aproximativ pe douazeci de grade in dormitor 0 0 0 -> scadeTemperatura
+Hey modifica aproximativ la douazeci si sapte de grade in toata casa 0 -> scadeTemperatura
+Hey ajusteaza aproximativ pe saptesprezece grade in baie 0 0 0 0 0 -> scadeTemperatura
+schimba temperatura aproximativ la douazeci si patru de grade in toata casa 0 -> cresteTemperatura
+schimba temperatura aproximativ la saptesprezece grade in baie 0 0 0 0 0 -> scadeTemperatura
+modifica temperatura aproximativ pe douazeci si unu de grade in sufragerie 0 0 -> cresteTemperatura
+Hey schimba aproximativ pe nouasprezece grade in toata casa 0 0 0 0 -> scadeTemperatura
+Hey modifica temperatura cam la douazeci si cinci de grade in bucatarie 0 -> scadeTemperatura
+schimba temperatura aproape de nouasprezece grade peste tot 0 0 0 0 0 -> cresteTemperatura
+Hey modifica aproximativ la optsprezece grade in bucatarie 0 0 0 0 0 -> scadeTemperatura
+Hey schimba temperatura aproximativ la douazeci si cinci de grade in sufragerie 0 -> scadeTemperatura
+schimba aproximativ la douazeci si trei de grade in sufragerie 0 0 0 -> scadeTemperatura
+Hey ajusteaza temperatura aproximativ la douazeci si trei de grade in toata casa -> scadeTemperatura
+
+cresteTemperatura
+Salut creste temperatura la douazeci si cinci de grade peste tot 0 0 -> seteazaTemperatura
+Salut mareste temperatura la optsprezece grade in sufragerie 0 0 0 0 0 -> seteazaTemperatura
+Pepper creste temperatura la douazeci si doua de grade in bucatarie 0 0 -> cresteIntensitateLumina
+Salut poti mari la douazeci si sase de grade in sufragerie 0 0 -> seteazaTemperatura
+poti mari temperatura la saptesprezece grade in bucatarie 0 0 0 0 0 -> seteazaTemperatura
+Pepper mareste la douazeci si patru de grade in toata casa 0 0 -> seteazaTemperatura
+Salut poti mari temperatura pe douazeci si trei de grade peste tot 0 -> seteazaTemperatura
+Pepper fa mai mare pe douazeci si unu de grade peste tot 0 -> seteazaTemperatura
+poti mari temperatura la douazeci si trei de grade peste tot 0 0 -> seteazaTemperatura
+fa mai mare temperatura la douazeci si patru de grade peste tot 0 -> seteazaTemperatura
+fa mai mare temperatura pe douazeci si doua de grade in baie 0 -> cresteIntensitateLumina
+Pepper fa mai mare la saptesprezece grade in tot apartamentul 0 0 0 -> opresteTV
+Pepper fa mai mare la douazeci si sapte de grade peste tot 0 -> cresteIntensitateLumina
+Pepper poti mari la nouasprezece grade in tot apartamentul 0 0 0 0 -> seteazaTemperatura
+fa mai mare temperatura la douazeci de grade in sufragerie 0 0 0 -> cresteIntensitateLumina
+Salut creste la douazeci si unu de grade in dormitor 0 0 0 -> seteazaTemperatura
+Salut mareste temperatura pe douazeci si doua de grade in dormitor 0 0 -> seteazaTemperatura
+Pepper creste temperatura la douazeci si cinci de grade in tot apartamentul 0 -> seteazaTemperatura
+Pepper mareste temperatura pe douazeci si cinci de grade in dormitor 0 0 -> seteazaTemperatura
+
+scadeTemperatura
+fa mai mica la douazeci si doua de grade in bucatarie 0 0 -> cresteIntensitateLumina
+fa mai mica pe douazeci de grade in toata casa 0 0 0 -> opresteTV
+Hey fa mai mica temperatura la douazeci de grade in sufragerie 0 0 -> cresteIntensitateLumina
+Hey fa mai mica temperatura pe douazeci si unu de grade in baie -> cresteIntensitateLumina
+micsoreaza temperatura pe douazeci si doua de grade in tot apartamentul 0 0 -> seteazaTemperatura
+Hey du in jos cu trei grade in tot apartamentul 0 0 0 -> seteazaTemperatura
+Hey fa mai mica cu un grad in dormitor 0 0 0 0 -> schimbaIntensitateMuzica
+redu temperatura pe douazeci si sapte de grade in baie 0 0 0 -> seteazaTemperatura
+du in jos la douazeci si sase de grade in sufragerie 0 0 -> seteazaTemperatura
+redu temperatura la douazeci si sase de grade in baie 0 0 0 -> seteazaTemperatura
+Hey redu temperatura pe douazeci si sase de grade in baie 0 0 -> seteazaTemperatura
+du in jos temperatura pe douazeci si sase de grade in sufragerie 0 -> seteazaTemperatura
+Hey fa mai mica la douazeci si cinci de grade in baie 0 -> schimbaIntensitateMuzica
+Hey redu temperatura pe douazeci si unu de grade in sufragerie 0 0 -> seteazaTemperatura
+redu temperatura pe douazeci si sapte de grade in tot apartamentul 0 0 -> seteazaTemperatura
+du in jos temperatura cu un grad in baie 0 0 0 0 -> seteazaTemperatura
+fa mai mica temperatura cu un grad in sufragerie 0 0 0 0 -> opresteTV
+fa mai mica temperatura pe douazeci si cinci de grade in bucatarie 0 -> seteazaTemperatura
+Hey du in jos temperatura pe douazeci si doua de grade in toata -> seteazaTemperatura
+fa mai mica temperatura la douazeci si unu de grade in tot apartamentul -> seteazaTemperatura
+Hey redu la douazeci si cinci de grade in toata casa 0 0 -> seteazaTemperatura
+Hey micsoreaza temperatura la douazeci si sase de grade in baie 0 0 -> seteazaTemperatura
+
+opresteMuzica
+as vrea sa stingi melodia 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus poti stinge concertul 0 0 0 0 0 0 0 0 0 -> stingeLumina
+te rog as vrea sa inchizi concertul 0 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog as vrea sa inchizi concertul 0 0 0 0 0 -> schimbaCanalTV
+Servus stinge melodia 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus as vrea sa inchizi piesa 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog as vrea sa stingi concertul 0 0 0 0 0 -> stingeLumina
+Servus poti sa stingi melodia 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus te rog as vrea sa inchizi piesa 0 0 0 0 0 -> schimbaCanalTV
+te rog poti sa stingi simfonia 0 0 0 0 0 0 0 -> stingeLumina
+stinge melodia 0 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus as vrea sa stingi melodia 0 0 0 0 0 0 0 -> stingeLumina
+te rog poti sa stingi melodia 0 0 0 0 0 0 0 -> stingeLumina
+poti stinge melodia 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+stinge concertul 0 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+te rog poti opri piesa 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+te rog as vrea sa stingi melodia 0 0 0 0 0 0 -> cresteTemperatura
+te rog poti stinge concertul 0 0 0 0 0 0 0 0 -> stingeLumina
+
+pornesteTV
+da drumul la TV pe Mezzo 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus poti sa aprinzi TV canal HBO 0 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog ai putea aprinde TV canal HBO 0 0 0 0 -> aprindeLumina
+Servus te rog da drumul la TV pe Cinemax 0 0 0 0 -> schimbaCanalTV
+poti sa aprinzi TV pe canal Mezzo 0 0 0 0 0 0 -> schimbaCanalTV
+Servus poti sa aprinzi TV ProTV 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus aprinde TV Cinemax 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+te rog deschide TV pe ProTV 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog poti da drumul la TV pe TVR1 0 0 0 -> schimbaCanalTV
+Servus ai putea aprinde TV TVR1 0 0 0 0 0 0 0 -> aprindeLumina
+ai putea aprinde TV pe TVR1 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus poti sa aprinzi TV pe Mezzo 0 0 0 0 0 0 -> schimbaCanalTV
+te rog poti da drumul la TV pe canal TVR1 0 0 0 -> schimbaCanalTV
+da drumul la TV Mezzo 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+te rog poti sa aprinzi TV pe canal Cinemax 0 0 0 0 -> schimbaCanalTV
+deschide TV HBO 0 0 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+aprinde TV pe Mezzo 0 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+ai putea aprinde TV pe HBO 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog ai putea aprinde TV pe ProTV 0 0 0 0 -> schimbaCanalTV
+Servus aprinde TV pe Cinemax 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus poti da drumul la TV pe canal Mezzo 0 0 0 0 -> schimbaCanalTV
+poti sa aprinzi TV pe canal Cinemax 0 0 0 0 0 0 -> schimbaCanalTV
+te rog poti da drumul la TV pe Cinemax 0 0 0 0 -> schimbaCanalTV
+Servus te rog da drumul la TV pe Mezzo 0 0 0 0 -> schimbaCanalTV
+Servus te rog ai putea deschide TV canal TVR1 0 0 0 0 -> schimbaCanalTV
+Servus te rog poti da drumul la TV HBO 0 0 0 0 -> schimbaCanalTV
+Servus te rog ai putea aprinde TV canal Mezzo 0 0 0 0 -> aprindeLumina
+te rog deschide TV pe TVR1 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog poti sa aprinzi TV canal Cinemax 0 0 0 0 -> schimbaCanalTV
+Servus deschide TV canal ProTV 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+
+opresteTV
+Servus poti stinge emisiunea 0 0 0 0 0 0 0 0 0 -> stingeLumina
+te rog stinge emisiunea 0 0 0 0 0 0 0 0 0 -> stingeLumina
+te rog poti suspenda emisiunea 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus stinge filmul 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus poti stinge filmul 0 0 0 0 0 0 0 0 0 -> stingeLumina
+poti stinge emisiunea 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+poti sa stingi emisiunea 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus te rog stinge filmul 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus poti suspenda emisiunea 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+Servus te rog suspenda TV 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus poti suspenda filmul 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+te rog poti suspenda filmul 0 0 0 0 0 0 0 0 -> aprindeLumina
+Servus te rog suspenda emisiunea 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+te rog poti stinge filmul 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus te rog poti suspenda filmul 0 0 0 0 0 0 0 -> aprindeLumina
+te rog stinge filmul 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus te rog poti sa stingi emisiunea 0 0 0 0 0 0 -> schimbaCanalTV
+Servus suspenda filmul 0 0 0 0 0 0 0 0 0 0 -> aprindeLumina
+te rog poti stinge TV 0 0 0 0 0 0 0 0 -> stingeLumina
+te rog suspenda TV 0 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog suspenda filmul 0 0 0 0 0 0 0 0 -> aprindeLumina
+Servus te rog poti suspenda emisiunea 0 0 0 0 0 0 0 -> schimbaCanalTV
+poti stinge filmul 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+stinge filmul 0 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus poti sa stingi TV 0 0 0 0 0 0 0 0 -> stingeLumina
+Servus te rog stinge emisiunea 0 0 0 0 0 0 0 0 -> stingeLumina
+
+SLOT ERRORS
+poti sa pornesti becurile in pivnita 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+imi poti opri becul in sufragerie 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper fa mai mica intensitatea becurilor in curte 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O']
+
+fa mai mica intensitatea becurilor in dormitor la 4 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+
+fa mai mica intensitatea becurilor in curte la jumatate 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+
+fa mai mica intensitatea becurilor in bucatarie la minim 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+
+fa mai mica intensitatea becurilor in curte la 1 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+
+Hey ajusteaza temperatura aproximativ la douazeci si sapte de grade in baie 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+Hey ajusteaza aproximativ la douazeci si sase de grade peste tot 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+
+Hey modifica aproape de douazeci si unu de grade in tot apartamentul 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+Hey ajusteaza cam la douazeci si patru de grade in baie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+schimba temperatura aproape de douazeci si sase de grade in sufragerie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey modifica aproximativ la douazeci de grade in baie 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey schimba cam la douazeci si unu de grade in tot apartamentul 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+Hey ajusteaza temperatura aproximativ pe douazeci de grade in dormitor 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Hey modifica aproximativ la douazeci si sapte de grade in toata casa 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+schimba temperatura aproximativ la douazeci si patru de grade in toata casa 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+modifica temperatura aproximativ pe douazeci si unu de grade in sufragerie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey modifica temperatura cam la douazeci si cinci de grade in bucatarie 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+schimba temperatura aproape de douazeci si cinci de grade in dormitor 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey schimba temperatura aproximativ la douazeci si cinci de grade in sufragerie 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+schimba aproape de douazeci si trei de grade in baie 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+schimba aproximativ la douazeci si trei de grade in sufragerie 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+modifica cam la douazeci si patru de grade in tot apartamentul 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+Hey ajusteaza temperatura aproximativ la douazeci si trei de grade in toata casa
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+modifica cam la douazeci si unu de grade in tot apartamentul 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+Salut creste temperatura la douazeci si cinci de grade peste tot 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+
+Salut creste cu un grad in tot apartamentul 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+Pepper creste temperatura la douazeci si doua de grade in bucatarie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Salut poti mari la douazeci si sase de grade in sufragerie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Pepper mareste la douazeci si patru de grade in toata casa 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+Pepper creste la douazeci de grade peste tot 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+Salut creste temperatura pe douazeci si sapte de grade in dormitor 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Salut poti mari temperatura pe douazeci si trei de grade peste tot 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'B-loc', 'I-loc', 'O']
+
+creste la optsprezece grade in tot apartamentul 0 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper fa mai mare pe douazeci si unu de grade peste tot 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'B-loc', 'I-loc', 'O']
+
+poti mari temperatura la douazeci si trei de grade peste tot 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+
+fa mai mare temperatura la douazeci si patru de grade peste tot 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'B-loc', 'I-loc', 'O']
+
+fa mai mare temperatura pe douazeci si doua de grade in baie 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+Pepper fa mai mare la douazeci si sapte de grade peste tot 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'B-loc', 'B-nivel', 'O']
+
+fa mai mare temperatura la douazeci de grade in sufragerie 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Salut creste la douazeci si unu de grade in dormitor 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Salut mareste temperatura pe douazeci si doua de grade in dormitor 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Pepper creste temperatura la douazeci si cinci de grade in tot apartamentul 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+creste temperatura cu un grad in dormitor 0 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper mareste temperatura pe douazeci si cinci de grade in dormitor 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+fa mai mica la douazeci si doua de grade in bucatarie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+fa mai mica pe douazeci de grade in toata casa 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+Hey micsoreaza la optsprezece grade in toata casa 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+Hey fa mai mica temperatura la douazeci de grade in sufragerie 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey fa mai mica temperatura pe douazeci si unu de grade in baie
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel']
+
+micsoreaza temperatura pe douazeci si doua de grade in tot apartamentul 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+redu temperatura pe douazeci si sapte de grade in baie 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+du in jos la douazeci si sase de grade in sufragerie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+redu temperatura la douazeci si sase de grade in baie 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Hey redu temperatura pe douazeci si sase de grade in baie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+du in jos temperatura pe douazeci si sase de grade in sufragerie 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+Hey micsoreaza la douazeci de grade in baie 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Hey fa mai mica la douazeci si cinci de grade in baie 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+Hey redu temperatura pe douazeci si unu de grade in sufragerie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+redu temperatura pe douazeci si sapte de grade in tot apartamentul 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+du in jos temperatura cu un grad in baie 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+fa mai mica temperatura pe douazeci si cinci de grade in bucatarie 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'O']
+
+Hey du in jos temperatura pe douazeci si doua de grade in toata
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel']
+
+redu temperatura pe douazeci de grade in dormitor 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+fa mai mica temperatura la douazeci si unu de grade in tot apartamentul
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'I-loc', 'B-nivel']
+
+redu pe douazeci si doua de grade in bucatarie 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey redu la douazeci si cinci de grade in toata casa 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+micsoreaza temperatura cu un grad in sufragerie 0 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Hey micsoreaza temperatura la douazeci si sase de grade in baie 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+deschide TV HBO 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog poti da drumul la TV HBO 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'B-canal', 'O', 'O', 'O', 'O']
+
+Servus te rog poti sa stingi emisiunea 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog poti suspenda emisiunea 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
