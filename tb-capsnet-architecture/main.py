@@ -2,8 +2,8 @@ import math
 import os
 from random import *
 
-from .data_loader import *
-from .model import Capsnet
+from data_loader import read_datasets
+from model import Capsnet
 import numpy as np
 import tensorflow as tf
 from seqeval.metrics import accuracy_score

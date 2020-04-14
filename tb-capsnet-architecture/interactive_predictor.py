@@ -1,6 +1,5 @@
-import tensorflow as tf
-from .data_loader import *
-from .tool import *
+from data_loader import *
+from tool import *
 
 model_dir = './saved_models/'
 

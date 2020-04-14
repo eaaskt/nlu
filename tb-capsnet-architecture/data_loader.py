@@ -2,10 +2,10 @@
 """
 
 import numpy as np
-import tool
+from tool import norm_matrix
 from gensim.models.keyedvectors import KeyedVectors
 
-word2vec_path = '../data-capsnets/word-vec/wiki.ro.vec'
+word2vec_path = '../data-capsnets/word-vec/cc.ro.300.vec'
 training_data_path = '../data-capsnets/scenario0/train.txt'
 test_data_path = '../data-capsnets/scenario0/test.txt'
 
@@ -134,7 +134,7 @@ def read_datasets():
 
     # load normalized word embeddings
     embedding = w2v.vectors
-    norm_embedding = tool.norm_matrix(embedding)
+    norm_embedding = norm_matrix(embedding)
     data['embedding'] = norm_embedding
 
     # trans data into embedding vectors
