@@ -3,7 +3,7 @@ import os
 from random import *
 
 import data_loader
-import model
+import model_s2i
 import flags
 import util
 import numpy as np
@@ -262,7 +262,7 @@ def test(data, FLAGS):
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
-        capsnet = model.CapsNet(FLAGS)
+        capsnet = model_s2i.CapsNet(FLAGS)
         if FLAGS.scenario_num != '':
             ckpt_dir = FLAGS.ckpt_dir + 'scenario' + FLAGS.scenario_num + '/'
         else:

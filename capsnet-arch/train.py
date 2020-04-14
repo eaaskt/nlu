@@ -3,7 +3,7 @@ import os
 from random import *
 
 import data_loader
-import model
+import model_s2i
 import util
 import flags
 import numpy as np
@@ -189,7 +189,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
-        capsnet = model.CapsNet(FLAGS)
+        capsnet = model_s2i.CapsNet(FLAGS)
 
         print('Initializing Variables')
         sess.run(tf.global_variables_initializer())

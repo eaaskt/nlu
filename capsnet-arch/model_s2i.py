@@ -3,7 +3,7 @@ import numpy as np
 import util
 
 
-class CapsNet:
+class CapsNetS2I:
     """
         CapsNetS2I model: capsule neural network model that performs joint intent detection and slot filling
         4 types of capsules: WordCaps, SemanticCaps, SlotCaps, IntentCaps
