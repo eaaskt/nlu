@@ -1,7 +1,6 @@
 import json
 import argparse
 import random
-import re
 
 
 def convert_entry(itm):
