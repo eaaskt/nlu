@@ -1,3 +1,5 @@
+# Generating Antonym/Synonym Pairs from RWN, Counterfitting, RASA Pipeline.
+
 # Relations Generator - Parameters
 Relations generator runs can be parametrized from the ./parameters.cfg file.
 The paths section includes path relative to the project root where the input / output files of the run are stored.
