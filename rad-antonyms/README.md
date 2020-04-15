@@ -1,13 +1,13 @@
 # Generating Antonym/Synonym Pairs from RWN, Counterfitting, RASA Pipeline.
 
-# Relations Generator - Parameters
+## Relations Generator - Parameters
 Relations generator runs can be parametrized from the ./parameters.cfg file.
 The paths section includes path relative to the project root where the input / output files of the run are stored.
 
 The settings section includes what to be taken into account when generating pairs:
 The 'POS' parameter indicates pairs of what parts of speech should be included in the output pairs. As RWN is limited to 4 parts of speech, this parameter will be a subset of [noun, verb, adjective, adverb]. For example, if we set this parameter to [noun, verb], only nouns and verbs will be included in the generated pairs.
 
-#Counterfitting - Parameters
+## Counterfitting - Parameters
 
 Counterfitting runs can be parametrized from the ./parameters.cfg file. 
 
