@@ -30,7 +30,11 @@ class SettingConfig:
         if vocab_mode == 'all':
             vocab_path = self.config.get("paths", "VOCAB_PATH")
         elif vocab_mode == 'small':
-            vocab_path = self.config.get("paths", "DATASET_VOCAB_PATH")
+            diacritics = self.config.get("settings", "DIACRITICS")
+            if diacritics == 'True':
+                vocab_path = self.config.get("paths", "VOCAB_PATH_DATASET_DIAC")
+            else:
+                vocab_path = self.config.get("paths", "VOCAB_PATH_DATASET_NODIAC")
         else:
             print('Wrong value for parameter VOCABULARY in config. Exiting')
             return
