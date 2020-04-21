@@ -29,7 +29,7 @@ def convert(input_path, output_path, shuffle=False):
         random.shuffle(output)
     intents = set()
     all_slots = set()
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         for intent, text, slots in output:
             f.write(intent)
             f.write('\t')
@@ -48,8 +48,8 @@ def convert(input_path, output_path, shuffle=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-                description="Convert to format needed for CapsNets",
-                usage="format_converter.py <input_file> <output_file> [--shuffle]")
+                description='Convert to format needed for CapsNets',
+                usage='format_converter.py <input_file> <output_file> [--shuffle]')
     parser.add_argument('input_file', help='Input file')
     parser.add_argument('output_file', help='Output file')
     parser.add_argument('--shuffle', help='shuffles the dataset', action='store_true')

@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 
 
-class Capsnet:
+class CapsNetI2S:
     """
         Using bidirectional LSTM to learn sentence embedding
         for users' questions
@@ -21,7 +21,9 @@ class Capsnet:
         self.initializer = initializer
         self.intents_nr = FLAGS.intents_nr
         self.slots_nr = FLAGS.slots_nr
-        self.margin = FLAGS.margin
+        self.keep_prob = FLAGS.keep_prob
+        self.slot_routing_num = FLAGS.slot_routing_num
+        self.intent_routing_num = FLAGS.intent_routing_num
         self.keep_prob = FLAGS.keep_prob
         self.slot_routing_num = FLAGS.slot_routing_num
         self.intent_routing_num = FLAGS.intent_routing_num

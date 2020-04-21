@@ -103,7 +103,8 @@ def parse_vocabulary_from_file(file_path: str) -> list:
         # For each example, parse its text and return the list containing all the words in the sentence
         for example in common_examples:
             sentence = example['text']
-            vocab = vocab + re.sub('[' + string.punctuation + ']', '', sentence).split()
+            punctuation = string.punctuation.replace("-", "")
+            vocab = vocab + re.sub('[' + punctuation + ']', '', sentence).split()
         file.close()
     return vocab
 
