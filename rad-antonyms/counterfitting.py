@@ -69,7 +69,7 @@ class SettingConfig:
                 vocab.add(line.strip())
 
         # Load the word vectors
-        self.dimensions, self.vectors = tools.load_vectors(input_vectors_path, vocab)
+        dimensions, self.vectors = tools.load_vectors(input_vectors_path, vocab)
 
         # Return if vectors were not successfully loaded
         if not self.vectors:
@@ -77,6 +77,9 @@ class SettingConfig:
 
         self.output_vectors_path = self.config.get("paths", "CF_VEC_PATH")
         self.vocabulary = set(self.vectors.keys())
+
+        self.dimensions = f"{len(self.vocabulary)} {dimensions.split(' ')[1]}"
+        print(f"dimens: {self.dimensions}")
 
         # Load synonym and antonym pairs from the paths specified
         self.synonyms = load_multiple_constraints(synonym_paths)
