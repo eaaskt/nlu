@@ -6,6 +6,8 @@ from copy import deepcopy
 from datetime import datetime
 import tools
 
+import os.path
+
 
 class SettingConfig:
     """
@@ -39,9 +41,24 @@ class SettingConfig:
             print('Wrong value for parameter VOCABULARY in config. Exiting')
             return
 
-        # Read paths of the files containing synonym and antonym pairs from the config
-        synonyms_path = self.config.get("paths", "SYNONYMS_PATH")
-        antonyms_path = self.config.get("paths", "ANTONYMS_PATH")
+        synonym_paths = list()
+        antonym_paths = list()
+
+        # Read the root path of the constraints files
+        constraints_root_path = self.config.get("paths", "CONSTRAINTS_ROOT_PATH")
+
+        # Read the PoS variable
+        parts_of_speech = self.config.get("settings", "POS").replace("[", "").replace("]", "").replace(" ", "").split(
+            ",")
+
+        # Append antonyms and synonyms of each selected PoS from their respective folder
+        for part_of_speech in parts_of_speech:
+            ant_path = os.path.join(constraints_root_path, part_of_speech, "antonyms.txt")
+            print(ant_path)
+            antonym_paths.append(ant_path)
+            syn_path = os.path.join(constraints_root_path, part_of_speech, "synonyms.txt")
+            print(syn_path)
+            synonym_paths.append(syn_path)
 
         # Read and parse the mode (whether to include synonyms, antonyms or VSP pairs in the current run)
         mode = self.config.get("settings", "MODE").replace("[", "").replace("]", "").replace(" ", "").split(",")
@@ -61,13 +78,12 @@ class SettingConfig:
         self.output_vectors_path = self.config.get("paths", "CF_VEC_PATH")
         self.vocabulary = set(self.vectors.keys())
 
-        # Load synonym and antonym pairs from the path specified
-        self.synonyms = load_constraints(synonyms_path)
-        self.antonyms = load_constraints(antonyms_path)
+        # Load synonym and antonym pairs from the paths specified
+        self.synonyms = load_multiple_constraints(synonym_paths)
+        self.antonyms = load_multiple_constraints(antonym_paths)
         self.mode = mode
 
         # Read the hyperparameters of our run
-
         self.hyper_k1 = self.config.getfloat("hyperparameters", "hyper_k1")
         self.hyper_k2 = self.config.getfloat("hyperparameters", "hyper_k2")
         self.hyper_k3 = self.config.getfloat("hyperparameters", "hyper_k3")
@@ -76,6 +92,8 @@ class SettingConfig:
         self.delta = self.config.getfloat("hyperparameters", "delta")
         self.gamma = self.config.getfloat("hyperparameters", "gamma")
         self.rho = self.config.getfloat("hyperparameters", "rho")
+        print(
+            f"Initialized counterfitting settings. Vocab path: {vocab_path}, PoS paths: {parts_of_speech}, Mode: {self.mode}")
 
 
 def load_constraints(constraints_path: str) -> set:
@@ -86,6 +104,15 @@ def load_constraints(constraints_path: str) -> set:
             w0, w1 = line.replace("\n", "").split(" ")
             constraints.add((w0, w1))
             constraints.add((w1, w0))
+    constraints_file.close()
+    return constraints
+
+
+def load_multiple_constraints(constraint_paths: list) -> set:
+    constraints = set()
+    for constraint_path in constraint_paths:
+        current_constraints = load_constraints(constraint_path)
+        constraints = constraints + current_constraints
     return constraints
 
 
