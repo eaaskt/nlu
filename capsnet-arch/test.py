@@ -1,9 +1,8 @@
 import math
 import os
-from random import *
 
 import data_loader
-import model
+import model_s2i
 import flags
 import util
 import numpy as np
@@ -244,7 +243,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
     return f_score, scores['f1']
 
 
-def test(data, FLAGS):
+def test(model, data, FLAGS):
 
     # Testing
     test_data = dict()
@@ -262,7 +261,7 @@ def test(data, FLAGS):
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
-        capsnet = model.CapsNet(FLAGS)
+        capsnet = model(FLAGS)
         if FLAGS.scenario_num != '':
             ckpt_dir = FLAGS.ckpt_dir + 'scenario' + FLAGS.scenario_num + '/'
         else:
@@ -293,7 +292,7 @@ def main():
     data = data_loader.read_datasets(w2v, training_data_path, test_data_path, test=True)
     flags.set_data_flags(data)
 
-    test(data, FLAGS)
+    test(model_s2i.CapsNetS2I, data, FLAGS)
 
 
 if __name__ == '__main__':
