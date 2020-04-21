@@ -59,7 +59,6 @@ class SettingConfig:
             return
 
         self.output_vectors_path = self.config.get("paths", "CF_VEC_PATH")
-        self.diff_vectors_path = self.config.get("paths", "DIFF_VEC_PATH")
         self.vocabulary = set(self.vectors.keys())
 
         # Load synonym and antonym pairs from the path specified
@@ -272,14 +271,8 @@ def run_experiment(config_path):
         return
     enriched_vectors = counterfit(config)
 
-    # Store all the counterfit vectors
+    # Store all the counterfitting vectors
     tools.store_vectors(dimens=config.dimensions, destination_path=config.output_vectors_path, vectors=enriched_vectors)
-
-    # Compute and store only the different vectors
-    diff_vectors = tools.compute_dictionary_difference(config.vectors, enriched_vectors)
-    tools.store_vectors(dimens=config.dimensions, destination_path=config.diff_vectors_path, vectors=diff_vectors)
-
-    print(f"Finished counterfitting run @ {datetime.now()}")
 
 
 def main():

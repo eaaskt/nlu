@@ -17,6 +17,7 @@ import yaml
 from gspread import Worksheet
 from oauth2client.service_account import ServiceAccountCredentials
 from sklearn.utils import resample
+from zipfile import ZipFile
 
 from tools import copy_path
 
@@ -58,6 +59,7 @@ class SettingConfig:
         self.conf_mat_path = self.config.get("paths", "CONFUSION_MATRIX_PATH")
 
         # Load merged reports path
+        self.merged_reports_root = self.config.get("paths", "MERGED_REPORTS_ROOT")
         self.merged_intent_report_path = self.config.get("paths", "MERGED_INTENT_REPORT_PATH")
         self.merged_intent_errors_path = self.config.get("paths", "MERGED_INTENT_ERRORS_PATH")
         self.merged_slot_report_path = self.config.get("paths", "MERGED_SLOT_REPORT_PATH")
@@ -67,6 +69,8 @@ class SettingConfig:
         with io.open(self.rasa_config_path, "r") as rasa_config_file:
             rasa_config = yaml.load(rasa_config_file, Loader=yaml.FullLoader)
             self.language = rasa_config['language']
+
+        self.identifier = f"{self.language}_{'diac' if self.diacritics else 'nodiac'}"
 
 
 def create_single_split(base_path: str, split_identifier: int, sample_percent: float, train: bool) -> None:
@@ -295,7 +299,7 @@ def process_datasets(config: SettingConfig, sheet: Worksheet) -> None:
     print("Started running RASA")
 
     # Compute and write the title of the spreadsheet based on the loaded configurations
-    spreadsheet_title = [f"Language Mode: {config.language}, Diacritics {config.diacritics}"]
+    spreadsheet_title = [config.identifier]
     sheet.insert_row(spreadsheet_title, 1)
 
     # For each scenario folder
@@ -373,6 +377,18 @@ def get_worksheet(name: str) -> Optional[Worksheet]:
     return client.open(name).sheet1
 
 
+def create_analysis_archive(config: SettingConfig):
+    with ZipFile(f'{config.identifier}.zip', 'w') as zipObj:
+        # Iterate over all the files in directory
+        for folderName, subfolders, filenames in os.walk(config.merged_reports_root):
+            for filename in filenames:
+                # create complete filepath of file in directory
+                filepath = os.path.join(folderName, filename)
+                # Add file to zip
+                zipObj.write(filepath)
+    zipObj.close()
+
+
 def rasa_pipeline(config_path: str) -> None:
     config = SettingConfig(config_path)
     wipe_reports(config)
@@ -380,6 +396,7 @@ def rasa_pipeline(config_path: str) -> None:
     create_splits(config)
     worksheet = get_worksheet('Benchmark Counterfitting')
     process_datasets(config, worksheet)
+    create_analysis_archive(config)
 
 
 def main():

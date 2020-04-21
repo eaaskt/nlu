@@ -132,3 +132,15 @@ def copy_path(src_path, dst_path, append=True):
     with io.open(src_path, "r", encoding="utf-8") as src:
         with io.open(dst_path, "a" if append else "w", encoding="utf-8") as dst:
             dst.writelines([l for l in src.readlines()])
+
+
+if __name__ == "__main__":
+    print("Loading vectors...")
+    model = gs.KeyedVectors.load_word2vec_format(
+        fname='C:\\Uni\\Thesis\\radandreicristian\\nlu\\rad-antonyms\\lang\\vectors\\ro_ft_300.vec', binary=False)
+    print("Loaded vectors...")
+    while True:
+        print("Input w1 and w2")
+        word1 = input()
+        word2 = input()
+        print(model.similarity(word1, word2))
