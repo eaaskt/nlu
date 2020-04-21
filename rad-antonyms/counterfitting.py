@@ -152,6 +152,10 @@ def _sgd_step_ant(antonym_pairs: set, enriched_vectors: dict, config: SettingCon
     # For each antonym pair
     for (w0, w1) in antonym_pairs:
 
+        # Extra check for reduced vocabulary:
+        if w0 not in config.vocabulary or w1 not in config.vocabulary:
+            break
+
         # Compute distance in new vector space
         dist = tools.distance(enriched_vectors[w0], enriched_vectors[w1])
         if dist < config.delta:
@@ -173,6 +177,10 @@ def _sgd_step_ant(antonym_pairs: set, enriched_vectors: dict, config: SettingCon
 def _sgd_step_syn(synonym_pairs: set, enriched_vectors: dict, config: SettingConfig, gradient_updates: dict,
                   update_count: dict) -> (dict, dict):
     for (w0, w1) in synonym_pairs:
+
+        if w0 not in config.vocabulary or w1 not in config.vocabulary:
+            break
+
         dist = tools.distance(enriched_vectors[w0], enriched_vectors[w1])
         if dist > config.gamma:
             gradient = tools.partial_gradient(enriched_vectors[w0], enriched_vectors[w1])
@@ -189,6 +197,10 @@ def _sgd_step_syn(synonym_pairs: set, enriched_vectors: dict, config: SettingCon
 def _sgd_step_vsp(vsp_pairs: dict, enriched_vectors: dict, config: SettingConfig, gradient_updates: dict,
                   update_count: dict) -> (dict, dict):
     for (w0, w1) in vsp_pairs:
+
+        if w0 not in config.vocabulary or w1 not in config.vocabulary:
+            break
+
         original_distance = vsp_pairs[(w0, w1)]
         new_distance = tools.distance(enriched_vectors[w0], enriched_vectors[w1])
 
