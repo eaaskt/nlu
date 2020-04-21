@@ -1,7 +1,7 @@
 import tensorflow as tf
 
 
-def define_app_flags():
+def define_app_flags(scenario_num):
     """ Define the TensorFlow application-wide flags
         Returns:
             FLAGS: TensorFlow flags
@@ -11,7 +11,7 @@ def define_app_flags():
     tf.app.flags.DEFINE_boolean('save_model', False, 'save model to disk')
     tf.app.flags.DEFINE_string('summaries_dir', './logs', 'tensorboard summaries')
     tf.app.flags.DEFINE_string('ckpt_dir', './saved_models/', 'check point dir')
-    tf.app.flags.DEFINE_string('scenario_num', '0', 'Scenario number')
+    tf.app.flags.DEFINE_string('scenario_num', scenario_num, 'Scenario number')
     tf.app.flags.DEFINE_string('errors_dir', './errors/', 'Errors dir')
 
     return FLAGS
@@ -28,7 +28,7 @@ def set_data_flags(data):
     slots_number = len(data['slots_dict'])
     hidden_size = 64
 
-    tf.app.flags.DEFINE_float('keep_prob', 0.8, 'embedding dropout keep rate for training')
+    tf.app.flags.DEFINE_float('keep_prob', 1, 'embedding dropout keep rate for training')
     tf.app.flags.DEFINE_integer('hidden_size', hidden_size, 'embedding vector size')
     tf.app.flags.DEFINE_integer('batch_size', 32, 'batch size')
     tf.app.flags.DEFINE_integer('num_epochs', 20, 'num of epochs')
@@ -39,7 +39,6 @@ def set_data_flags(data):
     tf.app.flags.DEFINE_integer('word_emb_size', word_emb_size, 'embedding size of word vectors')
     tf.app.flags.DEFINE_boolean('use_embedding', True, 'whether to use embedding or not.')
     tf.app.flags.DEFINE_float('learning_rate', 0.01, 'learning rate')
-    tf.app.flags.DEFINE_float('margin', 1.0, 'ranking loss margin')
     tf.app.flags.DEFINE_integer('slot_routing_num', 2, 'slot routing num')
     tf.app.flags.DEFINE_integer('intent_routing_num', 3, 'intent routing num')
     tf.app.flags.DEFINE_integer('intent_output_dim', 16, 'intent output dimension')

@@ -2,11 +2,6 @@ import numpy as np
 import util
 from gensim.models.keyedvectors import KeyedVectors
 
-word2vec_path = '../data-capsnets/word-vec/cc.ro.300.vec'
-
-training_data_path = '../data-capsnets/diacritics/scenario2/train.txt'
-test_data_path = '../data-capsnets/diacritics/scenario2/test.txt'
-
 
 def load_w2v(file_name):
     """ Load Word2Vec model
@@ -167,20 +162,19 @@ def get_label(data, test=False):
     return ind_intents, ind_slots
 
 
-def read_datasets(test=False):
-    """ Encodes the intent and slot labels in one-hot format
+def read_datasets(w2v, training_data_path, test_data_path, test=False):
+    """ Reads the data from the given input files
         Args:
+            w2v: Word2Vec model
+            training_data_path: path to training data file
+            test_data_path: path to test data file
             test: True if running test on the model -- this will load the test data in raw text format
+
         Returns:
             data: data dictionary
     """
     print('------------------read datasets begin-------------------')
     data = {}
-
-    # load word2vec model
-    print('------------------load word2vec begin-------------------')
-    w2v = load_w2v(word2vec_path)
-    print('------------------load word2vec end---------------------')
 
     # load normalized word embeddings
     embedding = w2v.vectors
