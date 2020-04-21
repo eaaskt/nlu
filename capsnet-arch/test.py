@@ -273,6 +273,7 @@ def test(model, data, FLAGS):
             intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess, log_errs=True)
             print('Intent F1: %lf' % intent_f_score)
             print('Slot F1: %lf' % slot_f_score)
+            return intent_f_score, slot_f_score
         else:
             print('No trained model exists in checkpoint dir!')
 
