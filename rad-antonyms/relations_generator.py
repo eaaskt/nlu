@@ -1,4 +1,5 @@
 import configparser
+import errno
 import io
 import re
 import sys
@@ -6,8 +7,10 @@ from datetime import datetime
 from operator import itemgetter
 from typing import Optional
 
-import gensim.models as gs
 import rowordnet as rwn
+import os
+
+import tools
 
 
 class SettingConfig:
@@ -22,29 +25,34 @@ class SettingConfig:
             print("Unable to read config, aborting.")
             return
 
+        # Load the vectors path
         vec_path = self.config.get("paths", "VEC_PATH")
 
-        pos = self.config.get("variables", "POS").replace("[", "").replace("]", "").replace(" ", "").split(",")
+        # Load and split the POS parameter into a list
+        pos = self.config.get("settings", "POS").replace("[", "").replace("]", "").replace(" ", "").split(",")
 
+        # Create a mapping from each possible POS value in the config to the corresponding rwn component
         mapping = {"verb": rwn.Synset.Pos.VERB,
                    "noun": rwn.Synset.Pos.NOUN,
                    "adverb": rwn.Synset.Pos.ADVERB,
                    "adjective": rwn.Synset.Pos.ADJECTIVE}
 
-        # Value for each key if key in pos
-        self.pos = [mapping.get(m) for m in mapping.keys() if m in pos]
+        # Keep in the map of pos -> Rwn.Pos only the specified PoSes in pos
+        self.pos = dict()
+        for name, rwn_pos in mapping.items():
+            if name in pos:
+                self.pos[name] = rwn_pos
 
-        print(f"Initializing pair generator for the following parts of speech: {self.pos} ")
+        # Load the root of the folders containing constraints
+        self.constraints_root_path = self.config.get("paths", "CONSTRAINTS_ROOT_PATH")
 
-        self.raw_antonyms_path = self.config.get("paths", "RAW_ANTONYMS_PATH")
-        self.raw_synonyms_path = self.config.get("paths", "RAW_SYNONYMS_PATH")
+        vocab_path = self.config.get("paths", "VOCAB_PATH")
 
-        self.synonyms_path = self.config.get("paths", "SYNONYMS_PATH")
-        self.antonyms_path = self.config.get("paths", "ANTONYMS_PATH")
-
-        print(f"Started loading vocabulary model @ {datetime.now()}")
-        self.model = gs.KeyedVectors.load_word2vec_format(vec_path, binary=False, encoding='utf-8')
-        print(f"Successfully loaded model @ {datetime.now()}")
+        self.vocabulary = set()
+        with open(file=vocab_path, mode="r", encoding="utf-8") as vocab_file:
+            for line in vocab_file:
+                self.vocabulary.add(line.strip())
+        print(len(self.vocabulary))
 
 
 def process_line(raw_line: str) -> Optional[str]:
@@ -96,16 +104,26 @@ def preprocess_pairs(input_path: str, output_path: str, config: SettingConfig) -
                     w1, w2 = processed_line.split(" ")
 
                     # Check if both are in the dictionary
-                    if w1 in config.model.wv.vocab and w2 in config.model.wv.vocab:
+                    if w1 in config.vocabulary and w2 in config.vocabulary:
                         output_file.write(f"{w1} {w2}\n")
         output_file.close()
     input_file.close()
     print(f"Successfully finished preprocessing pairs")
 
 
-def write_pairs_to_file(pairs: set, output_path: str) -> None:
+def write_pairs(pairs: dict, root_path: str, pos: str, name: str) -> str:
     print(f"Writing pairs to file @ {datetime.now()}")
-    with io.open(file=output_path, mode="w", encoding='utf-8') as out:
+    dir_path = os.path.join(root_path, pos)
+
+    try:
+        os.mkdir(dir_path)
+    except OSError as e:
+        if e.errno != errno.EEXIST:
+            raise
+
+    constraints_path = os.path.join(dir_path, name + "_raw.txt")
+
+    with io.open(file=constraints_path, mode="w", encoding='utf-8') as out:
         # Wipe the file
         out.truncate(0)
 
@@ -118,16 +136,20 @@ def write_pairs_to_file(pairs: set, output_path: str) -> None:
 
     print(f"Successfully written pairs to file @ {datetime.now()}")
 
+    return constraints_path
 
-def generate_antonym_pairs(pos: list) -> set:
+
+def generate_antonym_pairs(config: SettingConfig) -> dict:
     print(f"Generating initial antonym pairs from RoWordNet @ {datetime.now()}")
     wn = rwn.RoWordNet()
 
     # Create the output set of antonym pairs
-    pairs = set()
+    pairs = dict()
 
-    # Take each of the 4 RWN PoS' : [NOUN, VERB, ADJECTIVE, ADVERB]
-    for part_of_speech in pos:
+    # Iterate over the configured PoSes
+    for part_of_speech in config.pos.values():
+
+        pos_pairs = set()
 
         # Return all synsets corresponding to the PoS
         synset_ids = wn.synsets(pos=part_of_speech)
@@ -160,22 +182,27 @@ def generate_antonym_pairs(pos: list) -> set:
 
                 # Add the current set of pairs
                 for pair in current_iteration_pairs:
-                    pairs.add(pair)
+                    pos_pairs.add(pair)
+
+        for key, value in config.pos.items():
+            if value == part_of_speech:
+                pairs[key] = pos_pairs
 
     # Return the whole set containing antonym pairs
     print(f"Successfully generated antonym paris @ {datetime.now()}")
     return pairs
 
 
-def generate_synonym_pairs(pos: list) -> set:
+def generate_synonym_pairs(config: SettingConfig) -> dict:
     print(f"Generating initial synonym pairs from RoWordNet @ {datetime.now()}")
     wn = rwn.RoWordNet()
 
     # Create the output set of antonym pairs
-    pairs = set()
+    pairs = dict()
 
-    # Take each of the 4 RWN PoS' : [NOUN, VERB, ADJECTIVE, ADVERB]
-    for part_of_speech in pos:
+    for part_of_speech in config.pos.values():
+
+        pos_pairs = set()
 
         # Return all synsets corresponding to the PoS
         synset_ids = wn.synsets(pos=part_of_speech)
@@ -194,22 +221,34 @@ def generate_synonym_pairs(pos: list) -> set:
 
             # Append all pairs from the current PoS to the global set
             for pair in current_iteration_pairs:
-                pairs.add(pair)
+                pos_pairs.add(pair)
+
+        for key, value in config.pos.items():
+            if value == part_of_speech:
+                pairs[key] = pos_pairs
 
     print(f"Successfully generated synonym pairs {datetime.now()}")
     return pairs
 
 
 def antonyms_pipeline(config: SettingConfig) -> None:
-    antonym_pairs = generate_antonym_pairs(config.pos)
-    write_pairs_to_file(antonym_pairs, config.raw_antonyms_path)
-    preprocess_pairs(config.raw_antonyms_path, config.antonyms_path, config)
+    antonym_pairs = generate_antonym_pairs(config)
+    for pos in config.pos.keys():
+        raw_antonyms_path = write_pairs(antonym_pairs[pos], config.constraints_root_path, pos, "antonyms")
+        head, _ = os.path.split(raw_antonyms_path)
+        antonyms_path = os.path.join(head, "antonyms.txt")
+        preprocess_pairs(raw_antonyms_path, antonyms_path, config)
+        os.remove(raw_antonyms_path)
 
 
 def synonyms_pipeline(config: SettingConfig) -> None:
-    synonym_pairs = generate_synonym_pairs(config.pos)
-    write_pairs_to_file(synonym_pairs, config.raw_synonyms_path)
-    preprocess_pairs(config.raw_synonyms_path, config.synonyms_path, config)
+    synonym_pairs = generate_synonym_pairs(config)
+    for pos in config.pos.keys():
+        raw_synonyms_path = write_pairs(synonym_pairs[pos], config.constraints_root_path, pos, "synonyms")
+        head, _ = os.path.split(raw_synonyms_path)
+        synonyms_path = os.path.join(head, "synonyms.txt")
+        preprocess_pairs(raw_synonyms_path, synonyms_path, config)
+        os.remove(raw_synonyms_path)
 
 
 def main():

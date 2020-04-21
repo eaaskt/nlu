@@ -1,6 +1,12 @@
+import io
+import json
+import os
+import re
+import string
 from datetime import datetime
 from math import sqrt
-from typing import Optional
+from os.path import isfile, isdir
+from typing import Optional, TextIO
 
 import numpy as np
 import gensim.models as gs
@@ -80,3 +86,50 @@ def compute_dictionary_difference(initial_vectors: dict, counterfit_vectors: dic
 def convert_vec_to_binary(vec_path: str, bin_path: str) -> None:
     model = gs.KeyedVectors.load_word2vec_format(fname=vec_path, binary=False)
     model.save_word2vec_format(fname=bin_path, binary=True)
+
+
+def parse_vocabulary_from_file(file_path: str) -> list:
+    with io.open(file=file_path, mode="r", encoding='utf-8') as file:
+        content = json.load(file)
+
+        # Obtain the wrapped object
+        data = content["rasa_nlu_data"]
+
+        # Obtain the list of sentences
+        common_examples = data["common_examples"]
+
+        vocab = list()
+
+        # For each example, parse its text and return the list containing all the words in the sentence
+        for example in common_examples:
+            sentence = example['text']
+            vocab = vocab + re.sub('[' + string.punctuation + ']', '', sentence).split()
+        file.close()
+    return vocab
+
+
+def compute_vocabulary(base_path: str) -> set:
+    vocab = set()
+    scenario_folders = [os.path.join(base_path, f) for f in os.listdir(base_path) if isdir(os.path.join(base_path, f))]
+    for scenario_folder in scenario_folders:
+        # Compute the path for the scenario folder
+        files = [os.path.join(scenario_folder, f) for f in os.listdir(scenario_folder) if
+                 isfile(os.path.join(scenario_folder, f))]
+        for file in files:
+            file_vocab = parse_vocabulary_from_file(file)
+            for word in file_vocab:
+                vocab.add(word)
+    return vocab
+
+
+def save_vocabulary(vocabulary: set, destination_path: str) -> None:
+    with io.open(file=destination_path, mode="w", encoding='utf-8') as destination_file:
+        for word in vocabulary:
+            destination_file.write(word + "\n")
+
+
+def copy_path(src_path, dst_path, append=True):
+    with io.open(src_path, "r", encoding="utf-8") as src:
+        with io.open(dst_path, "a" if append else "w", encoding="utf-8") as dst:
+            dst.writelines([l for l in src.readlines()])
+

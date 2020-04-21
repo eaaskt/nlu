@@ -6,6 +6,8 @@ from copy import deepcopy
 from datetime import datetime
 import tools
 
+import os.path
+
 
 class SettingConfig:
     """
@@ -30,14 +32,33 @@ class SettingConfig:
         if vocab_mode == 'all':
             vocab_path = self.config.get("paths", "VOCAB_PATH")
         elif vocab_mode == 'small':
-            vocab_path = self.config.get("paths", "DATASET_VOCAB_PATH")
+            diacritics = self.config.get("settings", "DIACRITICS")
+            if diacritics == 'True':
+                vocab_path = self.config.get("paths", "VOCAB_PATH_DATASET_DIAC")
+            else:
+                vocab_path = self.config.get("paths", "VOCAB_PATH_DATASET_NODIAC")
         else:
             print('Wrong value for parameter VOCABULARY in config. Exiting')
             return
 
-        # Read paths of the files containing synonym and antonym pairs from the config
-        synonyms_path = self.config.get("paths", "SYNONYMS_PATH")
-        antonyms_path = self.config.get("paths", "ANTONYMS_PATH")
+        synonym_paths = list()
+        antonym_paths = list()
+
+        # Read the root path of the constraints files
+        constraints_root_path = self.config.get("paths", "CONSTRAINTS_ROOT_PATH")
+
+        # Read the PoS variable
+        parts_of_speech = self.config.get("settings", "POS").replace("[", "").replace("]", "").replace(" ", "").split(
+            ",")
+
+        # Append antonyms and synonyms of each selected PoS from their respective folder
+        for part_of_speech in parts_of_speech:
+            ant_path = os.path.join(constraints_root_path, part_of_speech, "antonyms.txt")
+            print(ant_path)
+            antonym_paths.append(ant_path)
+            syn_path = os.path.join(constraints_root_path, part_of_speech, "synonyms.txt")
+            print(syn_path)
+            synonym_paths.append(syn_path)
 
         # Read and parse the mode (whether to include synonyms, antonyms or VSP pairs in the current run)
         mode = self.config.get("settings", "MODE").replace("[", "").replace("]", "").replace(" ", "").split(",")
@@ -55,16 +76,14 @@ class SettingConfig:
             return
 
         self.output_vectors_path = self.config.get("paths", "CF_VEC_PATH")
-        self.diff_vectors_path = self.config.get("paths", "DIFF_VEC_PATH")
         self.vocabulary = set(self.vectors.keys())
 
-        # Load synonym and antonym pairs from the path specified
-        self.synonyms = load_constraints(synonyms_path)
-        self.antonyms = load_constraints(antonyms_path)
+        # Load synonym and antonym pairs from the paths specified
+        self.synonyms = load_multiple_constraints(synonym_paths)
+        self.antonyms = load_multiple_constraints(antonym_paths)
         self.mode = mode
 
         # Read the hyperparameters of our run
-
         self.hyper_k1 = self.config.getfloat("hyperparameters", "hyper_k1")
         self.hyper_k2 = self.config.getfloat("hyperparameters", "hyper_k2")
         self.hyper_k3 = self.config.getfloat("hyperparameters", "hyper_k3")
@@ -73,6 +92,8 @@ class SettingConfig:
         self.delta = self.config.getfloat("hyperparameters", "delta")
         self.gamma = self.config.getfloat("hyperparameters", "gamma")
         self.rho = self.config.getfloat("hyperparameters", "rho")
+        print(
+            f"Initialized counterfitting settings. Vocab path: {vocab_path}, PoS paths: {parts_of_speech}, Mode: {self.mode}")
 
 
 def load_constraints(constraints_path: str) -> set:
@@ -83,6 +104,15 @@ def load_constraints(constraints_path: str) -> set:
             w0, w1 = line.replace("\n", "").split(" ")
             constraints.add((w0, w1))
             constraints.add((w1, w0))
+    constraints_file.close()
+    return constraints
+
+
+def load_multiple_constraints(constraint_paths: list) -> set:
+    constraints = set()
+    for constraint_path in constraint_paths:
+        current_constraints = load_constraints(constraint_path)
+        constraints = constraints | current_constraints
     return constraints
 
 
@@ -149,6 +179,10 @@ def _sgd_step_ant(antonym_pairs: set, enriched_vectors: dict, config: SettingCon
     # For each antonym pair
     for (w0, w1) in antonym_pairs:
 
+        # Extra check for reduced vocabulary:
+        if w0 not in config.vocabulary or w1 not in config.vocabulary:
+            break
+
         # Compute distance in new vector space
         dist = tools.distance(enriched_vectors[w0], enriched_vectors[w1])
         if dist < config.delta:
@@ -170,6 +204,10 @@ def _sgd_step_ant(antonym_pairs: set, enriched_vectors: dict, config: SettingCon
 def _sgd_step_syn(synonym_pairs: set, enriched_vectors: dict, config: SettingConfig, gradient_updates: dict,
                   update_count: dict) -> (dict, dict):
     for (w0, w1) in synonym_pairs:
+
+        if w0 not in config.vocabulary or w1 not in config.vocabulary:
+            break
+
         dist = tools.distance(enriched_vectors[w0], enriched_vectors[w1])
         if dist > config.gamma:
             gradient = tools.partial_gradient(enriched_vectors[w0], enriched_vectors[w1])
@@ -186,6 +224,10 @@ def _sgd_step_syn(synonym_pairs: set, enriched_vectors: dict, config: SettingCon
 def _sgd_step_vsp(vsp_pairs: dict, enriched_vectors: dict, config: SettingConfig, gradient_updates: dict,
                   update_count: dict) -> (dict, dict):
     for (w0, w1) in vsp_pairs:
+
+        if w0 not in config.vocabulary or w1 not in config.vocabulary:
+            break
+
         original_distance = vsp_pairs[(w0, w1)]
         new_distance = tools.distance(enriched_vectors[w0], enriched_vectors[w1])
 
@@ -268,14 +310,8 @@ def run_experiment(config_path):
         return
     enriched_vectors = counterfit(config)
 
-    # Store all the counterfit vectors
+    # Store all the counterfitting vectors
     tools.store_vectors(dimens=config.dimensions, destination_path=config.output_vectors_path, vectors=enriched_vectors)
-
-    # Compute and store only the different vectors
-    diff_vectors = tools.compute_dictionary_difference(config.vectors, enriched_vectors)
-    tools.store_vectors(dimens=config.dimensions, destination_path=config.diff_vectors_path, vectors=diff_vectors)
-
-    print(f"Finished counterfitting run @ {datetime.now()}")
 
 
 def main():
