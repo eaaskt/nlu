@@ -189,7 +189,11 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
+<<<<<<< HEAD:capsnet-arch/train.py
         capsnet = model(FLAGS)
+=======
+        capsnet = model_s2i.CapsNet(FLAGS)
+>>>>>>> 196506ea27cd847abd4c756bccd3a2dfb676c681:andi-capsnet-arch/train.py
 
         print('Initializing Variables')
         sess.run(tf.global_variables_initializer())

@@ -261,7 +261,11 @@ def test(model, data, FLAGS):
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
+<<<<<<< HEAD:capsnet-arch/test.py
         capsnet = model(FLAGS)
+=======
+        capsnet = model_s2i.CapsNet(FLAGS)
+>>>>>>> 196506ea27cd847abd4c756bccd3a2dfb676c681:andi-capsnet-arch/test.py
         if FLAGS.scenario_num != '':
             ckpt_dir = FLAGS.ckpt_dir + 'scenario' + FLAGS.scenario_num + '/'
         else:
