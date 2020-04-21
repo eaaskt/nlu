@@ -112,7 +112,7 @@ def load_multiple_constraints(constraint_paths: list) -> set:
     constraints = set()
     for constraint_path in constraint_paths:
         current_constraints = load_constraints(constraint_path)
-        constraints = constraints + current_constraints
+        constraints = constraints | current_constraints
     return constraints
 
 
