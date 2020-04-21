@@ -3,7 +3,7 @@ import os
 from random import *
 
 import data_loader
-import model
+import model_s2i
 import util
 import flags
 import numpy as np
@@ -157,7 +157,7 @@ def assign_pretrained_word_embedding(sess, embedding, capsnet):
     print('using pre-trained word emebedding.ended...')
 
 
-def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_score, batches_rand=False, log=False):
+def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, best_f_score, batches_rand=False, log=False):
     """ Trains the model for one cross-validation fold
         Args:
             train_data: training data dictionary
@@ -189,7 +189,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
     config = tf.ConfigProto()
     with tf.Session(config=config) as sess:
         # Instantiate Model
-        capsnet = model.CapsNet(FLAGS)
+        capsnet = model(FLAGS)
 
         print('Initializing Variables')
         sess.run(tf.global_variables_initializer())
@@ -277,7 +277,7 @@ def train_cross_validation(train_data, val_data, embedding, FLAGS, fold, best_f_
     return best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold
 
 
-def train(data, FLAGS, batches_rand=False, log=False):
+def train(model, data, FLAGS, batches_rand=False, log=False):
     x_tr = data['x_tr']
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
@@ -327,7 +327,7 @@ def train(data, FLAGS, batches_rand=False, log=False):
         val_data['intents_dict'] = data['intents_dict']
 
         # Train on split
-        best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold = train_cross_validation(
+        best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold = train_cross_validation(model,
             train_data, val_data, embedding, FLAGS, fold, best_f_score, batches_rand=batches_rand, log=log)
 
         fold += 1
@@ -347,7 +347,7 @@ def train(data, FLAGS, batches_rand=False, log=False):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cc.ro.300.vec'
+    word2vec_path = '../../romanian_word_vecs/cc.ro.300.bin'
 
     training_data_path = '../data-capsnets/scenario0/train.txt'
     test_data_path = '../data-capsnets/scenario0/test.txt'
@@ -363,7 +363,7 @@ def main():
 
     flags.set_data_flags(data)
 
-    train(data, FLAGS)
+    train(model_s2i.CapsNetS2I, data, FLAGS)
 
 
 if __name__ == '__main__':
