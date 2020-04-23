@@ -3,21 +3,19 @@ import copy
 import io
 import json
 import os
-import sys
-
-import gspread
 import subprocess
-
+import sys
 from shutil import copyfile
 from shutil import rmtree
 from statistics import stdev, mean
 from typing import Optional
+from zipfile import ZipFile
 
+import gspread
 import yaml
 from gspread import Worksheet
 from oauth2client.service_account import ServiceAccountCredentials
 from sklearn.utils import resample
-from zipfile import ZipFile
 
 from tools import copy_path
 
@@ -394,7 +392,7 @@ def rasa_pipeline(config_path: str) -> None:
     wipe_reports(config)
     wipe_splits(config)
     create_splits(config)
-    worksheet = get_worksheet('Benchmark Counterfitting')
+    worksheet = get_worksheet('Benchmark Counterfitting pe Diacritice')
     process_datasets(config, worksheet)
     create_analysis_archive(config)
 

@@ -1,6 +1,7 @@
 import configparser
 import errno
 import io
+import os
 import re
 import sys
 from datetime import datetime
@@ -8,9 +9,6 @@ from operator import itemgetter
 from typing import Optional
 
 import rowordnet as rwn
-import os
-
-import tools
 
 
 class SettingConfig:
@@ -25,9 +23,6 @@ class SettingConfig:
             print("Unable to read config, aborting.")
             return
 
-        # Load the vectors path
-        vec_path = self.config.get("paths", "VEC_PATH")
-
         # Load and split the POS parameter into a list
         pos = self.config.get("settings", "POS").replace("[", "").replace("]", "").replace(" ", "").split(",")
 
@@ -37,7 +32,7 @@ class SettingConfig:
                    "adverb": rwn.Synset.Pos.ADVERB,
                    "adjective": rwn.Synset.Pos.ADJECTIVE}
 
-        # Keep in the map of pos -> Rwn.Pos only the specified PoSes in pos
+        # Keep in the map of PoS : Rwn.Pos only the specified parts of speech
         self.pos = dict()
         for name, rwn_pos in mapping.items():
             if name in pos:
@@ -56,10 +51,6 @@ class SettingConfig:
 
 
 def process_line(raw_line: str) -> Optional[str]:
-    # Remove reflexive forms, etc., basically anything that's in between [ ] or | |, infintive form "a ..."
-    # re.sub("\[(.*?)\]", "", raw_line)
-    # re.sub("|(.*?)|", "", raw_line)
-    # Can't get the regex working, so just use the sad solution with multiple replace calls:
     to_replace = ["[se]", "|se|", "[-și]", "[o]", "|-și|", "|și|", "[-i]", "[i]", "[și]", "a "]
     for sub in to_replace:
         raw_line = raw_line.replace(sub, "")
@@ -81,7 +72,7 @@ def process_line(raw_line: str) -> Optional[str]:
     return " ".join(words)
 
 
-def preprocess_pairs(input_path: str, output_path: str, config: SettingConfig) -> None:
+def postprocess_pairs(input_path: str, output_path: str, config: SettingConfig) -> None:
     print(f"Started preprocessing pairs @ {datetime.now()}")
     # Open the input file, which contains the raw pairs
     with io.open(file=input_path, mode="r", encoding="utf-8") as input_file:
@@ -143,10 +134,11 @@ def generate_antonym_pairs(config: SettingConfig) -> dict:
     print(f"Generating initial antonym pairs from RoWordNet @ {datetime.now()}")
     wn = rwn.RoWordNet()
 
-    # Create the output set of antonym pairs
+    # Create the output dictionary that will be of type dict(str : set(pair(str, str)) where the key is
+    # the PoS and the value is a set of pairs of words of PoS specified by the key
     pairs = dict()
 
-    # Iterate over the configured PoSes
+    # Iterate over the selected parts of speech
     for part_of_speech in config.pos.values():
 
         pos_pairs = set()
@@ -184,11 +176,12 @@ def generate_antonym_pairs(config: SettingConfig) -> dict:
                 for pair in current_iteration_pairs:
                     pos_pairs.add(pair)
 
+        # Get corresponding key in pos dictionary and add the pair to the resulting dictionary
         for key, value in config.pos.items():
             if value == part_of_speech:
                 pairs[key] = pos_pairs
 
-    # Return the whole set containing antonym pairs
+    # Return the whole dictionary
     print(f"Successfully generated antonym paris @ {datetime.now()}")
     return pairs
 
@@ -197,9 +190,11 @@ def generate_synonym_pairs(config: SettingConfig) -> dict:
     print(f"Generating initial synonym pairs from RoWordNet @ {datetime.now()}")
     wn = rwn.RoWordNet()
 
-    # Create the output set of antonym pairs
+    # Create the output dictionary that will be of type dict(str : set(pair(str, str)) where the key is
+    # the PoS and the value is a set of pairs of words of PoS specified by the key
     pairs = dict()
 
+    # Iterate over the selected parts of speech
     for part_of_speech in config.pos.values():
 
         pos_pairs = set()
@@ -223,6 +218,7 @@ def generate_synonym_pairs(config: SettingConfig) -> dict:
             for pair in current_iteration_pairs:
                 pos_pairs.add(pair)
 
+        # Get corresponding key in pos dictionary and add the pair to the resulting dictionary
         for key, value in config.pos.items():
             if value == part_of_speech:
                 pairs[key] = pos_pairs
@@ -234,20 +230,32 @@ def generate_synonym_pairs(config: SettingConfig) -> dict:
 def antonyms_pipeline(config: SettingConfig) -> None:
     antonym_pairs = generate_antonym_pairs(config)
     for pos in config.pos.keys():
+        # Generate raw antonyms
         raw_antonyms_path = write_pairs(antonym_pairs[pos], config.constraints_root_path, pos, "antonyms")
         head, _ = os.path.split(raw_antonyms_path)
+
         antonyms_path = os.path.join(head, "antonyms.txt")
-        preprocess_pairs(raw_antonyms_path, antonyms_path, config)
+
+        # Postprocess the pairs and save the correct ones
+        postprocess_pairs(raw_antonyms_path, antonyms_path, config)
+
+        # Remove the 'raw' pairs
         os.remove(raw_antonyms_path)
 
 
 def synonyms_pipeline(config: SettingConfig) -> None:
     synonym_pairs = generate_synonym_pairs(config)
     for pos in config.pos.keys():
+        # Generate raw synonyms
         raw_synonyms_path = write_pairs(synonym_pairs[pos], config.constraints_root_path, pos, "synonyms")
         head, _ = os.path.split(raw_synonyms_path)
+
         synonyms_path = os.path.join(head, "synonyms.txt")
-        preprocess_pairs(raw_synonyms_path, synonyms_path, config)
+
+        # Postprocess the pairs and save the correct ones
+        postprocess_pairs(raw_synonyms_path, synonyms_path, config)
+
+        # Remove the 'raw' pairs
         os.remove(raw_synonyms_path)
 
 
