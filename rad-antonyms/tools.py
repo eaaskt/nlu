@@ -6,10 +6,10 @@ import string
 from datetime import datetime
 from math import sqrt
 from os.path import isfile, isdir
-from typing import Optional, TextIO
+from typing import Optional
 
-import numpy as np
 import gensim.models as gs
+import numpy as np
 
 
 def load_vectors(source_path: str, vocab: set) -> (Optional[str], dict):
@@ -54,16 +54,19 @@ def store_vectors(dimens: str, destination_path: str, vectors: dict) -> None:
 
 
 def normalise(words: dict) -> dict:
+    # Safe norm of a dictionary
     for word in words:
         words[word] /= sqrt((words[word] ** 2).sum() + 1e-6)
     return words
 
 
 def distance(v1, v2, normalised=True):
+    # Distance between two vectors, optimized as per counterfitting implementation
     return 1 - np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2)) if not normalised else 1 - np.dot(v1, v2)
 
 
 def partial_gradient(u, v, normalised=True):
+    # Partial gradient, optimized as per counterfitting implementation
     if normalised:
         return u * np.dot(u, v) - v
     else:
@@ -88,7 +91,7 @@ def convert_vec_to_binary(vec_path: str, bin_path: str) -> None:
     model.save_word2vec_format(fname=bin_path, binary=True)
 
 
-def parse_vocabulary_from_file(file_path: str) -> list:
+def parse_vocabulary_from_file(file_path: str) -> set:
     with io.open(file=file_path, mode="r", encoding='utf-8') as file:
         content = json.load(file)
 
@@ -98,13 +101,15 @@ def parse_vocabulary_from_file(file_path: str) -> list:
         # Obtain the list of sentences
         common_examples = data["common_examples"]
 
-        vocab = list()
+        vocab = set()
 
         # For each example, parse its text and return the list containing all the words in the sentence
         for example in common_examples:
             sentence = example['text']
             punctuation = string.punctuation.replace("-", "")
-            vocab = vocab + re.sub('[' + punctuation + ']', '', sentence).split()
+            new_sentence = re.sub('[' + punctuation + ']', '', sentence)
+            vocab = vocab | set(new_sentence.split())
+
         file.close()
     return vocab
 
@@ -118,8 +123,7 @@ def compute_vocabulary(base_path: str) -> set:
                  isfile(os.path.join(scenario_folder, f))]
         for file in files:
             file_vocab = parse_vocabulary_from_file(file)
-            for word in file_vocab:
-                vocab.add(word)
+            vocab = vocab | file_vocab
     return vocab
 
 
@@ -134,3 +138,9 @@ def copy_path(src_path, dst_path, append=True):
         with io.open(dst_path, "a" if append else "w", encoding="utf-8") as dst:
             dst.writelines([l for l in src.readlines()])
 
+
+def save_dict_to_file(dictionary: dict, dst_path: str) -> None:
+    with io.open(file=dst_path, mode="w", encoding="utf-8") as dst:
+        for k, v in dictionary.items():
+            dst.write(f"{k} {v}\n")
+        dst.close()
