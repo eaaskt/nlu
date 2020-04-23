@@ -106,13 +106,8 @@ def parse_vocabulary_from_file(file_path: str) -> set:
         # For each example, parse its text and return the list containing all the words in the sentence
         for example in common_examples:
             sentence = example['text']
-            if 'Sting ' in sentence:
-                print(sentence)
             punctuation = string.punctuation.replace("-", "")
             new_sentence = re.sub('[' + punctuation + ']', '', sentence)
-            if 'Sting' in new_sentence:
-                print(new_sentence)
-                print(file_path)
             vocab = vocab | set(new_sentence.split())
 
         file.close()

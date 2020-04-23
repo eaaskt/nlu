@@ -5,6 +5,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 from shutil import copyfile
 from shutil import rmtree
 from statistics import stdev, mean
@@ -375,8 +376,8 @@ def get_worksheet(name: str) -> Optional[Worksheet]:
     return client.open(name).sheet1
 
 
-def create_analysis_archive(config: SettingConfig):
-    with ZipFile(f'{config.identifier}.zip', 'w') as zipObj:
+def create_analysis_archive(config: SettingConfig) -> None :
+    with ZipFile(f'{time.time()}{config.identifier}.zip', 'w') as zipObj:
         # Iterate over all the files in directory
         for folderName, subfolders, filenames in os.walk(config.merged_reports_root):
             for filename in filenames:

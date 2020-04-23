@@ -1,20 +1,19 @@
 # Generating Antonym/Synonym Pairs from RWN, Counterfitting, RASA Pipeline.
 
-## Relations Generator - Parameters
-Relations generator runs can be parametrized from the ./parameters.cfg file.
-The paths section includes path relative to the project root where the input / output files of the run are stored.
+## Vocabulary Generator
+The vocab_generator.py script generates vocabularies from the folder containing datasets, which is specified as a parameter.
 
-The settings section includes what to be taken into account when generating pairs:
-The 'POS' parameter indicates pairs of what parts of speech should be included in the output pairs. As RWN is limited to 4 parts of speech, this parameter will be a subset of [noun, verb, adjective, adverb]. For example, if we set this parameter to [noun, verb], only nouns and verbs will be included in the generated pairs.
+## Relations Generator - Parameters
+The relations_generator.py script generates synonym and antonym pairs from RoWordNet and stores them, according to their part-of-speech. The subfolders corresponding to each of the four parts of speech, verb, adverb, noun, adjective, will be generated under the path specified by CONSTRAINTS_ROOT_PATH in parameters.cfg.
+Once generated, the pairs can be used in the next components of the pipeline.
 
 ## Counterfitting - Parameters
-
 Counterfitting runs can be parametrized from the ./parameters.cfg file. 
 Before running counterfitting, please add the original vectors file in lang/vectors and set its correct path in ./parameters.cfg
 
-The paths section includes paths relative to the project root where the input / output files of the run are stored. 
-As input to a counterfit run, paths to the pairs of synonyms / antonyms are provided, along with paths to the vectors and the vocabulary.
-As output, a path to where the counterfit vectors are to be stored is provided (along with a path where the different vectors are stored [WIP]).
+The paths section includes paths relative to the project root where the input / output files of the run are stored.
+As input, paths contani 
+As output, a path to where the counterfit vectors are to be stored is provided.
 
 The settings sections include what to be taken into account for the counterfit run:
 The 'MODE' parameter indicates which of the 3 terms to be included in the cost function: AR, SA, VSP. Explicitly, it is a subset of [ant, syn, vsp], with each term being associated to its correspondent in the cost function. For instance, if MODE = [ant], the cost function will only contain the AR term, therfore only antonym pairs will be enhanced.
