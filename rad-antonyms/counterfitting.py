@@ -61,10 +61,25 @@ class SettingConfig:
         # Read and parse the mode (whether to include synonyms, antonyms or VSP pairs in the current run)
         mode = self.config.get("settings", "MODE").replace("[", "").replace("]", "").replace(" ", "").split(",")
 
+        self.synonyms = load_multiple_constraints(synonym_paths)
+        self.antonyms = load_multiple_constraints(antonym_paths)
+
         vocab = set()
         with open(file=vocab_path, mode="r", encoding="utf-8") as vocab_file:
             for line in vocab_file:
                 vocab.add(line.strip())
+
+        # Add augmented words from synonyms list to the vocab
+        for pair in self.synonyms:
+            if pair[0] in vocab or pair[1] in vocab:
+                vocab.add(pair[0])
+                vocab.add(pair[1])
+
+        # Add augmented words from antonym lists to the vocab
+        for pair in self.antonyms:
+            if pair[0] in vocab or pair[1] in vocab:
+                vocab.add(pair[0])
+                vocab.add(pair[1])
 
         # Load the word vectors
         dimensions, self.vectors = tools.load_vectors(input_vectors_path, vocab)
@@ -82,8 +97,7 @@ class SettingConfig:
         self.dimensions = f"{len(self.vocabulary)} {dimensions.split(' ')[1]}"
 
         # Load synonym and antonym pairs from the paths specified
-        self.synonyms = load_multiple_constraints(synonym_paths)
-        self.antonyms = load_multiple_constraints(antonym_paths)
+
         self.mode = mode
         self.vsp_path = self.config.get("paths", "VSP_PAIRS_VERB_PATH")
 
