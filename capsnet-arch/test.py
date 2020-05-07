@@ -184,7 +184,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 
         plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
                               title='Confusion matrix', normalize=True, numbers=False)
-        plt.show()
+        plt.savefig('confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num))
 
         # For super-class confusion mat
         intent_classes = {'aprindeLumina': 'lumina',
