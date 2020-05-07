@@ -5,3 +5,7 @@
 [Datasets](data/romanian_dataset/home_assistant/version1)
 
 [Datasets (version 2)](data/romanian_dataset/home_assistant/version2)
+
+##### TODO
+* Cleanup repo
+* Comments + readme details
