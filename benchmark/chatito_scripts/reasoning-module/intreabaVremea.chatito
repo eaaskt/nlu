@@ -1,0 +1,77 @@
+%[intreabaVremeaAfara]('training': '90', 'testing': '30')
+    ~[greet?] ~[te rogQ?] ~[intreabaTemperatura] @[loc]?
+    ~[greet?] ~[te rogQ?] ~[intreabaTemperatura] @[timp]?
+    ~[greet?] ~[te rogQ?] ~[intreabaTemperatura] @[loc] @[timp]?
+    ~[greet?] ~[te rog] ~[intreabaTemperatura] @[loc].
+    ~[greet?] ~[te rog] ~[intreabaTemperatura] @[timp].
+    ~[greet?] ~[te rog] ~[intreabaTemperatura] @[loc] @[timp].
+
+~[greet]
+    Pepper,
+    Salut,
+
+~[te rogQ]
+    îmi poți spune
+    îmi spui
+    îmi zici
+    îmi poți zice
+
+~[te rog]
+    spune-mi
+    vreau să știu
+    mă interesează
+    aș vrea să știu
+    aș vrea să îmi spui
+    zi-mi
+    vreau să aflu
+    aș vrea să aflu
+    m-ar interesa
+
+~[intreabaTemperatura]
+    care e temperatura
+    ce vreme este
+    cum e vremea
+    la ce temperaturi să mă aștept
+    cum e
+    dacă e frig
+    dacă e cald
+    dacă plouă
+    dacă e soare
+    dacă ninge
+    câte grade sunt
+    ce temperatură este
+    dacă e ceață
+    dacă e polei
+    dacă se încălzește
+    dacă se răcește
+
+@[loc]
+    afară
+    în Cluj
+    în Florești
+    în București
+    aici
+
+@[timp]
+    mâine
+    azi
+    săptămâna viitoare
+    în weekend
+    sâmbătă
+    luni
+    duminică
+    marți
+    miercuri
+    joi
+    vineri
+    peste o oră
+    peste două ore
+    după-masă
+    peste o săptămână
+    peste două săptămâni
+    peste două zile
+    după masă
+    seara
+    la noapte
+    mâine dimineață
+    mâine după masă
