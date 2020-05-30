@@ -12,6 +12,7 @@ def words_before_index(text, idx):
     return n_words
 
 
+# TODO: generic method that supports both wit and rasa format, so conversion is not necessary anymore
 def convert_iob_example(item):
     """Takes an example in Wit.ai format and returns the converted response"""
     conv_item = dict(item)

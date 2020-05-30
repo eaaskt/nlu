@@ -1,0 +1,28 @@
+%[puneMuzica]('training': '1', 'testing': '29')
+    ~[greet?] ~[te rog?] ~[pune?] ~[muzicaF]
+    ~[greet?] ~[te rog?] ~[pune?] ~[muzicaM]
+    ~[greet?] ~[te rog?] ~[pune?] ~[muzicaF] ~[deF] @[artist]
+    ~[greet?] ~[te rog?] ~[pune?] ~[muzicaM] ~[deM] @[artist]
+
+@[artist]
+    ~[Beatles]
+    ~[Pink Floyd]
+    ~[Sting]
+    ~[Leonard Cohen]
+    ~[Rahmaninov]
+    ~[Liszt]
+~[greet]
+    Servus,
+~[deF]
+    cântată de
+    compusă de
+~[deM]
+    cântat de
+    compus de
+~[muzicaF]
+    piesa
+    melodia
+    simfonia
+~[muzicaM]
+    cântec
+    concert

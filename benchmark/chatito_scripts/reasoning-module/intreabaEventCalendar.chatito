@@ -1,0 +1,80 @@
+%[intreabaCalendarEvent]('training': '90', 'testing': '30')
+    ~[greet?] ~[te rogQ?] ~[intreabaEvent] @[data]?
+    ~[greet?] ~[te rog] ~[intreabaEvent] @[data].
+    ~[greet?] ~[te rogQ?] ~[intreabaEvent] @[data] la @[ora_inceput]?
+    ~[greet?] ~[te rog] ~[intreabaEvent] @[data] la @[ora_inceput].
+    ~[greet?] ~[te rogQ?] ~[intreabaEvent] @[data] @[ora_inceput_relativ]?
+    ~[greet?] ~[te rog] ~[intreabaEvent] @[data] @[ora_inceput_relativ].
+    ~[greet?] ~[te rogQ?] ~[intreabaEvent] @[data_timp]?
+    ~[greet?] ~[te rog] ~[intreabaEvent] @[data_timp].
+    ~[greet?] ~[te rogQ?] ~[intreabaEvent] @[data] între @[ora_inceput] și @[ora_final]?
+    ~[greet?] ~[te rog] ~[intreabaEvent] @[data] între @[ora_inceput] și @[ora_final].
+
+~[greet]
+    Pepper,
+    Salut,
+
+~[te rogQ]
+    îmi poți spune
+    îmi spui
+    îmi zici
+    îmi poți zice
+
+~[te rog]
+    spune-mi
+    vreau să știu
+    mă interesează
+    aș vrea să știu
+    aș vrea să îmi spui
+
+~[intreabaEvent]
+    ce am planificat
+    ce apare în calendar pe
+    ce apare în calendar planificat pentru
+    ce am în calendar pentru
+    care sunt evenimentele
+    ce am de făcut
+    ce este în calendar
+    ce e în calendar
+    este ceva planificat pentru
+    este liber calendarul pentru
+
+@[data]
+    mâine
+    azi
+    săptămâna viitoare
+    în weekend
+    sâmbătă
+    luni
+    duminică
+    marți
+    miercuri
+    joi
+    vineri
+    poimâine
+    peste două zile
+    peste trei zile
+    peste o săptămână
+
+@[data_timp]
+    deseară
+
+@[ora_inceput_relativ]
+    după-masă
+    dimineață
+    după prânz
+    după amiaza
+
+@[ora_inceput]
+    12
+    doisprezece
+    unu
+    1
+    13
+
+@[ora_final]
+    12
+    doisprezece
+    unu
+    1
+    13

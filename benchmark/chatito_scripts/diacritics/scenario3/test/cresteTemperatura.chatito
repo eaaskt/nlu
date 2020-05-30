@@ -1,0 +1,46 @@
+%[cresteTemperatura]('training': '1', 'testing': '29')
+    ~[salut?] ~[creste] ~[temperatura?] ~[la] @[grade#abs] ~[în] @[loc]
+    ~[salut?] ~[creste] ~[temperatura?] ~[cu] @[grade#rel] ~[în] @[loc]
+    ~[salut?] ~[creste] ~[temperatura?] ~[cu] @[grade#rel] @[loc#tot]
+    ~[salut?] ~[creste] ~[temperatura?] ~[la] @[grade#abs] @[loc#tot]
+    ~[salut?] ~[creste] ~[temperatura?] ~[cu] @[grade#rel]
+    ~[salut?] ~[creste] ~[temperatura?] ~[în] @[loc]
+
+@[grade#rel]
+    un grad
+    două grade
+
+@[grade#abs]
+    șaptesprezece grade
+    optsprezece grade
+    nouăsprezece grade
+    douăzeci de grade
+    douăzeci și unu de grade
+    douăzeci și două de grade
+
+
+@[loc]
+    dormitor
+    sufragerie
+    bucătărie
+    baie
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Pepper,
+    Salut,
+
+~[la]
+    la
+    pe
+
+~[în]
+    în
+
+~[creste]
+    crește
+    mărește
+    poți mări
+    fă mai mare

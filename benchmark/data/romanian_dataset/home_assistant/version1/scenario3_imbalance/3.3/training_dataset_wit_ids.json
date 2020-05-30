@@ -17212,7 +17212,7 @@
         "id": 552
     },
     {
-        "text": "salut te rog doresc sa aprinzi televizorul pe RockTV",
+        "text": "salut te rog doresc sa aprinzi televizorul pe ProTV",
         "entities": [
             {
                 "entity": "intent",
@@ -17222,7 +17222,7 @@
                 "end": 52,
                 "entity": "canal",
                 "start": 46,
-                "value": "RockTV"
+                "value": "ProTV"
             }
         ],
         "seq_labels": [
@@ -17339,7 +17339,7 @@
         "id": 557
     },
     {
-        "text": "te rog aprinde televizorul pe RockTV",
+        "text": "te rog aprinde televizorul pe ProTV",
         "entities": [
             {
                 "entity": "intent",
@@ -17349,7 +17349,7 @@
                 "end": 36,
                 "entity": "canal",
                 "start": 30,
-                "value": "RockTV"
+                "value": "ProTV"
             }
         ],
         "seq_labels": [
@@ -17411,7 +17411,7 @@
         "id": 560
     },
     {
-        "text": "salut te rog porneste pe RockTV",
+        "text": "salut te rog porneste pe ProTV",
         "entities": [
             {
                 "entity": "intent",
@@ -17421,7 +17421,7 @@
                 "end": 31,
                 "entity": "canal",
                 "start": 25,
-                "value": "RockTV"
+                "value": "ProTV"
             }
         ],
         "seq_labels": [
@@ -17435,7 +17435,7 @@
         "id": 561
     },
     {
-        "text": "salut da pe RockTV",
+        "text": "salut da pe ProTV",
         "entities": [
             {
                 "entity": "intent",
@@ -17445,7 +17445,7 @@
                 "end": 18,
                 "entity": "canal",
                 "start": 12,
-                "value": "RockTV"
+                "value": "ProTV"
             }
         ],
         "seq_labels": [
@@ -17714,6 +17714,12 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 25,
+                "end": 39,
+                "value": "putin mai tare",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
@@ -17722,9 +17728,9 @@
             "O",
             "O",
             "O",
-            "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel",
+            "I-nivel"
         ],
         "id": 574
     },
@@ -17734,6 +17740,12 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 31,
+                "end": 39,
+                "value": "mai tare",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
@@ -17742,8 +17754,8 @@
             "O",
             "O",
             "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel"
         ],
         "id": 575
     },
@@ -17753,6 +17765,12 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 26,
+                "end": 33,
+                "value": "mai sus",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
@@ -17762,8 +17780,8 @@
             "O",
             "O",
             "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel"
         ],
         "id": 576
     },
@@ -17773,6 +17791,12 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 22,
+                "end": 30,
+                "value": "mai tare",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
@@ -17780,8 +17804,8 @@
             "O",
             "O",
             "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel"
         ],
         "id": 577
     },
@@ -17791,12 +17815,18 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 8,
+                "end": 16,
+                "value": "mai tare",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
             "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel"
         ],
         "id": 578
     },
@@ -17806,6 +17836,12 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 30,
+                "end": 37,
+                "value": "mai sus",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
@@ -17814,8 +17850,8 @@
             "O",
             "O",
             "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel"
         ],
         "id": 579
     },
@@ -17825,6 +17861,12 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 36,
+                "end": 43,
+                "value": "mai sus",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
@@ -17834,8 +17876,8 @@
             "O",
             "O",
             "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel"
         ],
         "id": 580
     },
@@ -17845,14 +17887,20 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 16,
+                "end": 30,
+                "value": "putin mai tare",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
             "O",
             "O",
-            "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel",
+            "I-nivel"
         ],
         "id": 581
     },
@@ -17862,6 +17910,12 @@
             {
                 "entity": "intent",
                 "value": "schimbaIntensitateMuzica"
+            },
+            {
+                "start": 18,
+                "end": 32,
+                "value": "putin mai tare",
+                "entity": "nivel"
             }
         ],
         "seq_labels": [
@@ -17869,9 +17923,9 @@
             "O",
             "O",
             "O",
-            "O",
-            "O",
-            "O"
+            "B-nivel",
+            "I-nivel",
+            "I-nivel"
         ],
         "id": 582
     },

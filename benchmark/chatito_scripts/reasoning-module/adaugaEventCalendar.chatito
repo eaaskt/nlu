@@ -1,0 +1,71 @@
+%[adaugaCalendarEvent]('training': '90', 'testing': '30')
+    ~[greet?] ~[adaugaQ] @[event] ~[pe] @[data] între @[ora_inceput] și @[ora_final]?
+    ~[greet?] ~[adauga] @[event] ~[pe] @[data] între @[ora_inceput] și @[ora_final].
+    ~[greet?] ~[adaugaQ] @[event] ~[pe] @[data] ~[la] @[ora_inceput]?
+    ~[greet?] ~[adauga] @[event] ~[pe] @[data] ~[la] @[ora_inceput].
+    ~[greet?] ~[adaugaQ] @[event] ~[pe] @[data]?
+    ~[greet?] ~[adauga] @[event] ~[pe] @[data].
+    ~[greet?] ~[adaugaQ] @[event]?
+    ~[greet?] ~[adauga] @[event].
+
+~[greet]
+    Pepper,
+    Salut,
+
+~[adaugaQ]
+    îmi poți pune
+    poți pune
+    poți adăuga
+    îmi poți adăuga
+
+~[adauga]
+    pune-mi
+    vreau să adaugi
+    adaugă
+    aș vrea să adaugi
+    aș vrea să îmi pui
+    pune
+    ocupă
+
+~[pe]
+    pentru
+    pe
+    în
+    în data de
+
+~[la]
+    la
+    pe ora
+    la ora
+
+@[event]
+    programare la stomatolog
+    ședință cu echipa
+    prânz cu Maria
+
+@[data]
+    mâine
+    azi
+    săptămâna viitoare
+    sâmbătă
+    luni
+    duminică
+    marți
+    miercuri
+    joi
+    vineri
+    11 septembrie
+
+@[ora_inceput]
+    12
+    doisprezece
+    unu
+    1
+    13
+
+@[ora_final]
+    12
+    doisprezece
+    unu
+    1
+    13
