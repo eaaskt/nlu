@@ -134,7 +134,9 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         batch_slots_one_hot = one_hot_slots[begin_index: end_index]
 
         [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
-            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
+            capsnet.intent_output_vectors,
+            capsnet.slot_output_vectors,
+            capsnet.slot_weights_c],
             feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
                        capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
                        capsnet.keep_prob: 1.0})
