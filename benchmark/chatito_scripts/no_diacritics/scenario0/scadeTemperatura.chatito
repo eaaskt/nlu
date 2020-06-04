@@ -1,0 +1,74 @@
+%[scadeTemperatura]('training': '90', 'testing': '30')
+    ~[salut?] ~[scade] ~[temperatura?] ~[la] @[grade#abs] ~[in] @[loc]
+    ~[salut?] ~[scade] ~[temperatura?] ~[cu] @[grade#rel] ~[in] @[loc]
+    ~[salut?] ~[scade] ~[temperatura?] ~[cu] @[grade#rel] @[loc#tot]
+    ~[salut?] ~[scade] ~[temperatura?] ~[la] @[grade#abs] @[loc#tot]
+
+@[grade#rel]
+    1 grad
+    2 grade
+    3 grade
+    4 grade
+    5 grade
+    un grad
+    doua grade
+    trei grade
+    patru grade
+    cinci grade
+
+@[grade#abs]
+    17 grade
+    18 grade
+    19 grade
+    20 de grade
+    22 de grade
+    23 de grade
+    24 de grade
+    25 de grade
+    26 de grade
+    27 de grade
+    saptesprezece grade
+    optsprezece grade
+    nouasprezece grade
+    douazeci de grade
+    douazeci si unu de grade
+    douazeci si doua de grade
+    douazeci si trei de grade
+    douazeci si patru de grade
+    douazeci si sase de grade
+    douazeci si cinci de grade
+    douazeci si sapte de grade
+
+@[loc]
+    dormitor
+    sufragerie
+    bucatarie
+    baie
+    tot apartamentul
+    toata casa
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Pepper,
+    Salut,
+    Buna Pepper,
+
+~[la]
+    la
+    pe
+
+~[in]
+    in
+
+~[scade]
+    scade
+    poti scadea
+    as vrea sa scazi
+    mi-ar placea sa scazi
+    ai putea scadea
+    redu
+    micsoreaza
+    fa mai mica
+    du in jos

@@ -1,0 +1,30 @@
+%[scadeIntensitateLumina]('training': '90', 'testing': '1')
+    ~[greet?] ~[action] ~[lumina] ~[în] @[loc] ~[la] @[nivel#relativ]
+    ~[greet?] ~[action] ~[lumina] ~[în] @[loc] ~[la] @[nivel#absolut]
+    ~[greet?] ~[action] ~[lumina] ~[în] @[loc]
+
+@[loc]
+    ~[bucătărie]
+    ~[baie]
+    ~[curte]
+    ~[sufragerie]
+
+@[nivel#relativ]
+    ~[jumătate]
+    ~[minim]
+
+@[nivel#absolut]
+    ~[1]
+    ~[2]
+
+~[greet]
+    Pepper,
+    Salut,
+
+~[action]
+    scade intensitatea
+    aș vrea să scazi intensitatea
+
+~[lumina]
+    luminii
+    iluminatului

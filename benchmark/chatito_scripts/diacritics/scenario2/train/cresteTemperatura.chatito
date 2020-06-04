@@ -1,0 +1,40 @@
+%[cresteTemperatura]('training': '90', 'testing': '1')
+    ~[salut?] ~[creste] ~[temperatura?] ~[la] @[grade#abs] ~[în] @[loc]
+    ~[salut?] ~[creste] ~[temperatura?] ~[cu] @[grade#rel] ~[în] @[loc]
+
+@[grade#rel]
+    1 grad
+    2 grade
+    3 grade
+
+@[grade#abs]
+    23 de grade
+    24 de grade
+    25 de grade
+    26 de grade
+    27 de grade
+
+@[loc]
+    tot apartamentul
+    toată casa
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Pepper,
+    Salut,
+
+~[la]
+    la
+    pe
+
+~[în]
+    în
+
+~[creste]
+    ridică
+    poți ridica
+    aș vrea să ridici
+    mi-ar plăcea să ridici
+    ai putea ridica

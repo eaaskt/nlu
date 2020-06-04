@@ -1,0 +1,53 @@
+%[scadeTemperatura]('training': '90', 'testing': '1')
+    ~[salut?] ~[scade] ~[temperatura?] ~[la] @[grade#abs] ~[în] @[loc]
+    ~[salut?] ~[scade] ~[temperatura?] ~[cu] @[grade#rel] ~[în] @[loc]
+    ~[salut?] ~[scade] ~[temperatura?] ~[cu] @[grade#rel] @[loc#tot]
+    ~[salut?] ~[scade] ~[temperatura?] ~[la] @[grade#abs] @[loc#tot]
+
+@[grade#rel]
+    1 grad
+    2 grade
+    3 grade
+    4 grade
+    5 grade
+
+@[grade#abs]
+    17 grade
+    18 grade
+    19 grade
+    20 de grade
+    22 de grade
+    23 de grade
+    24 de grade
+    25 de grade
+    26 de grade
+    27 de grade
+
+@[loc]
+    dormitor
+    sufragerie
+    bucătărie
+    baie
+    tot apartamentul
+    toată casa
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Pepper,
+    Salut,
+
+~[la]
+    la
+    pe
+
+~[în]
+    în
+
+~[scade]
+    scade
+    poți scădea
+    aș vrea să scazi
+    mi-ar plăcea să scazi
+    ai putea scădea

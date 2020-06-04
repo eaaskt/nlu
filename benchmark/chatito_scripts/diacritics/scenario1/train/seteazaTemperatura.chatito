@@ -1,0 +1,49 @@
+%[seteazaTemperatura]('training': '90', 'testing': '1')
+    ~[salut?] ~[pune] ~[temperatura?] ~[la] @[grade] ~[în] @[loc]
+    ~[salut?] ~[pune] ~[temperatura?] ~[la] @[grade] @[loc#tot]
+
+@[grade]
+    17 grade
+    18 grade
+    19 grade
+    20 de grade
+    22 de grade
+    23 de grade
+    24 de grade
+    25 de grade
+    26 de grade
+    27 de grade
+
+@[loc]
+    dormitor
+    sufragerie
+    bucătărie
+    baie
+    tot apartamentul
+    toată casa
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Pepper,
+    Salut,
+
+~[la]
+    la
+    pe
+
+~[în]
+    în
+
+~[pune]
+    pune
+    poți pune
+    aș vrea să pui
+    mi-ar plăcea să pui
+    ai putea pune
+    setează
+    poți seta
+    aș vrea să setezi
+    mi-ar plăcea să setezi
+    ai putea seta

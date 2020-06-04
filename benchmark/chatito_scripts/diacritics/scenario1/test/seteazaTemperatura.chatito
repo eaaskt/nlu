@@ -1,0 +1,44 @@
+%[seteazaTemperatura](‘training’: ‘1’, ‘testing’: ‘40’)
+    ~[salut?] ~[pune] ~[temperatura?] ~[la] @[grade] ~[în] @[loc]
+    ~[salut?] ~[pune] ~[temperatura?] ~[la] @[grade] @[loc#tot]
+
+@[grade]
+    șaptesprezece grade
+    optsprezece grade
+    nouăsprezece grade
+    douăzeci de grade
+    douăzeci și unu de grade
+    douăzeci și două de grade
+    douăzeci și trei de grade
+    douăzeci și patru de grade
+    douăzeci și șase de grade
+    douăzeci și cinci de grade
+    douăzeci și șapte de grade
+
+@[loc]
+    dormitor
+    sufragerie
+    bucătărie
+    baie
+    tot apartamentul
+    toată casa
+
+@[loc#tot]
+    peste tot
+
+~[salut]
+    Hey,
+
+~[la]
+    aproximativ	la
+    aproximativ pe
+    aproape de
+    cam la
+
+~[în]
+    în
+
+~[pune]
+    modifică
+    schimbă
+    ajustează

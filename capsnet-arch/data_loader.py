@@ -4,6 +4,7 @@ import util
 
 from gensim.models.keyedvectors import KeyedVectors
 
+from gensim.models.keyedvectors import KeyedVectors
 import time
 
 
@@ -14,13 +15,11 @@ def load_w2v(file_name):
         Returns:
             w2v: w2v model
     """
-
-    start  = time.time()
+    start = time.time()
     w2v = KeyedVectors.load_word2vec_format(file_name, binary=False)
-    # w2v = FastText.load_fasttext_format(file_name)
     end = time.time()
-    print("loading time took %06.2f" % (start - end))
-    return w2v #.wv
+    print("loading time took %06.2f" % (end - start))
+    return w2v
 
 
 def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot_id, load_text=False):
