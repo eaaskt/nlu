@@ -18,3 +18,5 @@ and test - the validation results are still the old ones.
     * Remove invalid tv channels
     * slot for changeVolume
  
+#### June update
+Replaced the schimbaIntensitateMuzica intent with the two intents: cresteIntensitateMuzica and scadeIntensitateMuzica, to maintain consistency with the rest of the dataset. Currently this change is visible only in the diacritics dataset, in a separate folder.
