@@ -1,0 +1,38 @@
+%[cresteIntensitateMuzica]('training': '90', 'testing': '1')
+    ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#relativ]
+    ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#absolut]
+    ~[greet?] ~[action] ~[muzica?]
+    ~[greet?] ~[actionR] ~[muzicaR?]
+
+@[nivel#relativ]
+    ~[dublu]
+    ~[maxim]
+
+@[nivel#absolut]
+    ~[2]
+    ~[3]
+    ~[1]
+
+~[greet]
+    Pepper,
+    Salut,
+
+~[action]
+    mărește volumul
+    aș vrea să mărești volumul
+    poți să mărești volumul
+    ai putea oare mări volumul
+    ridică volumul
+
+~[muzica]
+    concertului
+    simfoniei
+    muzicii
+
+~[actionR]
+    fă mai tare
+
+~[muzicaR]
+    muzica
+    concertul
+    simfonia
