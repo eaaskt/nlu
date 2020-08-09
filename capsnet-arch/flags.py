@@ -47,3 +47,4 @@ def set_data_flags(data):
     tf.app.flags.DEFINE_integer('r', 5, 'number of self attention heads')
     tf.app.flags.DEFINE_float('alpha', 0.0001, 'coefficient for self attention loss')
     tf.app.flags.DEFINE_integer('n_splits', 3, 'Number of cross-validation splits')
+    tf.app.flags.DEFINE_float('rerouting_coef', 1, 'coefficient for rerouting')
