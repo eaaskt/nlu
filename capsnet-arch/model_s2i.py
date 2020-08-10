@@ -46,12 +46,15 @@ class CapsNetS2I:
         self.instantiate_weights()
         self.H = self.word_caps()
         self.attention, self.M = self.semantic_caps()
-        self.slot_output_vectors, self.slot_weights_c, self.slot_predictions, self.slot_weights_b = self.slot_caps()
+        self.slot_output_vectors_interm, self.slot_weights_c_interm, self.slot_predictions, self.slot_weights_b_interm = self.slot_caps()
         self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_caps()
 
         # Rerouting
         self.intent_max = 0
         self.slot_output_vectors, self.slot_weights_c, self.slot_weights_b = self.rerouting()
+        # self.slot_output_vectors = self.slot_output_vectors_interm
+        # self.slot_weights_c = self.slot_weights_c_interm
+        # self.slot_weights_b = self.slot_weights_b_interm
 
         self.loss_val = self.loss()
 
@@ -199,12 +202,12 @@ class CapsNetS2I:
 
             raw_weights_round_2 = tf.add(raw_weights, agreement)
 
-            if rerouting:
-                rerouting_term = tf.matmul(
-                    tf.matmul(self.slot_predictions, self.w_rr, transpose_a=True),
-                    self.intent_max)
-                final_rerouting_term = tf.multiply(rerouting_term, self.rerouting_coef)
-                raw_weights_round_2 = tf.add(raw_weights_round_2, final_rerouting_term)
+            # if rerouting:
+            #     rerouting_term = tf.matmul(
+            #         tf.matmul(self.slot_predictions, self.w_rr, transpose_a=True),
+            #         self.intent_max)
+            #     final_rerouting_term = tf.multiply(rerouting_term, self.rerouting_coef)
+            #     raw_weights_round_2 = tf.add(raw_weights_round_2, final_rerouting_term)
 
             return i + 1, raw_weights_round_2, output_vectors, routing_weights
 
@@ -220,6 +223,52 @@ class CapsNetS2I:
             swap_memory=True)
 
         return output_vectors.read(num_iter - 1), raw_weights, routing_weights
+
+    def _rerouting_alg(self, caps1_n_caps_rr, caps2_n_caps_rr, caps2_predicted_rr,
+                       num_iter_rr, rerouting=False):
+        """Dynamic routing-by-agreement algorithm
+        Args:
+          caps1_n_caps_rr: number of capsules in layer l
+          caps2_n_caps_rr: number of capsules in layer l+1
+          caps2_predicted_rr: prediction vectors for layer l+1 capsules
+          num_iter_rr: number of iterations
+        Returns:
+          output_vector: output vectors of l+1 capsules
+          raw_weights: raw weights (before softmax) - bij
+          routing_weights: agreement weights (after softmax) - cij
+        """
+
+        def _body_rerouting(i, raw_weights_rr, output_vectors_rr, routing_weights_rr):
+            routing_weights_rr = tf.nn.softmax(raw_weights_rr, dim=2)
+
+            weighted_predictions_rr = tf.multiply(routing_weights_rr, caps2_predicted_rr)
+            weighted_sum_rr = tf.reduce_sum(weighted_predictions_rr, axis=1, keep_dims=True)
+
+            caps2_output_round_1_rr = self._squash(weighted_sum_rr, axis=-2)
+
+            output_vectors_rr = output_vectors_rr.write(i, caps2_output_round_1_rr)
+            caps2_output_round_1_tiled_rr = tf.tile(
+                caps2_output_round_1_rr, [1, caps1_n_caps_rr, 1, 1, 1])
+
+            agreement_rr = tf.matmul(caps2_predicted_rr, caps2_output_round_1_tiled_rr,
+                                  transpose_a=True)
+
+            raw_weights_round_2_rr = tf.add(raw_weights_rr, agreement_rr)
+
+            return i + 1, raw_weights_round_2_rr, output_vectors_rr, routing_weights_rr
+
+        output_vectors_rr = tf.TensorArray(
+            dtype=tf.float32, size=num_iter_rr, clear_after_read=False)
+        raw_weights_rr = tf.zeros([self.batch_size, caps1_n_caps_rr, caps2_n_caps_rr, 1, 1], dtype=np.float32)
+        routing_weights_rr = tf.nn.softmax(raw_weights_rr, dim=2)
+        i = tf.constant(0, dtype=tf.int32)
+        _, raw_weights_rr, output_vectors_rr, routing_weights_rr = tf.while_loop(
+            lambda i, raw_weights_rr, output_vectors_rr, routing_weights_rr: i < num_iter_rr,
+            _body_rerouting,
+            loop_vars=[i, raw_weights_rr, output_vectors_rr, routing_weights_rr],
+            swap_memory=True)
+
+        return output_vectors_rr.read(num_iter_rr - 1), raw_weights_rr, routing_weights_rr
 
     def rerouting(self):
         """
@@ -241,11 +290,11 @@ class CapsNetS2I:
         max_intents = tf.expand_dims(max_intents, axis=1)
         max_intents = tf.expand_dims(max_intents, axis=2)
         self.intent_max = tf.tile(max_intents, [1, self.max_sentence_length, self.slots_nr, 1, 1])
-        output_vector, weights_b, weights_c = self._update_routing(
-            caps1_n_caps=self.max_sentence_length,
-            caps2_n_caps=self.slots_nr,
-            caps2_predicted=self.slot_predictions,
-            num_iter=self.slot_routing_num,
+        output_vector, weights_b, weights_c = self._rerouting_alg(
+            caps1_n_caps_rr=self.max_sentence_length,
+            caps2_n_caps_rr=self.slots_nr,
+            caps2_predicted_rr=self.slot_predictions,
+            num_iter_rr=self.slot_routing_num,
             rerouting=True)
         return output_vector, weights_b, weights_c
 
@@ -292,7 +341,7 @@ class CapsNetS2I:
         semantic_caps_expanded = tf.expand_dims(self.M, axis=-1, name='semantic_caps_expanded_partial')
         semantic_caps_tile = tf.expand_dims(semantic_caps_expanded, axis=1, name='semantic_caps_expanded')
 
-        semantic_slots_output_vecs = tf.concat([semantic_caps_tile, self.slot_output_vectors], axis=2)
+        semantic_slots_output_vecs = tf.concat([semantic_caps_tile, self.slot_output_vectors_interm], axis=2)
         semantic_slot_caps_output = tf.nn.dropout(semantic_slots_output_vecs, self.keep_prob)
 
         semantic_slots_output_tshape = [0, 2, 1, 3, 4]
