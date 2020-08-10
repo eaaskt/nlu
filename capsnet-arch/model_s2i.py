@@ -47,11 +47,18 @@ class CapsNetS2I:
         self.H = self.word_caps()
         self.attention, self.M = self.semantic_caps()
         self.slot_output_vectors_interm, self.slot_weights_c_interm, self.slot_predictions, self.slot_weights_b_interm = self.slot_caps()
+
         self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_caps()
+
+        # self.slot_output_vectors, self.slot_weights_b, self.slot_weights_c = self._update_routing(
+        #     caps1_n_caps=self.max_sentence_length,
+        #     caps2_n_caps=self.slots_nr,
+        #     caps2_predicted=self.slot_predictions,
+        #     num_iter=self.slot_routing_num)
 
         # Rerouting
         self.intent_max = 0
-        self.slot_output_vectors, self.slot_weights_c, self.slot_weights_b = self.rerouting()
+        self.slot_output_vectors, self.slot_weights_b, self.slot_weights_c = self.rerouting()
         # self.slot_output_vectors = self.slot_output_vectors_interm
         # self.slot_weights_c = self.slot_weights_c_interm
         # self.slot_weights_b = self.slot_weights_b_interm
@@ -326,6 +333,7 @@ class CapsNetS2I:
             caps2_n_caps=self.slots_nr,
             caps2_predicted=slot_caps_predicted,
             num_iter=self.slot_routing_num)
+
         return output_vector, weights_c, slot_caps_predicted, weights_b
 
     def intent_caps(self):
