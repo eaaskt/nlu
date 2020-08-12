@@ -121,6 +121,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 
     total_intent_pred = []
     total_slots_pred = []
+    total_attention = []
 
     num_samples = len(x_te)
     batch_size = FLAGS.batch_size
@@ -133,12 +134,13 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         batch_intents_one_hot = one_hot_intents[begin_index: end_index]
         batch_slots_one_hot = one_hot_slots[begin_index: end_index]
 
-        [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
-            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
+        [intent_outputs, slots_outputs, slot_weights_c, attention] = sess.run([
+            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c, capsnet.attention],
             feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
                        capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
                        capsnet.keep_prob: 1.0})
-
+        # attention is shaped ?, 5, 12
+        total_attention += np.ndarray.tolist(attention)
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
         intent_outputs_norm = util.safe_norm(intent_outputs_reduced_dim)
         slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c, axis=[3, 4])
@@ -239,6 +241,36 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                     f.write(str(p) + '\n')
                     f.write('\n')
                 i += 1
+        print("------------------------\n")
+        dataToPrint = []
+        i = 0
+        for t,p in zip(y_intent_labels_true, y_intent_labels_pred):
+            dataToPrint.append({})
+            dataToPrint[i]["trueIntent"] = t
+            dataToPrint[i]["predictedIntent"] = p
+            i += 1
+        i = 0
+        for v, p in zip(y_slot_labels_true, y_slot_labels_pred):
+            dataToPrint[i]["testData"] = ' '.join(x_text_te[i])
+            dataToPrint[i]["trueSlots"] = str(v)
+            dataToPrint[i]["predSlots"] = str(p)
+            dataToPrint[i]["attentionPerHeads"] = total_attention[i]
+            i += 1
+
+        for j in range(i-1):
+            print(dataToPrint[j]["trueIntent"] + "\n")
+            print(dataToPrint[j]["predictedIntent"] + "\n")
+            print(dataToPrint[j]["testData"] + "\n")
+            print(dataToPrint[j]["trueSlots"] + "\n")
+            print(dataToPrint[j]["predSlots"] + "\n")
+            for x in range(FLAGS.r):
+                print("head: " + str(x) + "\n" + " ".join("%10.3f" % f for f in dataToPrint[j]["attentionPerHeads"][x]) + "\n")
+            print("------------------------\n")
+
+
+        print("finished")
+
+
 
     return f_score, scores['f1']
 
@@ -279,12 +311,12 @@ def test(model, data, FLAGS):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cc.ro.300.vec'
+    word2vec_path = '../../romanian_word_vecs/cc.ro.300.bin'
 
-    training_data_path = '../data-capsnets/scenario0/train.txt'
-    test_data_path = '../data-capsnets/scenario0/test.txt'
+    training_data_path = '../data-capsnets/scenario2/train.txt'
+    test_data_path = '../data-capsnets/scenario2/test.txt'
 
-    FLAGS = flags.define_app_flags('0')
+    FLAGS = flags.define_app_flags('2-rerouting')
 
     # Load data
     print('------------------load word2vec begin-------------------')

@@ -83,11 +83,13 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
                 print("Word {} not in W2V vocabulary!".format(w))
 
         sentence_length = len(x_vectors)
+        # todo look into this 1 limit
         if sentence_length <= 1:
             continue
-        if in_max_len == 0:
-            if sentence_length > max_len:
-                max_len = sentence_length
+        # todo why is it like this?
+        # if in_max_len == 0:
+        if sentence_length > max_len:
+            max_len = sentence_length
 
         input_x.append(np.asarray(x_vectors))
         input_y.append(intent_dict[intent])
@@ -103,15 +105,16 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
     y_s_padding = []
     x_text_padding = []
     for i in range(len(input_x)):
-        if max_len < sentences_length[i]:
-            x_padding.append(input_x[i][0:max_len])
-            sentences_length[i] = max_len
-            y_s_padding.append(input_y_s[i][0:max_len])
-
-            if load_text:
-                x_text_padding.append(input_x_text[i][0:max_len])
-
-            continue
+        # todo look into if this is actually valid
+        # if max_len < sentences_length[i]:
+        #     x_padding.append(input_x[i][0:max_len])
+        #     sentences_length[i] = max_len
+        #     y_s_padding.append(input_y_s[i][0:max_len])
+        #
+        #     if load_text:
+        #         x_text_padding.append(input_x_text[i][0:max_len])
+        #
+        #     continue
 
         tmp = np.append(input_x[i], np.zeros((max_len - sentences_length[i],), dtype=np.int64))
         x_padding.append(tmp)
