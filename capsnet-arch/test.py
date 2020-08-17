@@ -16,6 +16,8 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score as scikit_f1
 import matplotlib.pyplot as plt
+from dominate import document
+from dominate.tags import *
 
 
 def plot_confusion_matrix(y_true, y_pred, labels,
@@ -241,36 +243,68 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                     f.write(str(p) + '\n')
                     f.write('\n')
                 i += 1
-        print("------------------------\n")
-        dataToPrint = []
-        i = 0
-        for t,p in zip(y_intent_labels_true, y_intent_labels_pred):
-            dataToPrint.append({})
-            dataToPrint[i]["trueIntent"] = t
-            dataToPrint[i]["predictedIntent"] = p
-            i += 1
-        i = 0
-        for v, p in zip(y_slot_labels_true, y_slot_labels_pred):
-            dataToPrint[i]["testData"] = ' '.join(x_text_te[i])
-            dataToPrint[i]["trueSlots"] = str(v)
-            dataToPrint[i]["predSlots"] = str(p)
-            dataToPrint[i]["attentionPerHeads"] = total_attention[i]
-            i += 1
 
-        for j in range(i-1):
-            print(dataToPrint[j]["trueIntent"] + "\n")
-            print(dataToPrint[j]["predictedIntent"] + "\n")
-            print(dataToPrint[j]["testData"] + "\n")
-            print(dataToPrint[j]["trueSlots"] + "\n")
-            print(dataToPrint[j]["predSlots"] + "\n")
-            for x in range(FLAGS.r):
-                print("head: " + str(x) + "\n" + " ".join("%10.3f" % f for f in dataToPrint[j]["attentionPerHeads"][x]) + "\n")
+        if FLAGS.scenario_num != '':
+            results_dir = FLAGS.results_dir + 'scenario' + FLAGS.scenario_num + '/'
+            if not os.path.exists(results_dir):
+                os.makedirs(results_dir)
+        else:
+            results_dir = FLAGS.results_dir
+
+        doc = document(title='Results - scenario - ' + FLAGS.scenario_num)
+
+        with doc.head:
+            link(re="stylesheet", href="result-styles.css")
+
+
+        with doc:
             print("------------------------\n")
+            dataToPrint = []
+            i = 0
+            for t,p in zip(y_intent_labels_true, y_intent_labels_pred):
+                dataToPrint.append({})
+                dataToPrint[i]["trueIntent"] = t
+                dataToPrint[i]["predictedIntent"] = p
+                i += 1
+            i = 0
+            for v, p in zip(y_slot_labels_true, y_slot_labels_pred):
+                dataToPrint[i]["testData"] = ' '.join(x_text_te[i])
+                dataToPrint[i]["trueSlots"] = str(v)
+                dataToPrint[i]["predSlots"] = str(p)
+                dataToPrint[i]["attentionPerHeads"] = total_attention[i]
+                i += 1
 
+
+            for j in range(i - 1):
+                with div():
+                    attr(cls="example")
+                    p("Example nr: " + int(j))
+                    p("true intent: " + dataToPrint[j]["trueIntent"])
+                    p("pred intent: " + dataToPrint[j]["predictedIntent"])
+                    p("test data:   " + dataToPrint[j]["testData"])
+                    p("true slots:  " + dataToPrint[j]["trueSlots"])
+                    p("pred slots:  " + dataToPrint[j]["predSlots"])
+                    p("attention heads:")
+                    for x in range(FLAGS.r):
+                        with p():
+                            for f in dataToPrint[j]["attentionPerHeads"][x]:
+                                attr(cls="word")
+                                span("%10.3f" % f, style="background-color: rgba(0,0,255, " + f +")")
+
+            for j in range(i-1):
+                print(dataToPrint[j]["trueIntent"] + "\n")
+                print(dataToPrint[j]["predictedIntent"] + "\n")
+                print(dataToPrint[j]["testData"] + "\n")
+                print(dataToPrint[j]["trueSlots"] + "\n")
+                print(dataToPrint[j]["predSlots"] + "\n")
+                for x in range(FLAGS.r):
+                    print("head: " + str(x) + "\n" + " ".join("%10.3f" % f for f in dataToPrint[j]["attentionPerHeads"][x]) + "\n")
+                print("------------------------\n")
+
+        with open(os.path.join(errors_dir, 'results.html'), 'w', encoding='utf-8') as f:
+            f.write('Results\n')
 
         print("finished")
-
-
 
     return f_score, scores['f1']
 
@@ -313,10 +347,10 @@ def test(model, data, FLAGS):
 def main():
     word2vec_path = '../../romanian_word_vecs/cc.ro.300.bin'
 
-    training_data_path = '../data-capsnets/scenario2/train.txt'
-    test_data_path = '../data-capsnets/scenario2/test.txt'
+    training_data_path = '../data-capsnets/scenario1/train.txt'
+    test_data_path = '../data-capsnets/scenario1/test.txt'
 
-    FLAGS = flags.define_app_flags('2-rerouting')
+    FLAGS = flags.define_app_flags('1-rerouting')
 
     # Load data
     print('------------------load word2vec begin-------------------')

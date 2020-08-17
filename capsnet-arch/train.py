@@ -349,11 +349,11 @@ def train(model, data, FLAGS, batches_rand=False, log=False):
 def main():
     word2vec_path = '../../romanian_word_vecs/cc.ro.300.bin'
 
-    training_data_path = '../data-capsnets/scenario2/train.txt'
-    test_data_path = '../data-capsnets/scenario2/test.txt'
+    training_data_path = '../data-capsnets/scenario1/train.txt'
+    test_data_path = '../data-capsnets/scenario1/test.txt'
 
     # Define the flags
-    FLAGS = flags.define_app_flags('2-rerouting')
+    FLAGS = flags.define_app_flags('1-rerouting')
 
     # Load data
     print('------------------load word2vec begin-------------------')

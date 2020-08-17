@@ -99,8 +99,11 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
         if load_text:
             input_x_text.append(np.asarray(x_text))
 
-    # add paddings
     max_len = max(in_max_len, max_len)
+    return input_x, input_y, input_y_s, input_x_text, sentences_length, max_len, intent_dict, intent_id, slot_dict, slot_id
+
+def addPadding(input_x, input_y_s, input_y, input_x_text, sentences_length, max_len, load_text=False):
+    # add paddings
     x_padding = []
     y_s_padding = []
     x_text_padding = []
@@ -133,7 +136,7 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
     else:
         x_text_padding = None
 
-    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_dict, intent_id, slot_dict, slot_id, x_text_padding
+    return x_padding, input_y, input_y_s, x_text_padding, sentences_length
 
 
 def get_label(data, test=False):
@@ -152,6 +155,7 @@ def get_label(data, test=False):
         y_intents = data['y_intents_tr']
         y_slots = data['y_slots_tr']
     max_len = data['max_len']
+    print("max length is", max_len)
     sample_num_tr = y_intents.shape[0]
     nr_intents = len(data['intents_dict'])
     nr_slots = len(data['slots_dict'])
@@ -194,16 +198,31 @@ def read_datasets(w2v, training_data_path, test_data_path, test=False):
     intents_dict = dict()
     slot_id = 0
     intent_id = 0
-    (x_tr, y_intents_tr, y_slots_tr, sentences_length_tr,
-     max_len, intents_dict, intent_id, slots_dict, slot_id,
-     x_text_tr) = load_vec(training_data_path, w2v, max_len,
-                           intents_dict, intent_id, slots_dict, slot_id,
-                           load_text=False)
-    (x_te, y_intents_te, y_slots_te, sentences_length_te,
-     max_len, intents_dict, intent_id, slots_dict, slot_id,
-     x_text_te) = load_vec(test_data_path, w2v, max_len, intents_dict,
-                           intent_id, slots_dict, slot_id,
-                           load_text=test)
+    # (x_tr, y_intents_tr, y_slots_tr, sentences_length_tr,
+    #  max_len, intents_dict, intent_id, slots_dict, slot_id,
+    #  x_text_tr) = load_vec(training_data_path, w2v, max_len,
+    #                        intents_dict, intent_id, slots_dict, slot_id,
+    #                        load_text=False)
+    # (x_te, y_intents_te, y_slots_te, sentences_length_te,
+    #  max_len, intents_dict, intent_id, slots_dict, slot_id,
+    #  x_text_te) = load_vec(test_data_path, w2v, max_len, intents_dict,
+    #                        intent_id, slots_dict, slot_id,
+    #                        load_text=test)
+
+    (input_x_tr, input_y_tr, input_y_s_tr, input_x_text_tr, sentences_length_tr,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(training_data_path, w2v, max_len, intents_dict,
+                                                                     intent_id, slots_dict, slot_id, load_text=False)
+    (input_x_te, input_y_te, input_y_s_te, input_x_text_te, sentences_length_te,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(test_data_path, w2v, max_len, intents_dict,
+                                                                     intent_id, slots_dict, slot_id, load_text=test)
+
+    (x_tr, y_intents_tr, y_slots_tr, x_text_tr, sentences_length_tr) = addPadding(input_x_tr, input_y_s_tr, input_y_tr,
+                                                                                  input_x_text_tr, sentences_length_tr,
+                                                                                  max_len, load_text=False)
+    (x_te, y_intents_te, y_slots_te, x_text_te, sentences_length_te) = addPadding(input_x_te, input_y_s_te, input_y_te,
+                                                                                  input_x_text_te, sentences_length_te,
+                                                                                  max_len, load_text=test)
+
     intents_id_dict = {v: k for k, v in intents_dict.items()}
     slots_id_dict = {v: k for k, v in slots_dict.items()}
 
