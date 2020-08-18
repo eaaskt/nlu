@@ -218,11 +218,11 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 
         incorrect_intents = {}
         i = 0
-        for t, p in zip(y_intent_labels_true, y_intent_labels_pred):
-            if t != p:
+        for t, pr in zip(y_intent_labels_true, y_intent_labels_pred):
+            if t != pr:
                 if t not in incorrect_intents:
                     incorrect_intents[t] = []
-                incorrect_intents[t].append((' '.join(x_text_te[i]), p))
+                incorrect_intents[t].append((' '.join(x_text_te[i]), pr))
             i += 1
 
         with open(os.path.join(errors_dir, 'errors.txt'), 'w', encoding='utf-8') as f:
@@ -236,11 +236,11 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             # View incorrect slot sequences
             f.write('SLOT ERRORS\n')
             i = 0
-            for v, p in zip(y_slot_labels_true, y_slot_labels_pred):
-                if v != p:
+            for v, pr in zip(y_slot_labels_true, y_slot_labels_pred):
+                if v != pr:
                     f.write(' '.join(x_text_te[i]) + '\n')
                     f.write(str(v) + '\n')
-                    f.write(str(p) + '\n')
+                    f.write(str(pr) + '\n')
                     f.write('\n')
                 i += 1
 
@@ -254,23 +254,23 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         doc = document(title='Results - scenario - ' + FLAGS.scenario_num)
 
         with doc.head:
-            link(re="stylesheet", href="result-styles.css")
+            link(rel="stylesheet", href="../../result-styles.css")
 
 
         with doc:
             print("------------------------\n")
             dataToPrint = []
             i = 0
-            for t,p in zip(y_intent_labels_true, y_intent_labels_pred):
+            for t,pr in zip(y_intent_labels_true, y_intent_labels_pred):
                 dataToPrint.append({})
                 dataToPrint[i]["trueIntent"] = t
-                dataToPrint[i]["predictedIntent"] = p
+                dataToPrint[i]["predictedIntent"] = pr
                 i += 1
             i = 0
-            for v, p in zip(y_slot_labels_true, y_slot_labels_pred):
+            for v, pr in zip(y_slot_labels_true, y_slot_labels_pred):
                 dataToPrint[i]["testData"] = ' '.join(x_text_te[i])
                 dataToPrint[i]["trueSlots"] = str(v)
-                dataToPrint[i]["predSlots"] = str(p)
+                dataToPrint[i]["predSlots"] = str(pr)
                 dataToPrint[i]["attentionPerHeads"] = total_attention[i]
                 i += 1
 
@@ -278,18 +278,22 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             for j in range(i - 1):
                 with div():
                     attr(cls="example")
-                    p("Example nr: " + str(j))
-                    p("true intent: " + dataToPrint[j]["trueIntent"])
-                    p("pred intent: " + dataToPrint[j]["predictedIntent"])
-                    p("test data:   " + dataToPrint[j]["testData"])
-                    p("true slots:  " + dataToPrint[j]["trueSlots"])
-                    p("pred slots:  " + dataToPrint[j]["predSlots"])
-                    p("attention heads:")
+                    p('Example nr: ' + str(j))
+                    p('true intent: ' + dataToPrint[j]["trueIntent"])
+                    p('pred intent: ' + dataToPrint[j]["predictedIntent"])
+                    p('test data:   ' + dataToPrint[j]["testData"])
+                    p('true slots:  ' + dataToPrint[j]["trueSlots"])
+                    p('pred slots:  ' + dataToPrint[j]["predSlots"])
+                    p('attention heads:')
                     for x in range(FLAGS.r):
-                        with p():
-                            for f in dataToPrint[j]["attentionPerHeads"][x]:
-                                attr(cls="word")
-                                span("%10.3f" % f, style="background-color: rgba(0,0,255, " + f +")")
+                        with div():
+                            attr(cls="attention-head")
+                            with p():
+                                for word, f in zip(dataToPrint[j]["testData"].split(' '), dataToPrint[j]["attentionPerHeads"][x]):
+                                    span(word,style="background-color: rgba(0,0,255, " + str(f) + ")", cls="word")
+                            with p():
+                                for f in dataToPrint[j]["attentionPerHeads"][x]:
+                                    span("%10.3f" % f,cls="word", style="background-color: rgba(0,0,255, " + str(f) +")")
 
             for j in range(i-1):
                 print(dataToPrint[j]["trueIntent"] + "\n")
@@ -301,8 +305,8 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                     print("head: " + str(x) + "\n" + " ".join("%10.3f" % f for f in dataToPrint[j]["attentionPerHeads"][x]) + "\n")
                 print("------------------------\n")
 
-        with open(os.path.join(errors_dir, 'results.html'), 'w', encoding='utf-8') as f:
-            f.write('Results\n')
+        with open(os.path.join(results_dir, 'results.html'), 'w', encoding='utf-8') as f:
+            f.write(doc.render())
 
         print("finished")
 

@@ -1,7 +1,17 @@
 .word {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    min-width: 75px;
+    max-width: 75px;
+    float: left;
+}
+
+.p {
+    magin-top: 5px;
+    magin-bottom: 5px;
 }
 
 .example {
@@ -10,4 +20,20 @@
  justify-content: left;
  margin-top: 20px;
  margin-bottom: 20px;
+}
+
+.attention-head {
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 2px solid lightgray;
+   border-radius: 5px;
+   padding: 10px;
+   width: 1470px;
+}
+
+.attention-head p {
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
