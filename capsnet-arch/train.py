@@ -347,7 +347,7 @@ def train(model, data, FLAGS, batches_rand=False, log=False):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cc.ro.300.bin'
+    word2vec_path = '../../romanian_word_vecs/cleaned-vectors.vec'
 
     training_data_path = '../data-capsnets/scenario1/train.txt'
     test_data_path = '../data-capsnets/scenario1/test.txt'

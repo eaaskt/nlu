@@ -278,7 +278,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             for j in range(i - 1):
                 with div():
                     attr(cls="example")
-                    p("Example nr: " + int(j))
+                    p("Example nr: " + str(j))
                     p("true intent: " + dataToPrint[j]["trueIntent"])
                     p("pred intent: " + dataToPrint[j]["predictedIntent"])
                     p("test data:   " + dataToPrint[j]["testData"])
@@ -345,7 +345,7 @@ def test(model, data, FLAGS):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cc.ro.300.bin'
+    word2vec_path = '../../romanian_word_vecs/cleaned-vectors.vec'
 
     training_data_path = '../data-capsnets/scenario1/train.txt'
     test_data_path = '../data-capsnets/scenario1/test.txt'
