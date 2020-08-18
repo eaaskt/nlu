@@ -2,15 +2,22 @@
 
 def readData():
     baseDir = '../data-capsnets/scenario'
+    baseDirDia = '../data-capsnets/diacritics/scenario'
     test = '/test.txt'
     train = '/train.txt'
     filePaths = [
-                baseDir + '0' + test, baseDir + '1' + train,
-                baseDir + '1' + test, baseDir + '1' + train,
-                baseDir + '2' + test, baseDir + '2' + train,
-                baseDir + '3.1' + test, baseDir + '3.1' + train,
-                baseDir + '3.2' + test, baseDir + '3.2' + train,
-                baseDir + '3.3' + test, baseDir + '3.3' + train,
+        baseDir + '0' + test, baseDir + '1' + train,
+        baseDir + '1' + test, baseDir + '1' + train,
+        baseDir + '2' + test, baseDir + '2' + train,
+        baseDir + '3.1' + test, baseDir + '3.1' + train,
+        baseDir + '3.2' + test, baseDir + '3.2' + train,
+        baseDir + '3.3' + test, baseDir + '3.3' + train,
+        baseDirDia + '0' + test, baseDirDia + '1' + train,
+        baseDirDia + '1' + test, baseDirDia + '1' + train,
+        baseDirDia + '2' + test, baseDirDia + '2' + train,
+        baseDirDia + '31' + test, baseDirDia + '31' + train,
+        baseDirDia + '32' + test, baseDirDia + '32' + train,
+        baseDirDia + '33' + test, baseDirDia + '33' + train,
     ]
 
     wordsSet = set()
