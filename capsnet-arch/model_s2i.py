@@ -51,8 +51,13 @@ class CapsNetS2I:
         self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_caps()
 
         # Rerouting
-        self.intent_max = 0
-        self.slot_output_vectors, self.slot_weights_b, self.slot_weights_c = self.rerouting()
+        if FLAGS.use_rerouting:
+            self.intent_max = 0
+            self.slot_output_vectors, self.slot_weights_b, self.slot_weights_c = self.rerouting()
+        else:
+            self.slot_output_vectors = self.slot_output_vectors_interm
+            self.slot_weights_b = self.slot_weights_b_interm
+            self.slot_weights_c = self.slot_weights_c_interm
 
         self.loss_val = self.loss()
 
@@ -237,7 +242,7 @@ class CapsNetS2I:
         intent_ids = tf.cast(tf.argmax(intent_outputs_norm, axis=1), tf.int32)
         row_ids = tf.range(tf.shape(intent_outputs_norm)[0], dtype=tf.int32)
         idx = tf.stack([row_ids, intent_ids], axis=1)
-        max_intents = tf.gather_nd(intent_outputs_reduced_dim, idx) # size: (?,1,1,16,1)
+        max_intents = tf.gather_nd(intent_outputs_reduced_dim, idx)
         max_intents = tf.expand_dims(max_intents, axis=-1)
         max_intents = tf.expand_dims(max_intents, axis=1)
         max_intents = tf.expand_dims(max_intents, axis=2)
