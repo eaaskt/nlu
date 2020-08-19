@@ -354,7 +354,7 @@ def main():
     training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
     test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
-    FLAGS = flags.define_app_flags('1-no-rerouting')
+    FLAGS = flags.define_app_flags('1-rerouting')
 
     # Load data
     print('------------------load word2vec begin-------------------')
