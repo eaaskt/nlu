@@ -287,8 +287,8 @@ def test(model, data, FLAGS):
 def main():
     word2vec_path = '../../romanian_word_vecs/cleaned-vectors.vec'
 
-    training_data_path = '../data-capsnets/scenario1/train.txt'
-    test_data_path = '../data-capsnets/scenario1/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
     FLAGS = flags.define_app_flags('1-rerouting')
 
