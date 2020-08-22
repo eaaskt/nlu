@@ -1,8 +1,5 @@
 import numpy as np
 import util
-# from gensim.models import FastText
-
-from gensim.models.keyedvectors import KeyedVectors
 
 from gensim.models.keyedvectors import KeyedVectors
 import time
@@ -16,6 +13,7 @@ def load_w2v(file_name):
             w2v: w2v model
     """
     start = time.time()
+    # w2v = FastText.load_fasttext_format(file_name)
     w2v = KeyedVectors.load_word2vec_format(file_name, binary=False)
     end = time.time()
     print("loading time took %06.2f" % (end - start))
@@ -86,11 +84,13 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
                 print("Word {} not in W2V vocabulary!".format(w))
 
         sentence_length = len(x_vectors)
+        # todo look into this 1 limit
         if sentence_length <= 1:
             continue
-        if in_max_len == 0:
-            if sentence_length > max_len:
-                max_len = sentence_length
+        # todo why is it like this?
+        # if in_max_len == 0:
+        if sentence_length > max_len:
+            max_len = sentence_length
 
         input_x.append(np.asarray(x_vectors))
         input_y.append(intent_dict[intent])
@@ -100,22 +100,16 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
         if load_text:
             input_x_text.append(np.asarray(x_text))
 
-    # add paddings
     max_len = max(in_max_len, max_len)
+    return input_x, input_y, input_y_s, input_x_text, sentences_length, max_len, intent_dict, intent_id, slot_dict, slot_id
+
+
+def addPadding(input_x, input_y_s, input_y, input_x_text, sentences_length, max_len, load_text=False):
+    # add paddings
     x_padding = []
     y_s_padding = []
     x_text_padding = []
     for i in range(len(input_x)):
-        if max_len < sentences_length[i]:
-            x_padding.append(input_x[i][0:max_len])
-            sentences_length[i] = max_len
-            y_s_padding.append(input_y_s[i][0:max_len])
-
-            if load_text:
-                x_text_padding.append(input_x_text[i][0:max_len])
-
-            continue
-
         tmp = np.append(input_x[i], np.zeros((max_len - sentences_length[i],), dtype=np.int64))
         x_padding.append(tmp)
         tmp = np.append(input_y_s[i], np.zeros((max_len - sentences_length[i],), dtype=np.int64))
@@ -133,7 +127,7 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
     else:
         x_text_padding = None
 
-    return x_padding, input_y, input_y_s, sentences_length, max_len, intent_dict, intent_id, slot_dict, slot_id, x_text_padding
+    return x_padding, input_y, input_y_s, x_text_padding, sentences_length
 
 
 def get_label(data, test=False):
@@ -152,6 +146,7 @@ def get_label(data, test=False):
         y_intents = data['y_intents_tr']
         y_slots = data['y_slots_tr']
     max_len = data['max_len']
+    print("max length is", max_len)
     sample_num_tr = y_intents.shape[0]
     nr_intents = len(data['intents_dict'])
     nr_slots = len(data['slots_dict'])
@@ -183,6 +178,7 @@ def read_datasets(w2v, training_data_path, test_data_path, test=False):
     print('------------------read datasets begin-------------------')
     data = {}
 
+    # TODO: figure out if normalizing these is something we want to do
     # load normalized word embeddings
     embedding = w2v.vectors
     norm_embedding = util.norm_matrix(embedding)
@@ -194,16 +190,23 @@ def read_datasets(w2v, training_data_path, test_data_path, test=False):
     intents_dict = dict()
     slot_id = 0
     intent_id = 0
-    (x_tr, y_intents_tr, y_slots_tr, sentences_length_tr,
-     max_len, intents_dict, intent_id, slots_dict, slot_id,
-     x_text_tr) = load_vec(training_data_path, w2v, max_len,
-                           intents_dict, intent_id, slots_dict, slot_id,
-                           load_text=False)
-    (x_te, y_intents_te, y_slots_te, sentences_length_te,
-     max_len, intents_dict, intent_id, slots_dict, slot_id,
-     x_text_te) = load_vec(test_data_path, w2v, max_len, intents_dict,
-                           intent_id, slots_dict, slot_id,
-                           load_text=test)
+
+    # First load the sentences vecs and find max len from train + test
+    (input_x_tr, input_y_tr, input_y_s_tr, input_x_text_tr, sentences_length_tr,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(training_data_path, w2v, max_len, intents_dict,
+                                                                     intent_id, slots_dict, slot_id, load_text=False)
+    (input_x_te, input_y_te, input_y_s_te, input_x_text_te, sentences_length_te,
+     max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(test_data_path, w2v, max_len, intents_dict,
+                                                                     intent_id, slots_dict, slot_id, load_text=test)
+
+    # Add padding to the sentences to make vectorization easier
+    (x_tr, y_intents_tr, y_slots_tr, x_text_tr, sentences_length_tr) = addPadding(input_x_tr, input_y_s_tr, input_y_tr,
+                                                                                  input_x_text_tr, sentences_length_tr,
+                                                                                  max_len, load_text=False)
+    (x_te, y_intents_te, y_slots_te, x_text_te, sentences_length_te) = addPadding(input_x_te, input_y_s_te, input_y_te,
+                                                                                  input_x_text_te, sentences_length_te,
+                                                                                  max_len, load_text=test)
+
     intents_id_dict = {v: k for k, v in intents_dict.items()}
     slots_id_dict = {v: k for k, v in slots_dict.items()}
 
