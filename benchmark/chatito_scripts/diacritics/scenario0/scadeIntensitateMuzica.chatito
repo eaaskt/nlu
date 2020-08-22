@@ -1,7 +1,11 @@
 %[scadeIntensitateMuzica]('training': '90', 'testing': '40')
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#relativ]
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#absolut]
+    ~[greet?] ~[action] ~[muzicaD?] ~[la] @[nivel#relativ]
+    ~[greet?] ~[action] ~[muzicaD?] ~[la] @[nivel#absolut]
     ~[greet?] ~[action] ~[muzica?]
+    ~[greet?] ~[action] ~[muzicaD?]
+    ~[greet?] ~[actionIntens] ~[muzicaD]
     ~[greet?] ~[actionR] ~[muzicaR?]
 
 @[nivel#relativ]
@@ -20,18 +24,22 @@
     Salut,
 
 ~[action]
+    scade volumul
+    poți să scazi volumul
+
+~[actionIntens]
     scade intensitatea
     aș vrea să scazi intensitatea
     redu intensitatea
     aș vrea să reduci intensitatea
     poți să reduci intensitatea
     ai putea oare scădea intensitatea
-    scade volumul
-    poți să scazi volumul
 
 ~[muzica]
     la muzica
     la piesa
+
+~[muzicaD]
     cântecului
     concertului
     simfoniei

@@ -10803,246 +10803,6 @@
         ]
     },
     {
-        "text": "Salut, fă mai tare muzica",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            }
-        ]
-    },
-    {
-        "text": "Salut, ai putea oare mări volumul concertului la dublu",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 54,
-                "entity": "nivel",
-                "start": 49,
-                "value": "dublu"
-            }
-        ]
-    },
-    {
-        "text": "Salut, poți să mărești volumul simfoniei la maxim",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 49,
-                "entity": "nivel",
-                "start": 44,
-                "value": "maxim"
-            }
-        ]
-    },
-    {
-        "text": "fă mai tare concertul",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            }
-        ]
-    },
-    {
-        "text": "mărește volumul concertului la dublu",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 36,
-                "entity": "nivel",
-                "start": 31,
-                "value": "dublu"
-            }
-        ]
-    },
-    {
-        "text": "Pepper, aș vrea să mărești volumul la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 39,
-                "entity": "nivel",
-                "start": 38,
-                "value": "2"
-            }
-        ]
-    },
-    {
-        "text": "Pepper, ai putea oare mări volumul",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            }
-        ]
-    },
-    {
-        "text": "Salut, ridică volumul concertului la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 38,
-                "entity": "nivel",
-                "start": 37,
-                "value": "2"
-            }
-        ]
-    },
-    {
-        "text": "Pepper, poți să mărești volumul simfoniei la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 46,
-                "entity": "nivel",
-                "start": 45,
-                "value": "2"
-            }
-        ]
-    },
-    {
-        "text": "ai putea oare scădea intensitatea muzicii",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            }
-        ]
-    },
-    {
-        "text": "scade intensitatea muzicii la jumatate",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 38,
-                "entity": "nivel",
-                "start": 30,
-                "value": "jumatate"
-            }
-        ]
-    },
-    {
-        "text": "aș vrea să scazi intensitatea concertului la 3",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 46,
-                "entity": "nivel",
-                "start": 45,
-                "value": "3"
-            }
-        ]
-    },
-    {
-        "text": "aș vrea să scazi intensitatea simfoniei la jumatate",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 51,
-                "entity": "nivel",
-                "start": 43,
-                "value": "jumatate"
-            }
-        ]
-    },
-    {
-        "text": "Salut, scade intensitatea concertului la jumatate",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 49,
-                "entity": "nivel",
-                "start": 41,
-                "value": "jumatate"
-            }
-        ]
-    },
-    {
-        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 56,
-                "entity": "nivel",
-                "start": 55,
-                "value": "2"
-            }
-        ]
-    },
-    {
-        "text": "Salut, scade intensitatea muzicii la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 38,
-                "entity": "nivel",
-                "start": 37,
-                "value": "2"
-            }
-        ]
-    },
-    {
-        "text": "Pepper, ai putea oare scădea intensitatea la 1",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 46,
-                "entity": "nivel",
-                "start": 45,
-                "value": "1"
-            }
-        ]
-    },
-    {
-        "text": "Pepper, ai putea oare scădea intensitatea muzicii",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            }
-        ]
-    },
-    {
         "text": "oprește televizorul",
         "entities": [
             {
@@ -11336,6 +11096,246 @@
                 "entity": "canal",
                 "start": 13,
                 "value": "HBO"
+            }
+        ]
+    },
+    {
+        "text": "Salut, mărește volumul muzicii",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aș vrea să mărești volumul concertului la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 55,
+                "entity": "nivel",
+                "start": 50,
+                "value": "maxim"
+            }
+        ]
+    },
+    {
+        "text": "ai putea oare mări volumul la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 31,
+                "entity": "nivel",
+                "start": 30,
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ridică volumul muzicii la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "nivel",
+                "start": 34,
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "text": "mărește volumul muzicii la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 28,
+                "entity": "nivel",
+                "start": 27,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, fă mai tare concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Salut, ai putea oare mări volumul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "mărește volumul simfoniei la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 34,
+                "entity": "nivel",
+                "start": 29,
+                "value": "dublu"
+            }
+        ]
+    },
+    {
+        "text": "Salut, poți să mărești volumul muzicii la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 42,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "3"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 63,
+                "entity": "nivel",
+                "start": 55,
+                "value": "jumatate"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea concertului la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 57,
+                "value": "minim"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să scazi intensitatea simfoniei la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "nivel",
+                "start": 43,
+                "value": "minim"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, scade intensitatea concertului la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 42,
+                "value": "3"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, scade intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Salut, scade intensitatea simfoniei la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 47,
+                "entity": "nivel",
+                "start": 39,
+                "value": "jumatate"
             }
         ]
     }

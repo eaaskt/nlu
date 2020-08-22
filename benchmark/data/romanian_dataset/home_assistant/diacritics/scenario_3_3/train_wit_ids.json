@@ -17338,422 +17338,6 @@
         "id": 555
     },
     {
-        "text": "Salut, fă mai tare muzica",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O"
-        ],
-        "id": 556
-    },
-    {
-        "text": "Salut, ai putea oare mări volumul concertului la dublu",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 54,
-                "entity": "nivel",
-                "start": 49,
-                "value": "dublu"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 557
-    },
-    {
-        "text": "Salut, poți să mărești volumul simfoniei la maxim",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 49,
-                "entity": "nivel",
-                "start": 44,
-                "value": "maxim"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 558
-    },
-    {
-        "text": "fă mai tare concertul",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O"
-        ],
-        "id": 559
-    },
-    {
-        "text": "mărește volumul concertului la dublu",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 36,
-                "entity": "nivel",
-                "start": 31,
-                "value": "dublu"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 560
-    },
-    {
-        "text": "Pepper, aș vrea să mărești volumul la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 39,
-                "entity": "nivel",
-                "start": 38,
-                "value": "2"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 561
-    },
-    {
-        "text": "Pepper, ai putea oare mări volumul",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O"
-        ],
-        "id": 562
-    },
-    {
-        "text": "Salut, ridică volumul concertului la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 38,
-                "entity": "nivel",
-                "start": 37,
-                "value": "2"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 563
-    },
-    {
-        "text": "Pepper, poți să mărești volumul simfoniei la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "cresteIntensitateMuzica"
-            },
-            {
-                "end": 46,
-                "entity": "nivel",
-                "start": 45,
-                "value": "2"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 564
-    },
-    {
-        "text": "ai putea oare scădea intensitatea muzicii",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O"
-        ],
-        "id": 565
-    },
-    {
-        "text": "scade intensitatea muzicii la jumatate",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 38,
-                "entity": "nivel",
-                "start": 30,
-                "value": "jumatate"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 566
-    },
-    {
-        "text": "aș vrea să scazi intensitatea concertului la 3",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 46,
-                "entity": "nivel",
-                "start": 45,
-                "value": "3"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 567
-    },
-    {
-        "text": "aș vrea să scazi intensitatea simfoniei la jumatate",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 51,
-                "entity": "nivel",
-                "start": 43,
-                "value": "jumatate"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 568
-    },
-    {
-        "text": "Salut, scade intensitatea concertului la jumatate",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 49,
-                "entity": "nivel",
-                "start": 41,
-                "value": "jumatate"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 569
-    },
-    {
-        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 56,
-                "entity": "nivel",
-                "start": 55,
-                "value": "2"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 570
-    },
-    {
-        "text": "Salut, scade intensitatea muzicii la 2",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 38,
-                "entity": "nivel",
-                "start": 37,
-                "value": "2"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 571
-    },
-    {
-        "text": "Pepper, ai putea oare scădea intensitatea la 1",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            },
-            {
-                "end": 46,
-                "entity": "nivel",
-                "start": 45,
-                "value": "1"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-nivel"
-        ],
-        "id": 572
-    },
-    {
-        "text": "Pepper, ai putea oare scădea intensitatea muzicii",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "scadeIntensitateMuzica"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O"
-        ],
-        "id": 573
-    },
-    {
         "text": "oprește televizorul",
         "entities": [
             {
@@ -17765,7 +17349,7 @@
             "O",
             "O"
         ],
-        "id": 574
+        "id": 556
     },
     {
         "text": "Salut, te rog poți să oprești televizorul",
@@ -17784,7 +17368,7 @@
             "O",
             "O"
         ],
-        "id": 575
+        "id": 557
     },
     {
         "text": "Pepper, oprește televizorul",
@@ -17799,7 +17383,7 @@
             "O",
             "O"
         ],
-        "id": 576
+        "id": 558
     },
     {
         "text": "salut te rog aprinde televizorul pe Cinemax",
@@ -17824,7 +17408,7 @@
             "O",
             "B-canal"
         ],
-        "id": 577
+        "id": 559
     },
     {
         "text": "Pepper te rog aprinde pe Cinemax",
@@ -17848,7 +17432,7 @@
             "O",
             "B-canal"
         ],
-        "id": 578
+        "id": 560
     },
     {
         "text": "Pepper aprinde pe HBO",
@@ -17870,7 +17454,7 @@
             "O",
             "B-canal"
         ],
-        "id": 579
+        "id": 561
     },
     {
         "text": "Pepper te rog pornește televizorul pe TVR1",
@@ -17895,7 +17479,7 @@
             "O",
             "B-canal"
         ],
-        "id": 580
+        "id": 562
     },
     {
         "text": "Pepper te rog pornește pe TVR1",
@@ -17919,7 +17503,7 @@
             "O",
             "B-canal"
         ],
-        "id": 581
+        "id": 563
     },
     {
         "text": "Pepper doresc să aprinzi pe HBO",
@@ -17943,7 +17527,7 @@
             "O",
             "B-canal"
         ],
-        "id": 582
+        "id": 564
     },
     {
         "text": "salut te rog aprinde pe Mezzo",
@@ -17967,7 +17551,7 @@
             "O",
             "B-canal"
         ],
-        "id": 583
+        "id": 565
     },
     {
         "text": "salut aprinde televizorul pe Mezzo",
@@ -17990,7 +17574,7 @@
             "O",
             "B-canal"
         ],
-        "id": 584
+        "id": 566
     },
     {
         "text": "Pepper te rog doresc să aprinzi televizorul pe TVR1",
@@ -18017,7 +17601,7 @@
             "O",
             "B-canal"
         ],
-        "id": 585
+        "id": 567
     },
     {
         "text": "salut te rog dă pe Mezzo",
@@ -18041,7 +17625,7 @@
             "O",
             "B-canal"
         ],
-        "id": 586
+        "id": 568
     },
     {
         "text": "Pepper dă pe TVR1",
@@ -18063,7 +17647,7 @@
             "O",
             "B-canal"
         ],
-        "id": 587
+        "id": 569
     },
     {
         "text": "Pepper ai putea da pe canalul Mezzo",
@@ -18088,7 +17672,7 @@
             "O",
             "B-canal"
         ],
-        "id": 588
+        "id": 570
     },
     {
         "text": "salut pune pe canalul Cinemax",
@@ -18111,7 +17695,7 @@
             "O",
             "B-canal"
         ],
-        "id": 589
+        "id": 571
     },
     {
         "text": "dă pe canalul HBO",
@@ -18133,7 +17717,7 @@
             "O",
             "B-canal"
         ],
-        "id": 590
+        "id": 572
     },
     {
         "text": "te rog pune pe Cinemax",
@@ -18156,7 +17740,7 @@
             "O",
             "B-canal"
         ],
-        "id": 591
+        "id": 573
     },
     {
         "text": "ai putea da pe Mezzo",
@@ -18179,7 +17763,7 @@
             "O",
             "B-canal"
         ],
-        "id": 592
+        "id": 574
     },
     {
         "text": "te rog poți să pui pe Mezzo",
@@ -18204,7 +17788,7 @@
             "O",
             "B-canal"
         ],
-        "id": 593
+        "id": 575
     },
     {
         "text": "te rog dă pe HBO",
@@ -18226,6 +17810,422 @@
             "O",
             "O",
             "B-canal"
+        ],
+        "id": 576
+    },
+    {
+        "text": "Salut, mărește volumul muzicii",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 577
+    },
+    {
+        "text": "Pepper, aș vrea să mărești volumul concertului la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 55,
+                "entity": "nivel",
+                "start": 50,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 578
+    },
+    {
+        "text": "ai putea oare mări volumul la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 31,
+                "entity": "nivel",
+                "start": 30,
+                "value": "1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 579
+    },
+    {
+        "text": "Pepper, ridică volumul muzicii la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "nivel",
+                "start": 34,
+                "value": "1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 580
+    },
+    {
+        "text": "mărește volumul muzicii la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 28,
+                "entity": "nivel",
+                "start": 27,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 581
+    },
+    {
+        "text": "Pepper, fă mai tare concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 582
+    },
+    {
+        "text": "Salut, ai putea oare mări volumul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 583
+    },
+    {
+        "text": "mărește volumul simfoniei la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 34,
+                "entity": "nivel",
+                "start": 29,
+                "value": "dublu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 584
+    },
+    {
+        "text": "Salut, poți să mărești volumul muzicii la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 42,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 585
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 586
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 587
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 588
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 63,
+                "entity": "nivel",
+                "start": 55,
+                "value": "jumatate"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 589
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea concertului la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 57,
+                "value": "minim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 590
+    },
+    {
+        "text": "aș vrea să scazi intensitatea simfoniei la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "nivel",
+                "start": 43,
+                "value": "minim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 591
+    },
+    {
+        "text": "Pepper, scade intensitatea concertului la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 42,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 592
+    },
+    {
+        "text": "Pepper, scade intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 593
+    },
+    {
+        "text": "Salut, scade intensitatea simfoniei la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 47,
+                "entity": "nivel",
+                "start": 39,
+                "value": "jumatate"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
         ],
         "id": 594
     }
