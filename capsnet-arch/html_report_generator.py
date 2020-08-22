@@ -43,6 +43,7 @@ def generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred, y_slot
 def generateDocument(dataToPrint, count, dir, attentionHeads, name):
     doc = document(title='Results - scenario - ' + name)
     with doc.head:
+        meta(charset='utf-8')
         link(rel="stylesheet", href="../../result-styles.css")
     with doc:
         for j in range(count - 1):

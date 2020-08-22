@@ -1,6 +1,6 @@
 import numpy as np
 import util
-# from gensim.models import FastText
+
 from gensim.models.keyedvectors import KeyedVectors
 import time
 
@@ -12,12 +12,11 @@ def load_w2v(file_name):
         Returns:
             w2v: w2v model
     """
-
     start = time.time()
     # w2v = FastText.load_fasttext_format(file_name)
     w2v = KeyedVectors.load_word2vec_format(file_name, binary=False)
     end = time.time()
-    print("loading time took %06.2f" % (start - end))
+    print("loading time took %06.2f" % (end - start))
     return w2v
 
 
