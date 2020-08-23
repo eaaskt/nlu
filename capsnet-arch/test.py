@@ -217,7 +217,6 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                               title='Confusion matrix', normalize=True, numbers=True)
         plt.show()
         plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
-
         incorrect_intents = {}
         i = 0
         for t, pr in zip(y_intent_labels_true, y_intent_labels_pred):
