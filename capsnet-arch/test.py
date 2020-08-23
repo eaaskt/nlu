@@ -192,12 +192,14 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         # For super-class confusion mat
         intent_classes = {'aprindeLumina': 'lumina',
                           'cresteIntensitateLumina': 'lumina',
+                          'cresteIntensitateMuzica': 'media',
                           'cresteTemperatura': 'temperatura',
                           'opresteMuzica': 'media',
                           'opresteTV': 'media',
                           'pornesteTV': 'media',
                           'puneMuzica': 'media',
                           'scadeIntensitateLumina': 'lumina',
+                          'scadeIntensitateMuzica': 'media',
                           'scadeTemperatura': 'temperatura',
                           'schimbaCanalTV': 'media',
                           'schimbaIntensitateMuzica': 'media',
@@ -214,6 +216,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
                               title='Confusion matrix', normalize=True, numbers=True)
         plt.show()
+        plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
 
         incorrect_intents = {}
         i = 0
