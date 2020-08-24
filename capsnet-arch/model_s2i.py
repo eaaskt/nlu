@@ -33,6 +33,7 @@ class CapsNetS2I:
         self.r = FLAGS.r
         self.alpha = FLAGS.alpha
         self.max_sentence_length = FLAGS.max_sentence_length
+        self.rerouting_coef = FLAGS.rerouting_coef
 
         # input data
         self.input_x = tf.placeholder('int64', [None, self.max_sentence_length])
@@ -45,8 +46,19 @@ class CapsNetS2I:
         self.instantiate_weights()
         self.H = self.word_caps()
         self.attention, self.M = self.semantic_caps()
-        self.slot_output_vectors, self.slot_weights_c, self.slot_predictions, self.slot_weights_b = self.slot_caps()
+        self.slot_output_vectors_interm, self.slot_weights_c_interm, self.slot_predictions, self.slot_weights_b_interm = self.slot_caps()
+
         self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_caps()
+
+        # Rerouting
+        if FLAGS.use_rerouting:
+            self.intent_max = 0
+            self.slot_output_vectors, self.slot_weights_b, self.slot_weights_c = self.rerouting()
+        else:
+            self.slot_output_vectors = self.slot_output_vectors_interm
+            self.slot_weights_b = self.slot_weights_b_interm
+            self.slot_weights_c = self.slot_weights_c_interm
+
         self.loss_val = self.loss()
 
         self.train_op = self.train()
@@ -97,6 +109,12 @@ class CapsNetS2I:
                                         initializer=self.initializer)
             self.W_s2 = tf.get_variable('W_s2', shape=[self.r, self.d_a],
                                         initializer=self.initializer)
+
+        # Rerouting weight matrix W_RR
+        with tf.name_scope('w_rr'):
+            w_rr = tf.get_variable('w_rr', shape=[1, 1, 1, self.slot_output_dim, self.intent_output_dim],
+                                        initializer=self.initializer)
+            self.w_rr = tf.tile(w_rr, [self.batch_size, self.max_sentence_length, self.slots_nr, 1, 1])
 
     def word_caps(self):
         """
@@ -157,7 +175,7 @@ class CapsNetS2I:
             return squash_factor * unit_vector
 
     def _update_routing(self, caps1_n_caps, caps2_n_caps, caps2_predicted,
-                        num_iter):
+                        num_iter, rerouting=False):
         """Dynamic routing-by-agreement algorithm
         Args:
           caps1_n_caps: number of capsules in layer l
@@ -187,6 +205,13 @@ class CapsNetS2I:
 
             raw_weights_round_2 = tf.add(raw_weights, agreement)
 
+            if rerouting:
+                rerouting_term = tf.matmul(
+                    tf.matmul(self.slot_predictions, self.w_rr, transpose_a=True),
+                    self.intent_max)
+                final_rerouting_term = tf.multiply(rerouting_term, self.rerouting_coef)
+                raw_weights_round_2 = tf.add(raw_weights_round_2, final_rerouting_term)
+
             return i + 1, raw_weights_round_2, output_vectors, routing_weights
 
         output_vectors = tf.TensorArray(
@@ -201,6 +226,34 @@ class CapsNetS2I:
             swap_memory=True)
 
         return output_vectors.read(num_iter - 1), raw_weights, routing_weights
+
+    def rerouting(self):
+        """
+            Performs rerouting operation
+        Returns:
+            output_vector: New SlotCaps output vectors vl
+            weights_c: new agreement weights cij
+            weights_b: new raw weights bij
+        """
+
+        # Find the intent with the max norm
+        intent_outputs_reduced_dim = tf.squeeze(self.intent_output_vectors, axis=[1, 4])
+        intent_outputs_norm = util.safe_norm(intent_outputs_reduced_dim)
+        intent_ids = tf.cast(tf.argmax(intent_outputs_norm, axis=1), tf.int32)
+        row_ids = tf.range(tf.shape(intent_outputs_norm)[0], dtype=tf.int32)
+        idx = tf.stack([row_ids, intent_ids], axis=1)
+        max_intents = tf.gather_nd(intent_outputs_reduced_dim, idx)
+        max_intents = tf.expand_dims(max_intents, axis=-1)
+        max_intents = tf.expand_dims(max_intents, axis=1)
+        max_intents = tf.expand_dims(max_intents, axis=2)
+        self.intent_max = tf.tile(max_intents, [1, self.max_sentence_length, self.slots_nr, 1, 1])
+        output_vector, weights_b, weights_c = self._update_routing(
+            caps1_n_caps=self.max_sentence_length,
+            caps2_n_caps=self.slots_nr,
+            caps2_predicted=self.slot_predictions,
+            num_iter=self.slot_routing_num,
+            rerouting=True)
+        return output_vector, weights_b, weights_c
 
     def slot_caps(self):
         """
@@ -230,6 +283,7 @@ class CapsNetS2I:
             caps2_n_caps=self.slots_nr,
             caps2_predicted=slot_caps_predicted,
             num_iter=self.slot_routing_num)
+
         return output_vector, weights_c, slot_caps_predicted, weights_b
 
     def intent_caps(self):
@@ -245,7 +299,7 @@ class CapsNetS2I:
         semantic_caps_expanded = tf.expand_dims(self.M, axis=-1, name='semantic_caps_expanded_partial')
         semantic_caps_tile = tf.expand_dims(semantic_caps_expanded, axis=1, name='semantic_caps_expanded')
 
-        semantic_slots_output_vecs = tf.concat([semantic_caps_tile, self.slot_output_vectors], axis=2)
+        semantic_slots_output_vecs = tf.concat([semantic_caps_tile, self.slot_output_vectors_interm], axis=2)
         semantic_slot_caps_output = tf.nn.dropout(semantic_slots_output_vecs, self.keep_prob)
 
         semantic_slots_output_tshape = [0, 2, 1, 3, 4]

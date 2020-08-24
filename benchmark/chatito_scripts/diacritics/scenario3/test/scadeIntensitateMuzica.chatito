@@ -1,7 +1,9 @@
-%[scadeIntensitateMuzica]('training': '1', 'testing': '30')
+%[scadeIntensitateMuzica]('training': '1', 'testing': '40')
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#relativ]
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#absolut]
     ~[greet?] ~[action] ~[muzica?]
+    ~[greet?] ~[action] ~[muzicaD?]
+    ~[greet?] ~[actionIntens] ~[muzicaD]
     ~[greet?] ~[actionR] ~[muzicaR?]
 
 @[nivel#relativ]
@@ -16,15 +18,19 @@
     Servus,
 
 ~[action]
+    redu volumul
+    poți să scazi volumul
+
+~[actionIntens]
     redu intensitatea
     aș vrea să reduci intensitatea
     poți să reduci intensitatea
-    redu volumul
-    poți să scazi volumul
 
 ~[muzica]
     la muzica
     la piesa
+
+~[muzicaD]
     cântecului
 
 ~[actionR]

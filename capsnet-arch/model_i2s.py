@@ -27,13 +27,12 @@ class CapsNetI2S:
         self.keep_prob = FLAGS.keep_prob
         self.slot_routing_num = FLAGS.slot_routing_num
         self.intent_routing_num = FLAGS.intent_routing_num
-        self.re_routing_num = FLAGS.re_routing_num
         self.slot_output_dim = FLAGS.slot_output_dim
         self.intent_output_dim = FLAGS.intent_output_dim
 
         # parameters for self attention
         self.max_sentence_length = FLAGS.max_sentence_length
-        self.attention_dimenison = FLAGS.attention_output_dimenison
+        # self.attention_dimenison = FLAGS.attention_output_dimenison
         self.r = FLAGS.r
         self.alpha = FLAGS.alpha
 
@@ -222,7 +221,6 @@ class CapsNetI2S:
                                                       name="word_caps_output_tile")
         word_intent_caps_output_tiled = tf.tile(word_intent_caps_output_tile, [1, 1, self.slots_nr, 1, 1],
                                                 name="word_caps_output_tiled")
-
         slot_caps_predicted_matmul = tf.matmul(self.slot_capsule_weights, word_intent_caps_output_tiled,
                                                name="slot_caps_predicted_matmul")
         slot_caps_predicted = tf.tanh(tf.add(slot_caps_predicted_matmul, self.slot_capsule_biases))

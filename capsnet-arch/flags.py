@@ -13,6 +13,8 @@ def define_app_flags(scenario_num):
     tf.app.flags.DEFINE_string('ckpt_dir', './saved_models/', 'check point dir')
     tf.app.flags.DEFINE_string('scenario_num', scenario_num, 'Scenario number')
     tf.app.flags.DEFINE_string('errors_dir', './errors/', 'Errors dir')
+    tf.app.flags.DEFINE_string('results_dir', './results/', 'Results dir')
+    tf.app.flags.DEFINE_string('hyperparams_dir', './hyperparams/', 'Hyperparams dir')
 
     return FLAGS
 
@@ -48,4 +50,4 @@ def set_data_flags(data):
     tf.app.flags.DEFINE_float('alpha', 0.0001, 'coefficient for self attention loss')
     tf.app.flags.DEFINE_integer('n_splits', 3, 'Number of cross-validation splits')
     tf.app.flags.DEFINE_float('rerouting_coef', 0.5, 'coefficient for rerouting')
-    tf.app.flags.DEFINE_boolean('use_rerouting', False, 'whether to use rerouting or not')
+    tf.app.flags.DEFINE_boolean('use_rerouting', True, 'whether to use rerouting or not')

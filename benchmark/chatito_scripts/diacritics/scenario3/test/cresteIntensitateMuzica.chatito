@@ -1,7 +1,9 @@
-%[cresteIntensitateMuzica]('training': '1', 'testing': '30')
+%[cresteIntensitateMuzica]('training': '1', 'testing': '40')
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#relativ]
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#absolut]
     ~[greet?] ~[action] ~[muzica?]
+    ~[greet?] ~[action] ~[muzicaD?]
+    ~[greet?] ~[actionIntens] ~[muzicaD]
     ~[greet?] ~[actionR] ~[muzicaR?]
 
 @[nivel#relativ]
@@ -19,11 +21,15 @@
     crește volumul
     aș vrea să crești volumul
     dă mai tare volumul
+
+~[actionIntens]
     crește intensitatea
 
 ~[muzica]
     la muzica
     la piesa
+
+~[muzicaD]
     cântecului
 
 ~[actionR]

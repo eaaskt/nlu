@@ -16,6 +16,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score as scikit_f1
 import matplotlib.pyplot as plt
+import html_report_generator
 
 
 def plot_confusion_matrix(y_true, y_pred, labels,
@@ -121,6 +122,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 
     total_intent_pred = []
     total_slots_pred = []
+    total_attention = []
 
     num_samples = len(x_te)
     batch_size = FLAGS.batch_size
@@ -133,12 +135,13 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         batch_intents_one_hot = one_hot_intents[begin_index: end_index]
         batch_slots_one_hot = one_hot_slots[begin_index: end_index]
 
-        [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
-            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
+        [intent_outputs, slots_outputs, slot_weights_c, attention] = sess.run([
+            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c, capsnet.attention],
             feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
                        capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
                        capsnet.keep_prob: 1.0})
-
+        # attention is shaped ?, 5, 12
+        total_attention += np.ndarray.tolist(attention)
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
         intent_outputs_norm = util.safe_norm(intent_outputs_reduced_dim)
         slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c, axis=[3, 4])
@@ -189,12 +192,14 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         # For super-class confusion mat
         intent_classes = {'aprindeLumina': 'lumina',
                           'cresteIntensitateLumina': 'lumina',
+                          'cresteIntensitateMuzica': 'media',
                           'cresteTemperatura': 'temperatura',
                           'opresteMuzica': 'media',
                           'opresteTV': 'media',
                           'pornesteTV': 'media',
                           'puneMuzica': 'media',
                           'scadeIntensitateLumina': 'lumina',
+                          'scadeIntensitateMuzica': 'media',
                           'scadeTemperatura': 'temperatura',
                           'schimbaCanalTV': 'media',
                           'schimbaIntensitateMuzica': 'media',
@@ -211,14 +216,14 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
                               title='Confusion matrix', normalize=True, numbers=True)
         plt.show()
-
+        plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
         incorrect_intents = {}
         i = 0
-        for t, p in zip(y_intent_labels_true, y_intent_labels_pred):
-            if t != p:
+        for t, pr in zip(y_intent_labels_true, y_intent_labels_pred):
+            if t != pr:
                 if t not in incorrect_intents:
                     incorrect_intents[t] = []
-                incorrect_intents[t].append((' '.join(x_text_te[i]), p))
+                incorrect_intents[t].append((' '.join(x_text_te[i]), pr))
             i += 1
 
         with open(os.path.join(errors_dir, 'errors.txt'), 'w', encoding='utf-8') as f:
@@ -232,13 +237,16 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             # View incorrect slot sequences
             f.write('SLOT ERRORS\n')
             i = 0
-            for v, p in zip(y_slot_labels_true, y_slot_labels_pred):
-                if v != p:
+            for v, pr in zip(y_slot_labels_true, y_slot_labels_pred):
+                if v != pr:
                     f.write(' '.join(x_text_te[i]) + '\n')
                     f.write(str(v) + '\n')
-                    f.write(str(p) + '\n')
+                    f.write(str(pr) + '\n')
                     f.write('\n')
                 i += 1
+
+        html_report_generator.generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred,
+                                                 y_slot_labels_true, y_slot_labels_pred, x_text_te, total_attention)
 
     return f_score, scores['f1']
 
@@ -279,12 +287,12 @@ def test(model, data, FLAGS):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cc.ro.300.vec'
+    word2vec_path = '../../romanian_word_vecs/cleaned-vectors.vec'
 
-    training_data_path = '../data-capsnets/scenario0/train.txt'
-    test_data_path = '../data-capsnets/scenario0/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
-    FLAGS = flags.define_app_flags('1-no-rerouting')
+    FLAGS = flags.define_app_flags('1-rerouting')
 
     # Load data
     print('------------------load word2vec begin-------------------')

@@ -6,6 +6,7 @@ import data_loader
 import model_s2i
 import util
 import flags
+import json
 import numpy as np
 import tensorflow as tf
 from seqeval.metrics import accuracy_score
@@ -18,6 +19,19 @@ from sklearn.model_selection import StratifiedKFold
 
 a = Random()
 a.seed(1)
+
+
+def dump_flags(FLAGS):
+    """ Dumps the TF app flags in a JSON file. Filename will be determined based on the model name.
+    Args:
+        FLAGS: App flags
+    """
+    flags_dict = dict()
+    for k, v in tf.flags.FLAGS.__flags.items():
+        flags_dict[k] = v.value
+    filename = FLAGS.scenario_num + '.json'
+    with open(os.path.join(FLAGS.hyperparams_dir, filename), 'w', encoding='utf-8') as f:
+        json.dump(flags_dict, f, indent=4)
 
 
 def eval_seq_scores(y_true, y_pred):
@@ -345,15 +359,18 @@ def train(model, data, FLAGS, batches_rand=False, log=False):
     print('Mean slot F1 score %lf' % mean_slot_score)
     print('Mean F1 score %lf' % mean_score)
 
+    # Dump flags in log file
+    dump_flags(FLAGS)
+
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cc.ro.300.bin'
+    word2vec_path = '../../romanian_word_vecs/cleaned-vectors.vec'
 
-    training_data_path = '../data-capsnets/scenario0/train.txt'
-    test_data_path = '../data-capsnets/scenario0/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
     # Define the flags
-    FLAGS = flags.define_app_flags('0-nodrop-seqmini')
+    FLAGS = flags.define_app_flags('1-no-rerouting')
 
     # Load data
     print('------------------load word2vec begin-------------------')
