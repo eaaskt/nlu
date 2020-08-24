@@ -1,7 +1,11 @@
 %[cresteIntensitateMuzica]('training': '90', 'testing': '40')
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#relativ]
     ~[greet?] ~[action] ~[muzica?] ~[la] @[nivel#absolut]
+    ~[greet?] ~[action] ~[muzicaD?] ~[la] @[nivel#relativ]
+    ~[greet?] ~[action] ~[muzicaD?] ~[la] @[nivel#absolut]
     ~[greet?] ~[action] ~[muzica?]
+    ~[greet?] ~[action] ~[muzicaD?]
+    ~[greet?] ~[actionIntens] ~[muzicaD]
     ~[greet?] ~[actionR] ~[muzicaR?]
 
 @[nivel#relativ]
@@ -28,11 +32,15 @@
     ai putea oare mări volumul
     dă mai tare volumul
     ridică volumul
+
+~[actionIntens]
     crește intensitatea
 
 ~[muzica]
     la muzica
     la piesa
+
+~[muzicaD]
     cântecului
     concertului
     simfoniei

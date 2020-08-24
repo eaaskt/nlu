@@ -13,7 +13,8 @@ def define_app_flags(scenario_num):
     tf.app.flags.DEFINE_string('ckpt_dir', './saved_models/', 'check point dir')
     tf.app.flags.DEFINE_string('scenario_num', scenario_num, 'Scenario number')
     tf.app.flags.DEFINE_string('errors_dir', './errors/', 'Errors dir')
-    tf.app.flags.DEFINE_string('results_dir', './results/', 'Errors dir')
+    tf.app.flags.DEFINE_string('results_dir', './results/', 'Results dir')
+    tf.app.flags.DEFINE_string('hyperparams_dir', './hyperparams/', 'Hyperparams dir')
 
     return FLAGS
 
