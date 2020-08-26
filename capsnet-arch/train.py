@@ -366,11 +366,11 @@ def train(model, data, FLAGS, batches_rand=False, log=False):
 def main():
     word2vec_path = '../../romanian_word_vecs/cleaned-vectors.vec'
 
-    training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
-    test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario0/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario0/test.txt'
 
     # Define the flags
-    FLAGS = flags.define_app_flags('1-no-rerouting')
+    FLAGS = flags.define_app_flags('0-no-attention')
 
     # Load data
     print('------------------load word2vec begin-------------------')
