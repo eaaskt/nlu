@@ -2,6 +2,16 @@ import numpy as np
 import tensorflow as tf
 
 
+
+def calculate_mask(sentences_length, max_sentence_length, batch_size, attention_heads):
+    mask = np.zeros(shape=[batch_size, attention_heads, max_sentence_length])
+
+    for i in range(batch_size):
+        mask[i, :, sentences_length[i]:] = np.full((attention_heads, max_sentence_length - sentences_length[i]), -10000)
+
+    return mask
+
+
 def norm_matrix(matrix):
     """
         normalize matrix by column
