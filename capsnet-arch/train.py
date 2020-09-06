@@ -91,18 +91,20 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False):
         batch_slots_one_hot = one_hot_slots[begin_index: end_index]
         batch_size = end_index - begin_index
 
-        mask = util.calculate_mask(batch_sentences_len, FLAGS.max_sentence_length, batch_size, FLAGS.r)
-
         # Get predictions for current validation batch
+        feed_dict = {capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
+                     capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
+                     capsnet.keep_prob: 1.0}
+        if FLAGS.use_attention:
+            mask = util.calculate_mask(batch_sentences_len, FLAGS.max_sentence_length, batch_size, FLAGS.r)
+            feed_dict[capsnet.attention_mask] = mask
+
         [intent_outputs, slots_outputs, slot_weights_c, cross_entropy_summary,
          margin_loss_summary, loss_summary] = sess.run([
             capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c,
             capsnet.cross_entropy_val_summary,
             capsnet.margin_loss_val_summary, capsnet.loss_val_summary],
-            feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
-                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
-                       capsnet.keep_prob: 1.0,
-                       capsnet.attention_mask: mask})
+            feed_dict=feed_dict)
 
         # Add TensorBoard summaries to FileWriter
         if log:
@@ -160,6 +162,7 @@ def generate_batch(n, batch_size):
     """
     batch_index = a.sample(range(n), batch_size)
     return batch_index
+
 
 def assign_pretrained_word_embedding(sess, embedding, capsnet):
     """ Assigns word embeddings to the CapsNet model
@@ -253,19 +256,22 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
                     batch_slots_one_hot = one_hot_slots_train[begin_index: end_index]
                     batch_size = end_index - begin_index
 
-                mask = util.calculate_mask(batch_sentences_len, FLAGS.max_sentence_length, batch_size, FLAGS.r)
+                feed_dict = {capsnet.input_x: batch_x,
+                             capsnet.encoded_intents: batch_intents_one_hot,
+                             capsnet.encoded_slots: batch_slots_one_hot,
+                             capsnet.sentences_length: batch_sentences_len,
+                             capsnet.keep_prob: FLAGS.keep_prob}
+                if FLAGS.use_attention:
+                    mask = util.calculate_mask(batch_sentences_len, FLAGS.max_sentence_length, batch_size, FLAGS.r)
+                    feed_dict[capsnet.attention_mask] = mask
+
                 [_, loss, _, _,
                  cross_entropy_summary, margin_loss_summary,
                  loss_summary] = sess.run([capsnet.train_op, capsnet.loss_val,
                                            capsnet.intent_output_vectors,
                                            capsnet.slot_output_vectors, capsnet.cross_entropy_tr_summary,
                                            capsnet.margin_loss_tr_summary, capsnet.loss_tr_summary],
-                                          feed_dict={capsnet.input_x: batch_x,
-                                                     capsnet.encoded_intents: batch_intents_one_hot,
-                                                     capsnet.encoded_slots: batch_slots_one_hot,
-                                                     capsnet.sentences_length: batch_sentences_len,
-                                                     capsnet.keep_prob: FLAGS.keep_prob,
-                                                     capsnet.attention_mask: mask})
+                                          feed_dict=feed_dict)
 
                 if log:
                     train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
@@ -299,6 +305,9 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
 
 
 def train(model, data, FLAGS, batches_rand=False, log=False):
+    # Dump flags in log file
+    dump_flags(FLAGS)
+
     x_tr = data['x_tr']
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
@@ -366,9 +375,6 @@ def train(model, data, FLAGS, batches_rand=False, log=False):
     print('Mean slot F1 score %lf' % mean_slot_score)
     print('Mean F1 score %lf' % mean_score)
 
-    # Dump flags in log file
-    dump_flags(FLAGS)
-
 
 def main():
     word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice.vec'
@@ -377,7 +383,7 @@ def main():
     test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
     # Define the flags
-    FLAGS = flags.define_app_flags('1-padding-mask-rerouting')
+    FLAGS = flags.define_app_flags('1-test-use-attention')
 
     # Load data
     print('------------------load word2vec begin-------------------')

@@ -138,13 +138,22 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 
         mask = util.calculate_mask(batch_sentences_len, FLAGS.max_sentence_length, batch_size, FLAGS.r)
 
-        [intent_outputs, slots_outputs, slot_weights_c, attention] = sess.run([
-            capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c, capsnet.attention],
-            feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
-                       capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
-                       capsnet.keep_prob: 1.0, capsnet.attention_mask: mask})
-        # attention is shaped ?, 5, 15
-        total_attention += np.ndarray.tolist(attention)
+        if FLAGS.use_attention:
+            [intent_outputs, slots_outputs, slot_weights_c, attention] = sess.run([
+                capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c, capsnet.attention],
+                feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
+                           capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
+                           capsnet.keep_prob: 1.0,
+                           capsnet.attention_mask: mask})
+            # attention is shaped ?, 5, 12
+            total_attention += np.ndarray.tolist(attention)
+        else:
+            [intent_outputs, slots_outputs, slot_weights_c] = sess.run([
+                capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c],
+                feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
+                           capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
+                           capsnet.keep_prob: 1.0})
+
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
         intent_outputs_norm = util.safe_norm(intent_outputs_reduced_dim)
         slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c, axis=[3, 4])
@@ -248,8 +257,9 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                     f.write('\n')
                 i += 1
 
-        html_report_generator.generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred,
-                                                 y_slot_labels_true, y_slot_labels_pred, x_text_te, total_attention)
+        if FLAGS.use_attention:
+            html_report_generator.generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred,
+                                                     y_slot_labels_true, y_slot_labels_pred, x_text_te, total_attention)
 
     return f_score, scores['f1']
 
@@ -295,7 +305,7 @@ def main():
     training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
     test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
-    FLAGS = flags.define_app_flags('1-padding-mask-rerouting')
+    FLAGS = flags.define_app_flags('1-test-use-attention')
 
     # Load data
     print('------------------load word2vec begin-------------------')

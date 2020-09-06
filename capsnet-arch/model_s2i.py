@@ -25,9 +25,7 @@ class CapsNetS2I:
         self.slot_routing_num = FLAGS.slot_routing_num
         self.intent_routing_num = FLAGS.intent_routing_num
         self.keep_prob = tf.placeholder(tf.float32, name='keep_prob')
-
-        self.slot_output_dim = FLAGS.hidden_size * 2  # same as SemanticCaps output dim
-        self.intent_output_dim = FLAGS.intent_output_dim
+        self.use_attention = FLAGS.use_attention
 
         self.d_a = FLAGS.d_a
         self.r = FLAGS.r
@@ -35,9 +33,17 @@ class CapsNetS2I:
         self.max_sentence_length = FLAGS.max_sentence_length
         self.rerouting_coef = FLAGS.rerouting_coef
 
+        if self.use_attention:
+            self.slot_output_dim = FLAGS.hidden_size * 2  # same as SemanticCaps output dim
+            self.level2_caps_nr = self.slots_nr + self.r
+            self.attention_mask = tf.placeholder('float32', shape=[None, self.r, self.max_sentence_length])
+        else:
+            self.slot_output_dim = FLAGS.slot_output_dim
+            self.level2_caps_nr = self.slots_nr
+        self.intent_output_dim = FLAGS.intent_output_dim
+
         # input data
         self.input_x = tf.placeholder('int32', [None, self.max_sentence_length])
-        self.attention_mask = tf.placeholder('float32', shape=[None, self.r, self.max_sentence_length])
         self.batch_size = tf.shape(self.input_x)[0]
         self.sentences_length = tf.placeholder('int32', [None])
         self.encoded_intents = tf.placeholder(tf.float32, shape=[None, self.intents_nr])
@@ -46,7 +52,8 @@ class CapsNetS2I:
         # CapsNetS2I model
         self.instantiate_weights()
         self.H = self.word_caps()
-        self.attention, self.M = self.semantic_caps()
+        if self.use_attention:
+            self.attention, self.M = self.semantic_caps()
         self.slot_output_vectors_interm, self.slot_weights_c_interm, self.slot_predictions, self.slot_weights_b_interm = self.slot_caps()
 
         self.intent_output_vectors, self.intent_weights_c, self.intent_predictions, self.intent_weights_b = self.intent_caps()
@@ -88,10 +95,11 @@ class CapsNetS2I:
                                                        initializer=self.initializer)
             self.slot_capsule_biases = tf.tile(slot_capsule_biases_init, [self.batch_size, 1, 1, 1, 1])
 
+
         with tf.name_scope('intent_capsule_weights'):
             # Wk
             intent_capsule_weights_init = tf.get_variable('intent_capsule_weights_init',
-                                                          shape=[1, self.slots_nr + self.r, self.intents_nr,
+                                                          shape=[1, self.level2_caps_nr, self.intents_nr,
                                                                  self.intent_output_dim, self.slot_output_dim],
                                                           initializer=self.initializer)
             self.intent_capsule_weights = tf.tile(intent_capsule_weights_init, [self.batch_size, 1, 1, 1, 1])
@@ -99,7 +107,7 @@ class CapsNetS2I:
         with tf.name_scope('intent_capsule_biases'):
             # bk
             intent_capsule_biases_init = tf.get_variable('intent_capsule_biases_init',
-                                                         shape=[1, self.slots_nr + self.r, self.intents_nr,
+                                                         shape=[1, self.level2_caps_nr, self.intents_nr,
                                                                 self.intent_output_dim, 1],
                                                          initializer=self.initializer)
             self.intent_capsule_biases = tf.tile(intent_capsule_biases_init, [self.batch_size, 1, 1, 1, 1])
@@ -151,14 +159,6 @@ class CapsNetS2I:
                     tf.map_fn(
                         lambda x: tf.matmul(self.W_s1, tf.transpose(x)),
                         self.H)))
-
-        # A = tf.nn.softmax(
-        #     tf.map_fn(
-        #         lambda x: tf.matmul(self.W_s2, x),
-        #         tf.tanh(
-        #             tf.map_fn(
-        #                 lambda x: tf.matmul(self.W_s1, tf.transpose(x)),
-        #                 self.H))))
         A = tf.nn.softmax(tf.add(A_int, self.attention_mask))
         M = tf.matmul(A, self.H)
         return A, M
@@ -303,11 +303,15 @@ class CapsNetS2I:
                 intent_caps_predicted: IntentCaps prediction vectors qk|g
                 weights_b: raw weights bij
         """
-        # Expand dims for M
-        semantic_caps_expanded = tf.expand_dims(self.M, axis=-1, name='semantic_caps_expanded_partial')
-        semantic_caps_tile = tf.expand_dims(semantic_caps_expanded, axis=1, name='semantic_caps_expanded')
+        if self.use_attention:
+            # Expand dims for M
+            semantic_caps_expanded = tf.expand_dims(self.M, axis=-1, name='semantic_caps_expanded_partial')
+            semantic_caps_tile = tf.expand_dims(semantic_caps_expanded, axis=1, name='semantic_caps_expanded')
 
-        semantic_slots_output_vecs = tf.concat([semantic_caps_tile, self.slot_output_vectors_interm], axis=2)
+            semantic_slots_output_vecs = tf.concat([semantic_caps_tile, self.slot_output_vectors_interm], axis=2)
+        else:
+            semantic_slots_output_vecs = self.slot_output_vectors_interm
+
         semantic_slot_caps_output = tf.nn.dropout(semantic_slots_output_vecs, self.keep_prob)
 
         semantic_slots_output_tshape = [0, 2, 1, 3, 4]
@@ -321,7 +325,7 @@ class CapsNetS2I:
         intent_caps_predicted = tf.tanh(tf.add(intent_caps_predicted_matmul, self.intent_capsule_biases))
 
         output_vector, weights_b, weights_c = self._update_routing(
-            caps1_n_caps=self.slots_nr + self.r,
+            caps1_n_caps=self.level2_caps_nr,
             caps2_n_caps=self.intents_nr,
             caps2_predicted=intent_caps_predicted,
             num_iter=self.intent_routing_num,
@@ -380,11 +384,15 @@ class CapsNetS2I:
         intent_output_norm = util.safe_norm(intent_vectors)
         loss_val = self._margin_loss(self.encoded_intents, intent_output_norm)
         loss_val = tf.reduce_mean(loss_val)
-        self_atten_mul = tf.matmul(self.attention, tf.transpose(self.attention, perm=[0, 2, 1]))
-        sample_num, att_matrix_size, _ = self_atten_mul.get_shape()
-        self_atten_loss = tf.square(tf.norm(
-            self_atten_mul - np.identity(att_matrix_size.value)))
-        margin_loss = 1000 * loss_val + self.alpha * tf.reduce_mean(self_atten_loss)
+        if self.use_attention:
+            self_atten_mul = tf.matmul(self.attention, tf.transpose(self.attention, perm=[0, 2, 1]))
+            sample_num, att_matrix_size, _ = self_atten_mul.get_shape()
+            self_atten_loss = tf.square(tf.norm(
+                self_atten_mul - np.identity(att_matrix_size.value)))
+
+            margin_loss = 1000 * loss_val + self.alpha * tf.reduce_mean(self_atten_loss)
+        else:
+            margin_loss = 1000 * loss_val
 
         # TensorBoard summaries
         self.margin_loss_tr_summary = tf.summary.scalar('margin_loss_training', margin_loss)
