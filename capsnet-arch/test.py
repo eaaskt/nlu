@@ -305,7 +305,7 @@ def main():
     training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
     test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
-    FLAGS = flags.define_app_flags('1-padding-mask-rerouting')
+    FLAGS = flags.define_app_flags('1-test-use-attention')
 
     # Load data
     print('------------------load word2vec begin-------------------')

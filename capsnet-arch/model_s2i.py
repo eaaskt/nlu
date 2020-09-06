@@ -27,23 +27,23 @@ class CapsNetS2I:
         self.keep_prob = tf.placeholder(tf.float32, name='keep_prob')
         self.use_attention = FLAGS.use_attention
 
-        if self.use_attention:
-            self.slot_output_dim = FLAGS.hidden_size * 2  # same as SemanticCaps output dim
-            self.level2_caps_nr = self.slots_nr + self.r
-        else:
-            self.slot_output_dim = FLAGS.slot_output_dim
-            self.level2_caps_nr = self.slots_nr
-        self.intent_output_dim = FLAGS.intent_output_dim
-
         self.d_a = FLAGS.d_a
         self.r = FLAGS.r
         self.alpha = FLAGS.alpha
         self.max_sentence_length = FLAGS.max_sentence_length
         self.rerouting_coef = FLAGS.rerouting_coef
 
+        if self.use_attention:
+            self.slot_output_dim = FLAGS.hidden_size * 2  # same as SemanticCaps output dim
+            self.level2_caps_nr = self.slots_nr + self.r
+            self.attention_mask = tf.placeholder('float32', shape=[None, self.r, self.max_sentence_length])
+        else:
+            self.slot_output_dim = FLAGS.slot_output_dim
+            self.level2_caps_nr = self.slots_nr
+        self.intent_output_dim = FLAGS.intent_output_dim
+
         # input data
         self.input_x = tf.placeholder('int32', [None, self.max_sentence_length])
-        self.attention_mask = tf.placeholder('float32', shape=[None, self.r, self.max_sentence_length])
         self.batch_size = tf.shape(self.input_x)[0]
         self.sentences_length = tf.placeholder('int32', [None])
         self.encoded_intents = tf.placeholder(tf.float32, shape=[None, self.intents_nr])
@@ -159,14 +159,6 @@ class CapsNetS2I:
                     tf.map_fn(
                         lambda x: tf.matmul(self.W_s1, tf.transpose(x)),
                         self.H)))
-
-        # A = tf.nn.softmax(
-        #     tf.map_fn(
-        #         lambda x: tf.matmul(self.W_s2, x),
-        #         tf.tanh(
-        #             tf.map_fn(
-        #                 lambda x: tf.matmul(self.W_s1, tf.transpose(x)),
-        #                 self.H))))
         A = tf.nn.softmax(tf.add(A_int, self.attention_mask))
         M = tf.matmul(A, self.H)
         return A, M
