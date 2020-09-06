@@ -4,11 +4,13 @@ import json
 
 def words_before_index(text, idx):
     """Counts the number of words in the text before idx"""
+    if text == "Add nana tanimura  to a sudden rainstorm":
+        print("smth")
     while text[idx] != ' ':
         idx -= 1
     if idx <= 0:
         return 0
-    n_words = len(text[:idx].split(' '))
+    n_words = len(text[:idx].split())
     return n_words
 
 
@@ -17,17 +19,19 @@ def convert_iob_example(item):
     """Takes an example in Wit.ai format and returns the converted response"""
     conv_item = dict(item)
     text = item['text']
-    text = ' '.join(text.replace('\n','').split())  # remove duplicate whitespace characters
-    text = text.replace('&', 'and').rstrip()
+    # text = ' '.join(text.replace('\n', '').split())  # remove duplicate whitespace characters
+    text = text.replace('\n', '')
+    # text = text.replace('&', 'and').rstrip()
     conv_item['text'] = text
-    seq_labels = ['O'] * len(text.split(' '))
+    seq_labels = ['O'] * len(text.split())
     for entity in conv_item['entities']:
         if entity['entity'] != 'intent':
             seq_idx = words_before_index(text, entity['start'])
             entity_value = entity['value']
-            entity_value = (' '.join(entity_value.replace('\n', '').split())).replace('&', 'and').rstrip()
+            # entity_value = (' '.join(entity_value.replace('\n', '').split())).replace('&', 'and').rstrip()
+            entity_value = entity_value.replace('\n', '')
             entity['value'] = entity_value
-            entity_len = len(entity_value.split(' '))
+            entity_len = len(entity_value.split())
             seq_labels[seq_idx] = 'B-' + entity['entity']
             for w in range(1, entity_len):
                 seq_labels[seq_idx + w] = 'I-' + entity['entity']
