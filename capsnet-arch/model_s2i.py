@@ -42,9 +42,10 @@ class CapsNetS2I:
         self.rerouting_coef = FLAGS.rerouting_coef
 
         # input data
-        self.input_x = tf.placeholder('int64', [None, self.max_sentence_length])
+        self.input_x = tf.placeholder('int32', [None, self.max_sentence_length])
+        self.attention_mask = tf.placeholder('float32', shape=[None, self.r, self.max_sentence_length])
         self.batch_size = tf.shape(self.input_x)[0]
-        self.sentences_length = tf.placeholder('int64', [None])
+        self.sentences_length = tf.placeholder('int32', [None])
         self.encoded_intents = tf.placeholder(tf.float32, shape=[None, self.intents_nr])
         self.encoded_slots = tf.placeholder(tf.float32, shape=[None, self.max_sentence_length, self.slots_nr])
 
@@ -152,14 +153,21 @@ class CapsNetS2I:
                 M: Semantic matrix
         """
         # Use the hidden states H from WordCaps
-        A = tf.nn.softmax(
-            tf.map_fn(
+        A_int = tf.map_fn(
                 lambda x: tf.matmul(self.W_s2, x),
                 tf.tanh(
                     tf.map_fn(
                         lambda x: tf.matmul(self.W_s1, tf.transpose(x)),
-                        self.H))))
+                        self.H)))
 
+        # A = tf.nn.softmax(
+        #     tf.map_fn(
+        #         lambda x: tf.matmul(self.W_s2, x),
+        #         tf.tanh(
+        #             tf.map_fn(
+        #                 lambda x: tf.matmul(self.W_s1, tf.transpose(x)),
+        #                 self.H))))
+        A = tf.nn.softmax(tf.add(A_int, self.attention_mask))
         M = tf.matmul(A, self.H)
         return A, M
 

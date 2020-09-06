@@ -134,13 +134,17 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         batch_sentences_len = sentences_length_te[begin_index: end_index]
         batch_intents_one_hot = one_hot_intents[begin_index: end_index]
         batch_slots_one_hot = one_hot_slots[begin_index: end_index]
+        batch_size = end_index - begin_index
+
+        mask = util.calculate_mask(batch_sentences_len, FLAGS.max_sentence_length, batch_size, FLAGS.r)
 
         if FLAGS.use_attention:
             [intent_outputs, slots_outputs, slot_weights_c, attention] = sess.run([
                 capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c, capsnet.attention],
                 feed_dict={capsnet.input_x: batch_te, capsnet.sentences_length: batch_sentences_len,
                            capsnet.encoded_intents: batch_intents_one_hot, capsnet.encoded_slots: batch_slots_one_hot,
-                           capsnet.keep_prob: 1.0})
+                           capsnet.keep_prob: 1.0,
+                           capsnet.attention_mask: mask})
             # attention is shaped ?, 5, 12
             total_attention += np.ndarray.tolist(attention)
         else:
@@ -296,12 +300,12 @@ def test(model, data, FLAGS):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cleaned-vectors.vec'
+    word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice.vec'
 
     training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
     test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
-    FLAGS = flags.define_app_flags('1-rerouting')
+    FLAGS = flags.define_app_flags('1-padding-mask-rerouting')
 
     # Load data
     print('------------------load word2vec begin-------------------')
