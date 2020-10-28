@@ -1,5 +1,11 @@
 # Attention visualization
 
+## Experiments
+* [No rerouting](#no-rerouting)
+* [Rerouting](#rerouting)
+* [Rerouting - 3 attention heads](#rerouting---3-attention-heads)
+* [Rerouting - 1 attention head](#rerouting---1-attention-head)
+
 ## No rerouting
 * Scenario 0
     * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-no-rerouting/results-correct-predictions-0-no-rerouting.html) 
@@ -79,3 +85,23 @@
 * Scenario 3.3
     * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-rerouting-3-attention/results-correct-predictions-33-rerouting-3-attention.html) 
     * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-rerouting-3-attention/results-error-predictions-33-rerouting-3-attention.html)
+
+## Rerouting - 1 attention head
+* Scenario 0
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-1-attention-head/results-correct-predictions-0-1-attention-head.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-1-attention-head/results-error-predictions-0-1-attention-head.html)
+* Scenario 1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-1-attention-head/results-correct-predictions-1-1-attention-head.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-1-attention-head/results-error-predictions-1-1-attention-head.html)
+* Scenario 2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-1-attention-head/results-correct-predictions-2-1-attention-head.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-1-attention-head/results-error-predictions-2-1-attention-head.html)
+* Scenario 3.1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-1-attention-head/results-correct-predictions-31-1-attention-head.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-1-attention-head/results-error-predictions-31-1-attention-head.html)
+* Scenario 3.2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-1-attention-head/results-correct-predictions-32-1-attention-head.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-1-attention-head/results-error-predictions-32-1-attention-head.html)
+* Scenario 3.3
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-1-attention-head/results-correct-predictions-33-1-attention-head.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-1-attention-head/results-error-predictions-33-1-attention-head.html)
