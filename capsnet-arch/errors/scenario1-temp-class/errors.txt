@@ -1,0 +1,406 @@
+INTENT ERRORS
+cresteTemperatura
+Pepper crește temperatura la șaptesprezece grade în bucătărie 0 0 0 0 0 0 -> scadeTemperatura
+crește pe douăzeci și unu de grade în tot apartamentul 0 0 0 0 -> scadeTemperatura
+mărește la douăzeci și trei de grade în toată casa 0 0 0 0 -> scadeTemperatura
+Salut mărește temperatura la douăzeci și unu de grade în tot apartamentul 0 0 -> scadeTemperatura
+Pepper crește temperatura pe douăzeci și patru de grade în tot apartamentul 0 0 -> scadeTemperatura
+mărește la douăzeci și patru de grade în bucătărie 0 0 0 0 0 -> scadeTemperatura
+poți mări pe nouăsprezece grade în bucătărie 0 0 0 0 0 0 0 -> scadeTemperatura
+crește pe douăzeci de grade peste tot 0 0 0 0 0 0 0 -> scadeTemperatura
+mărește temperatura la douăzeci și șapte de grade în bucătărie 0 0 0 0 -> scadeTemperatura
+Salut poți mări la douăzeci și unu de grade în toată casa 0 0 -> scadeTemperatura
+Pepper mărește la nouăsprezece grade în toată casa 0 0 0 0 0 0 -> scadeTemperatura
+Salut crește cu trei grade în sufragerie 0 0 0 0 0 0 0 -> scadeTemperatura
+Pepper mărește temperatura la douăzeci și cinci de grade în tot apartamentul 0 0 -> scadeTemperatura
+Salut crește temperatura pe douăzeci și cinci de grade în toată casa 0 0 -> scadeTemperatura
+Salut crește la douăzeci și două de grade în dormitor 0 0 0 0 -> scadeTemperatura
+Pepper poți mări cu un grad în bucătărie 0 0 0 0 0 0 -> scadeTemperatura
+Pepper crește pe optsprezece grade în sufragerie 0 0 0 0 0 0 0 -> scadeTemperatura
+Pepper crește temperatura la douăzeci și șase de grade în sufragerie 0 0 0 -> scadeTemperatura
+Pepper poți mări pe șaptesprezece grade în toată casa 0 0 0 0 0 -> scadeTemperatura
+Salut poți mări temperatura pe douăzeci și șase de grade în tot apartamentul 0 -> scadeTemperatura
+crește pe douăzeci și patru de grade în baie 0 0 0 0 0 -> scadeTemperatura
+Salut crește temperatura pe douăzeci și unu de grade în dormitor 0 0 0 -> scadeTemperatura
+poți mări temperatura la douăzeci de grade în dormitor 0 0 0 0 0 -> scadeTemperatura
+Pepper mărește pe douăzeci și patru de grade în tot apartamentul 0 0 0 -> scadeTemperatura
+Salut mărește pe douăzeci și cinci de grade în dormitor 0 0 0 0 -> scadeTemperatura
+
+scadeTemperatura
+Hey du în jos temperatura la douăzeci și cinci de grade peste tot 0 -> cresteTemperatura
+Hey du în jos temperatura pe douăzeci și șapte de grade în tot apartamentul -> seteazaTemperatura
+du în jos la douăzeci și două de grade în baie 0 0 0 -> seteazaTemperatura
+du în jos temperatura la douăzeci de grade în dormitor 0 0 0 0 -> seteazaTemperatura
+Hey fă mai mică temperatura pe șaptesprezece grade în dormitor 0 0 0 0 -> cresteTemperatura
+Hey fă mai mică cu un grad în dormitor 0 0 0 0 0 -> cresteTemperatura
+du în jos la douăzeci și șase de grade în tot apartamentul 0 0 -> seteazaTemperatura
+fă mai mică la douăzeci de grade în baie 0 0 0 0 0 -> cresteTemperatura
+fă mai mică cu două grade în bucătărie 0 0 0 0 0 0 -> cresteTemperatura
+fă mai mică temperatura pe douăzeci și două de grade în dormitor 0 0 -> cresteTemperatura
+Hey fă mai mică cu cinci grade în baie 0 0 0 0 0 -> cresteTemperatura
+Hey fă mai mică temperatura la douăzeci și șase de grade în toată casa -> cresteTemperatura
+fă mai mică temperatura pe șaptesprezece grade în tot apartamentul 0 0 0 0 -> cresteTemperatura
+fă mai mică la douăzeci și șase de grade în baie 0 0 0 -> cresteTemperatura
+fă mai mică pe șaptesprezece grade în toată casa 0 0 0 0 0 -> cresteTemperatura
+du în jos temperatura pe nouăsprezece grade peste tot 0 0 0 0 0 -> seteazaTemperatura
+Hey fă mai mică pe douăzeci de grade în sufragerie 0 0 0 0 -> cresteTemperatura
+Hey fă mai mică temperatura cu un grad în dormitor 0 0 0 0 -> cresteTemperatura
+Hey du în jos temperatura la douăzeci și cinci de grade în dormitor 0 -> cresteTemperatura
+fă mai mică temperatura cu un grad în bucătărie 0 0 0 0 0 -> cresteTemperatura
+
+seteazaTemperatura
+ajustează aproximativ pe douăzeci de grade în baie 0 0 0 0 0 0 -> cresteTemperatura
+Hey modifică aproximativ pe douăzeci și șapte de grade în baie 0 0 0 -> cresteTemperatura
+Hey modifică temperatura cam la douăzeci și șase de grade în tot apartamentul 0 -> cresteTemperatura
+schimbă aproximativ la douăzeci și trei de grade în sufragerie 0 0 0 0 -> scadeTemperatura
+Hey modifică cam la nouăsprezece grade în toată casa 0 0 0 0 0 -> cresteTemperatura
+Hey ajustează temperatura cam la douăzeci și două de grade în dormitor 0 0 -> cresteTemperatura
+Hey ajustează aproximativ pe douăzeci și patru de grade în tot apartamentul 0 0 -> cresteTemperatura
+ajustează cam la douăzeci și șapte de grade în bucătărie 0 0 0 0 -> cresteTemperatura
+schimbă temperatura aproximativ la douăzeci și șase de grade peste tot 0 0 0 -> cresteTemperatura
+Hey modifică temperatura aproape de douăzeci și trei de grade în sufragerie 0 0 -> scadeTemperatura
+Hey schimbă aproximativ la douăzeci și patru de grade în dormitor 0 0 0 -> cresteTemperatura
+modifică temperatura aproximativ la douăzeci și patru de grade în tot apartamentul 0 0 -> cresteTemperatura
+ajustează temperatura cam la șaptesprezece grade în baie 0 0 0 0 0 0 -> cresteTemperatura
+modifică aproximativ la douăzeci de grade în toată casa 0 0 0 0 0 -> cresteTemperatura
+schimbă aproximativ la douăzeci și două de grade în bucătărie 0 0 0 0 -> scadeTemperatura
+Hey ajustează temperatura aproape de douăzeci și unu de grade în baie 0 0 -> cresteTemperatura
+Hey ajustează aproximativ la nouăsprezece grade în toată casa 0 0 0 0 0 -> cresteTemperatura
+ajustează cam la nouăsprezece grade peste tot 0 0 0 0 0 0 0 -> cresteTemperatura
+Hey ajustează aproximativ la douăzeci și unu de grade peste tot 0 0 0 -> cresteTemperatura
+ajustează aproximativ la douăzeci și unu de grade în bucătărie 0 0 0 0 -> cresteTemperatura
+schimbă cam la nouăsprezece grade în tot apartamentul 0 0 0 0 0 0 -> cresteTemperatura
+Hey ajustează aproximativ la șaptesprezece grade în toată casa 0 0 0 0 0 -> cresteTemperatura
+ajustează temperatura aproape de nouăsprezece grade peste tot 0 0 0 0 0 0 -> cresteTemperatura
+modifică temperatura aproximativ pe douăzeci și cinci de grade în baie 0 0 0 -> scadeTemperatura
+modifică aproximativ pe nouăsprezece grade peste tot 0 0 0 0 0 0 0 -> cresteTemperatura
+modifică temperatura cam la optsprezece grade în toată casa 0 0 0 0 0 -> cresteTemperatura
+Hey modifică aproximativ la douăzeci și unu de grade în dormitor 0 0 0 -> cresteTemperatura
+ajustează aproximativ pe douăzeci și cinci de grade în sufragerie 0 0 0 0 -> scadeTemperatura
+Hey schimbă cam la douăzeci și unu de grade în tot apartamentul 0 0 -> cresteTemperatura
+schimbă aproximativ la douăzeci și trei de grade peste tot 0 0 0 0 -> scadeTemperatura
+Hey modifică cam la douăzeci și șase de grade peste tot 0 0 0 -> cresteTemperatura
+modifică temperatura cam la douăzeci și cinci de grade peste tot 0 0 0 -> cresteTemperatura
+Hey schimbă aproximativ pe douăzeci și șapte de grade în dormitor 0 0 0 -> cresteTemperatura
+
+SLOT ERRORS
+crește pe douăzeci și unu de grade în tot apartamentul 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+mărește la douăzeci și trei de grade în toată casa 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+Salut mărește temperatura cu două grade în tot apartamentul 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+Salut mărește temperatura la douăzeci și unu de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+Pepper crește temperatura pe douăzeci și patru de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+fă mai mare temperatura pe douăzeci și trei de grade în tot apartamentul 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+Salut fă mai mare pe douăzeci și patru de grade în tot apartamentul 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+mărește la douăzeci și patru de grade în bucătărie 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+mărește temperatura la douăzeci și șapte de grade în bucătărie 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Salut poți mări la douăzeci și unu de grade în toată casa 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+fă mai mare pe douăzeci și unu de grade în baie 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Pepper fă mai mare cu trei grade în bucătărie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Pepper mărește temperatura la douăzeci și cinci de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+Salut crește temperatura pe douăzeci și cinci de grade în toată casa 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+Salut crește la douăzeci și două de grade în dormitor 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Pepper crește temperatura la douăzeci și șase de grade în sufragerie 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Salut fă mai mare temperatura pe douăzeci și șapte de grade în baie 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'B-loc', 'I-loc', 'I-grade', 'B-loc', 'O', 'O', 'O']
+
+Salut poți mări temperatura pe douăzeci și șase de grade în tot apartamentul 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+Salut mărește temperatura cu două grade în baie 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper fă mai mare la douăzeci și unu de grade în baie 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+crește pe douăzeci și patru de grade în baie 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Salut crește temperatura pe douăzeci și unu de grade în dormitor 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+poți mări temperatura la douăzeci de grade în dormitor 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'I-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper mărește pe douăzeci și patru de grade în tot apartamentul 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+Salut mărește pe douăzeci și cinci de grade în dormitor 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey du în jos temperatura la douăzeci și cinci de grade peste tot 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'B-loc', 'O', 'O']
+
+Hey du în jos temperatura pe douăzeci și șapte de grade în tot apartamentul
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'O', 'I-grade', 'B-loc', 'O', 'O', 'O']
+
+du în jos la douăzeci și două de grade în baie 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+du în jos temperatura la douăzeci de grade în dormitor 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey fă mai mică temperatura pe șaptesprezece grade în dormitor 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey fă mai mică cu un grad în dormitor 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+du în jos la douăzeci și șase de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+fă mai mică la douăzeci de grade în baie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Hey du în jos la douăzeci și șase de grade în baie 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+fă mai mică cu două grade în bucătărie 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+redu pe douăzeci și șapte de grade în sufragerie 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+micșorează la nouăsprezece grade în toată casa 0 0 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+fă mai mică temperatura pe douăzeci și două de grade în dormitor 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+micșorează la douăzeci și cinci de grade în tot apartamentul 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+Hey fă mai mică cu cinci grade în baie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Hey fă mai mică temperatura la douăzeci și șase de grade în toată casa
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'B-grade', 'O', 'O', 'I-grade', 'B-loc', 'I-loc', 'I-grade', 'B-loc', 'O', 'O', 'O']
+
+redu temperatura cu patru grade în tot apartamentul 0 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+fă mai mică la douăzeci și șase de grade în baie 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Hey du în jos la douăzeci și trei de grade peste tot 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O']
+
+Hey fă mai mică pe douăzeci de grade în sufragerie 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey micșorează pe douăzeci și unu de grade în dormitor 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey redu temperatura pe șaptesprezece grade în baie 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+micșorează cu un grad în dormitor 0 0 0 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-grade', 'I-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Hey fă mai mică temperatura cu un grad în dormitor 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey du în jos temperatura la douăzeci și cinci de grade în dormitor 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'O', 'O', 'O']
+
+Hey micșorează temperatura pe nouăsprezece grade în sufragerie 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+fă mai mică temperatura cu un grad în bucătărie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+schimbă aproape de nouăsprezece grade în dormitor 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Hey modifică aproximativ pe douăzeci și șapte de grade în baie 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Hey modifică temperatura cam la douăzeci și șase de grade în tot apartamentul 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+
+ajustează aproape de douăzeci și cinci de grade în dormitor 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+schimbă aproximativ la douăzeci și trei de grade în sufragerie 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey ajustează temperatura cam la douăzeci și două de grade în dormitor 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'B-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey ajustează aproximativ pe douăzeci și patru de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+ajustează cam la douăzeci și șapte de grade în bucătărie 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+schimbă temperatura aproximativ la douăzeci și șase de grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+Hey modifică temperatura aproape de douăzeci și trei de grade în sufragerie 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey schimbă aproximativ la douăzeci și patru de grade în dormitor 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+modifică temperatura aproximativ la douăzeci și patru de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+modifică temperatura cam la douăzeci și două de grade în toată casa 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+schimbă aproximativ la douăzeci și două de grade în bucătărie 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey schimbă temperatura aproape de douăzeci și trei de grade în dormitor 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey ajustează temperatura aproape de douăzeci și unu de grade în baie 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Hey ajustează aproximativ la douăzeci și unu de grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+ajustează aproximativ la douăzeci și unu de grade în bucătărie 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey schimbă aproape de douăzeci și patru de grade în toată casa 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+modifică temperatura aproximativ pe douăzeci și cinci de grade în baie 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+Hey modifică aproximativ la douăzeci și unu de grade în dormitor 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+
+ajustează aproximativ pe douăzeci și cinci de grade în sufragerie 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Hey schimbă cam la douăzeci și unu de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'I-grade', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+schimbă aproximativ la douăzeci și trei de grade peste tot 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+Hey modifică cam la douăzeci și șase de grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+ajustează temperatura aproape de douăzeci și două de grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'B-loc', 'O', 'O', 'O']
+
+modifică temperatura cam la douăzeci și cinci de grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+Hey schimbă aproximativ pe douăzeci și șapte de grade în dormitor 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O']
+

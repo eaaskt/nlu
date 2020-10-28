@@ -1,0 +1,701 @@
+[
+    {
+        "text": "Pepper, te rog aș vrea să pui muzică compusă de Wagner",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 54,
+                "entity": "artist",
+                "start": 48,
+                "value": "Wagner"
+            }
+        ]
+    },
+    {
+        "text": "Salut, te rog ai putea să pui muzică compusă de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 55,
+                "entity": "artist",
+                "start": 48,
+                "value": "Vivaldi"
+            }
+        ]
+    },
+    {
+        "text": "te rog poți să pui muzică compusă de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "artist",
+                "start": 37,
+                "value": "Mozart"
+            }
+        ]
+    },
+    {
+        "text": "Salut, te rog aș vrea să pui muzică compusă de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 53,
+                "entity": "artist",
+                "start": 47,
+                "value": "Mozart"
+            }
+        ]
+    },
+    {
+        "text": "poți să pui muzică compusă de Wagner",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "artist",
+                "start": 30,
+                "value": "Wagner"
+            }
+        ]
+    },
+    {
+        "text": "poți să pui muzică compusă de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "artist",
+                "start": 30,
+                "value": "Mozart"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, poți să pui muzică compusă de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "artist",
+                "start": 38,
+                "value": "Mozart"
+            }
+        ]
+    },
+    {
+        "text": "poți să pui muzică de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 29,
+                "entity": "artist",
+                "start": 22,
+                "value": "Vivaldi"
+            }
+        ]
+    },
+    {
+        "text": "Salut, aș vrea să pui muzică de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 39,
+                "entity": "artist",
+                "start": 32,
+                "value": "Vivaldi"
+            }
+        ]
+    },
+    {
+        "text": "te rog poți să oprești muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ]
+    },
+    {
+        "text": "te rog poți închide muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Salut, te rog oprește muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ]
+    },
+    {
+        "text": "oprește televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ]
+    },
+    {
+        "text": "Salut, te rog poți să oprești televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, oprește televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ]
+    },
+    {
+        "text": "salut te rog aprinde televizorul pe Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 43,
+                "entity": "canal",
+                "start": 36,
+                "value": "Cinemax"
+            }
+        ]
+    },
+    {
+        "text": "Pepper te rog aprinde pe Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 32,
+                "entity": "canal",
+                "start": 25,
+                "value": "Cinemax"
+            }
+        ]
+    },
+    {
+        "text": "Pepper aprinde pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 21,
+                "entity": "canal",
+                "start": 18,
+                "value": "HBO"
+            }
+        ]
+    },
+    {
+        "text": "Pepper te rog pornește televizorul pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 42,
+                "entity": "canal",
+                "start": 38,
+                "value": "TVR1"
+            }
+        ]
+    },
+    {
+        "text": "Pepper te rog pornește pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 30,
+                "entity": "canal",
+                "start": 26,
+                "value": "TVR1"
+            }
+        ]
+    },
+    {
+        "text": "Pepper doresc să aprinzi pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 31,
+                "entity": "canal",
+                "start": 28,
+                "value": "HBO"
+            }
+        ]
+    },
+    {
+        "text": "salut te rog aprinde pe Mezzo",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 29,
+                "entity": "canal",
+                "start": 24,
+                "value": "Mezzo"
+            }
+        ]
+    },
+    {
+        "text": "salut aprinde televizorul pe Mezzo",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 34,
+                "entity": "canal",
+                "start": 29,
+                "value": "Mezzo"
+            }
+        ]
+    },
+    {
+        "text": "Pepper te rog doresc să aprinzi televizorul pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 51,
+                "entity": "canal",
+                "start": 47,
+                "value": "TVR1"
+            }
+        ]
+    },
+    {
+        "text": "salut te rog dă pe Mezzo",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 24,
+                "entity": "canal",
+                "start": 19,
+                "value": "Mezzo"
+            }
+        ]
+    },
+    {
+        "text": "Pepper dă pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 17,
+                "entity": "canal",
+                "start": 13,
+                "value": "TVR1"
+            }
+        ]
+    },
+    {
+        "text": "Pepper ai putea da pe canalul Mezzo",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 35,
+                "entity": "canal",
+                "start": 30,
+                "value": "Mezzo"
+            }
+        ]
+    },
+    {
+        "text": "salut pune pe canalul Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 29,
+                "entity": "canal",
+                "start": 22,
+                "value": "Cinemax"
+            }
+        ]
+    },
+    {
+        "text": "dă pe canalul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 17,
+                "entity": "canal",
+                "start": 14,
+                "value": "HBO"
+            }
+        ]
+    },
+    {
+        "text": "te rog pune pe Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 22,
+                "entity": "canal",
+                "start": 15,
+                "value": "Cinemax"
+            }
+        ]
+    },
+    {
+        "text": "ai putea da pe Mezzo",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 20,
+                "entity": "canal",
+                "start": 15,
+                "value": "Mezzo"
+            }
+        ]
+    },
+    {
+        "text": "te rog poți să pui pe Mezzo",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 27,
+                "entity": "canal",
+                "start": 22,
+                "value": "Mezzo"
+            }
+        ]
+    },
+    {
+        "text": "te rog dă pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 16,
+                "entity": "canal",
+                "start": 13,
+                "value": "HBO"
+            }
+        ]
+    },
+    {
+        "text": "Salut, mărește volumul muzicii",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aș vrea să mărești volumul concertului la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 55,
+                "entity": "nivel",
+                "start": 50,
+                "value": "maxim"
+            }
+        ]
+    },
+    {
+        "text": "ai putea oare mări volumul la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 31,
+                "entity": "nivel",
+                "start": 30,
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ridică volumul muzicii la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "nivel",
+                "start": 34,
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "text": "mărește volumul muzicii la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 28,
+                "entity": "nivel",
+                "start": 27,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, fă mai tare concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Salut, ai putea oare mări volumul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "mărește volumul simfoniei la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 34,
+                "entity": "nivel",
+                "start": 29,
+                "value": "dublu"
+            }
+        ]
+    },
+    {
+        "text": "Salut, poți să mărești volumul muzicii la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 42,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "3"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea simfoniei la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 63,
+                "entity": "nivel",
+                "start": 55,
+                "value": "jumatate"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea concertului la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 57,
+                "value": "minim"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să scazi intensitatea simfoniei la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "nivel",
+                "start": 43,
+                "value": "minim"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, scade intensitatea concertului la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 42,
+                "value": "3"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, scade intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ]
+    },
+    {
+        "text": "Salut, scade intensitatea simfoniei la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 47,
+                "entity": "nivel",
+                "start": 39,
+                "value": "jumatate"
+            }
+        ]
+    }
+]

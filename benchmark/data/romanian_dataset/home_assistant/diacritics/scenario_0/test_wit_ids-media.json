@@ -1,0 +1,6271 @@
+[
+    {
+        "text": "Pepper, te rog pornește concert compus de Brahms",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "artist",
+                "start": 42,
+                "value": "Brahms"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 1
+    },
+    {
+        "text": "alege o piesă cântată de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 29,
+                "entity": "artist",
+                "start": 25,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 2
+    },
+    {
+        "text": "Pepper, te rog aș vrea să pui concert compus de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 57,
+                "entity": "artist",
+                "start": 48,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 3
+    },
+    {
+        "text": "Hey, te rog începe concert compus de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 46,
+                "entity": "artist",
+                "start": 37,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 4
+    },
+    {
+        "text": "Salut, pune concert compus de Wagner",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "artist",
+                "start": 30,
+                "value": "Wagner"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 5
+    },
+    {
+        "text": "te rog pornește concert compus de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 40,
+                "entity": "artist",
+                "start": 34,
+                "value": "Mozart"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 6
+    },
+    {
+        "text": "te rog pune cântec compus de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "artist",
+                "start": 29,
+                "value": "Vivaldi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 7
+    },
+    {
+        "text": "Salut, te rog alege o piesă cântată de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "artist",
+                "start": 39,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 8
+    },
+    {
+        "text": "Salut, te rog aș vrea să pui concert compus de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 51,
+                "entity": "artist",
+                "start": 47,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 9
+    },
+    {
+        "text": "Pepper, te rog poți să pui melodia compusă de Brahms",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 52,
+                "entity": "artist",
+                "start": 46,
+                "value": "Brahms"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 10
+    },
+    {
+        "text": "Salut, începe cântec cântat de Brahms",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "artist",
+                "start": 31,
+                "value": "Brahms"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 11
+    },
+    {
+        "text": "pune melodia cântată de Brahms",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 30,
+                "entity": "artist",
+                "start": 24,
+                "value": "Brahms"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 12
+    },
+    {
+        "text": "Pepper, te rog ai putea să pui melodia compusă de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 54,
+                "entity": "artist",
+                "start": 50,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 13
+    },
+    {
+        "text": "Pepper, te rog aș vrea să pui muzică de Wagner",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 46,
+                "entity": "artist",
+                "start": 40,
+                "value": "Wagner"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 14
+    },
+    {
+        "text": "Pepper, te rog pornește melodia compusă de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 47,
+                "entity": "artist",
+                "start": 43,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 15
+    },
+    {
+        "text": "Salut, te rog începe piesa compusă de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 45,
+                "entity": "artist",
+                "start": 38,
+                "value": "Vivaldi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 16
+    },
+    {
+        "text": "Salut, ai putea să pui melodia compusă de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 51,
+                "entity": "artist",
+                "start": 42,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 17
+    },
+    {
+        "text": "Hey, pornește melodia compusă de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "artist",
+                "start": 33,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 18
+    },
+    {
+        "text": "Salut, ai putea să pui melodia cântată de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "artist",
+                "start": 42,
+                "value": "Mozart"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 19
+    },
+    {
+        "text": "începe piesa cântată de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 28,
+                "entity": "artist",
+                "start": 24,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 20
+    },
+    {
+        "text": "te rog ai putea să pui melodia cântată de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 51,
+                "entity": "artist",
+                "start": 42,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 21
+    },
+    {
+        "text": "Pepper, ai putea să pui simfonia cântată de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 50,
+                "entity": "artist",
+                "start": 44,
+                "value": "Mozart"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 22
+    },
+    {
+        "text": "te rog pornește piesa compusă de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "artist",
+                "start": 33,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 23
+    },
+    {
+        "text": "te rog pornește melodia compusă de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "artist",
+                "start": 35,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 24
+    },
+    {
+        "text": "Hey, pune melodia compusă de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "artist",
+                "start": 29,
+                "value": "Mozart"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 25
+    },
+    {
+        "text": "Hey, aș vrea să pui cântec cântat de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "artist",
+                "start": 37,
+                "value": "Vivaldi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 26
+    },
+    {
+        "text": "Salut, te rog începe piesa cântată de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 45,
+                "entity": "artist",
+                "start": 38,
+                "value": "Vivaldi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 27
+    },
+    {
+        "text": "Pepper, ai putea să pui concert compus de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "artist",
+                "start": 42,
+                "value": "Mozart"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 28
+    },
+    {
+        "text": "poți să pui concert compus de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "artist",
+                "start": 30,
+                "value": "Vivaldi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 29
+    },
+    {
+        "text": "Pepper, te rog începe muzică compusă de Wagner",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 46,
+                "entity": "artist",
+                "start": 40,
+                "value": "Wagner"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 30
+    },
+    {
+        "text": "Pepper, te rog aș vrea să pui concert cântat de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 54,
+                "entity": "artist",
+                "start": 48,
+                "value": "Mozart"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 31
+    },
+    {
+        "text": "Pepper, te rog poți să pui simfonia compusă de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 51,
+                "entity": "artist",
+                "start": 47,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 32
+    },
+    {
+        "text": "Hey, te rog începe melodia cântată de Bach",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "artist",
+                "start": 38,
+                "value": "Bach"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 33
+    },
+    {
+        "text": "ai putea să pui simfonia compusă de Vivaldi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "artist",
+                "start": 36,
+                "value": "Vivaldi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 34
+    },
+    {
+        "text": "te rog poți să pui melodia compusă de Brahms",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "artist",
+                "start": 38,
+                "value": "Brahms"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 35
+    },
+    {
+        "text": "Salut, alege o piesă compusă de Brahms",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 38,
+                "entity": "artist",
+                "start": 32,
+                "value": "Brahms"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 36
+    },
+    {
+        "text": "Hey, pune muzică compusă de Mozart",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 34,
+                "entity": "artist",
+                "start": 28,
+                "value": "Mozart"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 37
+    },
+    {
+        "text": "ai putea să pui simfonia compusă de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 45,
+                "entity": "artist",
+                "start": 36,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 38
+    },
+    {
+        "text": "Hey, ai putea să pui simfonia cântată de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 50,
+                "entity": "artist",
+                "start": 41,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 39
+    },
+    {
+        "text": "Salut, te rog aș vrea să pui piesa compusă de Beethoven",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "puneMuzica"
+            },
+            {
+                "end": 55,
+                "entity": "artist",
+                "start": 46,
+                "value": "Beethoven"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-artist"
+        ],
+        "id": 40
+    },
+    {
+        "text": "Pepper, te rog poți opri muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 41
+    },
+    {
+        "text": "Pepper, închide piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 42
+    },
+    {
+        "text": "Hey, te rog stinge muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 43
+    },
+    {
+        "text": "Hey, poți stinge simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 44
+    },
+    {
+        "text": "Salut, te rog stinge concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 45
+    },
+    {
+        "text": "Salut, aș vrea să închizi simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 46
+    },
+    {
+        "text": "Hey, te rog oprește melodia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 47
+    },
+    {
+        "text": "poți opri concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 48
+    },
+    {
+        "text": "Pepper, poți să stingi melodia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 49
+    },
+    {
+        "text": "te rog stinge simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 50
+    },
+    {
+        "text": "te rog aș vrea să închizi simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 51
+    },
+    {
+        "text": "Salut, stinge piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 52
+    },
+    {
+        "text": "Salut, poți să stingi piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 53
+    },
+    {
+        "text": "te rog oprește simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 54
+    },
+    {
+        "text": "Pepper, poți stinge piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 55
+    },
+    {
+        "text": "oprește piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 56
+    },
+    {
+        "text": "Hey, închide piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 57
+    },
+    {
+        "text": "Salut, poți opri piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 58
+    },
+    {
+        "text": "Salut, poți să stingi simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 59
+    },
+    {
+        "text": "te rog poți închide melodia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 60
+    },
+    {
+        "text": "Salut, te rog poți stinge melodia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 61
+    },
+    {
+        "text": "Hey, poți să stingi concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 62
+    },
+    {
+        "text": "Hey, oprește muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 63
+    },
+    {
+        "text": "Pepper, te rog poți stinge piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 64
+    },
+    {
+        "text": "Salut, poți să oprești simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 65
+    },
+    {
+        "text": "stinge concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 66
+    },
+    {
+        "text": "Hey, te rog aș vrea să închizi simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 67
+    },
+    {
+        "text": "Salut, aș vrea să stingi muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 68
+    },
+    {
+        "text": "poți să stingi concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 69
+    },
+    {
+        "text": "închide concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 70
+    },
+    {
+        "text": "închide simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 71
+    },
+    {
+        "text": "Salut, te rog poți opri melodia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 72
+    },
+    {
+        "text": "poți opri melodia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 73
+    },
+    {
+        "text": "închide muzica",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 74
+    },
+    {
+        "text": "Salut, te rog oprește simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 75
+    },
+    {
+        "text": "te rog aș vrea să stingi concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 76
+    },
+    {
+        "text": "te rog oprește concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 77
+    },
+    {
+        "text": "Hey, stinge piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 78
+    },
+    {
+        "text": "Hey, închide melodia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 79
+    },
+    {
+        "text": "Pepper, te rog închide concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 80
+    },
+    {
+        "text": "te rog suspendă televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 81
+    },
+    {
+        "text": "Servus, vreau să închizi filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 82
+    },
+    {
+        "text": "Salut, stinge televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 83
+    },
+    {
+        "text": "Hey, te rog poți suspenda emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 84
+    },
+    {
+        "text": "Hey, te rog închide emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 85
+    },
+    {
+        "text": "Servus, închide emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 86
+    },
+    {
+        "text": "Salut, te rog poți să oprești emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 87
+    },
+    {
+        "text": "Hey, suspendă televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 88
+    },
+    {
+        "text": "poți stinge televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 89
+    },
+    {
+        "text": "Hey, vreau să închizi filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 90
+    },
+    {
+        "text": "Salut, te rog poți stinge TV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 91
+    },
+    {
+        "text": "Salut, te rog vreau să închizi filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 92
+    },
+    {
+        "text": "Pepper, te rog oprește emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 93
+    },
+    {
+        "text": "Hey, poți suspenda filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 94
+    },
+    {
+        "text": "Servus, poți să oprești televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 95
+    },
+    {
+        "text": "Servus, poți stinge TV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 96
+    },
+    {
+        "text": "Servus, oprește TV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 97
+    },
+    {
+        "text": "Servus, te rog poți să stingi filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 98
+    },
+    {
+        "text": "Salut, te rog poți închide emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 99
+    },
+    {
+        "text": "Hey, închide TV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 100
+    },
+    {
+        "text": "Salut, te rog vreau să oprești emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 101
+    },
+    {
+        "text": "Salut, te rog poți să oprești televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 102
+    },
+    {
+        "text": "Pepper, te rog poți să oprești televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 103
+    },
+    {
+        "text": "Hey, te rog vreau să oprești televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 104
+    },
+    {
+        "text": "Servus, poți închide emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 105
+    },
+    {
+        "text": "Salut, te rog poți suspenda filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 106
+    },
+    {
+        "text": "Pepper, poți stinge televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 107
+    },
+    {
+        "text": "Hey, oprește televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 108
+    },
+    {
+        "text": "te rog oprește filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 109
+    },
+    {
+        "text": "Hey, te rog stinge filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 110
+    },
+    {
+        "text": "Salut, poți să oprești emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 111
+    },
+    {
+        "text": "Salut, închide filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 112
+    },
+    {
+        "text": "Pepper, vreau să oprești emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 113
+    },
+    {
+        "text": "Servus, te rog poți stinge emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 114
+    },
+    {
+        "text": "Pepper, poți închide emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 115
+    },
+    {
+        "text": "Hey, suspendă emisiunea",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 116
+    },
+    {
+        "text": "Hey, te rog vreau să închizi televizorul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 117
+    },
+    {
+        "text": "suspendă TV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 118
+    },
+    {
+        "text": "Servus, te rog închide filmul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 119
+    },
+    {
+        "text": "Hey, te rog poți să stingi TV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "opresteTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 120
+    },
+    {
+        "text": "te rog poți să aprinzi televizorul pe Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 45,
+                "entity": "canal",
+                "start": 38,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 121
+    },
+    {
+        "text": "Servus, te rog mi-ar plăcea să pornești televizorul pe canal ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 66,
+                "entity": "canal",
+                "start": 61,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 122
+    },
+    {
+        "text": "Pepper, te rog ai putea aprinde TV pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 41,
+                "entity": "canal",
+                "start": 38,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 123
+    },
+    {
+        "text": "Pepper, te rog ai putea aprinde televizorul pe B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 49,
+                "entity": "canal",
+                "start": 47,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 124
+    },
+    {
+        "text": "vreau să pornești televizorul pe canal Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 46,
+                "entity": "canal",
+                "start": 39,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 125
+    },
+    {
+        "text": "Salut, mi-ar plăcea să pornești TV pe Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 45,
+                "entity": "canal",
+                "start": 38,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 126
+    },
+    {
+        "text": "te rog aprinde televizorul pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 33,
+                "entity": "canal",
+                "start": 30,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 127
+    },
+    {
+        "text": "Servus, te rog deschide TV pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 33,
+                "entity": "canal",
+                "start": 30,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 128
+    },
+    {
+        "text": "Pepper, te rog ai putea aprinde TV pe ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 43,
+                "entity": "canal",
+                "start": 38,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 129
+    },
+    {
+        "text": "dă drumul la televizorul pe Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 35,
+                "entity": "canal",
+                "start": 28,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 130
+    },
+    {
+        "text": "Hey, mi-ar plăcea să pornești televizorul pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 49,
+                "entity": "canal",
+                "start": 45,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 131
+    },
+    {
+        "text": "Hey, te rog ai putea aprinde televizorul pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 48,
+                "entity": "canal",
+                "start": 44,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 132
+    },
+    {
+        "text": "Salut, poți da drumul la TV pe B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 33,
+                "entity": "canal",
+                "start": 31,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 133
+    },
+    {
+        "text": "Servus, poți porni televizorul pe canal B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 42,
+                "entity": "canal",
+                "start": 40,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 134
+    },
+    {
+        "text": "Hey, te rog deschide TV pe canal Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 40,
+                "entity": "canal",
+                "start": 33,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 135
+    },
+    {
+        "text": "Hey, te rog pornește televizorul pe canal B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 44,
+                "entity": "canal",
+                "start": 42,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 136
+    },
+    {
+        "text": "Pepper, te rog dă drumul la televizorul pe canal HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 52,
+                "entity": "canal",
+                "start": 49,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 137
+    },
+    {
+        "text": "Pepper, poți porni TV pe canal TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 35,
+                "entity": "canal",
+                "start": 31,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 138
+    },
+    {
+        "text": "Hey, te rog pornește TV pe B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 29,
+                "entity": "canal",
+                "start": 27,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 139
+    },
+    {
+        "text": "Servus, ai putea deschide televizorul pe canal B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 49,
+                "entity": "canal",
+                "start": 47,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 140
+    },
+    {
+        "text": "Pepper, te rog pornește televizorul pe canal ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 50,
+                "entity": "canal",
+                "start": 45,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 141
+    },
+    {
+        "text": "Salut, te rog vreau să pornești TV pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 42,
+                "entity": "canal",
+                "start": 38,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 142
+    },
+    {
+        "text": "Salut, te rog vreau să pornești televizorul pe Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 54,
+                "entity": "canal",
+                "start": 47,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 143
+    },
+    {
+        "text": "te rog dă drumul la TV pe ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 31,
+                "entity": "canal",
+                "start": 26,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 144
+    },
+    {
+        "text": "Salut, te rog pornește TV pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 33,
+                "entity": "canal",
+                "start": 29,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 145
+    },
+    {
+        "text": "Hey, te rog aprinde TV pe canal Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 39,
+                "entity": "canal",
+                "start": 32,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 146
+    },
+    {
+        "text": "Hey, mi-ar plăcea să pornești TV pe canal B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 44,
+                "entity": "canal",
+                "start": 42,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 147
+    },
+    {
+        "text": "aprinde televizorul pe canal TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 33,
+                "entity": "canal",
+                "start": 29,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 148
+    },
+    {
+        "text": "poți să aprinzi TV pe canal ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 33,
+                "entity": "canal",
+                "start": 28,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 149
+    },
+    {
+        "text": "Salut, deschide TV pe ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 27,
+                "entity": "canal",
+                "start": 22,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 150
+    },
+    {
+        "text": "aprinde TV pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 17,
+                "entity": "canal",
+                "start": 14,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 151
+    },
+    {
+        "text": "Servus, ai putea aprinde TV pe ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 36,
+                "entity": "canal",
+                "start": 31,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 152
+    },
+    {
+        "text": "Servus, vreau să pornești televizorul pe ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 46,
+                "entity": "canal",
+                "start": 41,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 153
+    },
+    {
+        "text": "Servus, te rog ai putea aprinde televizorul pe HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 50,
+                "entity": "canal",
+                "start": 47,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 154
+    },
+    {
+        "text": "Pepper, te rog ai putea deschide TV pe canal HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 48,
+                "entity": "canal",
+                "start": 45,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 155
+    },
+    {
+        "text": "Servus, vreau să pornești TV pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 36,
+                "entity": "canal",
+                "start": 32,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 156
+    },
+    {
+        "text": "Pepper, te rog poți da drumul la televizorul pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 52,
+                "entity": "canal",
+                "start": 48,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 157
+    },
+    {
+        "text": "Salut, ai putea aprinde TV pe canal ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 41,
+                "entity": "canal",
+                "start": 36,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 158
+    },
+    {
+        "text": "Servus, te rog aprinde televizorul pe canal Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 51,
+                "entity": "canal",
+                "start": 44,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 159
+    },
+    {
+        "text": "Salut, vreau să pornești TV pe canal TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "pornesteTV"
+            },
+            {
+                "end": 41,
+                "entity": "canal",
+                "start": 37,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 160
+    },
+    {
+        "text": "Servus, te rog vreau să pui pe programul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 44,
+                "entity": "canal",
+                "start": 41,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 161
+    },
+    {
+        "text": "te rog vrei să schimbi pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 30,
+                "entity": "canal",
+                "start": 26,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 162
+    },
+    {
+        "text": "Pepper, treci pe canalul Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 32,
+                "entity": "canal",
+                "start": 25,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 163
+    },
+    {
+        "text": "Salut, poți să schimbi pe canalul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 36,
+                "entity": "canal",
+                "start": 34,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 164
+    },
+    {
+        "text": "vreau să dai pe B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 18,
+                "entity": "canal",
+                "start": 16,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 165
+    },
+    {
+        "text": "Salut, schimbă pe programul TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 32,
+                "entity": "canal",
+                "start": 28,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 166
+    },
+    {
+        "text": "Salut, te rog vreau să pui pe programul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 42,
+                "entity": "canal",
+                "start": 40,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 167
+    },
+    {
+        "text": "Hey, poți să pui pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 24,
+                "entity": "canal",
+                "start": 20,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 168
+    },
+    {
+        "text": "Pepper, te rog treci pe programul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 37,
+                "entity": "canal",
+                "start": 34,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 169
+    },
+    {
+        "text": "Salut, vrei să schimbi pe programul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 39,
+                "entity": "canal",
+                "start": 36,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 170
+    },
+    {
+        "text": "Salut, te rog schimbă pe canalul TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 37,
+                "entity": "canal",
+                "start": 33,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 171
+    },
+    {
+        "text": "Salut, te rog pune pe programul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 34,
+                "entity": "canal",
+                "start": 32,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 172
+    },
+    {
+        "text": "Salut, poți să schimbi pe programul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 38,
+                "entity": "canal",
+                "start": 36,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 173
+    },
+    {
+        "text": "Pepper, vreau să pui pe canalul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 34,
+                "entity": "canal",
+                "start": 32,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 174
+    },
+    {
+        "text": "Pepper, poți să schimbi pe B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 29,
+                "entity": "canal",
+                "start": 27,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 175
+    },
+    {
+        "text": "Hey, vreau să dai pe programul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 34,
+                "entity": "canal",
+                "start": 31,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 176
+    },
+    {
+        "text": "Hey, te rog pune pe canalul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 30,
+                "entity": "canal",
+                "start": 28,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 177
+    },
+    {
+        "text": "Pepper, dă pe canalul ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 27,
+                "entity": "canal",
+                "start": 22,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 178
+    },
+    {
+        "text": "te rog vreau să dai pe programul ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 38,
+                "entity": "canal",
+                "start": 33,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 179
+    },
+    {
+        "text": "vreau să pui pe programul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 29,
+                "entity": "canal",
+                "start": 26,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 180
+    },
+    {
+        "text": "Servus, te rog poți schimba pe ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 36,
+                "entity": "canal",
+                "start": 31,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 181
+    },
+    {
+        "text": "Hey, schimbă pe canalul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 27,
+                "entity": "canal",
+                "start": 24,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 182
+    },
+    {
+        "text": "Pepper, te rog aș vrea să pui pe ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 38,
+                "entity": "canal",
+                "start": 33,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 183
+    },
+    {
+        "text": "Pepper, pune pe programul TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 30,
+                "entity": "canal",
+                "start": 26,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 184
+    },
+    {
+        "text": "Servus, te rog vreau să pui pe programul TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 45,
+                "entity": "canal",
+                "start": 41,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 185
+    },
+    {
+        "text": "Servus, treci pe programul ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 32,
+                "entity": "canal",
+                "start": 27,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 186
+    },
+    {
+        "text": "Pepper, te rog ai putea da pe canalul Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 45,
+                "entity": "canal",
+                "start": 38,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 187
+    },
+    {
+        "text": "Servus, vreau să pui pe canalul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 34,
+                "entity": "canal",
+                "start": 32,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 188
+    },
+    {
+        "text": "pune pe B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 10,
+                "entity": "canal",
+                "start": 8,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 189
+    },
+    {
+        "text": "Servus, schimbă pe programul Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 36,
+                "entity": "canal",
+                "start": 29,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 190
+    },
+    {
+        "text": "Salut, poți trece pe programul Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 38,
+                "entity": "canal",
+                "start": 31,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 191
+    },
+    {
+        "text": "Hey, vreau să pui pe canalul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 31,
+                "entity": "canal",
+                "start": 29,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 192
+    },
+    {
+        "text": "te rog poți schimba pe programul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 36,
+                "entity": "canal",
+                "start": 33,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 193
+    },
+    {
+        "text": "Pepper, ai putea schimba pe programul ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 43,
+                "entity": "canal",
+                "start": 38,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 194
+    },
+    {
+        "text": "Servus, vreau să pui pe programul HBO",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 37,
+                "entity": "canal",
+                "start": 34,
+                "value": "HBO"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 195
+    },
+    {
+        "text": "Salut, te rog ai putea schimba pe programul B1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 46,
+                "entity": "canal",
+                "start": 44,
+                "value": "B1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 196
+    },
+    {
+        "text": "Pepper, ai putea da pe TVR1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 27,
+                "entity": "canal",
+                "start": 23,
+                "value": "TVR1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 197
+    },
+    {
+        "text": "Salut, poți schimba pe programul ProTV",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 38,
+                "entity": "canal",
+                "start": 33,
+                "value": "ProTV"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 198
+    },
+    {
+        "text": "te rog vrei să schimbi pe canalul Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 41,
+                "entity": "canal",
+                "start": 34,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 199
+    },
+    {
+        "text": "Salut, te rog poți schimba pe canalul Cinemax",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "schimbaCanalTV"
+            },
+            {
+                "end": 45,
+                "entity": "canal",
+                "start": 38,
+                "value": "Cinemax"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-canal"
+        ],
+        "id": 200
+    },
+    {
+        "text": "Salut, aș vrea să crești volumul la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "nivel",
+                "start": 36,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 201
+    },
+    {
+        "text": "Salut, ridică volumul simfoniei la 5",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "nivel",
+                "start": 35,
+                "value": "5"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 202
+    },
+    {
+        "text": "Salut, crește volumul cântecului la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "nivel",
+                "start": 36,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 203
+    },
+    {
+        "text": "dă mai tare volumul la piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 204
+    },
+    {
+        "text": "Salut, ai putea oare mări volumul cântecului la 5",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 49,
+                "entity": "nivel",
+                "start": 48,
+                "value": "5"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 205
+    },
+    {
+        "text": "mărește volumul concertului la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 32,
+                "entity": "nivel",
+                "start": 31,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 206
+    },
+    {
+        "text": "Pepper, crește intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 207
+    },
+    {
+        "text": "Salut, aș vrea să mărești volumul simfoniei la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 48,
+                "entity": "nivel",
+                "start": 47,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 208
+    },
+    {
+        "text": "Salut, ai putea oare mări volumul la piesa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 209
+    },
+    {
+        "text": "Pepper, poți să mărești volumul muzicii la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "nivel",
+                "start": 43,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 210
+    },
+    {
+        "text": "poți să mărești volumul la muzica la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "nivel",
+                "start": 37,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 211
+    },
+    {
+        "text": "Pepper, ridică volumul cântecului la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "nivel",
+                "start": 37,
+                "value": "dublu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 212
+    },
+    {
+        "text": "Pepper, fă mai tare simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 213
+    },
+    {
+        "text": "dă mai tare volumul la muzica la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 34,
+                "entity": "nivel",
+                "start": 33,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 214
+    },
+    {
+        "text": "Salut, dă mai tare volumul la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 31,
+                "entity": "nivel",
+                "start": 30,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 215
+    },
+    {
+        "text": "Salut, poți să mărești volumul la muzica la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 49,
+                "entity": "nivel",
+                "start": 44,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 216
+    },
+    {
+        "text": "Pepper, mărește volumul la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 32,
+                "entity": "nivel",
+                "start": 27,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 217
+    },
+    {
+        "text": "crește volumul la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 24,
+                "entity": "nivel",
+                "start": 18,
+                "value": "triplu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 218
+    },
+    {
+        "text": "aș vrea să mărești volumul la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "nivel",
+                "start": 30,
+                "value": "dublu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 219
+    },
+    {
+        "text": "Pepper, aș vrea să mărești volumul concertului la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 51,
+                "entity": "nivel",
+                "start": 50,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 220
+    },
+    {
+        "text": "Salut, ridică volumul concertului la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 37,
+                "value": "triplu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 221
+    },
+    {
+        "text": "Pepper, ai putea oare mări volumul muzicii la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 51,
+                "entity": "nivel",
+                "start": 46,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 222
+    },
+    {
+        "text": "aș vrea să crești volumul concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 223
+    },
+    {
+        "text": "Pepper, ai putea oare mări volumul simfoniei la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 49,
+                "entity": "nivel",
+                "start": 48,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 224
+    },
+    {
+        "text": "Pepper, poți să mărești volumul la piesa la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 45,
+                "entity": "nivel",
+                "start": 44,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 225
+    },
+    {
+        "text": "Pepper, ridică volumul la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 32,
+                "entity": "nivel",
+                "start": 26,
+                "value": "triplu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 226
+    },
+    {
+        "text": "dă mai tare volumul cântecului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 227
+    },
+    {
+        "text": "Salut, poți să mărești volumul la 5",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "nivel",
+                "start": 34,
+                "value": "5"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 228
+    },
+    {
+        "text": "Pepper, mărește volumul muzicii",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 229
+    },
+    {
+        "text": "mărește volumul cântecului la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 31,
+                "entity": "nivel",
+                "start": 30,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 230
+    },
+    {
+        "text": "Salut, dă mai tare volumul la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "nivel",
+                "start": 30,
+                "value": "triplu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 231
+    },
+    {
+        "text": "Salut, dă mai tare volumul la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "nivel",
+                "start": 30,
+                "value": "dublu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 232
+    },
+    {
+        "text": "Pepper, dă mai tare volumul muzicii la 5",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 40,
+                "entity": "nivel",
+                "start": 39,
+                "value": "5"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 233
+    },
+    {
+        "text": "aș vrea să mărești volumul la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 31,
+                "entity": "nivel",
+                "start": 30,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 234
+    },
+    {
+        "text": "Pepper, aș vrea să crești volumul la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "nivel",
+                "start": 37,
+                "value": "dublu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 235
+    },
+    {
+        "text": "Salut, aș vrea să crești volumul muzicii la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 45,
+                "entity": "nivel",
+                "start": 44,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 236
+    },
+    {
+        "text": "Pepper, ridică volumul cântecului la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "nivel",
+                "start": 37,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 237
+    },
+    {
+        "text": "Salut, poți să mărești volumul concertului la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 52,
+                "entity": "nivel",
+                "start": 46,
+                "value": "triplu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 238
+    },
+    {
+        "text": "Salut, crește volumul la piesa la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 39,
+                "entity": "nivel",
+                "start": 34,
+                "value": "dublu"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 239
+    },
+    {
+        "text": "aș vrea să mărești volumul la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateMuzica"
+            },
+            {
+                "end": 31,
+                "entity": "nivel",
+                "start": 30,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 240
+    },
+    {
+        "text": "Salut, poți să scazi volumul la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 33,
+                "entity": "nivel",
+                "start": 32,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 241
+    },
+    {
+        "text": "Pepper, redu intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 242
+    },
+    {
+        "text": "Pepper, poți să scazi volumul simfoniei la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "nivel",
+                "start": 43,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 243
+    },
+    {
+        "text": "Salut, fă mai încet cântecul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 244
+    },
+    {
+        "text": "poți să scazi volumul la muzica la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "nivel",
+                "start": 35,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 245
+    },
+    {
+        "text": "Salut, scade volumul concertului la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "nivel",
+                "start": 36,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 246
+    },
+    {
+        "text": "poți să scazi volumul la muzica la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "nivel",
+                "start": 35,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 247
+    },
+    {
+        "text": "Salut, poți să scazi volumul la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 33,
+                "entity": "nivel",
+                "start": 32,
+                "value": "1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 248
+    },
+    {
+        "text": "Pepper, poți să scazi volumul la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 34,
+                "entity": "nivel",
+                "start": 33,
+                "value": "1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 249
+    },
+    {
+        "text": "poți să scazi volumul la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 26,
+                "entity": "nivel",
+                "start": 25,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 250
+    },
+    {
+        "text": "Salut, scade volumul concertului la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "nivel",
+                "start": 36,
+                "value": "jumatate"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 251
+    },
+    {
+        "text": "Pepper, poți să scazi volumul la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 41,
+                "entity": "nivel",
+                "start": 33,
+                "value": "jumatate"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 252
+    },
+    {
+        "text": "Salut, poți să scazi volumul la muzica la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 43,
+                "entity": "nivel",
+                "start": 42,
+                "value": "1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 253
+    },
+    {
+        "text": "Salut, poți să scazi volumul simfoniei la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 47,
+                "entity": "nivel",
+                "start": 42,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 254
+    },
+    {
+        "text": "Pepper, scade volumul la piesa la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "nivel",
+                "start": 34,
+                "value": "jumatate"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 255
+    },
+    {
+        "text": "Pepper, scade volumul cântecului la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "nivel",
+                "start": 36,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 256
+    },
+    {
+        "text": "Salut, fă mai încet simfonia",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 257
+    },
+    {
+        "text": "Salut, scade volumul la muzica la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 35,
+                "entity": "nivel",
+                "start": 34,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 258
+    },
+    {
+        "text": "Salut, scade volumul cântecului la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "nivel",
+                "start": 35,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 259
+    },
+    {
+        "text": "Salut, poți să scazi volumul concertului la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 45,
+                "entity": "nivel",
+                "start": 44,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 260
+    },
+    {
+        "text": "Pepper, scade volumul simfoniei la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "nivel",
+                "start": 35,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 261
+    },
+    {
+        "text": "Salut, fă mai încet concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 262
+    },
+    {
+        "text": "Pepper, poți să scazi volumul la muzica la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 44,
+                "entity": "nivel",
+                "start": 43,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 263
+    },
+    {
+        "text": "Salut, dă mai încet concertul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 264
+    },
+    {
+        "text": "poți să scazi volumul la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 26,
+                "entity": "nivel",
+                "start": 25,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 265
+    },
+    {
+        "text": "Pepper, aș vrea să reduci intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 266
+    },
+    {
+        "text": "Pepper, scade volumul la piesa la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 39,
+                "entity": "nivel",
+                "start": 34,
+                "value": "minim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 267
+    },
+    {
+        "text": "scade volumul la muzica la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 28,
+                "entity": "nivel",
+                "start": 27,
+                "value": "1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 268
+    },
+    {
+        "text": "Salut, poți să scazi volumul la jumatate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 40,
+                "entity": "nivel",
+                "start": 32,
+                "value": "jumatate"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 269
+    },
+    {
+        "text": "scade volumul la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 18,
+                "entity": "nivel",
+                "start": 17,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 270
+    },
+    {
+        "text": "Salut, poți să scazi volumul la piesa la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 42,
+                "entity": "nivel",
+                "start": 41,
+                "value": "1"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 271
+    },
+    {
+        "text": "Salut, scade volumul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 272
+    },
+    {
+        "text": "poți să scazi volumul cântecului la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 37,
+                "entity": "nivel",
+                "start": 36,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 273
+    },
+    {
+        "text": "Salut, aș vrea să scazi intensitatea concertului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 274
+    },
+    {
+        "text": "poți să scazi volumul la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 30,
+                "entity": "nivel",
+                "start": 25,
+                "value": "minim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 275
+    },
+    {
+        "text": "Pepper, redu intensitatea simfoniei",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 276
+    },
+    {
+        "text": "Salut, scade volumul simfoniei la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 39,
+                "entity": "nivel",
+                "start": 34,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 277
+    },
+    {
+        "text": "scade volumul la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 18,
+                "entity": "nivel",
+                "start": 17,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 278
+    },
+    {
+        "text": "Pepper, scade volumul simfoniei la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            },
+            {
+                "end": 36,
+                "entity": "nivel",
+                "start": 35,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 279
+    },
+    {
+        "text": "Pepper, ai putea oare scădea intensitatea cântecului",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateMuzica"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 280
+    }
+]

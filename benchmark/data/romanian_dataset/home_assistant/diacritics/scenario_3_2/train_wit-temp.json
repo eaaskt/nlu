@@ -1,0 +1,569 @@
+[
+    {
+        "text": "Pepper, aș vrea să ridici temperatura pe 24 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 52,
+                "entity": "grade",
+                "start": 41,
+                "value": "24 de grade"
+            },
+            {
+                "end": 66,
+                "entity": "loc",
+                "start": 56,
+                "value": "toată casa"
+            }
+        ]
+    },
+    {
+        "text": "ai putea ridica cu 2 grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 26,
+                "entity": "grade",
+                "start": 19,
+                "value": "2 grade"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 30,
+                "value": "tot apartamentul"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să ridici cu 1 grad în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 40,
+                "entity": "grade",
+                "start": 34,
+                "value": "1 grad"
+            },
+            {
+                "end": 60,
+                "entity": "loc",
+                "start": 44,
+                "value": "tot apartamentul"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să ridici temperatura cu 1 grad în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 52,
+                "entity": "grade",
+                "start": 46,
+                "value": "1 grad"
+            },
+            {
+                "end": 72,
+                "entity": "loc",
+                "start": 56,
+                "value": "tot apartamentul"
+            }
+        ]
+    },
+    {
+        "text": "Salut, ridică cu 3 grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 24,
+                "entity": "grade",
+                "start": 17,
+                "value": "3 grade"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 28,
+                "value": "toată casa"
+            }
+        ]
+    },
+    {
+        "text": "ridică cu 3 grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 17,
+                "entity": "grade",
+                "start": 10,
+                "value": "3 grade"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 21,
+                "value": "toată casa"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să ridici la 24 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 45,
+                "entity": "grade",
+                "start": 34,
+                "value": "24 de grade"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 49,
+                "value": "toată casa"
+            }
+        ]
+    },
+    {
+        "text": "Salut, mi-ar plăcea să ridici pe 27 de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 33,
+                "value": "27 de grade"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 48,
+                "value": "tot apartamentul"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, poți ridica pe 27 de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 34,
+                "entity": "grade",
+                "start": 23,
+                "value": "27 de grade"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 38,
+                "value": "tot apartamentul"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, poți scădea pe 17 grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 31,
+                "entity": "grade",
+                "start": 23,
+                "value": "17 grade"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 35,
+                "value": "sufragerie"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, poți scădea la 19 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 31,
+                "entity": "grade",
+                "start": 23,
+                "value": "19 grade"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 35,
+                "value": "dormitor"
+            }
+        ]
+    },
+    {
+        "text": "Salut, poți scădea temperatura cu 2 grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 41,
+                "entity": "grade",
+                "start": 34,
+                "value": "2 grade"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 45,
+                "value": "baie"
+            }
+        ]
+    },
+    {
+        "text": "scade pe 18 grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 17,
+                "entity": "grade",
+                "start": 9,
+                "value": "18 grade"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 21,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "scade la 22 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 20,
+                "entity": "grade",
+                "start": 9,
+                "value": "22 de grade"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 24,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să scazi temperatura pe 20 de grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 43,
+                "entity": "grade",
+                "start": 32,
+                "value": "20 de grade"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 47,
+                "value": "sufragerie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, mi-ar plăcea să scazi cu 2 grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 39,
+                "entity": "grade",
+                "start": 32,
+                "value": "2 grade"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 43,
+                "value": "sufragerie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, mi-ar plăcea să scazi la 20 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 43,
+                "entity": "grade",
+                "start": 32,
+                "value": "20 de grade"
+            },
+            {
+                "end": 56,
+                "entity": "loc",
+                "start": 47,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, mi-ar plăcea să scazi la 18 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 40,
+                "entity": "grade",
+                "start": 32,
+                "value": "18 grade"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 44,
+                "value": "dormitor"
+            }
+        ]
+    },
+    {
+        "text": "Salut, ai putea pune temperatura pe 22 de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 47,
+                "entity": "grade",
+                "start": 36,
+                "value": "22 de grade"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 48,
+                "value": "peste tot"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să setezi la 18 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 29,
+                "entity": "grade",
+                "start": 21,
+                "value": "18 grade"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 33,
+                "value": "dormitor"
+            }
+        ]
+    },
+    {
+        "text": "mi-ar plăcea să pui pe 22 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 34,
+                "entity": "grade",
+                "start": 23,
+                "value": "22 de grade"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 38,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, mi-ar plăcea să setezi temperatura la 19 grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 53,
+                "entity": "grade",
+                "start": 45,
+                "value": "19 grade"
+            },
+            {
+                "end": 66,
+                "entity": "loc",
+                "start": 57,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aș vrea să pui temperatura pe 19 grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 46,
+                "entity": "grade",
+                "start": 38,
+                "value": "19 grade"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 50,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, setează temperatura pe 18 grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 39,
+                "entity": "grade",
+                "start": 31,
+                "value": "18 grade"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 40,
+                "value": "peste tot"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să setezi la 19 grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 42,
+                "entity": "grade",
+                "start": 34,
+                "value": "19 grade"
+            },
+            {
+                "end": 55,
+                "entity": "loc",
+                "start": 46,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, poți seta la 20 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 31,
+                "entity": "grade",
+                "start": 20,
+                "value": "20 de grade"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 35,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "setează temperatura la 18 grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 31,
+                "entity": "grade",
+                "start": 23,
+                "value": "18 grade"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 35,
+                "value": "bucătărie"
+            }
+        ]
+    }
+]

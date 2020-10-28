@@ -1,0 +1,4339 @@
+[
+    {
+        "text": "poți să pornești becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 29,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 1
+    },
+    {
+        "text": "poți să pornești becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 2
+    },
+    {
+        "text": "aș vrea să pornești becul în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 29,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 3
+    },
+    {
+        "text": "Bună Pepper, aș vrea să pornești becul în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 42,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 4
+    },
+    {
+        "text": "Bună Pepper, aș vrea să pornești becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 45,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 5
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becul în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 37,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 6
+    },
+    {
+        "text": "îmi poți porni becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 27,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 7
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 40,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 8
+    },
+    {
+        "text": "îmi poți porni becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 24,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 9
+    },
+    {
+        "text": "poți să pornești becul în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 26,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 10
+    },
+    {
+        "text": "Bună Pepper, aș vrea să pornești becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 42,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 11
+    },
+    {
+        "text": "pornește becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 27,
+                "entity": "loc",
+                "start": 21,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 12
+    },
+    {
+        "text": "Bună Pepper, pornește becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 34,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 13
+    },
+    {
+        "text": "Bună Pepper, pornește becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 14
+    },
+    {
+        "text": "îmi poți porni becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 15
+    },
+    {
+        "text": "aș vrea să pornești becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 32,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 16
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 37,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 17
+    },
+    {
+        "text": "pornește becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 21,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 18
+    },
+    {
+        "text": "poți să pornești becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 29,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 19
+    },
+    {
+        "text": "Bună Pepper, poți să pornești becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 42,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 20
+    },
+    {
+        "text": "pornește becul în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 24,
+                "entity": "loc",
+                "start": 18,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 21
+    },
+    {
+        "text": "poți să pornești becul în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 26,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 22
+    },
+    {
+        "text": "Bună Pepper, poți să pornești becul în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 39,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 23
+    },
+    {
+        "text": "aș vrea să pornești becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 32,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 24
+    },
+    {
+        "text": "aș vrea să pornești becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 32,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 25
+    },
+    {
+        "text": "Bună Pepper, pornește becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 34,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 26
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 27
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 40,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 28
+    },
+    {
+        "text": "Bună Pepper, aș vrea să pornești becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 45,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 29
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 40,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 30
+    },
+    {
+        "text": "aș vrea să pornești becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 29,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 31
+    },
+    {
+        "text": "pornește becurile",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 32
+    },
+    {
+        "text": "aș vrea să pornești becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 32,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 33
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becul în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 37,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 34
+    },
+    {
+        "text": "Bună Pepper, pornește becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 34,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 35
+    },
+    {
+        "text": "Bună Pepper, îmi poți porni becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 40,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 36
+    },
+    {
+        "text": "Bună Pepper, aș vrea să pornești becul în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 42,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 37
+    },
+    {
+        "text": "pornește becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 21,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 38
+    },
+    {
+        "text": "Bună Pepper, aș vrea să pornești becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 39
+    },
+    {
+        "text": "Bună Pepper, aș vrea să pornești becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 45,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 40
+    },
+    {
+        "text": "Bună Pepper, poți închide becurile",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 41
+    },
+    {
+        "text": "poți închide becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 22,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 42
+    },
+    {
+        "text": "închide becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 20,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 43
+    },
+    {
+        "text": "Bună Pepper, îmi poți opri becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 39,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 44
+    },
+    {
+        "text": "Bună Pepper, îmi poți opri becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 39,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 45
+    },
+    {
+        "text": "îmi poți opri becul în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 23,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 46
+    },
+    {
+        "text": "Bună Pepper, oprește becul în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 30,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 47
+    },
+    {
+        "text": "oprește becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 24,
+                "entity": "loc",
+                "start": 17,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 48
+    },
+    {
+        "text": "închide becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 26,
+                "entity": "loc",
+                "start": 20,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 49
+    },
+    {
+        "text": "Bună Pepper, oprește becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 30,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 50
+    },
+    {
+        "text": "Bună Pepper, poți închide becul în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 35,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 51
+    },
+    {
+        "text": "Bună Pepper, îmi poți opri becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 51,
+                "entity": "loc",
+                "start": 39,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 52
+    },
+    {
+        "text": "aș vrea să oprești becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 31,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 53
+    },
+    {
+        "text": "Bună Pepper, îmi poți opri becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 54
+    },
+    {
+        "text": "Bună Pepper, oprește becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 55
+    },
+    {
+        "text": "Bună Pepper, oprește becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 33,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 56
+    },
+    {
+        "text": "îmi poți opri becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 26,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 57
+    },
+    {
+        "text": "aș vrea să oprești becul în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 28,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 58
+    },
+    {
+        "text": "oprește becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 59
+    },
+    {
+        "text": "Bună Pepper, aș vrea să oprești becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 41,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 60
+    },
+    {
+        "text": "Bună Pepper, aș vrea să oprești becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 61
+    },
+    {
+        "text": "Bună Pepper, poți închide becul în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 35,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 62
+    },
+    {
+        "text": "închide becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 24,
+                "entity": "loc",
+                "start": 17,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 63
+    },
+    {
+        "text": "Bună Pepper, poți închide becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 38,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 64
+    },
+    {
+        "text": "Bună Pepper, oprește becul în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 30,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 65
+    },
+    {
+        "text": "oprește becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 20,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 66
+    },
+    {
+        "text": "poți închide becurile în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 25,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 67
+    },
+    {
+        "text": "Bună Pepper, poți închide becul în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 35,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 68
+    },
+    {
+        "text": "îmi poți opri becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 26,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 69
+    },
+    {
+        "text": "închide becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 20,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 70
+    },
+    {
+        "text": "Bună Pepper, închide becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 33,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 71
+    },
+    {
+        "text": "Bună Pepper, închide becul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 72
+    },
+    {
+        "text": "poți închide becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 25,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 73
+    },
+    {
+        "text": "îmi poți opri becurile în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 26,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 74
+    },
+    {
+        "text": "Bună Pepper, poți închide becurile în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 38,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 75
+    },
+    {
+        "text": "Bună Pepper, aș vrea să oprești becul în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 41,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 76
+    },
+    {
+        "text": "Bună Pepper, îmi poți opri becul în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 36,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 77
+    },
+    {
+        "text": "aș vrea să oprești becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 31,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 78
+    },
+    {
+        "text": "oprește becurile",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 79
+    },
+    {
+        "text": "închide becurile în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 27,
+                "entity": "loc",
+                "start": 20,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 80
+    },
+    {
+        "text": "Pepper poți să mărești intensitatea becurilor la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 50,
+                "entity": "nivel",
+                "start": 49,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 81
+    },
+    {
+        "text": "mărește intensitatea becurilor în pivniță la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 34,
+                "value": "pivniță"
+            },
+            {
+                "end": 46,
+                "entity": "nivel",
+                "start": 45,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 82
+    },
+    {
+        "text": "Salut, mărește intensitatea becurilor în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 41,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 83
+    },
+    {
+        "text": "Salut, ai putea oare mări intensitatea becurilor în cămară la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 52,
+                "value": "cămară"
+            },
+            {
+                "end": 63,
+                "entity": "nivel",
+                "start": 62,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 84
+    },
+    {
+        "text": "ai putea oare mări intensitatea becurilor în cămară la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 51,
+                "entity": "loc",
+                "start": 45,
+                "value": "cămară"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 85
+    },
+    {
+        "text": "aș vrea să mărești intensitatea becurilor în dormitor la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 45,
+                "value": "dormitor"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 57,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 86
+    },
+    {
+        "text": "ai putea oare mări intensitatea becurilor în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 45,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 87
+    },
+    {
+        "text": "ai putea oare mări intensitatea becurilor în camera de zi la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 45,
+                "value": "camera de zi"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 61,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 88
+    },
+    {
+        "text": "Salut, mărește intensitatea becurilor în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 41,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 89
+    },
+    {
+        "text": "Salut, fă mai mare lumina în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 29,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 90
+    },
+    {
+        "text": "Pepper mărește intensitatea becurilor în cămară la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 41,
+                "value": "cămară"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 51,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 91
+    },
+    {
+        "text": "Pepper crește lumina în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 24,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 92
+    },
+    {
+        "text": "fă mai mare lumina",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 93
+    },
+    {
+        "text": "Salut, aș vrea să mărești intensitatea becurilor la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "nivel",
+                "start": 52,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 94
+    },
+    {
+        "text": "Salut, aș vrea să mărești intensitatea becurilor în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 52,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 95
+    },
+    {
+        "text": "mărește intensitatea becurilor în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 34,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 96
+    },
+    {
+        "text": "ai putea oare mări intensitatea becurilor la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 46,
+                "entity": "nivel",
+                "start": 45,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 97
+    },
+    {
+        "text": "Salut, aș vrea să mărești intensitatea becurilor în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 60,
+                "entity": "loc",
+                "start": 52,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 98
+    },
+    {
+        "text": "Salut, aș vrea să mărești intensitatea becurilor în camera de zi la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 52,
+                "value": "camera de zi"
+            },
+            {
+                "end": 69,
+                "entity": "nivel",
+                "start": 68,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 99
+    },
+    {
+        "text": "Pepper ai putea oare mări intensitatea becurilor în camera de zi la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 52,
+                "value": "camera de zi"
+            },
+            {
+                "end": 69,
+                "entity": "nivel",
+                "start": 68,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 100
+    },
+    {
+        "text": "Pepper ai putea oare mări intensitatea becurilor în pivniță la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 52,
+                "value": "pivniță"
+            },
+            {
+                "end": 64,
+                "entity": "nivel",
+                "start": 63,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 101
+    },
+    {
+        "text": "aș vrea să mărești intensitatea becurilor în pivniță la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 45,
+                "value": "pivniță"
+            },
+            {
+                "end": 57,
+                "entity": "nivel",
+                "start": 56,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 102
+    },
+    {
+        "text": "Salut, poți să mărești intensitatea becurilor în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 55,
+                "entity": "loc",
+                "start": 49,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 103
+    },
+    {
+        "text": "Pepper aș vrea să mărești intensitatea becurilor în pivniță la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 52,
+                "value": "pivniță"
+            },
+            {
+                "end": 68,
+                "entity": "nivel",
+                "start": 63,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 104
+    },
+    {
+        "text": "Salut, ai putea oare mări intensitatea becurilor în cămară la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 52,
+                "value": "cămară"
+            },
+            {
+                "end": 63,
+                "entity": "nivel",
+                "start": 62,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 105
+    },
+    {
+        "text": "Pepper fă mai mare lumina",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 106
+    },
+    {
+        "text": "Pepper aș vrea să mărești intensitatea becurilor în cămară la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 52,
+                "value": "cămară"
+            },
+            {
+                "end": 67,
+                "entity": "nivel",
+                "start": 62,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 107
+    },
+    {
+        "text": "crește lumina în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 24,
+                "entity": "loc",
+                "start": 17,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 108
+    },
+    {
+        "text": "Salut, fă mai mare lumina",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        "id": 109
+    },
+    {
+        "text": "Salut, poți să mărești intensitatea becurilor la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 50,
+                "entity": "nivel",
+                "start": 49,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 110
+    },
+    {
+        "text": "îmbunătățește lumina",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O"
+        ],
+        "id": 111
+    },
+    {
+        "text": "aș vrea să mărești intensitatea becurilor în pivniță la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 45,
+                "value": "pivniță"
+            },
+            {
+                "end": 61,
+                "entity": "nivel",
+                "start": 56,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 112
+    },
+    {
+        "text": "Salut, poți să mărești intensitatea becurilor în cămară la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 55,
+                "entity": "loc",
+                "start": 49,
+                "value": "cămară"
+            },
+            {
+                "end": 64,
+                "entity": "nivel",
+                "start": 59,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 113
+    },
+    {
+        "text": "ai putea oare mări intensitatea becurilor în dormitor la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 45,
+                "value": "dormitor"
+            },
+            {
+                "end": 58,
+                "entity": "nivel",
+                "start": 57,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 114
+    },
+    {
+        "text": "Pepper mărește intensitatea becurilor în dormitor la maxim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 41,
+                "value": "dormitor"
+            },
+            {
+                "end": 58,
+                "entity": "nivel",
+                "start": 53,
+                "value": "maxim"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 115
+    },
+    {
+        "text": "Pepper aș vrea să mărești intensitatea becurilor în camera de zi la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 52,
+                "value": "camera de zi"
+            },
+            {
+                "end": 69,
+                "entity": "nivel",
+                "start": 68,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 116
+    },
+    {
+        "text": "Pepper aș vrea să mărești intensitatea becurilor în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 52,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 117
+    },
+    {
+        "text": "Salut, mărește intensitatea becurilor în dormitor la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 41,
+                "value": "dormitor"
+            },
+            {
+                "end": 54,
+                "entity": "nivel",
+                "start": 53,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 118
+    },
+    {
+        "text": "Salut, poți să mărești intensitatea becurilor la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 50,
+                "entity": "nivel",
+                "start": 49,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-nivel"
+        ],
+        "id": 119
+    },
+    {
+        "text": "Pepper aș vrea să mărești intensitatea becurilor în pivniță la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 52,
+                "value": "pivniță"
+            },
+            {
+                "end": 64,
+                "entity": "nivel",
+                "start": 63,
+                "value": "2"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 120
+    },
+    {
+        "text": "Pepper fă mai mică intensitatea becurilor în pivniță la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 45,
+                "value": "pivniță"
+            },
+            {
+                "end": 61,
+                "entity": "nivel",
+                "start": 56,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 121
+    },
+    {
+        "text": "aș vrea să reduci intensitatea becurilor în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 56,
+                "entity": "loc",
+                "start": 44,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 122
+    },
+    {
+        "text": "poți să reduci intensitatea becurilor în camera de zi la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 41,
+                "value": "camera de zi"
+            },
+            {
+                "end": 58,
+                "entity": "nivel",
+                "start": 57,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 123
+    },
+    {
+        "text": "Pepper diminuează intensitatea becurilor în pivniță la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 51,
+                "entity": "loc",
+                "start": 44,
+                "value": "pivniță"
+            },
+            {
+                "end": 56,
+                "entity": "nivel",
+                "start": 55,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 124
+    },
+    {
+        "text": "Pepper redu intensitatea becurilor în cămară",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 38,
+                "value": "cămară"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 125
+    },
+    {
+        "text": "Pepper fă mai mică intensitatea becurilor în pivniță la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 45,
+                "value": "pivniță"
+            },
+            {
+                "end": 57,
+                "entity": "nivel",
+                "start": 56,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 126
+    },
+    {
+        "text": "Salut, diminuează intensitatea becurilor în dormitor la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 44,
+                "value": "dormitor"
+            },
+            {
+                "end": 57,
+                "entity": "nivel",
+                "start": 56,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 127
+    },
+    {
+        "text": "Salut, fă mai mică intensitatea becurilor în dormitor la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 45,
+                "value": "dormitor"
+            },
+            {
+                "end": 58,
+                "entity": "nivel",
+                "start": 57,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 128
+    },
+    {
+        "text": "Salut, aș vrea să reduci intensitatea becurilor în camera de zi la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 63,
+                "entity": "loc",
+                "start": 51,
+                "value": "camera de zi"
+            },
+            {
+                "end": 68,
+                "entity": "nivel",
+                "start": 67,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 129
+    },
+    {
+        "text": "Pepper redu intensitatea becurilor în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 38,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 130
+    },
+    {
+        "text": "Pepper redu intensitatea becurilor în pivniță la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 38,
+                "value": "pivniță"
+            },
+            {
+                "end": 54,
+                "entity": "nivel",
+                "start": 49,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 131
+    },
+    {
+        "text": "Salut, aș vrea să reduci intensitatea becurilor în dormitor la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 51,
+                "value": "dormitor"
+            },
+            {
+                "end": 64,
+                "entity": "nivel",
+                "start": 63,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 132
+    },
+    {
+        "text": "Salut, diminuează intensitatea becurilor în camera de zi la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 56,
+                "entity": "loc",
+                "start": 44,
+                "value": "camera de zi"
+            },
+            {
+                "end": 61,
+                "entity": "nivel",
+                "start": 60,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 133
+    },
+    {
+        "text": "Salut, fă mai mică intensitatea becurilor în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 45,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 134
+    },
+    {
+        "text": "fă mai mică intensitatea becurilor în cămară la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 38,
+                "value": "cămară"
+            },
+            {
+                "end": 49,
+                "entity": "nivel",
+                "start": 48,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 135
+    },
+    {
+        "text": "diminuează intensitatea becurilor în dormitor la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 37,
+                "value": "dormitor"
+            },
+            {
+                "end": 50,
+                "entity": "nivel",
+                "start": 49,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 136
+    },
+    {
+        "text": "Salut, aș vrea să reduci intensitatea becurilor în camera de zi",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 63,
+                "entity": "loc",
+                "start": 51,
+                "value": "camera de zi"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc"
+        ],
+        "id": 137
+    },
+    {
+        "text": "Salut, fă mai mică intensitatea becurilor în camera de zi la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 45,
+                "value": "camera de zi"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 61,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 138
+    },
+    {
+        "text": "poți să reduci intensitatea becurilor în camera de zi la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 41,
+                "value": "camera de zi"
+            },
+            {
+                "end": 58,
+                "entity": "nivel",
+                "start": 57,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 139
+    },
+    {
+        "text": "Salut, fă mai mică intensitatea becurilor în pivniță la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 45,
+                "value": "pivniță"
+            },
+            {
+                "end": 61,
+                "entity": "nivel",
+                "start": 56,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 140
+    },
+    {
+        "text": "poți să reduci intensitatea becurilor în pivniță la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 41,
+                "value": "pivniță"
+            },
+            {
+                "end": 57,
+                "entity": "nivel",
+                "start": 52,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 141
+    },
+    {
+        "text": "Pepper fă mai mică intensitatea becurilor în dormitor la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 45,
+                "value": "dormitor"
+            },
+            {
+                "end": 58,
+                "entity": "nivel",
+                "start": 57,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 142
+    },
+    {
+        "text": "redu intensitatea becurilor în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 31,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 143
+    },
+    {
+        "text": "diminuează intensitatea becurilor în cămară la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 37,
+                "value": "cămară"
+            },
+            {
+                "end": 48,
+                "entity": "nivel",
+                "start": 47,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 144
+    },
+    {
+        "text": "Pepper poți să reduci intensitatea becurilor în cămară la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 48,
+                "value": "cămară"
+            },
+            {
+                "end": 59,
+                "entity": "nivel",
+                "start": 58,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 145
+    },
+    {
+        "text": "diminuează intensitatea becurilor în cămară la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 37,
+                "value": "cămară"
+            },
+            {
+                "end": 48,
+                "entity": "nivel",
+                "start": 47,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 146
+    },
+    {
+        "text": "fă mai mică intensitatea becurilor în pivniță la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 38,
+                "value": "pivniță"
+            },
+            {
+                "end": 50,
+                "entity": "nivel",
+                "start": 49,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 147
+    },
+    {
+        "text": "diminuează intensitatea becurilor în pivniță la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 37,
+                "value": "pivniță"
+            },
+            {
+                "end": 49,
+                "entity": "nivel",
+                "start": 48,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 148
+    },
+    {
+        "text": "Pepper diminuează intensitatea becurilor în dormitor la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 44,
+                "value": "dormitor"
+            },
+            {
+                "end": 57,
+                "entity": "nivel",
+                "start": 56,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 149
+    },
+    {
+        "text": "Pepper aș vrea să reduci intensitatea becurilor în dormitor la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 51,
+                "value": "dormitor"
+            },
+            {
+                "end": 68,
+                "entity": "nivel",
+                "start": 63,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 150
+    },
+    {
+        "text": "Pepper aș vrea să reduci intensitatea becurilor în camera de zi la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 63,
+                "entity": "loc",
+                "start": 51,
+                "value": "camera de zi"
+            },
+            {
+                "end": 72,
+                "entity": "nivel",
+                "start": 67,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 151
+    },
+    {
+        "text": "Pepper poți să reduci intensitatea becurilor în cămară la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 48,
+                "value": "cămară"
+            },
+            {
+                "end": 59,
+                "entity": "nivel",
+                "start": 58,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 152
+    },
+    {
+        "text": "Pepper fă mai mică intensitatea becurilor în dormitor la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 45,
+                "value": "dormitor"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 57,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 153
+    },
+    {
+        "text": "Pepper redu intensitatea becurilor în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 38,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 154
+    },
+    {
+        "text": "Salut, aș vrea să reduci intensitatea becurilor în pivniță la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 51,
+                "value": "pivniță"
+            },
+            {
+                "end": 63,
+                "entity": "nivel",
+                "start": 62,
+                "value": "4"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 155
+    },
+    {
+        "text": "fă mai mică lumina în pivniță",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 22,
+                "value": "pivniță"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 156
+    },
+    {
+        "text": "fă mai mică intensitatea becurilor în pivniță la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 38,
+                "value": "pivniță"
+            },
+            {
+                "end": 54,
+                "entity": "nivel",
+                "start": 49,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 157
+    },
+    {
+        "text": "Pepper diminuează intensitatea becurilor în cămară la 3",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 44,
+                "value": "cămară"
+            },
+            {
+                "end": 55,
+                "entity": "nivel",
+                "start": 54,
+                "value": "3"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 158
+    },
+    {
+        "text": "Salut, poți să reduci intensitatea becurilor în pivniță la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 55,
+                "entity": "loc",
+                "start": 48,
+                "value": "pivniță"
+            },
+            {
+                "end": 64,
+                "entity": "nivel",
+                "start": 59,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 159
+    },
+    {
+        "text": "poți să reduci intensitatea becurilor în camera de zi la sfert",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 41,
+                "value": "camera de zi"
+            },
+            {
+                "end": 62,
+                "entity": "nivel",
+                "start": 57,
+                "value": "sfert"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc",
+            "I-loc",
+            "I-loc",
+            "O",
+            "B-nivel"
+        ],
+        "id": 160
+    }
+]

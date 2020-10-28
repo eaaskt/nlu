@@ -1,0 +1,21 @@
+INTENT ERRORS
+cresteIntensitateLumina
+Salut aș vrea să crești intensitatea iluminatului în dormitor la 2 0 0 -> scadeIntensitateLumina
+
+scadeIntensitateLumina
+Salut aș vrea să reduci intensitatea becurilor în curte la 4 0 0 -> cresteIntensitateLumina
+aș vrea să reduci intensitatea iluminatului în sufragerie 0 0 0 0 0 -> cresteIntensitateLumina
+
+SLOT ERRORS
+Pepper aș vrea să reduci intensitatea luminii în dormitor la jumătate 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Salut aș vrea să reduci intensitatea luminii în curte la jumătate 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+Pepper aș vrea să scazi intensitatea becurilor în dormitor la jumătate 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+

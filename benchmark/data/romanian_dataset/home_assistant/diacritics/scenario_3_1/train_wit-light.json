@@ -1,0 +1,509 @@
+[
+    {
+        "text": "Pepper, aș vrea să-mi dai lumină în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, dă-mi lumină în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 24,
+                "value": "sufragerie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, aprinde curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 27,
+                "value": "baie"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 39,
+                "value": "curte"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aprinde curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 28,
+                "value": "baie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, aprinde curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 27,
+                "value": "bucătărie"
+            }
+        ]
+    },
+    {
+        "text": "Salut, stinge lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "curte"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, stinge lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 25,
+                "value": "sufragerie"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "curte"
+            }
+        ]
+    },
+    {
+        "text": "Salut, aș vrea să crești intensitatea luminii în curte la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 49,
+                "value": "curte"
+            },
+            {
+                "end": 59,
+                "entity": "nivel",
+                "start": 58,
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să crești intensitatea iluminatului în bucătărie la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 56,
+                "entity": "loc",
+                "start": 47,
+                "value": "bucătărie"
+            },
+            {
+                "end": 66,
+                "entity": "nivel",
+                "start": 60,
+                "value": "triplu"
+            }
+        ]
+    },
+    {
+        "text": "Salut, crește intensitatea iluminatului în baie la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 43,
+                "value": "baie"
+            },
+            {
+                "end": 52,
+                "entity": "nivel",
+                "start": 51,
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "text": "Pepper aș vrea să crești intensitatea iluminatului în curte la dublu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 54,
+                "value": "curte"
+            },
+            {
+                "end": 68,
+                "entity": "nivel",
+                "start": 63,
+                "value": "dublu"
+            }
+        ]
+    },
+    {
+        "text": "Salut, aș vrea să crești intensitatea iluminatului în sufragerie la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 54,
+                "value": "sufragerie"
+            },
+            {
+                "end": 74,
+                "entity": "nivel",
+                "start": 68,
+                "value": "triplu"
+            }
+        ]
+    },
+    {
+        "text": "Pepper aș vrea să crești intensitatea luminii în sufragerie la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 49,
+                "value": "sufragerie"
+            },
+            {
+                "end": 64,
+                "entity": "nivel",
+                "start": 63,
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "text": "crește intensitatea luminii în curte la 4",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 31,
+                "value": "curte"
+            },
+            {
+                "end": 41,
+                "entity": "nivel",
+                "start": 40,
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "text": "Salut, aș vrea să crești intensitatea iluminatului în curte la triplu",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 54,
+                "value": "curte"
+            },
+            {
+                "end": 69,
+                "entity": "nivel",
+                "start": 63,
+                "value": "triplu"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să crești intensitatea luminii în sufragerie la 5",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteIntensitateLumina"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 42,
+                "value": "sufragerie"
+            },
+            {
+                "end": 57,
+                "entity": "nivel",
+                "start": 56,
+                "value": "5"
+            }
+        ]
+    },
+    {
+        "text": "scade intensitatea luminii în sufragerie la jumătate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 30,
+                "value": "sufragerie"
+            },
+            {
+                "end": 52,
+                "entity": "nivel",
+                "start": 44,
+                "value": "jumătate"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să scazi intensitatea iluminatului în baie la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 46,
+                "value": "baie"
+            },
+            {
+                "end": 55,
+                "entity": "nivel",
+                "start": 54,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Salut, scade intensitatea luminii în sufragerie la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 37,
+                "value": "sufragerie"
+            },
+            {
+                "end": 52,
+                "entity": "nivel",
+                "start": 51,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aș vrea să scazi intensitatea luminii în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 49,
+                "value": "baie"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, aș vrea să scazi intensitatea iluminatului în bucătărie la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 63,
+                "entity": "loc",
+                "start": 54,
+                "value": "bucătărie"
+            },
+            {
+                "end": 72,
+                "entity": "nivel",
+                "start": 67,
+                "value": "minim"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, scade intensitatea luminii în curte la 2",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 38,
+                "value": "curte"
+            },
+            {
+                "end": 48,
+                "entity": "nivel",
+                "start": 47,
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "text": "Salut, aș vrea să scazi intensitatea iluminatului în sufragerie la 1",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 63,
+                "entity": "loc",
+                "start": 53,
+                "value": "sufragerie"
+            },
+            {
+                "end": 68,
+                "entity": "nivel",
+                "start": 67,
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "text": "Pepper, scade intensitatea luminii în curte la minim",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 38,
+                "value": "curte"
+            },
+            {
+                "end": 52,
+                "entity": "nivel",
+                "start": 47,
+                "value": "minim"
+            }
+        ]
+    },
+    {
+        "text": "aș vrea să scazi intensitatea luminii în baie la jumătate",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeIntensitateLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 41,
+                "value": "baie"
+            },
+            {
+                "end": 57,
+                "entity": "nivel",
+                "start": 49,
+                "value": "jumătate"
+            }
+        ]
+    }
+]
