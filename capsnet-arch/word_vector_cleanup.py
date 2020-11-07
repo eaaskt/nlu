@@ -47,7 +47,7 @@ def readData():
         else:
             print("Some bad shit: " + word)
 
-    with open("../../romanian_word_vecs/cleaned-vectors.vec", "w", encoding="utf-8") as output:
+    with open("../../romanian_word_vecs/cleaned-vectors-diacritice.vec", "w", encoding="utf-8") as output:
         output.write(str(len(final_vectors)) + ' 300\n')
         for line in final_vectors:
             output.write(line)
