@@ -29,7 +29,7 @@ def readData():
             for word in text:
                 wordsSet.add(word)
 
-    word_vector_path = "../../romanian_word_vecs/cc.ro.300.vec"
+    word_vector_path = "../../romanian_word_vecs/conll.w2v.ro.100.vec"
 
     word_vector_lines = {}
     firstLine = True
@@ -47,8 +47,8 @@ def readData():
         else:
             print("Some bad shit: " + word)
 
-    with open("../../romanian_word_vecs/cleaned-vectors-diacritice.vec", "w", encoding="utf-8") as output:
-        output.write(str(len(final_vectors)) + ' 300\n')
+    with open("../../romanian_word_vecs/cleaned-vectors-diacritice-100.vec", "w", encoding="utf-8") as output:
+        output.write(str(len(final_vectors)) + ' 100\n')
         for line in final_vectors:
             output.write(line)
 
