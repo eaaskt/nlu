@@ -1,2266 +1,5 @@
 [
     {
-        "text": "Pepper, aprinde lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 35,
-                "entity": "loc",
-                "start": 26,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 1
-    },
-    {
-        "text": "Salut, aprinde lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 34,
-                "entity": "loc",
-                "start": 25,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 2
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 46,
-                "entity": "loc",
-                "start": 37,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 3
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 45,
-                "entity": "loc",
-                "start": 36,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 4
-    },
-    {
-        "text": "Pepper, aprinde curentul în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 37,
-                "entity": "loc",
-                "start": 28,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 5
-    },
-    {
-        "text": "Salut, aprinde curentul în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 36,
-                "entity": "loc",
-                "start": 27,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 6
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi curentul în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 48,
-                "entity": "loc",
-                "start": 39,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 7
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi curentul în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 47,
-                "entity": "loc",
-                "start": 38,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 8
-    },
-    {
-        "text": "Pepper, aprinde lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 30,
-                "entity": "loc",
-                "start": 26,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 9
-    },
-    {
-        "text": "Salut, aprinde lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 29,
-                "entity": "loc",
-                "start": 25,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 10
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 41,
-                "entity": "loc",
-                "start": 37,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 11
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 40,
-                "entity": "loc",
-                "start": 36,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 12
-    },
-    {
-        "text": "Pepper, aprinde curentul în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 32,
-                "entity": "loc",
-                "start": 28,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 13
-    },
-    {
-        "text": "Salut, aprinde curentul în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 31,
-                "entity": "loc",
-                "start": 27,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 14
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi curentul în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 43,
-                "entity": "loc",
-                "start": 39,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 15
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi curentul în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 42,
-                "entity": "loc",
-                "start": 38,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 16
-    },
-    {
-        "text": "Pepper, aprinde lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 31,
-                "entity": "loc",
-                "start": 26,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 17
-    },
-    {
-        "text": "Salut, aprinde lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 30,
-                "entity": "loc",
-                "start": 25,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 18
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 42,
-                "entity": "loc",
-                "start": 37,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 19
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 41,
-                "entity": "loc",
-                "start": 36,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 20
-    },
-    {
-        "text": "Pepper, aprinde curentul în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 33,
-                "entity": "loc",
-                "start": 28,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 21
-    },
-    {
-        "text": "Salut, aprinde curentul în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 32,
-                "entity": "loc",
-                "start": 27,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 22
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi curentul în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 44,
-                "entity": "loc",
-                "start": 39,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 23
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi curentul în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 43,
-                "entity": "loc",
-                "start": 38,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 24
-    },
-    {
-        "text": "Pepper, aprinde lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 36,
-                "entity": "loc",
-                "start": 26,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 25
-    },
-    {
-        "text": "Salut, aprinde lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 35,
-                "entity": "loc",
-                "start": 25,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 26
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 47,
-                "entity": "loc",
-                "start": 37,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 27
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 46,
-                "entity": "loc",
-                "start": 36,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 28
-    },
-    {
-        "text": "Pepper, aprinde curentul în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 38,
-                "entity": "loc",
-                "start": 28,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 29
-    },
-    {
-        "text": "Salut, aprinde curentul în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 37,
-                "entity": "loc",
-                "start": 27,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 30
-    },
-    {
-        "text": "Pepper, aș vrea să aprinzi curentul în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 49,
-                "entity": "loc",
-                "start": 39,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 31
-    },
-    {
-        "text": "Salut, aș vrea să aprinzi curentul în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 48,
-                "entity": "loc",
-                "start": 38,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 32
-    },
-    {
-        "text": "Aș vrea să aprinzi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 38,
-                "entity": "loc",
-                "start": 29,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 33
-    },
-    {
-        "text": "Aprinde curentul în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 29,
-                "entity": "loc",
-                "start": 20,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 34
-    },
-    {
-        "text": "Aș vrea să aprinzi curentul în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 40,
-                "entity": "loc",
-                "start": 31,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 35
-    },
-    {
-        "text": "Aprinde lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 22,
-                "entity": "loc",
-                "start": 18,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 36
-    },
-    {
-        "text": "Aș vrea să aprinzi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 33,
-                "entity": "loc",
-                "start": 29,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 37
-    },
-    {
-        "text": "Aprinde curentul în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 24,
-                "entity": "loc",
-                "start": 20,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 38
-    },
-    {
-        "text": "Aș vrea să aprinzi curentul în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 35,
-                "entity": "loc",
-                "start": 31,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 39
-    },
-    {
-        "text": "Aprinde lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 23,
-                "entity": "loc",
-                "start": 18,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 40
-    },
-    {
-        "text": "Aș vrea să aprinzi lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 34,
-                "entity": "loc",
-                "start": 29,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 41
-    },
-    {
-        "text": "Aprinde curentul în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 25,
-                "entity": "loc",
-                "start": 20,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 42
-    },
-    {
-        "text": "Aș vrea să aprinzi curentul în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 36,
-                "entity": "loc",
-                "start": 31,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 43
-    },
-    {
-        "text": "Aprinde lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 28,
-                "entity": "loc",
-                "start": 18,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 44
-    },
-    {
-        "text": "Aș vrea să aprinzi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 39,
-                "entity": "loc",
-                "start": 29,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 45
-    },
-    {
-        "text": "Aprinde curentul în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 30,
-                "entity": "loc",
-                "start": 20,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 46
-    },
-    {
-        "text": "Aș vrea să aprinzi curentul în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 41,
-                "entity": "loc",
-                "start": 31,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 47
-    },
-    {
-        "text": "Pepper, dă-mi lumină în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 33,
-                "entity": "loc",
-                "start": 24,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 48
-    },
-    {
-        "text": "Salut, dă-mi lumină în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 32,
-                "entity": "loc",
-                "start": 23,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 49
-    },
-    {
-        "text": "Pepper, aș vrea să-mi dai lumină în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 45,
-                "entity": "loc",
-                "start": 36,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 50
-    },
-    {
-        "text": "Salut, aș vrea să-mi dai lumină în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 44,
-                "entity": "loc",
-                "start": 35,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 51
-    },
-    {
-        "text": "Pepper, dă-mi lumină în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 28,
-                "entity": "loc",
-                "start": 24,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 52
-    },
-    {
-        "text": "Salut, dă-mi lumină în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 27,
-                "entity": "loc",
-                "start": 23,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 53
-    },
-    {
-        "text": "Pepper, aș vrea să-mi dai lumină în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 40,
-                "entity": "loc",
-                "start": 36,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 54
-    },
-    {
-        "text": "Salut, aș vrea să-mi dai lumină în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 39,
-                "entity": "loc",
-                "start": 35,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 55
-    },
-    {
-        "text": "Pepper, dă-mi lumină în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 29,
-                "entity": "loc",
-                "start": 24,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 56
-    },
-    {
-        "text": "Salut, dă-mi lumină în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 28,
-                "entity": "loc",
-                "start": 23,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 57
-    },
-    {
-        "text": "Pepper, aș vrea să-mi dai lumină în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 41,
-                "entity": "loc",
-                "start": 36,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 58
-    },
-    {
-        "text": "Salut, aș vrea să-mi dai lumină în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 40,
-                "entity": "loc",
-                "start": 35,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 59
-    },
-    {
-        "text": "Pepper, dă-mi lumină în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 34,
-                "entity": "loc",
-                "start": 24,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 60
-    },
-    {
-        "text": "Salut, dă-mi lumină în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 33,
-                "entity": "loc",
-                "start": 23,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 61
-    },
-    {
-        "text": "Pepper, aș vrea să-mi dai lumină în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 46,
-                "entity": "loc",
-                "start": 36,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 62
-    },
-    {
-        "text": "Salut, aș vrea să-mi dai lumină în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "aprindeLumina"
-            },
-            {
-                "end": 45,
-                "entity": "loc",
-                "start": 35,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 63
-    },
-    {
-        "text": "Pepper, doresc să stingi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 44,
-                "entity": "loc",
-                "start": 35,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 64
-    },
-    {
-        "text": "Aș vrea să stingi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 38,
-                "entity": "loc",
-                "start": 28,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 65
-    },
-    {
-        "text": "Stinge lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 22,
-                "entity": "loc",
-                "start": 17,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 66
-    },
-    {
-        "text": "Pepper, stinge lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 35,
-                "entity": "loc",
-                "start": 25,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 67
-    },
-    {
-        "text": "Pepper, stinge lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 34,
-                "entity": "loc",
-                "start": 25,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 68
-    },
-    {
-        "text": "Pepper, aș vrea să stingi lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 41,
-                "entity": "loc",
-                "start": 36,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 69
-    },
-    {
-        "text": "Salut, aș vrea să stingi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 39,
-                "entity": "loc",
-                "start": 35,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 70
-    },
-    {
-        "text": "Pepper, aș vrea să stingi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 45,
-                "entity": "loc",
-                "start": 36,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 71
-    },
-    {
-        "text": "Pepper, doresc să stingi lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 40,
-                "entity": "loc",
-                "start": 35,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 72
-    },
-    {
-        "text": "Salut, stinge lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 29,
-                "entity": "loc",
-                "start": 24,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 73
-    },
-    {
-        "text": "Pepper, aș vrea să stingi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 46,
-                "entity": "loc",
-                "start": 36,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 74
-    },
-    {
-        "text": "Salut, doresc să stingi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 44,
-                "entity": "loc",
-                "start": 34,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 75
-    },
-    {
-        "text": "Salut, doresc să stingi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 43,
-                "entity": "loc",
-                "start": 34,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 76
-    },
-    {
-        "text": "Pepper, aș vrea să stingi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 40,
-                "entity": "loc",
-                "start": 36,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 77
-    },
-    {
-        "text": "Salut, doresc să stingi lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 39,
-                "entity": "loc",
-                "start": 34,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 78
-    },
-    {
-        "text": "Stinge lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 21,
-                "entity": "loc",
-                "start": 17,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 79
-    },
-    {
-        "text": "Stinge lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 27,
-                "entity": "loc",
-                "start": 17,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 80
-    },
-    {
-        "text": "Salut, aș vrea să stingi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 44,
-                "entity": "loc",
-                "start": 35,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 81
-    },
-    {
-        "text": "Salut, stinge lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 28,
-                "entity": "loc",
-                "start": 24,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 82
-    },
-    {
-        "text": "Aș vrea să stingi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 32,
-                "entity": "loc",
-                "start": 28,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 83
-    },
-    {
-        "text": "Pepper, doresc să stingi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 39,
-                "entity": "loc",
-                "start": 35,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 84
-    },
-    {
-        "text": "Salut, doresc să stingi lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 38,
-                "entity": "loc",
-                "start": 34,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 85
-    },
-    {
-        "text": "Stinge lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 26,
-                "entity": "loc",
-                "start": 17,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 86
-    },
-    {
-        "text": "Aș vrea să stingi lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 33,
-                "entity": "loc",
-                "start": 28,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 87
-    },
-    {
-        "text": "Pepper, stinge lumina în baie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 29,
-                "entity": "loc",
-                "start": 25,
-                "value": "baie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 88
-    },
-    {
-        "text": "Aș vrea să stingi lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 37,
-                "entity": "loc",
-                "start": 28,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 89
-    },
-    {
-        "text": "Pepper, stinge lumina în curte",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 30,
-                "entity": "loc",
-                "start": 25,
-                "value": "curte"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 90
-    },
-    {
-        "text": "Salut, aș vrea să stingi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 45,
-                "entity": "loc",
-                "start": 35,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 91
-    },
-    {
-        "text": "Salut, stinge lumina în bucătărie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 33,
-                "entity": "loc",
-                "start": 24,
-                "value": "bucătărie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 92
-    },
-    {
-        "text": "Pepper, doresc să stingi lumina în sufragerie",
-        "entities": [
-            {
-                "entity": "intent",
-                "value": "stingeLumina"
-            },
-            {
-                "end": 45,
-                "entity": "loc",
-                "start": 35,
-                "value": "sufragerie"
-            }
-        ],
-        "seq_labels": [
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "O",
-            "B-loc"
-        ],
-        "id": 93
-    },
-    {
         "text": "Pepper aș vrea să crești intensitatea luminii în curte",
         "entities": [
             {
@@ -2285,7 +24,7 @@
             "O",
             "B-loc"
         ],
-        "id": 94
+        "id": 1
     },
     {
         "text": "aș vrea să crești intensitatea luminii în baie la 4",
@@ -2319,7 +58,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 95
+        "id": 2
     },
     {
         "text": "aș vrea să crești intensitatea luminii în baie",
@@ -2345,7 +84,7 @@
             "O",
             "B-loc"
         ],
-        "id": 96
+        "id": 3
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în bucătărie la dublu",
@@ -2380,7 +119,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 97
+        "id": 4
     },
     {
         "text": "crește intensitatea iluminatului în bucătărie la triplu",
@@ -2411,7 +150,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 98
+        "id": 5
     },
     {
         "text": "Pepper crește intensitatea luminii în bucătărie la dublu",
@@ -2443,7 +182,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 99
+        "id": 6
     },
     {
         "text": "Pepper crește intensitatea iluminatului în baie la dublu",
@@ -2475,7 +214,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 100
+        "id": 7
     },
     {
         "text": "Salut, crește intensitatea iluminatului în baie",
@@ -2499,7 +238,7 @@
             "O",
             "B-loc"
         ],
-        "id": 101
+        "id": 8
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în curte la 4",
@@ -2534,7 +273,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 102
+        "id": 9
     },
     {
         "text": "Salut, aș vrea să crești intensitatea luminii în baie la dublu",
@@ -2569,7 +308,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 103
+        "id": 10
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în curte la dublu",
@@ -2604,7 +343,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 104
+        "id": 11
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în sufragerie la 4",
@@ -2639,7 +378,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 105
+        "id": 12
     },
     {
         "text": "crește intensitatea iluminatului în bucătărie",
@@ -2662,7 +401,7 @@
             "O",
             "B-loc"
         ],
-        "id": 106
+        "id": 13
     },
     {
         "text": "Salut, crește intensitatea luminii în baie",
@@ -2686,7 +425,7 @@
             "O",
             "B-loc"
         ],
-        "id": 107
+        "id": 14
     },
     {
         "text": "Salut, aș vrea să crești intensitatea luminii în bucătărie la triplu",
@@ -2721,7 +460,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 108
+        "id": 15
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în baie la 4",
@@ -2756,7 +495,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 109
+        "id": 16
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în curte la 5",
@@ -2791,7 +530,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 110
+        "id": 17
     },
     {
         "text": "crește intensitatea luminii în sufragerie la 5",
@@ -2822,7 +561,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 111
+        "id": 18
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în sufragerie",
@@ -2849,7 +588,7 @@
             "O",
             "B-loc"
         ],
-        "id": 112
+        "id": 19
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în baie",
@@ -2876,7 +615,7 @@
             "O",
             "B-loc"
         ],
-        "id": 113
+        "id": 20
     },
     {
         "text": "crește intensitatea luminii în sufragerie la 4",
@@ -2907,7 +646,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 114
+        "id": 21
     },
     {
         "text": "crește intensitatea iluminatului în curte la 5",
@@ -2938,7 +677,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 115
+        "id": 22
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în bucătărie la 5",
@@ -2972,7 +711,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 116
+        "id": 23
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în sufragerie la 4",
@@ -3006,7 +745,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 117
+        "id": 24
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în bucătărie",
@@ -3033,7 +772,7 @@
             "O",
             "B-loc"
         ],
-        "id": 118
+        "id": 25
     },
     {
         "text": "Salut, crește intensitatea iluminatului în curte la triplu",
@@ -3065,7 +804,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 119
+        "id": 26
     },
     {
         "text": "Pepper crește intensitatea iluminatului în baie la triplu",
@@ -3097,7 +836,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 120
+        "id": 27
     },
     {
         "text": "Pepper aș vrea să crești intensitatea luminii în curte la 5",
@@ -3132,7 +871,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 121
+        "id": 28
     },
     {
         "text": "Pepper crește intensitatea iluminatului în bucătărie la 5",
@@ -3164,7 +903,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 122
+        "id": 29
     },
     {
         "text": "Salut, crește intensitatea luminii în bucătărie la 4",
@@ -3196,7 +935,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 123
+        "id": 30
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în sufragerie la 5",
@@ -3231,7 +970,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 124
+        "id": 31
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în curte",
@@ -3258,7 +997,7 @@
             "O",
             "B-loc"
         ],
-        "id": 125
+        "id": 32
     },
     {
         "text": "crește intensitatea luminii în baie la triplu",
@@ -3289,7 +1028,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 126
+        "id": 33
     },
     {
         "text": "Pepper crește intensitatea luminii în curte la dublu",
@@ -3321,7 +1060,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 127
+        "id": 34
     },
     {
         "text": "Pepper crește intensitatea luminii în bucătărie",
@@ -3345,7 +1084,7 @@
             "O",
             "B-loc"
         ],
-        "id": 128
+        "id": 35
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în baie",
@@ -3371,7 +1110,7 @@
             "O",
             "B-loc"
         ],
-        "id": 129
+        "id": 36
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în sufragerie la triplu",
@@ -3406,7 +1145,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 130
+        "id": 37
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în bucătărie la dublu",
@@ -3440,7 +1179,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 131
+        "id": 38
     },
     {
         "text": "Salut, crește intensitatea luminii în baie la 4",
@@ -3472,7 +1211,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 132
+        "id": 39
     },
     {
         "text": "Salut, crește intensitatea luminii în sufragerie la triplu",
@@ -3504,7 +1243,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 133
+        "id": 40
     },
     {
         "text": "Salut, aș vrea să crești intensitatea luminii în bucătărie la 4",
@@ -3539,7 +1278,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 134
+        "id": 41
     },
     {
         "text": "aș vrea să crești intensitatea luminii în sufragerie",
@@ -3565,7 +1304,7 @@
             "O",
             "B-loc"
         ],
-        "id": 135
+        "id": 42
     },
     {
         "text": "Salut, crește intensitatea iluminatului în sufragerie",
@@ -3589,7 +1328,7 @@
             "O",
             "B-loc"
         ],
-        "id": 136
+        "id": 43
     },
     {
         "text": "Pepper crește intensitatea iluminatului în baie la 4",
@@ -3621,7 +1360,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 137
+        "id": 44
     },
     {
         "text": "Pepper aș vrea să crești intensitatea luminii în sufragerie la dublu",
@@ -3656,7 +1395,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 138
+        "id": 45
     },
     {
         "text": "Salut, crește intensitatea luminii în sufragerie la 5",
@@ -3688,7 +1427,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 139
+        "id": 46
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în bucătărie la triplu",
@@ -3723,7 +1462,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 140
+        "id": 47
     },
     {
         "text": "Pepper crește intensitatea luminii în baie la dublu",
@@ -3755,7 +1494,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 141
+        "id": 48
     },
     {
         "text": "Salut, crește intensitatea iluminatului în bucătărie",
@@ -3779,7 +1518,7 @@
             "O",
             "B-loc"
         ],
-        "id": 142
+        "id": 49
     },
     {
         "text": "Pepper crește intensitatea iluminatului în bucătărie la triplu",
@@ -3811,7 +1550,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 143
+        "id": 50
     },
     {
         "text": "Pepper aș vrea să crești intensitatea luminii în sufragerie la triplu",
@@ -3846,7 +1585,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 144
+        "id": 51
     },
     {
         "text": "Salut, crește intensitatea luminii în curte la triplu",
@@ -3878,7 +1617,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 145
+        "id": 52
     },
     {
         "text": "aș vrea să crești intensitatea luminii în baie la 5",
@@ -3912,7 +1651,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 146
+        "id": 53
     },
     {
         "text": "Pepper crește intensitatea luminii în curte",
@@ -3936,7 +1675,7 @@
             "O",
             "B-loc"
         ],
-        "id": 147
+        "id": 54
     },
     {
         "text": "Salut, aș vrea să crești intensitatea luminii în curte la triplu",
@@ -3971,7 +1710,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 148
+        "id": 55
     },
     {
         "text": "Salut, crește intensitatea luminii în curte",
@@ -3995,7 +1734,7 @@
             "O",
             "B-loc"
         ],
-        "id": 149
+        "id": 56
     },
     {
         "text": "crește intensitatea luminii în curte",
@@ -4018,7 +1757,7 @@
             "O",
             "B-loc"
         ],
-        "id": 150
+        "id": 57
     },
     {
         "text": "Pepper aș vrea să crești intensitatea luminii în curte la triplu",
@@ -4053,7 +1792,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 151
+        "id": 58
     },
     {
         "text": "crește intensitatea luminii în sufragerie la triplu",
@@ -4084,7 +1823,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 152
+        "id": 59
     },
     {
         "text": "Salut, crește intensitatea iluminatului în curte",
@@ -4108,7 +1847,7 @@
             "O",
             "B-loc"
         ],
-        "id": 153
+        "id": 60
     },
     {
         "text": "Pepper crește intensitatea iluminatului în baie",
@@ -4132,7 +1871,7 @@
             "O",
             "B-loc"
         ],
-        "id": 154
+        "id": 61
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în bucătărie",
@@ -4159,7 +1898,7 @@
             "O",
             "B-loc"
         ],
-        "id": 155
+        "id": 62
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în baie la triplu",
@@ -4193,7 +1932,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 156
+        "id": 63
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în sufragerie la dublu",
@@ -4228,7 +1967,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 157
+        "id": 64
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în sufragerie la 5",
@@ -4263,7 +2002,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 158
+        "id": 65
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în baie la 5",
@@ -4298,7 +2037,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 159
+        "id": 66
     },
     {
         "text": "crește intensitatea iluminatului în sufragerie la triplu",
@@ -4329,7 +2068,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 160
+        "id": 67
     },
     {
         "text": "Salut, crește intensitatea luminii în baie la dublu",
@@ -4361,7 +2100,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 161
+        "id": 68
     },
     {
         "text": "crește intensitatea iluminatului în curte la dublu",
@@ -4392,7 +2131,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 162
+        "id": 69
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în curte",
@@ -4418,7 +2157,7 @@
             "O",
             "B-loc"
         ],
-        "id": 163
+        "id": 70
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în sufragerie la dublu",
@@ -4452,7 +2191,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 164
+        "id": 71
     },
     {
         "text": "Salut, crește intensitatea luminii în curte la dublu",
@@ -4484,7 +2223,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 165
+        "id": 72
     },
     {
         "text": "Salut, aș vrea să crești intensitatea luminii în sufragerie la 4",
@@ -4519,7 +2258,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 166
+        "id": 73
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în baie",
@@ -4546,7 +2285,7 @@
             "O",
             "B-loc"
         ],
-        "id": 167
+        "id": 74
     },
     {
         "text": "Salut, crește intensitatea iluminatului în bucătărie la 4",
@@ -4578,7 +2317,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 168
+        "id": 75
     },
     {
         "text": "Pepper aș vrea să crești intensitatea iluminatului în bucătărie la 4",
@@ -4613,7 +2352,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 169
+        "id": 76
     },
     {
         "text": "Pepper crește intensitatea luminii în bucătărie la 5",
@@ -4645,7 +2384,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 170
+        "id": 77
     },
     {
         "text": "Salut, crește intensitatea iluminatului în baie la triplu",
@@ -4677,7 +2416,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 171
+        "id": 78
     },
     {
         "text": "crește intensitatea luminii în bucătărie la 4",
@@ -4708,7 +2447,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 172
+        "id": 79
     },
     {
         "text": "crește intensitatea iluminatului în bucătărie la dublu",
@@ -4739,7 +2478,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 173
+        "id": 80
     },
     {
         "text": "crește intensitatea luminii în sufragerie la dublu",
@@ -4770,7 +2509,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 174
+        "id": 81
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în curte la dublu",
@@ -4805,7 +2544,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 175
+        "id": 82
     },
     {
         "text": "Salut, aș vrea să crești intensitatea luminii în bucătărie",
@@ -4832,7 +2571,7 @@
             "O",
             "B-loc"
         ],
-        "id": 176
+        "id": 83
     },
     {
         "text": "aș vrea să crești intensitatea iluminatului în baie la dublu",
@@ -4866,7 +2605,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 177
+        "id": 84
     },
     {
         "text": "Pepper aș vrea să crești intensitatea luminii în sufragerie la 5",
@@ -4901,7 +2640,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 178
+        "id": 85
     },
     {
         "text": "Salut, crește intensitatea iluminatului în baie la 5",
@@ -4933,7 +2672,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 179
+        "id": 86
     },
     {
         "text": "Salut, aș vrea să crești intensitatea iluminatului în bucătărie la 5",
@@ -4968,7 +2707,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 180
+        "id": 87
     },
     {
         "text": "Pepper crește intensitatea iluminatului în sufragerie la 5",
@@ -5000,7 +2739,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 181
+        "id": 88
     },
     {
         "text": "Salut, crește intensitatea luminii în curte la 4",
@@ -5032,7 +2771,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 182
+        "id": 89
     },
     {
         "text": "Pepper aș vrea să crești intensitatea luminii în baie la triplu",
@@ -5067,7 +2806,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 183
+        "id": 90
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea luminii în baie la 2",
@@ -5102,7 +2841,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 184
+        "id": 91
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în curte",
@@ -5129,7 +2868,7 @@
             "O",
             "B-loc"
         ],
-        "id": 185
+        "id": 92
     },
     {
         "text": "Pepper, scade intensitatea iluminatului în curte",
@@ -5153,7 +2892,7 @@
             "O",
             "B-loc"
         ],
-        "id": 186
+        "id": 93
     },
     {
         "text": "scade intensitatea luminii în baie la 2",
@@ -5184,7 +2923,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 187
+        "id": 94
     },
     {
         "text": "scade intensitatea luminii în sufragerie la 2",
@@ -5215,7 +2954,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 188
+        "id": 95
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea iluminatului în bucătărie",
@@ -5242,7 +2981,7 @@
             "O",
             "B-loc"
         ],
-        "id": 189
+        "id": 96
     },
     {
         "text": "scade intensitatea iluminatului în curte la jumătate",
@@ -5273,7 +3012,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 190
+        "id": 97
     },
     {
         "text": "scade intensitatea luminii în baie la jumătate",
@@ -5304,7 +3043,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 191
+        "id": 98
     },
     {
         "text": "scade intensitatea luminii în bucătărie la 2",
@@ -5335,7 +3074,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 192
+        "id": 99
     },
     {
         "text": "aș vrea să scazi intensitatea iluminatului în sufragerie la minim",
@@ -5369,7 +3108,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 193
+        "id": 100
     },
     {
         "text": "aș vrea să scazi intensitatea iluminatului în bucătărie la 2",
@@ -5403,7 +3142,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 194
+        "id": 101
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în sufragerie",
@@ -5430,7 +3169,7 @@
             "O",
             "B-loc"
         ],
-        "id": 195
+        "id": 102
     },
     {
         "text": "aș vrea să scazi intensitatea iluminatului în curte la jumătate",
@@ -5464,7 +3203,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 196
+        "id": 103
     },
     {
         "text": "Pepper, scade intensitatea luminii în baie",
@@ -5488,7 +3227,7 @@
             "O",
             "B-loc"
         ],
-        "id": 197
+        "id": 104
     },
     {
         "text": "Pepper, scade intensitatea luminii în curte",
@@ -5512,7 +3251,7 @@
             "O",
             "B-loc"
         ],
-        "id": 198
+        "id": 105
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea luminii în baie la minim",
@@ -5547,7 +3286,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 199
+        "id": 106
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea iluminatului în sufragerie la 2",
@@ -5582,7 +3321,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 200
+        "id": 107
     },
     {
         "text": "aș vrea să scazi intensitatea luminii în baie la minim",
@@ -5616,7 +3355,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 201
+        "id": 108
     },
     {
         "text": "Pepper, scade intensitatea iluminatului în bucătărie la minim",
@@ -5648,7 +3387,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 202
+        "id": 109
     },
     {
         "text": "scade intensitatea iluminatului în baie la 2",
@@ -5679,7 +3418,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 203
+        "id": 110
     },
     {
         "text": "Pepper, scade intensitatea iluminatului în baie la 1",
@@ -5711,7 +3450,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 204
+        "id": 111
     },
     {
         "text": "Salut, scade intensitatea iluminatului în sufragerie",
@@ -5735,7 +3474,7 @@
             "O",
             "B-loc"
         ],
-        "id": 205
+        "id": 112
     },
     {
         "text": "Salut, scade intensitatea luminii în curte",
@@ -5759,7 +3498,7 @@
             "O",
             "B-loc"
         ],
-        "id": 206
+        "id": 113
     },
     {
         "text": "Salut, scade intensitatea iluminatului în curte la jumătate",
@@ -5791,7 +3530,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 207
+        "id": 114
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în baie la 2",
@@ -5826,7 +3565,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 208
+        "id": 115
     },
     {
         "text": "Pepper, scade intensitatea luminii în baie la 2",
@@ -5858,7 +3597,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 209
+        "id": 116
     },
     {
         "text": "scade intensitatea luminii în bucătărie la minim",
@@ -5889,7 +3628,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 210
+        "id": 117
     },
     {
         "text": "Pepper, scade intensitatea iluminatului în bucătărie la jumătate",
@@ -5921,7 +3660,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 211
+        "id": 118
     },
     {
         "text": "scade intensitatea luminii în curte la 1",
@@ -5952,7 +3691,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 212
+        "id": 119
     },
     {
         "text": "aș vrea să scazi intensitatea luminii în sufragerie la 1",
@@ -5986,7 +3725,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 213
+        "id": 120
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în baie",
@@ -6013,7 +3752,7 @@
             "O",
             "B-loc"
         ],
-        "id": 214
+        "id": 121
     },
     {
         "text": "Salut, scade intensitatea luminii în curte la minim",
@@ -6045,7 +3784,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 215
+        "id": 122
     },
     {
         "text": "aș vrea să scazi intensitatea luminii în bucătărie la minim",
@@ -6079,7 +3818,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 216
+        "id": 123
     },
     {
         "text": "Salut, scade intensitatea iluminatului în baie la 1",
@@ -6111,7 +3850,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 217
+        "id": 124
     },
     {
         "text": "scade intensitatea luminii în sufragerie la 1",
@@ -6142,7 +3881,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 218
+        "id": 125
     },
     {
         "text": "scade intensitatea iluminatului în bucătărie la jumătate",
@@ -6173,7 +3912,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 219
+        "id": 126
     },
     {
         "text": "aș vrea să scazi intensitatea luminii în baie la 1",
@@ -6207,7 +3946,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 220
+        "id": 127
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea iluminatului în bucătărie la 2",
@@ -6242,7 +3981,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 221
+        "id": 128
     },
     {
         "text": "scade intensitatea iluminatului în sufragerie la minim",
@@ -6273,7 +4012,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 222
+        "id": 129
     },
     {
         "text": "Salut, scade intensitatea iluminatului în sufragerie la 2",
@@ -6305,7 +4044,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 223
+        "id": 130
     },
     {
         "text": "Pepper, scade intensitatea luminii în bucătărie la minim",
@@ -6337,7 +4076,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 224
+        "id": 131
     },
     {
         "text": "Pepper, scade intensitatea luminii în baie la 1",
@@ -6369,7 +4108,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 225
+        "id": 132
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea luminii în curte la minim",
@@ -6404,7 +4143,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 226
+        "id": 133
     },
     {
         "text": "Pepper, scade intensitatea iluminatului în curte la minim",
@@ -6436,7 +4175,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 227
+        "id": 134
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în bucătărie la jumătate",
@@ -6471,7 +4210,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 228
+        "id": 135
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea luminii în sufragerie la 1",
@@ -6506,7 +4245,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 229
+        "id": 136
     },
     {
         "text": "Pepper, scade intensitatea iluminatului în curte la 1",
@@ -6538,7 +4277,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 230
+        "id": 137
     },
     {
         "text": "scade intensitatea iluminatului în sufragerie",
@@ -6561,7 +4300,7 @@
             "O",
             "B-loc"
         ],
-        "id": 231
+        "id": 138
     },
     {
         "text": "scade intensitatea iluminatului în baie la minim",
@@ -6592,7 +4331,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 232
+        "id": 139
     },
     {
         "text": "scade intensitatea luminii în bucătărie la 1",
@@ -6623,7 +4362,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 233
+        "id": 140
     },
     {
         "text": "Salut, scade intensitatea iluminatului în sufragerie la jumătate",
@@ -6655,7 +4394,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 234
+        "id": 141
     },
     {
         "text": "aș vrea să scazi intensitatea luminii în curte la jumătate",
@@ -6689,7 +4428,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 235
+        "id": 142
     },
     {
         "text": "aș vrea să scazi intensitatea iluminatului în curte",
@@ -6715,7 +4454,7 @@
             "O",
             "B-loc"
         ],
-        "id": 236
+        "id": 143
     },
     {
         "text": "Salut, scade intensitatea iluminatului în baie la minim",
@@ -6747,7 +4486,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 237
+        "id": 144
     },
     {
         "text": "scade intensitatea iluminatului în curte la minim",
@@ -6778,7 +4517,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 238
+        "id": 145
     },
     {
         "text": "scade intensitatea luminii în bucătărie la jumătate",
@@ -6809,7 +4548,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 239
+        "id": 146
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea iluminatului în baie la 1",
@@ -6844,7 +4583,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 240
+        "id": 147
     },
     {
         "text": "Pepper, scade intensitatea luminii în baie la minim",
@@ -6876,7 +4615,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 241
+        "id": 148
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea iluminatului în sufragerie la jumătate",
@@ -6911,7 +4650,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 242
+        "id": 149
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea iluminatului în curte la minim",
@@ -6946,7 +4685,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 243
+        "id": 150
     },
     {
         "text": "Salut, scade intensitatea iluminatului în curte",
@@ -6970,7 +4709,7 @@
             "O",
             "B-loc"
         ],
-        "id": 244
+        "id": 151
     },
     {
         "text": "Pepper, scade intensitatea luminii în curte la jumătate",
@@ -7002,7 +4741,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 245
+        "id": 152
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în bucătărie la 2",
@@ -7037,7 +4776,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 246
+        "id": 153
     },
     {
         "text": "Pepper, scade intensitatea iluminatului în baie",
@@ -7061,7 +4800,7 @@
             "O",
             "B-loc"
         ],
-        "id": 247
+        "id": 154
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea iluminatului în curte la 2",
@@ -7096,7 +4835,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 248
+        "id": 155
     },
     {
         "text": "Salut, scade intensitatea iluminatului în bucătărie",
@@ -7120,7 +4859,7 @@
             "O",
             "B-loc"
         ],
-        "id": 249
+        "id": 156
     },
     {
         "text": "Salut, scade intensitatea luminii în sufragerie la 2",
@@ -7152,7 +4891,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 250
+        "id": 157
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în curte la minim",
@@ -7187,7 +4926,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 251
+        "id": 158
     },
     {
         "text": "scade intensitatea luminii în curte",
@@ -7210,7 +4949,7 @@
             "O",
             "B-loc"
         ],
-        "id": 252
+        "id": 159
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea iluminatului în baie la minim",
@@ -7245,7 +4984,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 253
+        "id": 160
     },
     {
         "text": "aș vrea să scazi intensitatea iluminatului în sufragerie",
@@ -7271,7 +5010,7 @@
             "O",
             "B-loc"
         ],
-        "id": 254
+        "id": 161
     },
     {
         "text": "Pepper, scade intensitatea luminii în curte la minim",
@@ -7303,7 +5042,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 255
+        "id": 162
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea luminii în bucătărie",
@@ -7330,7 +5069,7 @@
             "O",
             "B-loc"
         ],
-        "id": 256
+        "id": 163
     },
     {
         "text": "aș vrea să scazi intensitatea luminii în sufragerie la jumătate",
@@ -7364,7 +5103,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 257
+        "id": 164
     },
     {
         "text": "Salut, scade intensitatea luminii în curte la 1",
@@ -7396,7 +5135,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 258
+        "id": 165
     },
     {
         "text": "aș vrea să scazi intensitatea iluminatului în bucătărie la 1",
@@ -7430,7 +5169,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 259
+        "id": 166
     },
     {
         "text": "Salut, scade intensitatea luminii în baie la minim",
@@ -7462,7 +5201,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 260
+        "id": 167
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea iluminatului în sufragerie la 1",
@@ -7497,7 +5236,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 261
+        "id": 168
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea iluminatului în baie",
@@ -7524,7 +5263,7 @@
             "O",
             "B-loc"
         ],
-        "id": 262
+        "id": 169
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea luminii în baie la 1",
@@ -7559,7 +5298,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 263
+        "id": 170
     },
     {
         "text": "Salut, scade intensitatea luminii în sufragerie la minim",
@@ -7591,7 +5330,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 264
+        "id": 171
     },
     {
         "text": "scade intensitatea luminii în baie",
@@ -7614,7 +5353,7 @@
             "O",
             "B-loc"
         ],
-        "id": 265
+        "id": 172
     },
     {
         "text": "Pepper, scade intensitatea luminii în sufragerie la 1",
@@ -7646,7 +5385,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 266
+        "id": 173
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea iluminatului în baie la 1",
@@ -7681,7 +5420,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 267
+        "id": 174
     },
     {
         "text": "Salut, scade intensitatea luminii în bucătărie la jumătate",
@@ -7713,7 +5452,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 268
+        "id": 175
     },
     {
         "text": "scade intensitatea iluminatului în curte la 1",
@@ -7744,7 +5483,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 269
+        "id": 176
     },
     {
         "text": "scade intensitatea luminii în sufragerie",
@@ -7767,7 +5506,7 @@
             "O",
             "B-loc"
         ],
-        "id": 270
+        "id": 177
     },
     {
         "text": "aș vrea să scazi intensitatea luminii în bucătărie",
@@ -7793,7 +5532,7 @@
             "O",
             "B-loc"
         ],
-        "id": 271
+        "id": 178
     },
     {
         "text": "Salut, aș vrea să scazi intensitatea luminii în curte la 1",
@@ -7828,7 +5567,7 @@
             "O",
             "B-nivel"
         ],
-        "id": 272
+        "id": 179
     },
     {
         "text": "Pepper, aș vrea să scazi intensitatea luminii în bucătărie la minim",
@@ -7863,6 +5602,4425 @@
             "O",
             "B-nivel"
         ],
+        "id": 180
+    },
+    {
+        "text": "Salut, aș vrea să-mi dai lumină în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 181
+    },
+    {
+        "text": "Aprinde curentul în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 25,
+                "entity": "loc",
+                "start": 20,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 182
+    },
+    {
+        "text": "Aprinde lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 23,
+                "entity": "loc",
+                "start": 18,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 183
+    },
+    {
+        "text": "Pepper, dă-mi lumină în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 184
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 36,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 185
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 37,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 186
+    },
+    {
+        "text": "Aprinde te rog lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 25,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 187
+    },
+    {
+        "text": "Aprinde te rog curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 27,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 188
+    },
+    {
+        "text": "Salut, aș vrea să-mi dai lumină în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 35,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 189
+    },
+    {
+        "text": "Salut, aprinde curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 27,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 190
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 36,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 191
+    },
+    {
+        "text": "Aprinde te rog curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 27,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 192
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 39,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 193
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 38,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 194
+    },
+    {
+        "text": "Pepper, aprinde lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 26,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 195
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 196
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 37,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 197
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 198
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 39,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 199
+    },
+    {
+        "text": "Salut, aprinde curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 27,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 200
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog curentul în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 38,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 201
+    },
+    {
+        "text": "Pepper, aprinde lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 26,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 202
+    },
+    {
+        "text": "Pepper, aprinde curentul în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 28,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 203
+    },
+    {
+        "text": "Aprinde curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 25,
+                "entity": "loc",
+                "start": 20,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 204
+    },
+    {
+        "text": "Salut, aș vrea să-mi dai lumină în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 35,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 205
+    },
+    {
+        "text": "Pepper, aprinde lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 26,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 206
+    },
+    {
+        "text": "Salut, aprinde curentul în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 27,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 207
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 37,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 208
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 38,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 209
+    },
+    {
+        "text": "Aprinde te rog curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 27,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 210
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 36,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 211
+    },
+    {
+        "text": "Aprinde lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 23,
+                "entity": "loc",
+                "start": 18,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 212
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi curentul în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 38,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 213
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 36,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 214
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 37,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 215
+    },
+    {
+        "text": "Aș vrea să aprinzi curentul în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 31,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 216
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 217
+    },
+    {
+        "text": "Salut, aș vrea să-mi dai lumină în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 218
+    },
+    {
+        "text": "Aș vrea să aprinzi lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 29,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 219
+    },
+    {
+        "text": "Pepper, aș vrea să-mi dai lumină în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 220
+    },
+    {
+        "text": "Salut, aprinde lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 25,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 221
+    },
+    {
+        "text": "Aș vrea să aprinzi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 29,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 222
+    },
+    {
+        "text": "Aprinde te rog lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 25,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 223
+    },
+    {
+        "text": "Aprinde lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 27,
+                "entity": "loc",
+                "start": 18,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 224
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 38,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 225
+    },
+    {
+        "text": "Aprinde te rog lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 25,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 226
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 227
+    },
+    {
+        "text": "Aprinde curentul în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 20,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 228
+    },
+    {
+        "text": "Aș vrea să aprinzi curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 31,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 229
+    },
+    {
+        "text": "Aprinde lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 22,
+                "entity": "loc",
+                "start": 18,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 230
+    },
+    {
+        "text": "Pepper, aprinde curentul în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 28,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 231
+    },
+    {
+        "text": "Pepper, aprinde curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 28,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 232
+    },
+    {
+        "text": "Pepper, dă-mi lumină în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 233
+    },
+    {
+        "text": "Aș vrea să aprinzi lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 29,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 234
+    },
+    {
+        "text": "Salut, dă-mi lumină în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 23,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 235
+    },
+    {
+        "text": "Pepper, aprinde lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 26,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 236
+    },
+    {
+        "text": "Salut, aprinde curentul în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 27,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 237
+    },
+    {
+        "text": "Aprinde te rog curentul în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 27,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 238
+    },
+    {
+        "text": "Pepper, aprinde lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 26,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 239
+    },
+    {
+        "text": "Pepper, dă-mi lumină în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 24,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 240
+    },
+    {
+        "text": "Salut, aprinde lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 25,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 241
+    },
+    {
+        "text": "Aprinde curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 24,
+                "entity": "loc",
+                "start": 20,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 242
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 38,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 243
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 38,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 244
+    },
+    {
+        "text": "Salut, aș vrea să-mi dai lumină în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 35,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 245
+    },
+    {
+        "text": "Aș vrea să aprinzi curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 31,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 246
+    },
+    {
+        "text": "Aprinde te rog lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 25,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 247
+    },
+    {
+        "text": "Pepper, aș vrea să-mi dai lumină în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 248
+    },
+    {
+        "text": "Aprinde te rog curentul în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 27,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 249
+    },
+    {
+        "text": "Aș vrea să aprinzi lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 29,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 250
+    },
+    {
+        "text": "Aprinde lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 18,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 251
+    },
+    {
+        "text": "Aprinde curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 20,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 252
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi curentul în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 38,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 253
+    },
+    {
+        "text": "Pepper, aș vrea să-mi dai lumină în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 36,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 254
+    },
+    {
+        "text": "Pepper, dă-mi lumină în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 24,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 255
+    },
+    {
+        "text": "Pepper, aș vrea să-mi dai lumină în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 36,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 256
+    },
+    {
+        "text": "Salut, aprinde lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 25,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 257
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi curentul în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 39,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 258
+    },
+    {
+        "text": "Salut, aș vrea să aprinzi curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 38,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 259
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 39,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 260
+    },
+    {
+        "text": "Pepper, aprinde curentul în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 28,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 261
+    },
+    {
+        "text": "Pepper, dă-mi lumină în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 24,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 262
+    },
+    {
+        "text": "Aș vrea să aprinzi te rog lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 263
+    },
+    {
+        "text": "Pepper, aș vrea să-mi dai lumină în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 264
+    },
+    {
+        "text": "Salut, aprinde curentul în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 27,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 265
+    },
+    {
+        "text": "Pepper, aș vrea să aprinzi lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 37,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 266
+    },
+    {
+        "text": "Salut, dă-mi lumină în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 23,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 267
+    },
+    {
+        "text": "Pepper, aprinde curentul în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 28,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 268
+    },
+    {
+        "text": "Salut, dă-mi lumină în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 27,
+                "entity": "loc",
+                "start": 23,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 269
+    },
+    {
+        "text": "Aș vrea să aprinzi curentul în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "aprindeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 31,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 270
+    },
+    {
+        "text": "Salut, doresc să stingi lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 33,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 271
+    },
+    {
+        "text": "Pepper, stinge lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 24,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 272
+    },
+    {
+        "text": "Salut, doresc să stingi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 34,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
         "id": 273
+    },
+    {
+        "text": "Stinge lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 22,
+                "entity": "loc",
+                "start": 17,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 274
+    },
+    {
+        "text": "Stinge te rog lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 23,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 275
+    },
+    {
+        "text": "Stinge te rog lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 27,
+                "entity": "loc",
+                "start": 23,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 276
+    },
+    {
+        "text": "Pepper, doresc să stingi lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 35,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 277
+    },
+    {
+        "text": "Salut, doresc să stingi lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 34,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 278
+    },
+    {
+        "text": "Salut, aș vrea să stingi lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 34,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 279
+    },
+    {
+        "text": "Stinge lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 25,
+                "entity": "loc",
+                "start": 16,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 280
+    },
+    {
+        "text": "Pepper, stinge lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 281
+    },
+    {
+        "text": "Salut, doresc să stingi lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 34,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 282
+    },
+    {
+        "text": "Pepper, stinge lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 24,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 283
+    },
+    {
+        "text": "Aș vrea să stingi lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 27,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 284
+    },
+    {
+        "text": "Pepper, stinge lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 285
+    },
+    {
+        "text": "Salut, doresc să stingi lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 286
+    },
+    {
+        "text": "Pepper, stinge lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 25,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 287
+    },
+    {
+        "text": "Aș vrea să stingi te rog lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 288
+    },
+    {
+        "text": "Stinge te rog lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 289
+    },
+    {
+        "text": "Pepper, doresc să stingi lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 290
+    },
+    {
+        "text": "Aș vrea să stingi te rog lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 291
+    },
+    {
+        "text": "Stinge lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 26,
+                "entity": "loc",
+                "start": 17,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 292
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 293
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 294
+    },
+    {
+        "text": "Aș vrea să stingi te rog lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 295
+    },
+    {
+        "text": "Stinge te rog lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 296
+    },
+    {
+        "text": "Aș vrea să stingi te rog lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 34,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 297
+    },
+    {
+        "text": "Aș vrea să stingi te rog lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 35,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 298
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 35,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 299
+    },
+    {
+        "text": "Pepper, stinge lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 25,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 300
+    },
+    {
+        "text": "Salut, stinge lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 24,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 301
+    },
+    {
+        "text": "Salut, stinge lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 23,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 302
+    },
+    {
+        "text": "Salut, stinge lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 24,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 303
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 36,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 304
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 305
+    },
+    {
+        "text": "Salut, aș vrea să stingi lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 35,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 306
+    },
+    {
+        "text": "Stinge lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 27,
+                "entity": "loc",
+                "start": 17,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 307
+    },
+    {
+        "text": "Aș vrea să stingi te rog lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 34,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 308
+    },
+    {
+        "text": "Aș vrea să stingi te rog lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 35,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 309
+    },
+    {
+        "text": "Aș vrea să stingi lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 31,
+                "entity": "loc",
+                "start": 27,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 310
+    },
+    {
+        "text": "Salut, stinge lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 24,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 311
+    },
+    {
+        "text": "Stinge lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 21,
+                "entity": "loc",
+                "start": 17,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 312
+    },
+    {
+        "text": "Salut, doresc să stingi lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 33,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 313
+    },
+    {
+        "text": "Salut, aș vrea să stingi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 35,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 314
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 315
+    },
+    {
+        "text": "Salut, stinge lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 27,
+                "entity": "loc",
+                "start": 23,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 316
+    },
+    {
+        "text": "Aș vrea să stingi lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 28,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 317
+    },
+    {
+        "text": "Salut, doresc să stingi lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 318
+    },
+    {
+        "text": "Salut, stinge lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 319
+    },
+    {
+        "text": "Salut, aș vrea să stingi lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 34,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 320
+    },
+    {
+        "text": "Pepper, doresc să stingi lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 34,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 321
+    },
+    {
+        "text": "Stinge te rog lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 24,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 322
+    },
+    {
+        "text": "Stinge te rog lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 23,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 323
+    },
+    {
+        "text": "Stinge te rog lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 23,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 324
+    },
+    {
+        "text": "Pepper, stinge lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 30,
+                "entity": "loc",
+                "start": 25,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 325
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 35,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 326
+    },
+    {
+        "text": "Salut, stinge lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 24,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 327
+    },
+    {
+        "text": "Salut, aș vrea să stingi lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 34,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 328
+    },
+    {
+        "text": "Stinge lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 22,
+                "entity": "loc",
+                "start": 17,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 329
+    },
+    {
+        "text": "Pepper, doresc să stingi lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 330
+    },
+    {
+        "text": "Stinge lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 20,
+                "entity": "loc",
+                "start": 16,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 331
+    },
+    {
+        "text": "Aș vrea să stingi lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 27,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 332
+    },
+    {
+        "text": "Pepper, doresc să stingi lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 333
+    },
+    {
+        "text": "Salut, doresc să stingi lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 33,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 334
+    },
+    {
+        "text": "Pepper, doresc să stingi lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 335
+    },
+    {
+        "text": "Aș vrea să stingi lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 28,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 336
+    },
+    {
+        "text": "Salut, aș vrea să stingi lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 337
+    },
+    {
+        "text": "Aș vrea să stingi te rog lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 338
+    },
+    {
+        "text": "Aș vrea să stingi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 38,
+                "entity": "loc",
+                "start": 28,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 339
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 36,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 340
+    },
+    {
+        "text": "Aș vrea să stingi lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 28,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 341
+    },
+    {
+        "text": "Stinge lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 21,
+                "entity": "loc",
+                "start": 16,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 342
+    },
+    {
+        "text": "Salut, doresc să stingi lampa în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 33,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 343
+    },
+    {
+        "text": "Salut, stinge lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 28,
+                "entity": "loc",
+                "start": 23,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 344
+    },
+    {
+        "text": "Pepper, aș vrea să stingi lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 35,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 345
+    },
+    {
+        "text": "Pepper, doresc să stingi lampa în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 43,
+                "entity": "loc",
+                "start": 34,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 346
+    },
+    {
+        "text": "Stinge te rog lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 23,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 347
+    },
+    {
+        "text": "Stinge te rog lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 24,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 348
+    },
+    {
+        "text": "Salut, aș vrea să stingi lumina în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 35,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 349
+    },
+    {
+        "text": "Stinge lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 26,
+                "entity": "loc",
+                "start": 16,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 350
+    },
+    {
+        "text": "Salut, aș vrea să stingi lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 34,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 351
+    },
+    {
+        "text": "Stinge te rog lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 24,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 352
+    },
+    {
+        "text": "Pepper, doresc să stingi lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 34,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 353
+    },
+    {
+        "text": "Aș vrea să stingi lampa în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 32,
+                "entity": "loc",
+                "start": 27,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 354
+    },
+    {
+        "text": "Pepper, stinge lumina în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 25,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 355
+    },
+    {
+        "text": "Aș vrea să stingi te rog lampa în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 34,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 356
+    },
+    {
+        "text": "Aș vrea să stingi lumina în curte",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 33,
+                "entity": "loc",
+                "start": 28,
+                "value": "curte"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 357
+    },
+    {
+        "text": "Pepper, doresc să stingi lumina în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 35,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 358
+    },
+    {
+        "text": "Salut, aș vrea să stingi lumina în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 35,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 359
+    },
+    {
+        "text": "Stinge lampa în birou",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "stingeLumina"
+            },
+            {
+                "end": 21,
+                "entity": "loc",
+                "start": 16,
+                "value": "birou"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-loc"
+        ],
+        "id": 360
     }
 ]
