@@ -20,7 +20,7 @@ def load_w2v(file_name):
     return w2v
 
 
-def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot_id, load_text=False):
+def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot_id, load_text=False, lowercase=False):
     """ Load input data in w2v index format
         Args:
             file_path: path to input data file
@@ -31,6 +31,7 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
             slot_dict: mapping of slot class id to slot class label (used if loading test data)
             slot_id: last used slot class id
             load_text: True if the original text should be loaded, False otherwise
+            lowercase: True if all words should be preprocessed to lowercase
 
         Returns:
             x_padding: input sentence word ids (with padding if necessary
@@ -56,7 +57,10 @@ def load_vec(file_path, w2v, in_max_len, intent_dict, intent_id, slot_dict, slot
         arr = line.strip().split('\t')
         intent = arr[0]
         slots = arr[1].split(' ')
-        text = arr[2].split(' ')
+        sentence = arr[2]
+        if lowercase:
+            sentence = sentence.lower()
+        text = sentence.split(' ')
 
         if intent not in intent_dict:
             intent_dict[intent] = intent_id
@@ -164,7 +168,7 @@ def get_label(data, test=False):
     return ind_intents, ind_slots
 
 
-def read_datasets(w2v, training_data_path, test_data_path, test=False):
+def read_datasets(w2v, training_data_path, test_data_path, test=False, lowercase=False):
     """ Reads the data from the given input files
         Args:
             w2v: Word2Vec model
@@ -194,10 +198,12 @@ def read_datasets(w2v, training_data_path, test_data_path, test=False):
     # First load the sentences vecs and find max len from train + test
     (input_x_tr, input_y_tr, input_y_s_tr, input_x_text_tr, sentences_length_tr,
      max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(training_data_path, w2v, max_len, intents_dict,
-                                                                     intent_id, slots_dict, slot_id, load_text=False)
+                                                                       intent_id, slots_dict, slot_id, load_text=False,
+                                                                       lowercase=lowercase)
     (input_x_te, input_y_te, input_y_s_te, input_x_text_te, sentences_length_te,
      max_len, intents_dict, intent_id, slots_dict, slot_id) = load_vec(test_data_path, w2v, max_len, intents_dict,
-                                                                     intent_id, slots_dict, slot_id, load_text=test)
+                                                                       intent_id, slots_dict, slot_id, load_text=test,
+                                                                       lowercase=lowercase)
 
     # Add padding to the sentences to make vectorization easier
     (x_tr, y_intents_tr, y_slots_tr, x_text_tr, sentences_length_tr) = addPadding(input_x_tr, input_y_s_tr, input_y_tr,

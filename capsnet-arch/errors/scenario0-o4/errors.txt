@@ -1,0 +1,130 @@
+INTENT ERRORS
+aprindeLumina
+Bună Pepper aprinde becurile în bucătărie 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Pepper aprinde becul în dormitor 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Salut aș vrea să aprinzi becurile în cămară 0 0 0 0 0 0 0 -> stingeLumina
+Bună Pepper pornește lumina în dormitor 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Salut aprinde becul în bucătărie 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Pepper dă-mi lumină în dormitor 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Pepper aprinde lumina în curte 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Pepper aprinde lumina în dormitor 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Salut aprinde becurile în cămară 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Aprinde curentul în baie 0 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+Pepper aș vrea să aprinzi becul în curte 0 0 0 0 0 0 0 -> stingeLumina
+Salut aprinde curentul în curte 0 0 0 0 0 0 0 0 0 0 -> stingeLumina
+
+cresteIntensitateLumina
+Pepper aș vrea să crești intensitatea luminii în baie 0 0 0 0 0 0 -> aprindeLumina
+Salut aș vrea să crești intensitatea iluminatului în dormitor la 2 0 0 0 0 -> scadeIntensitateLumina
+mărește intensitatea luminii în curte 0 0 0 0 0 0 0 0 0 0 -> scadeIntensitateLumina
+aș vrea să crești intensitatea iluminatului în bucătărie la 5 0 0 0 0 0 -> scadeIntensitateLumina
+
+scadeIntensitateLumina
+Salut aș vrea să reduci intensitatea becurilor în curte la 4 0 0 0 0 -> cresteIntensitateLumina
+aș vrea să reduci intensitatea iluminatului în sufragerie 0 0 0 0 0 0 0 -> aprindeLumina
+
+cresteTemperatura
+Hey mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade în tot apartamentul -> seteazaTemperatura
+aș vrea să ridici la douăzeci și cinci de grade în dormitor 0 0 0 -> seteazaTemperatura
+mi-ar plăcea să ridici la optsprezece grade în baie 0 0 0 0 0 0 -> seteazaTemperatura
+
+pornesteTV
+aprinde TV pe HBO 0 0 0 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+
+schimbaCanalTV
+pune pe B1 0 0 0 0 0 0 0 0 0 0 0 0 -> opresteTV
+
+scadeIntensitateMuzica
+Pepper redu intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Pepper aș vrea să reduci intensitatea concertului 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Pepper redu intensitatea simfoniei 0 0 0 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+
+SLOT ERRORS
+crește intensitatea iluminatului în bucătărie la maxim 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+poți să mărești intensitatea luminii în camera de zi la triplu 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'B-nivel', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+
+mărește intensitatea luminii în camera de zi la maxim 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'B-nivel', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Hey ridică cu trei grade în tot apartamentul 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper mi-ar plăcea să ridici cu un grad în bucătărie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Salut mi-ar plăcea să ridici cu trei grade peste tot 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+Pepper fă mai mare temperatura cu cinci grade în toată casa 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+Bună Pepper fă mai mică temperatura cu două grade peste tot 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+Bună Pepper mi-ar plăcea să scazi temperatura pe douăzeci și unu de grade în bucătărie
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+
+Bună Pepper aș vrea să scazi temperatura la nouăsprezece grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+
+Bună Pepper poți scădea cu două grade în dormitor 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+scade pe 25 de grade în sufragerie 0 0 0 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-grade', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Bună Pepper mi-ar plăcea să scazi temperatura la douăzeci de grade în baie 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+
+Pepper mi-ar plăcea să setezi temperatura aproape de șaptesprezece grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+Hey pune temperatura pe 25 de grade în toată casa 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+Hey ai putea pune temperatura aproape de nouăsprezece grade în sufragerie 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O']
+
+setează pe nouăsprezece grade în tot apartamentul 0 0 0 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+oprește piesa 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper treci pe canalul Cinemax 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus schimbă pe programul Cinemax 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+scade volumul la 2 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+scade volumul la 4 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
