@@ -8,6 +8,8 @@
 * [Light intent class - 3 attention heads](#light-intent-class---3-attention-heads)
 * [Temperature intent class - 3 attention heads](#temperature-intent-class---3-attention-heads)
 * [Media intent class - 3 attention heads](#media-intent-class---3-attention-heads)
+* [100 dimension vecs (3 attention heads)](#100-dimension-vectors---3-attention-heads)
+* [100 dimension vecs (1 attention head)](#100-dimension-vectors---1-attention-head)
 
 ## No rerouting
 * Scenario 0
@@ -168,3 +170,43 @@
 * Scenario 3.3
     * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-media-class/results-correct-predictions-33-media-class.html) 
     * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-media-class/results-error-predictions-33-media-class.html)
+
+## 100 dimension vectors - 3 attention heads
+* Scenario 0
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-100/results-correct-predictions-0-vec-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-100/results-error-predictions-0-vec-100.html)
+* Scenario 1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-100/results-correct-predictions-1-vec-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-100/results-error-predictions-1-vec-100.html)
+* Scenario 2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-100/results-correct-predictions-2-vec-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-100/results-error-predictions-2-vec-100.html)
+* Scenario 3.1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-100/results-correct-predictions-31-vec-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-100/results-error-predictions-31-vec-100.html)
+* Scenario 3.2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-100/results-correct-predictions-32-vec-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-100/results-error-predictions-32-vec-100.html)
+* Scenario 3.3
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-100/results-correct-predictions-33-vec-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-100/results-error-predictions-33-vec-100.html)
+
+## 100 dimension vectors - 1 attention head
+* Scenario 0
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-100-1-attention/results-correct-predictions-0-vec-100-1-attention.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-100-1-attention/results-error-predictions-0-vec-100-1-attention.html)
+* Scenario 1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-100-1-attention/results-correct-predictions-1-vec-100-1-attention.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-100-1-attention/results-error-predictions-1-vec-100-1-attention.html)
+* Scenario 2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-100-1-attention/results-correct-predictions-2-vec-100-1-attention.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-100-1-attention/results-error-predictions-2-vec-100-1-attention.html)
+* Scenario 3.1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-100-1-attention/results-correct-predictions-31-vec-100-1-attention.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-100-1-attention/results-error-predictions-31-vec-100-1-attention.html)
+* Scenario 3.2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-100-1-attention/results-correct-predictions-32-vec-100-1-attention.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-100-1-attention/results-error-predictions-32-vec-100-1-attention.html)
+* Scenario 3.3
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-100-1-attention/results-correct-predictions-33-vec-100-1-attention.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-100-1-attention/results-error-predictions-33-vec-100-1-attention.html)
