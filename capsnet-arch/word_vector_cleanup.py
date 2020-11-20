@@ -31,7 +31,7 @@ def readData():
                 if word[0].isupper():
                     wordsSet.add(word.lower())
 
-    word_vector_path = "../../romanian_word_vecs/conll.w2v.ro.100.vec"
+    word_vector_path = "../../romanian_word_vecs/cc.ro.50.vec"
 
     word_vector_lines = {}
     firstLine = True
@@ -49,8 +49,8 @@ def readData():
         else:
             print("Word not in model: " + word)
 
-    with open("../../romanian_word_vecs/cleaned-vectors-diacritice-100.vec", "w", encoding="utf-8") as output:
-        output.write(str(len(final_vectors)) + ' 100\n')
+    with open("../../romanian_word_vecs/cleaned-vectors-diacritice-cc-50.vec", "w", encoding="utf-8") as output:
+        output.write(str(len(final_vectors)) + ' 50\n')
         for line in final_vectors:
             output.write(line)
 
