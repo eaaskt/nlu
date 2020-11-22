@@ -6,7 +6,7 @@ def readData():
     test = '/test.txt'
     train = '/train.txt'
     filePaths = [
-        baseDir + '0' + test, baseDir + '1' + train,
+        baseDir + '0' + test, baseDir + '0' + train,
         baseDir + '1' + test, baseDir + '1' + train,
         baseDir + '2' + test, baseDir + '2' + train,
         baseDir + '3.1' + test, baseDir + '3.1' + train,
@@ -29,7 +29,7 @@ def readData():
             for word in text:
                 wordsSet.add(word)
 
-    word_vector_path = "../../romanian_word_vecs/cc.ro.300.vec"
+    word_vector_path = "../../english_word_vectors/crawl-300d-2M.vec"
 
     word_vector_lines = {}
     firstLine = True
@@ -41,11 +41,13 @@ def readData():
         word_vector_lines[lineSplit[0]] = lineSplit[1]
 
     final_vectors = []
+    i = 0
     for word in wordsSet:
         if word in word_vector_lines.keys():
             final_vectors.append(word + ' ' + word_vector_lines[word])
         else:
-            print("Some bad shit: " + word)
+            print("Some bad shit: " + str(i) + ' ' + word)
+            i += 1
 
     with open("../../romanian_word_vecs/cleaned-vectors.vec", "w", encoding="utf-8") as output:
         output.write(str(len(final_vectors)) + ' 300\n')

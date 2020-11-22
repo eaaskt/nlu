@@ -1,0 +1,811 @@
+INTENT ERRORS
+GetWeather
+When is sunrise for AR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+Where is Belgium located 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+
+PlayMusic
+can you put on Like A Hurricane by Paul Landers 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> AddToPlaylist
+Play All Things Must Pass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+Please tune into Chieko Ochi good music 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> AddToPlaylist
+Put What Color Is Your Sky by Alana Davis on the stereo 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> AddToPlaylist
+
+SearchCreativeWork
+I wish to watch The Fold trailer please search 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchScreeningEvent
+
+SearchScreeningEvent
+i want to see JLA Adventures Trapped In Time 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+I want to see Medal for the General 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+I want to see Fear Chamber 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+I want to see Shattered Image 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+I want to see Outcast 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+Can you check the timings for Super Sweet 16 The Movie 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -> SearchCreativeWork
+
+SLOT ERRORS
+add digging now to my Young at Heart playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-playlist', 'I-playlist', 'O', 'B-playlist_owner', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'B-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I need to add baro ferret to the Urban Hits under my name 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'B-playlist', 'I-playlist', 'O', 'B-playlist_owner', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-entity_name', 'I-entity_name', 'I-playlist', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'B-playlist_owner', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+To the travelling playlist please add this David Gahan song 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-playlist', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-playlist', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please add some Pete Townshend to my playlist Fiesta Hits con Lali 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'B-playlist_owner', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-entity_name', 'I-artist', 'I-entity_name', 'O', 'B-playlist_owner', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add Recalled to Life to This Is Alejandro Fernández 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'I-playlist', 'I-playlist', 'I-playlist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add nuba to my Metal Party playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Put Jean Philippe Goncalves onto my running to rock 170 to 190 bpm 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'I-artist', 'I-artist', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-artist', 'I-artist', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'B-playlist_owner', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add the song de siempre by the cary brothers to my gym playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-music_item', 'I-playlist', 'I-playlist', 'O', 'O', 'B-artist', 'I-artist', 'O', 'B-playlist_owner', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-music_item', 'I-entity_name', 'I-entity_name', 'O', 'I-entity_name', 'B-artist', 'I-artist', 'O', 'B-playlist_owner', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Onto jerry Classical Moments in Movies please add the album 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-playlist', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'O', 'O', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add Beyond the Valley of 1984 in playlist Folk Music At The Gaslight Café 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'I-entity_name', 'I-object_name', 'I-entity_name', 'I-playlist', 'I-playlist', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Put petar onto the Old School Hip Hop playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'O', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'O', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Put Vandemataram Srinivas track onto HipHop Hot 50 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'I-artist', 'B-music_item', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-music_item', 'I-artist', 'B-music_item', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add millie to the rhythm playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'O', 'O', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add give us rest to my 70s Smash Hits playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I'd like for you to add bobby brown to my playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'B-playlist_owner', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add ireland in the junior eurovision song contest 2015 to my Jazzy Dinner playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-timeRange', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add the 40 cal tune to the laundry playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-artist', 'I-artist', 'B-music_item', 'O', 'O', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-entity_name', 'I-artist', 'B-music_item', 'O', 'O', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add A Very Cellular Song to masters of metal playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add kent james to the disney soundtrack 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'I-artist', 'O', 'O', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-artist', 'O', 'O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+For my fantastic workout can you add sara 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'B-playlist_owner', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add the boy george track to the Emo Forever playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-artist', 'I-artist', 'B-music_item', 'O', 'O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-artist', 'I-artist', 'B-music_item', 'O', 'I-spatial_relation', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add Highway Patrolman in my playlist this is al green 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-playlist', 'I-playlist', 'O', 'B-playlist_owner', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add this artist to fairy tales playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-music_item', 'O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-music_item', 'O', 'B-playlist', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add our little corner of the world music from gilmore girls to my The Funny Thing About Football Is playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-playlist', 'I-playlist', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add to beryl party on fridays playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-artist', 'I-artist', 'O', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add jack white to my playlist This Is Shakira 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'I-artist', 'O', 'B-playlist_owner', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I need to add to my Infinite Indie Folk list the works of Rahim Shah 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'I-playlist', 'I-entity_name', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add martin barre to my punk unplugged playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'I-artist', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add this tune to dorthy 80 party playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-music_item', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-music_item', 'O', 'B-playlist_owner', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+A Very Cellular Song needs to be added to my masters of metal playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'O', 'O', 'O', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-playlist', 'I-playlist', 'I-entity_name', 'I-entity_name', 'O', 'I-entity_name', 'O', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add a song to my playlist madden nfl 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-music_item', 'O', 'B-playlist_owner', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-music_item', 'O', 'B-playlist_owner', 'O', 'B-location_name', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Add emilie autumn to my Reggae playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'I-artist', 'O', 'B-playlist_owner', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add Farhad Darya songs in de siempre 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-artist', 'I-artist', 'O', 'O', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-artist', 'O', 'O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+add we have a theme song to my House Afterwork playlist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-entity_name', 'B-music_item', 'O', 'B-playlist_owner', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I would like to book a restaurant in Tanzania that is within walking distance for my mom and I 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-country', 'O', 'O', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-country', 'O', 'O', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'B-poi', 'B-timeRange', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I need a table in Sacaton at a gluten free restaurant 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-city', 'O', 'O', 'B-cuisine', 'I-cuisine', 'B-restaurant_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-city', 'O', 'O', 'B-served_dish', 'B-country', 'B-restaurant_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book sot for me and my grandfather nearby West Reading 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'B-spatial_relation', 'B-poi', 'I-poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'B-spatial_relation', 'B-city', 'I-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book me and my nieces a reservation for a seafood restaurant in Cle Elum NE on ascension day 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'O', 'O', 'B-served_dish', 'B-restaurant_type', 'O', 'B-city', 'I-city', 'B-state', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'O', 'O', 'B-served_dish', 'B-restaurant_type', 'O', 'B-city', 'I-geographic_poi', 'B-state', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book a gastropub that serves turkish food for 4 people 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-restaurant_type', 'O', 'O', 'B-cuisine', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-restaurant_type', 'O', 'O', 'B-served_dish', 'I-cuisine', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book spot for 7 at an indoor restaurant in MP now 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'B-facility', 'B-restaurant_type', 'O', 'B-state', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'B-facility', 'B-restaurant_type', 'O', 'B-state', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a joint close by the naomi hostel for a meal for 8 people 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-spatial_relation', 'I-spatial_relation', 'O', 'B-poi', 'I-poi', 'O', 'O', 'B-timeRange', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-spatial_relation', 'I-spatial_relation', 'O', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to eat a delicatessen in thirteen hours that serves eastern european food 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'B-cuisine', 'I-cuisine', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'B-cuisine', 'B-cuisine', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book Albany Pump Station in Buckholts Washington now for a party of 9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'B-city', 'B-state', 'B-timeRange', 'O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'B-city', 'B-state', 'I-timeRange', 'O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a taverna in Archer City for this spring for nine people 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-city', 'I-city', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-city', 'I-city', 'O', 'O', 'B-timeRange', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+table for Breadline Cafe in Minnesota next friday 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'O', 'B-state', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-object_name', 'I-restaurant_name', 'O', 'B-state', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for The Dome Edinburgh close to Brooklawn 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'B-spatial_relation', 'O', 'B-poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'B-spatial_relation', 'O', 'I-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book spot for 1 at Town of Ramsgate in Merit 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-party_size_number', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-party_size_number', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a restaurant for my father in law and I in Buckner a year from now 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'B-city', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-party_size_description', 'I-party_size_description', 'O', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'B-city', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I need a table for 4 in Saint Helena at Palace Hotel 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'B-country', 'I-country', 'O', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'B-city', 'I-city', 'O', 'B-city', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book seven in neighboring Moorpark 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-party_size_number', 'O', 'B-spatial_relation', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-restaurant_name', 'O', 'B-spatial_relation', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to eat by five pm in NE for a six people 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-state', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-spatial_relation', 'B-timeRange', 'I-timeRange', 'O', 'B-state', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book a table at a Fried chicken restaurant 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-served_dish', 'I-restaurant_type', 'B-restaurant_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book spot for mavis sheila and I in Syria at elevenses 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'B-country', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-party_size_description', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'B-country', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can you book me a table at Windows on the World in Cokeville MI 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'B-city', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_name', 'O', 'I-restaurant_name', 'I-restaurant_name', 'O', 'B-city', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book me a table for 5 this year at Cherwell Boathouse 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-party_size_number', 'B-timeRange', 'I-timeRange', 'O', 'B-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-party_size_number', 'B-timeRange', 'I-timeRange', 'O', 'B-city', 'I-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a restaurant close-by in Inman for five people 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-spatial_relation', 'O', 'B-city', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-restaurant_type', 'O', 'B-city', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for an osteria restaurant for 4 people on november 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'O', 'B-party_size_number', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-served_dish', 'B-restaurant_type', 'O', 'B-party_size_number', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a top-rated restaurant close by in LA for me rebecca and loraine on 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-sort', 'B-restaurant_type', 'B-spatial_relation', 'O', 'O', 'B-state', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-sort', 'B-restaurant_type', 'B-spatial_relation', 'B-facility', 'O', 'B-state', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for 5 people at the top-rated brasserie restaurant 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-sort', 'B-restaurant_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-sort', 'B-restaurant_type', 'I-restaurant_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book a table near pat college 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-spatial_relation', 'B-poi', 'I-poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-spatial_relation', 'B-restaurant_name', 'I-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Like to book a seat in Monaco for the Yankee Doodle Coffee Shop 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-country', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-country', 'O', 'O', 'B-city', 'I-object_name', 'I-city', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a table in a restaurant in Bouvet Island 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-country', 'I-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I would like to book a restaurant for souvlaki cuisine in the state of NE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-cuisine', 'O', 'O', 'O', 'O', 'O', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-served_dish', 'O', 'O', 'O', 'O', 'O', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for 10 people at an oyster bar with a pool within the same area of for 10 Pm 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-restaurant_type', 'I-restaurant_type', 'O', 'O', 'B-facility', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-restaurant_type', 'I-restaurant_type', 'O', 'O', 'B-restaurant_type', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'B-party_size_number', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for velma ana and rebecca for an american pizzeria at 5 Am in MA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'B-cuisine', 'B-restaurant_type', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'B-restaurant_type', 'B-restaurant_type', 'O', 'B-timeRange', 'O', 'O', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a spot for 4 in Oklahoma at South Street Diner 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'B-state', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'B-state', 'O', 'B-served_dish', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for my mommy and I at a restaurant in Central African Republic 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'B-restaurant_type', 'O', 'B-country', 'I-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_description', 'I-party_size_description', 'I-party_size_description', 'I-party_size_description', 'O', 'O', 'B-restaurant_type', 'O', 'B-country', 'I-state', 'I-album', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for five people for a tatar taverna in Sargents 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-cuisine', 'B-restaurant_type', 'O', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a tea house that serves salade far from here at Midnight in Panama for two people 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'I-restaurant_type', 'O', 'O', 'B-served_dish', 'B-spatial_relation', 'O', 'O', 'O', 'B-timeRange', 'O', 'B-country', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'I-restaurant_type', 'O', 'O', 'B-served_dish', 'B-spatial_relation', 'O', 'I-spatial_relation', 'O', 'B-timeRange', 'O', 'B-country', 'O', 'B-timeRange', 'I-party_size_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a food truck for seven people in the Republic of the Congo 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'I-restaurant_type', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-country', 'I-country', 'I-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-restaurant_type', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-country', 'I-timeRange', 'O', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Lets eat near Oakfield 17 seconds from now at Ted Peters Famous Smoked Fish 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-spatial_relation', 'B-city', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-city', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'I-geographic_poi', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book sot for 7 at a restaurant that serves european in Stringtown on Feb the 28th 2034 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'B-restaurant_type', 'O', 'O', 'B-cuisine', 'O', 'B-city', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'B-restaurant_type', 'O', 'O', 'B-served_dish', 'O', 'B-city', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book a restaurant for six at an outdoor cafe in Åland 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-restaurant_type', 'O', 'B-party_size_number', 'O', 'O', 'B-facility', 'O', 'O', 'B-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-restaurant_type', 'O', 'B-party_size_number', 'O', 'O', 'B-facility', 'B-restaurant_type', 'O', 'B-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a table for 12 am at our step mother secondary residence within walking distance for one 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-poi', 'I-poi', 'I-poi', 'I-poi', 'I-poi', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_number', 'I-timeRange', 'O', 'O', 'I-restaurant_name', 'I-restaurant_name', 'I-poi', 'I-poi', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+table for 5 Am at Baker Keyboard Lounge 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-party_size_number', 'O', 'O', 'B-restaurant_name', 'I-restaurant_name', 'I-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please book me a table at a bistro which serves lorna doone 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'O', 'B-served_dish', 'I-served_dish', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'O', 'B-facility', 'I-party_size_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a restaurant for six people in Wagstaff AK 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-party_size_number', 'O', 'O', 'B-city', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'O', 'B-party_size_number', 'O', 'O', 'I-city', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book spot for 9 at Thurmont 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-party_size_number', 'O', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-party_size_number', 'O', 'B-restaurant_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a restaurant in sixteen seconds for 5 people in Gold Point Montana 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-party_size_number', 'O', 'O', 'B-city', 'I-city', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-restaurant_type', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-party_size_number', 'O', 'O', 'B-geographic_poi', 'I-poi', 'I-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+book a party at their campus within the same area for churrascaria 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-poi', 'I-poi', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'B-restaurant_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-restaurant_name', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'B-location_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book me a reservation for a party of 3 at a pub in Northern Mariana Islands 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'B-restaurant_type', 'O', 'B-country', 'I-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'B-restaurant_type', 'O', 'B-state', 'I-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to book a bougatsa restaurant in next year nearby Penn for three people 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-cuisine', 'B-restaurant_type', 'O', 'B-timeRange', 'I-timeRange', 'B-spatial_relation', 'B-city', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-cuisine', 'B-restaurant_type', 'O', 'B-timeRange', 'I-timeRange', 'B-spatial_relation', 'I-poi', 'O', 'B-party_size_number', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Book a reservation for nine people at the best pub nearby Tangier in six months 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-sort', 'B-restaurant_type', 'B-spatial_relation', 'B-city', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-party_size_number', 'O', 'O', 'O', 'B-sort', 'B-restaurant_type', 'B-spatial_relation', 'I-poi', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+humidity in Olvey New Hampshire 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['B-condition_description', 'O', 'B-city', 'B-state', 'I-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-city', 'B-state', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+humidity not far from Colorado City on November the 7th 2024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['B-condition_description', 'B-spatial_relation', 'I-spatial_relation', 'O', 'B-city', 'I-city', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-spatial_relation', 'B-current_location', 'O', 'B-state', 'I-city', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What is the forecast for Wyoming at Stanardsville during the storm 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-state', 'O', 'B-city', 'O', 'O', 'B-condition_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-state', 'O', 'B-country', 'O', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Will it be warmer in North Korea at nineteen 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-condition_temperature', 'O', 'B-country', 'I-country', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-condition_temperature', 'O', 'B-city', 'B-country', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Let me know the weather forecast around ten Pm faraway from here in Park Narodowy Brimstone Hill Fortress 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'B-spatial_relation', 'O', 'B-current_location', 'O', 'B-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-state', 'B-spatial_relation', 'I-timeRange', 'O', 'O', 'B-geographic_poi', 'I-country', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Tell me if it will be snowy 8 hours from now in Mount Airy VI 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-condition_description', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-city', 'I-city', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-state', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-city', 'I-geographic_poi', 'B-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What will the weather be nineteen hours from now neighboring Saint Kitts and Nevis 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'B-spatial_relation', 'B-country', 'I-country', 'I-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-country', 'I-country', 'I-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I need to know the weather for Jan the 3rd in Mexico when I go to Port Vue 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-country', 'O', 'O', 'O', 'O', 'B-city', 'I-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-country', 'O', 'O', 'O', 'O', 'I-movie_name', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+what is the forecast for Prefectural Natural Park in 1 hour and within the same area 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-geographic_poi', 'I-geographic_poi', 'I-restaurant_name', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Will it be hot at 1319 in De Springs Serbia and Montenegro 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-condition_temperature', 'O', 'B-timeRange', 'O', 'B-city', 'I-city', 'B-country', 'I-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-condition_temperature', 'O', 'B-timeRange', 'O', 'B-city', 'I-city', 'B-country', 'O', 'B-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What is the weather going to be like in Virginia on st patrick day 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-state', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-state', 'O', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What the weather forecast for Valley State Park close by february 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'B-spatial_relation', 'I-spatial_relation', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'B-spatial_relation', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+what is the forecast for beginning on nov 17 for Franklinville 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-state', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Will it be warmer in the District Of Columbia on may 25 2033 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-condition_temperature', 'O', 'O', 'B-state', 'I-state', 'I-state', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-condition_temperature', 'O', 'O', 'B-state', 'I-state', 'I-state', 'O', 'B-timeRange', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+what is the forecast for colder temps beginning on Law Day here 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-condition_temperature', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'B-current_location', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-condition_temperature', 'O', 'B-timeRange', 'O', 'B-timeRange', 'I-timeRange', 'B-condition_temperature', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Will it be freezing today in Delaware and Lehigh National Heritage Corridor 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-condition_temperature', 'B-timeRange', 'O', 'B-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-condition_temperature', 'B-timeRange', 'O', 'B-state', 'O', 'B-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+what is the forecast in Admire in TX starting at seventeen 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-city', 'O', 'B-state', 'O', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-spatial_relation', 'O', 'B-state', 'O', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+what is the forecast for Costa Rica 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-city', 'I-geographic_poi', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Need weather for Parc national to see if it will be fog today 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-geographic_poi', 'I-geographic_poi', 'O', 'O', 'O', 'O', 'O', 'O', 'B-condition_description', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-condition_temperature', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-geographic_poi', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Weather in Walden Russia on 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-city', 'B-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-city', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+How the weather at Petit Manan National Wildlife Refuge and nearby right now 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'O', 'B-spatial_relation', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'B-spatial_relation', 'O', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What is the forecast for this afternoon for blizzard conditions in Dieterich Chad 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'O', 'B-condition_description', 'O', 'O', 'B-city', 'B-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'O', 'B-music_item', 'O', 'O', 'B-city', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+will Custer National Forest be chillier at seven Pm 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-geographic_poi', 'I-geographic_poi', 'I-geographic_poi', 'O', 'B-condition_temperature', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-object_name', 'I-geographic_poi', 'I-geographic_poi', 'O', 'B-condition_temperature', 'O', 'B-timeRange', 'I-state', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+what is the forecast for starting at three am in Two Buttes for warm weather 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-city', 'I-city', 'O', 'B-condition_temperature', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'B-geographic_poi', 'I-city', 'O', 'B-cuisine', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What is the rain forecast for one hour from now in South Korea 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-condition_description', 'O', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-country', 'I-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-condition_description', 'O', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'B-country', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What will the weather be in Sanctuary on august 21 2035 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'I-geographic_poi', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-city', 'O', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Where is Belgium located 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-country', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-country', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What will the weather be in Beach 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'I-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-city', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+can you put on Like A Hurricane by Paul Landers 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-album', 'I-album', 'I-album', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-playlist', 'I-entity_name', 'I-track', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play The Happy Blues by Ronnie Wood 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-album', 'I-album', 'I-album', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-track', 'I-track', 'I-track', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play the newest melody on Last Fm by Eddie Vinson 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-sort', 'B-music_item', 'O', 'B-service', 'I-service', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-sort', 'B-music_item', 'O', 'B-service', 'I-track', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to hear a seventies sound track 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-year', 'B-music_item', 'I-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-year', 'B-music_item', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please play something from Slabbert that on the top fifty 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'I-artist', 'O', 'O', 'O', 'B-sort', 'I-sort', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'B-sort', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please play something catchy on Youtube 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-playlist', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-music_item', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play music from the artist sean and sort it through top-50 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'B-sort', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'I-album', 'I-album', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+nineties songs on 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['B-year', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Open itunes and play Ben Burnley Ready To Die 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-service', 'O', 'O', 'B-artist', 'I-artist', 'B-album', 'I-album', 'I-album', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-service', 'O', 'O', 'B-artist', 'I-artist', 'I-artist', 'I-album', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play an album from Mahadevan 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-music_item', 'O', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-music_item', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Start playing something from Iheart 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play Trance Life on 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-album', 'I-album', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play All Things Must Pass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-track', 'I-track', 'I-track', 'I-track', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play some van der pol from the thirties on Groove Shark 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'I-artist', 'I-artist', 'I-artist', 'O', 'O', 'B-year', 'O', 'B-service', 'I-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-object_type', 'I-album', 'B-year', 'O', 'O', 'B-year', 'O', 'B-service', 'I-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+play Jill Sobule album 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-album', 'I-album', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-artist', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play something from 90s Pop Rock Essentials 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-year', 'I-playlist', 'I-artist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play Have You Met Miss Jones by Nicole from Google Music 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-track', 'I-track', 'I-track', 'I-track', 'I-track', 'O', 'B-artist', 'O', 'B-service', 'I-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-track', 'I-track', 'I-track', 'I-track', 'I-entity_name', 'O', 'B-artist', 'O', 'B-service', 'I-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Let play Jamie Robertson Handover on vimeo 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-artist', 'I-artist', 'B-album', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-artist', 'I-artist', 'I-artist', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play This Is Miles Davis on Lastfm 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-album', 'I-track', 'I-album', 'I-artist', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Live In Meyer please 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['B-album', 'I-album', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-track', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play the most popular Puretone 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-sort', 'I-sort', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-sort', 'I-sort', 'B-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play music from E-type 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-year', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to hear Leroi Moore on vimeo play the song Chance Of A Lifetime 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'B-service', 'O', 'O', 'B-music_item', 'B-track', 'I-track', 'I-track', 'I-track', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'B-service', 'O', 'O', 'I-album', 'B-object_part_of_series_type', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please play something on Iheart from artist Ari Gold last album 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-service', 'O', 'O', 'B-artist', 'I-artist', 'B-sort', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-service', 'O', 'O', 'B-artist', 'I-artist', 'B-timeRange', 'B-music_item', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to hear them from the artist Murcof 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-music_item', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play sound track music from the twenties 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-music_item', 'I-music_item', 'O', 'O', 'O', 'B-year', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-music_item', 'B-music_item', 'O', 'O', 'O', 'B-year', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play Dance With The Devil by Mr Lordi 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-track', 'I-track', 'I-track', 'I-track', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-track', 'I-album', 'I-album', 'I-track', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Go to Itunes and play Dr Lecter by David Hodges 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-service', 'O', 'O', 'B-album', 'I-album', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-service', 'O', 'O', 'B-artist', 'I-sort', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play Street Dad from Hiromitsu Agatsuma through Pandora 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-album', 'I-album', 'O', 'B-artist', 'I-artist', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-album', 'I-track', 'O', 'I-album', 'I-track', 'I-album', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please tune into Chieko Ochi good music 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-music_item', 'O', 'B-artist', 'I-artist', 'B-sort', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-music_item', 'O', 'B-artist', 'I-artist', 'I-artist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+play some Gary Lee Conner 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-artist', 'I-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-artist', 'I-artist', 'I-track', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play Another Passenger from Louis Nelson Delisle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-album', 'I-album', 'O', 'B-artist', 'I-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-album', 'I-track', 'O', 'B-artist', 'I-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play the top music from The Railway Children off Last Fm 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-sort', 'O', 'O', 'B-artist', 'I-artist', 'I-artist', 'O', 'B-service', 'I-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-sort', 'O', 'O', 'B-artist', 'I-artist', 'I-album', 'I-playlist', 'B-service', 'I-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Use the last fm service to play A Mis Niños de 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-service', 'I-service', 'O', 'O', 'O', 'B-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-sort', 'B-service', 'O', 'O', 'O', 'B-album', 'I-object_name', 'I-album', 'I-playlist', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to hear anything from the Rock Symphonique genre please 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-genre', 'I-genre', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Put What Color Is Your Sky by Alana Davis on the stereo 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-album', 'I-album', 'I-album', 'I-album', 'I-album', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-entity_name', 'I-entity_name', 'I-entity_name', 'I-track', 'I-object_name', 'O', 'B-artist', 'I-artist', 'O', 'I-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+play some new Les Vandyke on Slacker 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-sort', 'B-artist', 'I-artist', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-sort', 'B-condition_temperature', 'I-artist', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play Progressive Metal 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-genre', 'I-genre', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-playlist', 'I-playlist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to hear soundtrack music on Youtube from Helena Iren Michaelsen 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-music_item', 'O', 'O', 'B-service', 'O', 'B-artist', 'I-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-music_item', 'O', 'O', 'B-service', 'O', 'B-artist', 'I-artist', 'I-album', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play music from Lynn & Wade Llp 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'I-artist', 'I-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-artist', 'I-artist', 'I-artist', 'I-album', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play Music From by Dmitry Malikov 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-album', 'I-album', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-genre', 'I-track', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Play rich sex on Iheart 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-track', 'I-track', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-sort', 'I-track', 'O', 'B-service', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Give two stars out of 6 to 36 Children 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'B-best_rating', 'O', 'B-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'B-best_rating', 'O', 'B-best_rating', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Give Joe and His USA Citizen Papers 5 points 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-artist', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Give the Catedral series four stars 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-object_name', 'B-object_part_of_series_type', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-object_name', 'B-object_part_of_series_type', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Reminiscences of the Anti-Japanese Guerillas chronicle deserves zero points out of 6 for a rating 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'B-object_part_of_series_type', 'O', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'B-best_rating', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-object_name', 'I-object_name', 'I-object_name', 'B-object_part_of_series_type', 'O', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'B-best_rating', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Rate this current novel two out of 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-object_select', 'I-object_select', 'B-object_type', 'B-rating_value', 'O', 'O', 'B-best_rating', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-object_select', 'B-object_type', 'B-rating_value', 'O', 'O', 'B-best_rating', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Give Monthly Index of Medical Specialities a two out of 6 rating 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'B-rating_value', 'O', 'O', 'B-best_rating', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'B-rating_value', 'O', 'O', 'B-best_rating', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+rate this current album 0 stars 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-object_select', 'I-object_select', 'B-object_type', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-object_select', 'B-object_type', 'B-rating_value', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Give A Brief Stop on the Road from Auschwitz 1 out of 6 stars 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'B-rating_value', 'O', 'O', 'B-best_rating', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'I-object_name', 'B-rating_value', 'O', 'O', 'B-best_rating', 'B-rating_unit', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Wish to find the movie the Heart Beat 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-object_type', 'O', 'B-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_type', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Get me the Christmas Album TV show 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'I-object_name', 'I-object_name', 'B-object_type', 'I-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_name', 'I-object_name', 'B-object_type', 'I-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Wish to see the photograph with the name Live Right Here 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-object_type', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_type', 'O', 'I-object_name', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can you please find me the saga Chump Change 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-object_type', 'B-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-object_type', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Get me the Procession of Ants TV show 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'B-object_type', 'I-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'I-object_name', 'I-object_name', 'B-object_type', 'I-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Looking for a game called Phamous 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'O', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'O', 'B-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can you find me the Blue Spring trailer 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please look up Three Essays on the Theory of Sexuality show 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can you find me the National Anthem of the Ancient Britons television show 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'B-object_type', 'I-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can you find me the work Bible translations into Hawaii Pidgin 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'O', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Find me the novel with the name To Lose My 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'O', 'O', 'O', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Looking for a song with the title of Live at the Kings Center 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'O', 'O', 'O', 'O', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please find me the Classified book 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_select', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Look for the show New Mythology Suite 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'B-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please search for the television show di The Blacklist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-object_type', 'I-object_type', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_type', 'I-object_type', 'B-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Looking for the picture with the name of Who Made Stevie Crye 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'O', 'O', 'O', 'O', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please look up the novel Live to Dance 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-object_type', 'B-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_type', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Please look up Blues photograph 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'I-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can you find the creative works associated with Caryl & Marilyn Real Friends 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-object_name', 'O', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I wish to watch The Fold trailer please search 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'B-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+i want to see JLA Adventures Trapped In Time 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-movie_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What are the movie schedules for my favorite theaters 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'I-object_type', 'O', 'O', 'O', 'B-location_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'I-object_type', 'O', 'O', 'B-location_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can I see Ellis Island Revisited in 1 minute 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_name', 'I-movie_name', 'I-movie_name', 'B-timeRange', 'I-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+show me the schedule for The Oblong Box 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'O', 'B-movie_name', 'I-geographic_poi', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+What is the nearest movie house with Window Connection playing at lunch 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-spatial_relation', 'B-object_location_type', 'I-object_location_type', 'O', 'B-movie_name', 'I-movie_name', 'O', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-spatial_relation', 'B-object_location_type', 'I-object_location_type', 'O', 'I-movie_name', 'I-movie_name', 'O', 'O', 'B-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to see Medal for the General 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can I get the times for movies in the neighbourhood 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-object_type', 'O', 'B-movie_type', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-object_type', 'O', 'B-movie_type', 'B-spatial_relation', 'I-spatial_relation', 'I-spatial_relation', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+where the nearest movie house showing foreign films 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-spatial_relation', 'B-object_location_type', 'I-object_location_type', 'O', 'O', 'B-movie_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-spatial_relation', 'B-object_location_type', 'I-object_location_type', 'O', 'B-movie_type', 'B-movie_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I need a list of Speakeasy Theaters movie times 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-location_name', 'I-location_name', 'B-object_type', 'I-object_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-location_name', 'I-location_name', 'B-object_type', 'I-object_location_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to see Fear Chamber 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-movie_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I want to see Shattered Image 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-movie_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-object_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Will I Think I Do be playing at 7 PM 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'O', 'O', 'B-timeRange', 'I-timeRange', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Show me the schedule for ArcLight Hollywood for only animated movies 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-object_type', 'O', 'B-location_name', 'I-location_name', 'O', 'O', 'B-movie_type', 'I-movie_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-object_type', 'O', 'B-location_name', 'I-location_name', 'O', 'O', 'B-object_location_type', 'I-movie_type', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+I need times for A Yiddish World Remembered at Theatres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-object_type', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'I-location_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-object_type', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'I-location_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Can you check the timings for Super Sweet 16 The Movie 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'I-object_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Show the times for Cheers for Miss Bishop at Theatres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-object_type', 'O', 'B-movie_name', 'I-movie_name', 'I-movie_name', 'I-movie_name', 'O', 'I-location_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'I-object_type', 'O', 'O', 'I-movie_name', 'I-restaurant_name', 'I-movie_name', 'O', 'I-location_name', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
