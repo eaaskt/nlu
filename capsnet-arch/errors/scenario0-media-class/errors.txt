@@ -1,0 +1,30 @@
+INTENT ERRORS
+cresteIntensitateMuzica
+Pepper crește intensitatea concertului 0 0 0 0 0 0 0 -> scadeIntensitateMuzica
+Pepper fă mai tare simfonia 0 0 0 0 0 0 -> scadeIntensitateMuzica
+
+SLOT ERRORS
+pune pe B1 0 0 0 0 0 0 0 0
+['O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog vrei să schimbi pe canalul Cinemax 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Salut te rog poți schimba pe canalul Cinemax 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'B-canal', 'O', 'O', 'O']
+
+scade volumul la 2 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+scade volumul la 4 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper ai putea oare scădea intensitatea cântecului 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O']
+

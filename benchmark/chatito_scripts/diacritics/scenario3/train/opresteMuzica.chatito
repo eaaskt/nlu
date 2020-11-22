@@ -1,13 +1,22 @@
-%[opresteMuzica]('training': '23', 'testing': '1')
+%[opresteMuzica]('training': '90', 'testing': '1')
     ~[greet?] ~[te rog?] ~[opreste] ~[muzica]
+    ~[greet?] ~[vreau sa opresti] ~[acum?] ~[muzica]
 
 ~[greet]
     Pepper,
     Salut,
+    Bună,
+
 ~[opreste]
     oprește
     închide
     poți închide
     poți să oprești
+
+~[vreau sa opresti]
+    vreau să oprești
+    doresc să oprești
+
 ~[muzica]
     muzica
+    cântecul

@@ -1,0 +1,26 @@
+INTENT ERRORS
+SLOT ERRORS
+Pepper aș vrea să ridici temperatura la douăzeci și șase de grade în dormitor 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O']
+
+Hey mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade în tot apartamentul
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'B-loc']
+
+Pepper mi-ar plăcea să ridici cu un grad în bucătărie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Bună Pepper mi-ar plăcea să scazi temperatura pe douăzeci și unu de grade în bucătărie
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc']
+
+Pepper mi-ar plăcea să setezi temperatura aproape de șaptesprezece grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+Hey aș vrea să pui aproape de optsprezece grade în tot apartamentul 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O']
+

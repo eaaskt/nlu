@@ -1,0 +1,47 @@
+INTENT ERRORS
+scadeIntensitateLumina
+pepper diminuează intensitatea luminii în camera de zi 0 0 0 0 0 0 0 -> cresteIntensitateLumina
+
+cresteTemperatura
+mi-ar plăcea să ridici la optsprezece grade în baie 0 0 0 0 0 0 -> scadeTemperatura
+
+cresteIntensitateMuzica
+pepper fă mai tare simfonia 0 0 0 0 0 0 0 0 0 0 -> scadeIntensitateMuzica
+
+SLOT ERRORS
+hey mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade în tot apartamentul
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc', 'I-loc']
+
+pepper mi-ar plăcea să ridici cu un grad în bucătărie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+hey fă mai mare cu un grad în tot apartamentul 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+pepper aș vrea să scazi cu 5 grade peste tot 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+bună pepper mi-ar plăcea să scazi temperatura pe douăzeci și unu de grade în bucătărie
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+
+pepper aș vrea să scazi pe 18 grade peste tot 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+bună pepper fă mai mică cu 3 grade peste tot 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+pepper crește intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+crește volumul la triplu 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+

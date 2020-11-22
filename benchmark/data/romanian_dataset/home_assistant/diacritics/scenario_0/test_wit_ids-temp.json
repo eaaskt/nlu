@@ -1,0 +1,4135 @@
+[
+    {
+        "text": "Pepper, ridică temperatura la 23 de grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 41,
+                "entity": "grade",
+                "start": 30,
+                "value": "23 de grade"
+            },
+            {
+                "end": 55,
+                "entity": "loc",
+                "start": 45,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 1
+    },
+    {
+        "text": "Hey, ridică cu trei grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 25,
+                "entity": "grade",
+                "start": 15,
+                "value": "trei grade"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 29,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 2
+    },
+    {
+        "text": "poți mări temperatura pe 18 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 33,
+                "entity": "grade",
+                "start": 25,
+                "value": "18 grade"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 37,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 3
+    },
+    {
+        "text": "Pepper, aș vrea să ridici temperatura la douăzeci și șase de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 66,
+                "entity": "grade",
+                "start": 41,
+                "value": "douăzeci și șase de grade"
+            },
+            {
+                "end": 78,
+                "entity": "loc",
+                "start": 70,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 4
+    },
+    {
+        "text": "Hey, mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 69,
+                "entity": "grade",
+                "start": 43,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 89,
+                "entity": "loc",
+                "start": 73,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 5
+    },
+    {
+        "text": "poți mări la 19 grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 21,
+                "entity": "grade",
+                "start": 13,
+                "value": "19 grade"
+            },
+            {
+                "end": 29,
+                "entity": "loc",
+                "start": 25,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 6
+    },
+    {
+        "text": "poți mări temperatura la 20 de grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 36,
+                "entity": "grade",
+                "start": 25,
+                "value": "20 de grade"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 40,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 7
+    },
+    {
+        "text": "Salut, mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 71,
+                "entity": "grade",
+                "start": 45,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 81,
+                "entity": "loc",
+                "start": 72,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 8
+    },
+    {
+        "text": "Hey, crește temperatura pe douăzeci și șapte de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 53,
+                "entity": "grade",
+                "start": 27,
+                "value": "douăzeci și șapte de grade"
+            },
+            {
+                "end": 63,
+                "entity": "loc",
+                "start": 54,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 9
+    },
+    {
+        "text": "Salut, fă mai mare pe 22 de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 33,
+                "entity": "grade",
+                "start": 22,
+                "value": "22 de grade"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 37,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 10
+    },
+    {
+        "text": "Salut, poți mări la 24 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 31,
+                "entity": "grade",
+                "start": 20,
+                "value": "24 de grade"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 35,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 11
+    },
+    {
+        "text": "aș vrea să ridici pe 20 de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 32,
+                "entity": "grade",
+                "start": 21,
+                "value": "20 de grade"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 36,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 12
+    },
+    {
+        "text": "Salut, poți mări temperatura la 24 de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 43,
+                "entity": "grade",
+                "start": 32,
+                "value": "24 de grade"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 44,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 13
+    },
+    {
+        "text": "Pepper, fă mai mare la 23 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 34,
+                "entity": "grade",
+                "start": 23,
+                "value": "23 de grade"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 38,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 14
+    },
+    {
+        "text": "Pepper, ai putea ridica la 25 de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 38,
+                "entity": "grade",
+                "start": 27,
+                "value": "25 de grade"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 42,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 15
+    },
+    {
+        "text": "Pepper, poți ridica temperatura pe 24 de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 46,
+                "entity": "grade",
+                "start": 35,
+                "value": "24 de grade"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 50,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 16
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să ridici cu un grad în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 41,
+                "entity": "grade",
+                "start": 34,
+                "value": "un grad"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 45,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 17
+    },
+    {
+        "text": "Hey, ai putea ridica pe 18 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 32,
+                "entity": "grade",
+                "start": 24,
+                "value": "18 grade"
+            },
+            {
+                "end": 44,
+                "entity": "loc",
+                "start": 36,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 18
+    },
+    {
+        "text": "Salut, aș vrea să ridici pe 22 de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 39,
+                "entity": "grade",
+                "start": 28,
+                "value": "22 de grade"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 40,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 19
+    },
+    {
+        "text": "Hey, crește temperatura la douăzeci de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 27,
+                "value": "douăzeci de grade"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 48,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 20
+    },
+    {
+        "text": "Hey, fă mai mare cu un grad în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 27,
+                "entity": "grade",
+                "start": 20,
+                "value": "un grad"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 31,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 21
+    },
+    {
+        "text": "Pepper, crește temperatura la nouăsprezece grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 48,
+                "entity": "grade",
+                "start": 30,
+                "value": "nouăsprezece grade"
+            },
+            {
+                "end": 60,
+                "entity": "loc",
+                "start": 52,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 22
+    },
+    {
+        "text": "Salut, poți mări pe douăzeci și cinci de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 46,
+                "entity": "grade",
+                "start": 20,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 50,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 23
+    },
+    {
+        "text": "Salut, mi-ar plăcea să ridici cu trei grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 43,
+                "entity": "grade",
+                "start": 33,
+                "value": "trei grade"
+            },
+            {
+                "end": 53,
+                "entity": "loc",
+                "start": 44,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 24
+    },
+    {
+        "text": "Salut, poți mări temperatura la douăzeci și unu de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 56,
+                "entity": "grade",
+                "start": 32,
+                "value": "douăzeci și unu de grade"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 60,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 25
+    },
+    {
+        "text": "Hey, ai putea ridica temperatura la 17 grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 36,
+                "value": "17 grade"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 48,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 26
+    },
+    {
+        "text": "Hey, ai putea ridica temperatura pe douăzeci și trei de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 61,
+                "entity": "grade",
+                "start": 36,
+                "value": "douăzeci și trei de grade"
+            },
+            {
+                "end": 73,
+                "entity": "loc",
+                "start": 65,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 27
+    },
+    {
+        "text": "fă mai mare pe 19 grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 23,
+                "entity": "grade",
+                "start": 15,
+                "value": "19 grade"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 27,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 28
+    },
+    {
+        "text": "aș vrea să ridici la douăzeci și cinci de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 47,
+                "entity": "grade",
+                "start": 21,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 51,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 29
+    },
+    {
+        "text": "Salut, crește temperatura la 19 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 37,
+                "entity": "grade",
+                "start": 29,
+                "value": "19 grade"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 41,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 30
+    },
+    {
+        "text": "Hey, ridică pe douăzeci și două de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 40,
+                "entity": "grade",
+                "start": 15,
+                "value": "douăzeci și două de grade"
+            },
+            {
+                "end": 52,
+                "entity": "loc",
+                "start": 44,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 31
+    },
+    {
+        "text": "mărește cu trei grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 21,
+                "entity": "grade",
+                "start": 11,
+                "value": "trei grade"
+            },
+            {
+                "end": 41,
+                "entity": "loc",
+                "start": 25,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 32
+    },
+    {
+        "text": "Hey, mi-ar plăcea să ridici cu 2 grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 38,
+                "entity": "grade",
+                "start": 31,
+                "value": "2 grade"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 42,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 33
+    },
+    {
+        "text": "mi-ar plăcea să ridici la optsprezece grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 43,
+                "entity": "grade",
+                "start": 26,
+                "value": "optsprezece grade"
+            },
+            {
+                "end": 51,
+                "entity": "loc",
+                "start": 47,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 34
+    },
+    {
+        "text": "crește la douăzeci și două de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 35,
+                "entity": "grade",
+                "start": 10,
+                "value": "douăzeci și două de grade"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 39,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 35
+    },
+    {
+        "text": "Hey, crește pe 22 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 26,
+                "entity": "grade",
+                "start": 15,
+                "value": "22 de grade"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 30,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 36
+    },
+    {
+        "text": "Pepper, poți ridica temperatura la douăzeci de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 52,
+                "entity": "grade",
+                "start": 35,
+                "value": "douăzeci de grade"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 56,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 37
+    },
+    {
+        "text": "Pepper, fă mai mare temperatura cu cinci grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 46,
+                "entity": "grade",
+                "start": 35,
+                "value": "cinci grade"
+            },
+            {
+                "end": 60,
+                "entity": "loc",
+                "start": 50,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 38
+    },
+    {
+        "text": "Hey, fă mai mare la 19 grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 28,
+                "entity": "grade",
+                "start": 20,
+                "value": "19 grade"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 32,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 39
+    },
+    {
+        "text": "Salut, poți mări temperatura la douăzeci și trei de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "cresteTemperatura"
+            },
+            {
+                "end": 57,
+                "entity": "grade",
+                "start": 32,
+                "value": "douăzeci și trei de grade"
+            },
+            {
+                "end": 70,
+                "entity": "loc",
+                "start": 61,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 40
+    },
+    {
+        "text": "Bună Pepper, fă mai mică temperatura cu două grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 50,
+                "entity": "grade",
+                "start": 40,
+                "value": "două grade"
+            },
+            {
+                "end": 60,
+                "entity": "loc",
+                "start": 51,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 41
+    },
+    {
+        "text": "Salut, scade cu două grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 26,
+                "entity": "grade",
+                "start": 16,
+                "value": "două grade"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 30,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 42
+    },
+    {
+        "text": "Pepper, ai putea scădea temperatura pe optsprezece grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 56,
+                "entity": "grade",
+                "start": 39,
+                "value": "optsprezece grade"
+            },
+            {
+                "end": 70,
+                "entity": "loc",
+                "start": 60,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 43
+    },
+    {
+        "text": "Bună Pepper, redu temperatura la 24 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 33,
+                "value": "24 de grade"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 48,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 44
+    },
+    {
+        "text": "Bună Pepper, fă mai mică temperatura cu trei grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 50,
+                "entity": "grade",
+                "start": 40,
+                "value": "trei grade"
+            },
+            {
+                "end": 62,
+                "entity": "loc",
+                "start": 54,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 45
+    },
+    {
+        "text": "Pepper, redu temperatura pe douăzeci și unu de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 52,
+                "entity": "grade",
+                "start": 28,
+                "value": "douăzeci și unu de grade"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 56,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 46
+    },
+    {
+        "text": "Bună Pepper, mi-ar plăcea să scazi pe douăzeci și cinci de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 64,
+                "entity": "grade",
+                "start": 38,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 72,
+                "entity": "loc",
+                "start": 68,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 47
+    },
+    {
+        "text": "redu temperatura la 19 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 28,
+                "entity": "grade",
+                "start": 20,
+                "value": "19 grade"
+            },
+            {
+                "end": 40,
+                "entity": "loc",
+                "start": 32,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 48
+    },
+    {
+        "text": "Pepper, aș vrea să scazi cu 5 grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 35,
+                "entity": "grade",
+                "start": 28,
+                "value": "5 grade"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 49
+    },
+    {
+        "text": "Pepper, ai putea scădea temperatura pe douăzeci și cinci de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 65,
+                "entity": "grade",
+                "start": 39,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 78,
+                "entity": "loc",
+                "start": 69,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 50
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să scazi pe 22 de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 33,
+                "value": "22 de grade"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 48,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 51
+    },
+    {
+        "text": "Salut, aș vrea să scazi cu 4 grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 34,
+                "entity": "grade",
+                "start": 27,
+                "value": "4 grade"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 38,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 52
+    },
+    {
+        "text": "ai putea scădea temperatura pe 17 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 39,
+                "entity": "grade",
+                "start": 31,
+                "value": "17 grade"
+            },
+            {
+                "end": 51,
+                "entity": "loc",
+                "start": 43,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 53
+    },
+    {
+        "text": "Pepper, du în jos cu 5 grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 28,
+                "entity": "grade",
+                "start": 21,
+                "value": "5 grade"
+            },
+            {
+                "end": 36,
+                "entity": "loc",
+                "start": 32,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 54
+    },
+    {
+        "text": "Bună Pepper, mi-ar plăcea să scazi temperatura pe douăzeci și unu de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 74,
+                "entity": "grade",
+                "start": 50,
+                "value": "douăzeci și unu de grade"
+            },
+            {
+                "end": 87,
+                "entity": "loc",
+                "start": 78,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 55
+    },
+    {
+        "text": "Salut, poți scădea temperatura la șaptesprezece grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 53,
+                "entity": "grade",
+                "start": 34,
+                "value": "șaptesprezece grade"
+            },
+            {
+                "end": 63,
+                "entity": "loc",
+                "start": 54,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 56
+    },
+    {
+        "text": "Salut, redu temperatura la douăzeci și șapte de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 53,
+                "entity": "grade",
+                "start": 27,
+                "value": "douăzeci și șapte de grade"
+            },
+            {
+                "end": 61,
+                "entity": "loc",
+                "start": 57,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 57
+    },
+    {
+        "text": "Pepper, du în jos temperatura la douăzeci și unu de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 57,
+                "entity": "grade",
+                "start": 33,
+                "value": "douăzeci și unu de grade"
+            },
+            {
+                "end": 67,
+                "entity": "loc",
+                "start": 58,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 58
+    },
+    {
+        "text": "du în jos temperatura la douăzeci și trei de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 50,
+                "entity": "grade",
+                "start": 25,
+                "value": "douăzeci și trei de grade"
+            },
+            {
+                "end": 70,
+                "entity": "loc",
+                "start": 54,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 59
+    },
+    {
+        "text": "Bună Pepper, aș vrea să scazi temperatura la nouăsprezece grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 63,
+                "entity": "grade",
+                "start": 45,
+                "value": "nouăsprezece grade"
+            },
+            {
+                "end": 83,
+                "entity": "loc",
+                "start": 67,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 60
+    },
+    {
+        "text": "Pepper, aș vrea să scazi pe 18 grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 36,
+                "entity": "grade",
+                "start": 28,
+                "value": "18 grade"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 37,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 61
+    },
+    {
+        "text": "fă mai mică pe 17 grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 23,
+                "entity": "grade",
+                "start": 15,
+                "value": "17 grade"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 27,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 62
+    },
+    {
+        "text": "Pepper, du în jos temperatura pe 26 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 33,
+                "value": "26 de grade"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 48,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 63
+    },
+    {
+        "text": "Salut, mi-ar plăcea să scazi temperatura la optsprezece grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 61,
+                "entity": "grade",
+                "start": 44,
+                "value": "optsprezece grade"
+            },
+            {
+                "end": 75,
+                "entity": "loc",
+                "start": 65,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 64
+    },
+    {
+        "text": "Salut, scade la 27 de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 27,
+                "entity": "grade",
+                "start": 16,
+                "value": "27 de grade"
+            },
+            {
+                "end": 37,
+                "entity": "loc",
+                "start": 28,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 65
+    },
+    {
+        "text": "Bună Pepper, fă mai mică cu 3 grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 35,
+                "entity": "grade",
+                "start": 28,
+                "value": "3 grade"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 66
+    },
+    {
+        "text": "Pepper, redu cu patru grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 27,
+                "entity": "grade",
+                "start": 16,
+                "value": "patru grade"
+            },
+            {
+                "end": 35,
+                "entity": "loc",
+                "start": 31,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 67
+    },
+    {
+        "text": "Bună Pepper, poți scădea cu două grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 38,
+                "entity": "grade",
+                "start": 28,
+                "value": "două grade"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 42,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 68
+    },
+    {
+        "text": "scade pe 25 de grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 20,
+                "entity": "grade",
+                "start": 9,
+                "value": "25 de grade"
+            },
+            {
+                "end": 34,
+                "entity": "loc",
+                "start": 24,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 69
+    },
+    {
+        "text": "Salut, poți scădea pe douăzeci și șapte de grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 48,
+                "entity": "grade",
+                "start": 22,
+                "value": "douăzeci și șapte de grade"
+            },
+            {
+                "end": 62,
+                "entity": "loc",
+                "start": 52,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 70
+    },
+    {
+        "text": "Pepper, redu temperatura la douăzeci și două de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 53,
+                "entity": "grade",
+                "start": 28,
+                "value": "douăzeci și două de grade"
+            },
+            {
+                "end": 65,
+                "entity": "loc",
+                "start": 57,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 71
+    },
+    {
+        "text": "Bună Pepper, ai putea scădea la 27 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 43,
+                "entity": "grade",
+                "start": 32,
+                "value": "27 de grade"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 47,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 72
+    },
+    {
+        "text": "Bună Pepper, mi-ar plăcea să scazi temperatura la douăzeci de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 67,
+                "entity": "grade",
+                "start": 50,
+                "value": "douăzeci de grade"
+            },
+            {
+                "end": 75,
+                "entity": "loc",
+                "start": 71,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 73
+    },
+    {
+        "text": "Bună Pepper, micșorează temperatura pe 17 grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 47,
+                "entity": "grade",
+                "start": 39,
+                "value": "17 grade"
+            },
+            {
+                "end": 61,
+                "entity": "loc",
+                "start": 51,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 74
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să scazi temperatura pe 25 de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 56,
+                "entity": "grade",
+                "start": 45,
+                "value": "25 de grade"
+            },
+            {
+                "end": 76,
+                "entity": "loc",
+                "start": 60,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 75
+    },
+    {
+        "text": "Pepper, ai putea scădea temperatura la douăzeci de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 56,
+                "entity": "grade",
+                "start": 39,
+                "value": "douăzeci de grade"
+            },
+            {
+                "end": 76,
+                "entity": "loc",
+                "start": 60,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 76
+    },
+    {
+        "text": "Pepper, ai putea scădea la optsprezece grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 27,
+                "value": "optsprezece grade"
+            },
+            {
+                "end": 57,
+                "entity": "loc",
+                "start": 48,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 77
+    },
+    {
+        "text": "Pepper, fă mai mică temperatura pe douăzeci și cinci de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 61,
+                "entity": "grade",
+                "start": 35,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 81,
+                "entity": "loc",
+                "start": 65,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 78
+    },
+    {
+        "text": "Bună Pepper, du în jos la douăzeci și cinci de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 52,
+                "entity": "grade",
+                "start": 26,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 65,
+                "entity": "loc",
+                "start": 56,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 79
+    },
+    {
+        "text": "Salut, micșorează la 19 grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "scadeTemperatura"
+            },
+            {
+                "end": 29,
+                "entity": "grade",
+                "start": 21,
+                "value": "19 grade"
+            },
+            {
+                "end": 39,
+                "entity": "loc",
+                "start": 30,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 80
+    },
+    {
+        "text": "mi-ar plăcea să pui temperatura aproximativ la 23 de grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 58,
+                "entity": "grade",
+                "start": 47,
+                "value": "23 de grade"
+            },
+            {
+                "end": 72,
+                "entity": "loc",
+                "start": 62,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 81
+    },
+    {
+        "text": "Salut, poți pune temperatura cam la douăzeci și patru de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 62,
+                "entity": "grade",
+                "start": 36,
+                "value": "douăzeci și patru de grade"
+            },
+            {
+                "end": 74,
+                "entity": "loc",
+                "start": 66,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 82
+    },
+    {
+        "text": "aș vrea să setezi pe 24 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 32,
+                "entity": "grade",
+                "start": 21,
+                "value": "24 de grade"
+            },
+            {
+                "end": 45,
+                "entity": "loc",
+                "start": 36,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 83
+    },
+    {
+        "text": "ai putea seta temperatura aproximativ pe șaptesprezece grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 60,
+                "entity": "grade",
+                "start": 41,
+                "value": "șaptesprezece grade"
+            },
+            {
+                "end": 70,
+                "entity": "loc",
+                "start": 61,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 84
+    },
+    {
+        "text": "Pepper, pune temperatura aproximativ la douăzeci de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 57,
+                "entity": "grade",
+                "start": 40,
+                "value": "douăzeci de grade"
+            },
+            {
+                "end": 71,
+                "entity": "loc",
+                "start": 61,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 85
+    },
+    {
+        "text": "mi-ar plăcea să pui pe douăzeci și patru de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 49,
+                "entity": "grade",
+                "start": 23,
+                "value": "douăzeci și patru de grade"
+            },
+            {
+                "end": 69,
+                "entity": "loc",
+                "start": 53,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 86
+    },
+    {
+        "text": "Hey, schimbă temperatura aproximativ la 17 grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 48,
+                "entity": "grade",
+                "start": 40,
+                "value": "17 grade"
+            },
+            {
+                "end": 60,
+                "entity": "loc",
+                "start": 52,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 87
+    },
+    {
+        "text": "Pepper, poți pune aproximativ la douăzeci și trei de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 58,
+                "entity": "grade",
+                "start": 33,
+                "value": "douăzeci și trei de grade"
+            },
+            {
+                "end": 66,
+                "entity": "loc",
+                "start": 62,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 88
+    },
+    {
+        "text": "Pepper, modifică temperatura aproape de șaptesprezece grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 59,
+                "entity": "grade",
+                "start": 40,
+                "value": "șaptesprezece grade"
+            },
+            {
+                "end": 73,
+                "entity": "loc",
+                "start": 63,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 89
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să setezi temperatura aproape de șaptesprezece grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 73,
+                "entity": "grade",
+                "start": 54,
+                "value": "șaptesprezece grade"
+            },
+            {
+                "end": 83,
+                "entity": "loc",
+                "start": 74,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 90
+    },
+    {
+        "text": "ai putea seta aproximativ pe 26 de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 40,
+                "entity": "grade",
+                "start": 29,
+                "value": "26 de grade"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 44,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 91
+    },
+    {
+        "text": "Salut, ajustează aproximativ pe 18 grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 40,
+                "entity": "grade",
+                "start": 32,
+                "value": "18 grade"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 44,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 92
+    },
+    {
+        "text": "Salut, schimbă aproximativ la 19 grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 38,
+                "entity": "grade",
+                "start": 30,
+                "value": "19 grade"
+            },
+            {
+                "end": 46,
+                "entity": "loc",
+                "start": 42,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 93
+    },
+    {
+        "text": "Pepper, schimbă aproximativ pe 23 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 42,
+                "entity": "grade",
+                "start": 31,
+                "value": "23 de grade"
+            },
+            {
+                "end": 55,
+                "entity": "loc",
+                "start": 46,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 94
+    },
+    {
+        "text": "Salut, pune aproape de douăzeci și cinci de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 49,
+                "entity": "grade",
+                "start": 23,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 62,
+                "entity": "loc",
+                "start": 53,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 95
+    },
+    {
+        "text": "Hey, pune temperatura pe 25 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 36,
+                "entity": "grade",
+                "start": 25,
+                "value": "25 de grade"
+            },
+            {
+                "end": 50,
+                "entity": "loc",
+                "start": 40,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 96
+    },
+    {
+        "text": "Salut, setează temperatura aproximativ pe nouăsprezece grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 60,
+                "entity": "grade",
+                "start": 42,
+                "value": "nouăsprezece grade"
+            },
+            {
+                "end": 74,
+                "entity": "loc",
+                "start": 64,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 97
+    },
+    {
+        "text": "ajustează temperatura pe douăzeci și patru de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 51,
+                "entity": "grade",
+                "start": 25,
+                "value": "douăzeci și patru de grade"
+            },
+            {
+                "end": 61,
+                "entity": "loc",
+                "start": 52,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 98
+    },
+    {
+        "text": "aș vrea să pui temperatura aproximativ pe douăzeci și cinci de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 68,
+                "entity": "grade",
+                "start": 42,
+                "value": "douăzeci și cinci de grade"
+            },
+            {
+                "end": 78,
+                "entity": "loc",
+                "start": 69,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 99
+    },
+    {
+        "text": "Pepper, poți pune temperatura la 26 de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 33,
+                "value": "26 de grade"
+            },
+            {
+                "end": 54,
+                "entity": "loc",
+                "start": 45,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 100
+    },
+    {
+        "text": "Pepper, modifică aproximativ la 17 grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 40,
+                "entity": "grade",
+                "start": 32,
+                "value": "17 grade"
+            },
+            {
+                "end": 60,
+                "entity": "loc",
+                "start": 44,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 101
+    },
+    {
+        "text": "Pepper, mi-ar plăcea să setezi temperatura aproximativ la 19 grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 66,
+                "entity": "grade",
+                "start": 58,
+                "value": "19 grade"
+            },
+            {
+                "end": 76,
+                "entity": "loc",
+                "start": 67,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 102
+    },
+    {
+        "text": "Salut, ai putea seta la 25 de grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 35,
+                "entity": "grade",
+                "start": 24,
+                "value": "25 de grade"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 39,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 103
+    },
+    {
+        "text": "Hey, aș vrea să pui aproape de optsprezece grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 48,
+                "entity": "grade",
+                "start": 31,
+                "value": "optsprezece grade"
+            },
+            {
+                "end": 68,
+                "entity": "loc",
+                "start": 52,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 104
+    },
+    {
+        "text": "Pepper, schimbă temperatura aproximativ la nouăsprezece grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 61,
+                "entity": "grade",
+                "start": 43,
+                "value": "nouăsprezece grade"
+            },
+            {
+                "end": 81,
+                "entity": "loc",
+                "start": 65,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 105
+    },
+    {
+        "text": "Hey, modifică temperatura aproape de nouăsprezece grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 55,
+                "entity": "grade",
+                "start": 37,
+                "value": "nouăsprezece grade"
+            },
+            {
+                "end": 69,
+                "entity": "loc",
+                "start": 59,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 106
+    },
+    {
+        "text": "Salut, mi-ar plăcea să pui la douăzeci și unu de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 54,
+                "entity": "grade",
+                "start": 30,
+                "value": "douăzeci și unu de grade"
+            },
+            {
+                "end": 64,
+                "entity": "loc",
+                "start": 55,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 107
+    },
+    {
+        "text": "Pepper, modifică temperatura aproximativ la 25 de grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 55,
+                "entity": "grade",
+                "start": 44,
+                "value": "25 de grade"
+            },
+            {
+                "end": 65,
+                "entity": "loc",
+                "start": 56,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 108
+    },
+    {
+        "text": "Pepper, aș vrea să pui cam la 27 de grade în toată casa",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 41,
+                "entity": "grade",
+                "start": 30,
+                "value": "27 de grade"
+            },
+            {
+                "end": 55,
+                "entity": "loc",
+                "start": 45,
+                "value": "toată casa"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 109
+    },
+    {
+        "text": "aș vrea să pui cam la douăzeci și trei de grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 47,
+                "entity": "grade",
+                "start": 22,
+                "value": "douăzeci și trei de grade"
+            },
+            {
+                "end": 67,
+                "entity": "loc",
+                "start": 51,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 110
+    },
+    {
+        "text": "Hey, ai putea pune temperatura aproape de nouăsprezece grade în sufragerie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 60,
+                "entity": "grade",
+                "start": 42,
+                "value": "nouăsprezece grade"
+            },
+            {
+                "end": 74,
+                "entity": "loc",
+                "start": 64,
+                "value": "sufragerie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 111
+    },
+    {
+        "text": "ai putea seta temperatura pe 18 grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 37,
+                "entity": "grade",
+                "start": 29,
+                "value": "18 grade"
+            },
+            {
+                "end": 47,
+                "entity": "loc",
+                "start": 38,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 112
+    },
+    {
+        "text": "Salut, poți pune temperatura pe douăzeci și trei de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 57,
+                "entity": "grade",
+                "start": 32,
+                "value": "douăzeci și trei de grade"
+            },
+            {
+                "end": 69,
+                "entity": "loc",
+                "start": 61,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 113
+    },
+    {
+        "text": "Salut, ai putea seta aproximativ la 27 de grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 47,
+                "entity": "grade",
+                "start": 36,
+                "value": "27 de grade"
+            },
+            {
+                "end": 59,
+                "entity": "loc",
+                "start": 51,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 114
+    },
+    {
+        "text": "setează pe nouăsprezece grade în tot apartamentul",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 29,
+                "entity": "grade",
+                "start": 11,
+                "value": "nouăsprezece grade"
+            },
+            {
+                "end": 49,
+                "entity": "loc",
+                "start": 33,
+                "value": "tot apartamentul"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 115
+    },
+    {
+        "text": "Salut, pune temperatura pe 17 grade în bucătărie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 35,
+                "entity": "grade",
+                "start": 27,
+                "value": "17 grade"
+            },
+            {
+                "end": 48,
+                "entity": "loc",
+                "start": 39,
+                "value": "bucătărie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 116
+    },
+    {
+        "text": "setează temperatura cam la optsprezece grade în dormitor",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 44,
+                "entity": "grade",
+                "start": 27,
+                "value": "optsprezece grade"
+            },
+            {
+                "end": 56,
+                "entity": "loc",
+                "start": 48,
+                "value": "dormitor"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 117
+    },
+    {
+        "text": "Pepper, ajustează temperatura pe douăzeci de grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 50,
+                "entity": "grade",
+                "start": 33,
+                "value": "douăzeci de grade"
+            },
+            {
+                "end": 58,
+                "entity": "loc",
+                "start": 54,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 118
+    },
+    {
+        "text": "Salut, mi-ar plăcea să setezi temperatura la șaptesprezece grade peste tot",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 64,
+                "entity": "grade",
+                "start": 45,
+                "value": "șaptesprezece grade"
+            },
+            {
+                "end": 74,
+                "entity": "loc",
+                "start": 65,
+                "value": "peste tot"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "B-loc",
+            "I-loc"
+        ],
+        "id": 119
+    },
+    {
+        "text": "Hey, poți seta aproape de 17 grade în baie",
+        "entities": [
+            {
+                "entity": "intent",
+                "value": "seteazaTemperatura"
+            },
+            {
+                "end": 34,
+                "entity": "grade",
+                "start": 26,
+                "value": "17 grade"
+            },
+            {
+                "end": 42,
+                "entity": "loc",
+                "start": 38,
+                "value": "baie"
+            }
+        ],
+        "seq_labels": [
+            "O",
+            "O",
+            "O",
+            "O",
+            "O",
+            "B-grade",
+            "I-grade",
+            "O",
+            "B-loc"
+        ],
+        "id": 120
+    }
+]

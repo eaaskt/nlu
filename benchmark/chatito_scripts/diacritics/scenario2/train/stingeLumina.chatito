@@ -1,12 +1,13 @@
-%[stingeLumina]('training': '30', 'testing': '1')
+%[stingeLumina]('training': '90', 'testing': '1')
     ~[greet] ~[action] ~[lumina] ~[în] @[loc]
-    ~[actionU] ~[lumina] ~[în] @[loc]
+    ~[actionU] ~[te rog?] ~[lumina] ~[în] @[loc]
 
 @[loc]
     ~[bucătărie]
     ~[baie]
     ~[curte]
     ~[sufragerie]
+    ~[birou]
 
 ~[greet]
     Pepper,
@@ -23,3 +24,4 @@
 
 ~[lumina]
     lumina
+    lampa

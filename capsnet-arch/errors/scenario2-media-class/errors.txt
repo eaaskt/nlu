@@ -1,0 +1,435 @@
+INTENT ERRORS
+puneMuzica
+Servus te rog cântec cântat de Rahmaninov 0 0 0 0 -> cresteIntensitateMuzica
+Servus melodia 0 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus concert cântat de Leonard Cohen 0 0 0 0 0 -> cresteIntensitateMuzica
+piesa cântată de Rahmaninov 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+piesa cântată de Beatles 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+te rog pune concert 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus pune melodia cântată de Rahmaninov 0 0 0 0 0 -> schimbaCanalTV
+Servus pune melodia cântată de Liszt 0 0 0 0 0 -> cresteIntensitateMuzica
+pune concert cântat de Pink Floyd 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog pune concert cântat de Pink Floyd 0 0 -> schimbaCanalTV
+Servus te rog simfonia cântată de Liszt 0 0 0 0 -> cresteIntensitateMuzica
+pune simfonia compusă de Liszt 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus concert compus de Leonard Cohen 0 0 0 0 0 -> cresteIntensitateMuzica
+te rog pune cântec cântat de Beatles 0 0 0 0 -> schimbaCanalTV
+Servus concert compus de Liszt 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus concert cântat de Sting 0 0 0 0 0 0 -> cresteIntensitateMuzica
+melodia cântată de Leonard Cohen 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus te rog pune cântec cântat de Liszt 0 0 0 -> cresteIntensitateMuzica
+Servus pune simfonia 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus te rog pune piesa cântată de Pink Floyd 0 0 -> schimbaCanalTV
+pune cântec cântat de Leonard Cohen 0 0 0 0 0 -> schimbaCanalTV
+Servus te rog piesa cântată de Beatles 0 0 0 0 -> schimbaCanalTV
+te rog cântec cântat de Sting 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus piesa 0 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+melodia cântată de Sting 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+
+pornesteTV
+servus ai putea deschide pe History 0 0 0 0 0 -> schimbaCanalTV
+servus te rog deschide TV pe PrimaTV 0 0 0 0 -> schimbaCanalTV
+servus te rog deschide pe AXN 0 0 0 0 0 -> schimbaCanalTV
+ai putea deschide pe PrimaTV 0 0 0 0 0 0 -> schimbaCanalTV
+ai putea deschide TV pe History 0 0 0 0 0 -> schimbaCanalTV
+servus poți da drumul la TV 0 0 0 0 0 -> cresteIntensitateMuzica
+ai putea deschide pe Discovery 0 0 0 0 0 0 -> schimbaCanalTV
+ai putea deschide TV pe Discovery 0 0 0 0 0 -> schimbaCanalTV
+deschide pe History 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+ai putea deschide TV pe AXN 0 0 0 0 0 -> schimbaCanalTV
+deschide TV 0 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+te rog ai putea deschide TV pe TNT 0 0 0 -> schimbaCanalTV
+te rog ai putea deschide TV pe Discovery 0 0 0 -> schimbaCanalTV
+deschide pe TNT 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+servus deschide TV pe AXN 0 0 0 0 0 0 -> schimbaCanalTV
+servus dă drumul la TV 0 0 0 0 0 0 -> schimbaCanalTV
+deschide pe AXN 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+servus te rog ai putea deschide TV pe Discovery 0 0 -> schimbaCanalTV
+ai putea deschide pe AXN 0 0 0 0 0 0 -> schimbaCanalTV
+servus ai putea deschide TV pe TNT 0 0 0 0 -> schimbaCanalTV
+servus ai putea deschide TV pe History 0 0 0 0 -> schimbaCanalTV
+deschide TV pe Discovery 0 0 0 0 0 0 0 -> schimbaCanalTV
+ai putea deschide TV 0 0 0 0 0 0 0 -> schimbaCanalTV
+te rog ai putea deschide TV pe AXN 0 0 0 -> schimbaCanalTV
+servus te rog deschide TV pe TNT 0 0 0 0 -> schimbaCanalTV
+te rog dă drumul la TV 0 0 0 0 0 -> schimbaCanalTV
+servus deschide pe PrimaTV 0 0 0 0 0 0 0 -> schimbaCanalTV
+te rog ai putea deschide TV pe PrimaTV 0 0 0 -> schimbaCanalTV
+servus te rog ai putea deschide TV pe PrimaTV 0 0 -> schimbaCanalTV
+servus deschide pe TNT 0 0 0 0 0 0 0 -> schimbaCanalTV
+servus ai putea deschide TV 0 0 0 0 0 0 -> schimbaCanalTV
+servus deschide TV 0 0 0 0 0 0 0 0 -> schimbaCanalTV
+servus deschide pe History 0 0 0 0 0 0 0 -> schimbaCanalTV
+servus deschide TV pe PrimaTV 0 0 0 0 0 0 -> schimbaCanalTV
+servus ai putea deschide pe Discovery 0 0 0 0 0 -> schimbaCanalTV
+te rog deschide pe TNT 0 0 0 0 0 0 -> schimbaCanalTV
+
+schimbaCanalTV
+te rog ai putea schimba pe programul AXN 0 0 0 -> puneMuzica
+te rog schimbă pe programul TNT 0 0 0 0 0 -> pornesteTV
+te rog schimbă pe programul AXN 0 0 0 0 0 -> puneMuzica
+
+cresteIntensitateMuzica
+aș vrea să crești volumul 0 0 0 0 0 0 -> pornesteTV
+dă mai tare piesa 0 0 0 0 0 0 0 -> schimbaCanalTV
+Servus dă mai tare cântecul 0 0 0 0 0 0 -> schimbaCanalTV
+crește intensitatea cântecului 0 0 0 0 0 0 0 0 -> scadeIntensitateMuzica
+
+scadeIntensitateMuzica
+redu volumul la 6 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la 4 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul la piesa la 6 0 0 -> cresteIntensitateMuzica
+redu volumul la piesa 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul la 5 0 0 0 0 -> cresteIntensitateMuzica
+redu volumul la 4 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la 4 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul la sfert 0 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la piesa la 6 0 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la muzica la 4 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la 6 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la piesa 0 0 0 0 0 0 -> cresteIntensitateMuzica
+redu volumul la piesa la 6 0 0 0 0 0 -> cresteIntensitateMuzica
+redu volumul 0 0 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+redu volumul la muzica la sfert 0 0 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la 5 0 0 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la muzica la 5 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la sfert 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul la muzica la 5 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la piesa la 5 0 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la piesa la 4 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la muzica 0 0 0 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la muzica 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la muzica la 4 0 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul cântecului 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+redu volumul la muzica la 5 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus redu volumul la 6 0 0 0 0 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul la muzica la sfert 0 0 0 -> cresteIntensitateMuzica
+redu volumul la 5 0 0 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul cântecului 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul la piesa la 4 0 0 -> cresteIntensitateMuzica
+poți să scazi volumul cântecului 0 0 0 0 0 0 -> cresteIntensitateMuzica
+redu volumul la muzica la 4 0 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul la 6 0 0 0 0 -> cresteIntensitateMuzica
+Servus poți să scazi volumul la muzica 0 0 0 0 -> cresteIntensitateMuzica
+
+SLOT ERRORS
+Servus te rog cântec cântat de Rahmaninov 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog piesa compusă de Rahmaninov 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+pune simfonia compusă de Sting 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog piesa compusă de Rahmaninov 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus concert cântat de Leonard Cohen 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O']
+
+piesa cântată de Rahmaninov 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+piesa cântată de Beatles 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog concert compus de Sting 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus pune melodia cântată de Rahmaninov 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+
+cântec compus de Rahmaninov 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus pune melodia cântată de Liszt 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog simfonia compusă de Leonard Cohen 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+pune concert cântat de Pink Floyd 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+
+piesa compusă de Liszt 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog piesa compusă de Beatles 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog pune concert cântat de Pink Floyd 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'B-nivel', 'O', 'O']
+
+Servus te rog simfonia cântată de Liszt 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+pune simfonia compusă de Liszt 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus concert compus de Leonard Cohen 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog pune cântec cântat de Beatles 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+melodia compusă de Pink Floyd 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus pune cântec compus de Leonard Cohen 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus concert compus de Liszt 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus concert cântat de Sting 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+melodia cântată de Leonard Cohen 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog pune simfonia compusă de Rahmaninov 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog simfonia compusă de Beatles 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog pune cântec cântat de Liszt 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog pune piesa cântată de Pink Floyd 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+pune cântec cântat de Leonard Cohen 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+
+te rog pune melodia compusă de Sting 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog concert compus de Leonard Cohen 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'I-artist', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus te rog piesa cântată de Beatles 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus piesa compusă de Sting 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog cântec cântat de Sting 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+melodia cântată de Sting 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus ai putea deschide pe History 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+ai putea deschide TV pe History 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog deschide TV pe TNT 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus poți da drumul la TV 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+
+deschide pe History 0 0 0 0 0 0 0 0
+['O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog deschide TV 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog ai putea deschide TV pe TNT 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+deschide pe TNT 0 0 0 0 0 0 0 0
+['O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus dă drumul la TV 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O']
+
+deschide pe AXN 0 0 0 0 0 0 0 0
+['O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus ai putea deschide TV pe TNT 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus ai putea deschide TV pe History 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+ai putea deschide TV 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog ai putea deschide TV pe AXN 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus te rog deschide TV pe TNT 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog dă drumul la TV 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+
+servus deschide pe TNT 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus ai putea deschide TV 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus deschide pe History 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog deschide pe TNT 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog ai putea schimba pe programul TNT 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog ai putea schimba pe programul AXN 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog ai putea schimba pe programul History 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+poți schimba pe programul History 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus te rog ai putea schimba pe programul AXN 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+schimbă pe programul TNT 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus schimbă pe programul TNT 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog poți schimba pe programul History 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog schimbă pe programul TNT 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus te rog poți schimba pe programul PrimaTV 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'B-canal', 'O', 'O', 'O']
+
+servus te rog schimbă pe programul TNT 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog schimbă pe programul Discovery 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus te rog poți schimba pe programul History 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+servus ai putea schimba pe programul History 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog schimbă pe programul AXN 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+te rog ai putea schimba pe programul Discovery 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+crește volumul la piesa 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus aș vrea să crești volumul la piesa la 4 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus aș vrea să crești volumul la triplu 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus dă mai tare volumul la piesa 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O']
+
+Servus aș vrea să crești volumul la piesa la 6 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+redu volumul la piesa 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus redu volumul la piesa 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O']
+
+poți să scazi volumul la muzica 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O']
+

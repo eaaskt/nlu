@@ -1,0 +1,30 @@
+INTENT ERRORS
+cresteIntensitateMuzica
+Pepper crește intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 -> opresteMuzica
+Pepper fă mai tare simfonia 0 0 0 0 0 0 0 0 0 0 -> scadeIntensitateMuzica
+
+scadeIntensitateMuzica
+Pepper redu intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 -> opresteMuzica
+Pepper redu intensitatea simfoniei 0 0 0 0 0 0 0 0 0 0 0 -> scadeIntensitateLumina
+
+SLOT ERRORS
+redu intensitatea becurilor în curte la minim 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-loc', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Hey mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade în tot apartamentul
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc', 'I-loc']
+
+Bună Pepper mi-ar plăcea să scazi temperatura pe douăzeci și unu de grade în bucătărie
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc']
+
+pune pe B1 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+dă mai tare volumul la piesa 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
