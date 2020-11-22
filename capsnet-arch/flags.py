@@ -46,11 +46,11 @@ def set_data_flags(data):
     tf.app.flags.DEFINE_integer('intent_output_dim', 16, 'intent output dimension')
     tf.app.flags.DEFINE_integer('slot_output_dim', 32, 'slot output dimension')
     tf.app.flags.DEFINE_integer('d_a', 20, 'self attention weight hidden units number')
-    tf.app.flags.DEFINE_integer('r', 5, 'number of self attention heads')
+    tf.app.flags.DEFINE_integer('r', 3, 'number of self attention heads')
     tf.app.flags.DEFINE_float('alpha', 0.0001, 'coefficient for self attention loss')
     tf.app.flags.DEFINE_integer('n_splits', 3, 'Number of cross-validation splits')
     tf.app.flags.DEFINE_float('rerouting_coef', 0.5, 'coefficient for rerouting')
     tf.app.flags.DEFINE_boolean('use_rerouting', True, 'whether to use rerouting or not')
-    tf.app.flags.DEFINE_boolean('use_attention', False,
+    tf.app.flags.DEFINE_boolean('use_attention', True,
                                 'whether to use attention or not. If attention is used,'
                                 'slot_output_dim will be overridden to hidden_size * 2')

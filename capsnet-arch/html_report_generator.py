@@ -3,7 +3,13 @@ import os
 from dominate import document
 from dominate.tags import *
 
-def generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred, y_slot_labels_true, y_slot_labels_pred, x_text_te, total_attention):
+def generateHtmlReport(FLAGS, y_intent_labels_true,
+                       y_intent_labels_pred,
+                       y_slot_labels_true,
+                       y_slot_labels_pred,
+                       x_text_te,
+                       total_attention,
+                       intent_confidence_tuples):
     if FLAGS.scenario_num != '':
         results_dir = FLAGS.results_dir + 'scenario' + FLAGS.scenario_num + '/'
         if not os.path.exists(results_dir):
@@ -14,11 +20,13 @@ def generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred, y_slot
     errorDataToPrint = []
     correctDataToPrint = []
     i, ccount, ecount = 0, 0, 0
-    for t, pr, s, spr  in zip(y_intent_labels_true, y_intent_labels_pred, y_slot_labels_true, y_slot_labels_pred):
+    for t, pr, s, spr, confList  in zip(y_intent_labels_true, y_intent_labels_pred, y_slot_labels_true, y_slot_labels_pred,
+                              intent_confidence_tuples):
         errorDataToPrint.append({})
         correctDataToPrint.append({})
         if t == pr:
             correctDataToPrint[ccount]["trueIntent"] = t
+            correctDataToPrint[ccount]["confidenceList"] = confList
             correctDataToPrint[ccount]["predictedIntent"] = pr
             correctDataToPrint[ccount]["testData"] = ' '.join(x_text_te[i])
             correctDataToPrint[ccount]["trueSlots"] = str(s)
@@ -27,6 +35,7 @@ def generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred, y_slot
             ccount += 1
         else:
             errorDataToPrint[ecount]["trueIntent"] = t
+            errorDataToPrint[ecount]["confidenceList"] = confList
             errorDataToPrint[ecount]["predictedIntent"] = pr
             errorDataToPrint[ecount]["testData"] = ' '.join(x_text_te[i])
             errorDataToPrint[ecount]["trueSlots"] = str(s)
@@ -55,6 +64,15 @@ def generateDocument(dataToPrint, count, dir, attentionHeads, name):
                 p('test data:   ' + dataToPrint[j]["testData"])
                 p('true slots:  ' + dataToPrint[j]["trueSlots"])
                 p('pred slots:  ' + dataToPrint[j]["predSlots"])
+                p('Intent confidence levels:')
+                with div():
+                    attr(cls="intents-head")
+                    with p():
+                        for intent, confidence in dataToPrint[j]["confidenceList"]:
+                            span(intent, cls="intent")
+                    with p():
+                        for _, confidence in dataToPrint[j]["confidenceList"]:
+                            span("%10.3f" % confidence, cls="intent", style="background-color: rgba(0,0,255, " + str(confidence) + ")")
                 p('attention heads:')
                 for x in range(attentionHeads):
                     with div():

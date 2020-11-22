@@ -121,6 +121,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         x_text_te = data['x_text_te']
 
     total_intent_pred = []
+    total_intent_conf_level = []
     total_slots_pred = []
     total_attention = []
 
@@ -156,11 +157,13 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
         intent_outputs_norm = util.safe_norm(intent_outputs_reduced_dim)
+        # intent_outputs_norm = tf.norm(intent_outputs_reduced_dim, ord='euclidean', axis=-1)
         slot_weights_c_reduced_dim = tf.squeeze(slot_weights_c, axis=[3, 4])
 
         [intent_predictions, slot_predictions] = sess.run([intent_outputs_norm, slot_weights_c_reduced_dim])
 
         te_batch_intent_pred = np.argmax(intent_predictions, axis=1)
+        total_intent_conf_level += np.ndarray.tolist(intent_predictions)
         total_intent_pred += np.ndarray.tolist(te_batch_intent_pred)
 
         te_batch_slots_pred = np.argmax(slot_predictions, axis=2)
@@ -172,6 +175,8 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
     y_intents_true = np.ndarray.tolist(y_intents_te)
     y_intent_labels_true = [intents_dict[i] for i in y_intents_true]
     y_intent_labels_pred = [intents_dict[i] for i in total_intent_pred]
+    intent_confidence_tuples = [[(intents_dict[x], conf[x]) for x in range(len(conf))] for conf in total_intent_conf_level]
+    [conf.sort(key=lambda tup: tup[1], reverse=True) for conf in intent_confidence_tuples]
     intents = sorted(list(set(y_intent_labels_true)))
     f_score = scikit_f1(y_intent_labels_true, y_intent_labels_pred, average='micro', labels=intents)
     print(classification_report(y_intent_labels_true, y_intent_labels_pred, digits=4))
@@ -197,9 +202,9 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         else:
             errors_dir = FLAGS.errors_dir
 
-        plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
-                              title='Confusion matrix', normalize=True, numbers=False)
-        plt.savefig('confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num))
+        # plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
+        #                       title='Confusion matrix', normalize=True, numbers=False)
+        # plt.savefig('confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num))
 
         # For super-class confusion mat
         intent_classes = {'aprindeLumina': 'lumina',
@@ -225,10 +230,10 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             intent_classes_labels = ['lumina', 'media', 'temperatura']
         intent_classes_true = [intent_classes[intent] for intent in y_intent_labels_true]
         intent_classes_pred = [intent_classes[intent] for intent in y_intent_labels_pred]
-        plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
-                              title='Confusion matrix', normalize=True, numbers=True)
-        plt.show()
-        plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
+        # plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
+        #                       title='Confusion matrix', normalize=True, numbers=True)
+        # plt.show()
+        # plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
         incorrect_intents = {}
         i = 0
         for t, pr in zip(y_intent_labels_true, y_intent_labels_pred):
@@ -259,7 +264,8 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
 
         if FLAGS.use_attention:
             html_report_generator.generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred,
-                                                     y_slot_labels_true, y_slot_labels_pred, x_text_te, total_attention)
+                                                     y_slot_labels_true, y_slot_labels_pred, x_text_te, total_attention,
+                                                     intent_confidence_tuples)
 
     return f_score, scores['f1']
 
@@ -302,10 +308,10 @@ def test(model, data, FLAGS):
 def main():
     word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice.vec'
 
-    training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
-    test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario0/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario0/test.txt'
 
-    FLAGS = flags.define_app_flags('1-test-use-attention')
+    FLAGS = flags.define_app_flags('0-rerouting-3-attention')
 
     # Load data
     print('------------------load word2vec begin-------------------')

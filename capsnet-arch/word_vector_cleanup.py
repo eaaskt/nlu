@@ -6,7 +6,7 @@ def readData():
     test = '/test.txt'
     train = '/train.txt'
     filePaths = [
-        baseDir + '0' + test, baseDir + '1' + train,
+        baseDir + '0' + test, baseDir + '0' + train,
         baseDir + '1' + test, baseDir + '1' + train,
         baseDir + '2' + test, baseDir + '2' + train,
         baseDir + '3.1' + test, baseDir + '3.1' + train,

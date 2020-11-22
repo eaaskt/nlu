@@ -9,6 +9,17 @@
     float: left;
 }
 
+.intent {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    min-width: 125px;
+    max-width: 125px;
+    float: left;
+}
+
 .p {
     magin-top: 5px;
     magin-bottom: 5px;
@@ -32,6 +43,19 @@
    padding: 10px;
    width: 1600px;
 }
+
+
+.intents-head {
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 2px solid lightgray;
+   border-radius: 5px;
+   padding: 10px;
+   width: 2200px;
+}
+
 
 .attention-head p {
     margin-top: 3px;
