@@ -11,6 +11,33 @@ import data_evaluation.eval_converter as eval_conv
 
 # TODO: Add config files for these
 
+# Regular diacritics datasets
+# BASE_DIR = 'data/romanian_dataset/home_assistant/diacritics/scenario_'
+
+# Mixed distribution datasets - 1 example
+BASE_DIR = 'data/romanian_dataset/home_assistant/diacritics_mixed_1/scenario_'
+
+INPUT_FILES = ('train.json', 'test.json')
+WIT_FILES = ('train_wit.json', 'test_wit.json')
+WIT_IDS_FILES = ('train_wit_ids.json', 'test_wit_ids.json')
+
+
+def build_files_list(dir_path, files):
+    train_file, test_file = files
+    return [
+        # dir_path + '0/' + train_file, dir_path + '0/' + test_file,
+        dir_path + '1/' + train_file, dir_path + '1/' + test_file,
+        dir_path + '2/' + train_file, dir_path + '2/' + test_file,
+        dir_path + '3_1/' + train_file, dir_path + '3_1/' + test_file,
+        dir_path + '3_2/' + train_file, dir_path + '3_2/' + test_file,
+        dir_path + '3_3/' + train_file, dir_path + '3_3/' + test_file,
+    ]
+
+
+INITIAL_DATASETS = build_files_list(BASE_DIR, INPUT_FILES)
+DATASETS_WIT_FORMAT = build_files_list(BASE_DIR, WIT_FILES)
+DATASETS_FINAL_FORMAT = build_files_list(BASE_DIR, WIT_IDS_FILES)
+
 ### NO_DIA
 # INITIAL_DATASETS = [
 #     'data/romanian_dataset/home_assistant/version1/scenario0_uniform_dist/training_dataset.json',
@@ -56,52 +83,6 @@ import data_evaluation.eval_converter as eval_conv
 #     'data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.3/training_dataset_wit_ids.json',
 #     'data/romanian_dataset/home_assistant/version1/scenario3_imbalance/3.3/testing_dataset_wit_ids.json',
 # ]
-
-### DIA
-INITIAL_DATASETS = [
-    'data/romanian_dataset/home_assistant/diacritics/scenario_0/train.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_0/test.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_1/train.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_1/test.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_2/train.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_2/test.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_1/train.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_1/test.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_2/train.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_2/test.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_3/train.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_3/test.json',
-]
-
-DATASETS_WIT_FORMAT = [
-    'data/romanian_dataset/home_assistant/diacritics/scenario_0/train_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_0/test_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_1/train_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_1/test_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_2/train_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_2/test_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_1/train_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_1/test_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_2/train_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_2/test_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_3/train_wit.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_3/test_wit.json',
-]
-
-DATASETS_FINAL_FORMAT = [
-    'data/romanian_dataset/home_assistant/diacritics/scenario_0/train_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_0/test_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_1/train_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_1/test_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_2/train_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_2/test_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_1/train_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_1/test_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_2/train_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_2/test_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_3/train_wit_ids.json',
-    'data/romanian_dataset/home_assistant/diacritics/scenario_3_3/test_wit_ids.json',
-]
 
 
 def main():
