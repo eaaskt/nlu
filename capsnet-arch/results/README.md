@@ -10,7 +10,7 @@
 * [Media intent class - 3 attention heads](#media-intent-class---3-attention-heads)
 * [100 dimension vecs (3 attention heads)](#100-dimension-vectors---3-attention-heads)
 * [100 dimension vecs (1 attention head)](#100-dimension-vectors---1-attention-head)
-* [FastText 100 dimension vecs](#fasttext-300-dimension-vectors)
+* [FastText 300 dimension vecs](#fasttext-300-dimension-vectors)
 * [FastText 50 dimension vecs](#fasttext-50-dimension-vectors)
 * [FastText 100 dimension vecs](#fasttext-100-dimension-vectors)
 * [FastText 100 dimension vecs (no rerouting, attention)](#fasttext-100-dimension-vectors-no-rerouting)
