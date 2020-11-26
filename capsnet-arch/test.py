@@ -306,18 +306,21 @@ def test(model, data, FLAGS):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice.vec'
+    word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice-cc-100.vec'
 
-    training_data_path = '../data-capsnets/diacritics/scenario0/train.txt'
-    test_data_path = '../data-capsnets/diacritics/scenario0/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario33/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario33/test.txt'
 
-    FLAGS = flags.define_app_flags('0-rerouting-3-attention')
+    FLAGS = flags.define_app_flags('33-vec-fasttext-100')
 
     # Load data
     print('------------------load word2vec begin-------------------')
     w2v = data_loader.load_w2v(word2vec_path)
     print('------------------load word2vec end---------------------')
-    data = data_loader.read_datasets(w2v, training_data_path, test_data_path, test=True)
+
+    # When using the new 100-dim word vec model (conll, not fasttext), the data should all be in lowercase
+    isLowercase = False
+    data = data_loader.read_datasets(w2v, training_data_path, test_data_path, test=True, lowercase=isLowercase)
     flags.set_data_flags(data)
 
     test(model_s2i.CapsNetS2I, data, FLAGS)

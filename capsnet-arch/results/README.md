@@ -10,8 +10,10 @@
 * [Media intent class - 3 attention heads](#media-intent-class---3-attention-heads)
 * [100 dimension vecs (3 attention heads)](#100-dimension-vectors---3-attention-heads)
 * [100 dimension vecs (1 attention head)](#100-dimension-vectors---1-attention-head)
-* [FastText 100 dimension vecs](#fasttext-100-dimension-vectors)
+* [FastText 100 dimension vecs](#fasttext-300-dimension-vectors)
 * [FastText 50 dimension vecs](#fasttext-50-dimension-vectors)
+* [FastText 100 dimension vecs](#fasttext-100-dimension-vectors)
+* [FastText 100 dimension vecs (no rerouting, attention)](#fasttext-100-dimension-vectors-no-rerouting)
 
 ## No rerouting
 * Scenario 0
@@ -213,25 +215,26 @@
     * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-100-1-attention/results-correct-predictions-33-vec-100-1-attention.html) 
     * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-100-1-attention/results-error-predictions-33-vec-100-1-attention.html)
 
-## FastText 100 dimension vectors
+## FastText 300 dimension vectors
+(updated set of hyperparams, with rerouting and attention)
 * Scenario 0
-    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-fasttext-100/results-correct-predictions-0-vec-fasttext-100.html) 
-    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-fasttext-100/results-error-predictions-0-vec-fasttext-100.html)
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-o2/results-correct-predictions-0-o2.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-o2/results-error-predictions-0-o2.html)
 * Scenario 1
-    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-fasttext-100/results-correct-predictions-1-vec-fasttext-100.html) 
-    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-fasttext-100/results-error-predictions-1-vec-fasttext-100.html)
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-o2/results-correct-predictions-1-o2.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-o2/results-error-predictions-1-o2.html)
 * Scenario 2
-    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-fasttext-100/results-correct-predictions-2-vec-fasttext-100.html) 
-    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-fasttext-100/results-error-predictions-2-vec-fasttext-100.html)
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-o2/results-correct-predictions-2-o2.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-o2/results-error-predictions-2-o2.html)
 * Scenario 3.1
-    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-fasttext-100/results-correct-predictions-31-vec-fasttext-100.html) 
-    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-fasttext-100/results-error-predictions-31-vec-fasttext-100.html)
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-o2/results-correct-predictions-31-o2.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-o2/results-error-predictions-31-o2.html)
 * Scenario 3.2
-    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-fasttext-100/results-correct-predictions-32-vec-fasttext-100.html) 
-    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-fasttext-100/results-error-predictions-32-vec-fasttext-100.html)
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-o2/results-correct-predictions-32-o2.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-o2/results-error-predictions-32-o2.html)
 * Scenario 3.3
-    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-fasttext-100/results-correct-predictions-33-vec-fasttext-100.html) 
-    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-fasttext-100/results-error-predictions-33-vec-fasttext-100.html)
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-o2/results-correct-predictions-33-o2.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-o2/results-error-predictions-33-o2.html)
 
 ## FastText 50 dimension vectors
 * Scenario 0
@@ -252,3 +255,44 @@
 * Scenario 3.3
     * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-fasttext-50/results-correct-predictions-33-vec-fasttext-50.html) 
     * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-fasttext-50/results-error-predictions-33-vec-fasttext-50.html)
+
+## FastText 100 dimension vectors
+* Scenario 0
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-fasttext-100/results-correct-predictions-0-vec-fasttext-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-vec-fasttext-100/results-error-predictions-0-vec-fasttext-100.html)
+* Scenario 1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-fasttext-100/results-correct-predictions-1-vec-fasttext-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-vec-fasttext-100/results-error-predictions-1-vec-fasttext-100.html)
+* Scenario 2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-fasttext-100/results-correct-predictions-2-vec-fasttext-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-vec-fasttext-100/results-error-predictions-2-vec-fasttext-100.html)
+* Scenario 3.1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-fasttext-100/results-correct-predictions-31-vec-fasttext-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-vec-fasttext-100/results-error-predictions-31-vec-fasttext-100.html)
+* Scenario 3.2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-fasttext-100/results-correct-predictions-32-vec-fasttext-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-vec-fasttext-100/results-error-predictions-32-vec-fasttext-100.html)
+* Scenario 3.3
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-fasttext-100/results-correct-predictions-33-vec-fasttext-100.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-vec-fasttext-100/results-error-predictions-33-vec-fasttext-100.html)
+
+## FastText 100 dimension vectors no rerouting
+(No rerouting, with attention)
+* Scenario 0
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-o2-fasttext-100-no-rerouting/results-correct-predictions-0-o2-fasttext-100-no-rerouting.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario0-o2-fasttext-100-no-rerouting/results-error-predictions-0-o2-fasttext-100-no-rerouting.html)
+* Scenario 1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-o2-fasttext-100-no-rerouting/results-correct-predictions-1-o2-fasttext-100-no-rerouting.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario1-o2-fasttext-100-no-rerouting/results-error-predictions-1-o2-fasttext-100-no-rerouting.html)
+* Scenario 2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-o2-fasttext-100-no-rerouting/results-correct-predictions-2-o2-fasttext-100-no-rerouting.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario2-o2-fasttext-100-no-rerouting/results-error-predictions-2-o2-fasttext-100-no-rerouting.html)
+* Scenario 3.1
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-o2-fasttext-100-no-rerouting/results-correct-predictions-31-o2-fasttext-100-no-rerouting.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario31-o2-fasttext-100-no-rerouting/results-error-predictions-31-o2-fasttext-100-no-rerouting.html)
+* Scenario 3.2
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-o2-fasttext-100-no-rerouting/results-correct-predictions-32-o2-fasttext-100-no-rerouting.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario32-o2-fasttext-100-no-rerouting/results-error-predictions-32-o2-fasttext-100-no-rerouting.html)
+* Scenario 3.3
+    * [correct](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-o2-fasttext-100-no-rerouting/results-correct-predictions-33-o2-fasttext-100-no-rerouting.html) 
+    * [errors](https://capsnets-utcn.netlify.app/capsnet-arch/results/scenario33-o2-fasttext-100-no-rerouting/results-error-predictions-33-o2-fasttext-100-no-rerouting.html)

@@ -28,7 +28,7 @@ def set_data_flags(data):
     _, max_sentence_length = data['x_tr'].shape
     intents_number = len(data['intents_dict'])
     slots_number = len(data['slots_dict'])
-    hidden_size = 64
+    hidden_size = 16
 
     tf.app.flags.DEFINE_float('keep_prob', 1, 'embedding dropout keep rate for training')
     tf.app.flags.DEFINE_integer('hidden_size', hidden_size, 'embedding vector size')
@@ -43,9 +43,9 @@ def set_data_flags(data):
     tf.app.flags.DEFINE_float('learning_rate', 0.01, 'learning rate')
     tf.app.flags.DEFINE_integer('slot_routing_num', 2, 'slot routing num')
     tf.app.flags.DEFINE_integer('intent_routing_num', 3, 'intent routing num')
-    tf.app.flags.DEFINE_integer('intent_output_dim', 16, 'intent output dimension')
-    tf.app.flags.DEFINE_integer('slot_output_dim', 32, 'slot output dimension')
-    tf.app.flags.DEFINE_integer('d_a', 20, 'self attention weight hidden units number')
+    tf.app.flags.DEFINE_integer('intent_output_dim', 8, 'intent output dimension')
+    tf.app.flags.DEFINE_integer('slot_output_dim', 2 * hidden_size, 'slot output dimension')
+    tf.app.flags.DEFINE_integer('d_a', 10, 'self attention weight hidden units number')
     tf.app.flags.DEFINE_integer('r', 3, 'number of self attention heads')
     tf.app.flags.DEFINE_float('alpha', 0.0001, 'coefficient for self attention loss')
     tf.app.flags.DEFINE_integer('n_splits', 3, 'Number of cross-validation splits')
