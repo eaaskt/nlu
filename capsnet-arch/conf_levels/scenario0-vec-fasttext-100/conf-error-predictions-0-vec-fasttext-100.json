@@ -1,0 +1,94 @@
+[
+    {
+        "trueIntent": "cresteIntensitateMuzica",
+        "predictedIntent": "opresteMuzica",
+        "testData": "Pepper crește intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "opresteMuzica": 0.5727545022964478,
+            "schimbaCanalTV": 0.09873221069574356,
+            "cresteIntensitateLumina": 0.08205030113458633,
+            "aprindeLumina": 0.0650724321603775,
+            "puneMuzica": 0.06454474478960037,
+            "cresteIntensitateMuzica": 0.0644368976354599,
+            "opresteTV": 0.05321851372718811,
+            "cresteTemperatura": 0.0469541922211647,
+            "scadeIntensitateMuzica": 0.04525841027498245,
+            "seteazaTemperatura": 0.026163889095187187,
+            "pornesteTV": 0.02085338719189167,
+            "stingeLumina": 0.009240378625690937,
+            "scadeTemperatura": 0.008896447718143463,
+            "scadeIntensitateLumina": 0.0025735676754266024
+        }
+    },
+    {
+        "trueIntent": "cresteIntensitateMuzica",
+        "predictedIntent": "scadeIntensitateMuzica",
+        "testData": "Pepper fă mai tare simfonia 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "scadeIntensitateMuzica": 0.9271129369735718,
+            "opresteMuzica": 0.1025654673576355,
+            "aprindeLumina": 0.08183763921260834,
+            "scadeTemperatura": 0.06696002185344696,
+            "cresteIntensitateLumina": 0.06259947270154953,
+            "scadeIntensitateLumina": 0.05873054265975952,
+            "cresteIntensitateMuzica": 0.05795619636774063,
+            "puneMuzica": 0.056329887360334396,
+            "schimbaCanalTV": 0.04814109578728676,
+            "pornesteTV": 0.015793660655617714,
+            "opresteTV": 0.015432312153279781,
+            "cresteTemperatura": 0.013733969070017338,
+            "seteazaTemperatura": 0.009830854833126068,
+            "stingeLumina": 0.009257576428353786
+        }
+    },
+    {
+        "trueIntent": "scadeIntensitateMuzica",
+        "predictedIntent": "opresteMuzica",
+        "testData": "Pepper redu intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "opresteMuzica": 0.1979738473892212,
+            "aprindeLumina": 0.1842765361070633,
+            "scadeIntensitateLumina": 0.16232484579086304,
+            "seteazaTemperatura": 0.12122389674186707,
+            "cresteIntensitateLumina": 0.11046379804611206,
+            "stingeLumina": 0.07610475271940231,
+            "opresteTV": 0.04245733097195625,
+            "cresteIntensitateMuzica": 0.04012458398938179,
+            "schimbaCanalTV": 0.023157821968197823,
+            "pornesteTV": 0.014886417426168919,
+            "scadeIntensitateMuzica": 0.013190990313887596,
+            "scadeTemperatura": 0.009450453333556652,
+            "puneMuzica": 0.008872712031006813,
+            "cresteTemperatura": 0.008199562318623066
+        }
+    },
+    {
+        "trueIntent": "scadeIntensitateMuzica",
+        "predictedIntent": "scadeIntensitateLumina",
+        "testData": "Pepper redu intensitatea simfoniei 0 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "scadeIntensitateLumina": 0.42965394258499146,
+            "opresteMuzica": 0.2794017195701599,
+            "cresteIntensitateLumina": 0.2148081362247467,
+            "aprindeLumina": 0.16679182648658752,
+            "seteazaTemperatura": 0.11792881041765213,
+            "scadeIntensitateMuzica": 0.10413578152656555,
+            "cresteIntensitateMuzica": 0.06896836310625076,
+            "pornesteTV": 0.03422868996858597,
+            "stingeLumina": 0.02012338861823082,
+            "opresteTV": 0.018327772617340088,
+            "scadeTemperatura": 0.018222462385892868,
+            "puneMuzica": 0.014269527979195118,
+            "schimbaCanalTV": 0.011282783932983875,
+            "cresteTemperatura": 0.004928301088511944
+        }
+    }
+]

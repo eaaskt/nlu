@@ -17,6 +17,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score as scikit_f1
 import matplotlib.pyplot as plt
 import html_report_generator
+import conf_levels_generator
 
 
 def plot_confusion_matrix(y_true, y_pred, labels,
@@ -202,9 +203,9 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         else:
             errors_dir = FLAGS.errors_dir
 
-        # plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
-        #                       title='Confusion matrix', normalize=True, numbers=False)
-        # plt.savefig('confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num))
+        plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
+                              title='Confusion matrix', normalize=True, numbers=False)
+        plt.savefig('confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num))
 
         # For super-class confusion mat
         intent_classes = {'aprindeLumina': 'lumina',
@@ -230,10 +231,10 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             intent_classes_labels = ['lumina', 'media', 'temperatura']
         intent_classes_true = [intent_classes[intent] for intent in y_intent_labels_true]
         intent_classes_pred = [intent_classes[intent] for intent in y_intent_labels_pred]
-        # plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
-        #                       title='Confusion matrix', normalize=True, numbers=True)
+        plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
+                              title='Confusion matrix', normalize=True, numbers=True)
         # plt.show()
-        # plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
+        plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
         incorrect_intents = {}
         i = 0
         for t, pr in zip(y_intent_labels_true, y_intent_labels_pred):
@@ -262,10 +263,13 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
                     f.write('\n')
                 i += 1
 
+        conf_levels_generator.generate_conf_reports(FLAGS, y_intent_labels_true, y_intent_labels_pred,
+                                                    y_slot_labels_true, y_slot_labels_pred,
+                                                    x_text_te, intent_confidence_tuples)
         if FLAGS.use_attention:
             html_report_generator.generateHtmlReport(FLAGS, y_intent_labels_true, y_intent_labels_pred,
-                                                     y_slot_labels_true, y_slot_labels_pred, x_text_te, total_attention,
-                                                     intent_confidence_tuples)
+                                                     y_slot_labels_true, y_slot_labels_pred,
+                                                     x_text_te, total_attention, intent_confidence_tuples)
 
     return f_score, scores['f1']
 
@@ -308,10 +312,10 @@ def test(model, data, FLAGS):
 def main():
     word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice-cc-100.vec'
 
-    training_data_path = '../data-capsnets/diacritics/scenario33/train.txt'
-    test_data_path = '../data-capsnets/diacritics/scenario33/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario0/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario0/test.txt'
 
-    FLAGS = flags.define_app_flags('33-vec-fasttext-100')
+    FLAGS = flags.define_app_flags('0-vec-fasttext-100')
 
     # Load data
     print('------------------load word2vec begin-------------------')

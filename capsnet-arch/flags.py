@@ -15,6 +15,7 @@ def define_app_flags(scenario_num):
     tf.app.flags.DEFINE_string('errors_dir', './errors/', 'Errors dir')
     tf.app.flags.DEFINE_string('results_dir', './results/', 'Results dir')
     tf.app.flags.DEFINE_string('hyperparams_dir', './hyperparams/', 'Hyperparams dir')
+    tf.app.flags.DEFINE_string('confidence_dir', './conf_levels/', 'Confidence levels analysis dir')
 
     return FLAGS
 
