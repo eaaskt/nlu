@@ -408,8 +408,8 @@ class CapsNetS2I:
             self.margin_loss() + self.cross_entropy_loss())
 
         # TensorBoard summaries
-        self.loss_tr_summary = tf.summary.scalar('total_loss_training', total_loss)
-        self.loss_val_summary = tf.summary.scalar('total_loss_validation', total_loss)
+        self.loss_tr_summary = tf.summary.scalar('total_loss', total_loss)
+        # self.loss_val_summary = tf.summary.scalar('total_loss_validation', total_loss)
         return total_loss
 
     def train(self):

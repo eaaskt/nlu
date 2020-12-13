@@ -50,7 +50,7 @@ def eval_seq_scores(y_true, y_pred):
     return scores
 
 
-def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False):
+def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False, calculate_learning_curves=False):
     """ Evaluates the model on the validation set
         Args:
             capsnet: CapsNet model
@@ -75,6 +75,8 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False):
     # Define TensorBoard writer
     if log:
         writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
+    if calculate_learning_curves:
+        writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-lc', sess.graph)
 
     total_intent_pred = []
     total_slots_pred = []
@@ -82,6 +84,7 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False):
     num_samples = len(x_te)
     batch_size = FLAGS.batch_size
     test_batch = int(math.ceil(num_samples / float(batch_size)))
+    loss_val = 1
     for i in range(test_batch):
         begin_index = i * batch_size
         end_index = min((i + 1) * batch_size, num_samples)
@@ -103,9 +106,9 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False):
          margin_loss_summary, loss_summary] = sess.run([
             capsnet.intent_output_vectors, capsnet.slot_output_vectors, capsnet.slot_weights_c,
             capsnet.cross_entropy_val_summary,
-            capsnet.margin_loss_val_summary, capsnet.loss_val_summary],
+            capsnet.margin_loss_val_summary, capsnet.loss_tr_summary],
             feed_dict=feed_dict)
-
+        loss_val = loss_summary
         # Add TensorBoard summaries to FileWriter
         if log:
             writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
@@ -127,6 +130,8 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False):
         te_batch_slots_pred = np.argmax(slot_predictions, axis=2)
         total_slots_pred += (np.ndarray.tolist(te_batch_slots_pred))
 
+    if calculate_learning_curves:
+        writer.add_summary(loss_val, fold)
     print('           VALIDATION SET PERFORMANCE        ')
     print('Intent detection')
     intents_acc = scikit_accuracy(y_intents_te, total_intent_pred)
@@ -177,7 +182,8 @@ def assign_pretrained_word_embedding(sess, embedding, capsnet):
     print('using pre-trained word emebedding.ended...')
 
 
-def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, best_f_score, batches_rand=False, log=False):
+def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, best_f_score, batches_rand=False, log=False,
+                           calculate_learning_curves=False):
     """ Trains the model for one cross-validation fold
         Args:
             train_data: training data dictionary
@@ -236,6 +242,7 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
         # Training cycle
         train_sample_num = x_train.shape[0]
         batch_num = int(math.ceil(train_sample_num / FLAGS.batch_size))
+        loss_train = 1
         for epoch in range(FLAGS.num_epochs):
             for batch in range(batch_num):
                 if batches_rand:
@@ -272,7 +279,7 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
                                            capsnet.slot_output_vectors, capsnet.cross_entropy_tr_summary,
                                            capsnet.margin_loss_tr_summary, capsnet.loss_tr_summary],
                                           feed_dict=feed_dict)
-
+                loss_train = loss_summary
                 if log:
                     train_writer.add_summary(cross_entropy_summary, batch_num * epoch + batch)
                     train_writer.add_summary(margin_loss_summary, batch_num * epoch + batch)
@@ -280,7 +287,8 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
 
             print('------------------epoch : ', epoch, ' Loss: ', loss, '----------------------')
             intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
-                                                               sess, epoch=epoch + 1, fold=fold, log=log)
+                                                               sess, epoch=epoch + 1, fold=fold, log=log,
+                                                               calculate_learning_curves=calculate_learning_curves)
             f_score_mean = (intent_f_score + slot_f_score) / 2
             if f_score_mean > best_f_score:
                 # best score overall -> save model
@@ -300,7 +308,9 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
                 best_f_score_mean_fold = f_score_mean
                 best_f_score_intent_fold = intent_f_score
                 best_f_score_slot_fold = slot_f_score
-
+        if calculate_learning_curves:
+            train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-lc', sess.graph)
+            train_writer.add_summary(loss_train, fold)
     return best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold
 
 
@@ -393,7 +403,7 @@ def main():
 
     flags.set_data_flags(data)
 
-    train(model_s2i.CapsNetS2I, data, FLAGS)
+    train(model_s2i.CapsNetS2I, data, FLAGS, log=True)
 
 
 if __name__ == '__main__':

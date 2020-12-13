@@ -1,5 +1,6 @@
 import numpy as np
 import util
+from sklearn.model_selection import StratifiedKFold
 
 from gensim.models.keyedvectors import KeyedVectors
 import time
@@ -243,3 +244,83 @@ def read_datasets(w2v, training_data_path, test_data_path, test=False, lowercase
     data['encoded_slots_te'] = one_hot_y_slots_te
     print('------------------read datasets end---------------------')
     return data
+
+#
+# def subset_data(data, index):
+
+
+def extract_validation(data, FLAGS):
+    x_tr = data['x_tr']
+    y_intents_tr = data['y_intents_tr']
+    y_slots_tr = data['y_slots_tr']
+    sentences_length_tr = data['sentences_len_tr']
+
+    one_hot_intents_tr = data['encoded_intents_tr']
+    one_hot_slots_tr = data['encoded_slots_tr']
+    folding_result = list(StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr))
+
+    train_index = folding_result[0][0]
+    val_index = folding_result[0][1]
+    x_train, x_val = x_tr[train_index], x_tr[val_index]
+    y_intents_train, y_intents_val = y_intents_tr[train_index], y_intents_tr[val_index]
+    y_slots_train, y_slots_val = y_slots_tr[train_index], y_slots_tr[val_index]
+    sentences_length_train, sentences_length_val = sentences_length_tr[train_index], sentences_length_tr[
+        val_index]
+    one_hot_intents_train, one_hot_intents_val = one_hot_intents_tr[train_index], one_hot_intents_tr[
+        val_index]
+    one_hot_slots_train, one_hot_slots_val = one_hot_slots_tr[train_index], one_hot_slots_tr[val_index]
+
+    val_data = dict()
+    val_data['x_val'] = x_val
+    val_data['y_intents_val'] = y_intents_val
+    val_data['y_slots_val'] = y_slots_val
+    val_data['sentences_len_val'] = sentences_length_val
+    val_data['one_hot_intents_val'] = one_hot_intents_val
+    val_data['one_hot_slots_val'] = one_hot_slots_val
+    val_data['slots_dict'] = data['slots_dict']
+    val_data['intents_dict'] = data['intents_dict']
+
+    train_data = dict()
+    train_data['x_tr'] = x_train
+    train_data['y_intents_tr'] = y_intents_train
+    train_data['y_slots_tr'] = y_slots_train
+    train_data['sentences_len_tr'] = sentences_length_train
+    train_data['one_hot_intents_tr'] = one_hot_intents_train
+    train_data['one_hot_slots_tr'] = one_hot_slots_train
+    train_data['encoded_intents_tr'] = one_hot_intents_train
+    train_data['encoded_slots_tr'] =  one_hot_slots_train
+
+    return val_data, train_data
+
+def data_subset(data, splitsNumber, index):
+    x_tr = data['x_tr']
+    y_intents_tr = data['y_intents_tr']
+    y_slots_tr = data['y_slots_tr']
+    sentences_length_tr = data['sentences_len_tr']
+
+    one_hot_intents_tr = data['encoded_intents_tr']
+    one_hot_slots_tr = data['encoded_slots_tr']
+    folding_result = list(StratifiedKFold(splitsNumber).split(x_tr, y_intents_tr))
+
+    train_index = np.array([], dtype=int)
+
+    for i in range(0, index):
+        train_index = np.concatenate((train_index, folding_result[i][1]))
+
+
+    x_train = x_tr[train_index]
+    y_intents_train = y_intents_tr[train_index]
+    y_slots_train = y_slots_tr[train_index]
+    sentences_length_train = sentences_length_tr[train_index]
+    one_hot_intents_train = one_hot_intents_tr[train_index]
+    one_hot_slots_train = one_hot_slots_tr[train_index]
+
+    train_data = dict()
+    train_data['x_tr'] = x_train
+    train_data['y_intents_tr'] = y_intents_train
+    train_data['y_slots_tr'] = y_slots_train
+    train_data['sentences_len_tr'] = sentences_length_train
+    train_data['one_hot_intents_tr'] = one_hot_intents_train
+    train_data['one_hot_slots_tr'] = one_hot_slots_train
+
+    return train_data
