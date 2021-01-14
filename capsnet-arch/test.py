@@ -37,22 +37,49 @@ INTENTS_ORDER = [
     'schimbaCanalTV',
 ]
 
-INTENT_CLASSES = {'aprindeLumina': 'lumina',
-                  'cresteIntensitateLumina': 'lumina',
-                  'cresteIntensitateMuzica': 'media',
-                  'cresteTemperatura': 'temperatura',
-                  'opresteMuzica': 'media',
-                  'opresteTV': 'media',
-                  'pornesteTV': 'media',
-                  'puneMuzica': 'media',
-                  'scadeIntensitateLumina': 'lumina',
-                  'scadeIntensitateMuzica': 'media',
-                  'scadeTemperatura': 'temperatura',
-                  'schimbaCanalTV': 'media',
-                  'schimbaIntensitateMuzica': 'media',
-                  'seteazaTemperatura': 'temperatura',
-                  'stingeLumina': 'lumina',
-                  'x': 'x'}
+INTENT_CLASSES = {
+    'aprindeLumina': 'lumina',
+    'cresteIntensitateLumina': 'lumina',
+    'cresteIntensitateMuzica': 'media',
+    'cresteTemperatura': 'temperatura',
+    'opresteMuzica': 'media',
+    'opresteTV': 'media',
+    'pornesteTV': 'media',
+    'puneMuzica': 'media',
+    'scadeIntensitateLumina': 'lumina',
+    'scadeIntensitateMuzica': 'media',
+    'scadeTemperatura': 'temperatura',
+    'schimbaCanalTV': 'media',
+    'schimbaIntensitateMuzica': 'media',
+    'seteazaTemperatura': 'temperatura',
+    'stingeLumina': 'lumina',
+    'x': 'x'
+}
+
+INTENT_TRANSLATIONS = {
+    'aprindeLumina': 'TurnOnLight',
+    'cresteIntensitateLumina': 'IncreaseLightIntensity',
+    'cresteIntensitateMuzica': 'IncreaseVolume',
+    'cresteTemperatura': 'IncreaseTemperature',
+    'opresteMuzica': 'StopMusic',
+    'opresteTV': 'StopTV',
+    'pornesteTV': 'StartTV',
+    'puneMuzica': 'PlayMusic',
+    'scadeIntensitateLumina': 'DecreaseLightIntensity',
+    'scadeIntensitateMuzica': 'DecreaseVolume',
+    'scadeTemperatura': 'DecreaseTemperature',
+    'schimbaCanalTV': 'ChangeTVChannel',
+    'schimbaIntensitateMuzica': 'ChangeVolume',
+    'seteazaTemperatura': 'SetTemperature',
+    'stingeLumina': 'TurnOffLight',
+    'x': 'x'
+}
+
+INTENT_CLASS_TRANSLATIONS = {
+    'lumina': 'light',
+    'temperatura': 'temperature',
+    'media': 'media'
+}
 
 
 def plot_confusion_matrix(y_true, y_pred, labels,
@@ -131,7 +158,7 @@ def eval_seq_scores(y_true, y_pred):
     return scores
 
 
-def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
+def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0, translate_eng=False):
     """ Evaluates the model on the test set
         Args:
             capsnet: CapsNet model
@@ -141,6 +168,7 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
             log_errs: if True, the intent and slot errors will be logged to a error file and confusion matrices will
                       be displayed
             epoch: current epoch
+            translate_eng: whether the plots should show the English translations of the intents or not
         Returns:
             f_score: intent detection F1 score
             scores['f1']: slot filling F1 score
@@ -239,24 +267,44 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         else:
             errors_dir = FLAGS.errors_dir
 
-        plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
+        if translate_eng:
+            y_intent_labels_true_conf = [INTENT_TRANSLATIONS[x] for x in y_intent_labels_true]
+            y_intent_labels_pred_conf = [INTENT_TRANSLATIONS[x] for x in y_intent_labels_pred]
+            intents_conf = [INTENT_TRANSLATIONS[x] for x in intents]
+        else:
+            y_intent_labels_true_conf = y_intent_labels_true
+            y_intent_labels_pred_conf = y_intent_labels_pred
+            intents_conf = intents
+
+        plot_confusion_matrix(y_intent_labels_true_conf, y_intent_labels_pred_conf, labels=intents_conf,
                               title='Confusion matrix', normalize=True, numbers=False)
-        plt.savefig('confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num))
+        if translate_eng:
+            fig_title = 'confusion_mats/conf_mat_eng_{}.png'.format(FLAGS.scenario_num)
+        else:
+            fig_title = 'confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num)
+        plt.savefig(fig_title)
         # plt.show()
 
         # For super-class confusion mat
-
-
         if 'x' in y_intent_labels_true or 'x' in y_intent_labels_pred:
             intent_classes_labels = ['lumina', 'temperatura', 'media', 'x']
         else:
             intent_classes_labels = ['lumina', 'temperatura', 'media']
-        intent_classes_true = [INTENT_CLASSES[intent] for intent in y_intent_labels_true]
-        intent_classes_pred = [INTENT_CLASSES[intent] for intent in y_intent_labels_pred]
+        if translate_eng:
+            intent_classes_true = [INTENT_CLASS_TRANSLATIONS[INTENT_CLASSES[intent]] for intent in y_intent_labels_true]
+            intent_classes_pred = [INTENT_CLASS_TRANSLATIONS[INTENT_CLASSES[intent]] for intent in y_intent_labels_pred]
+            intent_classes_labels = [INTENT_CLASS_TRANSLATIONS[x] for x in intent_classes_labels]
+        else:
+            intent_classes_true = [INTENT_CLASSES[intent] for intent in y_intent_labels_true]
+            intent_classes_pred = [INTENT_CLASSES[intent] for intent in y_intent_labels_pred]
         plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
                               title='Confusion matrix', normalize=True, numbers=True)
         # plt.show()
-        plt.savefig('confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num))
+        if translate_eng:
+            superclass_fig_title = 'confusion_mats/conf_mat_eng_{}_superclasses.png'.format(FLAGS.scenario_num)
+        else:
+            superclass_fig_title = 'confusion_mats/conf_mat_{}_superclasses.png'.format(FLAGS.scenario_num)
+        plt.savefig(superclass_fig_title)
         incorrect_intents = {}
         i = 0
         for t, pr in zip(y_intent_labels_true, y_intent_labels_pred):
@@ -323,7 +371,8 @@ def test(model, data, FLAGS):
             print('Restoring Variables from Checkpoint for testing')
             saver = tf.train.Saver()
             saver.restore(sess, tf.train.latest_checkpoint(ckpt_dir))
-            intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess, log_errs=True)
+            intent_f_score, slot_f_score = evaluate_test(capsnet, test_data, FLAGS, sess,
+                                                         log_errs=True, translate_eng=False)
             print('Intent F1: %lf' % intent_f_score)
             print('Slot F1: %lf' % slot_f_score)
             return intent_f_score, slot_f_score
@@ -334,10 +383,10 @@ def test(model, data, FLAGS):
 def main():
     word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice-cc-100.vec'
 
-    training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
-    test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario33/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario33/test.txt'
 
-    FLAGS = flags.define_app_flags('1-tensorboard-40-examples')
+    FLAGS = flags.define_app_flags('33-vec-fasttext-100')
 
     # Load data
     print('------------------load word2vec begin-------------------')

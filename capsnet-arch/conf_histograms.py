@@ -5,7 +5,7 @@ import matplotlib.ticker as ticker
 import os
 import errno
 
-from test import INTENT_CLASSES, INTENTS_ORDER
+from test import INTENT_CLASSES, INTENTS_ORDER, INTENT_TRANSLATIONS
 
 from enum import Enum
 
@@ -282,7 +282,7 @@ def do_conf_matrix_plot(confidences, intents, plot_filename, title='', cbarlabel
     # plt.show()
 
 
-def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True):
+def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True, translate_eng=False):
     '''
 
     Args:
@@ -330,16 +330,28 @@ def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True):
                 confs[potential_intent + '-normalizedAvg'] = average(conf_list) * confs[potential_intent + 'Nr'] / confs['nrTrue']
 
     intents = [x for x in INTENTS_ORDER if x in intents_set]
+    if translate_eng:
+        intent_labels = [INTENT_TRANSLATIONS[x] for x in intents]
+    else:
+        intent_labels = intents
     confidences = get_conf_matrix(conf_dict, intents, '-avg')
 
-    do_conf_matrix_plot(confidences, intents, plot_filename, title)
+    if translate_eng:
+        conf_matrix_fname = plot_filename + '-eng'
+    else:
+        conf_matrix_fname = plot_filename
+    do_conf_matrix_plot(confidences, intent_labels, conf_matrix_fname, title)
 
     normalized_confidences = get_conf_matrix(conf_dict, intents, '-normalizedAvg')
 
-    do_conf_matrix_plot(normalized_confidences, intents, plot_filename + '-normalized', title + ' (normalized)')
+    if translate_eng:
+        conf_matrix_fname = plot_filename + '-normalized' + '-eng'
+    else:
+        conf_matrix_fname = plot_filename + '-normalized'
+    do_conf_matrix_plot(normalized_confidences, intent_labels, conf_matrix_fname, title + ' (normalized)')
 
 
-def plot_conf_levels(input_path, plot_filename, scenario_num, file_content, plot_matrix=False):
+def plot_conf_levels(input_path, plot_filename, scenario_num, file_content, plot_matrix=False, translate_eng=False):
     with open(input_path, errors='replace', encoding='utf-8') as f:
         results = json.load(f)
     title_prefix = 'Correct predictions sc ' + scenario_num
@@ -347,7 +359,8 @@ def plot_conf_levels(input_path, plot_filename, scenario_num, file_content, plot
         title_prefix = 'Error predictions sc ' + scenario_num
     plot_conf_all_intents(results, plot_filename.format('overall'), title_prefix + ' - overall')
     if plot_matrix:
-        plot_conf_matrix(results, plot_filename.format('matrix'), title_prefix + ' - confidence matrix')
+        plot_conf_matrix(results, plot_filename.format('matrix'), title_prefix + ' - confidence matrix',
+                         translate_eng=translate_eng)
 
 
 def get_err_type(true_intent, pred_intent):
@@ -483,10 +496,11 @@ def main():
         plots_base_dir = corr.split('/')[:-1]
         plots_base_dir = '/'.join(plots_base_dir) + '/plots/{}-'
         print('------{}------'.format(corr))
-        show_intent_errors(err, sc_nr)
-        show_slot_errors(corr, err, sc_nr)
-        # plot_conf_levels(corr, plots_base_dir + corr.split('/')[-1][:-5], sc_nr, FileContents.correct)
-        # plot_conf_levels(err, plots_base_dir + err.split('/')[-1][:-5], sc_nr, FileContents.errors, plot_matrix=True)
+        # show_intent_errors(err, sc_nr)
+        # show_slot_errors(corr, err, sc_nr)
+        plot_conf_levels(corr, plots_base_dir + corr.split('/')[-1][:-5], sc_nr, FileContents.correct)
+        plot_conf_levels(err, plots_base_dir + err.split('/')[-1][:-5], sc_nr, FileContents.errors,
+                         plot_matrix=True, translate_eng=True)
 
 
 if __name__ == '__main__':
