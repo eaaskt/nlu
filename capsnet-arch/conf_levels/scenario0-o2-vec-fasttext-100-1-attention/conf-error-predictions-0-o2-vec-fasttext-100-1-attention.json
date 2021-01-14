@@ -1,0 +1,117 @@
+[
+    {
+        "trueIntent": "scadeIntensitateLumina",
+        "predictedIntent": "aprindeLumina",
+        "testData": "aș vrea să reduci intensitatea iluminatului în sufragerie 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "aprindeLumina": 0.8292770385742188,
+            "scadeIntensitateLumina": 0.304739773273468,
+            "pornesteTV": 0.1602766066789627,
+            "schimbaCanalTV": 0.050617869943380356,
+            "seteazaTemperatura": 0.047648221254348755,
+            "cresteIntensitateLumina": 0.02564319223165512,
+            "cresteIntensitateMuzica": 0.015874406322836876,
+            "opresteMuzica": 0.008128662593662739,
+            "cresteTemperatura": 0.006285251118242741,
+            "puneMuzica": 0.005238463170826435,
+            "stingeLumina": 0.004208924248814583,
+            "scadeIntensitateMuzica": 0.001853469293564558,
+            "opresteTV": 0.0014571230858564377,
+            "scadeTemperatura": 0.00042204343480989337
+        }
+    },
+    {
+        "trueIntent": "cresteIntensitateMuzica",
+        "predictedIntent": "opresteMuzica",
+        "testData": "Pepper crește intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "opresteMuzica": 0.8312985897064209,
+            "cresteIntensitateMuzica": 0.35378533601760864,
+            "puneMuzica": 0.12886980175971985,
+            "schimbaCanalTV": 0.058899637311697006,
+            "cresteIntensitateLumina": 0.04836184158921242,
+            "opresteTV": 0.0482083298265934,
+            "stingeLumina": 0.03217757120728493,
+            "scadeIntensitateMuzica": 0.029277680441737175,
+            "scadeTemperatura": 0.010629306547343731,
+            "cresteTemperatura": 0.008975064381957054,
+            "pornesteTV": 0.007309174630790949,
+            "aprindeLumina": 0.006817541550844908,
+            "scadeIntensitateLumina": 0.003969830460846424,
+            "seteazaTemperatura": 0.002596605336293578
+        }
+    },
+    {
+        "trueIntent": "cresteIntensitateMuzica",
+        "predictedIntent": "scadeIntensitateMuzica",
+        "testData": "Pepper fă mai tare simfonia 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "scadeIntensitateMuzica": 0.8923212885856628,
+            "opresteMuzica": 0.17588594555854797,
+            "cresteIntensitateMuzica": 0.1078767478466034,
+            "aprindeLumina": 0.09178401529788971,
+            "scadeTemperatura": 0.09063653647899628,
+            "puneMuzica": 0.0849965289235115,
+            "opresteTV": 0.07419570535421371,
+            "schimbaCanalTV": 0.06493248790502548,
+            "cresteIntensitateLumina": 0.0259198397397995,
+            "stingeLumina": 0.0203174389898777,
+            "scadeIntensitateLumina": 0.0027528549544513226,
+            "pornesteTV": 0.0019291627686470747,
+            "cresteTemperatura": 0.0007144875125959516,
+            "seteazaTemperatura": 0.0006941138999536633
+        }
+    },
+    {
+        "trueIntent": "scadeIntensitateMuzica",
+        "predictedIntent": "opresteMuzica",
+        "testData": "Pepper redu intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "opresteMuzica": 0.5432197451591492,
+            "cresteIntensitateMuzica": 0.42337551712989807,
+            "cresteIntensitateLumina": 0.271756649017334,
+            "scadeIntensitateLumina": 0.09458798170089722,
+            "aprindeLumina": 0.07491318881511688,
+            "opresteTV": 0.04537007212638855,
+            "schimbaCanalTV": 0.021951930597424507,
+            "cresteTemperatura": 0.018323849886655807,
+            "pornesteTV": 0.01687212474644184,
+            "scadeTemperatura": 0.004211053717881441,
+            "stingeLumina": 0.003651751670986414,
+            "seteazaTemperatura": 0.001971437595784664,
+            "puneMuzica": 0.0018172216368839145,
+            "scadeIntensitateMuzica": 0.0008865986601449549
+        }
+    },
+    {
+        "trueIntent": "scadeIntensitateMuzica",
+        "predictedIntent": "opresteMuzica",
+        "testData": "Pepper redu intensitatea simfoniei 0 0 0 0 0 0 0 0 0 0 0",
+        "trueSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "predSlots": "['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']",
+        "confidenceList": {
+            "opresteMuzica": 0.426063597202301,
+            "schimbaCanalTV": 0.175638347864151,
+            "cresteIntensitateLumina": 0.13701552152633667,
+            "cresteIntensitateMuzica": 0.07218772917985916,
+            "opresteTV": 0.04578171297907829,
+            "scadeIntensitateLumina": 0.03237127140164375,
+            "aprindeLumina": 0.025645066052675247,
+            "scadeIntensitateMuzica": 0.019058194011449814,
+            "stingeLumina": 0.01072000339627266,
+            "pornesteTV": 0.010095231235027313,
+            "cresteTemperatura": 0.006851192098110914,
+            "scadeTemperatura": 0.005341989453881979,
+            "seteazaTemperatura": 0.0037540195044130087,
+            "puneMuzica": 0.0022639662493020296
+        }
+    }
+]

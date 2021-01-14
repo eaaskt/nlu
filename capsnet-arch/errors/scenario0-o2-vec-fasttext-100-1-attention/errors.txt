@@ -1,0 +1,37 @@
+INTENT ERRORS
+scadeIntensitateLumina
+aș vrea să reduci intensitatea iluminatului în sufragerie 0 0 0 0 0 0 0 -> aprindeLumina
+
+cresteIntensitateMuzica
+Pepper crește intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 -> opresteMuzica
+Pepper fă mai tare simfonia 0 0 0 0 0 0 0 0 0 0 -> scadeIntensitateMuzica
+
+scadeIntensitateMuzica
+Pepper redu intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 -> opresteMuzica
+Pepper redu intensitatea simfoniei 0 0 0 0 0 0 0 0 0 0 0 -> opresteMuzica
+
+SLOT ERRORS
+Hey mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade în tot apartamentul
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc', 'I-loc']
+
+Pepper mi-ar plăcea să ridici cu un grad în bucătărie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Bună Pepper mi-ar plăcea să scazi temperatura pe douăzeci și unu de grade în bucătărie
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc']
+
+dă mai tare volumul la piesa 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+crește volumul la triplu 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+aș vrea să mărești volumul la dublu 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+

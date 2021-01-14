@@ -34,22 +34,6 @@ def dump_flags(FLAGS):
         json.dump(flags_dict, f, indent=4)
 
 
-def eval_seq_scores(y_true, y_pred):
-    """ Performs sequence evaluation on slot labels
-        Args:
-            y_true: true slot labels
-            y_pred: predicted slot labels
-        Returns:
-            scores: dict containing the evaluation scores: f1, accuracy, precision, recall
-    """
-    scores = dict()
-    scores['f1'] = f1_score(y_true, y_pred)
-    scores['accuracy'] = accuracy_score(y_true, y_pred)
-    scores['precision'] = precision_score(y_true, y_pred)
-    scores['recall'] = recall_score(y_true, y_pred)
-    return scores
-
-
 def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False, calculate_learning_curves=False):
     """ Evaluates the model on the validation set
         Args:
@@ -74,9 +58,9 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False, 
 
     # Define TensorBoard writer
     if log:
-        writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-' + str(fold), sess.graph)
+        writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/' + FLAGS.scenario_num + '-validation-' + str(fold), sess.graph)
     if calculate_learning_curves:
-        writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/validation-lc', sess.graph)
+        writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/' + FLAGS.scenario_num + '-validation-lc', sess.graph)
 
     total_intent_pred = []
     total_slots_pred = []
@@ -111,9 +95,12 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False, 
         loss_val = loss_summary
         # Add TensorBoard summaries to FileWriter
         if log:
-            writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
-            writer.add_summary(margin_loss_summary, epoch * test_batch + i)
-            writer.add_summary(loss_summary, epoch * test_batch + i)
+            # writer.add_summary(cross_entropy_summary, epoch * test_batch + i)
+            # writer.add_summary(margin_loss_summary, epoch * test_batch + i)
+            # writer.add_summary(loss_summary, epoch * test_batch + i)
+            writer.add_summary(cross_entropy_summary, epoch + i)
+            writer.add_summary(margin_loss_summary, epoch + i)
+            writer.add_summary(loss_summary, epoch + i)
 
         # Modify prediction vectors dimensions to prepare for argmax
         intent_outputs_reduced_dim = tf.squeeze(intent_outputs, axis=[1, 4])
@@ -155,6 +142,22 @@ def evaluate_validation(capsnet, val_data, FLAGS, sess, epoch, fold, log=False, 
     # print('Recall: %lf' % scores['recall'])
 
     return f_score, scores['f1']
+
+
+def eval_seq_scores(y_true, y_pred):
+    """ Performs sequence evaluation on slot labels
+        Args:
+            y_true: true slot labels
+            y_pred: predicted slot labels
+        Returns:
+            scores: dict containing the evaluation scores: f1, accuracy, precision, recall
+    """
+    scores = dict()
+    scores['f1'] = f1_score(y_true, y_pred)
+    scores['accuracy'] = accuracy_score(y_true, y_pred)
+    scores['precision'] = precision_score(y_true, y_pred)
+    scores['recall'] = recall_score(y_true, y_pred)
+    return scores
 
 
 def generate_batch(n, batch_size):
@@ -237,7 +240,7 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
             best_f_score_slot_fold = slot_f_score
 
         if log:
-            train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-fold' + str(fold), sess.graph)
+            train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/' + FLAGS.scenario_num + '-train-fold' + str(fold), sess.graph)
 
         # Training cycle
         train_sample_num = x_train.shape[0]
@@ -286,9 +289,11 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
                     train_writer.add_summary(loss_summary, batch_num * epoch + batch)
 
             print('------------------epoch : ', epoch, ' Loss: ', loss, '----------------------')
+            # TODO: figure out a more permanent fix for correct epoch numbering (so that validation and training are
+            #  not shifted, and it still works for various train/validation splits
             intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
-                                                               sess, epoch=epoch + 1, fold=fold, log=log,
-                                                               calculate_learning_curves=calculate_learning_curves)
+                                                               # sess, epoch=epoch + 1, fold=fold, log=log)
+                                                               sess, epoch=batch_num * epoch, fold=fold, log=log)
             f_score_mean = (intent_f_score + slot_f_score) / 2
             if f_score_mean > best_f_score:
                 # best score overall -> save model
@@ -309,8 +314,12 @@ def train_cross_validation(model, train_data, val_data, embedding, FLAGS, fold, 
                 best_f_score_intent_fold = intent_f_score
                 best_f_score_slot_fold = slot_f_score
         if calculate_learning_curves:
-            train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/train-lc', sess.graph)
+            train_writer = tf.summary.FileWriter(FLAGS.summaries_dir + '/' + FLAGS.scenario_num + '-train-lc', sess.graph)
             train_writer.add_summary(loss_train, fold)
+
+            intent_f_score, slot_f_score = evaluate_validation(capsnet, val_data, FLAGS,
+                                                               sess, epoch=epoch + 1, fold=fold, log=log,
+                                                               calculate_learning_curves=True)
     return best_f_score, best_f_score_mean_fold, best_f_score_intent_fold, best_f_score_slot_fold
 
 
@@ -387,13 +396,13 @@ def train(model, data, FLAGS, batches_rand=False, log=False):
 
 
 def main():
-    word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice.vec'
+    word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice-cc-100.vec'
 
     training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
     test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
     # Define the flags
-    FLAGS = flags.define_app_flags('1-test-use-attention')
+    FLAGS = flags.define_app_flags('1-spikes-test')
 
     # Load data
     print('------------------load word2vec begin-------------------')

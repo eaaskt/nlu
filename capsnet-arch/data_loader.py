@@ -245,11 +245,8 @@ def read_datasets(w2v, training_data_path, test_data_path, test=False, lowercase
     print('------------------read datasets end---------------------')
     return data
 
-#
-# def subset_data(data, index):
 
-
-def extract_validation(data, FLAGS):
+def extract_validation(data, nr_splits):
     x_tr = data['x_tr']
     y_intents_tr = data['y_intents_tr']
     y_slots_tr = data['y_slots_tr']
@@ -257,7 +254,7 @@ def extract_validation(data, FLAGS):
 
     one_hot_intents_tr = data['encoded_intents_tr']
     one_hot_slots_tr = data['encoded_slots_tr']
-    folding_result = list(StratifiedKFold(FLAGS.n_splits).split(x_tr, y_intents_tr))
+    folding_result = list(StratifiedKFold(nr_splits).split(x_tr, y_intents_tr))
 
     train_index = folding_result[0][0]
     val_index = folding_result[0][1]
@@ -291,6 +288,7 @@ def extract_validation(data, FLAGS):
     train_data['encoded_slots_tr'] =  one_hot_slots_train
 
     return val_data, train_data
+
 
 def data_subset(data, splitsNumber, index):
     x_tr = data['x_tr']

@@ -20,6 +20,41 @@ import html_report_generator
 import conf_levels_generator
 
 
+INTENTS_ORDER = [
+    'aprindeLumina',
+    'stingeLumina',
+    'cresteIntensitateLumina',
+    'scadeIntensitateLumina',
+    'cresteTemperatura',
+    'scadeTemperatura',
+    'seteazaTemperatura',
+    'cresteIntensitateMuzica',
+    'scadeIntensitateMuzica',
+    'puneMuzica',
+    'opresteMuzica',
+    'pornesteTV',
+    'opresteTV',
+    'schimbaCanalTV',
+]
+
+INTENT_CLASSES = {'aprindeLumina': 'lumina',
+                  'cresteIntensitateLumina': 'lumina',
+                  'cresteIntensitateMuzica': 'media',
+                  'cresteTemperatura': 'temperatura',
+                  'opresteMuzica': 'media',
+                  'opresteTV': 'media',
+                  'pornesteTV': 'media',
+                  'puneMuzica': 'media',
+                  'scadeIntensitateLumina': 'lumina',
+                  'scadeIntensitateMuzica': 'media',
+                  'scadeTemperatura': 'temperatura',
+                  'schimbaCanalTV': 'media',
+                  'schimbaIntensitateMuzica': 'media',
+                  'seteazaTemperatura': 'temperatura',
+                  'stingeLumina': 'lumina',
+                  'x': 'x'}
+
+
 def plot_confusion_matrix(y_true, y_pred, labels,
                           normalize=False,
                           title=None,
@@ -178,7 +213,8 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
     y_intent_labels_pred = [intents_dict[i] for i in total_intent_pred]
     intent_confidence_tuples = [[(intents_dict[x], conf[x]) for x in range(len(conf))] for conf in total_intent_conf_level]
     [conf.sort(key=lambda tup: tup[1], reverse=True) for conf in intent_confidence_tuples]
-    intents = sorted(list(set(y_intent_labels_true)))
+    intents_set = set(y_intent_labels_true)
+    intents = [x for x in INTENTS_ORDER if x in intents_set]
     f_score = scikit_f1(y_intent_labels_true, y_intent_labels_pred, average='micro', labels=intents)
     print(classification_report(y_intent_labels_true, y_intent_labels_pred, digits=4))
     print('Intent accuracy %lf' % intents_acc)
@@ -206,31 +242,17 @@ def evaluate_test(capsnet, data, FLAGS, sess, log_errs=False, epoch=0):
         plot_confusion_matrix(y_intent_labels_true, y_intent_labels_pred, labels=intents,
                               title='Confusion matrix', normalize=True, numbers=False)
         plt.savefig('confusion_mats/conf_mat_{}.png'.format(FLAGS.scenario_num))
+        # plt.show()
 
         # For super-class confusion mat
-        intent_classes = {'aprindeLumina': 'lumina',
-                          'cresteIntensitateLumina': 'lumina',
-                          'cresteIntensitateMuzica': 'media',
-                          'cresteTemperatura': 'temperatura',
-                          'opresteMuzica': 'media',
-                          'opresteTV': 'media',
-                          'pornesteTV': 'media',
-                          'puneMuzica': 'media',
-                          'scadeIntensitateLumina': 'lumina',
-                          'scadeIntensitateMuzica': 'media',
-                          'scadeTemperatura': 'temperatura',
-                          'schimbaCanalTV': 'media',
-                          'schimbaIntensitateMuzica': 'media',
-                          'seteazaTemperatura': 'temperatura',
-                          'stingeLumina': 'lumina',
-                          'x': 'x'}
+
 
         if 'x' in y_intent_labels_true or 'x' in y_intent_labels_pred:
-            intent_classes_labels = ['lumina', 'media', 'temperatura', 'x']
+            intent_classes_labels = ['lumina', 'temperatura', 'media', 'x']
         else:
-            intent_classes_labels = ['lumina', 'media', 'temperatura']
-        intent_classes_true = [intent_classes[intent] for intent in y_intent_labels_true]
-        intent_classes_pred = [intent_classes[intent] for intent in y_intent_labels_pred]
+            intent_classes_labels = ['lumina', 'temperatura', 'media']
+        intent_classes_true = [INTENT_CLASSES[intent] for intent in y_intent_labels_true]
+        intent_classes_pred = [INTENT_CLASSES[intent] for intent in y_intent_labels_pred]
         plot_confusion_matrix(intent_classes_true, intent_classes_pred, labels=intent_classes_labels,
                               title='Confusion matrix', normalize=True, numbers=True)
         # plt.show()
@@ -312,10 +334,10 @@ def test(model, data, FLAGS):
 def main():
     word2vec_path = '../../romanian_word_vecs/cleaned-vectors-diacritice-cc-100.vec'
 
-    training_data_path = '../data-capsnets/diacritics/scenario0/train.txt'
-    test_data_path = '../data-capsnets/diacritics/scenario0/test.txt'
+    training_data_path = '../data-capsnets/diacritics/scenario1/train.txt'
+    test_data_path = '../data-capsnets/diacritics/scenario1/test.txt'
 
-    FLAGS = flags.define_app_flags('0-vec-fasttext-100')
+    FLAGS = flags.define_app_flags('1-tensorboard-40-examples')
 
     # Load data
     print('------------------load word2vec begin-------------------')

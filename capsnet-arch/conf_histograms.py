@@ -5,11 +5,49 @@ import matplotlib.ticker as ticker
 import os
 import errno
 
+from test import INTENT_CLASSES, INTENTS_ORDER
+
 from enum import Enum
 
 
 BASE_DIR = 'conf_levels/'
 SCENARIO_NAME = 'vec-fasttext-100'
+SLOT_ERRS_BASE_DIR = 'slot-errors/'
+INTENT_ERRS_BASE_DIR = 'intent-error-categories/'
+
+# ERR1 = Opposite intents
+ERR1_INTENT_PAIRS = [
+    ('aprindeLumina', 'stingeLumina'),
+    ('cresteIntensitateLumina', 'scadeIntensitateLumina'),
+    ('cresteTemperatura', 'scadeTemperatura'),
+    ('pornesteTV', 'opresteTV'),
+    ('puneMuzica', 'opresteMuzica'),
+    ('cresteIntensitateMuzica', 'scadeIntensitateMuzica'),
+]
+
+# ERR2 = Same action, diff object
+ERR2_INTENT_PAIRS = [
+    ('aprindeLumina', 'pornesteTV'),
+    ('stingeLumina', 'opresteTV'),
+    ('opresteMuzica', 'opresteTV'),
+    ('pornesteTV', 'puneMuzica'),
+    # The next ones don't really appear too much, we can try to comment them out
+    ('aprindeLumina', 'puneMuzica'),
+    ('stingeLumina', 'opresteMuzica'),
+    ('cresteIntensitateLumina', 'cresteIntensitateMuzica'),
+    ('scadeIntensitateLumina', 'scadeIntensitateMuzica'),
+    ('cresteIntensitateLumina', 'cresteTemperatura'),
+    ('scadeIntensitateLumina', 'scadeTemperatura'),
+    ('cresteTemperatura', 'cresteIntensitateMuzica'),
+    ('scadeTemperatura', 'scadeIntensitateMuzica'),
+]
+
+# ERR3 = Same class of intents, same object of an action but the actions themselves are not quite opposites
+ERR3_INTENT_PAIRS = [
+    ('cresteTemperatura', 'seteazaTemperatura'),
+    ('scadeTemperatura', 'seteazaTemperatura'),
+    ('pornesteTV', 'schimbaCanalTV'),
+]
 
 
 def setup_input_files():
@@ -84,8 +122,8 @@ def heatmap(data, row_labels, col_labels, ax=None,
     ax.set_xticks(np.arange(data.shape[1]))
     ax.set_yticks(np.arange(data.shape[0]))
     # ... and label them with the respective list entries.
-    ax.set_xticklabels(col_labels)
-    ax.set_yticklabels(row_labels)
+    ax.set_xticklabels(col_labels, fontsize=13)
+    ax.set_yticklabels(row_labels, fontsize=13)
 
     # Let the horizontal axes labeling appear on top.
     ax.tick_params(top=True, bottom=False,
@@ -184,8 +222,9 @@ def plot_histogram(confidence_levels, plot_filename, title=''):
         except OSError as exc:  # Guard against race condition
             if exc.errno != errno.EEXIST:
                 raise
-    plt.savefig(fname)
+    plt.savefig(fname, bbox_inches='tight')
     plt.clf()
+    # plt.show()
 
 
 def plot_conf_all_intents(results, plot_filename, hist_title=''):
@@ -199,6 +238,48 @@ def plot_conf_all_intents(results, plot_filename, hist_title=''):
 
 def average(lst):
     return sum(lst) / len(lst)
+
+
+def valid_intent(intent_name):
+    return (intent_name[-2:] != 'Nr' and intent_name != 'nrTrue'
+            and '-avg' not in intent_name and '-normalizedAvg' not in intent_name)
+
+
+def get_conf_matrix(conf_dict, intents, value_key_prefix):
+    confidences = [[0] * len(intents) for _ in intents]
+    i = 0
+    for t_intent in intents:
+        j = 0
+        for p_intent in intents:
+            if (t_intent != p_intent) and t_intent in conf_dict and (p_intent in conf_dict[t_intent]):
+                confidences[i][j] = conf_dict[t_intent][p_intent + value_key_prefix]
+            j += 1
+        i += 1
+
+    np_confidences = np.array(confidences)
+    return np_confidences
+
+
+def do_conf_matrix_plot(confidences, intents, plot_filename, title='', cbarlabel="average confidence"):
+    fig, ax = plt.subplots(figsize=(20, 10))
+    im, cbar = heatmap(confidences, intents, intents, ax=ax,
+                       cmap="YlGn", cbarlabel=cbarlabel)
+    texts = annotate_heatmap(im, valfmt="{x:.2f}")
+
+    fig.tight_layout()
+    plt.title(title)
+
+    fname = '{}.png'.format(plot_filename)
+    if not os.path.exists(os.path.dirname(fname)):
+        try:
+            os.makedirs(os.path.dirname(fname))
+        except OSError as exc:  # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
+
+    plt.savefig(fname, bbox_inches='tight')
+    plt.clf()
+    # plt.show()
 
 
 def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True):
@@ -222,13 +303,19 @@ def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True):
         intents_set.add(ex['trueIntent'])
         if ex['trueIntent'] not in conf_dict:
             conf_dict[ex['trueIntent']] = dict()
+            conf_dict[ex['trueIntent']]['nrTrue'] = 0
         intents_conf = ex['confidenceList']
+        conf_dict[ex['trueIntent']]['nrTrue'] += 1
         if only_true_vs_pred:
             pred_intent = ex['predictedIntent']
             intents_set.add(pred_intent)
             if pred_intent not in conf_dict[ex['trueIntent']]:
                 conf_dict[ex['trueIntent']][pred_intent] = []
+                conf_dict[ex['trueIntent']][pred_intent + 'Nr'] = 0
+                conf_dict[ex['trueIntent']][pred_intent + '-avg'] = 0
+                conf_dict[ex['trueIntent']][pred_intent + '-normalizedAvg'] = 0
             conf = intents_conf[pred_intent]
+            conf_dict[ex['trueIntent']][pred_intent + 'Nr'] += 1
             conf_dict[ex['trueIntent']][pred_intent].append(conf * 100)
         else:
             for intent, conf in intents_conf.items():
@@ -238,41 +325,18 @@ def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True):
 
     for true_intent, confs in conf_dict.items():
         for potential_intent, conf_list in confs.items():
-            confs[potential_intent] = average(conf_list)
+            if valid_intent(potential_intent):
+                confs[potential_intent + '-avg'] = average(conf_list)
+                confs[potential_intent + '-normalizedAvg'] = average(conf_list) * confs[potential_intent + 'Nr'] / confs['nrTrue']
 
-    intents = list(intents_set)
-    intents.sort()
-    confidences = [[0] * len(intents) for _ in intents]
-    i = 0
-    for t_intent in intents:
-        j = 0
-        for p_intent in intents:
-            if (t_intent != p_intent) and t_intent in conf_dict and (p_intent in conf_dict[t_intent]):
-                confidences[i][j] = conf_dict[t_intent][p_intent]
-            j += 1
-        i += 1
+    intents = [x for x in INTENTS_ORDER if x in intents_set]
+    confidences = get_conf_matrix(conf_dict, intents, '-avg')
 
-    np_confidences = np.array(confidences)
+    do_conf_matrix_plot(confidences, intents, plot_filename, title)
 
-    fig, ax = plt.subplots(figsize=(20, 10))
-    im, cbar = heatmap(np_confidences, intents, intents, ax=ax,
-                       cmap="YlGn", cbarlabel="average confidence")
-    texts = annotate_heatmap(im, valfmt="{x:.2f}")
+    normalized_confidences = get_conf_matrix(conf_dict, intents, '-normalizedAvg')
 
-    fig.tight_layout()
-    plt.title(title)
-
-    fname = '{}.png'.format(plot_filename)
-    if not os.path.exists(os.path.dirname(fname)):
-        try:
-            os.makedirs(os.path.dirname(fname))
-        except OSError as exc:  # Guard against race condition
-            if exc.errno != errno.EEXIST:
-                raise
-
-    plt.savefig(fname)
-    plt.clf()
-    # plt.show()
+    do_conf_matrix_plot(normalized_confidences, intents, plot_filename + '-normalized', title + ' (normalized)')
 
 
 def plot_conf_levels(input_path, plot_filename, scenario_num, file_content, plot_matrix=False):
@@ -286,14 +350,143 @@ def plot_conf_levels(input_path, plot_filename, scenario_num, file_content, plot
         plot_conf_matrix(results, plot_filename.format('matrix'), title_prefix + ' - confidence matrix')
 
 
+def get_err_type(true_intent, pred_intent):
+    if (true_intent, pred_intent) in ERR1_INTENT_PAIRS or \
+            (pred_intent, true_intent) in ERR1_INTENT_PAIRS:
+        return 'ERR1'
+    if (true_intent, pred_intent) in ERR2_INTENT_PAIRS or \
+            (pred_intent, true_intent) in ERR2_INTENT_PAIRS:
+        return 'ERR2'
+    if (true_intent, pred_intent) in ERR3_INTENT_PAIRS or \
+            (pred_intent, true_intent) in ERR3_INTENT_PAIRS:
+        return 'ERR3'
+    return 'other'
+
+
+def classify_err_types(errs):
+    errs_dict = dict()
+    errs_dict['ERR1'] = []
+    errs_dict['ERR2'] = []
+    errs_dict['ERR3'] = []
+    errs_dict['other'] = []
+
+    for ex in errs:
+        true_intent = ex['trueIntent']
+        pred_intent = ex['predictedIntent']
+        err_type = get_err_type(true_intent, pred_intent)
+        errs_dict[err_type].append(ex)
+    return errs_dict
+
+
+def get_incorrect_slots(res):
+    slot_errs = 0
+
+    superclass_dict = dict()
+    superclass_dict['lumina'] = 0
+    superclass_dict['temperatura'] = 0
+    superclass_dict['media'] = 0
+
+    slot_err_str = ''
+    for ex in res:
+        if ex['trueSlots'] != ex['predSlots']:
+            slot_err_str += '{}\n'.format(ex['testData'])
+            slot_err_str += '{}\n'.format(ex['trueIntent'])
+            slot_err_str += '{}\n'.format(ex['trueSlots'])
+            slot_err_str += '{}\n\n'.format(ex['predSlots'])
+            slot_errs += 1
+            superclass_dict[INTENT_CLASSES[ex['trueIntent']]] += 1
+    return slot_errs, slot_err_str, superclass_dict
+
+
+def show_intent_errors(input_path_err, scenario_nr):
+    with open(input_path_err, errors='replace', encoding='utf-8') as f:
+        results_err = json.load(f)
+
+    intent_str = 'SCENARIO: {}\n'.format(scenario_nr)
+
+    total_intent_errs = 0
+    err_types_dict = classify_err_types(results_err)
+    err_types_count = dict()
+
+    for err_type, errs in err_types_dict.items():
+        intent_str += '------------{}------------\n'.format(err_type)
+        for err in errs:
+            intent_str += '{} {}->{}\n'.format(err['testData'], err['trueIntent'], err['predictedIntent'])
+        err_types_count[err_type] = len(errs)
+        total_intent_errs += err_types_count[err_type]
+        intent_str += '{} TOTAL = {}\n\n'.format(err_type, err_types_count[err_type])
+
+    intent_str += 'TOTAL INTENT ERRORS = {}\n\n\n'.format(total_intent_errs)
+
+    for err_type, count in err_types_count.items():
+        percentage = float(count) * 100 / total_intent_errs
+        intent_str += '{} -- {:.2f}\n'.format(err_type, percentage)
+
+    output_path = INTENT_ERRS_BASE_DIR + 'intent-errs-' + scenario_nr + '-' + SCENARIO_NAME + '.txt'
+    with open(output_path, 'w') as f:
+        f.write(intent_str)
+
+
+def get_superclass_slot_errs_report(superclass_dict, superclass_dict_errs, total_slot_errs):
+    slot_errs_str = ''
+
+    light_errs_total = superclass_dict['lumina'] + superclass_dict_errs['lumina']
+    temp_errs_total = superclass_dict['temperatura'] + superclass_dict_errs['temperatura']
+    media_errs_total = superclass_dict['media'] + superclass_dict_errs['media']
+
+    slot_errs_str += 'LIGHT class slot errors: {} ({:.2f})\n'.format(
+        light_errs_total, float(light_errs_total) * 100 / total_slot_errs)
+    slot_errs_str += 'TEMP class slot errors: {} ({:.2f})\n'.format(
+        temp_errs_total, float(temp_errs_total) * 100 / total_slot_errs)
+    slot_errs_str += 'MEDIA class slot errors: {} ({:.2f})\n'.format(
+        media_errs_total, float(media_errs_total) * 100 / total_slot_errs)
+
+    return slot_errs_str
+
+
+def show_slot_errors(input_path_correct, input_path_err, scenario_nr):
+    with open(input_path_correct, errors='replace', encoding='utf-8') as f:
+        results_correct = json.load(f)
+
+    slot_errs_str = 'SCENARIO: {}\n'.format(scenario_nr)
+
+    total_slot_errs = 0
+    slot_errs_str += '\nCORRECTLY PREDICTED INTENTS:\n'
+    errs_nr, errs_str, superclass_dict = get_incorrect_slots(results_correct)
+    total_slot_errs += errs_nr
+    slot_errs_str += errs_str
+    correct_intent_slot_errs = total_slot_errs
+    slot_errs_str += '\nNR SLOT ERRORS (CORRECT INTENTS): {}\n'.format(correct_intent_slot_errs)
+
+    with open(input_path_err, errors='replace', encoding='utf-8') as f:
+        results_err = json.load(f)
+
+    slot_errs_str += '\nINCORRECTLY PREDICTED INTENTS:\n'
+    errs_nr, errs_str, superclass_dict_errs = get_incorrect_slots(results_err)
+    total_slot_errs += errs_nr
+    slot_errs_str += errs_str
+    slot_errs_str += '\nNR SLOT ERRORS (INCORRECT INTENTS): {}\n'.format(total_slot_errs - correct_intent_slot_errs)
+
+    slot_errs_str += '\nTotal slot errors: {}\n'.format(total_slot_errs)
+
+    slot_errs_str += get_superclass_slot_errs_report(superclass_dict, superclass_dict_errs, total_slot_errs)
+
+    output_path = SLOT_ERRS_BASE_DIR + 'slot-errs-' + scenario_nr + '-' + SCENARIO_NAME + '.txt'
+    with open(output_path, 'w') as f:
+        f.write(slot_errs_str)
+
+
 def main():
     files = setup_input_files()
 
     for corr, err, sc_nr in files:
         plots_base_dir = corr.split('/')[:-1]
         plots_base_dir = '/'.join(plots_base_dir) + '/plots/{}-'
-        plot_conf_levels(corr, plots_base_dir + corr.split('/')[-1][:-5], sc_nr, FileContents.correct)
-        plot_conf_levels(err, plots_base_dir + err.split('/')[-1][:-5], sc_nr, FileContents.errors, plot_matrix=True)
+        print('------{}------'.format(corr))
+        show_intent_errors(err, sc_nr)
+        show_slot_errors(corr, err, sc_nr)
+        # plot_conf_levels(corr, plots_base_dir + corr.split('/')[-1][:-5], sc_nr, FileContents.correct)
+        # plot_conf_levels(err, plots_base_dir + err.split('/')[-1][:-5], sc_nr, FileContents.errors, plot_matrix=True)
 
 
 if __name__ == '__main__':

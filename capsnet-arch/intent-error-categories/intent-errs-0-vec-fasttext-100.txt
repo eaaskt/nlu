@@ -1,0 +1,24 @@
+SCENARIO: 0
+------------ERR1------------
+Pepper fă mai tare simfonia 0 0 0 0 0 0 0 0 0 0 cresteIntensitateMuzica->scadeIntensitateMuzica
+ERR1 TOTAL = 1
+
+------------ERR2------------
+Pepper redu intensitatea simfoniei 0 0 0 0 0 0 0 0 0 0 0 scadeIntensitateMuzica->scadeIntensitateLumina
+ERR2 TOTAL = 1
+
+------------ERR3------------
+ERR3 TOTAL = 0
+
+------------other------------
+Pepper crește intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 cresteIntensitateMuzica->opresteMuzica
+Pepper redu intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 scadeIntensitateMuzica->opresteMuzica
+other TOTAL = 2
+
+TOTAL INTENT ERRORS = 4
+
+
+ERR1 -- 25.00
+ERR2 -- 25.00
+ERR3 -- 0.00
+other -- 50.00

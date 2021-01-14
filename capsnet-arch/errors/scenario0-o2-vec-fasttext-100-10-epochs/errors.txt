@@ -1,0 +1,134 @@
+INTENT ERRORS
+cresteIntensitateLumina
+crește intensitatea iluminatului în bucătărie la maxim 0 0 0 0 0 0 0 0 -> scadeIntensitateLumina
+
+cresteTemperatura
+Pepper fă mai mare la 23 de grade în bucătărie 0 0 0 0 0 -> scadeTemperatura
+fă mai mare pe 19 grade în bucătărie 0 0 0 0 0 0 0 -> scadeTemperatura
+Pepper fă mai mare temperatura cu cinci grade în toată casa 0 0 0 0 -> scadeTemperatura
+
+scadeTemperatura
+Bună Pepper micșorează temperatura pe 17 grade în toată casa 0 0 0 0 0 -> cresteTemperatura
+Salut micșorează la 19 grade peste tot 0 0 0 0 0 0 0 0 -> cresteTemperatura
+
+cresteIntensitateMuzica
+Pepper crește intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 -> scadeIntensitateMuzica
+Pepper fă mai tare simfonia 0 0 0 0 0 0 0 0 0 0 -> scadeIntensitateMuzica
+
+scadeIntensitateMuzica
+Pepper redu intensitatea concertului 0 0 0 0 0 0 0 0 0 0 0 -> opresteMuzica
+Pepper redu intensitatea simfoniei 0 0 0 0 0 0 0 0 0 0 0 -> opresteMuzica
+
+SLOT ERRORS
+aș vrea să reduci intensitatea iluminatului în sufragerie 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper diminuează intensitatea luminii în camera de zi 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-loc', 'I-loc', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Hey ridică cu trei grade în tot apartamentul 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'I-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Hey mi-ar plăcea să ridici temperatura la douăzeci și cinci de grade în tot apartamentul
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc', 'I-loc']
+
+Salut poți mări temperatura la 24 de grade peste tot 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'B-loc', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Pepper ai putea ridica la 25 de grade în tot apartamentul 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'I-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+Pepper mi-ar plăcea să ridici cu un grad în bucătărie 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O']
+
+Hey fă mai mare cu un grad în tot apartamentul 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O']
+
+Pepper fă mai mare temperatura cu cinci grade în toată casa 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O']
+
+Salut scade cu două grade în tot apartamentul 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Bună Pepper mi-ar plăcea să scazi temperatura pe douăzeci și unu de grade în bucătărie
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O']
+
+Salut poți scădea temperatura la șaptesprezece grade peste tot 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'B-grade', 'B-loc', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Bună Pepper aș vrea să scazi temperatura la nouăsprezece grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'O', 'I-loc', 'I-loc', 'O', 'O']
+
+scade pe 25 de grade în sufragerie 0 0 0 0 0 0 0 0
+['O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Bună Pepper mi-ar plăcea să scazi temperatura la douăzeci de grade în baie 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'O', 'O', 'O', 'O']
+
+mi-ar plăcea să pui pe douăzeci și patru de grade în tot apartamentul 0 0
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc', 'I-loc', 'O', 'O']
+
+Pepper mi-ar plăcea să setezi temperatura aproape de șaptesprezece grade peste tot 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'B-grade', 'I-grade', 'B-loc', 'I-loc', 'O', 'O', 'O']
+
+aș vrea să pui cam la douăzeci și trei de grade în tot apartamentul 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'B-loc', 'I-loc', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'B-grade', 'I-grade', 'I-grade', 'I-grade', 'I-grade', 'O', 'I-loc', 'I-loc', 'O']
+
+te rog pornește concert compus de Mozart 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+începe piesa cântată de Bach 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-artist', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+dă drumul la televizorul pe Cinemax 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+aprinde TV pe HBO 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Pepper treci pe canalul Cinemax 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal', 'I-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Servus treci pe programul ProTV 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'B-canal', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+pune pe B1 0 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'B-canal', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'B-grade', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+dă mai tare volumul la piesa 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+Salut ai putea oare mări volumul la piesa 0 0 0 0 0 0 0
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
+crește volumul la triplu 0 0 0 0 0 0 0 0 0 0 0
+['O', 'O', 'O', 'B-nivel', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+
