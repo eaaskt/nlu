@@ -242,7 +242,7 @@ def average(lst):
 
 def valid_intent(intent_name):
     return (intent_name[-2:] != 'Nr' and intent_name != 'nrTrue'
-            and '-avg' not in intent_name and '-normalizedAvg' not in intent_name)
+            and '-avg' not in intent_name and '-percAvg' not in intent_name)
 
 
 def get_conf_matrix(conf_dict, intents, value_key_prefix):
@@ -282,7 +282,7 @@ def do_conf_matrix_plot(confidences, intents, plot_filename, title='', cbarlabel
     # plt.show()
 
 
-def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True, translate_eng=False):
+def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True, translate_eng=False, include_title=False):
     '''
 
     Args:
@@ -313,7 +313,7 @@ def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True, t
                 conf_dict[ex['trueIntent']][pred_intent] = []
                 conf_dict[ex['trueIntent']][pred_intent + 'Nr'] = 0
                 conf_dict[ex['trueIntent']][pred_intent + '-avg'] = 0
-                conf_dict[ex['trueIntent']][pred_intent + '-normalizedAvg'] = 0
+                conf_dict[ex['trueIntent']][pred_intent + '-percAvg'] = 0
             conf = intents_conf[pred_intent]
             conf_dict[ex['trueIntent']][pred_intent + 'Nr'] += 1
             conf_dict[ex['trueIntent']][pred_intent].append(conf * 100)
@@ -327,7 +327,7 @@ def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True, t
         for potential_intent, conf_list in confs.items():
             if valid_intent(potential_intent):
                 confs[potential_intent + '-avg'] = average(conf_list)
-                confs[potential_intent + '-normalizedAvg'] = average(conf_list) * confs[potential_intent + 'Nr'] / confs['nrTrue']
+                confs[potential_intent + '-percAvg'] = average(conf_list) * confs[potential_intent + 'Nr'] / confs['nrTrue']
 
     intents = [x for x in INTENTS_ORDER if x in intents_set]
     if translate_eng:
@@ -342,25 +342,35 @@ def plot_conf_matrix(results, plot_filename, title='', only_true_vs_pred=True, t
         conf_matrix_fname = plot_filename
     do_conf_matrix_plot(confidences, intent_labels, conf_matrix_fname, title)
 
-    normalized_confidences = get_conf_matrix(conf_dict, intents, '-normalizedAvg')
+    perc_confidences = get_conf_matrix(conf_dict, intents, '-percAvg')
 
     if translate_eng:
-        conf_matrix_fname = plot_filename + '-normalized' + '-eng'
+        conf_matrix_fname = plot_filename + '-perc' + '-eng'
     else:
-        conf_matrix_fname = plot_filename + '-normalized'
-    do_conf_matrix_plot(normalized_confidences, intent_labels, conf_matrix_fname, title + ' (normalized)')
+        conf_matrix_fname = plot_filename + '-perc'
+    if include_title:
+        plot_title = title + ' (perc)'
+    else:
+        plot_title = ''
+    do_conf_matrix_plot(perc_confidences, intent_labels, conf_matrix_fname, plot_title)
 
 
-def plot_conf_levels(input_path, plot_filename, scenario_num, file_content, plot_matrix=False, translate_eng=False):
+def plot_conf_levels(input_path, plot_filename, scenario_num, file_content, plot_matrix=False, translate_eng=False,
+                     include_title=True):
     with open(input_path, errors='replace', encoding='utf-8') as f:
         results = json.load(f)
-    title_prefix = 'Correct predictions sc ' + scenario_num
-    if file_content is FileContents.errors:
-        title_prefix = 'Error predictions sc ' + scenario_num
-    plot_conf_all_intents(results, plot_filename.format('overall'), title_prefix + ' - overall')
+    title = ''
+    if include_title:
+        title_prefix = 'Correct predictions sc ' + scenario_num
+        if file_content is FileContents.errors:
+            title_prefix = 'Error predictions sc ' + scenario_num
+        title = title_prefix + ' - overall'
+    # plot_conf_all_intents(results, plot_filename.format('overall'), title)
     if plot_matrix:
-        plot_conf_matrix(results, plot_filename.format('matrix'), title_prefix + ' - confidence matrix',
-                         translate_eng=translate_eng)
+        if include_title:
+            title = title_prefix + ' - confidence matrix'
+        plot_conf_matrix(results, plot_filename.format('matrix'), title=title, translate_eng=translate_eng,
+                         include_title=include_title)
 
 
 def get_err_type(true_intent, pred_intent):
@@ -500,7 +510,7 @@ def main():
         # show_slot_errors(corr, err, sc_nr)
         plot_conf_levels(corr, plots_base_dir + corr.split('/')[-1][:-5], sc_nr, FileContents.correct)
         plot_conf_levels(err, plots_base_dir + err.split('/')[-1][:-5], sc_nr, FileContents.errors,
-                         plot_matrix=True, translate_eng=True)
+                         plot_matrix=True, translate_eng=True, include_title=False)
 
 
 if __name__ == '__main__':
