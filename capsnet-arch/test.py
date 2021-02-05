@@ -398,7 +398,7 @@ def main():
     data = data_loader.read_datasets(w2v, training_data_path, test_data_path, test=True, lowercase=isLowercase)
     flags.set_data_flags(data)
 
-    test(model_s2i.CapsNetS2I, data, FLAGS)
+    test(model_s2i.SemCapsNet, data, FLAGS)
 
 
 if __name__ == '__main__':

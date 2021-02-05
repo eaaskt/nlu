@@ -3,7 +3,7 @@ import numpy as np
 import util
 
 
-class CapsNetS2I:
+class SemCapsNet:
     """
         CapsNetS2I model: capsule neural network model that performs joint intent detection and slot filling
         4 types of capsules: WordCaps, SemanticCaps, SlotCaps, IntentCaps
@@ -49,7 +49,7 @@ class CapsNetS2I:
         self.encoded_intents = tf.placeholder(tf.float32, shape=[None, self.intents_nr])
         self.encoded_slots = tf.placeholder(tf.float32, shape=[None, self.max_sentence_length, self.slots_nr])
 
-        # CapsNetS2I model
+        # SemCapsNet model
         self.instantiate_weights()
         self.H = self.word_caps()
         if self.use_attention:

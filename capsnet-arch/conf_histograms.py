@@ -309,6 +309,7 @@ def plot_conf_matrix(results_err, plot_filename, results_corr=None, title='', on
                 conf_dict[ex['trueIntent']][pred_intent + 'Nr'] = 0
                 conf_dict[ex['trueIntent']][pred_intent + '-avg'] = 0
                 conf_dict[ex['trueIntent']][pred_intent + '-percAvg'] = 0
+                conf_dict[ex['trueIntent']][pred_intent + '-percAvgAllEx'] = 0
             conf = intents_conf[pred_intent]
             conf_dict[ex['trueIntent']][pred_intent + 'Nr'] += 1
             conf_dict[ex['trueIntent']][pred_intent].append(conf * 100)
@@ -327,12 +328,16 @@ def plot_conf_matrix(results_err, plot_filename, results_corr=None, title='', on
                 else:
                     confs[potential_intent + '-percAvg'] = average(conf_list) * confs[potential_intent + 'Nr'] / confs[
                         'nrErr']
+                confs[potential_intent + '-percAvgAllEx'] = average(conf_list) * confs[potential_intent + 'Nr'] / (
+                        confs['nrCorr'] + confs['nrErr'])
 
     intents = [x for x in INTENTS_ORDER if x in intents_set]
     if translate_eng:
         intent_labels = [INTENT_TRANSLATIONS[x] for x in intents]
     else:
         intent_labels = intents
+
+    # Average confidence
     confidences = get_conf_matrix(conf_dict, intents, '-avg')
 
     if translate_eng:
@@ -341,6 +346,7 @@ def plot_conf_matrix(results_err, plot_filename, results_corr=None, title='', on
         conf_matrix_fname = plot_filename
     do_conf_matrix_plot(confidences, intent_labels, conf_matrix_fname, title)
 
+    # Average conf * percentage over all errors or intents
     perc_confidences = get_conf_matrix(conf_dict, intents, '-percAvg')
 
     if translate_eng:
@@ -349,6 +355,19 @@ def plot_conf_matrix(results_err, plot_filename, results_corr=None, title='', on
         conf_matrix_fname = plot_filename + '-perc'
     if include_title:
         plot_title = title + ' (perc)'
+    else:
+        plot_title = ''
+    do_conf_matrix_plot(perc_confidences, intent_labels, conf_matrix_fname, plot_title)
+
+    # Average conf * percentage over all examples
+    perc_confidences = get_conf_matrix(conf_dict, intents, '-percAvgAllEx')
+
+    if translate_eng:
+        conf_matrix_fname = plot_filename + '-percAll' + '-eng'
+    else:
+        conf_matrix_fname = plot_filename + '-percAll'
+    if include_title:
+        plot_title = title + ' (perc all)'
     else:
         plot_title = ''
     do_conf_matrix_plot(perc_confidences, intent_labels, conf_matrix_fname, plot_title)

@@ -6,6 +6,7 @@ import data_loader
 import model_s2i
 import util
 import flags
+import errno
 import json
 import numpy as np
 import tensorflow as tf
@@ -30,7 +31,14 @@ def dump_flags(FLAGS):
     for k, v in tf.flags.FLAGS.__flags.items():
         flags_dict[k] = v.value
     filename = FLAGS.scenario_num + '.json'
-    with open(os.path.join(FLAGS.hyperparams_dir, filename), 'w', encoding='utf-8') as f:
+    filename = os.path.join(FLAGS.hyperparams_dir, filename)
+    if not os.path.exists(os.path.dirname(filename)):
+        try:
+            os.makedirs(os.path.dirname(filename))
+        except OSError as exc:  # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
+    with open(filename, 'w', encoding='utf-8') as f:
         json.dump(flags_dict, f, indent=4)
 
 
@@ -412,7 +420,7 @@ def main():
 
     flags.set_data_flags(data)
 
-    train(model_s2i.CapsNetS2I, data, FLAGS, log=True)
+    train(model_s2i.SemCapsNet, data, FLAGS, log=True)
 
 
 if __name__ == '__main__':
